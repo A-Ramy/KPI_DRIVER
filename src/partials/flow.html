@@ -1,0 +1,44 @@
+<div class="flow tone-suite" data-flow>
+  <div class="flow__bar">
+    <div class="flow__steps" role="group" aria-label="Highlight a step">
+      <button class="flow__step" type="button" aria-pressed="false">1 · The call</button>
+      <button class="flow__step" type="button" aria-pressed="false">2 · Structured notes</button>
+      <button class="flow__step" type="button" aria-pressed="false">3 · Coaching feedback</button>
+    </div>
+    <button class="btn btn--ghost btn--sm" type="button" data-flow-play>Play walkthrough</button>
+  </div>
+  <div class="flow__stage">
+    <div class="flow__pane">
+      <h4><i></i>A seller call happens</h4>
+      <p class="bubble"><small>Seller</small>We inherited the house last spring. Roof needs work. We would like to be done by end of summer.</p>
+      <p class="bubble bubble--me"><small>Acquisition manager</small>Understood. Is there a number you have in mind?</p>
+      <p class="bubble"><small>Seller</small>Somewhere around two-ten, if it is quick.</p>
+      <p class="muted" style="font-size:var(--step--1)">Input: the recorded conversation.</p>
+    </div>
+    <div class="flow__pane">
+      <h4><i></i>AI Notes Taker updates the record</h4>
+      <div class="fields">
+        <div><span>Situation</span><span>Inherited property</span></div>
+        <div><span>Condition</span><span>Roof needs repair</span></div>
+        <div><span>Timeline</span><span>End of summer</span></div>
+        <div><span>Asking</span><span>$210,000</span></div>
+        <div><span>Next step</span><span>Send offer range</span></div>
+      </div>
+      <p class="muted" style="font-size:var(--step--1)">Output: call details logged, the right fields filled, the CRM record updated without manual entry.</p>
+    </div>
+    <div class="flow__pane">
+      <h4><i></i>AI Sales Coach scores the call</h4>
+      <div class="score">
+        <div class="score__row"><span>Rapport</span><div class="dash__bar"><i style="width:86%"></i></div><b>86</b></div>
+        <div class="score__row"><span>Motivation discovery</span><div class="dash__bar"><i style="width:72%"></i></div><b>72</b></div>
+        <div class="score__row"><span>Objection handling</span><div class="dash__bar"><i style="width:58%"></i></div><b>58</b></div>
+      </div>
+      <p class="coach">Coaching note: the price came up before the repair costs were explored. Ask about the roof estimate first next time.</p>
+      <p class="muted" style="font-size:var(--step--1)">Output: a scored call, with strengths and weak spots rolled into daily, weekly and monthly reports.</p>
+    </div>
+  </div>
+  <div class="flow__foot">
+    <span class="note">Simulated preview · sample conversation and scores</span>
+    <span class="note">AI Suite · planned rollout January 2027</span>
+  </div>
+</div>
