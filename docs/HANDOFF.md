@@ -2,6 +2,16 @@
 
 Status: **preview complete, live site untouched.** Nothing was published, no Webflow page, CMS item, script or setting was changed. All Webflow access so far was read-only.
 
+## 0. Revision 2 (your feedback, 2026-11-12)
+
+1. **AI Suite is live.** All "Upcoming / January 2027" labels and wording are removed. The suite FAQ now says the nine tools are available.
+2. **Design.** Added an instrument layer: a canvas tachometer behind the hero that follows the pointer, a gear indicator and rev bar that shift as the page scrolls, an interactive lifecycle circuit, HUD corner marks, pointer spotlights and a gauge-gradient headline. All of it respects reduced-motion.
+3. **Reviews.** The home page embeds your Elfsight Google Reviews widget (`elfsight-app-6ec34f8d-848c-473b-87f5-2de77c78fd65`, same as the live site), with a link-to-Google fallback until it renders.
+4. **CTAs.** Every "Book a Discovery Call" opens the embedded scheduler in a popup, using the same calendar per placement as the live site (header `17jl7c…`, footer `l4rvIx…`, home `9g3ccV…`, services `3bltGm…`, team `o811nw…`, contact `usaNbU…`). Without JavaScript the link opens the scheduler directly. The AI Agent's primary CTA is "Call the AI Agent · +1 786-786-8382".
+5. **Nurture** is positioned as backup for the acquisitions team: it takes stalled leads, revives them and hands them back to acquisitions to close. The lifecycle order is now Capture → Acquisitions → Nurture.
+
+Not verifiable from this environment: the Elfsight widget and the scheduler iframes are blocked by the sandbox network and by the hosted preview, so both were verified by markup/URL only.
+
 ## 1. Audit summary (what the current site has)
 
 - Webflow site "KPI DRIVER", last published 2026-08-26. 20 static/template pages, 6 CMS collections.
@@ -41,7 +51,7 @@ Main navigation: **Home | Services ▾ (CRM, AI Suite, AI Agent) | Our Team | Bl
 - **Type:** Barlow Condensed (display, uppercase H1/H2), Barlow (body), JetBrains Mono (labels, data). All Google Fonts.
 - **Sections:** dark (`.section`), raised dark (`.section--panel`), light (`.section--paper`) alternate for reading comfort. Components read contextual tokens, so they work on any of the three.
 - **Components:** button (primary/ghost), badge (core/included/upcoming/optional), eyebrow, gear line, tabs, triad + bracket, access model, tool card, tool spec, workflow demo, offer card, comparison table, steps, feature, FAQ accordion, post row, person, form field, booking box, CTA band.
-- **Status language:** every AI Suite surface carries an "Upcoming / Planned rollout January 2027" badge. Every invented UI is captioned "Illustrative preview · sample data".
+- **Status language:** every invented UI is captioned "Illustrative preview · sample data".
 
 ## 4. Webflow implementation plan
 
@@ -83,7 +93,7 @@ I can do steps 2–8 through the Webflow connection on a duplicate or branch onc
 | AI Nurture: reads conversations and notes, 60-day campaign, SMS + email, no AI Agent needed | AI Suite brochure |
 | Nurture Pipeline: 10+ situational 6-month drips and the nine named reasons | AI Suite brochure |
 | AI Agent: runs on rules, new and older leads, AI voice/SMS/email/iMessage, number remediation, BYOC | AI Suite brochure |
-| Planned rollout January 2027 | AI Suite brochure |
+| AI Suite live at launch; AI Agent test line +1 786-786-8382 | Your instruction (rev. 2) + live site |
 | Usage "tracked in a clear billing dashboard" | AI Suite brochure |
 | Built by investors over three years; pipelines list; document signing; mobile app | Company profile + live site |
 | Team names, roles, bios; Brandy Pollack 30+ years in real estate investing | Company profile + live site |
@@ -99,14 +109,13 @@ I can do steps 2–8 through the Webflow connection on a duplicate or branch onc
 | "Zillow data" | Named-provider rights need confirming; page says "available property data" |
 | "30 active clients", last-30-days stats, US client map | Stale/unsubstantiated |
 | "Most advanced KPI tracking in the industry", "millions of actions monthly", "enterprise-grade" | Superlative/capacity claims |
-| AI demo phone line +1 786-786-8382 ("Can AI book my appointments? Try calling ours") | Unconfirmed that it runs the new AI Agent. A strong addition to the AI Agent page if it does |
 | AI Review Bot | In the profile and live site, absent from the brochure and your brief |
 | Integration logo wall (Twilio, DocuSign, Mailchimp, ReadyMode, Kixie, REISift, …) | Implies partnerships; copy says integrations are scoped |
 | Testimonials video section | No approved customer evidence supplied |
 
 **Conflicts to resolve**
 
-1. **Is any AI tool already live?** The profile and live Services page present AI Notes, Skiptracing, Sales Coach, Underwriting, Training Coach, Data Enrichment and Dashboard as current pay-as-you-go tools. The brochure calls all nine "new" and "rolling out January 2027". The preview follows the brochure and marks all nine upcoming.
+1. ~~Is any AI tool already live?~~ Resolved by you: the site launches with everything live, so nothing is marked upcoming.
 2. **Phone numbers:** site uses (786) 822-8188 (also in the SMS consent text); the profile prints +1 786-404-9848. Preview uses the site number.
 3. **AI Sales Coach scope:** the live site says "real-time insights"; the brochure describes post-call scoring. Preview follows the brochure.
 4. **Social handles:** X is `KPIDriver` in the footer but `KPI_DRIVER` on the contact page; TikTok is `@kpidriver` vs `@KPI_DRIVER`. Preview uses the footer versions.
@@ -152,7 +161,7 @@ Full map: `docs/redirects.csv` (48 rows).
 
 ## 9. Launch checklist
 
-- [ ] Resolve the seven conflicts in §6
+- [ ] Resolve the remaining conflicts in §6
 - [ ] Confirm the booking calendar and connect the contact form
 - [ ] Decide `/log-in` and the Knowledge Base videos
 - [ ] Supply product screenshots (optional but recommended)

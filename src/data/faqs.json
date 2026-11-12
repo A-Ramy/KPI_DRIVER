@@ -1,45 +1,148 @@
 {
  "home": [
-  ["What is KPI DRIVER?", "KPI DRIVER is a real estate business operations platform built by investors for investors. Its CRM connects lead capture, nurture, acquisitions, dispositions, transaction coordination, contractors and vendors, and owned and rental properties, with KPI tracking across all of them."],
-  ["What do I get with the Enterprise Optimization Suite?", "The CRM and access to the AI Suite, together. There is no additional AI Suite subscription. Using the AI tools is optional, and you pay only for what you use."],
-  ["Is the AI Agent included?", "No. The AI Agent is a separate, optional offering. Teams that want it choose the Enterprise Optimization Suite + AI Agent. You do not need the AI Agent to use the CRM or the AI Suite."],
-  ["How much does KPI DRIVER cost?", "Pricing depends on your operation, so we cover it on a discovery call. Book a call and we will walk through fit, the two offerings, and how pay-as-you-go AI usage works."],
-  ["Do I need separate systems for document signatures, dispositions, or rentals?", "No. KPI DRIVER includes dedicated pipelines for each process, plus built-in document signature tools, so contracts stay attached to the deal they belong to."],
-  ["Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?", "Yes. KPI DRIVER is designed for both new and established real estate businesses. New teams start with a streamlined setup. Established teams work with us on data migration and pipelines that match how they already operate."],
-  ["Do you offer support and training?", "Yes. Every client works with a dedicated account manager for onboarding and ongoing support, and our tech and support team is available for training, customization and strategy sessions."]
+  [
+   "What is KPI DRIVER?",
+   "KPI DRIVER is a real estate business operations platform built by investors for investors. Its CRM connects lead capture, nurture, acquisitions, dispositions, transaction coordination, contractors and vendors, and owned and rental properties, with KPI tracking across all of them."
+  ],
+  [
+   "What do I get with the Enterprise Optimization Suite?",
+   "The CRM and access to the AI Suite, together. There is no additional AI Suite subscription. Using the AI tools is optional, and you pay only for what you use."
+  ],
+  [
+   "Is the AI Agent included?",
+   "No. The AI Agent is a separate, optional offering. Teams that want it choose the Enterprise Optimization Suite + AI Agent. You do not need the AI Agent to use the CRM or the AI Suite."
+  ],
+  [
+   "How much does KPI DRIVER cost?",
+   "Pricing depends on your operation, so we cover it on a discovery call. Book a call and we will walk through fit, the two offerings, and how pay-as-you-go AI usage works."
+  ],
+  [
+   "Do I need separate systems for document signatures, dispositions, or rentals?",
+   "No. KPI DRIVER includes dedicated pipelines for each process, plus built-in document signature tools, so contracts stay attached to the deal they belong to."
+  ],
+  [
+   "Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?",
+   "Yes. KPI DRIVER is designed for both new and established real estate businesses. New teams start with a streamlined setup. Established teams work with us on data migration and pipelines that match how they already operate."
+  ],
+  [
+   "Do you offer support and training?",
+   "Yes. Every client works with a dedicated account manager for onboarding and ongoing support, and our tech and support team is available for training, customization and strategy sessions."
+  ]
  ],
  "services": [
-  ["Are CRM, AI Suite and AI Agent three separate plans?", "No. They are three product areas. There are two offerings: the Enterprise Optimization Suite (CRM plus AI Suite access) and the Enterprise Optimization Suite + AI Agent."],
-  ["What does pay-as-you-go mean for the AI Suite?", "Access to the AI Suite comes with the Enterprise Optimization Suite at no additional subscription. When you choose to use an AI tool, that usage is billed as you go. If you do not use the tools, there is no AI usage to pay for. Usage is tracked in a billing dashboard."],
-  ["Can I use the CRM without using any AI tools?", "Yes. AI Suite usage is optional. The CRM, pipelines, automations and KPI tracking work on their own."],
-  ["What is scoped separately?", "Work that depends on your setup is scoped on a call. Examples include custom automations, custom drip campaigns, custom landing pages, third-party integrations, Slack alerts and dedicated accounting support."],
-  ["Does KPI DRIVER integrate with my existing tools?", "KPI DRIVER works alongside phone systems, marketing tools and third-party platforms. Our tech team scopes and handles integration setup with you, so tell us what you run today on your discovery call."],
-  ["Where do I see pricing?", "On your discovery call. We do not publish a rate card because the right setup depends on your team, your data and which AI tools you plan to use."]
+  [
+   "Are CRM, AI Suite and AI Agent three separate plans?",
+   "No. They are three product areas. There are two offerings: the Enterprise Optimization Suite (CRM plus AI Suite access) and the Enterprise Optimization Suite + AI Agent."
+  ],
+  [
+   "What does pay-as-you-go mean for the AI Suite?",
+   "Access to the AI Suite comes with the Enterprise Optimization Suite at no additional subscription. When you choose to use an AI tool, that usage is billed as you go. If you do not use the tools, there is no AI usage to pay for. Usage is tracked in a billing dashboard."
+  ],
+  [
+   "Can I use the CRM without using any AI tools?",
+   "Yes. AI Suite usage is optional. The CRM, pipelines, automations and KPI tracking work on their own."
+  ],
+  [
+   "What is scoped separately?",
+   "Work that depends on your setup is scoped on a call. Examples include custom automations, custom drip campaigns, custom landing pages, third-party integrations, Slack alerts and dedicated accounting support."
+  ],
+  [
+   "Does KPI DRIVER integrate with my existing tools?",
+   "KPI DRIVER works alongside phone systems, marketing tools and third-party platforms. Our tech team scopes and handles integration setup with you, so tell us what you run today on your discovery call."
+  ],
+  [
+   "Where do I see pricing?",
+   "On your discovery call. We do not publish a rate card because the right setup depends on your team, your data and which AI tools you plan to use."
+  ]
  ],
  "crm": [
-  ["Is the CRM sold on its own?", "The CRM is the foundation of the Enterprise Optimization Suite, which also gives you access to the AI Suite. You choose whether to use the pay-as-you-go AI tools."],
-  ["Which pipelines are built in?", "Nurture, Acquisitions, Dispositions, Transaction Coordination, Contractors and Vendors, and Owned and Rentals. Each runs on its own pipeline and reports into the same KPI tracking."],
-  ["Is the KPI dashboard customizable?", "The KPI dashboard is pre-built around the metrics that matter in real estate investing, such as acquisitions, marketing performance and deal velocity. If you need something different, we can rework it with you."],
-  ["Can my team work from a phone?", "Yes. A mobile app for iOS and Android gives your team access to the CRM, conversations and tasks away from the desk."],
-  ["Can you migrate my current CRM?", "Yes. CRM migration is part of onboarding, with a focus on keeping your data intact. The plan and timing depend on your current system and data, so we scope it with you first."],
-  ["How does the AI Suite relate to the CRM?", "The AI Suite is a companion platform supplied alongside the CRM. It adds call capture and coaching, underwriting, skiptracing, data enrichment, dashboards, insights and projections on top of the operation your CRM already runs."]
+  [
+   "Is the CRM sold on its own?",
+   "The CRM is the foundation of the Enterprise Optimization Suite, which also gives you access to the AI Suite. You choose whether to use the pay-as-you-go AI tools."
+  ],
+  [
+   "Which pipelines are built in?",
+   "Nurture, Acquisitions, Dispositions, Transaction Coordination, Contractors and Vendors, and Owned and Rentals. Each runs on its own pipeline and reports into the same KPI tracking."
+  ],
+  [
+   "Is the KPI dashboard customizable?",
+   "The KPI dashboard is pre-built around the metrics that matter in real estate investing, such as acquisitions, marketing performance and deal velocity. If you need something different, we can rework it with you."
+  ],
+  [
+   "Can my team work from a phone?",
+   "Yes. A mobile app for iOS and Android gives your team access to the CRM, conversations and tasks away from the desk."
+  ],
+  [
+   "Can you migrate my current CRM?",
+   "Yes. CRM migration is part of onboarding, with a focus on keeping your data intact. The plan and timing depend on your current system and data, so we scope it with you first."
+  ],
+  [
+   "How does the AI Suite relate to the CRM?",
+   "The AI Suite is a companion platform supplied alongside the CRM. It adds call capture and coaching, underwriting, skiptracing, data enrichment, dashboards, insights and projections on top of the operation your CRM already runs."
+  ]
  ],
  "suite": [
-  ["When will the AI Suite be available?", "The nine-tool AI Suite is planned to roll out in January 2027. Tools are marked as upcoming on this page until they are available. Ask about current availability on your discovery call."],
-  ["Do I pay a subscription for the AI Suite?", "No additional AI Suite subscription. Access comes with the Enterprise Optimization Suite. You pay only for the AI usage you choose, tracked in a billing dashboard."],
-  ["Is AI Suite usage unlimited?", "No. Included access means the tools are there when you want them. Usage is pay-as-you-go."],
-  ["Do I need the AI Agent to use the AI Suite or AI Nurture?", "No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering."],
-  ["Does DNC checking make my outreach compliant?", "DNC checking is a tool that helps you screen existing contacts. It is not a guarantee of compliant outreach. You remain responsible for following the rules that apply to your calls, texts and emails."],
-  ["Are AI Projections a guarantee?", "No. Projections are estimates based on your KPIs, accounting and insights. They help you explore what may lie ahead. They are not guaranteed outcomes or financial advice."],
-  ["How accurate is AI Underwriting?", "AI Underwriting gives you a working analysis that you control. You can add or remove comps and notes and rerun it at any time. Treat the output as decision support and apply your own judgment before making an offer."]
+  [
+   "Is the AI Suite available now?",
+   "Yes. The nine AI Suite tools are available to Enterprise Optimization Suite clients. Access is included, and you choose which tools to use."
+  ],
+  [
+   "Do I pay a subscription for the AI Suite?",
+   "No additional AI Suite subscription. Access comes with the Enterprise Optimization Suite. You pay only for the AI usage you choose, tracked in a billing dashboard."
+  ],
+  [
+   "Is AI Suite usage unlimited?",
+   "No. Included access means the tools are there when you want them. Usage is pay-as-you-go."
+  ],
+  [
+   "Do I need the AI Agent to use the AI Suite or AI Nurture?",
+   "No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering."
+  ],
+  [
+   "Does DNC checking make my outreach compliant?",
+   "DNC checking is a tool that helps you screen existing contacts. It is not a guarantee of compliant outreach. You remain responsible for following the rules that apply to your calls, texts and emails."
+  ],
+  [
+   "Are AI Projections a guarantee?",
+   "No. Projections are estimates based on your KPIs, accounting and insights. They help you explore what may lie ahead. They are not guaranteed outcomes or financial advice."
+  ],
+  [
+   "How accurate is AI Underwriting?",
+   "AI Underwriting gives you a working analysis that you control. You can add or remove comps and notes and rerun it at any time. Treat the output as decision support and apply your own judgment before making an offer."
+  ]
  ],
  "agent": [
-  ["Is the AI Agent part of the AI Suite?", "No. The AI Agent is a separate, optional offering available with the Enterprise Optimization Suite + AI Agent."],
-  ["What does the AI Agent do?", "It follows up with new and older leads within the rules you configure. You set the guardrails once, and it decides when and how to follow up within them."],
-  ["Which channels does it use?", "The listed channels are AI voice, SMS, email and iMessage. Channel availability for your account is confirmed during setup."],
-  ["What are number remediation and BYOC?", "They are listed AI Agent capabilities related to the phone numbers the agent uses. BYOC is short for bring your own carrier. We will explain how each applies to your numbers and carrier on a discovery call."],
-  ["How is the AI Agent different from AI Nurture?", "AI Nurture builds and schedules a tailored 60-day SMS and email campaign for a seller from your conversations and notes, and it does not require the AI Agent. The AI Agent is a separate offering that follows up with leads across its channels within your rules."],
-  ["I already use the earlier AI Agent. What changes?", "Existing AI Agent clients move to the new AI Agent through a migration. Your account manager will walk you through what it involves for your account."],
-  ["What does the AI Agent cost?", "AI Agent pricing is covered on a discovery call."]
+  [
+   "Is the AI Agent part of the AI Suite?",
+   "No. The AI Agent is a separate, optional offering available with the Enterprise Optimization Suite + AI Agent."
+  ],
+  [
+   "Can I try the AI Agent before a call with your team?",
+   "Yes. Call +1 786-786-8382 and talk to our AI Agent yourself. It is the quickest way to hear how it handles a conversation."
+  ],
+  [
+   "What does the AI Agent do?",
+   "It follows up with new and older leads within the rules you configure. You set the guardrails once, and it decides when and how to follow up within them."
+  ],
+  [
+   "Which channels does it use?",
+   "The listed channels are AI voice, SMS, email and iMessage. Channel availability for your account is confirmed during setup."
+  ],
+  [
+   "What are number remediation and BYOC?",
+   "They are listed AI Agent capabilities related to the phone numbers the agent uses. BYOC is short for bring your own carrier. We will explain how each applies to your numbers and carrier on a discovery call."
+  ],
+  [
+   "How is the AI Agent different from AI Nurture?",
+   "AI Nurture builds and schedules a tailored 60-day SMS and email campaign for a seller from your conversations and notes, and it does not require the AI Agent. The AI Agent is a separate offering that follows up with leads across its channels within your rules."
+  ],
+  [
+   "I already use the earlier AI Agent. What changes?",
+   "Existing AI Agent clients move to the new AI Agent through a migration. Your account manager will walk you through what it involves for your account."
+  ],
+  [
+   "What does the AI Agent cost?",
+   "AI Agent pricing is covered on a discovery call."
+  ]
  ]
 }

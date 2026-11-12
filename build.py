@@ -18,6 +18,24 @@ ORIGIN = "https://www.kpidriver.com"
 PRODUCTION = "--production" in sys.argv
 BOOKING_URL = "https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L"
 STATUS_URL = "https://app.pulsetic.com/status/bXxHxF27/"
+BOOK_BASE = "https://link.kpidriver.com/widget/booking/"
+# Booking calendars, as embedded on the current live site (one per placement).
+CAL = {"header": "17jl7cP7dvOAU48s6C3L", "footer": "l4rvIxCnb9DtsSTM6SoQ", "home": "9g3ccVyd2a9NsV51QuKN",
+       "services": "3bltGmUYGxpIUtG09p3V", "team": "o811nwxOSIS90zvrwX33", "contact": "usaNbU09ACXDqb1C52Rd"}
+PAGE_CAL = "header"
+
+
+def cal_for(path):
+    if path == "index.html": return "home"
+    if path.startswith("services"): return "services"
+    if path == "our-team.html": return "team"
+    if path == "contact-us.html": return "contact"
+    return "header"
+
+
+def book_attrs(key):
+    """Used inside href="…": the link opens the scheduler directly; JS upgrades it to the embedded popup."""
+    return f'{BOOK_BASE}{CAL[key]}" target="_blank" rel="noopener" data-book="{CAL[key]}'
 FONTS = "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
 
 FAQS = json.loads((SRC / "data" / "faqs.json").read_text(encoding="utf8"))
@@ -61,7 +79,7 @@ def nav(root, current):
         <li class="nav__item"><a class="nav__link" href="{root}blog.html"{cur('blog.html')}>Blog</a></li>
         <li class="nav__item"><a class="nav__link" href="{root}contact-us.html"{cur('contact-us.html')}>Contact Us</a></li>
       </ul>
-      <a class="btn btn--primary btn--sm nav__cta" href="{root}book-discovery-call.html" data-event="discovery_call_click" data-label="header">Book a Discovery Call</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="{book_attrs('header')}" data-event="discovery_call_click" data-label="header">Book a Discovery Call</a>
     </nav>
   </div>
 </header>"""
@@ -93,7 +111,7 @@ def footer(root):
           <li><a href="{root}our-team.html">Our Team</a></li>
           <li><a href="{root}blog.html">Blog</a></li>
           <li><a href="{root}contact-us.html">Contact Us</a></li>
-          <li><a href="{root}book-discovery-call.html" data-event="discovery_call_click" data-label="footer">Book a Discovery Call</a></li>
+          <li><a href="{book_attrs('footer')}" data-event="discovery_call_click" data-label="footer">Book a Discovery Call</a></li>
           <li><a href="{STATUS_URL}" rel="noopener">CRM Status</a></li>
         </ul>
       </div>
@@ -138,7 +156,7 @@ def partial(name, root):
 def expand(body, root):
     body = re.sub(r"\{\{> faq ([\w-]+)\}\}", lambda m: faq_block(m.group(1)), body)
     body = re.sub(r"\{\{> ([\w-]+)\}\}", lambda m: partial(m.group(1), root), body)
-    return (body.replace("{{root}}", root).replace("{{book}}", root + "book-discovery-call.html")
+    return (body.replace("{{root}}", root).replace("{{book}}", book_attrs(PAGE_CAL))
             .replace("{{booking_url}}", BOOKING_URL).replace("{{status_url}}", STATUS_URL))
 
 
@@ -169,6 +187,8 @@ def head(meta, path, root):
 
 
 def render(path, meta, body):
+    global PAGE_CAL
+    PAGE_CAL = cal_for(path)
     depth = path.count("/")
     root = "../" * depth
     current = meta.get("nav", path)
@@ -177,6 +197,12 @@ def render(path, meta, body):
 {expand(body, root)}
 </main>
 {footer(root)}
+<div class="gearhud" aria-hidden="true"><span class="gearhud__label">GEAR</span><ol><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ol><span class="gearhud__rev"><i></i></span></div>
+<dialog class="bookdlg" id="book-dialog" aria-labelledby="book-dialog-title">
+  <div class="bookdlg__bar"><h2 id="book-dialog-title">Book a Discovery Call</h2><button class="bookdlg__close" type="button" aria-label="Close scheduler">Close ✕</button></div>
+  <div class="bookdlg__frame"></div>
+  <p class="bookdlg__foot">Scheduler not loading? <a class="link" href="{BOOK_BASE}{CAL['header']}" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+</dialog>
 <script src="{root}assets/js/site.js" defer></script>"""
     page = f"""<!doctype html>
 <html lang="en" class="no-js">

@@ -6,7 +6,7 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
   <div class="wrap hero__grid">
     <div class="hero__copy">
       <p class="eyebrow">Built by real estate investors. Engineered for the entire operation.</p>
-      <h1>Your real estate business. <em>In a higher gear.</em></h1>
+      <h1>Your real estate business. <em class="gear-text">In a higher gear.</em></h1>
       <p class="lede">KPI DRIVER is the command center for real estate investors and their teams. One CRM runs your pipelines from first lead to rental, KPI tracking shows where the business stands, and access to the AI Suite comes included.</p>
       <div class="btn-row">
         <a class="btn btn--primary" href="{{book}}" data-event="discovery_call_click" data-label="hero">Book a Discovery Call</a>
@@ -14,11 +14,12 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
       </div>
       <ul class="hero__facts">
         <li class="tone-crm"><i></i>CRM for the whole lifecycle</li>
-        <li class="tone-suite"><i></i>AI Suite access included · rolling out January 2027</li>
+        <li class="tone-suite"><i></i>AI Suite access included</li>
         <li class="tone-agent"><i></i>AI Agent optional</li>
       </ul>
     </div>
 
+    <div class="hero__stage"><canvas class="tach" id="tach" aria-hidden="true"></canvas>
     <div class="cc" role="img" aria-label="Illustrative preview: a CRM pipeline board feeding an AI Suite panel that turns a call into structured notes, beside an optional AI Agent panel.">
       <div class="cc__panel cc__panel--crm tone-crm">
         <div class="cc__bar">
@@ -37,14 +38,14 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
         </div>
         <div class="board">
           <div class="board__col"><span>Capture</span><i class="chip"></i><i class="chip"></i><i class="chip chip--a"></i></div>
-          <div class="board__col"><span>Nurture</span><i class="chip chip--a"></i><i class="chip chip--a"></i></div>
           <div class="board__col"><span>Acquisitions</span><i class="chip chip--move"></i><i class="chip"></i><i class="chip chip--o"></i></div>
+          <div class="board__col"><span>Nurture</span><i class="chip chip--a"></i><i class="chip chip--a"></i></div>
           <div class="board__col"><span>Dispositions</span><i class="chip chip--g"></i><i class="chip"></i></div>
           <div class="board__col"><span>Closing</span><i class="chip chip--g"></i></div>
         </div>
       </div>
       <div class="cc__panel cc__panel--suite tone-suite">
-        <div class="cc__bar"><span class="cc__title"><i></i>AI Suite · Notes Taker</span><span class="badge badge--upcoming">Upcoming</span></div>
+        <div class="cc__bar"><span class="cc__title"><i></i>AI Suite · Notes Taker</span><span class="badge badge--included">Live</span></div>
         <div class="transcript">
           <p class="transcript__say">“We inherited it last spring. Roof needs work. Around two-ten if it is quick.”</p>
           <span class="transcript__arrow" aria-hidden="true">→</span>
@@ -61,7 +62,7 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
         <div class="cc__agent-ch"><span>Voice</span><span>SMS</span><span>Email</span><span>iMessage</span></div>
       </div>
       <p class="cc__caption"><span class="note">Illustrative preview · sample data</span><span class="note">Not an actual product screen</span></p>
-    </div>
+    </div></div>
   </div>
 </section>
 
@@ -134,7 +135,7 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
 <section class="section section--grid tone-suite" id="ai-suite">
   <div class="wrap">
     <div class="head">
-      <p class="eyebrow">The AI Suite <span class="badge badge--upcoming">Planned rollout January 2027</span></p>
+      <p class="eyebrow">The AI Suite <span class="badge badge--included">Access included</span></p>
       <h2>The AI Suite puts <span class="hl-green">nitro</span> in the CRM engine.</h2>
       <p class="lede">Nine AI tools, supplied alongside your CRM, each built for a specific job in a real estate operation.</p>
     </div>
@@ -143,25 +144,25 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
       <div>
         <div class="group-head"><h3>Capture &amp; Coach</h3><p class="muted">Every call makes your team better.</p></div>
         <div class="toolgrid">
-          <div class="tool"><p class="note">01</p><h4>AI Notes Taker</h4><p>Captures call details, writes structured notes, fills the right fields and keeps the CRM record current.</p></div>
-          <div class="tool"><p class="note">02</p><h4>AI Sales Coach</h4><p>Scores calls for Lead and Acquisition Managers and reports strengths and weak spots daily, weekly and monthly.</p></div>
-          <div class="tool"><p class="note">03</p><h4>AI Training Coach</h4><p>Practice across 10+ scenarios a day with feedback on communication, objection handling and conversion skills.</p></div>
+          <div class="tool spot"><p class="note">01</p><h4>AI Notes Taker</h4><p>Captures call details, writes structured notes, fills the right fields and keeps the CRM record current.</p></div>
+          <div class="tool spot"><p class="note">02</p><h4>AI Sales Coach</h4><p>Scores calls for Lead and Acquisition Managers and reports strengths and weak spots daily, weekly and monthly.</p></div>
+          <div class="tool spot"><p class="note">03</p><h4>AI Training Coach</h4><p>Practice across 10+ scenarios a day with feedback on communication, objection handling and conversion skills.</p></div>
         </div>
       </div>
       <div>
         <div class="group-head"><h3>Find &amp; Qualify</h3><p class="muted">Better data. Faster decisions.</p></div>
         <div class="toolgrid">
-          <div class="tool"><p class="note">04</p><h4>AI Underwriting</h4><p>Multi-source analysis with modes for however much data you have, photo-informed condition, and comps you can edit and rerun.</p></div>
-          <div class="tool"><p class="note">05</p><h4>AI Skiptracing</h4><p>Find phone numbers and emails from an address, an APN, or an address plus owner name, and DNC-check existing contacts.</p></div>
-          <div class="tool"><p class="note">06</p><h4>AI Data Enrichment</h4><p>Adds available property information to your CRM fields and shows exactly which fields changed.</p></div>
+          <div class="tool spot"><p class="note">04</p><h4>AI Underwriting</h4><p>Multi-source analysis with modes for however much data you have, photo-informed condition, and comps you can edit and rerun.</p></div>
+          <div class="tool spot"><p class="note">05</p><h4>AI Skiptracing</h4><p>Find phone numbers and emails from an address, an APN, or an address plus owner name, and DNC-check existing contacts.</p></div>
+          <div class="tool spot"><p class="note">06</p><h4>AI Data Enrichment</h4><p>Adds available property information to your CRM fields and shows exactly which fields changed.</p></div>
         </div>
       </div>
       <div>
         <div class="group-head"><h3>Know &amp; Grow</h3><p class="muted">See where the money is, and where it is leaking.</p></div>
         <div class="toolgrid">
-          <div class="tool"><p class="note">07</p><h4>AI Dashboard</h4><p>Deeper KPI visibility across the business, plus a full accounting section.</p></div>
-          <div class="tool"><p class="note">08</p><h4>AI Insights</h4><p>Ask questions of your CRM and the Suite, and have it take supported actions and run routines.</p></div>
-          <div class="tool"><p class="note">09</p><h4>AI Projections</h4><p>Forecast the months ahead from your KPIs, accounting and insights. Estimates, not guarantees.</p></div>
+          <div class="tool spot"><p class="note">07</p><h4>AI Dashboard</h4><p>Deeper KPI visibility across the business, plus a full accounting section.</p></div>
+          <div class="tool spot"><p class="note">08</p><h4>AI Insights</h4><p>Ask questions of your CRM and the Suite, and have it take supported actions and run routines.</p></div>
+          <div class="tool spot"><p class="note">09</p><h4>AI Projections</h4><p>Forecast the months ahead from your KPIs, accounting and insights. Estimates, not guarantees.</p></div>
         </div>
       </div>
       <div class="btn-row"><a class="btn btn--ghost" href="{{root}}services/ai-suite.html" data-event="product_explore" data-label="home suite all tools">See every tool in detail</a></div>
@@ -186,7 +187,8 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
       <p class="eyebrow">Optional AI Agent <span class="badge badge--optional">Separate offering</span></p>
       <h2>Follow-up that runs on <span class="hl-amber">your rules.</span></h2>
       <p class="lede">The AI Agent is a distinct addition for teams that want help with communication and follow-up. Set the guardrails once, and it decides when and how to follow up with new and older leads.</p>
-      <div class="btn-row"><a class="btn btn--ghost" href="{{root}}services/ai-agent.html">Explore the AI Agent</a></div>
+      <div class="btn-row"><a class="btn btn--call" href="tel:+17867868382" data-event="agent_test_call_click" data-label="home agent">Call the AI Agent · +1 786-786-8382</a><a class="btn btn--ghost" href="{{root}}services/ai-agent.html">Explore the AI Agent</a></div>
+      <p class="note">Test it yourself before you talk to us.</p>
     </div>
     <div class="stack">
       <ul class="kq">
@@ -209,7 +211,7 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
     <div class="cols cols--2">
       <div class="feature tone-crm"><h4>Investor-led</h4><p>CEO Brandy Pollack brings 30+ years in real estate investing to how the platform is shaped.</p></div>
       <div class="feature tone-crm"><h4>Built in-house</h4><p>CTO Ahmed Ramy leads development of the KPI tracking engine and the integrations around it.</p></div>
-      <div class="feature tone-suite"><h4>Still building</h4><p>The AI Suite is the next chapter: nine tools shaped by the same day-to-day work as the CRM.</p></div>
+      <div class="feature tone-suite"><h4>Still building</h4><p>The AI Suite is the latest chapter: nine tools shaped by the same day-to-day work as the CRM.</p></div>
       <div class="feature tone-suite"><h4>Used before shipped</h4><p>Pipelines, drips and workflows come from an operating business, so they reflect how deals really move.</p></div>
     </div>
   </div>
@@ -230,6 +232,8 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
     </ol>
   </div>
 </section>
+
+{{> reviews}}
 
 <section class="section section--paper" id="faq">
   <div class="wrap split">

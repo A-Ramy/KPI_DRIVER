@@ -28,8 +28,8 @@ python3 -m http.server 4173 --directory site
 
 - **Edit copy:** change the file in `src/pages/` or `src/partials/`, run `python3 build.py`.
 - **FAQs:** edit `src/data/faqs.json`.
-- **Booking link / status link:** constants at the top of `build.py`.
-- **Mark an AI Suite tool as available:** remove its `badge--upcoming` badge in `src/pages/services/ai-suite.html` and update the rollout wording (search for "January 2027").
+- **Booking calendars / status link:** the `CAL` map and constants at the top of `build.py`. Every booking CTA uses `href="{{book}}"`.
+- **Reviews:** the Elfsight widget ID lives in `src/partials/reviews.html`.
 - **Blog:** in production the blog stays in the Webflow CMS. `blog.json` exists only to render the preview.
 - Never add prices, rate cards or plan tiers. Commercial questions route to **Book a Discovery Call**.
 

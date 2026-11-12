@@ -169,3 +169,133 @@
   var y = doc.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
+
+/* ===================== v2: instrument layer ===================== */
+(function () {
+  "use strict";
+  var doc = document, root = doc.documentElement;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var sandboxed = /claude|artifact/i.test(location.hostname); /* hosts that block third-party frames */
+
+  /* ---- booking popup: every booking CTA opens the embedded scheduler ---- */
+  var dlg = doc.getElementById("book-dialog");
+  if (dlg && dlg.showModal && !sandboxed) {
+    var frame = dlg.querySelector(".bookdlg__frame"), alt = dlg.querySelector(".bookdlg__foot a");
+    doc.addEventListener("click", function (e) {
+      var a = e.target.closest("a[data-book]");
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      var src = "https://link.kpidriver.com/widget/booking/" + a.getAttribute("data-book");
+      frame.innerHTML = "";
+      var f = doc.createElement("iframe");
+      f.src = src; f.title = "Schedule a discovery call with KPI DRIVER";
+      frame.appendChild(f); alt.href = src;
+      dlg.showModal();
+    });
+    dlg.querySelector(".bookdlg__close").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener("close", function () { frame.innerHTML = ""; });
+  }
+
+  /* ---- reviews widget: hide the fallback once Elfsight has rendered ---- */
+  doc.querySelectorAll("[data-reviews]").forEach(function (box) {
+    var w = box.querySelector('[class^="elfsight-app-"]');
+    if (!w || !window.MutationObserver) return;
+    new MutationObserver(function () { if (w.children.length) box.classList.add("is-loaded"); }).observe(w, { childList: true, subtree: true });
+  });
+
+  /* ---- pointer spotlight ---- */
+  doc.addEventListener("pointermove", function (e) {
+    var el = e.target.closest && e.target.closest(".spot");
+    if (!el) return;
+    var r = el.getBoundingClientRect();
+    el.style.setProperty("--mx", (e.clientX - r.left) + "px");
+    el.style.setProperty("--my", (e.clientY - r.top) + "px");
+  }, { passive: true });
+
+  /* ---- lifecycle circuit: nodes mirror the tabs; outgoing routes light up ---- */
+  doc.querySelectorAll("[data-circuit]").forEach(function (wrap) {
+    var nodes = wrap.querySelectorAll(".circuit__node"), edges = wrap.querySelectorAll(".circuit__edge");
+    var tabs = wrap.querySelectorAll('[role="tab"]');
+    function paint() {
+      var on = -1;
+      tabs.forEach(function (t, i) { if (t.getAttribute("aria-selected") === "true") on = i; });
+      var next = {};
+      edges.forEach(function (ed) {
+        var from = +ed.getAttribute("data-from"), to = +ed.getAttribute("data-to");
+        ed.classList.toggle("is-live", from === on);
+        ed.classList.toggle("is-in", false);
+        if (from === on) next[to] = 1;
+      });
+      nodes.forEach(function (n, i) { n.classList.toggle("is-on", i === on); n.classList.toggle("is-next", !!next[i]); });
+    }
+    nodes.forEach(function (n, i) { n.addEventListener("click", function () { if (tabs[i]) tabs[i].click(); }); });
+    tabs.forEach(function (t) { t.addEventListener("click", paint); t.addEventListener("keydown", function () { setTimeout(paint, 0); }); });
+    paint();
+  });
+
+  /* ---- gear HUD + rev bar: scrolling the page shifts gears ---- */
+  var hud = doc.querySelector(".gearhud");
+  var bar = doc.createElement("div"); bar.className = "revbar"; bar.setAttribute("aria-hidden", "true"); doc.body.appendChild(bar);
+  var colors = ["#ed2024", "#ea8c1c", "#ea8c1c", "#fcaf17", "#fcaf17", "#45b649"];
+  var gears = hud ? hud.querySelectorAll("li") : [];
+  function onScroll() {
+    var max = root.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    bar.style.setProperty("--scroll", (p * 100).toFixed(1) + "%");
+    if (!hud) return;
+    var g = Math.min(5, Math.floor(p * 6));
+    gears.forEach(function (li, i) { li.classList.toggle("is-on", i === g); li.classList.toggle("is-past", i < g); });
+    hud.style.setProperty("--gear-c", colors[g]);
+    hud.style.setProperty("--rev", (((p * 6) % 1) * 100 || (p === 1 ? 100 : 0)).toFixed(0) + "%");
+  }
+  window.addEventListener("scroll", onScroll, { passive: true }); window.addEventListener("resize", onScroll); onScroll();
+
+  /* ---- hero tachometer (canvas): the brand gauge, drawn large behind the command centre ---- */
+  var cv = doc.getElementById("tach");
+  if (cv && cv.getContext) {
+    var ctx = cv.getContext("2d"), cur = 0.04, target = 0.8, raf = null, t0 = performance.now();
+    var A0 = Math.PI * 0.82, SWEEP = Math.PI * 1.36; /* gauge opens downward like the logo */
+    function lerpColor(p) {
+      var stops = [[237, 32, 36], [234, 140, 28], [252, 175, 23], [69, 182, 73]];
+      var x = p * 3, i = Math.min(2, Math.floor(x)), f = x - i, a = stops[i], b = stops[i + 1];
+      return [0, 1, 2].map(function (k) { return Math.round(a[k] + (b[k] - a[k]) * f); }).join(",");
+    }
+    function draw() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1), w = cv.clientWidth, h = cv.clientHeight;
+      if (cv.width !== Math.round(w * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, h);
+      var cx = w / 2, cy = h / 2, R = w * 0.47, N = 96;
+      for (var i = 0; i <= N; i++) {
+        var p = i / N, a = A0 + SWEEP * p, major = i % 8 === 0, lit = p <= cur;
+        var r1 = R - (major ? 30 : 16), c = Math.cos(a), s = Math.sin(a);
+        ctx.beginPath(); ctx.moveTo(cx + c * r1, cy + s * r1); ctx.lineTo(cx + c * R, cy + s * R);
+        ctx.lineWidth = major ? 3 : 1.5;
+        ctx.strokeStyle = "rgba(" + lerpColor(p) + "," + (lit ? (major ? 0.95 : 0.7) : 0.16) + ")";
+        ctx.stroke();
+      }
+      /* inner hairline arcs */
+      [0.78, 0.62].forEach(function (k, n) { ctx.beginPath(); ctx.arc(cx, cy, R * k, A0, A0 + SWEEP); ctx.lineWidth = 1; ctx.strokeStyle = "rgba(255,255,255," + (n ? 0.05 : 0.09) + ")"; ctx.stroke(); });
+      /* lit arc + needle */
+      var an = A0 + SWEEP * cur, g = ctx.createLinearGradient(cx - R, 0, cx + R, 0);
+      g.addColorStop(0, "rgba(237,32,36,0.0)"); g.addColorStop(1, "rgba(69,182,73,0.55)");
+      ctx.beginPath(); ctx.arc(cx, cy, R * 0.9, A0, an); ctx.lineWidth = 2; ctx.strokeStyle = g; ctx.stroke();
+      ctx.save(); ctx.shadowColor = "rgba(" + lerpColor(cur) + ",0.9)"; ctx.shadowBlur = 22;
+      ctx.beginPath(); ctx.moveTo(cx + Math.cos(an) * R * 0.56, cy + Math.sin(an) * R * 0.56); ctx.lineTo(cx + Math.cos(an) * R * 1.02, cy + Math.sin(an) * R * 1.02);
+      ctx.lineWidth = 3; ctx.lineCap = "round"; ctx.strokeStyle = "rgba(233,238,245,0.95)"; ctx.stroke(); ctx.restore();
+    }
+    function tick(now) {
+      var idle = Math.sin((now - t0) / 900) * 0.012;
+      cur += (target + idle - cur) * 0.045;
+      draw(); raf = requestAnimationFrame(tick);
+    }
+    if (reduce) { cur = target; draw(); window.addEventListener("resize", draw); }
+    else {
+      var hero = cv.closest(".hero");
+      hero.addEventListener("pointermove", function (e) { var r = hero.getBoundingClientRect(); target = 0.55 + 0.42 * ((e.clientX - r.left) / r.width); }, { passive: true });
+      hero.addEventListener("pointerleave", function () { target = 0.8; });
+      if (window.IntersectionObserver) new IntersectionObserver(function (en) { if (en[0].isIntersecting) { if (!raf) raf = requestAnimationFrame(tick); } else { cancelAnimationFrame(raf); raf = null; } }).observe(cv);
+      else raf = requestAnimationFrame(tick);
+    }
+  }
+})();
