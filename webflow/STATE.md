@@ -26,9 +26,16 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 | Thank You | 6afa182cf610cfffbefd4cb2 | /kd-thank-you | done, verified on staging |
 | Our Team | 6afa188c23514ef7a01c1579 | /kd-our-team | done, verified on staging |
 | AI Agent | 6afa191e7b59d3ca770d4e6a | /kd-ai-agent (final: /services/ai-agent, needs a services folder or flat slug decision) | done; FAQ JSON-LD left out of embed, add via page schema |
-| Contact, Services, CRM, AI Suite, Home, 404, Privacy, Terms, Blog | | | to do |
+| Contact Us | 6afa1e999eb44edc324f9215 | /kd-contact-us | built (GHL survey form embed, inline ghl-form style); not yet published/verified |
+| Services, CRM, AI Suite, Home, 404, Privacy, Terms, Blog | | | to do |
 
 ## Open decisions for the owner
 - Knowledge Base, Log in, Case studies, For-clients pages use Memberstack / old design: keep, redirect or retire?
 - Spanish: Localization add-on.
 - Blog: restyle CMS templates (Blog, post, category) and import 26 new posts + categories (`webflow/cms`).
+
+## Owner decisions (2026-11-15)
+- Member pages (Knowledge Base, Log in, Case studies, For clients): keep published but hidden, reachable by direct link only (not in nav; exclude from sitemap/search).
+- Spanish: no Localization add-on; build ES pages as ordinary pages under an `es` folder with the header toggle. Page folders (`es`, `services`) need the Designer open: owner must launch https://kpidriver.design.webflow.com?app=dc8209c65e3ec02254d15275ca056539c89f6d15741893a0adf29ad6f381eb99
+- Contact form: use the existing GHL survey `hs57W9QgapW3WAyGZeZb` (done).
+- JSON-LD scripts are stripped from embeds for now; add from `page-meta.json` via the page schema tool.
