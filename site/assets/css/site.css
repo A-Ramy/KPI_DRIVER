@@ -635,6 +635,36 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 560px; backgr
 /* ---- motion: transform/opacity only; everything is visible without JS or with reduced motion ---- */
 @media (prefers-reduced-motion: no-preference) { @view-transition { navigation: auto; } }
 .site-header { view-transition-name: site-header; }
+/* Gear-shift page transition. A slanted band in the gear colours shoves the old page off screen and the new page is
+   already sitting underneath: left to right when moving forward through the site (upshift), right to left when moving
+   back (downshift). The inline head script adds .vt + direction. Transform-only, so it stays locked together on the
+   compositor even while the incoming page is still busy loading. */
+.shiftfx { display: none; }
+html.vt .shiftfx { display: block; position: fixed; top: 0; left: 0; width: 26vw; height: 100vh; z-index: 999; pointer-events: none; view-transition-name: shiftfx; }
+.shiftfx b { position: absolute; inset: -4vh 0; display: flex; padding: 0 3%; background: #0d1c2a; transform: skewX(-8deg); transform: skewX(calc(-1 * atan2(12vw, 100vh))); }
+.shiftfx i { flex: 1; margin: 0 3.5%; }
+.shiftfx i:nth-child(1) { background: var(--v-green); flex: 1.7; }
+.shiftfx i:nth-child(2) { background: var(--v-amber); }
+.shiftfx i:nth-child(3) { background: var(--v-orange); flex: 0.7; }
+.shiftfx i:nth-child(4) { background: var(--v-red); flex: 0.45; }
+html.vt-down .shiftfx b { flex-direction: row-reverse; }
+html.vt::view-transition-old(root), html.vt::view-transition-new(root) { mix-blend-mode: normal; animation: none; opacity: 1; }
+html.vt::view-transition-old(root) { z-index: 1; animation: 0.56s linear both; }
+html.vt-up::view-transition-old(root) { animation-name: vt-push-up; }
+html.vt-down::view-transition-old(root) { animation-name: vt-push-down; }
+html.vt::view-transition-new(shiftfx) { animation: none; }
+html.vt::view-transition-group(shiftfx) { animation: 0.56s linear both; }
+html.vt-up::view-transition-group(shiftfx) { animation-name: vt-band-up; }
+html.vt-down::view-transition-group(shiftfx) { animation-name: vt-band-down; }
+/* One hand-built ease-in-out curve shared by band and page, so the page edge always sits under the middle of the band. */
+@keyframes vt-band-up { 0% { transform: translateX(-26vw); } 15% { transform: translateX(-20.44vw); } 30% { transform: translateX(-3.76vw); } 50% { transform: translateX(43.5vw); } 70% { transform: translateX(90.76vw); } 85% { transform: translateX(107.44vw); } 100% { transform: translateX(113vw); } }
+@keyframes vt-push-up { 0%, 21.7% { transform: translateX(0); } 30% { transform: translateX(9.24vw); } 50% { transform: translateX(56.5vw); } 70% { transform: translateX(103.76vw); } 85% { transform: translateX(120.44vw); } 100% { transform: translateX(126vw); } }
+@keyframes vt-band-down { 0% { transform: translateX(100vw); } 15% { transform: translateX(94.44vw); } 30% { transform: translateX(77.76vw); } 50% { transform: translateX(30.5vw); } 70% { transform: translateX(-16.76vw); } 85% { transform: translateX(-33.44vw); } 100% { transform: translateX(-39vw); } }
+@keyframes vt-push-down { 0%, 21.7% { transform: translateX(0); } 30% { transform: translateX(-9.24vw); } 50% { transform: translateX(-56.5vw); } 70% { transform: translateX(-103.76vw); } 85% { transform: translateX(-120.44vw); } 100% { transform: translateX(-126vw); } }
+/* Rev line: every page load revs across the top edge, then settles. Also the whole effect in browsers without page transitions. */
+.revline { display: none; }
+.anim .revline { display: block; position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 998; pointer-events: none; transform-origin: 0 50%; background: linear-gradient(90deg, var(--v-green), var(--v-amber) 55%, var(--v-orange, #ea8c1c) 80%, var(--v-red)); animation: rev-in 0.9s cubic-bezier(0.65, 0, 0.25, 1) both; }
+@keyframes rev-in { from { transform: scaleX(0); opacity: 1; } 60% { transform: scaleX(1); opacity: 1; } to { transform: scaleX(1); opacity: 0; } }
 @keyframes rise { from { opacity: 0; translate: 0 26px; } to { opacity: 1; translate: 0 0; } }
 @keyframes slide { from { translate: 0 18px; } to { translate: 0 0; } }
 .anim .hero__copy > *, .anim .phead .wrap > * { animation: slide 0.7s var(--ease) both; }

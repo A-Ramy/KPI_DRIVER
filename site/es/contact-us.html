@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="es" class="no-js" data-gear="8">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://www.kpidriver.com/assets/img/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070b11">
-<script>(function(){var d=document.documentElement;try{if(!d.hasAttribute('data-theme')){var s=null;try{s=localStorage.getItem('kd-theme')}catch(e){}d.setAttribute('data-theme',s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'))}if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)d.classList.add('anim')}catch(e){}})()</script>
+<script>(function(){var d=document.documentElement;try{if(!d.hasAttribute('data-theme')){var s=null;try{s=localStorage.getItem('kd-theme')}catch(e){}d.setAttribute('data-theme',s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'))}if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)d.classList.add('anim')}catch(e){}var g=+d.getAttribute('data-gear')||0,S=function(){try{sessionStorage.setItem('kd-from',g)}catch(e){}};addEventListener('pagehide',S);addEventListener('pageswap',S);addEventListener('pagereveal',function(e){if(!e.viewTransition)return;var f=null;try{f=sessionStorage.getItem('kd-from')}catch(x){}if(f===null)return;var c=+f>g?'vt-down':'vt-up',z=function(){d.classList.remove('vt',c)};d.classList.add('vt',c);e.viewTransition.finished.then(z,z)})})()</script>
 <link rel="icon" href="../assets/img/favicon.png" type="image/png" sizes="64x64">
 <link rel="icon" href="../assets/img/brand/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
@@ -196,6 +196,8 @@
     </div>
   </div>
 </footer>
+<div class="revline" aria-hidden="true"></div>
+<div class="shiftfx" aria-hidden="true"><b><i></i><i></i><i></i><i></i></b></div>
 <div class="gearhud" aria-hidden="true"><span class="gearhud__label">MARCHA</span><ol><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ol><span class="gearhud__rev"><i></i></span></div>
 <dialog class="bookdlg" id="book-dialog" aria-labelledby="book-dialog-title">
   <div class="bookdlg__bar"><h2 id="book-dialog-title">Agenda una llamada</h2><button class="bookdlg__close" type="button" aria-label="Cerrar calendario">Cerrar ✕</button></div>

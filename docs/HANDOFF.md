@@ -193,3 +193,11 @@ Full map: `docs/redirects.csv` (48 rows).
 - [ ] Build in Webflow on a duplicate/branch; re-run the checks in §8 on the staging domain
 - [ ] Add redirects, fix `robots.txt`, submit the sitemap
 - [ ] Your explicit go-ahead to publish
+
+## Revision 6: gear-shift page transitions
+
+- **What it is:** moving between pages, a slanted band in the four gear colours shoves the old page off screen and the new page is already underneath. Forward through the site order (Home, Services, CRM, AI Suite, AI Agent, Our Team, Blog, Contact, Book) is an upshift, left to right; going back is a downshift, right to left. About half a second, transform-only.
+- **Every page load** also revs a thin gear-colour line across the top edge. That line is the whole effect in browsers without cross-page view transitions (Firefox today); Chrome, Edge and Safari 18.2+ get the full shift.
+- **Reduced motion:** both are off.
+- **Where it lives:** `data-gear` on `<html>` (set in `build.py` from `GEARS`), the inline head script (`THEME_JS`), `.shiftfx` and `.revline` elements before the gear HUD, and the "Gear-shift page transition" block in `site.css`.
+- **Webflow:** paste the head script into site-wide head custom code, add the two elements in a site-wide embed, keep the CSS block, and set `data-gear` per page as a custom attribute on the page (or in per-page head code).
