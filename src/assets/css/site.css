@@ -772,3 +772,8 @@ body { text-transform: capitalize; }
 .nav__trigger { flex: none; min-width: 28px; min-height: 28px; justify-content: center; }
 :lang(es) .nav__link { padding-inline: 11px; }
 @media (max-width: 1340px) { :lang(es) .nav-toggle { display: inline-flex; } :lang(es) .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--ink); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; padding: 12px var(--gutter-r) 24px var(--gutter-l); max-height: calc(100vh - 68px); overflow-y: auto; } :lang(es) .nav.is-open { display: flex; } :lang(es) .nav__list { flex-direction: column; align-items: stretch; } :lang(es) .nav__item { flex-wrap: wrap; } :lang(es) .nav__item > .nav__link { flex: 1; } :lang(es) .nav__menu { position: static; width: 100%; box-shadow: none; margin: 4px 0 8px; } :lang(es) .nav__cta { margin: 16px 0 0; } }
+
+/* CRM-hosted contact form (Go High Level survey embed) */
+.ghl-form { display: grid; gap: 14px; align-content: start; }
+.ghl-form__frame { background: #fff; border: 1px solid var(--rule); border-radius: var(--radius, 10px); overflow: hidden; min-height: 620px; }
+.ghl-form__frame iframe { display: block; min-height: 620px; }
