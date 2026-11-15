@@ -2,6 +2,11 @@
 
 Status: **preview complete, live site untouched.** Nothing was published, no Webflow page, CMS item, script or setting was changed. All Webflow access so far was read-only.
 
+## Revision 5 (2026-11-15)
+
+- **Brand assets** (supplied PNGs, trimmed and resized into `src/assets/img/brand/`): horizontal logo in the header (white version on dark, black version on light), stacked white logo in the footer, speedometer icon as favicon and on the 404 and thank-you pages, white circular badge as the Apple touch icon and the Organization logo in structured data. The dark-text and light-text circular badges and the plain gauge mark are stored there for social profiles and print.
+- **Capitalised typography:** `body { text-transform: capitalize }` gives every word in running text an initial capital. Exempt: blog pages, legal text, quoted speech in the illustrations, and form input. Names and addresses that must keep their own casing (iMessage, iOS, email addresses, kpidriver domains) are wrapped in `.keep-case` at build time. In Webflow: set the same rule on the Body style and add a `keep-case` class.
+
 ## Revision 4 (2026-11-15)
 
 - **Client logins:** header menu and footer column link to `crm.kpidriver.com` (CRM) and `kpidriver.ai` (AI Suite). The footer also links "AI Suite terms at kpidriver.ai", since the AI Suite carries its own terms.

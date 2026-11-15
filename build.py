@@ -72,6 +72,17 @@ _TOK = re.compile(r"(<script.*?</script>|<style.*?</style>|<!--.*?-->|<[^>]+>)",
 _ATTR = re.compile(r'\b(aria-label|alt|placeholder|data-name)="([^"]+)"')
 
 
+_KEEP = re.compile(r"(iMessage|iOS|[\w.+-]+@[\w-]+\.[\w.]+|(?:crm\.|www\.)?kpidriver\.(?:com|ai))")
+
+
+def keep_case(h):
+    """Names and addresses that must not be re-cased by the site's capitalised typography."""
+    out = []
+    for tok in _TOK.split(h):
+        out.append(tok if tok.startswith("<") else _KEEP.sub(r'<span class="keep-case">\1</span>', tok))
+    return "".join(out)
+
+
 def tr_html(h):
     out = []
     for tok in _TOK.split(h):
@@ -135,7 +146,7 @@ def nav(root, current, path="index.html"):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{root}index.html" aria-label="KPI DRIVER home"><img class="logo--dark" src="{root}assets/img/logo-light-text.svg" alt="KPI DRIVER" width="121" height="30"><img class="logo--light" src="{root}assets/img/logo-dark-text.svg" alt="" width="121" height="30"></a>
+    <a class="brand" href="{root}index.html" aria-label="KPI DRIVER home"><img class="logo--dark" src="{root}assets/img/brand/logo-h-light.png" alt="KPI DRIVER" width="178" height="24"><img class="logo--light" src="{root}assets/img/brand/logo-h-dark.png" alt="" width="178" height="24"></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16"/></svg>
     </button>
@@ -178,7 +189,7 @@ def footer(root):
   <div class="wrap">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="{root}assets/img/logo-light-text.svg" alt="KPI DRIVER" width="137" height="34">
+        <img src="{root}assets/img/brand/logo-stack-light.png" alt="KPI DRIVER" width="124" height="64" loading="lazy">
         <p class="footer__sig">Make The Gear Shift!</p>
         <div class="gearline" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <p class="muted">The command center for real estate investors and their teams. Built by investors, for investors.</p>
@@ -316,7 +327,8 @@ def head(meta, path, root):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070b11">
 {THEME_JS}
-<link rel="icon" href="{root}assets/img/favicon.png" type="image/png">
+<link rel="icon" href="{root}assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="icon" href="{root}assets/img/brand/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="{root}assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -334,7 +346,7 @@ def render(path, meta, body):
         root = "../" * depth
         current = meta.get("nav", path)
         inner = f"""{nav(root, current, path)}
-<main id="main">
+<main id="main"{' class="is-blog"' if current == "blog.html" else ''}>
 {expand(body, root)}
 </main>
 {footer(root)}
@@ -351,6 +363,7 @@ def render(path, meta, body):
             # Spanish pages live in /es/: assets and untranslated sections (blog, legal) stay one level up
             fix = lambda h: re.sub(r'((?:href|src)=")((?:\.\./)*)(assets/|blog\.html|post/|blog-category/|policies/|404\.html)', r"\1\2../\3", h)
             inner, hd = fix(inner), fix(hd)
+        inner = keep_case(inner)
         page = f"""<!doctype html>
 <html lang="{LANG}" class="no-js">
 <head>
