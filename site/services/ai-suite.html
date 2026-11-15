@@ -15,20 +15,22 @@
 <meta property="og:image" content="https://www.kpidriver.com/assets/img/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070b11">
+<script>(function(){var d=document.documentElement;try{if(!d.hasAttribute('data-theme')){var s=null;try{s=localStorage.getItem('kd-theme')}catch(e){}d.setAttribute('data-theme',s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'))}if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)d.classList.add('anim')}catch(e){}})()</script>
 <link rel="icon" href="../assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 <link rel="stylesheet" href="../assets/css/site.css">
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.kpidriver.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.kpidriver.com/services"}, {"@type": "ListItem", "position": 3, "name": "AI Suite", "item": "https://www.kpidriver.com/services/ai-suite"}]}</script>
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="../index.html" aria-label="KPI DRIVER home"><img src="../assets/img/logo-light-text.svg" alt="KPI DRIVER" width="121" height="30"></a>
+    <a class="brand" href="../index.html" aria-label="KPI DRIVER home"><img class="logo--dark" src="../assets/img/logo-light-text.svg" alt="KPI DRIVER" width="121" height="30"><img class="logo--light" src="../assets/img/logo-dark-text.svg" alt="" width="121" height="30"></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16"/></svg>
     </button>
@@ -52,6 +54,10 @@
       </ul>
       <a class="btn btn--primary btn--sm nav__cta" href="https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L" target="_blank" rel="noopener" data-book="17jl7cP7dvOAU48s6C3L" data-event="discovery_call_click" data-label="header">Book a Discovery Call</a>
     </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">
+      <svg class="i-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
+    </button>
   </div>
 </header>
 <main id="main">
@@ -86,7 +92,7 @@
 </section>
 
 <nav class="subnav" aria-label="AI Suite sections">
-  <div class="wrap"><a href="#capture">Capture &amp; Coach</a><a href="#find">Find &amp; Qualify</a><a href="#know">Know &amp; Grow</a><a href="#workflow">Workflow</a><a href="#nurture">AI Nurture</a><a href="#faq">FAQ</a></div>
+  <div class="wrap"><a href="#capture">Capture &amp; Coach</a><a href="#find">Find &amp; Qualify</a><a href="#know">Know &amp; Grow</a><a href="#workflow">Workflow</a><a href="#nurture">Nurture</a><a href="#knowledge-base">Knowledge base</a><a href="#faq">FAQ</a></div>
 </nav>
 
 <section class="section tone-suite" id="capture">
@@ -159,14 +165,14 @@
   </div>
   <div class="flow__stage">
     <div class="flow__pane">
-      <h4><i></i>A seller call happens</h4>
+      <h3 class="h4"><i></i>A seller call happens</h3>
       <p class="bubble"><small>Seller</small>We inherited the house last spring. Roof needs work. We would like to be done by end of summer.</p>
       <p class="bubble bubble--me"><small>Acquisition manager</small>Understood. Is there a number you have in mind?</p>
       <p class="bubble"><small>Seller</small>Somewhere around two-ten, if it is quick.</p>
       <p class="muted" style="font-size:var(--step--1)">Input: the recorded conversation.</p>
     </div>
     <div class="flow__pane">
-      <h4><i></i>AI Notes Taker updates the record</h4>
+      <h3 class="h4"><i></i>AI Notes Taker updates the record</h3>
       <div class="fields">
         <div><span>Situation</span><span>Inherited property</span></div>
         <div><span>Condition</span><span>Roof needs repair</span></div>
@@ -177,7 +183,7 @@
       <p class="muted" style="font-size:var(--step--1)">Output: call details logged, the right fields filled, the CRM record updated without manual entry.</p>
     </div>
     <div class="flow__pane">
-      <h4><i></i>AI Sales Coach scores the call</h4>
+      <h3 class="h4"><i></i>AI Sales Coach scores the call</h3>
       <div class="score">
         <div class="score__row"><span>Rapport</span><div class="dash__bar"><i style="width:86%"></i></div><b>86</b></div>
         <div class="score__row"><span>Motivation discovery</span><div class="dash__bar"><i style="width:72%"></i></div><b>72</b></div>
@@ -199,9 +205,9 @@
 <section class="section tone-suite" id="nurture">
   <div class="wrap">
     <div class="head">
-      <p class="eyebrow">Related nurture capabilities <span class="badge">Not part of the nine tools</span></p>
+      <p class="eyebrow">Related nurture capabilities <span class="badge">Not part of the nine tools</span> <span class="langs"><b>EN</b><b>ES</b></span></p>
       <h2>Never let a lead go cold.</h2>
-      <p class="lede">Nurture is where a lead goes when your acquisitions team needs backup. It keeps working the seller and hands revived leads back to acquisitions to close. Two capabilities do that job in different ways.</p>
+      <p class="lede">Nurture is where a lead goes when your acquisitions team needs backup. It keeps working the seller and hands revived leads back to acquisitions to close. Two capabilities do that job in different ways, and every nurture runs in English and Spanish.</p>
     </div>
     <div class="offers">
       <article class="offer spot">
@@ -217,14 +223,34 @@
         </ul>
       </article>
       <article class="offer spot">
-        <span class="badge">Situational drips</span>
+        <span class="badge">Built into the pipeline</span>
         <h3>Nurture Pipeline</h3>
-        <p class="muted">10+ situational six-month drips, matched to the reason the deal stalled. These are pre-built by situation, where AI Nurture is written for the individual seller.</p>
-        <ul class="scoped">
-          <li>No Motivation</li><li>High Asking</li><li>Long Timeline</li><li>No Equity</li><li>Listed</li><li>Not Interested</li><li>Not Ready To Sell</li><li>Trying Traditional Sale</li><li>Property Or Financial Issue Pending</li>
-        </ul>
+        <p class="muted">Pre-built nurtures your team assigns in one step. Where AI Nurture writes a campaign for one seller, these are ready the moment a deal stalls.</p>
+        <div class="nurture-set"><h4>Situational nurtures <small>matched to why the deal stalled</small></h4>
+        <ul class="scoped"><li>No Motivation</li><li>High Asking</li><li>Long Timeline</li><li>No Equity</li><li>Listed</li><li>Not Interested</li><li>Not Ready To Sell</li><li>Trying Traditional Sale</li><li>Property Or Financial Issue Pending</li><li>Ghosted</li><li>Offer Rejected</li><li>Contract Rejected</li><li>Cancelled Deal</li></ul></div>
+        <div class="nurture-set"><h4>Timed nurtures <small>matched to when to check back</small></h4>
+        <ul class="scoped"><li>30 Days</li><li>3 Months</li><li>6 Months</li><li>12 Months</li></ul></div>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="section section--paper tone-suite" id="knowledge-base">
+  <div class="wrap split">
+    <div class="stack">
+      <p class="eyebrow">Built in <span class="badge badge--included">Included</span></p>
+      <h2>On-demand onboarding, inside the Suite.</h2>
+      <p class="lede">The AI Suite includes a knowledge base of recorded walkthroughs on using the entire system in the best way possible. A new hire can get up to speed without waiting for a training call, and your team can revisit any step whenever they need it.</p>
+      <p class="muted">Prefer to ask a person? Your dedicated channel with our team is always open.</p>
+    </div>
+    <ul class="kb" aria-label="Examples of walkthrough topics">
+      <li><i aria-hidden="true"></i><div><b>Pipelines and KPIs</b><span>Acquisitions, nurture, dispositions, transaction coordination, rentals</span></div></li>
+      <li><i aria-hidden="true"></i><div><b>Contacts and opportunities</b><span>Importing, smart lists, tags, custom fields</span></div></li>
+      <li><i aria-hidden="true"></i><div><b>Phones, SMS and email</b><span>Numbers, dialer, campaigns, snippets</span></div></li>
+      <li><i aria-hidden="true"></i><div><b>Calendars and forms</b><span>Booking, forms, surveys, funnels</span></div></li>
+      <li><i aria-hidden="true"></i><div><b>Dashboards and reporting</b><span>KPI dashboard, call and appointment reports</span></div></li>
+      <li><i aria-hidden="true"></i><div><b>Documents and setup</b><span>Signatures, users, access levels</span></div></li>
+    </ul>
   </div>
 </section>
 
@@ -238,8 +264,8 @@
 <section class="section section--paper tone-suite" id="faq">
   <div class="wrap split">
     <div class="stack"><p class="eyebrow">FAQ</p><h2>AI Suite questions</h2><p class="muted">Related: <a class="link" href="../services/crm.html">CRM</a> · <a class="link" href="../services/ai-agent.html">AI Agent</a> · <a class="link" href="../services.html">Services overview</a></p></div>
-    <div class="faq"><details><summary>Is the AI Suite available now?</summary><div><p>Yes. The nine AI Suite tools are available to Enterprise Optimization Suite clients. Access is included, and you choose which tools to use.</p></div></details><details><summary>Do I pay a subscription for the AI Suite?</summary><div><p>No additional AI Suite subscription. Access comes with the Enterprise Optimization Suite. You pay only for the AI usage you choose, tracked in a billing dashboard.</p></div></details><details><summary>Is AI Suite usage unlimited?</summary><div><p>No. Included access means the tools are there when you want them. Usage is pay-as-you-go.</p></div></details><details><summary>Do I need the AI Agent to use the AI Suite or AI Nurture?</summary><div><p>No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering.</p></div></details><details><summary>Does DNC checking make my outreach compliant?</summary><div><p>DNC checking is a tool that helps you screen existing contacts. It is not a guarantee of compliant outreach. You remain responsible for following the rules that apply to your calls, texts and emails.</p></div></details><details><summary>Are AI Projections a guarantee?</summary><div><p>No. Projections are estimates based on your KPIs, accounting and insights. They help you explore what may lie ahead. They are not guaranteed outcomes or financial advice.</p></div></details><details><summary>How accurate is AI Underwriting?</summary><div><p>AI Underwriting gives you a working analysis that you control. You can add or remove comps and notes and rerun it at any time. Treat the output as decision support and apply your own judgment before making an offer.</p></div></details></div>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the AI Suite available now?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The nine AI Suite tools are available to Enterprise Optimization Suite clients. Access is included, and you choose which tools to use."}}, {"@type": "Question", "name": "Do I pay a subscription for the AI Suite?", "acceptedAnswer": {"@type": "Answer", "text": "No additional AI Suite subscription. Access comes with the Enterprise Optimization Suite. You pay only for the AI usage you choose, tracked in a billing dashboard."}}, {"@type": "Question", "name": "Is AI Suite usage unlimited?", "acceptedAnswer": {"@type": "Answer", "text": "No. Included access means the tools are there when you want them. Usage is pay-as-you-go."}}, {"@type": "Question", "name": "Do I need the AI Agent to use the AI Suite or AI Nurture?", "acceptedAnswer": {"@type": "Answer", "text": "No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering."}}, {"@type": "Question", "name": "Does DNC checking make my outreach compliant?", "acceptedAnswer": {"@type": "Answer", "text": "DNC checking is a tool that helps you screen existing contacts. It is not a guarantee of compliant outreach. You remain responsible for following the rules that apply to your calls, texts and emails."}}, {"@type": "Question", "name": "Are AI Projections a guarantee?", "acceptedAnswer": {"@type": "Answer", "text": "No. Projections are estimates based on your KPIs, accounting and insights. They help you explore what may lie ahead. They are not guaranteed outcomes or financial advice."}}, {"@type": "Question", "name": "How accurate is AI Underwriting?", "acceptedAnswer": {"@type": "Answer", "text": "AI Underwriting gives you a working analysis that you control. You can add or remove comps and notes and rerun it at any time. Treat the output as decision support and apply your own judgment before making an offer."}}]}</script>
+    <div class="faq"><details><summary>Is the AI Suite available now?</summary><div><p>Yes. The nine AI Suite tools are available to Enterprise Optimization Suite clients. Access is included, and you choose which tools to use.</p></div></details><details><summary>Do I pay a subscription for the AI Suite?</summary><div><p>No additional AI Suite subscription. Access comes with the Enterprise Optimization Suite. You pay only for the AI usage you choose, tracked in a billing dashboard.</p></div></details><details><summary>Is AI Suite usage unlimited?</summary><div><p>No. Included access means the tools are there when you want them. Usage is pay-as-you-go.</p></div></details><details><summary>Do I need the AI Agent to use the AI Suite or AI Nurture?</summary><div><p>No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering.</p></div></details><details><summary>Which nurtures are included?</summary><div><p>Thirteen situational nurtures matched to why a deal stalled, including Ghosted, Offer Rejected, Contract Rejected and Cancelled Deal, plus timed nurtures at 30 days, 3 months, 6 months and 12 months. AI Nurture adds a tailored 60-day campaign for an individual seller.</p></div></details><details><summary>Are nurtures available in Spanish?</summary><div><p>Yes. Every nurture runs in English and Spanish.</p></div></details><details><summary>Is training included?</summary><div><p>Yes. The AI Suite includes a knowledge base of recorded walkthroughs covering the whole system, which works as on-demand onboarding. Your dedicated channel with our team is there for anything else.</p></div></details><details><summary>Does DNC checking make my outreach compliant?</summary><div><p>DNC checking is a tool that helps you screen existing contacts. It is not a guarantee of compliant outreach. You remain responsible for following the rules that apply to your calls, texts and emails.</p></div></details><details><summary>Are AI Projections a guarantee?</summary><div><p>No. Projections are estimates based on your KPIs, accounting and insights. They help you explore what may lie ahead. They are not guaranteed outcomes or financial advice.</p></div></details><details><summary>How accurate is AI Underwriting?</summary><div><p>AI Underwriting gives you a working analysis that you control. You can add or remove comps and notes and rerun it at any time. Treat the output as decision support and apply your own judgment before making an offer.</p></div></details></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the AI Suite available now?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The nine AI Suite tools are available to Enterprise Optimization Suite clients. Access is included, and you choose which tools to use."}}, {"@type": "Question", "name": "Do I pay a subscription for the AI Suite?", "acceptedAnswer": {"@type": "Answer", "text": "No additional AI Suite subscription. Access comes with the Enterprise Optimization Suite. You pay only for the AI usage you choose, tracked in a billing dashboard."}}, {"@type": "Question", "name": "Is AI Suite usage unlimited?", "acceptedAnswer": {"@type": "Answer", "text": "No. Included access means the tools are there when you want them. Usage is pay-as-you-go."}}, {"@type": "Question", "name": "Do I need the AI Agent to use the AI Suite or AI Nurture?", "acceptedAnswer": {"@type": "Answer", "text": "No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering."}}, {"@type": "Question", "name": "Which nurtures are included?", "acceptedAnswer": {"@type": "Answer", "text": "Thirteen situational nurtures matched to why a deal stalled, including Ghosted, Offer Rejected, Contract Rejected and Cancelled Deal, plus timed nurtures at 30 days, 3 months, 6 months and 12 months. AI Nurture adds a tailored 60-day campaign for an individual seller."}}, {"@type": "Question", "name": "Are nurtures available in Spanish?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every nurture runs in English and Spanish."}}, {"@type": "Question", "name": "Is training included?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The AI Suite includes a knowledge base of recorded walkthroughs covering the whole system, which works as on-demand onboarding. Your dedicated channel with our team is there for anything else."}}, {"@type": "Question", "name": "Does DNC checking make my outreach compliant?", "acceptedAnswer": {"@type": "Answer", "text": "DNC checking is a tool that helps you screen existing contacts. It is not a guarantee of compliant outreach. You remain responsible for following the rules that apply to your calls, texts and emails."}}, {"@type": "Question", "name": "Are AI Projections a guarantee?", "acceptedAnswer": {"@type": "Answer", "text": "No. Projections are estimates based on your KPIs, accounting and insights. They help you explore what may lie ahead. They are not guaranteed outcomes or financial advice."}}, {"@type": "Question", "name": "How accurate is AI Underwriting?", "acceptedAnswer": {"@type": "Answer", "text": "AI Underwriting gives you a working analysis that you control. You can add or remove comps and notes and rerun it at any time. Treat the output as decision support and apply your own judgment before making an offer."}}]}</script>
   </div>
 </section>
 <section class="cta" aria-labelledby="cta-h">

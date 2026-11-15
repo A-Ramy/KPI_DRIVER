@@ -38,6 +38,14 @@ def book_attrs(key):
     return f'{BOOK_BASE}{CAL[key]}" target="_blank" rel="noopener" data-book="{CAL[key]}'
 FONTS = "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
 
+THEME_JS = ("<script>(function(){var d=document.documentElement;try{if(!d.hasAttribute('data-theme')){var s=null;"
+            "try{s=localStorage.getItem('kd-theme')}catch(e){}"
+            "d.setAttribute('data-theme',s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'))}"
+            "if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)d.classList.add('anim')}catch(e){}})()</script>")
+TEAM = [("Brandy Pollack", "Chief Executive Officer"), ("Ahmed Ramy", "Chief Technology Officer"), ("Jan Arpilleda", "Lead Account Manager"),
+        ("Anas Abid", "Tech & Support Team Lead"), ("Mostafa Kourany", "Accounting & Financial Advisor")]
+NOINDEX = set()
+
 FAQS = json.loads((SRC / "data" / "faqs.json").read_text(encoding="utf8"))
 BLOG = json.loads((SRC / "data" / "blog.json").read_text(encoding="utf8"))
 POSTS = sorted(BLOG["posts"], key=lambda p: p["date"], reverse=True)
@@ -57,7 +65,7 @@ def nav(root, current):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{root}index.html" aria-label="KPI DRIVER home"><img src="{root}assets/img/logo-light-text.svg" alt="KPI DRIVER" width="121" height="30"></a>
+    <a class="brand" href="{root}index.html" aria-label="KPI DRIVER home"><img class="logo--dark" src="{root}assets/img/logo-light-text.svg" alt="KPI DRIVER" width="121" height="30"><img class="logo--light" src="{root}assets/img/logo-dark-text.svg" alt="" width="121" height="30"></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16"/></svg>
     </button>
@@ -81,6 +89,10 @@ def nav(root, current):
       </ul>
       <a class="btn btn--primary btn--sm nav__cta" href="{book_attrs('header')}" data-event="discovery_call_click" data-label="header">Book a Discovery Call</a>
     </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">
+      <svg class="i-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
+    </button>
   </div>
 </header>"""
 
@@ -160,11 +172,47 @@ def expand(body, root):
             .replace("{{booking_url}}", BOOKING_URL).replace("{{status_url}}", STATUS_URL))
 
 
+def ld(obj):
+    return f'<script type="application/ld+json">{json.dumps(obj, ensure_ascii=False)}</script>'
+
+
+def crumbs_ld(path, meta):
+    if path in ("index.html", "404.html", "thank-you.html"):
+        return ""
+    label = meta.get("crumb") or meta["title"].split(" | ")[0].split(" — ")[0]
+    trail = [("Home", "/")]
+    if path.startswith("services/"): trail.append(("Services", "/services"))
+    if path.startswith(("post/", "blog-category/")): trail.append(("Blog", "/blog"))
+    trail.append((label, route_of(path)))
+    return ld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "name": n, "item": ORIGIN + u} for i, (n, u) in enumerate(trail)]})
+
+
+def page_ld(path):
+    if path == "index.html":
+        return ld({"@context": "https://schema.org", "@type": "WebSite", "name": "KPI DRIVER", "url": ORIGIN, "inLanguage": "en-US",
+                   "description": "CRM, KPI tracking and AI Suite for real estate investors and their teams."})
+    if path == "services.html":
+        return ld({"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "KPI DRIVER Enterprise Optimization Suite",
+                   "applicationCategory": "BusinessApplication", "applicationSubCategory": "Real estate CRM", "operatingSystem": "Web, iOS, Android",
+                   "description": "A real estate CRM with dedicated pipelines, KPI tracking and included access to a nine-tool AI Suite, built by investors for investors.",
+                   "audience": {"@type": "BusinessAudience", "audienceType": "Real estate investors and their teams"},
+                   "featureList": ["Lead capture and acquisitions pipeline", "Bilingual nurture campaigns", "Dispositions pipeline", "Transaction coordination and document signatures",
+                                   "Contractor and vendor management", "Owned and rental property management", "KPI dashboards", "AI Notes Taker", "AI Sales Coach", "AI Training Coach",
+                                   "AI Underwriting", "AI Skiptracing", "AI Data Enrichment", "AI Dashboard", "AI Insights", "AI Projections"],
+                   "provider": {"@type": "Organization", "name": "KPI DRIVER", "url": ORIGIN}})
+    if path == "our-team.html":
+        return ld({"@context": "https://schema.org", "@type": "Organization", "name": "KPI DRIVER", "url": ORIGIN,
+                   "employee": [{"@type": "Person", "name": n, "jobTitle": r, "worksFor": {"@type": "Organization", "name": "KPI DRIVER"}} for n, r in TEAM]})
+    return ""
+
+
 def head(meta, path, root):
     title, desc = meta["title"], meta["description"]
     canonical = ORIGIN + route_of(path)
-    robots = "index, follow" if PRODUCTION and meta.get("robots") != "noindex" else "noindex, nofollow"
-    extra = meta.get("jsonld", "")
+    if meta.get("robots") == "noindex": NOINDEX.add(path)
+    robots = "index, follow, max-image-preview:large, max-snippet:-1" if PRODUCTION and meta.get("robots") != "noindex" else "noindex, nofollow"
+    extra = meta.get("jsonld", "") + crumbs_ld(path, meta) + page_ld(path)
     return f"""<title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="{robots}">
@@ -177,11 +225,13 @@ def head(meta, path, root):
 <meta property="og:image" content="{ORIGIN}/assets/img/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070b11">
+{THEME_JS}
 <link rel="icon" href="{root}assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="{root}assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{FONTS}">
+<link rel="preload" as="style" href="{FONTS}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{FONTS}"></noscript>
 <link rel="stylesheet" href="{root}assets/css/site.css">
 {extra}"""
 
@@ -221,7 +271,7 @@ def render(path, meta, body):
     dest.write_text(page, encoding="utf8")
     if path == "index.html":
         # Fragment variant for hosts that wrap the page in their own document skeleton.
-        frag = f'<title>KPI DRIVER Website Preview</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="stylesheet" href="{FONTS}">\n<link rel="stylesheet" href="assets/css/site.css">\n<script>document.documentElement.classList.add("no-js")</script>\n{inner}\n'
+        frag = f'<title>KPI DRIVER Website Preview</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="stylesheet" href="{FONTS}">\n<link rel="stylesheet" href="assets/css/site.css">\n<script>document.documentElement.classList.add("no-js")</script>{THEME_JS}\n{inner}\n'
         (OUT / "_preview-index.html").write_text(frag, encoding="utf8")
     return path
 
@@ -237,9 +287,47 @@ def fmt_date(iso):
     return f"{['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][m-1]} {d}, {y}"
 
 
+CATS = [
+    {"slug": "kpis-performance", "name": "KPIs & Performance", "desc": "Which numbers to track across acquisitions, dispositions and marketing, and how to read them."},
+    {"slug": "crm-systems", "name": "CRM & Systems", "desc": "How to choose, set up and run the CRM and pipelines behind a real estate investing business."},
+    {"slug": "ai-automation", "name": "AI & Automation", "desc": "Where AI agents, call coaching and automation help an investing team, and where they do not."},
+    {"slug": "marketing-lead-generation", "name": "Marketing & Lead Generation", "desc": "Lead sources, follow-up and nurture, and how to measure what marketing returns."},
+    {"slug": "acquisitions-sales", "name": "Acquisitions & Sales", "desc": "Seller conversations, underwriting, offers and coaching for lead and acquisition managers."},
+    {"slug": "dispositions-transactions", "name": "Dispositions & Transactions", "desc": "Buyers lists, deal marketing, transaction coordination and closing."},
+    {"slug": "rentals-portfolio", "name": "Rentals & Portfolio", "desc": "Owned properties, tenants, contractors and portfolio reporting."},
+    {"slug": "scaling-leadership", "name": "Scaling & Leadership", "desc": "Hiring, process, finance and the systems that let an investing business grow."},
+    {"slug": "product-news-updates", "name": "Product News & Updates", "desc": "Releases and walkthroughs from the KPI DRIVER team."},
+    {"slug": "case-studies", "name": "Customer Stories", "desc": "How investors and their teams run on KPI DRIVER."},
+]
+CAT = {c["slug"]: c for c in CATS}
+# slug -> (category, content type, is the category's pillar guide)
+POST_META = {
+    "real-estate-kpis-that-matter": ("kpis-performance", "Guide", True),
+    "acquisition-kpis-real-estate-investors": ("kpis-performance", "Explainer", False),
+    "disposition-kpis-real-estate-investors": ("kpis-performance", "Explainer", False),
+    "how-real-estate-teams-track-deals": ("kpis-performance", "How-to", False),
+    "best-real-estate-crm-for-investors": ("crm-systems", "Guide", True),
+    "real-estate-investor-pipeline-system": ("crm-systems", "Guide", False),
+    "why-real-estate-crms-fail-investors": ("crm-systems", "Explainer", False),
+    "crm-vs-spreadsheets-real-estate-investors": ("crm-systems", "Comparison", False),
+    "real-estate-investor-operating-system": ("crm-systems", "Explainer", False),
+    "real-estate-automation-system-investors": ("ai-automation", "Guide", True),
+    "ai-agents-real-estate-investors": ("ai-automation", "Explainer", False),
+    "voice-ai-vs-human-appointment-setters": ("ai-automation", "Comparison", False),
+    "automation-reduces-missed-leads-real-estate": ("ai-automation", "Explainer", False),
+    "real-estate-marketing-roi": ("marketing-lead-generation", "How-to", True),
+    "systems-that-scale-real-estate-investing": ("scaling-leadership", "Guide", True),
+}
+for _p in POSTS:
+    _c, _t, _pl = POST_META.get(_p["slug"], (_p["category_slug"], "Article", False))
+    _p.update(category_slug=_c, category=CAT[_c]["name"], type=_t, pillar=_pl)
+BY_SLUG = {p["slug"]: p for p in POSTS}
+PILLAR = {p["category_slug"]: p for p in POSTS if p["pillar"]}
+
+
 def post_row(p, root):
     return f"""<a class="post-row" href="{root}post/{p['slug']}.html">
-  <div class="post-row__meta"><b>{esc(p['category'])}</b><span>{fmt_date(p['date'])}</span></div>
+  <div class="post-row__meta"><b>{esc(p['category'])}</b><span>{fmt_date(p['date'])}</span><span class="typechip">{p['type']}</span></div>
   <div><h3>{esc(p['title'])}</h3><p>{esc(p['summary'])}</p></div>
   <span class="post-row__go" aria-hidden="true">→</span>
 </a>"""
@@ -247,67 +335,111 @@ def post_row(p, root):
 
 def cats_nav(root, current_slug=None):
     used = {p["category_slug"] for p in POSTS}
-    links = [f'<a href="{root}blog.html"{"" if current_slug else " aria-current=\"page\""}>All articles</a>']
-    for c in BLOG["categories"]:
-        if c["slug"] in used:
-            links.append(f'<a href="{root}blog-category/{c["slug"]}.html"{" aria-current=\"page\"" if c["slug"] == current_slug else ""}>{esc(c["name"])}</a>')
+    here = ' aria-current="page"'
+    links = [f'<a href="{root}blog.html"{"" if current_slug else here}>All articles</a>']
+    links += [f'<a href="{root}blog-category/{c["slug"]}.html"{here if c["slug"] == current_slug else ""}>{esc(c["name"])}</a>' for c in CATS if c["slug"] in used]
     return f'<nav class="cats" aria-label="Blog categories">{"".join(links)}</nav>'
+
+
+def related_for(p):
+    """Hub and spoke: the category's pillar guide first, then same-category posts, then the hand-picked ones."""
+    out = []
+    pil = PILLAR.get(p["category_slug"])
+    for c in ([pil] if pil else []) + [x for x in POSTS if x["category_slug"] == p["category_slug"]] + [BY_SLUG[s] for s in p.get("related", []) if s in BY_SLUG]:
+        if c["slug"] != p["slug"] and c not in out:
+            out.append(c)
+    return out[:3]
 
 
 def blog_pages():
     built = []
-    # index
+    R = "{{root}}"
     first, rest = POSTS[0], POSTS[1:]
+    guides = "".join(f'<a class="guide" href="{R}post/{g["slug"]}.html"><span class="note">{esc(g["category"])}</span><h3>{esc(g["title"])}</h3><span class="link arrow" style="margin-top:auto">Read the guide</span></a>' for g in PILLAR.values())
     body = f"""<section class="section phead section--grid"><div class="wrap">
-<ol class="crumbs"><li><a href="{{{{root}}}}index.html">Home</a></li><li>Blog</li></ol>
+<ol class="crumbs"><li><a href="{R}index.html">Home</a></li><li>Blog</li></ol>
 <h1>Notes from the <span class="hl-green">operator's seat</span></h1>
 <p class="lede">Practical writing on CRMs, KPI tracking, automation and AI for real estate investors and the teams who run their pipelines.</p>
 </div></section>
+<section class="section section--panel section--tight"><div class="wrap"><div class="head"><p class="eyebrow">Start here</p><h2>The guides</h2><p class="lede">One cornerstone guide per topic. Each links out to the shorter articles that go deeper.</p></div><div class="guides">{guides}</div></div></section>
 <section class="section section--paper section--tight"><div class="wrap stack stack--lg">
-{cats_nav('{{root}}')}
+{cats_nav(R)}
 <div>
-<a class="post-feature" href="{{{{root}}}}post/{first['slug']}.html">
+<a class="post-feature" href="{R}post/{first['slug']}.html">
   <span class="eyebrow">Latest · {esc(first['category'])} · {fmt_date(first['date'])}</span>
   <h2>{esc(first['title'])}</h2><p class="lede">{esc(first['summary'])}</p><span class="link arrow">Read the article</span>
 </a>
-<div class="posts">{''.join(post_row(p, '{{root}}') for p in rest)}</div>
+<div class="posts">{''.join(post_row(p, R) for p in rest)}</div>
 </div></div></section>
 {{{{> cta}}}}"""
-    built.append(render("blog.html", {"title": "Blog | KPI DRIVER — CRM, KPIs, Automation & AI for Real Estate Investors",
-        "description": "Practical articles on real estate CRMs, KPI tracking, automation and AI for investors and their teams."}, body))
-    # categories (all six existing URLs are kept; empty ones get a real empty state)
-    for c in BLOG["categories"]:
+    built.append(render("blog.html", {"title": "Blog | KPI DRIVER — CRM, KPIs, Automation & AI for Real Estate Investors", "crumb": "Blog",
+        "description": "Practical guides and articles on real estate CRMs, KPI tracking, automation and AI for investors and their teams."}, body))
+    for c in CATS:
         ps = [p for p in POSTS if p["category_slug"] == c["slug"]]
-        listing = f'<div class="posts">{"".join(post_row(p, "{{root}}") for p in ps)}</div>' if ps else \
-            f'<div class="stack"><h2 style="font-size:var(--step-2);text-transform:none">Nothing published in {esc(c["name"])} yet.</h2><p class="muted">New articles land on the main blog page first.</p><p><a class="link arrow" href="{{{{root}}}}blog.html">Browse all articles</a></p></div>'
+        pil = PILLAR.get(c["slug"])
+        start = f'<a class="post-feature" href="{R}post/{pil["slug"]}.html"><span class="eyebrow">Start here · the guide</span><h2>{esc(pil["title"])}</h2><p class="lede">{esc(pil["summary"])}</p><span class="link arrow">Read the guide</span></a>' if pil else ""
+        others = [p for p in ps if p is not pil]
+        listing = (start + f'<div class="posts">{"".join(post_row(p, R) for p in others)}</div>') if ps else \
+            f'<div class="stack"><h2 style="font-size:var(--step-2);text-transform:none">Nothing published in {esc(c["name"])} yet.</h2><p class="muted">New articles land on the main blog page first.</p><p><a class="link arrow" href="{R}blog.html">Browse all articles</a></p></div>'
         body = f"""<section class="section phead section--grid"><div class="wrap">
-<ol class="crumbs"><li><a href="{{{{root}}}}index.html">Home</a></li><li><a href="{{{{root}}}}blog.html">Blog</a></li><li>{esc(c['name'])}</li></ol>
-<h1>{esc(c['name'])}</h1></div></section>
-<section class="section section--paper section--tight"><div class="wrap stack stack--lg">{cats_nav('{{root}}', c['slug'])}{listing}</div></section>
+<ol class="crumbs"><li><a href="{R}index.html">Home</a></li><li><a href="{R}blog.html">Blog</a></li><li>{esc(c['name'])}</li></ol>
+<h1>{esc(c['name'])}</h1><p class="lede">{esc(c['desc'])}</p></div></section>
+<section class="section section--paper section--tight"><div class="wrap stack stack--lg">{cats_nav(R, c['slug'])}<div>{listing}</div></div></section>
 {{{{> cta}}}}"""
-        built.append(render(f"blog-category/{c['slug']}.html", {"title": f"{c['name']} | KPI DRIVER Blog", "nav": "blog.html",
-            "description": f"KPI DRIVER articles in {c['name']}.", "robots": "index" if ps else "noindex"}, body))
-    # posts
-    by_slug = {p["slug"]: p for p in POSTS}
+        built.append(render(f"blog-category/{c['slug']}.html", {"title": f"{c['name']} | KPI DRIVER Blog", "nav": "blog.html", "crumb": c["name"],
+            "description": f"{c['desc']} Articles from the KPI DRIVER blog.", "robots": "index" if ps else "noindex"}, body))
     for p in POSTS:
-        related = [by_slug[s] for s in p.get("related", []) if s in by_slug][:3]
-        ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "datePublished": p["date"],
-              "description": p["summary"], "author": {"@type": "Person", "name": p["author"]},
-              "publisher": {"@type": "Organization", "name": "KPI DRIVER"}, "mainEntityOfPage": f"{ORIGIN}/post/{p['slug']}"}
+        related = related_for(p)
+        pil = PILLAR.get(p["category_slug"])
+        post_ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "datePublished": p["date"], "dateModified": p["date"],
+              "description": p["summary"], "articleSection": p["category"], "inLanguage": "en-US", "image": f"{ORIGIN}/assets/img/og-default.png",
+              "author": {"@type": "Person", "name": p["author"], "jobTitle": "Chief Technology Officer", "url": f"{ORIGIN}/our-team"},
+              "publisher": {"@type": "Organization", "name": "KPI DRIVER", "url": ORIGIN}, "mainEntityOfPage": f"{ORIGIN}/post/{p['slug']}"}
+        hub_guide = f' Start with the guide: <a class="link" href="{R}post/{pil["slug"]}.html">{esc(pil["title"])}</a>.' if pil and pil is not p else ""
+        hub = f'<aside class="hub tone-crm"><p class="note">Part of {esc(p["category"])}</p><p>{esc(CAT[p["category_slug"]]["desc"])}{hub_guide}</p><p><a class="link arrow" href="{R}blog-category/{p["category_slug"]}.html">All {esc(p["category"])} articles</a></p></aside>'
         rel = f"""<section class="section section--tight"><div class="wrap"><div class="head"><p class="eyebrow">Keep reading</p><h2>Related articles</h2></div>
-<div class="posts">{''.join(post_row(r, '{{root}}') for r in related)}</div></div></section>""" if related else ""
+<div class="posts">{''.join(post_row(r, R) for r in related)}</div></div></section>""" if related else ""
         body = f"""<section class="section phead section--grid"><div class="wrap">
-<ol class="crumbs"><li><a href="{{{{root}}}}index.html">Home</a></li><li><a href="{{{{root}}}}blog.html">Blog</a></li><li><a href="{{{{root}}}}blog-category/{p['category_slug']}.html">{esc(p['category'])}</a></li></ol>
+<ol class="crumbs"><li><a href="{R}index.html">Home</a></li><li><a href="{R}blog.html">Blog</a></li><li><a href="{R}blog-category/{p['category_slug']}.html">{esc(p['category'])}</a></li></ol>
 <h1 style="max-width:20ch">{esc(p['title'])}</h1>
 <p class="lede">{esc(p['summary'])}</p>
-<div class="byline"><img src="{{{{root}}}}assets/img/team/ahmed.webp" alt="" width="44" height="44"><span>By <b>{esc(p['author'])}</b>, Chief Technology Officer</span><span>·</span><time datetime="{p['date']}">{fmt_date(p['date'])}</time></div>
+<div class="byline"><img src="{R}assets/img/team/ahmed.webp" alt="" width="44" height="44"><span>By <a class="link" href="{R}our-team.html"><b>{esc(p['author'])}</b></a>, Chief Technology Officer</span><span>·</span><time datetime="{p['date']}">{fmt_date(p['date'])}</time><span class="typechip">{p['type']}</span></div>
 </div></section>
-<section class="section section--paper section--tight"><div class="wrap"><article class="article"><div class="article__body">{p['body']}</div></article></div></section>
+<section class="section section--paper section--tight"><div class="wrap"><article class="article"><div class="article__body">{p['body']}</div>{hub}</article></div></section>
 {rel}
 {{{{> cta}}}}"""
-        built.append(render(f"post/{p['slug']}.html", {"title": f"{p['title']} | KPI DRIVER Blog", "description": p["summary"], "nav": "blog.html",
-            "og_type": "article", "jsonld": f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'}, body))
+        built.append(render(f"post/{p['slug']}.html", {"title": f"{p['title']} | KPI DRIVER Blog", "description": p["summary"], "nav": "blog.html", "crumb": p["title"],
+            "og_type": "article", "jsonld": ld(post_ld)}, body))
     return built
+
+
+LLMS = """# KPI DRIVER
+
+> KPI DRIVER is a real estate business operations platform built by investors for investors. Its CRM runs lead capture, acquisitions, nurture, dispositions, transaction coordination, contractors and vendors, and owned and rental properties, with KPI tracking across every pipeline and included access to a nine-tool AI Suite.
+
+## Key facts
+- Company: KPI DRIVER, LLC, Pembroke Pines, Florida, USA. Email: info@kpidriver.com
+- Audience: real estate investors and their teams (acquisitions, dispositions, transaction coordination, property management)
+- Offerings: (1) Enterprise Optimization Suite = CRM + AI Suite access. (2) Enterprise Optimization Suite + AI Agent.
+- AI Suite access is included with no additional AI Suite subscription. Usage is optional and pay-as-you-go.
+- The AI Agent is a separate, optional offering. It follows up with new and older leads by AI voice, SMS, email and iMessage within rules the client sets.
+- AI Suite tools: AI Notes Taker, AI Sales Coach, AI Training Coach, AI Underwriting, AI Skiptracing, AI Data Enrichment, AI Dashboard, AI Insights, AI Projections.
+- Nurture is backup for the acquisitions team: situational, timed and AI-tailored campaigns revive stalled leads and hand them back to acquisitions. All nurtures are in English and Spanish.
+- Support is personal: every client has a dedicated channel with the team. No chatbots and no ticket queue.
+- Pricing is discussed on a discovery call.
+
+## Pages
+- [Home]({o}/): overview of the platform
+- [Services]({o}/services): the three product areas and the two offerings
+- [CRM]({o}/services/crm): pipelines, communication, automations and KPI tracking
+- [AI Suite]({o}/services/ai-suite): the nine AI tools, nurture and the built-in knowledge base
+- [AI Agent]({o}/services/ai-agent): the optional follow-up agent
+- [Our Team]({o}/our-team): the people behind the platform
+- [Contact]({o}/contact-us): contact details and discovery call booking
+
+## Guides
+{guides}
+"""
 
 
 def main():
@@ -320,11 +452,18 @@ def main():
         meta, body = parse(f.read_text(encoding="utf8"))
         built.append(render(str(f.relative_to(SRC / "pages")).replace("\\", "/"), meta, body))
     built += blog_pages()
-    indexable = [p for p in built if p not in ("404.html", "thank-you.html") and not p.startswith("blog-category/webinars") ]
-    urls = "\n".join(f"  <url><loc>{ORIGIN}{route_of(p)}</loc></url>" for p in sorted(indexable))
+    today = date.today().isoformat()
+    post_dates = {f"post/{p['slug']}.html": p["date"] for p in POSTS}
+    indexable = sorted(p for p in built if p not in ("404.html", "thank-you.html") and p not in NOINDEX)
+    urls = "\n".join(f"  <url><loc>{ORIGIN}{route_of(p)}</loc><lastmod>{post_dates.get(p, today)}</lastmod></url>" for p in indexable)
     (OUT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n', encoding="utf8")
-    robots = f"User-agent: *\nAllow: /\nDisallow: /thank-you\n\nSitemap: {ORIGIN}/sitemap.xml\n" if PRODUCTION else "User-agent: *\nDisallow: /\n"
+    bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot"]
+    ai = "".join(f"User-agent: {b}\n" for b in bots)
+    robots = (f"User-agent: *\nAllow: /\nDisallow: /thank-you\n\n# AI search and assistant crawlers are welcome\n{ai}Allow: /\nDisallow: /thank-you\n\nSitemap: {ORIGIN}/sitemap.xml\n"
+              if PRODUCTION else "User-agent: *\nDisallow: /\n")
     (OUT / "robots.txt").write_text(robots, encoding="utf8")
+    guides = "\n".join(f"- [{g['title']}]({ORIGIN}/post/{g['slug']}): {g['summary']}" for g in PILLAR.values())
+    (OUT / "llms.txt").write_text(LLMS.format(o=ORIGIN, guides=guides), encoding="utf8")
     print(f"built {len(built)} pages -> {OUT} ({'production' if PRODUCTION else 'preview, noindex'})")
 
 

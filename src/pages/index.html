@@ -30,8 +30,8 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
               <path d="M35 19 A48 48 0 0 1 58 12" fill="none" stroke="#ea8c1c" stroke-width="9"/>
               <path d="M63 12 A48 48 0 0 1 86 20" fill="none" stroke="#fcaf17" stroke-width="9"/>
               <path d="M90 23 A48 48 0 0 1 108 60" fill="none" stroke="#45b649" stroke-width="9"/>
-              <g class="gauge__needle"><path d="M60 60 L60 20" stroke="#e9eef5" stroke-width="3" stroke-linecap="round" fill="none"/></g>
-              <circle cx="60" cy="60" r="5" fill="#e9eef5"/>
+              <g class="gauge__needle"><path d="M60 60 L60 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/></g>
+              <circle cx="60" cy="60" r="5" fill="currentColor"/>
             </svg>
             <div><b>68%</b><span>Lead → appointment</span></div>
           </div>
@@ -66,8 +66,9 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
   </div>
 </section>
 
-<section class="section section--tight section--panel" aria-label="What KPI DRIVER does">
+<section class="section section--tight section--panel" aria-labelledby="does-h">
   <div class="wrap">
+    <h2 class="sr-only" id="does-h">What KPI DRIVER does</h2>
     <ul class="pillars">
       <li class="tone-crm"><p class="note">Run the business</p><h3>Keep operations and teams connected</h3><p class="muted">Acquisitions, dispositions, transaction coordination, vendors and rentals each run on their own pipeline inside one system.</p></li>
       <li class="tone-agent"><p class="note">See the whole picture</p><h3>Know what is working and what is stuck</h3><p class="muted">KPI tracking across every pipeline shows performance, opportunities and bottlenecks without a spreadsheet rebuild.</p></li>
@@ -209,26 +210,28 @@ jsonld: <script type="application/ld+json">{"@context":"https://schema.org","@ty
       <p><a class="link arrow" href="{{root}}our-team.html">Meet the team</a></p>
     </div>
     <div class="cols cols--2">
-      <div class="feature tone-crm"><h4>Investor-led</h4><p>CEO Brandy Pollack brings 30+ years in real estate investing to how the platform is shaped.</p></div>
-      <div class="feature tone-crm"><h4>Built in-house</h4><p>CTO Ahmed Ramy leads development of the KPI tracking engine and the integrations around it.</p></div>
-      <div class="feature tone-suite"><h4>Still building</h4><p>The AI Suite is the latest chapter: nine tools shaped by the same day-to-day work as the CRM.</p></div>
-      <div class="feature tone-suite"><h4>Used before shipped</h4><p>Pipelines, drips and workflows come from an operating business, so they reflect how deals really move.</p></div>
+      <div class="feature tone-crm"><h3 class="h4">Investor-led</h3><p>CEO Brandy Pollack brings 30+ years in real estate investing to how the platform is shaped.</p></div>
+      <div class="feature tone-crm"><h3 class="h4">Built in-house</h3><p>CTO Ahmed Ramy leads development of the KPI tracking engine and the integrations around it.</p></div>
+      <div class="feature tone-suite"><h3 class="h4">Still building</h3><p>The AI Suite is the latest chapter: nine tools shaped by the same day-to-day work as the CRM.</p></div>
+      <div class="feature tone-suite"><h3 class="h4">Used before shipped</h3><p>Pipelines, drips and workflows come from an operating business, so they reflect how deals really move.</p></div>
     </div>
   </div>
 </section>
+
+{{> support}}
 
 <section class="section" id="onboarding">
   <div class="wrap split">
     <div class="stack">
       <p class="eyebrow">Implementation and support</p>
       <h2>You will not be handed a login and left alone.</h2>
-      <p class="lede">Moving your business into a new system is real work. We do it with you.</p>
+      <p class="lede">Moving your business into a new system is real work. We do it with you. Most steps run in parallel, and a typical implementation is live in two to three weeks.</p>
     </div>
     <ol class="steps">
-      <li><div><h4>Discovery call</h4><p>We learn how your operation runs today and whether KPI DRIVER fits.</p></div></li>
-      <li><div><h4>CRM migration</h4><p>Your existing data moves across with a focus on keeping it intact. Scope and timing depend on your current system.</p></div></li>
-      <li><div><h4>Onboarding with a dedicated account manager</h4><p>Onboarding, training and strategy sessions with a named person who knows your account.</p></div></li>
-      <li><div><h4>Ongoing support</h4><p>Our tech and support team stays available for training, customization and questions as you grow.</p></div></li>
+      <li><div><h3 class="h4">Discovery call</h3><p>We learn how your operation runs today and whether KPI DRIVER fits.</p></div></li>
+      <li><div><h3 class="h4">CRM migration</h3><p>Your existing data moves across with a focus on keeping it intact. Scope and timing depend on your current system.</p></div></li>
+      <li><div><h3 class="h4">Onboarding with a dedicated account manager</h3><p>Onboarding, training and strategy sessions with a named person who knows your account.</p></div></li>
+      <li><div><h3 class="h4">Ongoing support in your own channel</h3><p>Training, changes and questions go straight to our team. The recorded walkthroughs in the AI Suite cover the rest on demand.</p></div></li>
     </ol>
   </div>
 </section>

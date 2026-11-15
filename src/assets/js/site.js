@@ -237,7 +237,7 @@
   /* ---- gear HUD + rev bar: scrolling the page shifts gears ---- */
   var hud = doc.querySelector(".gearhud");
   var bar = doc.createElement("div"); bar.className = "revbar"; bar.setAttribute("aria-hidden", "true"); doc.body.appendChild(bar);
-  var colors = ["#ed2024", "#ea8c1c", "#ea8c1c", "#fcaf17", "#fcaf17", "#45b649"];
+  var colors = ["#ed2024", "#ea8c1c", "#ea8c1c", "#fcaf17", "#fcaf17", "#43b749"];
   var gears = hud ? hud.querySelectorAll("li") : [];
   function onScroll() {
     var max = root.scrollHeight - window.innerHeight;
@@ -254,10 +254,12 @@
   /* ---- hero tachometer (canvas): the brand gauge, drawn large behind the command centre ---- */
   var cv = doc.getElementById("tach");
   if (cv && cv.getContext) {
+    var needleColor = getComputedStyle(cv).color;
+    doc.addEventListener("themechange", function () { needleColor = getComputedStyle(cv).color; if (reduce) draw(); });
     var ctx = cv.getContext("2d"), cur = 0.04, target = 0.8, raf = null, t0 = performance.now();
     var A0 = Math.PI * 0.82, SWEEP = Math.PI * 1.36; /* gauge opens downward like the logo */
     function lerpColor(p) {
-      var stops = [[237, 32, 36], [234, 140, 28], [252, 175, 23], [69, 182, 73]];
+      var stops = [[237, 32, 36], [234, 140, 28], [252, 175, 23], [67, 183, 73]];
       var x = p * 3, i = Math.min(2, Math.floor(x)), f = x - i, a = stops[i], b = stops[i + 1];
       return [0, 1, 2].map(function (k) { return Math.round(a[k] + (b[k] - a[k]) * f); }).join(",");
     }
@@ -275,14 +277,14 @@
         ctx.stroke();
       }
       /* inner hairline arcs */
-      [0.78, 0.62].forEach(function (k, n) { ctx.beginPath(); ctx.arc(cx, cy, R * k, A0, A0 + SWEEP); ctx.lineWidth = 1; ctx.strokeStyle = "rgba(255,255,255," + (n ? 0.05 : 0.09) + ")"; ctx.stroke(); });
+      [0.78, 0.62].forEach(function (k, n) { ctx.beginPath(); ctx.arc(cx, cy, R * k, A0, A0 + SWEEP); ctx.lineWidth = 1; ctx.globalAlpha = n ? 0.07 : 0.12; ctx.strokeStyle = needleColor; ctx.stroke(); ctx.globalAlpha = 1; });
       /* lit arc + needle */
       var an = A0 + SWEEP * cur, g = ctx.createLinearGradient(cx - R, 0, cx + R, 0);
-      g.addColorStop(0, "rgba(237,32,36,0.0)"); g.addColorStop(1, "rgba(69,182,73,0.55)");
+      g.addColorStop(0, "rgba(237,32,36,0.0)"); g.addColorStop(1, "rgba(67,183,73,0.55)");
       ctx.beginPath(); ctx.arc(cx, cy, R * 0.9, A0, an); ctx.lineWidth = 2; ctx.strokeStyle = g; ctx.stroke();
       ctx.save(); ctx.shadowColor = "rgba(" + lerpColor(cur) + ",0.9)"; ctx.shadowBlur = 22;
       ctx.beginPath(); ctx.moveTo(cx + Math.cos(an) * R * 0.56, cy + Math.sin(an) * R * 0.56); ctx.lineTo(cx + Math.cos(an) * R * 1.02, cy + Math.sin(an) * R * 1.02);
-      ctx.lineWidth = 3; ctx.lineCap = "round"; ctx.strokeStyle = "rgba(233,238,245,0.95)"; ctx.stroke(); ctx.restore();
+      ctx.lineWidth = 3; ctx.lineCap = "round"; ctx.strokeStyle = needleColor; ctx.stroke(); ctx.restore();
     }
     function tick(now) {
       var idle = Math.sin((now - t0) / 900) * 0.012;
@@ -298,4 +300,54 @@
       else raf = requestAnimationFrame(tick);
     }
   }
+})();
+
+
+/* ===================== v3: theme toggle + scroll reveals ===================== */
+(function () {
+  "use strict";
+  var doc = document, root = doc.documentElement;
+
+  /* ---- theme: the head script sets the initial value; this handles the switch ---- */
+  var buttons = doc.querySelectorAll("[data-theme-toggle]");
+  var meta = doc.querySelector('meta[name="theme-color"]');
+  function paint(t) {
+    buttons.forEach(function (b) { b.setAttribute("aria-label", t === "light" ? "Switch to dark mode" : "Switch to light mode"); });
+    if (meta) meta.setAttribute("content", t === "light" ? "#ffffff" : "#070b11");
+    doc.dispatchEvent(new Event("themechange"));
+  }
+  function current() { return root.getAttribute("data-theme") === "light" ? "light" : "dark"; }
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = current() === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", t);
+      try { localStorage.setItem("kd-theme", t); } catch (e) {}
+      paint(t);
+      (window.dataLayer = window.dataLayer || []).push({ event: "theme_switch", theme: t });
+    });
+  });
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: light)");
+    var follow = function (e) { var s = null; try { s = localStorage.getItem("kd-theme"); } catch (x) {} if (!s) { root.setAttribute("data-theme", e.matches ? "light" : "dark"); paint(current()); } };
+    if (mq.addEventListener) mq.addEventListener("change", follow);
+  }
+  if (window.MutationObserver) new MutationObserver(function () { paint(current()); }).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+  buttons.forEach(function (b) { b.setAttribute("aria-label", current() === "light" ? "Switch to dark mode" : "Switch to light mode"); });
+
+  /* ---- scroll reveals: only elements below the first screen are hidden, and only when motion is welcome ---- */
+  if (!root.classList.contains("anim") || !("IntersectionObserver" in window)) return;
+  var sel = ".head, .pillars > li, .kq > li, .tool, .triad__card, .bracket, .model, .offer, .feature, .steps > li, .person, .post-row, .post-feature, .guide, .spec, .dash, .flow, .circuit, .compare-cols, .table-scroll, .support__chat, .kb > li, .faq, .contact-list, .form, .booking, .reviews, .device, .hub";
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -6% 0px", threshold: 0.06 });
+  var vh = window.innerHeight;
+  doc.querySelectorAll(sel).forEach(function (el) {
+    if (el.closest(".hero, .phead, [hidden], dialog")) return;
+    if (el.getBoundingClientRect().top < vh) return; /* already on screen: leave it alone, no flash */
+    var i = 0, s = el;
+    while ((s = s.previousElementSibling) && i < 5) i++;
+    el.style.setProperty("--d", (i * 70) + "ms");
+    el.classList.add("rv");
+    io.observe(el);
+  });
 })();

@@ -26,7 +26,11 @@
   ],
   [
    "Do you offer support and training?",
-   "Yes. Every client works with a dedicated account manager for onboarding and ongoing support, and our tech and support team is available for training, customization and strategy sessions."
+   "Yes, and it is personal. Every client has a dedicated channel with our team and a dedicated account manager. There are no chatbots and no ticket queue, and we reply as soon as we can. Routine changes and edits are made at no extra cost. If a request is substantial, we send a quote first. A knowledge base of recorded walkthroughs inside the AI Suite covers the system on demand."
+  ],
+  [
+   "How long does implementation take?",
+   "Most steps run in parallel, and a typical implementation is live in two to three weeks. The timing depends on your data, your current system and how quickly approvals come back."
   ]
  ],
  "services": [
@@ -45,6 +49,10 @@
   [
    "What is scoped separately?",
    "Work that depends on your setup is scoped on a call. Examples include custom automations, custom drip campaigns, custom landing pages, third-party integrations, Slack alerts and dedicated accounting support."
+  ],
+  [
+   "What does support look like after launch?",
+   "Every client has a dedicated channel with our team. You talk to a person, not a bot, and there is no ticket queue. Routine changes and edits are made at no extra cost. Substantial requests are quoted before any work starts."
   ],
   [
    "Does KPI DRIVER integrate with my existing tools?",
@@ -79,6 +87,10 @@
   [
    "How does the AI Suite relate to the CRM?",
    "The AI Suite is a companion platform supplied alongside the CRM. It adds call capture and coaching, underwriting, skiptracing, data enrichment, dashboards, insights and projections on top of the operation your CRM already runs."
+  ],
+  [
+   "What if I need a change to my setup?",
+   "Message us in your dedicated channel. Routine changes and edits are made at no extra cost. If a request is substantial, we send a quote before starting."
   ]
  ],
  "suite": [
@@ -97,6 +109,18 @@
   [
    "Do I need the AI Agent to use the AI Suite or AI Nurture?",
    "No. The AI Suite and AI Nurture work without the AI Agent. The AI Agent is a separate, optional offering."
+  ],
+  [
+   "Which nurtures are included?",
+   "Thirteen situational nurtures matched to why a deal stalled, including Ghosted, Offer Rejected, Contract Rejected and Cancelled Deal, plus timed nurtures at 30 days, 3 months, 6 months and 12 months. AI Nurture adds a tailored 60-day campaign for an individual seller."
+  ],
+  [
+   "Are nurtures available in Spanish?",
+   "Yes. Every nurture runs in English and Spanish."
+  ],
+  [
+   "Is training included?",
+   "Yes. The AI Suite includes a knowledge base of recorded walkthroughs covering the whole system, which works as on-demand onboarding. Your dedicated channel with our team is there for anything else."
   ],
   [
    "Does DNC checking make my outreach compliant?",

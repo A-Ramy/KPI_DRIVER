@@ -2,6 +2,16 @@
 
 Status: **preview complete, live site untouched.** Nothing was published, no Webflow page, CMS item, script or setting was changed. All Webflow access so far was read-only.
 
+## Revision 3 (2026-11-15)
+
+See `docs/AUDIT.md` for the full audit, the list of changes and measured scores. In short: light and dark themes, Brandfetch palette, expanded bilingual nurtures, human-support section, knowledge base inside the AI Suite, motion system, structured data and `llms.txt`, new blog taxonomy with hub-and-spoke linking, and `docs/editorial-calendar.csv`.
+
+Webflow notes for this revision:
+- **Themes:** build the tokens as Webflow Variables with two modes (dark, light). The toggle and the head bootstrap script are custom code.
+- **Custom code embeds:** hero tachometer, gear indicator, lifecycle circuit, booking popup, scroll reveals, theme toggle. About 20 KB of JavaScript in total, added as site footer code or a hosted script.
+- **Blog CMS:** add `Type` (option), `Pillar` (switch) and replace the six old categories with the ten in `build.py` (`CATS`). Related posts can stay a multi-reference; the "part of" box reads the category.
+- **AI search:** Webflow can serve `llms.txt` and custom `robots.txt` from site settings.
+
 ## 0. Revision 2 (your feedback, 2026-11-12)
 
 1. **AI Suite is live.** All "Upcoming / January 2027" labels and wording are removed. The suite FAQ now says the nine tools are available.

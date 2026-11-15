@@ -1,44 +1,44 @@
 old_path,new_path,type,reason
-/knowledge-base,/contact-us,301,Knowledge Base retired from the public site; contact page lists support routes. Replace target with the client help destination once confirmed.
-/knowledge-base-categories/calendars-forms,/contact-us,301,KB category retired
-/knowledge-base-categories/contacts-opportunities,/contact-us,301,KB category retired
-/knowledge-base-categories/dashboard-reporting,/contact-us,301,KB category retired
-/knowledge-base-categories/general-system-support,/contact-us,301,KB category retired
-/knowledge-base-categories/kpis-pipelines,/contact-us,301,KB category retired
-/knowledge-base-categories/phones-sms-emails,/contact-us,301,KB category retired
-/article/importing-updating-new-contacts-opportunities,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/looker-dashboard-walkthrough,/services/crm,301,Closest public replacement
-/article/exporting-contacts-opportunities,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/websites-funnels-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/crm-dashboard-walkthrough,/services/crm,301,Closest public replacement
-/article/appointment-report-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/call-agent-report-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/contractors-vendors-pipeline,/services/crm,301,Closest public replacement
-/article/owned-pipeline-drips-kpis,/services/crm,301,Closest public replacement
-/article/tc-dispositions-pipelines-drips-kpis,/services/crm,301,Closest public replacement
-/article/nurture-pipeline-drips-kpis,/services/crm,301,Closest public replacement
-/article/acq-pipeline-drips-kpis,/services/crm,301,Closest public replacement
-/article/calendars-booking-statuses,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/live-transfers,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/scripts-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/conversations-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/email-campaigns,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/power-dialer-manual-actions,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/bulk-sms-emails,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/sms-email-snippets,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/tags-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/tasks-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/smart-lists-usage,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/merging-contacts,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/forms-surveys-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/contacts-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/custom-fields-overview,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/buying-setting-up-phone-numbers,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/user-profile-set-up-adding-users-access-levels,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
-/article/documents-signatures,/services/crm,301,Closest public replacement
-/article/pre-build-call,/services,301,Closest public replacement
-/article/pre-migration-call,/services,301,Closest public replacement
-/article/payment-method-a2p-10dlc-twilio,,410,Client training video with no public replacement; return 410 (or move to the client help destination) rather than redirecting to an unrelated page
+/knowledge-base,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/knowledge-base-categories/calendars-forms,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/knowledge-base-categories/contacts-opportunities,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/knowledge-base-categories/dashboard-reporting,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/knowledge-base-categories/general-system-support,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/knowledge-base-categories/kpis-pipelines,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/knowledge-base-categories/phones-sms-emails,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/importing-updating-new-contacts-opportunities,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/looker-dashboard-walkthrough,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/exporting-contacts-opportunities,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/websites-funnels-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/crm-dashboard-walkthrough,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/appointment-report-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/call-agent-report-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/contractors-vendors-pipeline,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/owned-pipeline-drips-kpis,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/tc-dispositions-pipelines-drips-kpis,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/nurture-pipeline-drips-kpis,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/acq-pipeline-drips-kpis,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/calendars-booking-statuses,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/live-transfers,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/scripts-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/conversations-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/email-campaigns,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/power-dialer-manual-actions,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/bulk-sms-emails,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/sms-email-snippets,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/tags-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/tasks-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/smart-lists-usage,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/merging-contacts,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/forms-surveys-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/contacts-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/custom-fields-overview,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/buying-setting-up-phone-numbers,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/user-profile-set-up-adding-users-access-levels,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/documents-signatures,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/pre-build-call,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/pre-migration-call,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
+/article/payment-method-a2p-10dlc-twilio,/services/ai-suite,301,Walkthroughs now live in the knowledge base inside the AI Suite; the public page explains it (section #knowledge-base)
 /for-clients/b2b,/services,301,Template placeholder page (already disallowed in robots.txt)
 /for-clients/b2c,/services,301,Template placeholder page
 /case-studies,/blog,301,Placeholder page with no published case studies
@@ -46,3 +46,6 @@ old_path,new_path,type,reason
 /project-audience/b2c,/services,301,Template collection page
 /log-in,,keep,"Memberstack login that gated the Knowledge Base. Decide: remove with KB, or keep for a client area"
 /faq/q-1 … /faq/q-9,/#faq,301,FAQ item template pages; FAQs now live on page sections
+/blog-category/industry-insights,/blog-category/crm-systems,301,Category renamed in the new blog taxonomy
+/blog-category/tips-tricks,/blog-category/ai-automation,301,Category renamed in the new blog taxonomy
+/blog-category/webinars-events,/blog,301,No published content; category retired
