@@ -1,0 +1,9 @@
+/* Neutralises the old site's tag-level styles, which Webflow keeps serving until those styles are cleaned up. */
+body{cursor:auto;font-weight:400}a{cursor:pointer}
+h1,h2,h3,h4,h5,h6{margin:0;text-transform:inherit}
+p{margin:0;font-size:inherit;line-height:inherit}
+ul,ol{margin:0;padding:0}figure{margin:0}figcaption{text-align:inherit;margin-top:0}
+blockquote{border:0;margin:0;padding:0;font-size:inherit;line-height:inherit}
+label{display:inline;font-weight:inherit;margin:0}
+img{vertical-align:baseline}summary{display:list-item}small{font-size:smaller}table{border-collapse:separate;border-spacing:2px}
+body{min-height:0}button{-webkit-appearance:auto;appearance:auto}

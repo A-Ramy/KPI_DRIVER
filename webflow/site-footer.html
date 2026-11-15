@@ -338,7 +338,7 @@
 
   /* ---- scroll reveals: only elements below the first screen are hidden, and only when motion is welcome ---- */
   if (!root.classList.contains("anim") || !("IntersectionObserver" in window)) return;
-  var sel = ".head, .pillars > li, .kq > li, .tool, .triad__card, .bracket, .model, .offer, .feature, .steps > li, .person, .post-row, .post-feature, .guide, .spec, .dash, .flow, .circuit, .compare-cols, .table-scroll, .support__chat, .kb > li, .faq, .contact-list, .form, .booking, .reviews, .device, .hub";
+  var sel = ".head, .pillars > li, .kq > li, .tool, .triad__card, .bracket, .model, .offer, .feature, .steps > li, .person, .post-row, .post-feature, .guide, .spec, .dash, .flow, .circuit, .compare-cols, .table-scroll, .support__chat, .kb > li, .kd-faq, .contact-list, .form, .booking, .reviews, .device, .hub";
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
   }, { rootMargin: "0px 0px -6% 0px", threshold: 0.06 });
