@@ -67,13 +67,14 @@ def main():
     js = (SITE / "assets/js/site.js").read_text()
     for a, b in CLASH.items(): js = re.sub(r"\.%s(?![\w-])(?=[^\n]*[\"'])" % a, "." + b, js) if re.search(r"[\"'][^\"'\n]*\.%s(?![\w-])" % a, js) else js
     (OUT / "site-footer.html").write_text(f"<script>{js}</script>\n")
+    (OUT / "kd-site.css").write_text("".join(chunks)); (OUT / "kd-site.js").write_text(js)
     (OUT / "site-chrome.html").write_text(links(declash_html(part(home, '<div class="revline"', "</dialog>"))) + "\n")
     meta, sizes = [], {}
     for f in sorted(SITE.rglob("*.html")):
         rel = f.relative_to(SITE).as_posix()
         if rel.startswith(("post/", "blog-category/", "_")) : continue
         h = f.read_text()
-        main_ = links(declash_html(part(h, "<main", "</main>")))
+        main_ = links(declash_html(part(h, "<main", "</main>"))).replace('data-success="thank-you.html"', 'data-success="/thank-you"')
         dest = OUT / "pages" / rel; dest.parent.mkdir(parents=True, exist_ok=True); dest.write_text(main_ + "\n")
         sizes[rel] = len(main_)
         g = lambda p: (re.search(p, h, re.S) or [None, ""])[1]
