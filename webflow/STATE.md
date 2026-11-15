@@ -10,7 +10,7 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Template page `KD Template` id `6afa1600fe5a0100898bf4da` (draft) has three HtmlEmbeds (ids are the same in every duplicate):
   header `bd5aab1f-de22-9e3f-ee35-e194a0e124e5`, main `74099f78-f3ef-4fbb-764a-99f416dc0972`, footer+chrome `e9cae18e-fd76-612f-f67c-1e048ee4fee5`.
   Per page: `data_element_settings_tool > set_settings` key `code` on the main embed (component = new page id), content from `webflow/pages/<page>.html` (whitespace-collapsed).
-- Page head code (same for every page): kd-head.js + fonts + kd-site.css. Page footer code: kd-site.js. Check whether duplicates inherit it; if not, set it.
+- Page head code (same for every page): kd-head.js + fonts + kd-site.css. Page footer code: kd-site.js. Duplicates do NOT inherit page code: set head + footer code on every new page.
 - Hosted files (Webflow assets, see `assets.json` for images):
   - css `https://cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afa152298e25d0480845242_kd-site.css`
   - js `https://cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afa152220683a92cfca82b7_kd-site.js`
@@ -23,8 +23,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 | Page | Webflow page id | Slug now | Status |
 |---|---|---|---|
 | Book a Discovery Call | 6afa0d6e369e94ec1c852b8a | /book-discovery-call (final) | done, single embed, long-form head code; verified on staging |
-| Thank You | 6afa182cf610cfffbefd4cb2 | /kd-thank-you | content + code set, not yet verified |
-| Our Team, Contact, Services, CRM, AI Suite, AI Agent, Home, 404, Privacy, Terms, Blog | | | to do |
+| Thank You | 6afa182cf610cfffbefd4cb2 | /kd-thank-you | done, verified on staging |
+| Our Team | 6afa188c23514ef7a01c1579 | /kd-our-team | done, verified on staging |
+| Contact, Services, CRM, AI Suite, AI Agent, Home, 404, Privacy, Terms, Blog | | | to do |
 
 ## Open decisions for the owner
 - Knowledge Base, Log in, Case studies, For-clients pages use Memberstack / old design: keep, redirect or retire?
