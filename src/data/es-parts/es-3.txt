@@ -1,0 +1,299 @@
+611|Un análisis que estima la condición a partir de fotos y te permite agregar o quitar comparables y notas, y volver a correrlo cuando quieras.
+612|Un punto de partida consistente para cada trato, que ajustas con tu propio criterio.
+613|Respalda las decisiones de oferta que sigue tu pipeline de Adquisiciones.
+614|HERRAMIENTA 05 / 09
+615|Encuentra al dueño. Revisa la lista.
+616|Gerentes de leads y equipos de marketing que arman o depuran listas de contactos.
+617|Encontrar los datos de contacto del dueño de una propiedad y filtrar contactos existentes.
+618|Una dirección, un APN o una dirección más el nombre del dueño.
+619|Teléfonos y correos, y una revisión DNC de tus contactos existentes, desde un solo menú en tu CRM.
+620|La búsqueda de contactos ocurre donde vive el lead, no en una herramienta aparte.
+621|Funciona dentro del CRM. La revisión DNC apoya tu proceso y no garantiza el cumplimiento normativo.
+622|HERRAMIENTA 06 / 09
+623|Registros más completos, con un rastro claro.
+624|Cualquiera que trabaje un lead que llegó con pocos datos de la propiedad.
+625|Completar la información de la propiedad en un registro del CRM.
+626|La dirección de la propiedad.
+627|Datos disponibles de la propiedad agregados a los campos de tu CRM, con una vista de exactamente qué campos cambiaron.
+628|Conversaciones y underwriting mejor informados, sin adivinar qué se actualizó.
+629|Alimenta los mismos campos del CRM que leen tu equipo y las demás herramientas.
+630|AI Dashboard · Proyecciones
+631|Estimación, no garantía
+632|Ingresos del mes
+633|Margen neto
+634|Tratos cerrados
+635|Gráfica de ejemplo: seis meses de ingresos reales seguidos de una proyección punteada de tres meses.
+636|Real
+637|Proyectado
+638|HERRAMIENTA 07 / 09
+639|Más del negocio, a la vista.
+640|Dueños y gerentes que manejan el negocio con sus números.
+641|Ver KPIs y contabilidad en un solo lugar.
+642|La actividad de tu CRM y tu información contable.
+643|Más visibilidad de KPIs y una sección completa de contabilidad.
+644|Las oportunidades y las ineficiencias aparecen antes.
+645|Se apoya en el seguimiento de KPIs del CRM.
+646|HERRAMIENTA 08 / 09
+647|Hazle una pregunta al negocio.
+648|Dueños, gerentes y operadores que quieren respuestas sin armar un reporte.
+649|Interactuar con tu CRM y con toda la Suite en una conversación.
+650|Tus preguntas y solicitudes.
+651|Respuestas tomadas de tu CRM y de la Suite, con acciones compatibles ejecutadas y rutinas corridas por ti.
+652|Menos clics entre pantallas para encontrar o hacer algo rutinario.
+653|Habla con el CRM y con el resto de la AI Suite.
+654|HERRAMIENTA 09 / 09
+655|Explora los próximos meses.
+656|Dueños que planean contrataciones, inversión en marketing y adquisiciones.
+657|Proyectar hacia dónde puede ir el negocio.
+658|Tus KPIs reales, tu contabilidad y tus insights.
+659|Proyecciones para los próximos meses.
+660|La planeación parte de tus propios números. Las proyecciones son estimaciones, no resultados garantizados.
+661|Usa lo que AI Dashboard y AI Insights ya saben.
+662|Herramientas que trabajan sobre el mismo registro
+663|Una llamada se convierte en notas, y las notas en coaching.
+664|Este recorrido muestra a AI Notes Taker y AI Sales Coach trabajando sobre una llamada con un vendedor. Cada herramienta se usa por separado. Usar una no activa automáticamente las demás.
+665|Capacidades de nurture relacionadas
+666|No forman parte de las nueve herramientas
+667|=
+668|Nunca dejes que un lead se enfríe.
+669|Nurture es a donde va un lead cuando tu equipo de adquisiciones necesita respaldo. Sigue trabajando al vendedor y devuelve los leads revividos a adquisiciones para cerrar. Dos capacidades hacen ese trabajo de formas distintas, y todos los nurtures funcionan en inglés y español.
+670|No requiere AI Agent
+671|Respaldo para tus gerentes de adquisiciones. Una etapa del pipeline que lee la conversación y tus notas, crea una campaña personalizada de 60 días para ese vendedor y revive el lead para que adquisiciones lo cierre.
+672|Lee las conversaciones y tus notas
+673|Con contexto, creada para un solo vendedor
+674|Campaña de 60 días
+675|SMS y correo, programados automáticamente
+676|Los vendedores revividos vuelven a adquisiciones
+677|Integrado en el pipeline
+678|Pipeline de Nurture
+679|Nurtures prediseñados que tu equipo asigna en un paso. Mientras AI Nurture escribe una campaña para un vendedor, estos están listos en cuanto un trato se estanca.
+680|Nurtures por situación
+681|según la razón por la que se estancó el trato
+682|Sin motivación
+683|Precio pedido alto
+684|Plazo largo
+685|Sin plusvalía
+686|Listada con agente
+687|No interesado
+688|No está listo para vender
+689|Intenta venta tradicional
+690|Asunto de la propiedad o financiero pendiente
+691|Sin respuesta
+692|Oferta rechazada
+693|Contrato rechazado
+694|Trato cancelado
+695|Nurtures por tiempo
+696|según cuándo conviene volver a contactar
+697|30 días
+698|3 meses
+699|6 meses
+700|12 meses
+701|Integrado
+702|Onboarding bajo demanda, dentro de la Suite.
+703|La AI Suite incluye una base de conocimiento con recorridos grabados sobre cómo usar todo el sistema de la mejor manera. Un nuevo integrante puede ponerse al día sin esperar una llamada de capacitación, y tu equipo puede repasar cualquier paso cuando lo necesite.
+704|¿Prefieres preguntarle a una persona? Tu canal dedicado con nuestro equipo siempre está abierto.
+705|Ejemplos de temas de los recorridos
+706|Pipelines y KPIs
+707|Adquisiciones, nurture, disposiciones, coordinación de transacciones, rentas
+708|Contactos y oportunidades
+709|Importación, listas inteligentes, etiquetas, campos personalizados
+710|Teléfonos, SMS y correo
+711|Números, marcador, campañas, plantillas
+712|Calendarios y formularios
+713|Reservas, formularios, encuestas, embudos
+714|Tableros y reportes
+715|Tablero de KPIs, reportes de llamadas y citas
+716|Documentos y configuración
+717|Firmas, usuarios, niveles de acceso
+718|Otro producto
+719|¿Buscas el AI Agent?
+720|El AI Agent da seguimiento a los leads por voz, SMS, correo e iMessage. Es una oferta aparte y opcional, y no es una de las nueve herramientas de la AI Suite.
+721|Preguntas sobre la AI Suite
+722|¿El CRM se vende por separado?
+723|El CRM es la base de la Enterprise Optimization Suite, que también te da acceso a la AI Suite. Tú decides si usas las herramientas de IA de pago por uso.
+724|¿Qué pipelines vienen integrados?
+725|Nurture, Adquisiciones, Disposiciones, Coordinación de transacciones, Contratistas y proveedores, y Propiedades y rentas. Cada uno funciona en su propio pipeline y reporta al mismo seguimiento de KPIs.
+726|¿El tablero de KPIs se puede personalizar?
+727|El tablero de KPIs viene prediseñado con las métricas que importan en la inversión inmobiliaria, como adquisiciones, desempeño de marketing y velocidad de los tratos. Si necesitas algo distinto, lo ajustamos contigo.
+728|¿Mi equipo puede trabajar desde el teléfono?
+729|Sí. Una app móvil para iOS y Android le da a tu equipo acceso al CRM, las conversaciones y las tareas fuera del escritorio.
+730|¿Pueden migrar mi CRM actual?
+731|Sí. La migración del CRM es parte del onboarding, cuidando que tus datos lleguen completos. El plan y los tiempos dependen de tu sistema y tus datos actuales, por eso primero definimos el alcance contigo.
+732|¿Cómo se relaciona la AI Suite con el CRM?
+733|La AI Suite es una plataforma complementaria que se entrega junto con el CRM. Agrega captura de llamadas y coaching, underwriting, skiptracing, enriquecimiento de datos, tableros, insights y proyecciones sobre la operación que tu CRM ya maneja.
+734|¿Y si necesito un cambio en mi configuración?
+735|Escríbenos en tu canal dedicado. Los cambios y ajustes de rutina se hacen sin costo adicional. Si una solicitud es considerable, enviamos una cotización antes de empezar.
+736|CRM | KPI DRIVER — El motor de tu operación inmobiliaria
+737|Un CRM inmobiliario con pipelines dedicados para nurture, adquisiciones, disposiciones, coordinación de transacciones, proveedores y rentas, con seguimiento de KPIs en todos ellos.
+738|Base de la Enterprise Optimization Suite
+739|El
+740|motor
+741|de tu operación.
+742|Un CRM creado por inversionistas inmobiliarios que cubre todo el negocio: cada lead, cada trato, cada trabajo de proveedor y cada renta, con los números para gestionarlos.
+743|Ve lo que le suma la AI Suite
+744|Pipeline de adquisiciones
+745|Esta semana
+746|Leads nuevos
+747|Citas
+748|Contratos
+749|Nuevo
+750|Contactado
+751|Cita
+752|Oferta
+753|Contrato
+754|Pipelines operativos conectados
+755|Cada equipo tiene su propio pipeline. El trato sigue siendo un solo registro.
+756|Mientras la mayoría de los CRM inmobiliarios se quedan en la gestión de leads y las adquisiciones, KPI DRIVER lleva el trato por cada traspaso.
+757|Lo que maneja el CRM
+758|El trabajo diario, en un solo sistema.
+759|Leads y contactos
+760|Cada lead de formularios, campañas, llamadas, SMS, correo y redes en una sola vista, asignado a la persona correcta y con su historial completo.
+761|Flujos de trabajo y automatizaciones
+762|Flujos, disparadores y alertas que hacen avanzar el trabajo y le quitan a tu equipo el seguimiento repetitivo.
+763|Herramientas de comunicación
+764|Mensajería bidireccional, llamadas, campañas de correo y SMS, chat web y gestión de reseñas, conectados al registro del contacto.
+765|Nurture como respaldo
+766|Campañas de corto y largo plazo trabajan los leads que tus gerentes de adquisiciones no alcanzan a atender, y luego les devuelven los vendedores revividos para cerrar. Todos los nurtures funcionan en inglés y español.
+767|Documentos y tareas
+768|Agenda de citas, gestión de tareas y firma de documentos integrada, con cada contrato ligado a su trato.
+769|Herramientas de generación de leads
+770|Campañas de correo y SMS, embudos y herramientas de prospección para el lado de marketing del negocio.
+771|Visibilidad de KPIs
+772|El tablero es el punto.
+773|El tablero de KPIs viene prediseñado con lo que importa en la inversión inmobiliaria: adquisiciones, desempeño de marketing, velocidad de los tratos y más. Si necesitas otra vista, la ajustamos contigo.
+774|Ve el desempeño de cada pipeline en un solo tablero
+775|Detecta a tiempo las áreas de bajo desempeño
+776|Compara mes a mes
+777|Sigue las fuentes de leads hasta los tratos
+778|Panel de KPIs de ejemplo con barras de conversión del pipeline.
+779|Lead → Cita
+780|Cita → Oferta
+781|Oferta → Contrato
+782|Contrato → Cierre
+783|Vista ilustrativa · métricas de ejemplo, no resultados de clientes
+784|El CRM de KPI DRIVER en dos teléfonos, con una vista de calendario y una lista de conversaciones.
+785|Acceso móvil
+786|Maneja el negocio desde cualquier lugar.
+787|La app móvil para iOS y Android pone el CRM y tus conversaciones en tu bolsillo. Responde a un lead, revisa una tarea o actualiza un trato durante la visita a una propiedad.
+788|=
+789|=
+790|Integraciones
+791|KPI DRIVER trabaja junto con sistemas telefónicos, herramientas de marketing y otras plataformas de terceros. Las integraciones se definen con nuestro equipo técnico, que se encarga de la configuración para que la información llegue a un solo lugar.
+792|=
+793|El motor funciona por sí solo. La AI Suite es el
+794|=
+795|El CRM nunca se vende como un nivel sin acceso a la AI Suite. Cada Enterprise Optimization Suite incluye ambos, y las herramientas de IA están ahí cuando la tarea lo pide.
+796|Después de una llamada
+797|AI Notes Taker escribe notas estructuradas y actualiza el registro del CRM. AI Sales Coach califica la conversación.
+798|Antes de una oferta
+799|AI Underwriting, AI Skiptracing y AI Data Enrichment agregan información de la propiedad y de contacto al trato que estás trabajando.
+800|En la revisión mensual
+801|AI Dashboard, AI Insights y AI Projections se apoyan en los KPIs que tus pipelines ya generan.
+802|Configurado contigo, no solo entregado.
+803|Los equipos nuevos empiezan con una configuración ágil. Los equipos establecidos traen sus datos y su forma de trabajar.
+804|Migración
+805|Trasladamos los datos de tu CRM cuidando su integridad. El plan depende de tu sistema actual.
+806|=
+807|Un gerente de cuenta dedicado dirige el onboarding y las sesiones de estrategia.
+808|Capacitación y soporte
+809|Cada cliente tiene un canal dedicado con nuestro equipo. Sin tickets, sin bots, y los cambios de rutina se hacen sin costo adicional. Los recorridos grabados en la AI Suite cubren el sistema cuando los necesites.
+810|Preguntas sobre el CRM
+811|¿CRM, AI Suite y AI Agent son tres planes distintos?
+812|No. Son tres áreas de producto. Hay dos ofertas: la Enterprise Optimization Suite (CRM más acceso a la AI Suite) y la Enterprise Optimization Suite + AI Agent.
+813|¿Qué significa pago por uso en la AI Suite?
+814|El acceso a la AI Suite viene con la Enterprise Optimization Suite sin suscripción adicional. Cuando decides usar una herramienta de IA, ese uso se cobra conforme lo usas. Si no usas las herramientas, no hay uso de IA que pagar. El uso se registra en un panel de facturación.
+815|¿Puedo usar el CRM sin usar ninguna herramienta de IA?
+816|Sí. El uso de la AI Suite es opcional. El CRM, los pipelines, las automatizaciones y el seguimiento de KPIs funcionan por sí solos.
+817|¿Qué se cotiza por separado?
+818|El trabajo que depende de tu configuración se define en una llamada. Algunos ejemplos: automatizaciones a la medida, campañas de seguimiento a la medida, landing pages a la medida, integraciones con terceros, alertas en Slack y soporte contable dedicado.
+819|¿Cómo es el soporte después del lanzamiento?
+820|Cada cliente tiene un canal dedicado con nuestro equipo. Hablas con una persona, no con un bot, y no hay fila de tickets. Los cambios y ajustes de rutina se hacen sin costo adicional. Las solicitudes considerables se cotizan antes de empezar.
+821|¿KPI DRIVER se integra con mis herramientas actuales?
+822|KPI DRIVER trabaja junto con sistemas telefónicos, herramientas de marketing y plataformas de terceros. Nuestro equipo técnico define y realiza la integración contigo, así que cuéntanos qué usas hoy en tu llamada de descubrimiento.
+823|¿Dónde veo los precios?
+824|En tu llamada de descubrimiento. No publicamos una lista de precios porque la configuración correcta depende de tu equipo, tus datos y las herramientas de IA que planeas usar.
+825|Servicios | KPI DRIVER — CRM, AI Suite y AI Agent para inversionistas inmobiliarios
+826|Tres áreas de producto, dos ofertas. La Enterprise Optimization Suite reúne el CRM y el acceso a la AI Suite, con un AI Agent opcional. Los precios se ven en una llamada de descubrimiento.
+827|Una plataforma.
+828|Tres áreas de producto.
+829|El CRM maneja la operación. La AI Suite agrega inteligencia donde la quieras. El AI Agent está ahí si el seguimiento necesita otro par de manos. Así encajan entre sí y así trabajan los clientes con nosotros.
+830|Ve las dos ofertas
+831|Áreas de producto
+832|Tres áreas para explorar. No tres planes.
+833|La AI Suite es una plataforma complementaria que se entrega junto con el CRM. El AI Agent es una oferta aparte y no es lo mismo que la AI Suite.
+834|CRM — el motor de tu operación
+835|La base para gestionar contactos, comunicación, pipelines, flujos de trabajo y el desempeño de un negocio inmobiliario.
+836|Pipelines integrados para Nurture, Adquisiciones, Disposiciones, Coordinación de transacciones, Contratistas y proveedores, y Propiedades y rentas
+837|Mensajería bidireccional, llamadas, campañas de correo y SMS
+838|Flujos de trabajo, disparadores, alertas y campañas de nurture
+839|Agenda de citas, tareas y firma de documentos
+840|Seguimiento de KPIs en cada pipeline
+841|App móvil para iOS y Android
+842|El CRM en detalle
+843|AI Suite — nitro para el motor de tu CRM
+844|La plataforma complementaria que agrega inteligencia, automatización, coaching y visibilidad. El acceso viene con la Enterprise Optimization Suite, sin suscripción adicional por la AI Suite. El uso es opcional y de pago por uso.
+845|Capturar y entrenar:
+846|=
+847|Encontrar y calificar:
+848|=
+849|Conocer y crecer:
+850|=
+851|Relacionado: campañas de AI Nurture, sin necesidad del AI Agent
+852|La AI Suite en detalle
+853|AI Agent — tu complemento opcional de seguimiento y comunicación
+854|Para negocios que quieren un agente que dé seguimiento a los leads. Es distinto de la AI Suite y de AI Nurture, y ninguno de los dos lo requiere.
+855|Da seguimiento dentro de las reglas que configuras
+856|Trabaja leads nuevos y antiguos
+857|Voz con IA, SMS, correo e iMessage
+858|El AI Agent en detalle
+859|Cómo trabajan los clientes con nosotros
+860|Dos ofertas. Una decisión: ¿quieres el AI Agent?
+861|Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite. Usa las herramientas de IA cuando las necesites y paga por lo que usas, sin suscripción adicional por la AI Suite. Agrega el AI Agent si encaja con tu operación.
+862|Acceso a la AI Suite
+863|La plataforma operativa completa. Recibes el CRM y el acceso a la AI Suite juntos, y luego decides si usas las herramientas de IA de pago por uso y cuándo.
+864|Todo lo de la Enterprise Optimization Suite, más el AI Agent, que es aparte, para seguimiento y comunicación por voz, SMS, correo e iMessage.
+865|Qué incluye cada oferta
+866|Qué recibes
+867|=
+868|CRM con pipelines integrados y seguimiento de KPIs
+869|Acceso a la AI Suite
+870|Incluido, sin suscripción adicional
+871|Uso de la AI Suite
+872|Opcional, de pago por uso
+873|No incluido
+874|Incluido en esta oferta
+875|Precios
+876|Se ven en tu llamada de descubrimiento
+877|Acceso incluido no significa uso gratuito ni ilimitado.
+878|El recorrido
+879|Del primer lead a la propiedad que conservas.
+880|El CRM cubre todo el recorrido inmobiliario, cada etapa en su propio pipeline, con firma de documentos integrada y seguimiento de KPIs en todo.
+881|Firma de documentos integrada
+882|Envía contratos a firma electrónica sin salir del sistema, ve quién ya firmó y mantén los documentos terminados ligados al trato.
+883|KPIs en cada pipeline
+884|Una sola vista del desempeño del negocio para encontrar cuellos de botella, comparar mes a mes y ver qué fuentes de leads generan tratos.
+885|Onboarding, migración y soporte
+886|Lo que viene con el arranque.
+887|Gerente de cuenta dedicado.
+888|Onboarding, soporte continuo y sesiones de estrategia.
+889|Migración del CRM.
+890|Trasladamos tus datos actuales cuidando que lleguen completos.
+891|Capacitación y soporte.
+892|Nuestro equipo técnico y de soporte ayuda con la capacitación y las dudas del día a día.
+893|Definido contigo
+894|Los servicios adicionales se definen en una llamada.
+895|Algunos trabajos dependen por completo de cómo operas, por eso definimos el alcance antes de que alguien se comprometa. No forman parte automáticamente de cada acuerdo.
+896|Automatizaciones a la medida
+897|Campañas de seguimiento a la medida
+898|Landing pages a la medida
+899|Integraciones con terceros
+900|Alertas en Slack
+901|Soporte contable dedicado
+902|Platícalo en una llamada de descubrimiento
+903|Cómo funcionan las ofertas
+904|Gracias | KPI DRIVER
+905|Gracias por contactar a KPI DRIVER.
+906|Gracias por
+907|escribirnos.
+908|Uno de nuestros drivers te contactará pronto. Si aún no has agendado un horario, puedes hacerlo ahora.
+909|Volver al inicio

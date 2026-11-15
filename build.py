@@ -46,9 +46,74 @@ TEAM = [("Brandy Pollack", "Chief Executive Officer"), ("Ahmed Ramy", "Chief Tec
         ("Anas Abid", "Tech & Support Team Lead"), ("Mostafa Kourany", "Accounting & Financial Advisor")]
 NOINDEX = set()
 
+ES_PAGES = ["index.html", "services.html", "services/crm.html", "services/ai-suite.html", "services/ai-agent.html", "our-team.html",
+            "contact-us.html", "book-discovery-call.html", "thank-you.html"]
+_esf = SRC / "data" / "es.json"
+ES = json.loads(_esf.read_text(encoding="utf8")) if _esf.exists() else {}
+ES_VALUES = set(ES.values())
+ES_MISSING = []
+LANG = "en"
+_norm = lambda s: re.sub(r"\s+", " ", s).strip()
+
+
+def T(s):
+    """Translate one string to Spanish when building the /es/ pages; unknown strings are collected for translation."""
+    if LANG != "es": return s
+    k = _norm(s)
+    if not k or not re.search(r"[A-Za-z]{2}", k) or k in ES_VALUES: return s
+    if k in ES:
+        lead, tail = s[:len(s) - len(s.lstrip())], s[len(s.rstrip()):]
+        return lead + ES[k] + tail
+    if k not in ES_MISSING: ES_MISSING.append(k)
+    return s
+
+
+_TOK = re.compile(r"(<script.*?</script>|<style.*?</style>|<!--.*?-->|<[^>]+>)", re.S)
+_ATTR = re.compile(r'\b(aria-label|alt|placeholder|data-name)="([^"]+)"')
+
+
+def tr_html(h):
+    out = []
+    for tok in _TOK.split(h):
+        if tok.startswith("<"):
+            if not tok.startswith(("<script", "<style", "<!--")):
+                tok = _ATTR.sub(lambda m: f'{m.group(1)}="{T(m.group(2))}"', tok)
+            out.append(tok)
+        else:
+            out.append(T(tok))
+    return "".join(out)
+
+
 FAQS = json.loads((SRC / "data" / "faqs.json").read_text(encoding="utf8"))
 BLOG = json.loads((SRC / "data" / "blog.json").read_text(encoding="utf8"))
-POSTS = sorted(BLOG["posts"], key=lambda p: p["date"], reverse=True)
+def load_text_posts():
+    """Posts written as light text (=== header, # title, > summary, ## heading, - bullet, paragraphs)."""
+    out = []
+    for f in sorted((SRC / "data").glob("posts-*.txt")):
+        for block in f.read_text(encoding="utf8").split("\n=== "):
+            block = block.removeprefix("=== ").strip()
+            if not block: continue
+            lines = block.split("\n")
+            slug, d, cat, typ, pil = [x.strip() for x in lines[0].split("|")]
+            title = summary = ""; body = []; ul = False
+            for ln in lines[1:]:
+                ln = ln.strip()
+                if not ln: continue
+                if ln.startswith("- "):
+                    if not ul: body.append("<ul>"); ul = True
+                    body.append(f"<li>{html.escape(ln[2:], quote=False)}</li>"); continue
+                if ul: body.append("</ul>"); ul = False
+                if ln.startswith("# "): title = ln[2:]
+                elif ln.startswith("> "): summary = ln[2:]
+                elif ln.startswith("## "): body.append(f"<h2>{html.escape(ln[3:], quote=False)}</h2>")
+                else: body.append(f"<p>{html.escape(ln, quote=False)}</p>")
+            if ul: body.append("</ul>")
+            out.append({"slug": slug, "title": title, "date": d, "author": "Ahmed Ramy", "summary": summary, "body": "".join(body),
+                        "category_slug": cat, "category": cat, "type": typ, "pillar": pil == "1", "related": []})
+    return out
+
+
+POSTS = sorted(BLOG["posts"] + load_text_posts(), key=lambda p: p["date"], reverse=True)
 esc = html.escape
 
 
@@ -58,7 +123,12 @@ def route_of(path):
     return "/" if r == "/index" else r
 
 
-def nav(root, current):
+def nav(root, current, path="index.html"):
+    if LANG == "es":
+        lang_link = f'<a class="lang-toggle" href="{root}../{path}" hreflang="en" lang="en" aria-label="View this page in English" data-event="language_switch" data-label="en"><b>EN</b></a>'
+    else:
+        target = path if path in ES_PAGES else "index.html"
+        lang_link = f'<a class="lang-toggle" href="{root}es/{target}" hreflang="es" lang="es" aria-label="Ver esta página en español" data-event="language_switch" data-label="es"><b>ES</b></a>'
     def cur(p):
         return ' aria-current="page"' if current == p else ""
     return f"""
@@ -89,6 +159,11 @@ def nav(root, current):
       </ul>
       <a class="btn btn--primary btn--sm nav__cta" href="{book_attrs('header')}" data-event="discovery_call_click" data-label="header">Book a Discovery Call</a>
     </nav>
+    <details class="login">
+      <summary>Client login</summary>
+      <div><a href="https://crm.kpidriver.com" rel="noopener" data-event="client_login_click" data-label="crm"><b>CRM</b><span>crm.kpidriver.com</span></a><a href="https://kpidriver.ai" rel="noopener" data-event="client_login_click" data-label="ai suite"><b>AI Suite</b><span>kpidriver.ai</span></a></div>
+    </details>
+    {lang_link}
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">
       <svg class="i-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg class="i-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
@@ -124,6 +199,13 @@ def footer(root):
           <li><a href="{root}blog.html">Blog</a></li>
           <li><a href="{root}contact-us.html">Contact Us</a></li>
           <li><a href="{book_attrs('footer')}" data-event="discovery_call_click" data-label="footer">Book a Discovery Call</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>CLIENTS</h2>
+        <ul>
+          <li><a href="https://crm.kpidriver.com" rel="noopener" data-event="client_login_click" data-label="crm">CRM login</a></li>
+          <li><a href="https://kpidriver.ai" rel="noopener" data-event="client_login_click" data-label="ai suite">AI Suite login</a></li>
           <li><a href="{STATUS_URL}" rel="noopener">CRM Status</a></li>
         </ul>
       </div>
@@ -138,7 +220,7 @@ def footer(root):
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© <span id="year">{date.today().year}</span> KPI DRIVER, LLC. All rights reserved. · <a href="{root}policies/privacy-policy.html">Privacy Policy</a> · <a href="{root}policies/terms-conditions.html">Terms &amp; Conditions</a></p>
+      <p>© <span id="year">{date.today().year}</span> KPI DRIVER, LLC. All rights reserved. · <a href="{root}policies/privacy-policy.html">Privacy Policy</a> · <a href="{root}policies/terms-conditions.html">Terms &amp; Conditions</a> · <a href="https://kpidriver.ai" rel="noopener">AI Suite terms at kpidriver.ai</a></p>
       <p class="social">
         <a href="https://www.linkedin.com/company/kpi-driver" rel="noopener">LinkedIn</a>
         <a href="https://www.youtube.com/@KPI_DRIVER" rel="noopener">YouTube</a>
@@ -154,6 +236,7 @@ def footer(root):
 
 def faq_block(name):
     items = FAQS[name]
+    items = [(T(q), T(a)) for q, a in items]
     rows = "".join(f"<details><summary>{esc(q)}</summary><div><p>{a}</p></div></details>" for q, a in items)
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", a)}} for q, a in items]}
@@ -209,7 +292,13 @@ def page_ld(path):
 
 def head(meta, path, root):
     title, desc = meta["title"], meta["description"]
-    canonical = ORIGIN + route_of(path)
+    title, desc = T(title), T(desc)
+    r = route_of(path)
+    canonical = ORIGIN + ("/es" + ("" if r == "/" else r) if LANG == "es" else r)
+    alt = ""
+    if path in ES_PAGES:
+        alt = (f'<link rel="alternate" hreflang="en" href="{ORIGIN}{r}">\n<link rel="alternate" hreflang="es" href="{ORIGIN}/es{"" if r == "/" else r}">\n'
+               f'<link rel="alternate" hreflang="x-default" href="{ORIGIN}{r}">\n')
     if meta.get("robots") == "noindex": NOINDEX.add(path)
     robots = "index, follow, max-image-preview:large, max-snippet:-1" if PRODUCTION and meta.get("robots") != "noindex" else "noindex, nofollow"
     extra = meta.get("jsonld", "") + crumbs_ld(path, meta) + page_ld(path)
@@ -217,6 +306,7 @@ def head(meta, path, root):
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="{robots}">
 <link rel="canonical" href="{canonical}">
+{alt}<meta property="og:locale" content="{'es_US' if LANG == 'es' else 'en_US'}">
 <meta property="og:type" content="{meta.get('og_type', 'website')}">
 <meta property="og:site_name" content="KPI DRIVER">
 <meta property="og:title" content="{esc(title)}">
@@ -237,12 +327,13 @@ def head(meta, path, root):
 
 
 def render(path, meta, body):
-    global PAGE_CAL
+    global PAGE_CAL, LANG
     PAGE_CAL = cal_for(path)
-    depth = path.count("/")
-    root = "../" * depth
-    current = meta.get("nav", path)
-    inner = f"""{nav(root, current)}
+    for LANG in (["en", "es"] if path in ES_PAGES else ["en"]):
+        depth = path.count("/")
+        root = "../" * depth
+        current = meta.get("nav", path)
+        inner = f"""{nav(root, current, path)}
 <main id="main">
 {expand(body, root)}
 </main>
@@ -254,25 +345,32 @@ def render(path, meta, body):
   <p class="bookdlg__foot">Scheduler not loading? <a class="link" href="{BOOK_BASE}{CAL['header']}" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
 </dialog>
 <script src="{root}assets/js/site.js" defer></script>"""
-    page = f"""<!doctype html>
-<html lang="en" class="no-js">
+        hd = head(meta, path, root)
+        if LANG == "es":
+            inner, hd = tr_html(inner), hd
+            # Spanish pages live in /es/: assets and untranslated sections (blog, legal) stay one level up
+            fix = lambda h: re.sub(r'((?:href|src)=")((?:\.\./)*)(assets/|blog\.html|post/|blog-category/|policies/|404\.html)', r"\1\2../\3", h)
+            inner, hd = fix(inner), fix(hd)
+        page = f"""<!doctype html>
+<html lang="{LANG}" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-{head(meta, path, root)}
+{hd}
 </head>
 <body>
 {inner}
 </body>
 </html>
 """
-    dest = OUT / path
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(page, encoding="utf8")
-    if path == "index.html":
-        # Fragment variant for hosts that wrap the page in their own document skeleton.
-        frag = f'<title>KPI DRIVER Website Preview</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="stylesheet" href="{FONTS}">\n<link rel="stylesheet" href="assets/css/site.css">\n<script>document.documentElement.classList.add("no-js")</script>{THEME_JS}\n{inner}\n'
-        (OUT / "_preview-index.html").write_text(frag, encoding="utf8")
+        dest = OUT / ("es/" + path if LANG == "es" else path)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(page, encoding="utf8")
+        if path == "index.html" and LANG == "en":
+            # Fragment variant for hosts that wrap the page in their own document skeleton.
+            frag = f'<title>KPI DRIVER Website Preview</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="stylesheet" href="{FONTS}">\n<link rel="stylesheet" href="assets/css/site.css">\n<script>document.documentElement.classList.add("no-js")</script>{THEME_JS}\n{inner}\n'
+            (OUT / "_preview-index.html").write_text(frag, encoding="utf8")
+    LANG = "en"
     return path
 
 
@@ -319,7 +417,7 @@ POST_META = {
     "systems-that-scale-real-estate-investing": ("scaling-leadership", "Guide", True),
 }
 for _p in POSTS:
-    _c, _t, _pl = POST_META.get(_p["slug"], (_p["category_slug"], "Article", False))
+    _c, _t, _pl = POST_META.get(_p["slug"], (_p["category_slug"], _p.get("type", "Article"), _p.get("pillar", False)))
     _p.update(category_slug=_c, category=CAT[_c]["name"], type=_t, pillar=_pl)
 BY_SLUG = {p["slug"]: p for p in POSTS}
 PILLAR = {p["category_slug"]: p for p in POSTS if p["pillar"]}
@@ -456,6 +554,10 @@ def main():
     post_dates = {f"post/{p['slug']}.html": p["date"] for p in POSTS}
     indexable = sorted(p for p in built if p not in ("404.html", "thank-you.html") and p not in NOINDEX)
     urls = "\n".join(f"  <url><loc>{ORIGIN}{route_of(p)}</loc><lastmod>{post_dates.get(p, today)}</lastmod></url>" for p in indexable)
+    es_urls = "\n".join(f"  <url><loc>{ORIGIN}/es{'' if route_of(p) == '/' else route_of(p)}</loc><lastmod>{today}</lastmod></url>" for p in ES_PAGES if p != "thank-you.html")
+    urls += "\n" + es_urls
+    (ROOT / "docs" / "es-missing.txt").write_text("\n".join(ES_MISSING), encoding="utf8")
+    if ES_MISSING: print(f"  Spanish: {len(ES_MISSING)} strings still untranslated (docs/es-missing.txt)")
     (OUT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n', encoding="utf8")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot"]
     ai = "".join(f"User-agent: {b}\n" for b in bots)

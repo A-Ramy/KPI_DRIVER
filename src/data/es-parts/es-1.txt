@@ -1,0 +1,300 @@
+1|Agenda una llamada de descubrimiento | KPI DRIVER
+2|Agenda una llamada de descubrimiento con KPI DRIVER. Revisamos tu operación inmobiliaria, te mostramos el CRM y la AI Suite, y hablamos de encaje y precios.
+3|Saltar al contenido
+4|Inicio de KPI DRIVER
+5|=
+6|Abrir menú
+7|Principal
+8|Inicio
+9|Servicios
+10|Mostrar páginas de Servicios
+11|=
+12|El motor de tu operación
+13|=
+14|Nitro para el motor del CRM. Acceso incluido.
+15|=
+16|Seguimiento y comunicación opcionales
+17|Nuestro equipo
+18|=
+19|Contacto
+20|Agenda una llamada
+21|Acceso clientes
+22|=
+23|=
+24|=
+25|=
+26|Cambiar tema de color
+27|Agenda una
+28|llamada de descubrimiento.
+29|Una conversación con uno de nuestros drivers sobre cómo funciona hoy tu negocio y si KPI DRIVER es para ti.
+30|Qué cubrimos
+31|Tu operación
+32|Equipo, flujo de leads, las herramientas que usas hoy y dónde se atoran las cosas.
+33|La plataforma
+34|El CRM y los pipelines, el seguimiento de KPIs y la AI Suite.
+35|Encaje y precios
+36|Las dos ofertas, cómo funciona el uso de IA de pago por uso y si el AI Agent tiene sentido para ti.
+37|¿Prefieres escribir primero?
+38|Envía un mensaje
+39|o escribe a info@kpidriver.com.
+40|¿No aparece el calendario? Ábrelo en una pestaña nueva.
+41|Abrir el calendario
+42|=
+43|El centro de mando para inversionistas inmobiliarios y sus equipos. Creado por inversionistas, para inversionistas.
+44|SERVICIOS
+45|Resumen de servicios
+46|EMPRESA
+47|CLIENTES
+48|Acceso al CRM
+49|Acceso a la AI Suite
+50|Estado del CRM
+51|CONTACTO
+52|=
+53|=
+54|=
+55|=
+56|KPI DRIVER, LLC. Todos los derechos reservados. ·
+57|Política de privacidad
+58|Términos y condiciones
+59|Términos de la AI Suite en kpidriver.ai
+60|=
+61|=
+62|=
+63|=
+64|=
+65|MARCHA
+66|Cerrar calendario
+67|Cerrar ✕
+68|¿No carga el calendario?
+69|Ábrelo en una pestaña nueva
+70|¿Qué es KPI DRIVER?
+71|KPI DRIVER es una plataforma de operaciones para negocios inmobiliarios, creada por inversionistas para inversionistas. Su CRM conecta la captación de leads, el nurture, las adquisiciones, las disposiciones, la coordinación de transacciones, los contratistas y proveedores, y las propiedades propias y en renta, con seguimiento de KPIs en todos ellos.
+72|¿Qué incluye la Enterprise Optimization Suite?
+73|El CRM y el acceso a la AI Suite, juntos. No hay una suscripción adicional por la AI Suite. Usar las herramientas de IA es opcional y solo pagas por lo que usas.
+74|¿El AI Agent está incluido?
+75|No. El AI Agent es una oferta aparte y opcional. Los equipos que lo quieren eligen la Enterprise Optimization Suite + AI Agent. No necesitas el AI Agent para usar el CRM ni la AI Suite.
+76|¿Cuánto cuesta KPI DRIVER?
+77|El precio depende de tu operación, por eso lo vemos en una llamada de descubrimiento. Agenda una llamada y revisamos el encaje, las dos ofertas y cómo funciona el uso de IA de pago por uso.
+78|¿Necesito sistemas separados para firmas de documentos, disposiciones o rentas?
+79|No. KPI DRIVER incluye pipelines dedicados para cada proceso, además de firma de documentos integrada, así los contratos quedan ligados al trato al que pertenecen.
+80|¿KPI DRIVER me sirve si soy nuevo en bienes raíces o todavía no tengo un CRM?
+81|Sí. KPI DRIVER está diseñado para negocios inmobiliarios nuevos y establecidos. Los equipos nuevos empiezan con una configuración ágil. Los equipos establecidos trabajan con nosotros en la migración de datos y en pipelines que se ajustan a su forma de operar.
+82|¿Ofrecen soporte y capacitación?
+83|Sí, y es personal. Cada cliente tiene un canal dedicado con nuestro equipo y un gerente de cuenta dedicado. No hay chatbots ni fila de tickets, y respondemos lo antes posible. Los cambios y ajustes de rutina se hacen sin costo adicional. Si una solicitud es considerable, primero enviamos una cotización. Una base de conocimiento con recorridos grabados dentro de la AI Suite cubre el sistema cuando lo necesites.
+84|¿Cuánto tarda la implementación?
+85|La mayoría de los pasos se hacen en paralelo, y una implementación típica queda lista en dos o tres semanas. El tiempo depende de tus datos, tu sistema actual y qué tan rápido lleguen las aprobaciones.
+86|Contacto | KPI DRIVER — Agenda una llamada o envía un mensaje
+87|Agenda una llamada de descubrimiento con KPI DRIVER o envía una consulta general. Teléfono, correo y dirección de KPI DRIVER, LLC en Pembroke Pines, Florida.
+88|¿Dudas sobre las
+89|señales del camino?
+90|Tenemos respuestas. Agenda una llamada de descubrimiento para hablar de encaje y precios, o envía un mensaje y uno de nuestros drivers te responderá.
+91|La ruta más rápida
+92|Agenda una llamada de descubrimiento
+93|Elige un horario que te funcione. Revisamos tu operación, te mostramos el CRM y la AI Suite, y hablamos de precios.
+94|Empresa
+95|Teléfono
+96|Correo
+97|Oficina
+98|=
+99|Abrir en Google Maps
+100|Clientes actuales
+101|Ver estado del CRM
+102|Envía una consulta general
+103|Nombre
+104|tu nombre
+105|Apellido
+106|tu apellido
+107|tu correo electrónico
+108|(opcional)
+109|Nombre del negocio
+110|el nombre de tu negocio
+111|¿Qué te interesa?
+112|Aún no estoy seguro
+113|Enterprise Optimization Suite (CRM + acceso a la AI Suite)
+114|=
+115|Ya soy cliente
+116|Otra cosa
+117|Mensaje
+118|un mensaje breve
+119|Doy mi consentimiento para recibir notificaciones por SMS, alertas y comunicaciones ocasionales de marketing de la empresa. La frecuencia de los mensajes varía. Pueden aplicarse tarifas de mensajes y datos. Envía HELP al (786) 822-8188 para recibir ayuda. Puedes responder STOP para cancelar la suscripción en cualquier momento.
+120|(Opcional. Consulta nuestra
+121|Deja este campo vacío
+122|Enviar mensaje
+123|Preguntas frecuentes
+124|Antes de escribirnos
+125|KPI DRIVER — CRM, seguimiento de KPIs y AI Suite para inversionistas inmobiliarios
+126|El centro de mando para inversionistas inmobiliarios y sus equipos. Un CRM que conecta toda la operación, visibilidad de KPIs en cada pipeline y acceso incluido a la AI Suite.
+127|Creado por inversionistas inmobiliarios. Diseñado para toda la operación.
+128|Tu negocio inmobiliario.
+129|En una marcha más alta.
+130|KPI DRIVER es el centro de mando para inversionistas inmobiliarios y sus equipos. Un solo CRM maneja tus pipelines desde el primer lead hasta la renta, el seguimiento de KPIs muestra dónde está el negocio y el acceso a la AI Suite viene incluido.
+131|Explora la AI Suite
+132|CRM para todo el ciclo
+133|Acceso a la AI Suite incluido
+134|AI Agent opcional
+135|Vista ilustrativa: un tablero de pipeline del CRM que alimenta un panel de la AI Suite que convierte una llamada en notas estructuradas, junto a un panel opcional del AI Agent.
+136|=
+137|Lead → cita
+138|Captación
+139|Adquisiciones
+140|=
+141|Disposiciones
+142|Cierre
+143|=
+144|Activo
+145|“La heredamos la primavera pasada. El techo necesita arreglo. Como doscientos diez si es rápido.”
+146|Situación
+147|Heredada
+148|Condición
+149|Reparar techo
+150|Precio pedido
+151|Opcional
+152|Voz
+153|=
+154|=
+155|Vista ilustrativa · datos de ejemplo
+156|No es una pantalla real del producto
+157|Qué hace KPI DRIVER
+158|Opera el negocio
+159|Mantén conectadas la operación y los equipos
+160|Adquisiciones, disposiciones, coordinación de transacciones, proveedores y rentas: cada una en su propio pipeline dentro de un solo sistema.
+161|Ve el panorama completo
+162|Conoce qué funciona y qué está atorado
+163|El seguimiento de KPIs en cada pipeline muestra desempeño, oportunidades y cuellos de botella sin rehacer hojas de cálculo.
+164|Acelera con inteligencia
+165|Pon la IA en tareas específicas
+166|Usa herramientas de IA para notas de llamadas, coaching, underwriting, datos de contacto y proyecciones cuando la tarea lo pida.
+167|Una operación conectada
+168|La mayoría de los CRM se quedan en el lead. Tu negocio no.
+169|KPI DRIVER sigue un trato por cada equipo que lo toca. Elige una etapa para ver qué pasa ahí y a dónde va el trabajo después.
+170|Coord. de transacciones
+171|Contratistas
+172|Propiedades y rentas
+173|necesita respaldo
+174|revivido
+175|Etapas del ciclo de inversión
+176|Coordinación de transacciones
+177|Contratistas y proveedores
+178|Cada lead llega a un solo lugar
+179|Los leads de formularios web, campañas PPC, llamadas entrantes, SMS, correo y redes sociales llegan a un único pipeline de adquisiciones, así nada vive en una hoja de cálculo o en la bandeja de alguien.
+180|Ve cada lead nuevo en una vista organizada
+181|Asigna el lead a la persona correcta en cuanto llega
+182|Conserva el historial completo desde el primer contacto
+183|A dónde va después
+184|Los leads nuevos van directo a quienes cierran.
+185|Rutas comunes
+186|Lead nuevo → Adquisiciones
+187|Trabaja al vendedor, asegura la propiedad
+188|Tu equipo de adquisiciones negocia los términos y pone la propiedad bajo contrato, con ofertas, seguimientos y documentos registrados en el trato.
+189|Sigue negociaciones y ofertas en una sola vista
+190|Programa recordatorios de seguimiento y fechas de decisión
+191|Guarda los datos y documentos de la propiedad con el trato
+192|Un contrato firmado abre dos caminos a la vez. Un vendedor estancado recibe respaldo.
+193|Bajo contrato → Disposiciones
+194|Bajo contrato → Coordinación de transacciones
+195|El vendedor se estanca → Nurture toma el relevo
+196|Respaldo para tu equipo de adquisiciones
+197|Cuando un vendedor deja de responder o no está listo, Nurture entra detrás de tus gerentes de adquisiciones. Campañas por SMS y correo, según la razón por la que se estancó el trato, siguen trabajando el lead hasta que revive.
+198|Quita los leads estancados de la carga de tus cerradores
+199|Nurtures por situación, por tiempo y personalizados con IA, en inglés y español
+200|Devuelve los leads revividos a adquisiciones para cerrar
+201|Nurture no cierra tratos. Los revive para quienes sí los cierran.
+202|El vendedor responde → de vuelta a Adquisiciones
+203|Sigue en silencio → Nurture continúa
+204|Promociona y vende el trato
+205|Cuando una propiedad está bajo contrato, el pipeline de disposiciones cubre la promoción a agentes, inversionistas y compradores, las visitas, las ofertas y el acuerdo con el comprador.
+206|Envía propiedades a tu red de inversionistas
+207|Sigue ofertas y contraofertas entrantes
+208|Programa visitas y registra comentarios
+209|Un comprador comprometido pasa el trato a coordinación. Algunos tratos te los quedas.
+210|Comprador asegurado → Coordinación de transacciones
+211|Me la quedo → Propiedades y rentas
+212|Del contrato al cierre
+213|Contratos, documentos, liquidaciones y plazos se siguen hasta el cierre, con tareas asignadas a los responsables y documentos firmados dentro de la plataforma.
+214|Envía contratos a firma electrónica sin salir del sistema
+215|Sigue los plazos de cierre y los pendientes
+216|Mantén cada documento ligado a su trato
+217|El cierre no siempre es el final del expediente.
+218|Cerrado y vendido → Reporte de KPIs
+219|Requiere reparaciones → Contratistas y proveedores
+220|Se conserva → Propiedades y rentas
+221|Reparaciones y trabajo de proveedores, bajo control
+222|Un pipeline dedicado a reparaciones, remodelaciones y tareas de proveedores, ligado al trato o a la propiedad correspondiente.
+223|Asigna trabajos y sigue los plazos
+224|Controla gastos contra el presupuesto del proyecto
+225|Adjunta facturas, recibos y reportes a cada trabajo
+226|El trabajo terminado devuelve la propiedad a su siguiente paso.
+227|Lista para vender → Disposiciones
+228|Lista para rentar → Propiedades y rentas
+229|El portafolio que conservas
+230|Propiedades vacías, rentas activas, inquilinos, fechas de contrato e ingresos se gestionan en un pipeline de rentas que reporta al mismo seguimiento de KPIs.
+231|Sigue ingresos y gastos de renta por propiedad
+232|Sigue las fechas de inicio y fin de cada contrato
+233|Mantén juntos la comunicación con inquilinos y los contratos
+234|Las propiedades propias siguen alimentando el panorama.
+235|Mantenimiento → Contratistas y proveedores
+236|Venta → Disposiciones
+237|Tus pipelines se configuran según cómo opera tu negocio. Las rutas mostradas son ejemplos comunes, no una secuencia fija.
+238|Visibilidad que importa
+239|KPIs en
+240|cada pipeline
+241|, no solo en la parte alta del embudo.
+242|El seguimiento de KPIs es la razón del nombre de la plataforma. Como cada pipeline vive en un solo sistema, los números describen todo el negocio.
+243|Panel de KPIs de ejemplo con barras por fuente de leads y tres indicadores de muestra.
+244|Citas agendadas
+245|Bajo contrato
+246|Días prom. al cierre
+247|=
+248|Correo directo
+249|Llamadas en frío
+250|Referidos
+251|Métricas de ejemplo con fines ilustrativos · no son resultados de clientes
+252|Preguntas que un dueño o gerente puede responder
+253|¿Qué fuentes de leads se convierten en tratos?
+254|Sigue las fuentes de leads hasta el contrato, para que las decisiones de marketing sigan resultados y no volumen.
+255|¿Dónde se frenan los tratos?
+256|Ve la etapa donde se estancan las oportunidades y detecta áreas de bajo desempeño antes de que sean un problema.
+257|¿Cómo rinde cada equipo?
+258|Revisa adquisiciones, disposiciones y coordinación lado a lado, mes a mes.
+259|¿Cuánto genera el portafolio?
+260|Sigue ingresos y gastos de propiedades propias y en renta en el mismo reporte.
+261|Tres áreas de producto conectadas
+262|Un motor, nitro y un conductor extra opcional.
+263|El CRM y el acceso a la AI Suite vienen juntos en cada Enterprise Optimization Suite. El AI Agent es un complemento aparte para los equipos que lo quieren.
+264|Base
+265|Contactos, conversaciones, pipelines, flujos de trabajo y seguimiento de KPIs para cada etapa del negocio inmobiliario.
+266|Explora el CRM
+267|Acceso incluido
+268|Nitro para el motor del CRM
+269|Una plataforma complementaria con nueve herramientas de IA para captura de llamadas, coaching, underwriting, datos y proyecciones. Uso opcional, de pago por uso.
+270|opcional
+271|Complemento opcional
+272|Seguimiento con tus reglas
+273|Una oferta aparte que da seguimiento a leads nuevos y antiguos por voz, SMS, correo e iMessage dentro de los límites que tú defines.
+274|Explora el AI Agent
+275|=
+276|CRM + acceso a la AI Suite, juntos. Sin suscripción adicional por la AI Suite.
+277|=
+278|Agrégalo si encaja con tu operación.
+279|Ve cómo funcionan las ofertas
+280|La AI Suite
+281|La AI Suite le pone
+282|=
+283|al motor del CRM.
+284|Nueve herramientas de IA, entregadas junto con tu CRM, cada una creada para una tarea específica de una operación inmobiliaria.
+285|Incluido
+286|El acceso viene con la Suite
+287|Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite.
+288|Usa una herramienta cuando la necesites
+289|Nada te obliga a usar las herramientas de IA. Recurre a ellas en las tareas donde ayudan.
+290|Pago por uso
+291|Paga por lo que usas
+292|Sin suscripción adicional por la AI Suite. El uso se registra en un panel de facturación. Las tarifas se ven en tu llamada de descubrimiento.
+293|Capturar y entrenar
+294|Cada llamada mejora a tu equipo.
+295|=
+296|Captura los detalles de la llamada, escribe notas estructuradas, llena los campos correctos y mantiene al día el registro del CRM.
+297|=
+298|Califica llamadas de gerentes de leads y de adquisiciones y reporta fortalezas y puntos débiles a diario, por semana y por mes.
+299|=
+300|Practica con más de 10 escenarios al día y recibe retroalimentación sobre comunicación, manejo de objeciones y habilidades de conversión.

@@ -4,6 +4,8 @@
   "use strict";
   var doc = document;
   doc.documentElement.classList.remove("no-js");
+  var ES = doc.documentElement.lang === "es";
+  function L(en, es) { return ES ? es : en; }
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---- analytics hook: pushes named events to dataLayer if a tag manager is installed ---- */
@@ -25,7 +27,7 @@
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      toggle.setAttribute("aria-label", open ? L("Close menu", "Cerrar menú") : L("Open menu", "Abrir menú"));
     });
   }
 
@@ -89,13 +91,13 @@
       steps.forEach(function (s, n) { s.setAttribute("aria-pressed", String(n === i)); });
       panes.forEach(function (p, n) { p.classList.toggle("is-on", n === i); });
     }
-    function stop() { clearInterval(timer); timer = null; if (play) play.textContent = "Play walkthrough"; }
+    function stop() { clearInterval(timer); timer = null; if (play) play.textContent = L("Play walkthrough", "Reproducir recorrido"); }
     steps.forEach(function (s, n) { s.addEventListener("click", function () { stop(); show(idx === n ? -1 : n); }); });
     if (play) {
       if (reduceMotion) { play.hidden = true; return; }
       play.addEventListener("click", function () {
         if (timer) { stop(); show(-1); return; }
-        play.textContent = "Stop";
+        play.textContent = L("Stop", "Detener");
         show(0);
         track("product_explore", { label: "workflow walkthrough" });
         timer = setInterval(function () {
@@ -115,9 +117,9 @@
     }
     function check(input) {
       var v = (input.value || "").trim(), msg = "";
-      if (input.required && !v) msg = "Enter " + (input.getAttribute("data-name") || "this field") + ".";
-      else if (input.type === "email" && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) msg = "Enter an email address like name@company.com.";
-      else if (input.type === "tel" && v && v.replace(/\D/g, "").length < 10) msg = "Enter a phone number with area code.";
+      if (input.required && !v) msg = L("Enter ", "Escribe ") + (input.getAttribute("data-name") || L("this field", "este campo")) + ".";
+      else if (input.type === "email" && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) msg = L("Enter an email address like name@company.com.", "Escribe un correo como nombre@empresa.com.");
+      else if (input.type === "tel" && v && v.replace(/\D/g, "").length < 10) msg = L("Enter a phone number with area code.", "Escribe un teléfono con código de área.");
       setErr(input, msg);
       return !msg;
     }
@@ -129,7 +131,7 @@
       inputs.forEach(function (i) { if (!check(i) && !firstBad) firstBad = i; });
       if (firstBad) {
         status.hidden = false; status.setAttribute("data-state", "error");
-        status.textContent = "Check the highlighted fields and send again.";
+        status.textContent = L("Check the highlighted fields and send again.", "Revisa los campos marcados y vuelve a enviar.");
         firstBad.focus();
         return;
       }
@@ -139,18 +141,18 @@
       if (!endpoint) {
         /* Preview build: no submission destination is connected yet. Say so plainly. */
         status.hidden = false; status.setAttribute("data-state", "error");
-        status.innerHTML = "<strong>This preview form is not connected yet, so nothing was sent.</strong> To reach the team now, email info@kpidriver.com or book a discovery call.";
+        status.innerHTML = L("<strong>This preview form is not connected yet, so nothing was sent.</strong> To reach the team now, email info@kpidriver.com or book a discovery call.", "<strong>Este formulario de vista previa aún no está conectado, así que no se envió nada.</strong> Para contactar al equipo ahora, escribe a info@kpidriver.com o agenda una llamada.");
         status.focus();
         return;
       }
       var btn = form.querySelector("[type=submit]");
-      btn.disabled = true; btn.textContent = "Sending…";
+      btn.disabled = true; btn.textContent = L("Sending…", "Enviando…");
       fetch(endpoint, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
         .then(function (r) { if (!r.ok) throw new Error(String(r.status)); track("form_complete", { form: form.getAttribute("data-form") }); window.location.href = form.getAttribute("data-success") || "thank-you.html"; })
         .catch(function () {
           btn.disabled = false; btn.textContent = "Send message";
           status.hidden = false; status.setAttribute("data-state", "error");
-          status.textContent = "Your message did not send. Try again, or email info@kpidriver.com.";
+          status.textContent = L("Your message did not send. Try again, or email info@kpidriver.com.", "Tu mensaje no se envió. Inténtalo de nuevo o escribe a info@kpidriver.com.");
           status.focus();
         });
     });
@@ -199,7 +201,7 @@
 
   /* ---- reviews widget: hide the fallback once Elfsight has rendered ---- */
   doc.querySelectorAll("[data-reviews]").forEach(function (box) {
-    var w = box.querySelector('[class^="elfsight-app-"]');
+    var w = box.querySelector('[class^="elfsight-app-"], [data-boast-component]');
     if (!w || !window.MutationObserver) return;
     new MutationObserver(function () { if (w.children.length) box.classList.add("is-loaded"); }).observe(w, { childList: true, subtree: true });
   });
@@ -312,7 +314,7 @@
   var buttons = doc.querySelectorAll("[data-theme-toggle]");
   var meta = doc.querySelector('meta[name="theme-color"]');
   function paint(t) {
-    buttons.forEach(function (b) { b.setAttribute("aria-label", t === "light" ? "Switch to dark mode" : "Switch to light mode"); });
+    buttons.forEach(function (b) { b.setAttribute("aria-label", t === "light" ? (root.lang === "es" ? "Cambiar a modo oscuro" : "Switch to dark mode") : (root.lang === "es" ? "Cambiar a modo claro" : "Switch to light mode")); });
     if (meta) meta.setAttribute("content", t === "light" ? "#ffffff" : "#070b11");
     doc.dispatchEvent(new Event("themechange"));
   }
@@ -332,7 +334,7 @@
     if (mq.addEventListener) mq.addEventListener("change", follow);
   }
   if (window.MutationObserver) new MutationObserver(function () { paint(current()); }).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
-  buttons.forEach(function (b) { b.setAttribute("aria-label", current() === "light" ? "Switch to dark mode" : "Switch to light mode"); });
+  buttons.forEach(function (b) { b.setAttribute("aria-label", current() === "light" ? (root.lang === "es" ? "Cambiar a modo oscuro" : "Switch to dark mode") : (root.lang === "es" ? "Cambiar a modo claro" : "Switch to light mode")); });
 
   /* ---- scroll reveals: only elements below the first screen are hidden, and only when motion is welcome ---- */
   if (!root.classList.contains("anim") || !("IntersectionObserver" in window)) return;

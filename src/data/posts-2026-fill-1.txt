@@ -1,0 +1,284 @@
+=== speed-to-lead-real-estate-investors | 2026-05-19 | kpis-performance | Explainer | 0
+# Speed to Lead: How Fast Is Fast Enough?
+> Speed to lead is the time between a seller raising their hand and your team responding. This article explains how to measure it, what slows it down, and how to set a target your team can hit.
+## What speed to lead measures
+Speed to lead is the gap between the moment a seller submits a form, calls or texts, and the moment a person on your team responds. It is one of the few numbers in an investing business that you control completely.
+A motivated seller rarely contacts one company. Whoever answers first sets the tone for the conversation, and often gets the appointment.
+## How to measure it properly
+Most teams guess. To measure it, you need two timestamps on every lead:
+- When the lead was created
+- When the first real contact attempt was made (a call or a personal text, not an automated reply)
+Subtract one from the other and track the median, not the average. One lead that sat over a weekend will distort an average and hide how your team performs on a normal day.
+## What slows teams down
+When speed to lead is poor, the cause is usually one of these:
+- Leads arrive in several places and nobody owns the inbox
+- New leads are assigned by hand
+- There is no alert when a lead comes in
+- After-hours leads wait until morning
+- Reps are busy with old follow-up when a new lead lands
+None of these is a people problem. They are system problems, and each has a fix.
+## Setting a target
+Start by measuring where you are for two weeks. Then set a target for business hours and a separate one for evenings and weekends. A target your team hits nine times out of ten is worth more than an ambitious one nobody believes.
+Review it weekly. If the number slips, look at which lead source and which hours are responsible before you look at individuals.
+## Where automation helps and where it does not
+An instant automated text confirms you received the inquiry. It does not replace a person. Use automation to assign the lead, alert the owner and send the acknowledgement. Then get a human on the phone.
+For after-hours coverage, an AI agent that follows rules you set can hold the conversation until your team is back.
+## The takeaway
+Measure the gap, fix the handoffs that create it, and review it every week. Speed to lead is rarely about working harder. It is about making sure a new lead reaches the right person at once.
+
+=== acquisition-manager-playbook | 2026-05-26 | acquisitions-sales | Guide | 1
+# The Acquisition Manager Playbook: From First Call to Signed Contract
+> A working guide to the acquisition manager role: how to structure the first call, qualify motivation, present an offer and keep the deal moving to a signed contract.
+## What an acquisition manager is responsible for
+The acquisition manager owns the conversation with the seller from the first real call to the signed contract. Everything else in the business depends on that conversation going well.
+The role has four jobs: build trust, understand the situation, present an offer the seller can say yes to, and keep the deal from stalling.
+## Before the call
+Read the record. A seller who has already explained their situation to a lead manager should not have to repeat it. Before you dial, know:
+- How the lead came in
+- What was said on earlier calls
+- The property basics and any known condition issues
+- What the seller said about timeline and price
+## The four things to learn on the first call
+Every strong first call covers the same ground:
+- Motivation: why are they considering selling, and why now?
+- Condition: what would a buyer need to repair?
+- Timeline: when do they need this done?
+- Price: what number do they have in mind, and where did it come from?
+Ask about condition before price. A seller who has just walked you through a failing roof is more realistic about the number.
+## Presenting the offer
+Explain how you arrived at the number before you say it. Walk through the repairs, the comparable sales and your costs. An offer that arrives with reasoning feels like a conclusion. An offer that arrives alone feels like a lowball.
+Then stop talking and let the seller respond.
+## When the seller is not ready
+Most sellers do not sign on the first call. That is normal. What matters is what happens next:
+- Agree a specific next step and date before you hang up
+- Log the reason they are not ready
+- If the deal stalls, move the lead to nurture so follow-up continues while you work live opportunities
+Nurture is backup for the acquisition manager. It keeps working the seller and hands the lead back when they re-engage.
+## After the contract
+A signed contract starts two tracks at once: dispositions begins finding a buyer, and transaction coordination begins the path to closing. Hand off cleanly, with notes, so neither team has to call you for context.
+## How to get better
+Review your own calls. Pick one skill a week: discovery questions, handling a price objection, asking for the decision. Managers should score calls against a consistent rubric so feedback is about the call and not about opinion.
+## The takeaway
+Great acquisition managers are consistent more than they are charismatic. They prepare, ask the same core questions every time, explain their offers and never let a lead go quiet without a plan.
+
+=== seller-lead-nurture-follow-up-guide | 2026-06-02 | marketing-lead-generation | Guide | 0
+# Seller Lead Nurture: The Complete Follow-Up Guide for Investors
+> Most seller leads are not ready the day they contact you. This guide covers how to structure follow-up by situation and by timing, so stalled leads come back to your acquisitions team ready to talk.
+## Why nurture exists
+Only a small share of seller leads are ready to sign the week they come in. The rest are thinking, comparing, waiting on a family member or hoping for a better number.
+Those leads are not dead. They are early. Nurture is the system that stays in touch until the timing changes.
+## Nurture is backup, not a second sales team
+Nurture does not close deals. Its job is to take stalled leads off your acquisition managers' plates, keep the conversation warm, and hand the lead back the moment the seller re-engages.
+That distinction matters. If closers are also responsible for long-term follow-up, live deals get less attention and old leads get none.
+## Follow up by situation
+The message that works depends on why the deal stalled. Useful situations to build for:
+- The seller has no real motivation yet
+- The asking price is too high
+- The timeline is long
+- There is little or no equity
+- The property is listed with an agent
+- The seller went quiet after an offer
+- An offer or contract was rejected
+- A deal was cancelled
+A seller who rejected your offer needs a different message from one who is waiting for a tenant to move out.
+## Follow up by timing
+Some leads simply need a check-in at the right moment. Timed sequences at 30 days, 3 months, 6 months and 12 months cover sellers who told you when to come back.
+## What to send
+Keep messages short, personal and useful. Mix channels:
+- Text for quick check-ins
+- Email for longer updates
+- A call when the seller responds
+Reference what you know. "You mentioned the roof last time" will always beat "just checking in."
+## Language matters
+If a seller is more comfortable in Spanish, follow up in Spanish. Bilingual follow-up is not a courtesy. It is the difference between being understood and being ignored.
+## How to know it is working
+Track how many nurtured leads come back to acquisitions each month, and how many of those become contracts. If leads go into nurture and never come out, the sequences need work.
+## The takeaway
+Build follow-up around why and when, keep it human, and make the handoff back to acquisitions automatic. Deals you revive from nurture cost nothing extra to generate.
+
+=== migrate-real-estate-crm | 2026-06-09 | crm-systems | How-to | 0
+# How to Migrate Your Real Estate CRM Without Losing Data
+> Switching CRMs is where a lot of history gets lost. This article walks through the steps that keep contacts, deal stages, notes and follow-up intact when you move.
+## Why migrations go wrong
+Most failed migrations have the same cause: someone exported everything, imported everything, and hoped. Fields did not match, stages were lost, and the team spent a month not trusting the new system.
+A migration is a project. Treat it like one.
+## Step 1: Decide what is worth moving
+Not everything deserves to come across. Before you export, decide:
+- Which contacts are active, and which are years old with no activity
+- Which custom fields your team really uses
+- Which pipelines and stages still reflect how you work
+Moving clutter into a new system only makes the new system cluttered.
+## Step 2: Map fields and stages
+List every field in the old system and where it lands in the new one. Do the same for pipeline stages. This map is the most important document in the migration.
+Pay attention to:
+- Phone number formats
+- Lead source values
+- Dates
+- Owner assignments
+## Step 3: Clean before you move
+Merge duplicates and fix obvious errors in the old system first. It is far easier than cleaning up after the import.
+## Step 4: Test with a small batch
+Import a few hundred records and have the people who will use the system check them. Do the notes appear? Are deals in the right stage? Is the assigned owner correct?
+## Step 5: Pick a quiet window
+Run the final migration when the team is not working leads, usually a weekend. Freeze changes in the old system so nothing is entered after the export.
+## Step 6: Keep the old system readable
+Do not cancel the old account the same day. Keep read-only access for a few weeks so anyone can check a record that looks wrong.
+## Step 7: Train on the new system before go-live
+A migration succeeds when the team uses the new system on day one. Short recorded walkthroughs and a question-and-answer session do more than a long manual.
+## The takeaway
+Decide what to move, map it, clean it, test it, then move it once. A careful migration takes days. Recovering from a careless one takes months.
+
+=== seller-ghosted-follow-up | 2026-06-16 | marketing-lead-generation | How-to | 0
+# What to Do When a Seller Ghosts You
+> A seller who stops replying has not always said no. This article covers why sellers go quiet, how to follow up without being pushy, and when to stop.
+## Silence is not a no
+A seller who stops answering has not rejected you. More often, something else took priority: a family conversation, another offer, a change of heart, or plain embarrassment about the property.
+Treating silence as a no means walking away from leads you already paid for.
+## Why sellers go quiet
+The common reasons:
+- Your offer was lower than they hoped and they do not want the conversation
+- A relative or co-owner disagreed
+- They are talking to another buyer or an agent
+- The urgency passed
+- Life got in the way
+You usually do not know which. Your follow-up should work for all of them.
+## A follow-up pattern that respects the seller
+Space the touches out and change the angle each time:
+- A short, friendly text a few days after the last contact
+- An email that restates what you understood about their situation
+- A message that offers something useful, such as a revised number or a different closing date
+- A plain question: "Has anything changed on your end?"
+- A final note that leaves the door open
+Vary the channel. Some people ignore calls and answer texts.
+## What not to do
+- Do not send the same message five times
+- Do not guilt the seller
+- Do not keep a ghosted lead in your active pipeline, where it hides the deals that are moving
+## Move it to nurture
+After a few unanswered attempts, the lead belongs in a nurture sequence built for sellers who went quiet. Your acquisition manager is freed up, the follow-up continues, and the lead returns when the seller replies.
+## When to stop
+If a seller asks you to stop, stop, and record it. Otherwise, long-term follow-up at wider intervals is reasonable. Circumstances change over a year.
+## The takeaway
+Ghosting is a timing problem more often than a rejection. Keep following up with patience and variety, move the lead out of your active pipeline, and let nurture do the waiting.
+
+=== cost-per-contract-real-estate | 2026-06-23 | kpis-performance | Explainer | 0
+# Cost Per Contract: The Marketing Number Most Investors Skip
+> Cost per lead tells you what attention costs. Cost per contract tells you what a deal costs. This article explains how to calculate it by lead source and what to do with the answer.
+## Why cost per lead misleads
+Cost per lead is easy to calculate, which is why everyone tracks it. It is also the least useful marketing number you have.
+A source that produces cheap leads nobody can reach is not cheap. A source with expensive leads that turn into contracts may be your best channel.
+## What cost per contract is
+Cost per contract is your marketing spend on a source divided by the number of signed contracts that source produced in the same period.
+As an illustration: if a channel cost 6,000 dollars in a quarter and produced three contracts, the cost per contract is 2,000 dollars. Another channel may show a lower cost per lead and a far higher cost per contract.
+## What you need to calculate it
+- Spend by lead source, by month
+- A lead source recorded on every lead, consistently
+- The stage history of each deal, so you know which leads became contracts
+The middle item is where most teams fail. If lead source is typed by hand, you will have six spellings of the same channel.
+## Mind the time lag
+A lead generated in March may sign in June. Compare spend and contracts over a long enough window, such as a rolling quarter, or you will punish channels that take longer to convert.
+## What to do with the number
+- Move budget toward sources with a lower cost per contract
+- Investigate sources with many leads and few contracts: is it lead quality or follow-up?
+- Set a ceiling: the most you are willing to pay for a contract, based on your average profit
+## Go one step further
+Cost per closed deal is better still, because not every contract closes. If one source has a high fall-through rate, cost per contract flatters it.
+## The takeaway
+Stop judging marketing by how cheaply it produces leads. Judge it by what a signed contract costs, per source, over a sensible window.
+
+=== dispositions-guide-real-estate-investors | 2026-06-30 | dispositions-transactions | Guide | 1
+# Dispositions From Contract to Buyer: A Working Guide
+> Dispositions turns a signed contract into a committed buyer. This guide covers the buyers list, marketing the deal, handling offers and the handoff to transaction coordination.
+## What dispositions does
+Once a property is under contract, someone has to find the buyer. That is dispositions. The work begins the moment acquisitions hands over a signed agreement and ends when a buyer is committed and the deal passes to transaction coordination.
+A slow dispositions process is expensive. Every extra day adds risk that the deal falls apart.
+## Start with a good handoff
+Dispositions needs the full picture from acquisitions:
+- The contract price and closing date
+- Photos and condition notes
+- Access instructions
+- Anything the seller asked for
+If the dispo manager has to chase these, the first days are wasted.
+## Build and segment the buyers list
+A buyers list is only useful if it is organized. Segment by:
+- Area
+- Property type
+- Price range
+- How they buy: cash, financing, rental or flip
+Sending every deal to every buyer trains your list to ignore you.
+## Market the deal
+Send the property to the right segment with clear information: address or area, price, photos, repair summary and how to make an offer. Follow the blast with direct calls to the buyers most likely to want it.
+## Showings and offers
+Schedule showings in blocks where you can. Log every offer and counteroffer against the deal, with the buyer, the amount, the terms and the date. When you have several offers, compare certainty of closing and not only price.
+## Choose the buyer and paper it
+Once you accept an offer, get the agreement signed quickly and collect the deposit. A buyer who delays signing is telling you something.
+## Hand off to transaction coordination
+Pass the deal across with both agreements, the buyer's details and the timeline. From here, the transaction coordinator owns the path to closing.
+## What to measure
+- Days from contract to buyer
+- Offers per deal
+- Assignment fee or spread
+- Fall-through rate after a buyer is accepted
+## The takeaway
+Dispositions rewards preparation: a clean handoff, a segmented list and fast paperwork. Measure the days from contract to buyer and work to shorten them.
+
+=== how-to-score-seller-calls | 2026-07-07 | acquisitions-sales | How-to | 0
+# How to Score a Seller Call: A Practical Rubric
+> Coaching improves when everyone scores calls the same way. This article lays out a simple rubric for seller calls and how to use it without turning coaching into fault-finding.
+## Why score calls at all
+Without a rubric, call feedback is opinion. One manager thinks a call was great, another thinks it was weak, and the rep learns nothing they can repeat.
+A rubric makes feedback specific and consistent. It also lets you see improvement over time.
+## What a good rubric covers
+Keep it to the parts of a call that drive outcomes:
+- Opening: did the rep set a clear, friendly purpose for the call?
+- Rapport: did the seller feel heard?
+- Motivation discovery: did the rep learn why the seller is considering selling, and why now?
+- Property and condition: were the right questions asked before price?
+- Timeline and price: did the rep learn the seller's expectations?
+- Objection handling: were concerns explored and not argued with?
+- Next step: did the call end with a specific commitment and date?
+## How to score
+Give each area a simple scale and write down what earns each score. For example, in motivation discovery, the top score might require that the rep uncovered the reason, the urgency and who else is involved in the decision.
+Deduct for mistakes that cost deals, such as quoting a price before asking about condition, or ending without a next step.
+## Different roles need different rubrics
+A lead manager qualifying inbound leads is not doing the same job as an acquisition manager negotiating a contract. Score each against what their call is meant to achieve.
+## Coaching from the score
+- Review one or two calls per rep per week, not twenty
+- Start with what went well
+- Pick a single skill to work on before the next review
+- Compare this month to last month
+## Where AI helps
+Listening to every call is not realistic for a manager. AI call scoring can apply the same rubric to every conversation and report strengths and weak spots daily, weekly and monthly, so a manager spends their time coaching and not listening.
+## The takeaway
+Write down what a good call looks like, score against it consistently, and coach one skill at a time. Reps improve fastest when feedback is specific.
+
+=== a2p-10dlc-real-estate-investors | 2026-07-14 | crm-systems | Explainer | 0
+# A2P 10DLC for Real Estate Investors: What It Is and Why Texts Fail Without It
+> If your business texts sellers from a standard phone number, carriers expect you to be registered. This article explains A2P 10DLC in plain terms and what registration involves.
+## The short version
+A2P 10DLC is the system United States mobile carriers use to approve businesses that send text messages from regular ten-digit phone numbers. A2P means application-to-person. 10DLC means ten-digit long code.
+If you text sellers from software and you are not registered, your messages are likely to be filtered or blocked.
+## Why carriers require it
+Carriers want to know who is sending business texts and why, so they can reduce spam. Registration ties your messages to a real business and a declared purpose.
+## What registration involves
+Registration has two parts:
+- Brand: who your business is, including its legal name, tax ID and contact details
+- Campaign: what you will send, to whom, with sample messages and how people opt in and out
+Approval is not instant. It commonly takes one to two weeks, and incomplete submissions take longer.
+## What reviewers look for
+- A business website that matches the registered name
+- A clear description of how contacts agreed to receive messages
+- Sample messages that match the stated purpose
+- Opt-out wording, such as replying STOP
+## Why messages still fail after approval
+Registration is the start. Deliverability also depends on:
+- Message content: links, all capitals and aggressive wording raise flags
+- Volume: sudden spikes look suspicious
+- Complaints and opt-outs
+- Sending to numbers that never agreed to hear from you
+## What this means for your CRM
+Your CRM setup should handle registration as part of onboarding, record consent on each contact, and honor opt-outs automatically. If a provider tells you registration is optional, be careful.
+## A note on compliance
+This article is general information, not legal advice. Texting rules also involve consent and do-not-call requirements. Speak with counsel about your specific outreach.
+## The takeaway
+A2P 10DLC is the cost of entry for business texting. Register early, describe your messaging accurately, and keep your content and consent practices clean.

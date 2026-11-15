@@ -2,6 +2,15 @@
 
 Status: **preview complete, live site untouched.** Nothing was published, no Webflow page, CMS item, script or setting was changed. All Webflow access so far was read-only.
 
+## Revision 4 (2026-11-15)
+
+- **Client logins:** header menu and footer column link to `crm.kpidriver.com` (CRM) and `kpidriver.ai` (AI Suite). The footer also links "AI Suite terms at kpidriver.ai", since the AI Suite carries its own terms.
+- **Booking attribution:** each placement keeps its own calendar (the `CAL` map in `build.py`), because bookings are attributed in the CRM by embed link.
+- **Customer stories:** the Boast video widget from the live site (`data-widget-id="cedc94cc-993c-4cc9-aae5-b6ac0b340cf4"`) sits above the Google reviews on Home.
+- **Illustration slots:** four `<figure data-replace="…">` blocks mark where real screenshots or demos go: CRM pipeline board (CRM page), AI Underwriting report and AI Dashboard (AI Suite page), AI Agent conversation (AI Agent page). The home hero panel and the workflow demo are the other two illustrative pieces. Search the source for `data-replace` to find them.
+- **Spanish:** nine core pages are built in Spanish under `/es/` (Home, Services, CRM, AI Suite, AI Agent, Our Team, Contact, Booking, Thank you), with a language toggle beside the theme toggle, `hreflang` tags and Spanish form messages. Blog and legal pages stay in English. Translations live in `src/data/es.json` as English → Spanish pairs; the build prints any string that still needs translating to `docs/es-missing.txt`. In Webflow this maps to Localization with a Spanish secondary locale.
+- **Blog:** 26 new articles, one per Tuesday from 2026-05-19 to 2026-11-10, in `src/data/posts-2026-fill-*.txt`. They carry the existing byline (Ahmed Ramy) to match the other posts. Each should be read and approved by the team before it goes into the CMS. Three of them are the first cornerstone guides for Acquisitions & Sales, Dispositions & Transactions, and Rentals & Portfolio.
+
 ## Revision 3 (2026-11-15)
 
 See `docs/AUDIT.md` for the full audit, the list of changes and measured scores. In short: light and dark themes, Brandfetch palette, expanded bilingual nurtures, human-support section, knowledge base inside the AI Suite, motion system, structured data and `llms.txt`, new blog taxonomy with hub-and-spoke linking, and `docs/editorial-calendar.csv`.
