@@ -24,6 +24,7 @@ def split_rules(css, limit):
     if cur: chunks.append(cur)
     return chunks
 
+ASSETS = json.loads((OUT / "assets.json").read_text()) if (OUT / "assets.json").exists() else {}
 CLASH = {"h4": "kd-h4", "faq": "kd-faq"}  # class names the old Webflow stylesheet also defines
 
 def declash_css(css):
@@ -40,7 +41,7 @@ def links(h, lang_prefix=""):
         u = m.group(2)
         if re.match(r"(https?:|mailto:|tel:|#|/)", u): return m.group(0)
         u = re.sub(r"^(\.\./)+", "", u)
-        if u.startswith("assets/"): return m.group(1) + "{{ASSET_BASE}}/" + u.split("/")[-1] + '"'
+        if u.startswith("assets/"): return m.group(1) + ASSETS.get(u.split("/")[-1], "{{MISSING}}/" + u.split("/")[-1]) + '"'
         frag = ""
         if "#" in u: u, frag = u.split("#", 1); frag = "#" + frag
         u = re.sub(r"\.html$", "", u); u = "" if u in ("index", "") else u
