@@ -25,7 +25,8 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 | Book a Discovery Call | 6afa0d6e369e94ec1c852b8a | /book-discovery-call (final) | done, single embed, long-form head code; verified on staging |
 | Thank You | 6afa182cf610cfffbefd4cb2 | /kd-thank-you | done, verified on staging |
 | Our Team | 6afa188c23514ef7a01c1579 | /kd-our-team | done, verified on staging |
-| Contact, Services, CRM, AI Suite, AI Agent, Home, 404, Privacy, Terms, Blog | | | to do |
+| AI Agent | 6afa191e7b59d3ca770d4e6a | /kd-ai-agent (final: /services/ai-agent, needs a services folder or flat slug decision) | done; FAQ JSON-LD left out of embed, add via page schema |
+| Contact, Services, CRM, AI Suite, Home, 404, Privacy, Terms, Blog | | | to do |
 
 ## Open decisions for the owner
 - Knowledge Base, Log in, Case studies, For-clients pages use Memberstack / old design: keep, redirect or retire?
