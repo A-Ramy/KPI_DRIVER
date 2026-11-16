@@ -58,3 +58,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - WHTML builder keeps a class only if the `css` param has a rule (even empty) for a class on that element.
 - CMS bindings must be set after the element exists (create, then `set_settings` with `binding`).
 - To do: paragraph spacing in post body is tight (rich-text rule in header embed not winning; add stronger selector); category breadcrumb, "Keep reading" related posts, hub box; Blog list page and category template still old design; images for new posts.
+- 2026-11-16: owner imported the remaining 16 posts by CSV (all 41 posts in CMS, categories set).
+- **Blog list page** (68974c57cac027f80fdf882a) restyled in place: old `page-wrapper` ab62f4ce-3bbf-1ed2-d1ca-347ecf38f0f0 hidden; CMS list section 6e17c30f-fc18-7709-fc10-5629ca0d68c1 moved to body and restyled by CSS in header embed 21d47800-4b73-a984-6555-b6c157f233ca + override embed 253c0607-e4f3-3adf-e5e5-c9d49d19bd8f; footer embed 9b1c19ce-e875-3f6a-adc0-1ba93b2c7e34.
+- **Category template** (68974c57cac027f80fdf882b) restyled in place: wrapper 7e4f9f5c-3f86-acb6-2927-670277f19bb7 hidden; list section 7e4f9f5c-3f86-acb6-2927-670277f19bcb moved; native hero cae76a9f-8948-25bd-5179-dea2b16a006e bound to category name/description; header embed 62479b02-a0e9-ae2b-c9e6-6b30bfdbf5d2, override embed 6c882971-eae3-8c28-0f28-e45fa972bbd4, footer embed 9a568611-32d7-aa47-a031-7a8409afabbf. Card date hidden there (old binding shows created date, element not reachable by API).
+- Post template: Webflow renamed the layout class to `kd-post-1`; spacing overrides (embed 900eed9b-363f-df51-0b1b-451e41ac6434) target `main.is-blog`.
+- Blog still to do: related posts + category breadcrumb on posts, images for the 26 new posts, extra old categories (Industry Insights, Tips & Tricks, Webinars & Events) are empty.
+- Language decision pending: owner asked add-on vs manual; recommended the Localization add-on.
