@@ -64,3 +64,10 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Post template: Webflow renamed the layout class to `kd-post-1`; spacing overrides (embed 900eed9b-363f-df51-0b1b-451e41ac6434) target `main.is-blog`.
 - Blog still to do: related posts + category breadcrumb on posts, images for the 26 new posts, extra old categories (Industry Insights, Tips & Tricks, Webinars & Events) are empty.
 - Language decision pending: owner asked add-on vs manual; recommended the Localization add-on.
+
+## 2026-11-16 (later): go-live prep, owner asked for a full publish
+- Owner bought Localization. Locales: primary `68974c57cac027f80fdf8845` (cms `…8846`), Spanish `6afb6419e78a2109902d68ac` (cms `6afb6419e78a2109902d68b1`, subdirectory `es`). The MCP localization tool cannot write html-embed nodes (needs `html`, schema only allows `text`), so Spanish page bodies are delivered by a hosted bundle `kd-es.js` that swaps header/main/footer on `/es/*` (see kd-head.js).
+- 4 gap posts added (2026-02-10..03-03), ids in `webflow/cms/post-ids.json` (all 45 slugs -> item ids).
+- Covers: `tools/covers.js` -> `webflow/covers/`. CMS image fields accept the public raw GitHub URL of this branch (Webflow copies the file). 30 posts (26 + 4 new) have the new covers; the original 15 keep the owner's existing images.
+- Related posts: `webflow/cms/post-index.json` (hub-and-spoke relations from build.py) -> hosted `kd-posts.js`, rendered by kd-site.js on /post/ pages.
+- Hosted v2 files (2026-11-16): head js `…/6afb6a420fb8f221316e3e1e_kd-head-2.js`, site js `…/6afb6a424664c981ee46563f_kd-site-2.js`, Spanish bundle `…/6afb6a2ccdedf3e0cadbe563_kd-es.js` (built by tools/build_es.py; URL is inside kd-head.js), posts index `…/6afb6a2dfb12da21134b8439_kd-posts.js`. Every page's head/footer code must point at the v2 head/site files.

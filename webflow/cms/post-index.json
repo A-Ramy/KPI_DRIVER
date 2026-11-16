@@ -2,8 +2,11 @@
 {
 "slug": "best-real-estate-crm-for-investors",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-01-07",
 "title": "The Ultimate Guide to Real Estate CRMs for Investors",
+"summary": "Most real estate CRMs are built for agents—not investors. In this guide, discover what actually makes a CRM effective for investors, including automation, KPI tracking, and pipeline visibility, and how the right system can dramatically increase conversions and scalability.",
+"type": "Guide",
 "n": 1,
 "related": [
 "crm-data-hygiene-real-estate",
@@ -14,8 +17,11 @@
 {
 "slug": "why-real-estate-crms-fail-investors",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-01-14",
 "title": "Why Most Real Estate CRMs Fail Investors",
+"summary": "Most real estate CRMs are built for agents—not investors. This article reveals how lack of automation, poor pipeline visibility, and missing KPI tracking silently cost investors deals, and what a real system should actually do.",
+"type": "Explainer",
 "n": 2,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -26,8 +32,11 @@
 {
 "slug": "real-estate-kpis-that-matter",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-01-21",
 "title": "The Only Real Estate KPIs That Actually Matter",
+"summary": "Most investors track activity—but not performance. This guide breaks down the only real estate KPIs that actually matter, including conversion rates, cost per deal, and pipeline metrics, so you can identify bottlenecks, increase profitability, and scale with precision.",
+"type": "Guide",
 "n": 3,
 "related": [
 "leading-vs-lagging-indicators-real-estate",
@@ -38,8 +47,11 @@
 {
 "slug": "real-estate-automation-system-investors",
 "cat": "ai-automation",
+"catname": "AI & Automation",
 "date": "2026-01-28",
 "title": "How Real Estate Investors Automate Their Entire Business",
+"summary": "Automation is no longer optional in real estate investing. This guide shows how top investors automate lead response, follow-ups, scheduling, and deal tracking to eliminate missed opportunities, increase conversions, and scale efficiently.",
+"type": "Guide",
 "n": 4,
 "related": [
 "ai-call-coaching-real-estate",
@@ -50,8 +62,11 @@
 {
 "slug": "real-estate-investor-pipeline-system",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-02-03",
 "title": "The Complete Lead-to-Close Pipeline for Real Estate Investors",
+"summary": "Most investors don’t have a lead problem—they have a pipeline problem. This guide breaks down the full lead-to-close pipeline, showing exactly where deals are won or lost and how to fix bottlenecks to increase conversions and scale.",
+"type": "Guide",
 "n": 5,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -62,8 +77,11 @@
 {
 "slug": "lead-manager-vs-acquisition-manager",
 "cat": "acquisitions-sales",
+"catname": "Acquisitions & Sales",
 "date": "2026-02-10",
 "title": "Lead Manager vs Acquisition Manager: Who Does What",
+"summary": "Lead managers qualify. Acquisition managers negotiate and sign. This article explains where one role ends and the other begins, and how to hand a seller from one to the other without losing momentum.",
+"type": "Explainer",
 "n": 6,
 "related": [
 "acquisition-manager-playbook",
@@ -74,8 +92,11 @@
 {
 "slug": "cash-buyers-list-hygiene",
 "cat": "dispositions-transactions",
+"catname": "Dispositions & Transactions",
 "date": "2026-02-17",
 "title": "Keeping a Cash Buyers List Clean, Segmented and Active",
+"summary": "A buyers list loses value quickly if nobody maintains it. This article covers what to record on each buyer, how to segment, and a simple routine that keeps the list worth sending to.",
+"type": "Guide",
 "n": 7,
 "related": [
 "dispositions-guide-real-estate-investors",
@@ -85,8 +106,11 @@
 {
 "slug": "compare-lead-sources-fairly",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-02-24",
 "title": "Direct Mail, PPC or Cold Calling: How to Compare Lead Sources Fairly",
+"summary": "Every lead source looks good or bad depending on which number you pick. This article explains how to compare channels on the same terms, so budget decisions rest on signed contracts and not on impressions.",
+"type": "Explainer",
 "n": 8,
 "related": [
 "real-estate-marketing-roi",
@@ -97,8 +121,11 @@
 {
 "slug": "rental-vacancy-lease-renewal-kpis",
 "cat": "rentals-portfolio",
+"catname": "Rentals & Portfolio",
 "date": "2026-03-03",
 "title": "Vacancies and Lease Renewals: The Rental Numbers Worth Watching",
+"summary": "A rental portfolio earns or loses money in the gaps: empty units, late renewals and slow turns. This article covers the few numbers that show how a portfolio is really performing.",
+"type": "Explainer",
 "n": 9,
 "related": [
 "rental-portfolio-management-system",
@@ -108,8 +135,11 @@
 {
 "slug": "ai-agents-real-estate-investors",
 "cat": "ai-automation",
+"catname": "AI & Automation",
 "date": "2026-03-10",
 "title": "What Is an AI Agent for Real Estate Investors?",
+"summary": "AI agents are changing how real estate investors handle leads, follow-ups, and deal flow. Learn what AI agents are, how they work, and how they can automate your business to increase speed, efficiency, and conversions.",
+"type": "Explainer",
 "n": 10,
 "related": [
 "real-estate-automation-system-investors",
@@ -120,8 +150,11 @@
 {
 "slug": "voice-ai-vs-human-appointment-setters",
 "cat": "ai-automation",
+"catname": "AI & Automation",
 "date": "2026-03-17",
 "title": "Voice AI vs Human Appointment Setters",
+"summary": "Should you rely on human appointment setters or switch to voice AI? This article breaks down the real differences in speed, cost, consistency, and conversion—so you can choose what actually drives more deals.",
+"type": "Comparison",
 "n": 11,
 "related": [
 "real-estate-automation-system-investors",
@@ -132,8 +165,11 @@
 {
 "slug": "real-estate-marketing-roi",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-03-24",
 "title": "How to Track Real Estate Marketing ROI",
+"summary": "Most real estate investors don’t know which marketing channels actually make them money. This guide breaks down how to track real estate marketing ROI, measure cost per deal, and eliminate wasted spend so you can scale profitably.",
+"type": "How-to",
 "n": 12,
 "related": [
 "revive-cancelled-real-estate-deal",
@@ -144,8 +180,11 @@
 {
 "slug": "systems-that-scale-real-estate-investing",
 "cat": "scaling-leadership",
+"catname": "Scaling & Leadership",
 "date": "2026-03-31",
 "title": "The Systems That Scale Real Estate Investing Businesses",
+"summary": "Scaling a real estate investing business isn’t about working harder—it’s about building the right systems. Learn the exact systems top investors use to manage leads, automate follow-ups, track deals, and scale consistently.",
+"type": "Guide",
 "n": 13,
 "related": [
 "bookkeeping-kpis-real-estate-investors",
@@ -156,8 +195,11 @@
 {
 "slug": "acquisition-kpis-real-estate-investors",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-04-07",
 "title": "Acquisition KPIs Explained",
+"summary": "Most investors track leads—but not conversions. This guide breaks down the key acquisition KPIs you must track to improve lead quality, increase appointments, and close more deals without increasing marketing spend.",
+"type": "Explainer",
 "n": 14,
 "related": [
 "real-estate-kpis-that-matter",
@@ -168,8 +210,11 @@
 {
 "slug": "disposition-kpis-real-estate-investors",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-04-14",
 "title": "Disposition KPIs Explained",
+"summary": "Closing deals is only half the battle—profit is made in disposition. This guide breaks down the key disposition KPIs you must track to maximize deal value, improve buyer performance, and increase revenue per deal.",
+"type": "Explainer",
 "n": 15,
 "related": [
 "real-estate-kpis-that-matter",
@@ -180,8 +225,11 @@
 {
 "slug": "automation-reduces-missed-leads-real-estate",
 "cat": "ai-automation",
+"catname": "AI & Automation",
 "date": "2026-04-21",
 "title": "How Automation Reduces Missed Leads in Real Estate",
+"summary": "Missed leads are one of the biggest hidden revenue leaks in real estate. Learn how automation ensures instant response, consistent follow-up, and zero missed opportunities—so you can convert more leads into deals without increasing effort.",
+"type": "Explainer",
 "n": 16,
 "related": [
 "real-estate-automation-system-investors",
@@ -192,8 +240,11 @@
 {
 "slug": "crm-vs-spreadsheets-real-estate-investors",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-04-28",
 "title": "CRM vs Spreadsheets for Real Estate Investors",
+"summary": "Many real estate investors start with spreadsheets—but they quickly become a bottleneck. This article breaks down the real differences between CRMs and spreadsheets, and why spreadsheets fail as your business grows.",
+"type": "Comparison",
 "n": 17,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -204,8 +255,11 @@
 {
 "slug": "real-estate-investor-operating-system",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-05-05",
 "title": "The Operating System for Real Estate Investors",
+"summary": "Top real estate investors don’t rely on tools—they run on systems. This article explains what a real estate investor operating system is, why it matters, and how it brings together CRM, automation, KPIs, and AI into one scalable framework.",
+"type": "Explainer",
 "n": 18,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -216,8 +270,11 @@
 {
 "slug": "how-real-estate-teams-track-deals",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-05-12",
 "title": "How the Best Real Estate Teams Track Every Deal",
+"summary": "Top real estate teams don’t guess—they track everything. This article shows how high-performing investors track every deal, identify bottlenecks, and optimize their pipeline to increase conversions and scale predictably.",
+"type": "How-to",
 "n": 19,
 "related": [
 "real-estate-kpis-that-matter",
@@ -228,8 +285,11 @@
 {
 "slug": "speed-to-lead-real-estate-investors",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-05-19",
 "title": "Speed to Lead: How Fast Is Fast Enough?",
+"summary": "Speed to lead is the time between a seller raising their hand and your team responding. This article explains how to measure it, what slows it down, and how to set a target your team can hit.",
+"type": "Explainer",
 "n": 20,
 "related": [
 "real-estate-kpis-that-matter",
@@ -240,8 +300,11 @@
 {
 "slug": "acquisition-manager-playbook",
 "cat": "acquisitions-sales",
+"catname": "Acquisitions & Sales",
 "date": "2026-05-26",
 "title": "The Acquisition Manager Playbook: From First Call to Signed Contract",
+"summary": "A working guide to the acquisition manager role: how to structure the first call, qualify motivation, present an offer and keep the deal moving to a signed contract.",
+"type": "Guide",
 "n": 21,
 "related": [
 "skip-tracing-dnc-basics",
@@ -252,8 +315,11 @@
 {
 "slug": "seller-lead-nurture-follow-up-guide",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-06-02",
 "title": "Seller Lead Nurture: The Complete Follow-Up Guide for Investors",
+"summary": "Most seller leads are not ready the day they contact you. This guide covers how to structure follow-up by situation and by timing, so stalled leads come back to your acquisitions team ready to talk.",
+"type": "Guide",
 "n": 22,
 "related": [
 "real-estate-marketing-roi",
@@ -264,8 +330,11 @@
 {
 "slug": "migrate-real-estate-crm",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-06-09",
 "title": "How to Migrate Your Real Estate CRM Without Losing Data",
+"summary": "Switching CRMs is where a lot of history gets lost. This article walks through the steps that keep contacts, deal stages, notes and follow-up intact when you move.",
+"type": "How-to",
 "n": 23,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -276,8 +345,11 @@
 {
 "slug": "seller-ghosted-follow-up",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-06-16",
 "title": "What to Do When a Seller Ghosts You",
+"summary": "A seller who stops replying has not always said no. This article covers why sellers go quiet, how to follow up without being pushy, and when to stop.",
+"type": "How-to",
 "n": 24,
 "related": [
 "real-estate-marketing-roi",
@@ -288,8 +360,11 @@
 {
 "slug": "cost-per-contract-real-estate",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-06-23",
 "title": "Cost Per Contract: The Marketing Number Most Investors Skip",
+"summary": "Cost per lead tells you what attention costs. Cost per contract tells you what a deal costs. This article explains how to calculate it by lead source and what to do with the answer.",
+"type": "Explainer",
 "n": 25,
 "related": [
 "real-estate-kpis-that-matter",
@@ -300,8 +375,11 @@
 {
 "slug": "dispositions-guide-real-estate-investors",
 "cat": "dispositions-transactions",
+"catname": "Dispositions & Transactions",
 "date": "2026-06-30",
 "title": "Dispositions From Contract to Buyer: A Working Guide",
+"summary": "Dispositions turns a signed contract into a committed buyer. This guide covers the buyers list, marketing the deal, handling offers and the handoff to transaction coordination.",
+"type": "Guide",
 "n": 26,
 "related": [
 "transaction-coordinator-checklist",
@@ -311,8 +389,11 @@
 {
 "slug": "how-to-score-seller-calls",
 "cat": "acquisitions-sales",
+"catname": "Acquisitions & Sales",
 "date": "2026-07-07",
 "title": "How to Score a Seller Call: A Practical Rubric",
+"summary": "Coaching improves when everyone scores calls the same way. This article lays out a simple rubric for seller calls and how to use it without turning coaching into fault-finding.",
+"type": "How-to",
 "n": 27,
 "related": [
 "acquisition-manager-playbook",
@@ -323,8 +404,11 @@
 {
 "slug": "a2p-10dlc-real-estate-investors",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-07-14",
 "title": "A2P 10DLC for Real Estate Investors: What It Is and Why Texts Fail Without It",
+"summary": "If your business texts sellers from a standard phone number, carriers expect you to be registered. This article explains A2P 10DLC in plain terms and what registration involves.",
+"type": "Explainer",
 "n": 28,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -335,8 +419,11 @@
 {
 "slug": "offer-rejected-follow-up",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-07-21",
 "title": "Offer Rejected? A Follow-Up Sequence That Reopens the Conversation",
+"summary": "A rejected offer tells you the seller is engaged but not yet aligned. This article covers how to follow up after a no, what to change in each message, and when to bring the lead back to acquisitions.",
+"type": "How-to",
 "n": 29,
 "related": [
 "real-estate-marketing-roi",
@@ -347,8 +434,11 @@
 {
 "slug": "rental-portfolio-management-system",
 "cat": "rentals-portfolio",
+"catname": "Rentals & Portfolio",
 "date": "2026-07-28",
 "title": "Managing Owned and Rental Properties in the Same System as Your Deals",
+"summary": "When you keep a property, the work does not end at closing. This guide covers what to track for owned and rental properties and why it belongs alongside your acquisition data.",
+"type": "Guide",
 "n": 30,
 "related": [
 "track-contractors-rehab-budgets",
@@ -358,8 +448,11 @@
 {
 "slug": "weekly-kpi-meeting-real-estate-team",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-08-04",
 "title": "How to Run a Weekly KPI Meeting for a Real Estate Team",
+"summary": "A weekly KPI meeting keeps a team honest about what is working. This article gives an agenda, the numbers to review and the habits that keep the meeting short and useful.",
+"type": "How-to",
 "n": 31,
 "related": [
 "real-estate-kpis-that-matter",
@@ -370,8 +463,11 @@
 {
 "slug": "seller-objections-real-estate",
 "cat": "acquisitions-sales",
+"catname": "Acquisitions & Sales",
 "date": "2026-08-11",
 "title": "Handling the Six Most Common Seller Objections",
+"summary": "Objections are requests for more information. This article covers the six that acquisition managers hear most and a calm way to respond to each.",
+"type": "How-to",
 "n": 32,
 "related": [
 "acquisition-manager-playbook",
@@ -382,8 +478,11 @@
 {
 "slug": "ai-follow-up-agent-guardrails",
 "cat": "ai-automation",
+"catname": "AI & Automation",
 "date": "2026-08-18",
 "title": "Setting Guardrails for an AI Follow-Up Agent",
+"summary": "An AI agent that follows up with leads is only as good as the rules you give it. This article covers the guardrails to set before you let one talk to sellers.",
+"type": "How-to",
 "n": 33,
 "related": [
 "real-estate-automation-system-investors",
@@ -394,8 +493,11 @@
 {
 "slug": "transaction-coordinator-checklist",
 "cat": "dispositions-transactions",
+"catname": "Dispositions & Transactions",
 "date": "2026-08-25",
 "title": "The Transaction Coordinator Checklist: Contract to Close",
+"summary": "Deals are lost between contract and closing when small tasks are missed. This checklist covers what a transaction coordinator should track at each stage.",
+"type": "Checklist",
 "n": 34,
 "related": [
 "dispositions-guide-real-estate-investors",
@@ -405,8 +507,11 @@
 {
 "slug": "long-term-follow-up-timing",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-09-01",
 "title": "30 Days, 3 Months, 6 Months, 12 Months: Timing Your Long-Term Follow-Up",
+"summary": "Some sellers tell you exactly when to come back. This article explains how timed follow-up works alongside situation-based nurture and how to choose the right interval.",
+"type": "Explainer",
 "n": 35,
 "related": [
 "real-estate-marketing-roi",
@@ -417,8 +522,11 @@
 {
 "slug": "hire-first-acquisition-manager",
 "cat": "scaling-leadership",
+"catname": "Scaling & Leadership",
 "date": "2026-09-08",
 "title": "When to Hire Your First Acquisition Manager",
+"summary": "Hiring an acquisition manager is the step that takes an owner out of every seller call. This article covers the signs you are ready, what to have in place first and how to set the hire up to succeed.",
+"type": "Explainer",
 "n": 36,
 "related": [
 "systems-that-scale-real-estate-investing",
@@ -428,8 +536,11 @@
 {
 "slug": "fast-deal-underwriting",
 "cat": "acquisitions-sales",
+"catname": "Acquisitions & Sales",
 "date": "2026-09-15",
 "title": "Underwriting a Deal in Minutes: What to Check and What to Skip",
+"summary": "Fast underwriting is about knowing which inputs decide the answer. This article covers the essentials of a quick analysis and when a deal deserves a deeper look.",
+"type": "Explainer",
 "n": 37,
 "related": [
 "acquisition-manager-playbook",
@@ -440,8 +551,11 @@
 {
 "slug": "bilingual-seller-follow-up",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-09-22",
 "title": "Bilingual Follow-Up: Why English and Spanish Nurture Wins Deals",
+"summary": "Many sellers are more comfortable discussing a major decision in Spanish. This article covers why bilingual follow-up matters, how to set it up and the mistakes to avoid.",
+"type": "Explainer",
 "n": 38,
 "related": [
 "real-estate-marketing-roi",
@@ -452,8 +566,11 @@
 {
 "slug": "crm-data-hygiene-real-estate",
 "cat": "crm-systems",
+"catname": "CRM & Systems",
 "date": "2026-09-29",
 "title": "How to Keep CRM Data Clean When Five People Touch Every Deal",
+"summary": "Bad data makes every report wrong. This article covers the habits and system rules that keep a real estate CRM accurate as more people work each deal.",
+"type": "How-to",
 "n": 39,
 "related": [
 "best-real-estate-crm-for-investors",
@@ -464,8 +581,11 @@
 {
 "slug": "track-contractors-rehab-budgets",
 "cat": "rentals-portfolio",
+"catname": "Rentals & Portfolio",
 "date": "2026-10-06",
 "title": "Tracking Contractors and Rehab Budgets Without Spreadsheets",
+"summary": "Rehab projects go over budget quietly. This article covers how to track contractors, scopes and spending against the deal so you see problems while there is still time to act.",
+"type": "How-to",
 "n": 40,
 "related": [
 "rental-portfolio-management-system",
@@ -475,8 +595,11 @@
 {
 "slug": "leading-vs-lagging-indicators-real-estate",
 "cat": "kpis-performance",
+"catname": "KPIs & Performance",
 "date": "2026-10-13",
 "title": "Leading vs Lagging Indicators in a Real Estate Investing Business",
+"summary": "Closed deals tell you how the last quarter went. Leading indicators tell you how the next one will go. This article explains the difference and which of each to track.",
+"type": "Comparison",
 "n": 41,
 "related": [
 "real-estate-kpis-that-matter",
@@ -487,8 +610,11 @@
 {
 "slug": "skip-tracing-dnc-basics",
 "cat": "acquisitions-sales",
+"catname": "Acquisitions & Sales",
 "date": "2026-10-20",
 "title": "Skip Tracing and DNC Basics for Real Estate Investors",
+"summary": "Skip tracing finds contact details for a property owner. Do-not-call rules limit how you may use them. This article explains both in plain terms.",
+"type": "Explainer",
 "n": 42,
 "related": [
 "acquisition-manager-playbook",
@@ -499,8 +625,11 @@
 {
 "slug": "revive-cancelled-real-estate-deal",
 "cat": "marketing-lead-generation",
+"catname": "Marketing & Lead Generation",
 "date": "2026-10-27",
 "title": "How to Revive a Cancelled Deal",
+"summary": "A cancelled contract is not always the end. This article covers why deals cancel, how to follow up afterward and how to bring some of them back.",
+"type": "How-to",
 "n": 43,
 "related": [
 "real-estate-marketing-roi",
@@ -511,8 +640,11 @@
 {
 "slug": "bookkeeping-kpis-real-estate-investors",
 "cat": "scaling-leadership",
+"catname": "Scaling & Leadership",
 "date": "2026-11-03",
 "title": "Bookkeeping for Real Estate Investors: Connecting the Books to Your KPIs",
+"summary": "Operational KPIs show activity. The books show whether it made money. This article covers how to connect the two so every deal and lead source has a real profit number.",
+"type": "How-to",
 "n": 44,
 "related": [
 "systems-that-scale-real-estate-investing",
@@ -522,8 +654,11 @@
 {
 "slug": "ai-call-coaching-real-estate",
 "cat": "ai-automation",
+"catname": "AI & Automation",
 "date": "2026-11-10",
 "title": "AI Call Coaching for Real Estate Teams: How Call Scoring Works",
+"summary": "AI call coaching reviews every seller conversation against a consistent standard. This article explains how it works, what it is good at and how to use it alongside a human manager.",
+"type": "Explainer",
 "n": 45,
 "related": [
 "real-estate-automation-system-investors",

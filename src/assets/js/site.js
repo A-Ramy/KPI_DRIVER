@@ -353,3 +353,38 @@
     io.observe(el);
   });
 })();
+
+/* Webflow-hosted pages only: language toggle and related posts on articles. */
+(function () {
+  var d = document, r = d.documentElement;
+  if (!r.hasAttribute("data-wf-site")) return;
+  var path = location.pathname, es = /^\/es(\/|$)/.test(path), bare = path.replace(/^\/es(?=\/|$)/, "") || "/";
+  var tg = d.querySelector(".lang-toggle"), th = d.querySelector(".site-header .theme-toggle");
+  if (!tg && th) {
+    tg = d.createElement("a"); tg.className = "lang-toggle"; tg.innerHTML = "<b>" + (es ? "EN" : "ES") + "</b>";
+    tg.setAttribute("hreflang", es ? "en" : "es"); tg.setAttribute("lang", es ? "en" : "es");
+    tg.setAttribute("aria-label", es ? "View this page in English" : "Ver esta página en español");
+    th.parentNode.insertBefore(tg, th);
+  }
+  if (tg) {
+    tg.setAttribute("href", (es ? bare : "/es" + (bare === "/" ? "" : bare)) + location.search);
+    tg.addEventListener("click", function () { try { localStorage.setItem("kd-lang", es ? "en" : "es"); } catch (e) {} });
+  }
+  var m = bare.match(/^\/post\/([^\/]+)\/?$/), main = d.querySelector("main.is-blog") || d.getElementById("main");
+  if (!m || !main || !window.KD_POSTS_URL) return;
+  var pre = es ? "/es" : "", L = es ? ["Sigue leyendo", "Artículos relacionados", "Todos los artículos de ", "Parte de "] : ["Keep reading", "Related articles", "All articles in ", "Part of "];
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function fmt(x) { try { return new Date(x + "T12:00:00").toLocaleDateString(es ? "es" : "en-US", { year: "numeric", month: "long", day: "numeric" }); } catch (e) { return x; } }
+  window.KD_POSTS_READY = function () {
+    var P = window.KD_POSTS || {}, me = P[m[1]], keys = Object.keys(P), rel = me ? me.r : [];
+    if (!rel || !rel.length) rel = keys.filter(function (k) { return k !== m[1]; }).sort(function (a, b) { return P[a].d < P[b].d ? 1 : -1; }).slice(0, 3);
+    var rows = rel.filter(function (k) { return P[k]; }).map(function (k) { var p = P[k];
+      return '<a class="post-row" href="' + pre + "/post/" + k + '"><div class="post-row__meta"><b>' + esc(p.n) + "</b><span>" + fmt(p.d) + '</span><span class="typechip">' + esc(p.y) + "</span></div><div><h3>" + esc(p.t) + "</h3><p>" + esc(p.s) + '</p></div><span class="post-row__go" aria-hidden="true">→</span></a>'; }).join("");
+    if (!rows) return;
+    var s = d.createElement("section"); s.className = "section section--tight kd-related";
+    s.innerHTML = '<div class="wrap">' + (me ? '<aside class="hub tone-crm"><p class="note">' + L[3] + esc(me.n) + '</p><p><a class="link arrow" href="' + pre + "/blog-category/" + me.c + '">' + L[2] + esc(me.n) + "</a></p></aside>" : "") +
+      '<div class="head"><p class="eyebrow">' + L[0] + "</p><h2>" + L[1] + '</h2></div><div class="posts">' + rows + "</div></div>";
+    main.appendChild(s);
+  };
+  var sc = d.createElement("script"); sc.src = window.KD_POSTS_URL; sc.async = true; d.head.appendChild(sc);
+})();
