@@ -1,0 +1,119 @@
+=== lead-manager-vs-acquisition-manager | 2026-02-10 | acquisitions-sales | Explainer | 0
+# Lead Manager vs Acquisition Manager: Who Does What
+> Lead managers qualify. Acquisition managers negotiate and sign. This article explains where one role ends and the other begins, and how to hand a seller from one to the other without losing momentum.
+## Two roles, one seller
+In a small investing business, one person answers the phone, qualifies the seller, makes the offer and signs the contract. As lead volume grows, that stops working. New leads wait while the same person is negotiating an older one.
+Splitting the work into a lead manager and an acquisition manager fixes that, as long as each role knows what it owns.
+## What the lead manager owns
+- Answering new leads quickly
+- Confirming the basics: property, ownership, condition and contact details
+- Learning why the seller is considering selling, and how soon
+- Deciding whether the lead is worth an acquisition manager's time
+- Booking the next conversation
+A lead manager is measured on speed, contact rate and the number of qualified appointments they set.
+## What the acquisition manager owns
+- The offer conversation
+- Running the numbers before the call
+- Handling objections and negotiating terms
+- Getting the contract signed
+- Following up on offers that are still open
+An acquisition manager is measured on offers made, contracts signed and the conversion between the two.
+## The handoff is where deals leak
+Most problems between these roles happen at the handoff. The seller explains their situation to the lead manager, then has to repeat it to someone new. That feels careless.
+A clean handoff has three parts:
+- Notes in the record that cover motivation, condition, timeline and price expectation
+- A booked appointment, not a promise that someone will call
+- An introduction, so the seller knows the name of the person who will call and why
+## Decide who owns follow-up
+When a seller is not ready, someone has to keep in touch. Agree in advance which stage belongs to which role. A common rule: before an offer, the lead manager follows up. After an offer, the acquisition manager does. Stalled leads move to nurture so neither role carries them forever.
+## When to split the roles
+Split when new leads regularly wait because the person who should answer is on an offer call. Until then, one person can do both jobs if the stages are still tracked separately.
+## The takeaway
+Lead managers protect speed and qualification. Acquisition managers protect the offer and the contract. Write down where the line is, make the handoff specific, and both roles get easier.
+
+=== cash-buyers-list-hygiene | 2026-02-17 | dispositions-transactions | Guide | 0
+# Keeping a Cash Buyers List Clean, Segmented and Active
+> A buyers list loses value quickly if nobody maintains it. This article covers what to record on each buyer, how to segment, and a simple routine that keeps the list worth sending to.
+## A long list is not a good list
+Many investors measure a buyers list by its size. Size tells you very little. A list of two thousand names where most have never bought, moved markets or stopped answering is slower to work than a list of two hundred active buyers.
+What matters is how many buyers on the list would make an offer on the next deal you send.
+## What to record on every buyer
+- The areas they buy in
+- Property types they want
+- Price range
+- How they buy: cash, hard money or conventional financing
+- What they do with the property: flip, rental or wholesale
+- The last deal they bought from you, and when
+- The last time they responded
+The last two fields are the ones most lists are missing, and they are the ones that tell you who is active.
+## Segment before you send
+Send each deal to the buyers who match it. A landlord looking for small rentals in one county does not need a large rehab in another. Every irrelevant message teaches a buyer to ignore the next one.
+Start with three segments if you have none: by area, by price range and by exit strategy.
+## A monthly routine
+- Mark buyers who opened, replied or made an offer in the last ninety days as active
+- Call the buyers who have gone quiet and ask what they are looking for now
+- Remove wrong numbers and bounced addresses
+- Update buy boxes that have changed
+- Add the buyers you met that month, with full details
+An hour a month is enough for most lists.
+## Rank your buyers
+Not every buyer is equal. Note who closes on time, who renegotiates late and who backs out. When two offers are close, the buyer with a history of closing is usually the better choice.
+## What to measure
+- Active buyers as a share of the list
+- Offers received per deal sent
+- Days from contract to an accepted buyer
+- Fall-through rate by buyer
+## The takeaway
+Treat the buyers list as a working record, not an archive. Record what each buyer wants, send them only what fits, and review the list every month.
+
+=== compare-lead-sources-fairly | 2026-02-24 | marketing-lead-generation | Explainer | 0
+# Direct Mail, PPC or Cold Calling: How to Compare Lead Sources Fairly
+> Every lead source looks good or bad depending on which number you pick. This article explains how to compare channels on the same terms, so budget decisions rest on signed contracts and not on impressions.
+## Why comparisons go wrong
+Each channel reports in its own language. Mail talks about response rate. Paid search talks about clicks and cost per lead. Cold calling talks about dials and conversations. None of those numbers can be set side by side.
+To compare channels, you need to follow each one to the same finish line.
+## Use the same four numbers for every source
+- Spend in the period, including the tools and labor the channel needs
+- Leads produced
+- Contracts signed from those leads
+- Deals closed from those contracts
+From these you get cost per lead, cost per contract and cost per closed deal. The last two are the ones to decide on.
+## Count the full cost
+Channels hide costs in different places. Cold calling may look cheap until you include caller wages, dialer fees and data. Mail has list, print and postage. Paid search has ad spend and management. If one channel is charged for labor and another is not, the comparison is already broken.
+## Give each channel enough time
+Channels convert on different timelines. A paid search lead may sign within weeks. A mail lead may call months after the piece arrived. Compare over a window long enough for the slower channel to show its results, such as two rolling quarters.
+## Record the source once, at the start
+None of this works if lead source is missing or inconsistent. Set the source automatically when the lead is created, from a fixed list of values. A source typed by hand will end up spelled several ways.
+## Look at quality as well as cost
+Two channels can have the same cost per contract and different outcomes. Check the average profit per deal and the fall-through rate by source. A channel that produces fewer, better deals may deserve more budget than the numbers first suggest.
+## What to do with the answer
+- Move budget gradually toward the lower cost per closed deal
+- Fix follow-up before cutting a channel with many leads and few contracts
+- Keep at least two working channels, so one change in the market does not stop your pipeline
+## The takeaway
+Compare every lead source on full cost, over the same window, to the same finish line. The channel with the cheapest leads is often not the one with the cheapest deals.
+
+=== rental-vacancy-lease-renewal-kpis | 2026-03-03 | rentals-portfolio | Explainer | 0
+# Vacancies and Lease Renewals: The Rental Numbers Worth Watching
+> A rental portfolio earns or loses money in the gaps: empty units, late renewals and slow turns. This article covers the few numbers that show how a portfolio is really performing.
+## Rent collected is not the whole picture
+Most owners check one number each month: how much rent came in. It matters, but it arrives too late to act on. By the time rent is missing, the vacancy or the late renewal that caused it happened weeks ago.
+A handful of earlier numbers tell you what next month will look like.
+## Vacancy rate and days vacant
+Vacancy rate is the share of your units that are empty. Days vacant is how long each empty unit stays that way. Track both. A low vacancy rate can hide one unit that has been empty for four months.
+Record the date a tenant moves out and the date the next lease starts. The gap is the number to shorten.
+## Turn time
+Turn time is the part of a vacancy you control: the days between move-out and the unit being ready to show. Cleaning, repairs and paint all sit here. Break it into steps, so you can see whether the delay is scheduling contractors or the work itself.
+## Lease expirations
+List every lease by its end date. Leases that end in the same month create a spike in turnover and workload. Where you can, spread expirations across the year and away from the slowest season in your market.
+## Renewal rate
+Renewal rate is the share of expiring leases that renew. Keeping a good tenant usually costs less than finding a new one. Start the renewal conversation well before the lease ends, and record the reason when a tenant leaves.
+## Maintenance requests
+- How many open requests there are
+- How long each has been open
+- The cost by property
+Slow maintenance is one of the most common reasons good tenants do not renew.
+## Keep it in one place
+These numbers depend on dates: move-out, ready, listed, leased, expiring. If those dates live in different spreadsheets, nobody sees the pattern. Keeping properties, tenants and tasks in the same system as the rest of your business makes the report automatic.
+## The takeaway
+Watch the gaps and not only the rent. Days vacant, turn time, upcoming expirations and renewal rate show where income will be lost before it is.
