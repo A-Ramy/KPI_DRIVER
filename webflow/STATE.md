@@ -46,3 +46,11 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Spanish: no Localization add-on; build ES pages as ordinary pages under an `es` folder with the header toggle. Page folders (`es`, `services`) need the Designer open: owner must launch https://kpidriver.design.webflow.com?app=dc8209c65e3ec02254d15275ca056539c89f6d15741893a0adf29ad6f381eb99
 - Contact form: use the existing GHL survey `hs57W9QgapW3WAyGZeZb` (done).
 - JSON-LD scripts are stripped from embeds for now; add from `page-meta.json` via the page schema tool.
+
+## Blog (CMS)
+- Collections: Blog Posts `68974c57cac027f80fdf887c`, Blog Categories `68974c57cac027f80fdf885d`. Post template page `68974c57cac027f80fdf882c` (RichText element `4cea6f49-68f6-c25c-98a5-446bc9c1fa06`), category template `68974c57cac027f80fdf882b`, Blog list page `68974c57cac027f80fdf882a`.
+- Category ids: KPIs `69ab434018303411a765f160`, CRM & Systems `6afa78c79b7b44763a080fd9`, AI & Automation `6afa78c79b7b44763a080fdb`, Marketing `6afa78c79b7b44763a080fdd`, Acquisitions `6afa78c79b7b44763a080fdf`, Dispositions `6afa78c79b7b44763a080fe1`, Rentals `6afa78c79b7b44763a080fe3`, Scaling `6afa78c79b7b44763a080fe5` (7 new ones created, staged).
+- New posts are created with `create_collection_items` (isDraft false, fields: name, slug, date, post-summary, author-name, categories, post-body). Source: `webflow/cms/posts.csv`, posts dated 2026-05-19 onward, in date order, batches of 5.
+- Batch 1 done (2026-05-19 .. 2026-06-16: speed-to-lead, acquisition-manager-playbook, seller-lead-nurture, migrate-real-estate-crm, seller-ghosted). Remaining: 21 posts from cost-per-contract-real-estate (2026-06-23) onward.
+- New posts have no thumbnail/main image or author image yet. Blog templates still use the old design.
+- Owner declined the `create_page_folder` call for `es`/`services` once; ask before retrying.
