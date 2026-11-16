@@ -30,8 +30,11 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 | CRM | 6afa1f119ba75560d9c1652d | /kd-crm (final /services/crm) | done, verified on staging |
 | AI Suite | 6afa6c72b8bbfbdd8948a38f | /kd-ai-suite (final /services/ai-suite) | done, on staging |
 | Services | 6afa6ce5a6769cca503f0934 | /kd-services | done, on staging |
-| Home | 6afa6d7a38fcd20700ba38d7 | /kd-home | main content set; PAGE HEAD/FOOTER CODE NOT SET (owner declined that call) so it renders unstyled until set |
-| 404, Privacy, Terms, Blog | | | to do |
+| Home | 6afa6d7a38fcd20700ba38d7 | /kd-home | done, on staging |
+| 404 | 6afa6eb63028d1c6abdee704 | /kd-404 | done (at go-live copy into the real 404 utility page) |
+| Privacy | 6afa6eb7cff8a37e634fd4c7 | /kd-privacy-policy | done |
+| Terms | 6afa6eb8cb9446c6d1f6ab20 | /kd-terms-conditions | done |
+| Blog (list, post, category templates) + CMS import, Spanish pages | | | to do |
 
 ## Open decisions for the owner
 - Knowledge Base, Log in, Case studies, For-clients pages use Memberstack / old design: keep, redirect or retire?
