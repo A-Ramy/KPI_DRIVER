@@ -28,8 +28,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 | AI Agent | 6afa191e7b59d3ca770d4e6a | /kd-ai-agent (final: /services/ai-agent, needs a services folder or flat slug decision) | done; FAQ JSON-LD left out of embed, add via page schema |
 | Contact Us | 6afa1e999eb44edc324f9215 | /kd-contact-us | done, verified on staging (GHL survey form embed, inline ghl-form style) |
 | CRM | 6afa1f119ba75560d9c1652d | /kd-crm (final /services/crm) | done, verified on staging |
-| AI Suite | 6afa6c72b8bbfbdd8948a38f | /kd-ai-suite (final /services/ai-suite) | built + page code set; publish to staging and verify |
-| Services, Home, 404, Privacy, Terms, Blog | | | to do |
+| AI Suite | 6afa6c72b8bbfbdd8948a38f | /kd-ai-suite (final /services/ai-suite) | done, on staging |
+| Services | 6afa6ce5a6769cca503f0934 | /kd-services | done, on staging |
+| Home, 404, Privacy, Terms, Blog | | | to do |
 
 ## Open decisions for the owner
 - Knowledge Base, Log in, Case studies, For-clients pages use Memberstack / old design: keep, redirect or retire?
