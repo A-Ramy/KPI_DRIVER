@@ -812,3 +812,16 @@ html { scrollbar-width: none; -ms-overflow-style: none; }
 html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0; height: 0; display: none; }
 .gearhud li { cursor: pointer; }
 .gearhud li:hover:not(.is-on) { color: #ffffff; background: rgba(255, 255, 255, 0.12); }
+
+/* Pop-ups and embedded schedulers: no visible scrollbars.
+   The scheduler draws its own scrollbar inside a third-party frame that the site cannot style, so the frame
+   is widened by exactly the device's scrollbar width (--kd-sbw, measured in site.js; 0 on overlay-scrollbar
+   devices such as Mac and phones) and the extra strip is clipped. Content is never cut off. */
+.bookdlg, .bookdlg__frame, .nav, .nav__menu, details.login > div { scrollbar-width: none; }
+.bookdlg::-webkit-scrollbar, .bookdlg__frame::-webkit-scrollbar, .nav::-webkit-scrollbar, .nav__menu::-webkit-scrollbar, details.login > div::-webkit-scrollbar { display: none; }
+.bookdlg__frame { overflow: hidden; }
+.bookdlg__frame iframe, .booking iframe, .ghl-form__frame iframe { width: calc(100% + var(--kd-sbw, 0px)) !important; max-width: none; }
+/* Built-in booking widget (kd-booking, loaded site-wide): its pop-up body and time-slot list scroll
+   without a visible scrollbar too. Kept here as an override so the widget's own stylesheet stays untouched. */
+.kdb-dialog, .kdb-dialog *, .kd-inline-form, .kd-inline-form * { scrollbar-width: none !important; }
+.kdb-dialog::-webkit-scrollbar, .kdb-dialog ::-webkit-scrollbar, .kd-inline-form::-webkit-scrollbar, .kd-inline-form ::-webkit-scrollbar { display: none !important; width: 0 !important; height: 0 !important; }

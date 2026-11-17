@@ -458,6 +458,15 @@
     maps.insertAdjacentElement("afterend", box);
   }
 
+  /* scrollbar width of this device (0 where scrollbars overlay the content); CSS uses it to push the
+     scheduler's own scrollbar just outside the visible edge of the booking pop-up */
+  var probe = d.createElement("div");
+  probe.style.cssText = "position:absolute;top:-9999px;left:-9999px;width:100px;height:100px;overflow:scroll";
+  d.body.appendChild(probe);
+  var sbw = probe.offsetWidth - probe.clientWidth;
+  probe.remove();
+  if (sbw > 0) r.style.setProperty("--kd-sbw", sbw + "px");
+
   /* gear HUD doubles as the page scroller (the native scrollbar is hidden): click a gear to jump there */
   var hud = d.querySelector(".gearhud");
   if (hud) {

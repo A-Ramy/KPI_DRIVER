@@ -130,3 +130,8 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 ## 2026-11-17: owner fixes, round 5 (live)
 - Native page scrollbar hidden site-wide (`html { scrollbar-width: none }` + `::-webkit-scrollbar { display: none }` on html/body); inner scroll areas keep theirs. Gear HUD gears are now clickable (jump to that sixth of the page; smooth unless reduced motion). HUD shows at >=1340px; the rev bar along the top shows progress at all widths.
 - kd-site-6.css `…/6afcb9a51800e1625a2300f8_kd-site-6.css` + kd-site-8.js `…/6afcb9a41101434010d368a5_kd-site-8.js` on all 16 site pages and 4 member pages.
+
+## 2026-11-17: owner fixes, round 6 (live)
+- No visible scrollbars in pop-ups either. kd-site-8.css `…/6afcc33919e75398f474bf17_kd-site-8.css` (head, all 20 pages) + kd-site-9.js `…/6afcbc2ee34613cb80cae122_kd-site-9.js` (16 site footers, 4 member heads).
+  - Built-in booking widget (kd-booking-*.js/css, loaded via SITE-level custom code by the parallel booking/contact session; do not overwrite site code): `.kdb-dialog *` and `.kd-inline-form *` scrollbars hidden by override in kd-site CSS (their stylesheet loads first). Booking button now uses calendar id 9g3ccVyd2a9NsV51QuKN (their change).
+  - Legacy GHL iframe pop-up / booking page iframe: frame widened by the measured device scrollbar width (`--kd-sbw`, 0 on overlay devices) and clipped, so the scheduler's own scrollbar sits outside the visible edge. Menus and dialog containers: scrollbar-width none.
