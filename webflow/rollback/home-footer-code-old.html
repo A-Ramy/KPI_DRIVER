@@ -1,0 +1,29 @@
+<!-- Old homepage page-level footer code (quiz slider helper), replaced at go-live 2026-11-17. Restore here if the old home layout is unhidden. -->
+<script>
+$(document).ready(function () {
+  $('.form_button, .radio_button').on('click', () => $('.form_next').click());
+  const slideNumber = $('.slider_slide').length - 1;
+  $('.total-number').text(slideNumber);
+  function sliderAnimation() {
+    const $dots = $('#slider-dot-quize .w-slider-dot');
+    let currentIndex = $dots.filter('.w-active, .w--current').index();
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > slideNumber) currentIndex = slideNumber;
+    $('.form_prev').toggleClass('disabled-prev', currentIndex === 0);
+    $('.first').text(currentIndex - 1);
+    $('.second').text(currentIndex);
+    const percent = Math.round((currentIndex / slideNumber) * 100);
+    $('.form_percent').text(percent);
+    $('.form_progress-fill').css('width', percent + '%');
+  }
+  $('.form_prev, .form_next, #slider-dot-quize .w-slider-dot').on('click', () => { setTimeout(sliderAnimation, 300); });
+  $('input[type="radio"]').on('change', function () {
+    const name = $(this).attr('name');
+    $(`input[name="${name}"]`).each(function () { $(this).closest('.radio_option').css('background-color', ''); });
+    $(this).closest('.radio_option').css('background-color', '#c7f80f');
+  });
+  function validate($inp) { $inp.closest('.slider_slide').find('.form_button').toggleClass('form-active', $inp.val().length > 1); }
+  $('.form_field').on('input blur', function () { validate($(this)); });
+  setTimeout(sliderAnimation, 500);
+});
+</script>

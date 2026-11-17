@@ -360,15 +360,27 @@
   if (!r.hasAttribute("data-wf-site")) return;
   var path = location.pathname, es = /^\/es(\/|$)/.test(path), bare = path.replace(/^\/es(?=\/|$)/, "") || "/";
   var tg = d.querySelector(".lang-toggle"), th = d.querySelector(".site-header .theme-toggle");
-  if (!tg && th) {
-    tg = d.createElement("a"); tg.className = "lang-toggle"; tg.innerHTML = "<b>" + (es ? "EN" : "ES") + "</b>";
-    tg.setAttribute("hreflang", es ? "en" : "es"); tg.setAttribute("lang", es ? "en" : "es");
-    tg.setAttribute("aria-label", es ? "View this page in English" : "Ver esta página en español");
-    th.parentNode.insertBefore(tg, th);
-  }
-  if (tg) {
+  function wire() {
     tg.setAttribute("href", (es ? bare : "/es" + (bare === "/" ? "" : bare)) + location.search);
     tg.addEventListener("click", function () { try { localStorage.setItem("kd-lang", es ? "en" : "es"); } catch (e) {} });
+  }
+  function add() {
+    if (tg || !th) return;
+    tg = d.createElement("a"); tg.className = "lang-toggle"; tg.innerHTML = "<b>ES</b>";
+    tg.setAttribute("hreflang", "es"); tg.setAttribute("lang", "es"); tg.setAttribute("aria-label", "Ver esta página en español");
+    th.parentNode.insertBefore(tg, th); wire();
+  }
+  if (tg) wire();
+  else if (d.querySelector('link[rel="alternate"][hreflang^="es"]')) add();
+  else { /* show the toggle only once the Spanish locale is published */
+    var ok = null; try { ok = sessionStorage.getItem("kd-es-ok"); } catch (e) {}
+    if (ok === "1") add();
+    else if (ok !== "0" && window.fetch) fetch("/es", { method: "HEAD" }).then(function (x) { try { sessionStorage.setItem("kd-es-ok", x.ok ? "1" : "0"); } catch (e) {} if (x.ok) add(); }).catch(function () {});
+  }
+  if (es) {
+    var T = { "Home": "Inicio", "Notes from the ": "Notas desde el ", "operator's seat": "asiento del operador", "Practical writing on CRMs, KPI tracking, automation and AI for real estate investors and the teams who run their pipelines.": "Contenido práctico sobre CRM, seguimiento de KPI, automatización e IA para inversionistas inmobiliarios y los equipos que operan sus pipelines.", "All posts": "Todas las publicaciones", "By": "Por", "Next": "Siguiente", "Previous": "Anterior" };
+    var w = d.createTreeWalker(d.querySelector("main") || d.body, 4, null), n;
+    while ((n = w.nextNode())) { var k = n.nodeValue.replace(/^\s+|\s+$/g, ""), raw = n.nodeValue; if (T[raw]) n.nodeValue = T[raw]; else if (T[k]) n.nodeValue = raw.replace(k, T[k]); }
   }
   var m = bare.match(/^\/post\/([^\/]+)\/?$/), main = d.querySelector("main.is-blog") || d.getElementById("main");
   if (!m || !main || !window.KD_POSTS_URL) return;

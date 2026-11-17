@@ -70,4 +70,15 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - 4 gap posts added (2026-02-10..03-03), ids in `webflow/cms/post-ids.json` (all 45 slugs -> item ids).
 - Covers: `tools/covers.js` -> `webflow/covers/`. CMS image fields accept the public raw GitHub URL of this branch (Webflow copies the file). 30 posts (26 + 4 new) have the new covers; the original 15 keep the owner's existing images.
 - Related posts: `webflow/cms/post-index.json` (hub-and-spoke relations from build.py) -> hosted `kd-posts.js`, rendered by kd-site.js on /post/ pages.
-- Hosted v2 files (2026-11-16): head js `…/6afb6a420fb8f221316e3e1e_kd-head-2.js`, site js `…/6afb6a424664c981ee46563f_kd-site-2.js`, Spanish bundle `…/6afb6a2ccdedf3e0cadbe563_kd-es.js` (built by tools/build_es.py; URL is inside kd-head.js), posts index `…/6afb6a2dfb12da21134b8439_kd-posts.js`. Every page's head/footer code must point at the v2 head/site files.
+- Hosted v2 files (2026-11-16): head js `…/6afb6a420fb8f221316e3e1e_kd-head-2.js`, site js `…/6afb6b5f93952b962386fae2_kd-site-3.js`, Spanish bundle `…/6afb6a2ccdedf3e0cadbe563_kd-es.js` (built by tools/build_es.py; URL is inside kd-head.js), posts index `…/6afb6a2dfb12da21134b8439_kd-posts.js`. Every page's head/footer code must point at the v2 head/site files.
+
+## 2026-11-17: go-live switchover done on staging (live domain still old until the custom-domain publish)
+- All 45 posts have kd-cover images (original 15 replaced too). Article template has a cover Image `704bf424-31cb-7457-1f03-ecf8b34f2dac` bound to Main Image; CSS in embed 900eed9b.
+- Every new page footer code -> kd-site-3.js (`…/6afb6b5f93952b962386fae2_kd-site-3.js`: ES toggle only shows when /es exists, Spanish blog strings).
+- SEO: Spanish titles/descriptions on all pages (locale `6afb6419e78a2109902d68ac`), OG image kd-og-default, JSON-LD (FAQ/breadcrumb/org) set via page schema API, EN + ES.
+- Home: real homepage `68974c57cac027f80fdf8828` filled in place: embeds `78f33fd8-8958-3aaf-4243-63ff93cc45b1` (header+main) and `1fb5cc24-988c-e004-998d-3103ee77f3a1` (footer+chrome); old wrapper `ab62f4ce…f0f0` and pop-ups block `748bdac5…0189` hidden; old footer code saved in webflow/rollback/home-footer-code-old.html.
+- 404 utility page `…8835` filled in place: embed `2412e5ef-1ed4-16b5-e8fa-515a84a5bdff`; old wrapper and block hidden.
+- Old pages renamed old-* and set to draft: services 8836, our-team 883b, contact 8834, thank-you 883c, privacy 8838, terms 8839. kd-home and kd-404 drafted.
+- New pages took real slugs: services, our-team, contact-us, thank-you, policies/privacy-policy, policies/terms-conditions; crm, ai-suite, ai-agent (waiting for the owner's `services` folder; then they become /services/*).
+- Member pages excluded from sitemap. Spanish locale switched on by the owner.
+- Rollback: unhide old wrappers, set old pages draft:false with original slugs, swap new ones back to kd-*.
