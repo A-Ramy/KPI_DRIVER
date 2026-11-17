@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | KPI DRIVER (contact form demo)</title>
+<link rel="icon" href="../../src/assets/img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../src/assets/css/site.css">
+<link rel="stylesheet" href="../kd-booking.css">
+<style>
+  .demo-form { background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; }
+  .demo-payload { white-space: pre-wrap; font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.5; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; max-height: 360px; overflow: auto; }
+</style>
+<script>window.KD_BOOKING_CONFIG = { mock: true };</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#"><img class="logo--dark" src="../../src/assets/img/brand/logo-h-light.png" alt="KPI DRIVER" width="178" height="24"><img class="logo--light" src="../../src/assets/img/brand/logo-h-dark.png" alt="" width="178" height="24"></a>
+    <nav class="nav" style="display:flex"><a class="btn btn--primary btn--sm nav__cta" href="#" data-book="17jl7cP7dvOAU48s6C3L" data-label="header">Book a Discovery Call</a></nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme" onclick="var d=document.documentElement;d.setAttribute('data-theme',d.getAttribute('data-theme')==='light'?'dark':'light')">◐</button>
+  </div>
+</header>
+<main>
+  <section class="section section--grid">
+    <div class="wrap split">
+      <div class="stack stack--lg">
+        <p class="eyebrow">Contact us</p>
+        <h1>Talk to the <em class="hl-green">team.</em></h1>
+        <dl class="contact-list">
+          <div><dt>Phone</dt><dd><a class="link" href="tel:+17868228188">(786) 822-8188</a></dd></div>
+          <div><dt>Email</dt><dd><a class="link" href="mailto:info@kpidriver.com">info@kpidriver.com</a></dd></div>
+          <div><dt>Prefer a call?</dt><dd><a class="btn btn--primary btn--sm" href="#" data-book="usaNbU09ACXDqb1C52Rd" data-label="contact card">Book a Discovery Call</a></dd></div>
+        </dl>
+      </div>
+      <div class="demo-form" data-kd-contact></div>
+    </div>
+  </section>
+  <section class="section section--tight"><div class="wrap stack"><p class="eyebrow">Last payload sent (mock)</p><pre class="demo-payload" id="payload">Send the form to see what the n8n webhook receives.</pre></div></section>
+</main>
+<script src="../kd-booking.js"></script>
+<script>setInterval(function () { if (window.KD_BOOKING_LAST_PAYLOAD) document.getElementById("payload").textContent = JSON.stringify(window.KD_BOOKING_LAST_PAYLOAD, null, 2); }, 500);</script>
+</body>
+</html>

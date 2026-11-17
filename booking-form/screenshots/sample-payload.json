@@ -1,0 +1,284 @@
+{
+  "version": 1,
+  "type": "booking",
+  "booking_source": "Home – Header",
+  "campaign": "Business Discovery (SEO) Home – Header",
+  "cta_label": "header",
+  "slot": {
+    "start": "2026-11-18T16:00:00.000Z",
+    "end": "2026-11-18T16:45:00.000Z",
+    "timezone": "America/New_York",
+    "display": "Wednesday, November 18, 2026 at 11:00 AM"
+  },
+  "contact": {
+    "firstName": "Test",
+    "lastName": "Driver",
+    "email": "test.driver@example.com",
+    "phone": "(305) 555-0142",
+    "companyName": "Example Holdings",
+    "address1": "100 Main St",
+    "city": "Miami",
+    "state": "FL",
+    "postalCode": "33101",
+    "country": "US",
+    "timezone": "America/New_York"
+  },
+  "customFields": [
+    {
+      "id": "st1eCAFAHDcgPM4VvtNn",
+      "fieldValue": "Example Holdings"
+    },
+    {
+      "id": "Z8TSBkLl0c3nkOh0d0bj",
+      "fieldValue": "Real Estate"
+    },
+    {
+      "id": "h4JApkD7A1meEgqfLJ4v",
+      "fieldValue": "Eastern Standard Time"
+    },
+    {
+      "id": "zntmhqZEVR510izM1Amv",
+      "fieldValue": "Enterprise Optimization Suite + AI Agent"
+    },
+    {
+      "id": "ARe4MceHNpyuA2cKkIEw",
+      "fieldValue": "Yes (Outsourced Only)"
+    },
+    {
+      "id": "qmkmAZyHzfeRFjkRKQaw",
+      "fieldValue": "1 - 3"
+    },
+    {
+      "id": "UWxeByWt7W4EuIVVAQsm",
+      "fieldValue": [
+        "Cold Calling",
+        "SMS"
+      ]
+    },
+    {
+      "id": "J1MTiekQt4vbamz8JFee",
+      "fieldValue": [
+        "Submitting Forms Directly Into the System (CRM)",
+        "Direct Integration With The Platform"
+      ]
+    },
+    {
+      "id": "u6f3OtUsag2gUpFKEHCy",
+      "fieldValue": 3
+    },
+    {
+      "id": "TgvNUU7bOSq4YSB2FS9w",
+      "fieldValue": 3
+    },
+    {
+      "id": "xOz64JUSqg9hFWthmar5",
+      "fieldValue": 3
+    },
+    {
+      "id": "QfNSOY8w6fJUpyxW9al1",
+      "fieldValue": "Yes"
+    },
+    {
+      "id": "9aMGEJzyATDb4ZGnPLt7",
+      "fieldValue": "Yes"
+    },
+    {
+      "id": "rihpUXcXicHdCxEo4CfX",
+      "fieldValue": "GHL"
+    },
+    {
+      "id": "sqX5fTAKqUuNRwdoxaag",
+      "fieldValue": "Yes"
+    },
+    {
+      "id": "uclYhjBFIyedqd8xqYwE",
+      "fieldValue": "ACQ"
+    },
+    {
+      "id": "VLoxJWATbFZMgMOfBb4P",
+      "fieldValue": 3
+    },
+    {
+      "id": "kjvFHgnOa8iVNV7YiiBN",
+      "fieldValue": "Answer for kpis"
+    },
+    {
+      "id": "LNdrE1FEgFjbPydSCntV",
+      "fieldValue": "Answer for pnl"
+    },
+    {
+      "id": "FohJiIh9tGFKXI02LSUD",
+      "fieldValue": "Word of Mouth"
+    },
+    {
+      "id": "crnTGUSW3StY8VTOqaR2",
+      "fieldValue": "Answer for difficulties"
+    },
+    {
+      "id": "EI2ls6K7uJFe75PmRPaX",
+      "fieldValue": "Answer for expectations"
+    },
+    {
+      "id": "U26ojrxlzQxC1kwAMvki",
+      "fieldValue": "ASAP"
+    },
+    {
+      "id": "O5yyMN7TXsWzblxrHUfO",
+      "fieldValue": "Business Discovery (SEO) Home – Header"
+    }
+  ],
+  "answers": [
+    {
+      "q": "First Name",
+      "a": "Test"
+    },
+    {
+      "q": "Last Name",
+      "a": "Driver"
+    },
+    {
+      "q": "Business Email",
+      "a": "test.driver@example.com"
+    },
+    {
+      "q": "Phone",
+      "a": "(305) 555-0142"
+    },
+    {
+      "q": "Business Name",
+      "a": "Example Holdings"
+    },
+    {
+      "q": "Street Address",
+      "a": "100 Main St"
+    },
+    {
+      "q": "City",
+      "a": "Miami"
+    },
+    {
+      "q": "State",
+      "a": "FL"
+    },
+    {
+      "q": "Postal code",
+      "a": "33101"
+    },
+    {
+      "q": "Country",
+      "a": "US"
+    },
+    {
+      "q": "Business Niche",
+      "a": "Real Estate"
+    },
+    {
+      "q": "Time Zone",
+      "a": "Eastern Standard Time"
+    },
+    {
+      "q": "Which Plan Are You Interested In",
+      "a": "Enterprise Optimization Suite + AI Agent"
+    },
+    {
+      "q": "Do You Outsource Your Marketing?",
+      "a": "Yes (Outsourced Only)"
+    },
+    {
+      "q": "How Many Lead Sources Do You Have?",
+      "a": "1 - 3"
+    },
+    {
+      "q": "What Are Your Lead Sources?",
+      "a": "Cold Calling, SMS"
+    },
+    {
+      "q": "How Are These Lead Sources Entering Your Business?",
+      "a": "Submitting Forms Directly Into the System (CRM), Direct Integration With The Platform"
+    },
+    {
+      "q": "How Many Agents Do You Have On Cold Calling?",
+      "a": "3"
+    },
+    {
+      "q": "How Many Agents Do You Have On SMS?",
+      "a": "3"
+    },
+    {
+      "q": "How Many PPL Providers Do You Use?",
+      "a": "3"
+    },
+    {
+      "q": "Do You Need a CRM?",
+      "a": "Yes"
+    },
+    {
+      "q": "Do You Use A CRM?",
+      "a": "Yes"
+    },
+    {
+      "q": "Which CRM Do You Use?",
+      "a": "GHL"
+    },
+    {
+      "q": "Does Your CRM Have Follow Up Automations?",
+      "a": "Yes"
+    },
+    {
+      "q": "What Are You Using Your CRM For?",
+      "a": "ACQ"
+    },
+    {
+      "q": "How Many Sales Representatives Do You Have?",
+      "a": "3"
+    },
+    {
+      "q": "How Do You Measure Your KPIs?",
+      "a": "Answer for kpis"
+    },
+    {
+      "q": "How Do You Keep Track of Your Profits & Losses?",
+      "a": "Answer for pnl"
+    },
+    {
+      "q": "How Did You Hear About Us",
+      "a": "Word of Mouth"
+    },
+    {
+      "q": "What Difficulties Are You Facing In Your Business Generally?",
+      "a": "Answer for difficulties"
+    },
+    {
+      "q": "What Are Your Expectations With KPI DRIVER?",
+      "a": "Answer for expectations"
+    },
+    {
+      "q": "How Soon Are You Looking To Start?",
+      "a": "ASAP"
+    }
+  ],
+  "consent": {
+    "sms": true,
+    "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+    "at": "2026-11-17T15:14:15.244Z",
+    "page": "file:///home/user/KPI_DRIVER/booking-form/demo/index.html"
+  },
+  "context": {
+    "page_url": "file:///home/user/KPI_DRIVER/booking-form/demo/index.html",
+    "page_title": "Home | KPI DRIVER (booking form demo)",
+    "referrer": "",
+    "lang": "en",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+    "utm_source": "",
+    "utm_medium": "",
+    "utm_campaign": "",
+    "utm_term": "",
+    "utm_content": "",
+    "gclid": "",
+    "fbclid": "",
+    "msclkid": "",
+    "landing_page": "file:///home/user/KPI_DRIVER/booking-form/demo/index.html",
+    "first_referrer": ""
+  },
+  "hp": ""
+}

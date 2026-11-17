@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | KPI DRIVER (booking form demo)</title>
+<link rel="icon" href="../../src/assets/img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<!-- the site's own stylesheet, read-only: the form inherits its tokens and theme -->
+<link rel="stylesheet" href="../../src/assets/css/site.css">
+<link rel="stylesheet" href="../kd-booking.css">
+<style>
+  .demo-note { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .demo-payload { white-space: pre-wrap; font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.5; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; max-height: 420px; overflow: auto; }
+  .demo-inline { background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; }
+</style>
+<script>
+  // Mock mode: sample availability, nothing is sent. For live use set slotsUrl/bookUrl and mock:false.
+  window.KD_BOOKING_CONFIG = { mock: true };
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#"><img class="logo--dark" src="../../src/assets/img/brand/logo-h-light.png" alt="KPI DRIVER" width="178" height="24"><img class="logo--light" src="../../src/assets/img/brand/logo-h-dark.png" alt="" width="178" height="24"></a>
+    <nav class="nav" style="display:flex"><a class="btn btn--primary btn--sm nav__cta" href="https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L" data-book="17jl7cP7dvOAU48s6C3L" data-label="header">Book a Discovery Call</a></nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme" onclick="var d=document.documentElement;d.setAttribute('data-theme',d.getAttribute('data-theme')==='light'?'dark':'light')">◐</button>
+  </div>
+</header>
+<main>
+  <section class="section section--grid hero">
+    <div class="wrap stack stack--lg">
+      <p class="eyebrow">Booking form demo · sample availability</p>
+      <h1>One form. <em>Every CTA.</em></h1>
+      <p class="lede">Each button below opens the same form. The booking records where it came from, e.g. <b>Home – Hero</b>.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://link.kpidriver.com/widget/booking/9g3ccVyd2a9NsV51QuKN" data-book="9g3ccVyd2a9NsV51QuKN" data-label="hero">Book a Discovery Call</a>
+        <a class="btn btn--ghost" href="#" data-kd-book data-label="cta band">Another CTA (data-kd-book)</a>
+      </div>
+    </div>
+  </section>
+  <section class="section section--tight">
+    <div class="wrap stack">
+      <p class="eyebrow">Inline version (booking page)</p>
+      <div class="demo-inline" data-kd-booking data-kd-booking-source="Home – Inline Demo"></div>
+      <p class="demo-note">Last payload sent (mock)</p>
+      <pre class="demo-payload" id="payload">Book a call to see the payload the n8n webhook receives.</pre>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="wrap"><a href="https://link.kpidriver.com/widget/booking/l4rvIxCnb9DtsSTM6SoQ" data-book="l4rvIxCnb9DtsSTM6SoQ" data-label="footer">Book a Discovery Call</a></div></footer>
+<script src="../kd-booking.js"></script>
+<script>
+  setInterval(function () { if (window.KD_BOOKING_LAST_PAYLOAD) document.getElementById("payload").textContent = JSON.stringify(window.KD_BOOKING_LAST_PAYLOAD, null, 2); }, 500);
+</script>
+</body>
+</html>

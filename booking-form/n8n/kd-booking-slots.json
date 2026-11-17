@@ -1,0 +1,195 @@
+{
+  "name": "KPI DRIVER \u00b7 Booking \u00b7 Free slots",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "kd-booking-slots",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "https://www.kpidriver.com,https://kpidriver.com,https://kpidriver.webflow.io"
+        }
+      },
+      "id": "55efcfa3-f107-5284-b623-49d9dc6ca89a",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "c8ec3c03-fe66-5c2a-a97c-18945ee2cbe2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// ===== Settings for all three KPI DRIVER workflows (pasted at the top of each \"Validate\" node) =====\nconst LOCATION_ID = 'nLOdLoui5CvpzktszMJx';      // KPI DRIVER sub-account (read from the live HighLevel forms)\nconst CALENDAR_ID = '17jl7cP7dvOAU48s6C3L';      // the ONE discovery calendar. Default: the current header calendar.\nconst DURATION_MIN = 45;                          // must match the calendar's slot length\nconst CONTACT_SOURCE = 'SEO';                     // HighLevel contact \"source\", as the old forms set it\n// Custom fields the website may write (HighLevel custom field ids). Anything else in a request is ignored.\nconst BOOKING_FIELDS = ['st1eCAFAHDcgPM4VvtNn', 'Z8TSBkLl0c3nkOh0d0bj', 'h4JApkD7A1meEgqfLJ4v', 'zntmhqZEVR510izM1Amv',\n  'ARe4MceHNpyuA2cKkIEw', 'qmkmAZyHzfeRFjkRKQaw', 'UWxeByWt7W4EuIVVAQsm', 'J1MTiekQt4vbamz8JFee', 'u6f3OtUsag2gUpFKEHCy',\n  'TgvNUU7bOSq4YSB2FS9w', 'xOz64JUSqg9hFWthmar5', 'QfNSOY8w6fJUpyxW9al1', '9aMGEJzyATDb4ZGnPLt7', 'rihpUXcXicHdCxEo4CfX',\n  'sqX5fTAKqUuNRwdoxaag', 'uclYhjBFIyedqd8xqYwE', 'VLoxJWATbFZMgMOfBb4P', 'kjvFHgnOa8iVNV7YiiBN', 'LNdrE1FEgFjbPydSCntV',\n  'FohJiIh9tGFKXI02LSUD', 'crnTGUSW3StY8VTOqaR2', 'EI2ls6K7uJFe75PmRPaX', 'U26ojrxlzQxC1kwAMvki', 'O5yyMN7TXsWzblxrHUfO'];\nconst CONTACT_FIELDS = ['st1eCAFAHDcgPM4VvtNn', 'zntmhqZEVR510izM1Amv', '2qGuyylBHmeIFy4ZQITo', 'O5yyMN7TXsWzblxrHUfO'];\n// ===== end of settings =====\n\n// Shared helpers (pasted into each Validate node after the settings).\nconst clean = o => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== undefined && v !== null && v !== ''));\nconst str = (v, n = 200) => (v == null ? '' : String(v)).trim().slice(0, n);\nconst isEmail = v => /^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(v);\nfunction phoneE164(v) {\n  const raw = str(v, 40); if (!raw) return '';\n  const digits = raw.replace(/\\D/g, '');\n  if (raw.startsWith('+')) return '+' + digits;\n  if (digits.length === 10) return '+1' + digits;            // US/Canada without country code\n  if (digits.length === 11 && digits[0] === '1') return '+' + digits;\n  return raw;                                                // leave anything else for HighLevel to parse\n}\nfunction pickFields(list, allowed) {\n  const ok = new Set(allowed);\n  return (Array.isArray(list) ? list : []).filter(f => f && ok.has(f.id)).map(f => ({\n    id: f.id,\n    fieldValue: Array.isArray(f.fieldValue) ? f.fieldValue.map(x => str(x, 200)).slice(0, 25)\n      : typeof f.fieldValue === 'number' ? f.fieldValue : str(f.fieldValue, 5000)\n  }));\n}\nfunction clientIp(headers) {\n  const h = headers || {};\n  return str(h['cf-connecting-ip'] || h['x-forwarded-for'] || h['x-real-ip'] || '', 100).split(',')[0].trim();\n}\nfunction contextLines(ctx) {\n  ctx = ctx || {};\n  const utm = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'msclkid']\n    .filter(k => ctx[k]).map(k => `${k}: ${str(ctx[k], 200)}`);\n  return [`Page: ${str(ctx.page_url, 500)}`, `Landing page: ${str(ctx.landing_page, 500)}`,\n    `Referrer: ${str(ctx.first_referrer || ctx.referrer, 500) || 'direct'}`, ...utm];\n}\nconst reject = (code, message, status = 400) => [{ json: { ok: false, status, code, message } }];\n\n// Turn the website's month request into a safe HighLevel free-slots query (max 31 days, never in the past).\nconst q = $input.first().json.query || {};\nlet start = Number(q.start), end = Number(q.end);\nlet timezone = str(q.timezone, 60) || 'America/New_York';\ntry { new Intl.DateTimeFormat('en-US', { timeZone: timezone }); } catch (e) { timezone = 'America/New_York'; }\nif (!isFinite(start) || !isFinite(end)) return [{ json: { ok: false } }];\nstart = Math.max(start, Date.now());\nend = Math.min(end, start + 31 * 86400000);\nif (end <= start) return [{ json: { ok: false } }];\nreturn [{ json: { ok: true, calendarId: CALENDAR_ID, start: Math.floor(start), end: Math.floor(end), timezone } }];\n"
+      },
+      "id": "5e98c765-4669-5c0f-b3da-950b28aa4a3b",
+      "name": "Validate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://services.leadconnectorhq.com/calendars/{{ $json.calendarId || 'none' }}/free-slots",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Version",
+              "value": "v3"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          },
+          "timeout": 15000
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "startDate",
+              "value": "={{ $json.start }}"
+            },
+            {
+              "name": "endDate",
+              "value": "={{ $json.end }}"
+            },
+            {
+              "name": "timezone",
+              "value": "={{ $json.timezone }}"
+            }
+          ]
+        }
+      },
+      "id": "ba5b43e0-eb80-555f-aacf-38cc87783ef5",
+      "name": "HighLevel free slots",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        0
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "",
+          "name": "HighLevel PIT"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pass on only the date \u2192 slots map the website needs.\nconst prev = $('Validate').first().json;\nconst r = $input.first().json;\nif (!prev.ok) return [{ json: { status: 200, body: {} } }];\nif (!(r.statusCode >= 200 && r.statusCode < 300)) return [{ json: { status: 502, body: { error: 'availability_unavailable' } } }];\nconst out = {};\nfor (const [day, v] of Object.entries(r.body || {})) {\n  if (/^\\d{4}-\\d{2}-\\d{2}$/.test(day) && v && Array.isArray(v.slots)) out[day] = { slots: v.slots.filter(s => typeof s === 'string') };\n}\nreturn [{ json: { status: 200, body: out } }];\n"
+      },
+      "id": "87a06014-84db-5020-9b29-491bacb2123a",
+      "name": "Shape",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json.body) }}",
+        "options": {
+          "responseCode": "={{ $json.status }}",
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "public, max-age=60"
+              }
+            ]
+          }
+        }
+      },
+      "id": "0585934b-5b16-5f2a-bc4f-684684ec6e2c",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        960,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate": {
+      "main": [
+        [
+          {
+            "node": "HighLevel free slots",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HighLevel free slots": {
+      "main": [
+        [
+          {
+            "node": "Shape",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Shape": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
