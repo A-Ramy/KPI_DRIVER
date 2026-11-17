@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* =====================================================================
+   KPI DRIVER · HighLevel booking widget (Neo) · "instrument panel" theme
+   ---------------------------------------------------------------------
+   Mirrors the KPI DRIVER site design system (src/assets/css/site.css):
+   graphite surfaces, one hairline grid, condensed display type, mono
+   labels, HUD corners and the four-segment gear line.
+
+   Everything is scoped to HighLevel's stable widget id
+   #appointment_widgets--revamp, so it never leaks into a funnel page
+   that also hosts other elements.
+
+   Kill switch: delete this CSS (or wrap it in a comment). The widget
+   falls back to the colours set in the calendar's Neo customization.
+   ===================================================================== */
+
+/* ---------- 1. tokens + HighLevel's own widget variables ---------- */
+/* html:root beats HighLevel's ":root{… !important}" block on specificity. */
+html:root {
+  --kd-ink: #070b11;
+  --kd-panel: #0d141d;
+  --kd-panel-2: #131c28;
+  --kd-panel-3: #1a2533;
+  --kd-text: #e9eef5;
+  --kd-muted: #9ba9bb;
+  --kd-faint: #5f6d80;
+  --kd-line: rgba(255, 255, 255, 0.1);
+  --kd-line-strong: rgba(255, 255, 255, 0.2);
+  --kd-blue: #4a9be6;
+  --kd-btn: #2a69a8;
+  --kd-btn-hover: #235a91;
+  --kd-btn-edge: #5a9bd8;
+  --kd-green: #43b749;
+  --kd-amber: #fcaf17;
+  --kd-orange: #ea8c1c;
+  --kd-red: #ed2024;
+  --kd-radius: 10px;
+  --kd-radius-sm: 6px;
+  --kd-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --kd-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --kd-body: "Barlow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --kd-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --kd-gear: linear-gradient(90deg, var(--kd-red) 0 24%, transparent 24% 25.33%, var(--kd-orange) 25.33% 49.33%, transparent 49.33% 50.66%, var(--kd-amber) 50.66% 74.66%, transparent 74.66% 76%, var(--kd-green) 76% 100%);
+
+  --appointment_widgets-primary-color: var(--kd-blue) !important;
+  --appointment_widgets-background-color: var(--kd-panel) !important;
+  --appointment_widgets-border-color: var(--kd-line) !important;
+  --appointment_widgets-light-primary-color: rgba(74, 155, 230, 0.12) !important;
+  --appointment_widgets-text-color: var(--kd-text) !important;
+  --appointment_widgets-light-text-color: var(--kd-muted) !important;
+  --appointment_widgets-blur-color: rgba(13, 20, 29, 0.7) !important;
+  color-scheme: dark;
+}
+
+/* ---------- 2. page canvas (only when the widget is the whole page) ---------- */
+html:has(.direct-widget), html:has(.direct-widget) body {
+  background: var(--kd-ink) !important;
+}
+html:has(.direct-widget) body {
+  background:
+    radial-gradient(60% 55% at 85% 0%, rgba(55, 125, 192, 0.26), transparent 70%),
+    radial-gradient(45% 45% at 0% 100%, rgba(67, 183, 73, 0.1), transparent 70%),
+    var(--kd-ink) !important;
+  min-height: 100vh;
+}
+html:has(.direct-widget) body::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image: linear-gradient(var(--kd-line) 1px, transparent 1px), linear-gradient(90deg, var(--kd-line) 1px, transparent 1px);
+  background-size: 72px 72px; opacity: 0.45;
+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 70% 20%, #000 10%, transparent 75%);
+  mask-image: radial-gradient(ellipse 90% 80% at 70% 20%, #000 10%, transparent 75%);
+}
+#calendarAppointmentBookingMain { position: relative; z-index: 1; }
+
+/* ---------- 3. base type ---------- */
+#appointment_widgets--revamp,
+#appointment_widgets--revamp button,
+#appointment_widgets--revamp input,
+#appointment_widgets--revamp textarea,
+#appointment_widgets--revamp select,
+#appointment_widgets--revamp label {
+  font-family: var(--kd-body) !important;
+  -webkit-font-smoothing: antialiased;
+}
+#appointment_widgets--revamp { color: var(--kd-text); }
+
+/* ---------- 4. the console (outer card) ---------- */
+#appointment_widgets--revamp .appointment_widgets--revamp--container {
+  position: relative;
+  background: rgba(13, 20, 29, 0.82) !important;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border: 1px solid var(--kd-line-strong) !important;
+  border-radius: var(--kd-radius) !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 -1px 24px rgba(74, 155, 230, 0.22) !important;
+  overflow: visible !important;
+}
+/* HUD corners */
+#appointment_widgets--revamp .appointment_widgets--revamp--container::before,
+#appointment_widgets--revamp .appointment_widgets--revamp--container::after {
+  content: ""; position: absolute; width: 18px; height: 18px; pointer-events: none; z-index: 2;
+  border: 2px solid var(--kd-blue);
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--container::before {
+  left: -1px; top: -1px; border-right: 0; border-bottom: 0; border-top-left-radius: var(--kd-radius);
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--container::after {
+  right: -1px; bottom: -1px; border-left: 0; border-top: 0; border-bottom-right-radius: var(--kd-radius);
+}
+
+/* ---------- 5. left rail: service info ---------- */
+#appointment_widgets--revamp .appointment_widgets--revamp--info-container {
+  background: linear-gradient(180deg, rgba(19, 28, 40, 0.9), rgba(13, 20, 29, 0.6)) !important;
+  border-right: 1px solid var(--kd-line) !important;
+  border-color: var(--kd-line) !important;
+  border-top-left-radius: var(--kd-radius); border-bottom-left-radius: var(--kd-radius);
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--neo-calendar-logo {
+  box-shadow: 0 0 0 1px var(--kd-line-strong), 0 0 28px rgba(74, 155, 230, 0.25);
+  background: #fdfdfd;
+}
+#appointment_widgets--revamp .widgets--service-name {
+  font-family: var(--kd-display) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1 !important;
+  font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem) !important;
+  color: var(--kd-text) !important;
+  text-wrap: balance;
+}
+/* gear line under the service name */
+#appointment_widgets--revamp .widgets--service-name::after {
+  content: ""; display: block; height: 4px; width: min(220px, 80%); margin-top: 16px;
+  background: var(--kd-gear); border-radius: 2px;
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--booking-info .p-b,
+#appointment_widgets--revamp .appointment-widgets-service-booking-info .p-b {
+  color: var(--kd-muted) !important;
+}
+#appointment_widgets--revamp .booking-info-value {
+  font-family: var(--kd-mono) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--kd-muted) !important;
+  font-weight: 500 !important;
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--booking-info svg path,
+#appointment_widgets--revamp .appointment-widgets-service-booking-info svg path { stroke: var(--kd-blue) !important; }
+#appointment_widgets--revamp .appointment_widgets--revamp--booking-info svg [fill]:not([fill="none"]) { fill: var(--kd-blue) !important; }
+/* mobile: the details sit in a bordered box */
+#appointment_widgets--revamp .appointment-widgets-service-booking-info { border-color: var(--kd-line) !important; background: transparent !important; }
+#appointment_widgets--revamp .appointment-widgets-service-booking-info h1,
+#appointment_widgets--revamp .appointment-widgets-service-booking-info h1 * {
+  color: var(--kd-muted) !important; font-family: var(--kd-body) !important; font-weight: 400 !important; text-align: left !important;
+}
+#appointment_widgets--revamp .widgets--service-description,
+#appointment_widgets--revamp .widgets--service-description * {
+  color: var(--kd-muted) !important;
+  font-family: var(--kd-body) !important;
+  text-align: left !important;
+}
+#appointment_widgets--revamp .widgets--service-description strong { font-weight: 500 !important; }
+/* back arrow (form step) */
+#appointment_widgets--revamp .appointment_widgets--revamp--navigation-container button,
+#appointment_widgets--revamp .appointment_widgets--revamp--navigation-container a,
+#appointment_widgets--revamp .appointment_widgets--revamp--navigation-container > div {
+  background: transparent !important;
+  border: 1px solid var(--kd-line-strong) !important;
+  border-radius: var(--kd-radius-sm) !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--navigation-container button:hover,
+#appointment_widgets--revamp .appointment_widgets--revamp--navigation-container a:hover {
+  border-color: var(--kd-blue) !important; box-shadow: 0 0 14px rgba(74, 155, 230, 0.35);
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--navigation-container svg path { stroke: var(--kd-blue) !important; }
+
+/* ---------- 6. step headings ---------- */
+#appointment_widgets--revamp .label-select-date,
+#appointment_widgets--revamp .custom-form-title {
+  font-family: var(--kd-mono) !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--kd-muted) !important;
+  display: flex; align-items: center; gap: 10px;
+}
+#appointment_widgets--revamp .label-select-date::before,
+#appointment_widgets--revamp .custom-form-title::before {
+  content: ""; width: 28px; height: 2px; background: var(--kd-blue); flex: none;
+}
+/* step counter: the gear line fills up as the visitor moves through the booking */
+#appointment_widgets--revamp .label-select-date::after,
+#appointment_widgets--revamp .custom-form-title::after {
+  font-family: var(--kd-mono); font-size: 0.6875rem; letter-spacing: 0.12em;
+  margin-left: 6px; padding: 3px 9px; border-radius: 14px; white-space: nowrap;
+  border: 1px solid rgba(74, 155, 230, 0.5); color: var(--kd-blue);
+}
+#appointment_widgets--revamp .label-select-date::after { content: "Step 1 / 2"; }
+#appointment_widgets--revamp .custom-form-title::after { content: "Step 2 / 2"; }
+
+/* ---------- 7. month navigation ---------- */
+#appointment_widgets--revamp .vdpPeriodControl > button {
+  font-family: var(--kd-display) !important;
+  font-weight: 600 !important;
+  font-size: 1.375rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--kd-text) !important;
+}
+#appointment_widgets--revamp .widgets-date-block .vdpHeader .arrowNext,
+#appointment_widgets--revamp .widgets-date-block .vdpHeader .arrowPrevious {
+  background: transparent !important;
+  border: 1px solid var(--kd-line-strong) !important;
+  border-radius: var(--kd-radius-sm) !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+#appointment_widgets--revamp .widgets-date-block .vdpHeader .arrowNext:not(.disabled):hover,
+#appointment_widgets--revamp .widgets-date-block .vdpHeader .arrowPrevious:not(.disabled):hover {
+  border-color: var(--kd-blue) !important;
+  background: rgba(74, 155, 230, 0.12) !important;
+  box-shadow: 0 0 16px rgba(74, 155, 230, 0.35);
+}
+#appointment_widgets--revamp .widgets-date-block .vdpHeader .disabled { opacity: 0.35; }
+#appointment_widgets--revamp .widgets-date-block .vdpHeader svg path { stroke: var(--kd-blue) !important; }
+#appointment_widgets--revamp .widgets-date-block .vdpHeader .disabled svg path { stroke: var(--kd-faint) !important; }
+
+/* ---------- 8. date grid ---------- */
+#appointment_widgets--revamp .vdpHeadCellContent {
+  font-family: var(--kd-mono) !important;
+  font-size: 0.6875rem !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--kd-faint) !important;
+}
+#appointment_widgets--revamp .widgets-date-block .vdpCell .vdpCellContent {
+  font-family: var(--kd-display) !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  font-variant-numeric: tabular-nums;
+  border-radius: var(--kd-radius-sm) !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.2s ease, transform 0.15s var(--kd-ease);
+}
+/* unavailable days: dim numerals, no chip */
+#appointment_widgets--revamp .widgets-date-block .vdpCell.disabled .vdpCellContent {
+  background: none !important;
+  border-color: transparent !important;
+  color: rgba(155, 169, 187, 0.38) !important;
+  font-weight: 500 !important;
+}
+#appointment_widgets--revamp .widgets-date-block .vdpCell.outOfRange { visibility: hidden; }
+/* available days: hairline chip with a blue tint */
+#appointment_widgets--revamp .widgets-date-block .vdpCell.selectable .vdpCellContent {
+  background: rgba(74, 155, 230, 0.08) !important;
+  border: 1px solid rgba(74, 155, 230, 0.35) !important;
+  color: var(--kd-text) !important;
+}
+#appointment_widgets--revamp .widgets-date-block .vdpCell.selectable:not(.selected) .vdpCellContent:hover {
+  background: rgba(74, 155, 230, 0.18) !important;
+  border-color: var(--kd-blue) !important;
+  box-shadow: 0 0 16px rgba(74, 155, 230, 0.4);
+  transform: translateY(-1px);
+}
+/* selected day: solid, glowing */
+#appointment_widgets--revamp .widgets-date-block .vdpCell.selectable.selected .vdpCellContent {
+  background: var(--kd-btn) !important;
+  border: 1px solid var(--kd-btn-edge) !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 3px rgba(74, 155, 230, 0.18), 0 0 24px rgba(74, 155, 230, 0.55);
+}
+/* today: amber tick instead of HighLevel's dot */
+#appointment_widgets--revamp .widgets-date-block .vdpCell.today .vdpCellContent::after {
+  content: "" !important;
+  position: absolute; left: 50% !important; right: auto !important; bottom: 5px !important; top: auto !important;
+  width: 12px; height: 2px; line-height: 0 !important; transform: translateX(-50%);
+  background: var(--kd-amber); border-radius: 1px; box-shadow: 0 0 8px rgba(252, 175, 23, 0.7);
+}
+#appointment_widgets--revamp .widgets-date-block .vdpCell.selectable.selected.today .vdpCellContent::after { background: #fff; box-shadow: none; }
+
+/* ---------- 9. timezone picker ---------- */
+#appointment_widgets--revamp .timezone-label {
+  font-family: var(--kd-mono) !important;
+  font-size: 0.6875rem !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--kd-muted) !important;
+}
+#appointment_widgets--revamp .multi_select_calendar .multiselect__tags,
+#appointment_widgets--revamp .multi_select_calendar .multiselect__single,
+#appointment_widgets--revamp .multi_select_calendar .multiselect__input {
+  background: transparent !important;
+  color: var(--kd-text) !important;
+}
+#appointment_widgets--revamp .multi_select_calendar .multiselect__tags {
+  border: 1px solid var(--kd-line) !important;
+  border-radius: var(--kd-radius-sm) !important;
+}
+#appointment_widgets--revamp .multi_select_calendar .multiselect__single {
+  font-family: var(--kd-mono) !important; font-size: 0.8125rem !important;
+}
+#appointment_widgets--revamp .multi_select_calendar .multiselect__single svg path { fill: var(--kd-muted) !important; }
+
+/* ---------- 10. time slots ---------- */
+#appointment_widgets--revamp .widgets-time-slots .widgets-time-slot > span {
+  background: rgba(7, 11, 17, 0.45) !important;
+  border: 1px solid rgba(74, 155, 230, 0.45) !important;
+  border-radius: var(--kd-radius-sm) !important;
+  color: var(--kd-text) !important;
+  font-family: var(--kd-mono) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em;
+  transition: border-color 0.15s ease, box-shadow 0.2s ease, background-color 0.15s ease;
+}
+#appointment_widgets--revamp .widgets-time-slots .widgets-time-slot > span:hover {
+  border: 1px solid var(--kd-blue) !important;
+  background: rgba(74, 155, 230, 0.12) !important;
+  box-shadow: 0 0 18px rgba(74, 155, 230, 0.35), inset 0 0 0 1px rgba(74, 155, 230, 0.4);
+}
+/* picked slot: time turns into a readout, the button lights up */
+#appointment_widgets--revamp .widgets-time-slots .widgets-time-slot.actived > span {
+  background: var(--kd-panel-3) !important;
+  border: 1px solid var(--kd-line-strong) !important;
+  color: var(--kd-text) !important;
+  box-shadow: inset 3px 0 0 var(--kd-green);
+}
+#appointment_widgets--revamp .widgets-time-slots .widgets-time-slot.actived button {
+  background: var(--kd-btn) !important;
+  border: 1px solid var(--kd-btn-edge) !important;
+  border-radius: var(--kd-radius-sm) !important;
+  color: #fff !important;
+  font-family: var(--kd-display) !important;
+  font-weight: 600 !important;
+  font-size: 1.0625rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 0 22px rgba(74, 155, 230, 0.45);
+}
+#appointment_widgets--revamp .widgets-time-slots .widgets-time-slot.actived button div { font: inherit !important; }
+#appointment_widgets--revamp .widgets-time-slots .widgets-time-slot.actived button:hover { background: var(--kd-btn-hover) !important; }
+#appointment_widgets--revamp .widgets-time-slots::-webkit-scrollbar { background: transparent !important; }
+#appointment_widgets--revamp .widgets-time-slots::-webkit-scrollbar-thumb { background: var(--kd-line-strong) !important; }
+#appointment_widgets--revamp .selected-appointment-date {
+  font-family: var(--kd-mono) !important; font-size: 0.75rem !important; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--kd-muted) !important;
+}
+#appointment_widgets--revamp .duration-pill {
+  background: transparent !important; border: 1px solid var(--kd-line-strong) !important; color: var(--kd-text) !important;
+  font-family: var(--kd-mono) !important; font-size: 0.75rem !important; letter-spacing: 0.08em;
+}
+#appointment_widgets--revamp .duration-pill.selected,
+#appointment_widgets--revamp .duration-pill:hover { border-color: var(--kd-blue) !important; color: var(--kd-blue) !important; }
+
+/* ---------- 11. details form (HighLevel Form inside the widget) ---------- */
+/* HighLevel paints the form as a white card with inline styles; flatten it into the console. */
+#appointment_widgets--revamp #form-builder { padding: 6px 2px 20px !important; margin-top: 4px !important; }
+#appointment_widgets--revamp #_builder-form {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 4px !important;
+}
+#appointment_widgets--revamp .appointment_widgets--revamp--steps.step-form { border-color: var(--kd-line) !important; }
+#appointment_widgets--revamp #_builder-form label,
+#appointment_widgets--revamp #_builder-form .field-label,
+#appointment_widgets--revamp #_builder-form .label-alignment {
+  color: var(--kd-text) !important;
+  font-family: var(--kd-body) !important;
+  font-weight: 500 !important;
+  font-size: 0.9375rem !important;
+}
+#appointment_widgets--revamp #_builder-form .label-alignment > span { color: var(--kd-amber) !important; }
+#appointment_widgets--revamp #_builder-form .form-builder--item input[type=text],
+#appointment_widgets--revamp #_builder-form .form-builder--item input[type=number],
+#appointment_widgets--revamp #_builder-form input[type=email],
+#appointment_widgets--revamp #_builder-form input[type=tel],
+#appointment_widgets--revamp #_builder-form textarea,
+#appointment_widgets--revamp #_builder-form .multiselect .multiselect__tags,
+#appointment_widgets--revamp #_builder-form .date-picker-custom-style {
+  background: rgba(7, 11, 17, 0.6) !important;
+  color: var(--kd-text) !important;
+  border: 1px solid var(--kd-line-strong) !important;
+  border-radius: var(--kd-radius-sm) !important;
+  font-family: var(--kd-body) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 400 !important;
+  min-height: 44px;
+  box-shadow: none !important;
+  transition: border-color 0.15s ease, box-shadow 0.2s ease;
+}
+#appointment_widgets--revamp #_builder-form textarea { min-height: 96px; }
+#appointment_widgets--revamp #_builder-form input::placeholder,
+#appointment_widgets--revamp #_builder-form textarea::placeholder { color: var(--kd-faint) !important; opacity: 1; }
+#appointment_widgets--revamp #_builder-form input:focus,
+#appointment_widgets--revamp #_builder-form textarea:focus,
+#appointment_widgets--revamp #_builder-form .multiselect--active .multiselect__tags {
+  outline: none !important;
+  border-color: var(--kd-blue) !important;
+  box-shadow: 0 0 0 3px rgba(74, 155, 230, 0.2), 0 0 18px rgba(74, 155, 230, 0.25) !important;
+}
+#appointment_widgets--revamp #_builder-form .email-input-wrapper svg path { stroke: var(--kd-muted) !important; }
+/* dropdowns */
+#appointment_widgets--revamp #_builder-form .multiselect__single,
+#appointment_widgets--revamp #_builder-form .multiselect__input,
+#appointment_widgets--revamp #_builder-form .multiselect__spinner { background: transparent !important; color: var(--kd-text) !important; }
+#appointment_widgets--revamp #_builder-form .multiselect__placeholder { color: var(--kd-faint) !important; }
+#appointment_widgets--revamp #_builder-form .multiselect__select::before { border-top-color: var(--kd-blue) !important; }
+#appointment_widgets--revamp .multiselect__content-wrapper {
+  background: var(--kd-panel-2) !important;
+  border: 1px solid var(--kd-line-strong) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+#appointment_widgets--revamp .multiselect__option { color: var(--kd-text) !important; background: transparent; }
+#appointment_widgets--revamp .multiselect__option--highlight,
+#appointment_widgets--revamp .multi_select_form .multiselect__option--highlight,
+#appointment_widgets--revamp .multi_select_calendar .multiselect__option--highlight {
+  background: rgba(74, 155, 230, 0.16) !important; color: #fff !important;
+}
+#appointment_widgets--revamp .multiselect__option--highlight::after { background: transparent !important; color: var(--kd-blue) !important; }
+#appointment_widgets--revamp .multiselect__option--selected { background: rgba(74, 155, 230, 0.1) !important; color: var(--kd-blue) !important; }
+#appointment_widgets--revamp .multiselect__tag { background: var(--kd-btn) !important; }
+/* radios + checkboxes */
+#appointment_widgets--revamp #_builder-form input[type=radio],
+#appointment_widgets--revamp #_builder-form input[type=checkbox] {
+  -webkit-appearance: none; appearance: none; flex: none;
+  width: 18px !important; height: 18px !important; margin: 0 !important; position: static !important; transform: none !important;
+  border: 1.5px solid var(--kd-line-strong); background: rgba(7, 11, 17, 0.6); cursor: pointer;
+  display: inline-grid; place-content: center; transition: border-color 0.15s ease, box-shadow 0.2s ease;
+}
+#appointment_widgets--revamp #_builder-form input[type=radio] { border-radius: 50%; }
+#appointment_widgets--revamp #_builder-form input[type=checkbox] { border-radius: 4px; }
+#appointment_widgets--revamp #_builder-form input[type=radio]::before {
+  content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--kd-blue); transform: scale(0); transition: transform 0.15s var(--kd-ease);
+}
+#appointment_widgets--revamp #_builder-form input[type=checkbox]::before {
+  content: ""; width: 10px; height: 6px; margin-top: -2px; border: 2px solid #fff; border-top: 0; border-right: 0; transform: rotate(-45deg) scale(0); transition: transform 0.15s var(--kd-ease);
+}
+#appointment_widgets--revamp #_builder-form input[type=radio]:checked,
+#appointment_widgets--revamp #_builder-form input[type=checkbox]:checked { border-color: var(--kd-blue); box-shadow: 0 0 12px rgba(74, 155, 230, 0.5); }
+#appointment_widgets--revamp #_builder-form input[type=checkbox]:checked { background: var(--kd-btn); }
+#appointment_widgets--revamp #_builder-form input[type=radio]:checked::before { transform: scale(1); }
+#appointment_widgets--revamp #_builder-form input[type=checkbox]:checked::before { transform: rotate(-45deg) scale(1); }
+#appointment_widgets--revamp #_builder-form .terms-and-conditions .checkbox-container { display: flex; align-items: flex-start; gap: 2px; }
+#appointment_widgets--revamp #_builder-form .terms-and-conditions input[type=checkbox] { margin-top: 2px !important; }
+#appointment_widgets--revamp #_builder-form .standard-radio-container,
+#appointment_widgets--revamp #_builder-form .standard-checkbox-container {
+  display: flex; align-items: center; cursor: pointer;
+  padding: 10px 12px; margin-bottom: 6px;
+  border: 1px solid var(--kd-line); border-radius: var(--kd-radius-sm);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+#appointment_widgets--revamp #_builder-form .standard-radio-container:hover,
+#appointment_widgets--revamp #_builder-form .standard-checkbox-container:hover { border-color: rgba(74, 155, 230, 0.5); }
+#appointment_widgets--revamp #_builder-form .standard-radio-container:has(input:checked),
+#appointment_widgets--revamp #_builder-form .standard-checkbox-container:has(input:checked) {
+  border-color: var(--kd-blue); background: rgba(74, 155, 230, 0.1);
+}
+#appointment_widgets--revamp #_builder-form .standard-radio-container label,
+#appointment_widgets--revamp #_builder-form .standard-checkbox-container label { font-weight: 400 !important; cursor: pointer; margin-top: 0 !important; margin-bottom: 0 !important; padding: 0 !important; line-height: 1.35 !important; }
+/* consent text */
+#appointment_widgets--revamp #_builder-form .terms-and-conditions label,
+#appointment_widgets--revamp #_builder-form .terms-and-conditions label * {
+  color: var(--kd-muted) !important; font-family: var(--kd-body) !important; font-size: 0.8125rem !important; font-weight: 400 !important; line-height: 1.5;
+}
+#appointment_widgets--revamp #_builder-form a { color: var(--kd-blue) !important; }
+#appointment_widgets--revamp .action-add-guest {
+  font-family: var(--kd-mono) !important; font-size: 0.75rem !important; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--kd-blue) !important;
+}
+#appointment_widgets--revamp .action-add-guest::before { content: "+ "; }
+/* validation */
+#appointment_widgets--revamp #_builder-form .error,
+#appointment_widgets--revamp #_builder-form .text-danger,
+#appointment_widgets--revamp #_builder-form .error-message { color: #ff6b6d !important; }
+#appointment_widgets--revamp #_builder-form .input-error,
+#appointment_widgets--revamp #_builder-form .is-invalid { border-color: #ff6b6d !important; }
+/* the form's own submit button (hidden by the widget in most setups, styled in case it shows) */
+#appointment_widgets--revamp #_builder-form .hl_button.button-element {
+  background: var(--kd-btn) !important; border: 1px solid var(--kd-btn-edge) !important; border-radius: var(--kd-radius-sm) !important;
+  font-family: var(--kd-display) !important; text-transform: uppercase; letter-spacing: 0.06em;
+}
+
+/* ---------- 12. footer action: Schedule meeting ---------- */
+#appointment_widgets--revamp .widgets-action-buttons {
+  background: transparent !important;
+  border-top: 0 !important;
+}
+#appointment_widgets--revamp .btn-schedule,
+#appointment_widgets--revamp .widgets-action-buttons .btn {
+  background: var(--kd-btn) !important;
+  border: 1px solid var(--kd-btn-edge) !important;
+  border-radius: var(--kd-radius-sm) !important;
+  color: #fff !important;
+  min-height: 48px;
+  padding: 12px 24px !important;
+  font-family: var(--kd-display) !important;
+  font-weight: 600 !important;
+  font-size: 1.125rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 0 24px rgba(74, 155, 230, 0.35) !important;
+  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+#appointment_widgets--revamp .btn-schedule:hover { background: var(--kd-btn-hover) !important; box-shadow: 0 0 32px rgba(74, 155, 230, 0.55) !important; }
+#appointment_widgets--revamp .btn-schedule:active { transform: translateY(1px); }
+#appointment_widgets--revamp .btn-schedule::after { content: " →"; }
+
+/* ---------- 13. confirmation + misc screens (generic, inherit the tokens) ---------- */
+#appointment_widgets--revamp [class*="confirmation"] h1,
+#appointment_widgets--revamp [class*="confirmation"] h2,
+#appointment_widgets--revamp [class*="confirmation"] h4 {
+  font-family: var(--kd-display) !important; text-transform: uppercase; color: var(--kd-text) !important;
+}
+#appointment_widgets--revamp [class*="confirmation"] p,
+#appointment_widgets--revamp [class*="confirmation"] span { color: var(--kd-muted); }
+.calendars-ellipsis-loader .bt-spinner { border-color: var(--kd-blue) transparent var(--kd-blue) transparent !important; }
+
+/* ---------- 14. focus + motion ---------- */
+#appointment_widgets--revamp :focus-visible { outline: 2px solid var(--kd-amber) !important; outline-offset: 3px; border-radius: 3px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  #appointment_widgets--revamp .widgets-date-block .vdpCell.selectable.selected .vdpCellContent { animation: kd-lock 0.45s var(--kd-ease); }
+  #appointment_widgets--revamp .widgets-time-slots .widgets-time-slot.actived button { animation: kd-lock 0.35s var(--kd-ease); }
+  #appointment_widgets--revamp .widgets--service-name::after { animation: kd-streak 2.8s ease-in-out infinite; }
+}
+@keyframes kd-lock { 0% { box-shadow: 0 0 0 0 rgba(74, 155, 230, 0.7); } 100% { box-shadow: 0 0 0 3px rgba(74, 155, 230, 0.18), 0 0 24px rgba(74, 155, 230, 0.55); } }
+@keyframes kd-streak { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+/* ---------- 15. small screens ---------- */
+@media (max-width: 725px) {
+  #appointment_widgets--revamp .appointment_widgets--revamp--info-container {
+    border-right: 0 !important; border-bottom: 1px solid var(--kd-line) !important;
+    border-radius: var(--kd-radius) var(--kd-radius) 0 0;
+  }
+  #appointment_widgets--revamp .widgets--service-name { font-size: 1.75rem !important; }
+  #appointment_widgets--revamp .label-select-date::after,
+  #appointment_widgets--revamp .custom-form-title::after { display: none; }
+}
