@@ -14,6 +14,7 @@ Nothing in HighLevel has been changed. Everything here was tested against the li
 |---|---|
 | `kd-booking-widget.css` | The theme. Scoped to `#appointment_widgets--revamp`. |
 | `favicon/` | Speedometer favicon set: `.ico`, 32px, 192px and a 180px Apple touch icon. Made from `src/assets/img/brand/icon-gauge.png`. |
+| `paste/calendar-custom-code.html` | **What you paste into HighLevel.** Built by `tools/build-paste.py`. |
 | `tools/preview.js` | Re-runs the screenshots against the live widget. It clicks through to the form but never submits. |
 | `screenshots/before/` | The widget as it is today. |
 | `screenshots/dark/`, `screenshots/light/` | Theme forced by the URL. Dark was captured with the OS set to light, and light with the OS set to dark, to prove the URL wins. |
@@ -70,31 +71,29 @@ HighLevel → Calendars → each calendar → Edit → **Customizations** (Neo w
 
 Calendars embedded on the site: `17jl7c…` (header), `l4rvIx…` (footer), `9g3ccV…` (home), `3bltGm…` (services), `o811nw…` (team), `usaNbU…` (contact).
 
-### Step 2: the full theme (custom CSS)
+### Step 2: the full theme + favicon (one paste)
 
-Paste the whole of `kd-booking-widget.css` in **one** of these places. The `@import` line must stay first.
+Same calendar → Customizations → **Insert custom code** (under Primary settings): paste the **entire** contents of [`paste/calendar-custom-code.html`](paste/calendar-custom-code.html) and save.
 
-1. **The calendar's own Custom CSS field**, if your account shows one under the calendar's Customizations.
-2. **A HighLevel funnel or website page** (for example `link.kpidriver.com/book`) holding a Calendar element. Paste the CSS into the page's **Settings → Custom CSS** and point the site's pop-up at that page. Send me the test page URL and I'll check it here before you switch. This route also fixes the favicon (step 3).
-3. **The form's Custom CSS** (Forms → Builder → Styles). This only styles the details step.
+That one snippet holds:
+- the theme: a minified copy of `kd-booking-widget.css` in a `<style>` tag, pixel-identical to the tested version
+- a small `<script>` that gives the booking page the speedometer favicon and the tab title "Book a Call · KPI DRIVER". The page has neither today.
 
-**To remove it:** delete the pasted CSS. The widget falls back to the step 1 colours.
+Repeat steps 1 and 2 for every calendar the site embeds. After editing `kd-booking-widget.css`, rebuild the snippet with `python3 highlevel-theme/booking-widget/tools/build-paste.py`.
+
+**To remove it:** clear the custom code box. The widget falls back to the step 1 colours.
+
+**Other places the CSS could go:** a HighLevel funnel page's Custom CSS, or the form's Custom CSS. Those are only needed if the custom code box ever goes away.
 
 ### Step 3: favicon
 
-The widget page has **no favicon and no page title**, and `/favicon.ico` on `link.kpidriver.com` returns 404. CSS can't add a favicon, because it needs a tag in the page head.
+The step 2 snippet already handles it. For a HighLevel funnel or website page instead, set its favicon in page settings to:
+`https://cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afa14d6fb4d11e63de9d2b5_kd-icon-gauge.png`
+The files in `favicon/` are for anywhere that wants an uploaded icon instead.
 
-- **Funnel or website page (route 2 above):** in the page or funnel **Settings**, set the favicon to this URL. It's the speedometer icon, already hosted on the site's CDN:
-  `https://cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afa14d6fb4d11e63de9d2b5_kd-icon-gauge.png`
-  Give the page an SEO title too, for example "Book a Discovery Call · KPI DRIVER".
-- **Anywhere HighLevel accepts head code** (a funnel's tracking code / head section):
-  ```html
-  <link rel="icon" href="https://cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afa14d6fb4d11e63de9d2b5_kd-icon-gauge.png" type="image/png">
-  <link rel="apple-touch-icon" href="(upload favicon/apple-touch-icon.png to HighLevel Media and paste its URL)">
-  ```
-- **The raw widget link:** I didn't find a favicon setting for it. Inside the site's pop-up the favicon is never visible anyway, because the iframe shows the website's own icon. It only matters when someone opens the booking link in its own tab, for example from an email or SMS.
+### Step 4 (optional, not planned): follow the website's theme toggle
 
-### Step 4: make the widget follow the website's theme toggle (site change, not done)
+The site is not being edited, so the widget follows the visitor's OS. A visitor who switched the site to dark while their OS is light will see a light widget inside the dark pop-up. If that ever matters:
 
 The CSS already follows the OS. To also follow the site's sun/moon toggle, the site needs to add the theme to the widget URL when it opens the pop-up. That's a small change in the existing site script (`src/assets/js/site.js`, and the same script in `webflow/site-footer.html`). This folder deliberately doesn't touch those files. Add the lines below in both places a widget URL is built: right after `var src = "https://link.kpidriver.com/widget/booking/" + …` in the booking pop-up, and after `var src = box.getAttribute("data-booking")` in the inline embed on the Book a Discovery Call page.
 
