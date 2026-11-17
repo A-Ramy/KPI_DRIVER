@@ -99,4 +99,4 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Thumbnails: `tools/thumbs.js` -> `webflow/thumbs/` (900x900, centred for the 220x300 / 350x300 list crops); set on all 45 posts' Thumbnail image.
 - Deleted empty categories: Webinars & Events, Product News & Updates, Case Studies (Industry Insights and Tips & Tricks have posts, kept).
 - Site-wide footer code (old counter + jQuery 2.1.3) removed; copy in webflow/rollback/site-footer-code-old.html.
-- Drafts folder: needs the Designer companion app open (create_page_folder), pending.
+- Drafts folder `6afc3d063f5ff7bba067635b` (/drafts) holds the 6 old pages, KD Template, Home (new), Not Found (new); all still draft.
