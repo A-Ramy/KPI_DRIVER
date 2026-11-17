@@ -70,4 +70,59 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - 4 gap posts added (2026-02-10..03-03), ids in `webflow/cms/post-ids.json` (all 45 slugs -> item ids).
 - Covers: `tools/covers.js` -> `webflow/covers/`. CMS image fields accept the public raw GitHub URL of this branch (Webflow copies the file). 30 posts (26 + 4 new) have the new covers; the original 15 keep the owner's existing images.
 - Related posts: `webflow/cms/post-index.json` (hub-and-spoke relations from build.py) -> hosted `kd-posts.js`, rendered by kd-site.js on /post/ pages.
-- Hosted v2 files (2026-11-16): head js `…/6afb6a420fb8f221316e3e1e_kd-head-2.js`, site js `…/6afb6a424664c981ee46563f_kd-site-2.js`, Spanish bundle `…/6afb6a2ccdedf3e0cadbe563_kd-es.js` (built by tools/build_es.py; URL is inside kd-head.js), posts index `…/6afb6a2dfb12da21134b8439_kd-posts.js`. Every page's head/footer code must point at the v2 head/site files.
+- Hosted v2 files (2026-11-16): head js `…/6afb6a420fb8f221316e3e1e_kd-head-2.js`, site js `…/6afb6b5f93952b962386fae2_kd-site-3.js`, Spanish bundle `…/6afb6a2ccdedf3e0cadbe563_kd-es.js` (built by tools/build_es.py; URL is inside kd-head.js), posts index `…/6afb6a2dfb12da21134b8439_kd-posts.js`. Every page's head/footer code must point at the v2 head/site files.
+
+## 2026-11-17: go-live switchover done on staging (live domain still old until the custom-domain publish)
+- All 45 posts have kd-cover images (original 15 replaced too). Article template has a cover Image `704bf424-31cb-7457-1f03-ecf8b34f2dac` bound to Main Image; CSS in embed 900eed9b.
+- Every new page footer code -> kd-site-3.js (`…/6afb6b5f93952b962386fae2_kd-site-3.js`: ES toggle only shows when /es exists, Spanish blog strings).
+- SEO: Spanish titles/descriptions on all pages (locale `6afb6419e78a2109902d68ac`), OG image kd-og-default, JSON-LD (FAQ/breadcrumb/org) set via page schema API, EN + ES.
+- Home: real homepage `68974c57cac027f80fdf8828` filled in place: embeds `78f33fd8-8958-3aaf-4243-63ff93cc45b1` (header+main) and `1fb5cc24-988c-e004-998d-3103ee77f3a1` (footer+chrome); old wrapper `ab62f4ce…f0f0` and pop-ups block `748bdac5…0189` hidden; old footer code saved in webflow/rollback/home-footer-code-old.html.
+- 404 utility page `…8835` filled in place: embed `2412e5ef-1ed4-16b5-e8fa-515a84a5bdff`; old wrapper and block hidden.
+- Old pages renamed old-* and set to draft: services 8836, our-team 883b, contact 8834, thank-you 883c, privacy 8838, terms 8839. kd-home and kd-404 drafted.
+- New pages took real slugs: services, our-team, contact-us, thank-you, policies/privacy-policy, policies/terms-conditions; crm, ai-suite, ai-agent (waiting for the owner's `services` folder; then they become /services/*).
+- Member pages excluded from sitemap. Spanish locale switched on by the owner.
+- Rollback: unhide old wrappers, set old pages draft:false with original slugs, swap new ones back to kd-*.
+
+## 2026-11-17: LIVE
+- Owner said "go". Services folder `6afc2be72931cce2df0049b5` (created by owner) holds CRM / AI Suite / AI Agent -> /services/*.
+- Published to www.kpidriver.com + kpidriver.com (three publishes: launch, then two sitemap clean-ups).
+- Verified live: all main pages 200, /es and /es/services/* in Spanish, old-* pages 404, article covers + related posts, JSON-LD present, no horizontal scroll on mobile.
+- Sitemap: member pages + knowledge base categories (6) + articles (33) excluded in EN and ES. All 45 posts listed.
+
+## 2026-11-17: owner fixes, round 1 after launch (live)
+- kd-site-2.css `…/6afc3ad0e9c990f48c2ea42d_kd-site-2.css` + kd-site-4.js `…/6afc3ad01cbf020bc26c2ab7_kd-site-4.js` on every page (home, 404, template, all new pages, blog list/category/post templates).
+  - Services menu opens on hover (desktop, JS adds html.nav-hover; arrow hidden there, kept on phones).
+  - Client login menu centred, labels only; CRM/AI Suite logins + CRM Status open in a new tab; CRM Status -> https://status.gohighlevel.com/ (JS rewrite of old pulsetic link; source partials updated too).
+  - Every CTA band (.cta with a[data-book]) now embeds that booking calendar (GHL iframe + form_embed.js) instead of the button.
+  - Boast cards were hidden by the old-cursor rule `[class*=cursor]` (matches `u-cursor-pointer`); override added. Reviews fallback note hides once Boast/Elfsight render.
+  - Webflow pagination Next/Prev on one line.
+- Thumbnails: `tools/thumbs.js` -> `webflow/thumbs/` (900x900, centred for the 220x300 / 350x300 list crops); set on all 45 posts' Thumbnail image.
+- Deleted empty categories: Webinars & Events, Product News & Updates, Case Studies (Industry Insights and Tips & Tricks have posts, kept).
+- Site-wide footer code (old counter + jQuery 2.1.3) removed; copy in webflow/rollback/site-footer-code-old.html.
+- Drafts folder `6afc3d063f5ff7bba067635b` (/drafts) holds the 6 old pages, KD Template, Home (new), Not Found (new); all still draft.
+
+## 2026-11-17: owner fixes, round 2 (live)
+- kd-site-3.css `…/6afc89bf17b0f29d6cbfdf90_kd-site-3.css` + kd-site-5.js `…/6afc89bf7bb79608ac600a6b_kd-site-5.js` on all 16 pages that had round-1 code.
+  - Services menu centred under its link (`.nav-hover .nav__menu` translateX(-50%)).
+  - Client login opens on hover with a mouse (JS mouseenter/mouseleave, 160 ms close delay; invisible bridge so the pointer can reach it).
+  - CTA band calendar embed paused at the owner's request (booking calendars and contact form being rebuilt in another chat): CTA bands show the button again. Re-enable later in site.js.
+- Member area restyled and still hidden (not in nav, out of sitemap): Knowledge Base `…8837`, Log in `…883d`, KB categories template `…882f`, KB articles template `…882e`.
+  - Each has a header embed (prepended to body; KB and Log in include a new hero) and a footer embed (appended). Embed ids: KB 729cc7da…/0605e9a9…, Log in 360db769…/d56287af…, categories f9317e67…/ab555572…, articles d82fc8db…/512401bd….
+  - Head code = original Memberstack/Finsweet code kept first, then kd-head-2.js, fonts, kd-site-3.css, kd-members-3.css `…/6afc8d4801eb3ff6c4c36ee1_kd-members-3.css`, kd-site-5.js (defer). Original Memberstack footer scripts untouched.
+  - kd-members.css (source) hides old navbar/footer/marquee/FAQ/cursor and restyles Memberstack login, Finsweet filter/sort, category cards, article body. Article hero order and phone overflow fixed.
+- For Clients B2B (`…8831`), B2C (`…8833`) and Case Studies (`…882d`) were template lorem ipsum: moved to the Drafts folder as drafts at the owner's request (now 404; the empty for-clients folder `…8832` remains).
+- Sentence case: the every-word capitals (`body { text-transform: capitalize }` in site.css v5 and in the old Webflow stylesheet) dropped at the owner's request. kd-site-4.css `…/6afc8ed7cad3565ff6306016_kd-site-4.css` (= kd-site-3.css + `html body { text-transform: none }`) on all 16 site pages + 4 member pages. Explicit ALL-CAPS headings/buttons unchanged.
+
+## 2026-11-17: owner fixes, round 3 (live)
+- kd-site-6.js `…/6afc95dd44dd75357540c0cf_kd-site-6.js` on all 16 site pages (footer code) + 4 member pages (head, deferred). Source: site.js "v4" block; hosted copy = site.js with `.faq` -> `.kd-faq` in the reveal selector.
+  - Title Case (English only) for headings, nav, client login, footer links, buttons, `a.link`, `dt`, labels, tabs, breadcrumbs. Small words (a, and, the, of, to…) stay lower except first/last/after a sentence break. Acronyms and mixed-case words kept. Skipped: blog post pages (`.is-blog`, `.kd-post-1`, rich text), FAQ questions, form fields, `.keep-case`, `[data-no-tc]`. Paragraphs stay sentence case. Spanish keeps Spanish sentence case.
+  - Footer: "AI Suite terms at kpidriver.ai" link removed (JS on live; removed from build.py and webflow/footer.html).
+  - Contact page: Google map (keyless `google.com/maps?q=…&output=embed`, lazy) under the office address, EN + ES.
+- Sources updated for the items the owner named: build.py header/footer (Client Login, Services Overview, CRM Login, AI Suite Login, no AI Suite terms), src/pages/contact-us.html (Book a Discovery Call, Existing Clients, Check CRM Status, Send a General Inquiry), webflow/header.html + footer.html. The embeds on Webflow still hold the old wording; the script corrects it at load.
+
+## 2026-11-17: owner fixes, round 4 (live)
+- Owner wants proper Title Case on all running text (paragraphs included), not sentence case, and not the old naive `capitalize`. Blog post content is the exception.
+- kd-site-7.js `…/6afc9a472f10d0342e2d1974_kd-site-7.js` (footer of 16 site pages, head of 4 member pages) + kd-site-5.css `…/6afc9a483c9d7fbecc41a295_kd-site-5.css` (head, all 20).
+  - Title Case pass walks every text node (English only), block by block: small words (a, an, the, and, but, or, nor, for, so, as, at, by, from, in, into, of, on, per, than, to, via, vs, with) stay lower mid-sentence; first word, last word and words after . ! ? : — are capitalised; acronyms/mixed case kept; hyphen parts after the first follow the small-word rule; phrasal Log In / Sign In / Checking In.
+  - Skipped: `.is-blog`, `.kd-post-1`, `.w-richtext`, blog cards (`.blog_item`, `.card-blog`), `.legal`, reviews, chat/transcript bubbles, quotes, form fields, `.keep-case`, `[data-no-tc]`. Spanish untouched.
+  - CTA underline (`.cta h2::after`) now 100% / max 420px like the gear line above, with a full-width sweeping gradient (no transparent tail).

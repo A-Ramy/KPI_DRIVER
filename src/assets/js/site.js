@@ -360,15 +360,27 @@
   if (!r.hasAttribute("data-wf-site")) return;
   var path = location.pathname, es = /^\/es(\/|$)/.test(path), bare = path.replace(/^\/es(?=\/|$)/, "") || "/";
   var tg = d.querySelector(".lang-toggle"), th = d.querySelector(".site-header .theme-toggle");
-  if (!tg && th) {
-    tg = d.createElement("a"); tg.className = "lang-toggle"; tg.innerHTML = "<b>" + (es ? "EN" : "ES") + "</b>";
-    tg.setAttribute("hreflang", es ? "en" : "es"); tg.setAttribute("lang", es ? "en" : "es");
-    tg.setAttribute("aria-label", es ? "View this page in English" : "Ver esta página en español");
-    th.parentNode.insertBefore(tg, th);
-  }
-  if (tg) {
+  function wire() {
     tg.setAttribute("href", (es ? bare : "/es" + (bare === "/" ? "" : bare)) + location.search);
     tg.addEventListener("click", function () { try { localStorage.setItem("kd-lang", es ? "en" : "es"); } catch (e) {} });
+  }
+  function add() {
+    if (tg || !th) return;
+    tg = d.createElement("a"); tg.className = "lang-toggle"; tg.innerHTML = "<b>ES</b>";
+    tg.setAttribute("hreflang", "es"); tg.setAttribute("lang", "es"); tg.setAttribute("aria-label", "Ver esta página en español");
+    th.parentNode.insertBefore(tg, th); wire();
+  }
+  if (tg) wire();
+  else if (d.querySelector('link[rel="alternate"][hreflang^="es"]')) add();
+  else { /* show the toggle only once the Spanish locale is published */
+    var ok = null; try { ok = sessionStorage.getItem("kd-es-ok"); } catch (e) {}
+    if (ok === "1") add();
+    else if (ok !== "0" && window.fetch) fetch("/es", { method: "HEAD" }).then(function (x) { try { sessionStorage.setItem("kd-es-ok", x.ok ? "1" : "0"); } catch (e) {} if (x.ok) add(); }).catch(function () {});
+  }
+  if (es) {
+    var T = { "Home": "Inicio", "Notes from the ": "Notas desde el ", "operator's seat": "asiento del operador", "Practical writing on CRMs, KPI tracking, automation and AI for real estate investors and the teams who run their pipelines.": "Contenido práctico sobre CRM, seguimiento de KPI, automatización e IA para inversionistas inmobiliarios y los equipos que operan sus pipelines.", "All posts": "Todas las publicaciones", "By": "Por", "Next": "Siguiente", "Previous": "Anterior" };
+    var w = d.createTreeWalker(d.querySelector("main") || d.body, 4, null), n;
+    while ((n = w.nextNode())) { var k = n.nodeValue.replace(/^\s+|\s+$/g, ""), raw = n.nodeValue; if (T[raw]) n.nodeValue = T[raw]; else if (T[k]) n.nodeValue = raw.replace(k, T[k]); }
   }
   var m = bare.match(/^\/post\/([^\/]+)\/?$/), main = d.querySelector("main.is-blog") || d.getElementById("main");
   if (!m || !main || !window.KD_POSTS_URL) return;
@@ -387,4 +399,118 @@
     main.appendChild(s);
   };
   var sc = d.createElement("script"); sc.src = window.KD_POSTS_URL; sc.async = true; d.head.appendChild(sc);
+})();
+
+/* ===================== v3: owner fixes (2026-11-17) ===================== */
+(function () {
+  var d = document, r = d.documentElement, es = r.lang === "es";
+  /* client logins and CRM status open in a new tab; status points at the HighLevel status page */
+  d.querySelectorAll("a[href]").forEach(function (a) {
+    if (/pulsetic\.com\/status/.test(a.getAttribute("href"))) a.href = "https://status.gohighlevel.com/";
+    if (/^https:\/\/(crm\.kpidriver\.com|kpidriver\.ai|status\.gohighlevel\.com)/.test(a.href)) { a.target = "_blank"; a.rel = "noopener"; }
+  });
+  /* services menu: hover where the full nav is visible, tap the arrow on phones */
+  var tg = d.querySelector(".nav-toggle"), item = d.querySelector(".nav__item--has-menu"), menu = d.getElementById("services-menu");
+  var hov = window.matchMedia && matchMedia("(hover: hover)");
+  function desk() { return !!(hov && hov.matches && tg && getComputedStyle(tg).display === "none"); }
+  function mark() { r.classList.toggle("nav-hover", desk()); }
+  mark(); addEventListener("resize", mark);
+  if (item && menu) {
+    var t;
+    item.addEventListener("mouseenter", function () { if (!desk()) return; clearTimeout(t); menu.hidden = false; });
+    item.addEventListener("mouseleave", function () { if (!desk()) return; t = setTimeout(function () { menu.hidden = true; }, 160); });
+  }
+  /* close the client login menu after choosing or clicking elsewhere */
+  d.addEventListener("click", function (e) { d.querySelectorAll("details.login[open]").forEach(function (x) { if (!x.contains(e.target) || e.target.closest("a")) x.open = false; }); });
+  /* client login opens on hover too (devices with a mouse) */
+  d.querySelectorAll("details.login").forEach(function (x) {
+    var lt;
+    x.addEventListener("mouseenter", function () { if (!(hov && hov.matches)) return; clearTimeout(lt); x.open = true; });
+    x.addEventListener("mouseleave", function () { if (!(hov && hov.matches)) return; lt = setTimeout(function () { x.open = false; }, 160); });
+  });
+  /* CTA band calendar embed: paused at the owner's request (2026-11-17) while the booking calendars are rebuilt; the button opens the scheduler popup */
+  /* reviews: hide the fallback note once Boast or Elfsight has rendered (Boast replaces its placeholder element) */
+  var n = 0, iv = setInterval(function () {
+    d.querySelectorAll("[data-reviews]:not(.is-loaded)").forEach(function (b) { if (b.querySelector("boast-display-widget .swiper-slide, [class*='eapps-'], [class^='elfsight-app-'] > *")) b.classList.add("is-loaded"); });
+    if (++n > 40 || !d.querySelector("[data-reviews]:not(.is-loaded)")) clearInterval(iv);
+  }, 500);
+})();
+
+/* ===================== v4: owner fixes (2026-11-17, round 3) ===================== */
+(function () {
+  var d = document, r = d.documentElement, es = r.lang === "es";
+
+  /* footer: drop the "AI Suite terms at kpidriver.ai" link (and its separator) */
+  d.querySelectorAll(".footer__bottom a[href^='https://kpidriver.ai']").forEach(function (a) {
+    var p = a.previousSibling;
+    if (p && p.nodeType === 3) p.textContent = p.textContent.replace(/\s*·\s*$/, "");
+    a.remove();
+  });
+
+  /* contact page: show the office on a Google map under the address */
+  var maps = d.querySelector("main dd a[href*='share.google'], main dd a[href*='google.com/maps'], main dd a[href*='maps.app.goo.gl']");
+  if (maps && !d.querySelector(".kd-map")) {
+    var addr = "1858 NW 141st Ave, Pembroke Pines, FL 33028";
+    var box = d.createElement("div");
+    box.className = "kd-map";
+    box.style.cssText = "margin-top:14px;border:1px solid var(--line-strong,#cfd6de);border-radius:var(--radius,10px);overflow:hidden;aspect-ratio:16/10;background:var(--panel-2,#eef1f4)";
+    box.innerHTML = '<iframe src="https://www.google.com/maps?q=' + encodeURIComponent(addr) + '&z=15&output=embed" title="' + (es ? "Oficina de KPI DRIVER en Google Maps" : "KPI DRIVER office on Google Maps") + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="display:block;width:100%;height:100%;border:0"></iframe>';
+    maps.insertAdjacentElement("afterend", box);
+  }
+
+  /* Title Case for all running text (English only), the brand's style: every word capitalised except
+     short articles, conjunctions and prepositions mid-sentence. Blog post content and excerpts, legal text,
+     customer reviews, chat/transcript bubbles, quotes and typed text are left as written. */
+  if (es || !/^en/i.test(r.lang || "en")) return;
+  var SMALL = /^(a|an|and|as|at|but|by|for|from|in|into|nor|of|on|or|per|so|than|the|to|via|vs\.?|with)$/i;
+  var PHRASAL = /\b(Log|Logged|Logging|Sign|Signed|Signing|Check|Checking|Checked|Opt|Plug)(\s+)(in|on)\b/g;
+  var SKIP = ".is-blog,.kd-post-1,.w-richtext,.legal,.bubble,.transcript__say,.reviews,boast-display-widget,q,blockquote,.keep-case,.field__err,.form__status,.post-row,.post-feature,.post-card,.kd-post-card,.blog-list,.blog_item,.card-blog,input,textarea,select,option,script,style,noscript,code,pre,svg,iframe,[data-no-tc]";
+  var disp = new WeakMap();
+  function blockOf(e) {
+    while (e && e !== d.body) {
+      var v = disp.get(e); if (v === undefined) { v = getComputedStyle(e).display; disp.set(e, v); }
+      if (v !== "inline" && v !== "contents") return e;
+      e = e.parentElement;
+    }
+    return d.body;
+  }
+  function cap(h) { return h.replace(/^([^A-Za-z]*)([a-z])/, function (m, a, c) { return a + c.toUpperCase(); }); }
+  function word(w, force) {
+    if (/[A-Za-z][\u2014\u2013][A-Za-z]/.test(w)) {                                 /* tools\u2014they: each side is a word */
+      return w.split(/([\u2014\u2013])/).map(function (seg, i) { return i % 2 ? seg : word(seg, i === 0 ? force : true); }).join("");
+    }
+    if (/[@\/]|\.(com|ai|io|net|org)\b|^\(?\+?\d|^www\./i.test(w)) return w;     /* emails, links, numbers */
+    if (/[.!?:]["')\u201d]*$/.test(w)) force = true;                                 /* last word of a sentence */
+    var hs = w.split("-");
+    return hs.map(function (h, i) {
+      if (/[A-Z]/.test(h.slice(1)) || !/[a-z]/.test(h)) return h;                    /* CRM, AI, iMessage, KPI DRIVER */
+      var core = h.replace(/^[^A-Za-z]+|[^A-Za-z']+$/g, "");
+      var small = SMALL.test(core);
+      if (hs.length === 1) return small && !force ? h.toLowerCase() : cap(h);
+      return i > 0 && small ? h.toLowerCase() : cap(h);                               /* In-House, Pay-as-You-Go */
+    }).join("-");
+  }
+  function breaks(prev) { return !prev || /[.!?:\u2014\u2013]["')\u201d]*$/.test(prev) || /^[\u00b7|\u2022\u2014\u2013-]$/.test(prev); }
+  function run() {
+    var w = d.createTreeWalker(d.body, NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+      var p = n.parentElement;
+      return !p || !n.textContent.trim() || p.closest(SKIP) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+    } });
+    var last = null, prev = "", n;
+    while ((n = w.nextNode())) {
+      var blk = blockOf(n.parentElement);
+      if (blk !== last) { prev = ""; last = blk; }
+      var parts = n.textContent.split(/(\s+)/), changed = false;
+      for (var k = 0; k < parts.length; k++) {
+        var t = parts[k]; if (!t || !t.trim()) continue;
+        var v = word(t, breaks(prev));
+        if (v !== t) { parts[k] = v; changed = true; }
+        prev = v;
+      }
+      var out = parts.join("").replace(PHRASAL, function (m, a, b, c) { return a + b + c.charAt(0).toUpperCase() + c.slice(1); });  /* Log In, Sign In */
+      if (changed || out !== n.textContent) n.textContent = out;
+    }
+  }
+  run();
+  addEventListener("load", run);                                        /* late content: related posts, menus */
 })();
