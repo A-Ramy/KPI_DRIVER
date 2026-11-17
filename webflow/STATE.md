@@ -126,3 +126,10 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
   - Title Case pass walks every text node (English only), block by block: small words (a, an, the, and, but, or, nor, for, so, as, at, by, from, in, into, of, on, per, than, to, via, vs, with) stay lower mid-sentence; first word, last word and words after . ! ? : — are capitalised; acronyms/mixed case kept; hyphen parts after the first follow the small-word rule; phrasal Log In / Sign In / Checking In.
   - Skipped: `.is-blog`, `.kd-post-1`, `.w-richtext`, blog cards (`.blog_item`, `.card-blog`), `.legal`, reviews, chat/transcript bubbles, quotes, form fields, `.keep-case`, `[data-no-tc]`. Spanish untouched.
   - CTA underline (`.cta h2::after`) now 100% / max 420px like the gear line above, with a full-width sweeping gradient (no transparent tail).
+
+## 2026-11-17: native booking + contact forms (STAGING ONLY, kpidriver.webflow.io)
+- Site-wide custom code (Site settings): head = original Finsweet + Memberstack code, then `kd-booking-1.css` `…/6afcb9ee866378494a4755c5_kd-booking-1.css`. Footer = `window.KD_BOOKING_CONFIG` (slotsUrl/bookUrl empty until the bridge is deployed; contactUrl = HighLevel inbound webhook) + `kd-booking-3.js` `…/6afcbd152059a72bdc06ee9f_kd-booking-3.js` (defer).
+- The script's enhancePage() repoints all scheduler links to `9g3ccVyd2a9NsV51QuKN`, swaps the HighLevel contact embed and booking embed for native forms, adds FAQ contact forms (Home, Services, CRM, AI Suite, AI Agent), the Contact Us FAQ image, and a booking button per section. Page embeds themselves are unchanged.
+- Published with publishToWebflowSubdomain only (customDomains []). **The next custom-domain publish will take this live.**
+- Unused uploads: kd-booking-1.js, kd-booking-2.js, kd-es-2.js, kd-head-3.js (superseded; safe to delete).
+- Details: booking-form/README.md.

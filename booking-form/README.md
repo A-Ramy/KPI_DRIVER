@@ -54,29 +54,35 @@ The campaign keeps the old prefixes ("Business Discovery (SEO) …", "Contact Us
    - `contacts.write`
 3. **Calendar automations:** appointments are created with `toNotify: true`, so the calendar's confirmation and reminder automations run. Check that your workflows trigger on appointment creation and not only on "booked through the widget".
 
-### 2. n8n
+### 2. Booking bridge (replaces n8n)
 
-1. **Credential:** create one, type **Header Auth**, named `HighLevel PIT`. Header name `Authorization`, value `Bearer <token>`.
-2. **Import the workflows:** import the two files in `n8n/`, open each HTTP node and select that credential.
+`bridge/worker.js` is the only thing that holds the Private Integration token. It is a standard fetch handler, so it runs unchanged as a **Cloudflare Worker** or a **Webflow Cloud** function.
+- `GET /slots`: free times from the one calendar.
+- `POST /book`: validate, upsert the contact (24 custom fields, SMS consent), book the appointment (`toNotify` on), then add tags and a note.
+- Secret `HL_TOKEN`. Optional variables: `LOCATION_ID`, `CALENDAR_ID`, `ALLOWED_ORIGINS`, `TO_NOTIFY`.
+
+Once it is deployed, put `<bridge>/slots` and `<bridge>/book` into `slotsUrl` / `bookUrl` (Webflow site footer code, and `BOOKING_BRIDGE_URL` in build.py). Until then the popup shows the full form design but offers "Open the scheduler" (the HighLevel page for `9g3cc…`) instead of live times.
+
+The n8n files in `n8n/` still work if you ever prefer n8n, but nothing uses them.
 
 ### 2b. HighLevel contact workflow
 
-Create a workflow with an **Inbound Webhook** trigger. Add Create/Update Contact, Add Tag and Add Note, mapping the flat values the form sends (`first_name`, `last_name`, `email`, `business_name`, `which_bundle_are_you_interested_in`, `your_message`, `campaign`, `tags`, `note`…). The review page lists every key. Put the webhook URL in `contactUrl`. The form first tries a normal JSON post; if the browser blocks it for cross-site reasons, it re-sends the same values as a simple form post.
-3. **Activate** both. Your webhook URLs will be `https://<your-n8n>/webhook/kd-booking-slots` and `/webhook/kd-booking-create`.
-4. **Allowed sites:** the webhooks only accept calls from `www.kpidriver.com`, `kpidriver.com` and `kpidriver.webflow.io`. That's the "Allowed origins" option on each Webhook node.
+Contact forms post straight to the HighLevel inbound webhook (`contactUrl`); no bridge is needed. Create a workflow with that **Inbound Webhook** trigger and add Create/Update Contact, Add Tag and Add Note. Map the flat values the form sends (`first_name`, `last_name`, `email`, `phone`, `business_name`, `which_bundle_are_you_interested_in`, `your_message`, `booking_source`, `campaign`, `tags`, `note`…). The form first tries a JSON post; if the browser blocks that, it re-sends the same values as a form post.
 
-What each workflow does:
-- **Booking:** checks the request, ignores unknown fields, rejects past slots and missing consent, and treats a filled spam trap as a fake success. Then it creates/updates the contact, books the slot, adds tags and adds the note.
-- **Taken slot:** HighLevel rejects the booking and the visitor is sent back to pick another time.
+### 3. Webflow (staging: kpidriver.webflow.io)
 
-### 3. Webflow
+Installed through the **site-wide custom code**, not page embeds:
+- **Head** (after the existing Finsweet + Memberstack code): `kd-booking-1.css`
+- **Footer:** `window.KD_BOOKING_CONFIG` plus `kd-booking-3.js` (hosted Webflow assets, minified copies in `webflow/forms/`)
 
-1. **Install the code:** in the **site-wide footer component**, add two Code Embeds, pasting `webflow/embed-1-styles.html` and then `webflow/embed-2-script.html`. These go in Code Embeds because the site's Head custom-code box is already at 47K of Webflow's 50K limit.
-2. **Connect it:** in embed 2, put in the two n8n URLs and the HighLevel inbound webhook URL, and change `mock: true` to `mock: false`.
-3. **Contact page:** replace the HighLevel survey iframe block with `<div data-kd-contact></div>`.
-4. **Booking page** (optional inline form): replace the scheduler embed with `<div data-kd-booking></div>`.
-5. **Booking buttons:** leave them as they are. The script intercepts `a[data-book]` before the site's old pop-up does. Without JavaScript the links still open the old HighLevel scheduler as a fallback.
-6. **Analytics:** `discovery_call_open`, `discovery_call_booked` and `contact_form_sent` are pushed to `dataLayer` with `booking_source`.
+At load the script (`enhancePage()` in `kd-booking.js`) brings the Webflow pages in line with the repo build:
+- **Calendar links:** every booking link and scheduler link points at the one calendar.
+- **Booking buttons:** any `a[data-book]` (header, hero, section, CTA band, footer) opens the native popup and reports its own `booking_source`.
+- **Contact forms:** the old HighLevel contact embed becomes the native contact form ("Contact Us – Inquiry Form"). The FAQ sections of Home, Services, CRM, AI Suite and AI Agent get an embedded contact form ("<Page> – FAQ Contact Form"). The Contact Us FAQ gets an image instead.
+- **Section buttons:** every section without one gets a "Book a Discovery Call" style button, labelled `<Page> – <Section>`. The section name is its id, or "Hero", "Intro" or "Section N" (the same rule as build.py, so English and Spanish match).
+- **Booking page:** the scheduler embed becomes the inline booking form.
+
+Analytics events: `discovery_call_open`, `discovery_call_booked` and `contact_form_sent` are pushed to `dataLayer` with `booking_source`.
 
 ## Decisions to confirm
 
@@ -86,13 +92,19 @@ What each workflow does:
 - **Required consent.** Both old forms made the SMS box required, and the new forms copy that. Carrier reviewers generally expect SMS consent to be optional, not a condition of booking. To make it optional, set `req: false` on the two consent fields in `kd-booking.js`, and remove the consent check in `n8n/src/validate-*.js`, which currently rejects submissions without consent.
 - **Contact source.** Contacts keep `source: "SEO"`, as the old forms set it (`CONTACT_SOURCE` in `n8n/src/config.js`).
 
-## Live test (done)
+## Live tests
 
-`tools/live-test.js` ran the generated workflows against the real account: real free slots, contact upsert with all 24 custom fields, appointment on `9g3ccV…`, tags, note, and a second booking of the same slot correctly answered `slot_taken`. Test appointments are created with automations off, and everything is deleted afterwards. The contact inbound webhook accepted a sample (CORS allows any origin, and the form-post fallback works too). The token is not in this repo; the test session's network proxy supplies it.
+- `tools/live-test.js` (earlier): ran the workflow logic against the real account and deleted everything afterwards.
+- `tools/live-site-tests.js`: real submissions through the built site.
+  - 2 bookings from randomly chosen booking buttons, through the local bridge (normal automations).
+  - 2 contact forms from random placements, to the real inbound webhook.
+  - The records are **kept for review**, and their ids are in `review/live-tests.json`. Delete them only once the owner confirms the mapping.
+- The token is not in this repo; the test session's network proxy supplies it.
 
-## Not verified yet
+## Not done yet
 
-- **Real n8n import.** The workflow files haven't been imported into a real n8n instance yet.
+- **Bridge not deployed** (Cloudflare Worker or Webflow Cloud, the owner's choice).
+- **Custom domain not published.** Staging only. The next custom-domain publish will take these changes live.
 
 ## Rebuild / test
 
@@ -100,5 +112,6 @@ What each workflow does:
 node booking-form/tools/test-flow.js                 # forms, both themes, mobile (screenshots → screenshots/)
 python3 booking-form/tools/build-n8n.py              # n8n JSON from n8n/src
 node booking-form/tools/test-n8n.js                  # workflow simulator
-bash booking-form/tools/build-webflow.sh             # Webflow embeds (uses npx esbuild)
+NODE_USE_ENV_PROXY=1 node booking-form/tools/live-site-tests.js   # REAL submissions (2 bookings + 2 contacts)
+npx esbuild booking-form/kd-booking.js --minify --target=es2019 > webflow/forms/kd-booking.js   # hosted copy
 ```

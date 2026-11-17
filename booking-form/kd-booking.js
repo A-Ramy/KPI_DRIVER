@@ -22,7 +22,11 @@
     contactUrl: "",                    // HighLevel workflow "Inbound Webhook" URL (contact form posts straight to it)
     contactCampaignPrefix: "Contact Us (SEO) ",
     contactConsentText: "",            // defaults to the booking form's consent text (see README)
-    mock: true,                        // sample availability, no network
+    mock: false,                       // true = sample availability, nothing sent (demos only)
+    fallbackUrl: "https://link.kpidriver.com/widget/booking/9g3ccVyd2a9NsV51QuKN", // shown if the bridge is unreachable
+    calendarId: "9g3ccVyd2a9NsV51QuKN",                                             // the one discovery calendar
+    enhance: true,                     // add section buttons / FAQ forms on pages that don't have them in their HTML
+    faqImage: "https://cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afa14d68eea3dc1f87a3a0e_kd-mobile-app.webp",
     durationMin: 45,                   // the calendar's slot length
     campaignPrefix: "Business Discovery (SEO) ",
     sourceSeparator: " – ",
@@ -103,7 +107,7 @@
   };
   function titleCase(s) {
     return String(s || "").replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim()
-      .replace(/\b(crm|ai|cta|seo|ppc)\b/gi, function (w) { return w.toUpperCase(); })
+      .replace(/\b(crm|ai|cta|seo|ppc|faq|kpi)\b/gi, function (w) { return w.toUpperCase(); }).replace(/\bkpis\b/gi, "KPIs").replace(/\bKPI Driver\b/g, "KPI DRIVER")
       .replace(/\b[a-z]/g, function (c) { return c.toUpperCase(); });
   }
   function pageName() {
@@ -208,7 +212,7 @@
     var key = y + "-" + m0 + "-" + tz;
     if (slotCache[key]) return slotCache[key];
     var start = zonedMidnight(y, m0, 1, tz), end = Math.min(zonedMidnight(y, m0 + 1, 1, tz), start + 31 * 86400000);
-    var p = CFG.mock || !CFG.slotsUrl ? mockSlots(start, end, tz)
+    var p = CFG.mock ? mockSlots(start, end, tz) : !CFG.slotsUrl ? Promise.reject(new Error("not configured"))
       : fetch(CFG.slotsUrl + (CFG.slotsUrl.indexOf("?") < 0 ? "?" : "&") + "start=" + start + "&end=" + end + "&timezone=" + encodeURIComponent(tz), { headers: { Accept: "application/json" } })
           .then(function (r) { if (!r.ok) throw new Error("slots " + r.status); return r.json(); })
           .then(function (j) { return j && j.slots && !Array.isArray(j.slots) ? j.slots : j; });
@@ -250,7 +254,7 @@
     var STEPS = this.steps;
     var self = this, s = this.state;
     this.host.innerHTML = "";
-    this.root = h("form", { class: "kdb kdb--" + this.kind, novalidate: true, "aria-labelledby": this.id + "-title", onsubmit: function (e) { e.preventDefault(); self.next(); } });
+    this.root = h("form", { class: "kdb kdb--" + this.kind + " keep-case", "data-no-tc": "", novalidate: true, "aria-labelledby": this.id + "-title", onsubmit: function (e) { e.preventDefault(); self.next(); } });
     // progress: the gear line, one segment per step
     var gear = STEPS.length < 2 ? null : h("ol", { class: "kdb__gear", "aria-label": "Booking progress" }, STEPS.map(function (st, i) {
       return h("li", { class: "kdb__gear-i" + (i < s.step ? " is-done" : "") + (i === s.step ? " is-on" : ""), "aria-current": i === s.step ? "step" : null }, [h("span", { class: "kdb__gear-n", text: "0" + (i + 1) }), h("span", { class: "kdb__gear-t", text: st.title })]);
@@ -293,6 +297,7 @@
       return h("option", { value: z, selected: z === s.tz, text: z.replace(/_/g, " ") + " (" + offsetLabel(z) + ")" });
     }));
     tzSel.appendChild(pinned); tzSel.appendChild(rest);
+    if (!tzSel.querySelector('option[value="' + s.tz + '"]')) tzSel.insertBefore(h("option", { value: s.tz, selected: true, text: s.tz.replace(/_/g, " ") + " (" + offsetLabel(s.tz) + ")" }), pinned);
     var cal = h("div", { class: "kdb__cal" }), slots = h("div", { class: "kdb__slots", "aria-live": "polite" });
     body.appendChild(h("div", { class: "kdb__time" }, [
       h("div", { class: "kdb__cal-wrap" }, [cal, h("div", { class: "kdb__field kdb__tz-field" }, [h("label", { class: "kdb__label", for: this.id + "-tz", text: "Time zone" }), tzSel])]),
@@ -338,8 +343,9 @@
       if (pick) { s.day = pick; cells.forEach(function (c) { var on = c.getAttribute("data-day") === pick; c.classList.toggle("is-sel", on); c.setAttribute("aria-pressed", on); }); self.drawSlots(slotsEl, byDay[pick]); }
       else { slotsEl.innerHTML = ""; slotsEl.appendChild(h("p", { class: "kdb__hint", text: "No open times this month." })); slotsEl.appendChild(h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", text: "See next month →", onclick: function () { self.shift(1, cal, slotsEl); } })); }
     }).catch(function () {
-      slotsEl.innerHTML = ""; slotsEl.appendChild(h("p", { class: "kdb__hint kdb__hint--err", text: "We couldn't load the calendar. Please try again in a moment." }));
-      slotsEl.appendChild(h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", text: "Retry", onclick: function () { self.drawCalendar(cal, slotsEl); } }));
+      slotsEl.innerHTML = ""; slotsEl.appendChild(h("p", { class: "kdb__hint kdb__hint--err", text: "We couldn't load the calendar right now. You can still book in the scheduler." }));
+      slotsEl.appendChild(h("a", { class: "kdb__btn kdb__btn--primary", href: CFG.fallbackUrl, target: "_blank", rel: "noopener" }, ["Open the scheduler", h("span", { class: "kdb__arr", "aria-hidden": "true", text: "↗" })]));
+      slotsEl.appendChild(h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", text: "Try again", onclick: function () { slotCache = {}; self.drawCalendar(cal, slotsEl); } }));
     });
   };
   Booking.prototype.shift = function (n, cal, slotsEl) {
@@ -518,7 +524,8 @@
     var self = this, s = this.state, body = this.payload(), btn = this.root.querySelector(".kdb__btn--primary");
     var url = this.kind === "contact" ? CFG.contactUrl : CFG.bookUrl, label = this.kind === "contact" ? "Send message" : "Book my call";
     this.busy = true; btn.disabled = true; btn.textContent = this.kind === "contact" ? "Sending…" : "Booking…"; this.msg.textContent = "";
-    var req = CFG.mock || !url
+    var req = !CFG.mock && !url ? Promise.reject(new Error("not configured"))
+      : CFG.mock
       ? new Promise(function (r) { setTimeout(function () { window.KD_BOOKING_LAST_PAYLOAD = body; r(body.slot ? { ok: true, appointment: { id: "mock", startTime: body.slot.start } } : { ok: true, contactId: "mock" }); }, 700); })
       : this.kind === "contact"
         ? (body.hp ? Promise.resolve({ ok: true }) : postToWebhook(url, body))     // honeypot: show success, send nothing
@@ -549,7 +556,7 @@
       "DTSTAMP:" + icsDate(new Date()), "DTSTART:" + icsDate(start), "DTEND:" + icsDate(end), "SUMMARY:Discovery call · KPI DRIVER",
       "DESCRIPTION:Your discovery call with KPI DRIVER. The meeting link arrives by email.", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
     this.host.innerHTML = "";
-    this.host.appendChild(h("div", { class: "kdb kdb--done", role: "status" }, [
+    this.host.appendChild(h("div", { class: "kdb kdb--done keep-case", "data-no-tc": "", role: "status" }, [
       h("ol", { class: "kdb__gear is-complete", "aria-hidden": "true" }, STEPS.map(function () { return h("li", { class: "kdb__gear-i is-done" }); })),
       h("p", { class: "kdb__eyebrow", text: "Confirmed" }),
       h("h2", { class: "kdb__title", tabindex: "-1", text: "You're booked, " + (s.data.firstName || "driver") + "." }),
@@ -566,7 +573,7 @@
   Booking.prototype.sent = function () {
     var s = this.state;
     this.host.innerHTML = "";
-    this.host.appendChild(h("div", { class: "kdb kdb--done", role: "status" }, [
+    this.host.appendChild(h("div", { class: "kdb kdb--done keep-case", "data-no-tc": "", role: "status" }, [
       h("p", { class: "kdb__eyebrow", text: "Message sent" }),
       h("h2", { class: "kdb__title", tabindex: "-1", text: "Thanks, " + (s.data.firstName || "driver") + "." }),
       h("p", { class: "kdb__lede", text: "Your message is with the team. We'll reply to " + (s.data.email || "your email") + " within one business day." }),
@@ -580,7 +587,7 @@
   var dlg = null, current = null;
   function dialog() {
     if (dlg) return dlg;
-    dlg = h("dialog", { class: "kdb-dialog", "aria-label": "Book a Discovery Call" }, [
+    dlg = h("dialog", { class: "kdb-dialog keep-case", "data-no-tc": "", "aria-label": "Book a Discovery Call" }, [
       h("div", { class: "kdb-dialog__bar" }, [
         h("span", { class: "kdb-dialog__brand", text: "Book a Discovery Call" }),
         h("button", { type: "button", class: "kdb-dialog__close", "aria-label": "Close", text: "Close ✕", onclick: function () { dlg.close(); } })
@@ -605,17 +612,65 @@
     e.preventDefault(); e.stopImmediatePropagation();
     open(sourceFrom(a), a.getAttribute("data-label") || "");
   }, true);
+  /* ---------- page enhancement (Webflow pages whose HTML predates the native forms) ----------
+     Same result as the static build's section_ctas(): every content section gets a tracked booking button,
+     FAQ sections get the contact form, the old HighLevel survey / scheduler embeds become the native forms.
+     Anything already present is left alone, so it is a no-op on pages built with these changes. */
+  var CTA_ES = { "Book a Discovery Call": "Agenda una llamada de descubrimiento", "See It Live on a Call": "Míralo en vivo en una llamada",
+    "Talk It Through on a Call": "Hablémoslo en una llamada", "Start With a Discovery Call": "Empieza con una llamada de descubrimiento" };
+  var CTA_FOR = {};
+  [["See It Live on a Call", "workflow visibility capture find know kpis capabilities pipelines mobile how nurture ai-suite ai-agent"],
+   ["Talk It Through on a Call", "product-areas areas detail offerings difference model with-suite agent-note existing lifecycle"],
+   ["Start With a Discovery Call", "onboarding implementation support knowledge-base commitment team story experience reviews"]]
+    .forEach(function (r) { r[1].split(" ").forEach(function (id) { CTA_FOR[id] = r[0]; }); });
+  function enhancePage() {
+    var path = location.pathname.replace(/\/+$/, "") || "/", es = /^\/es(\/|$)/.test(path);
+    if (es) path = path.replace(/^\/es/, "") || "/";
+    var main = document.getElementById("main"); if (!main) return;
+    // every booking link points at the one live calendar (matters for ctrl/cmd-click and no-JS)
+    [].forEach.call(document.querySelectorAll("a[data-book]"), function (a) { a.setAttribute("data-book", CFG.calendarId); });
+    [].forEach.call(document.querySelectorAll('a[href*="/widget/booking/"]'), function (a) { a.setAttribute("href", CFG.fallbackUrl); });
+    var pages = /^\/(|services|services\/(crm|ai-suite|ai-agent)|our-team|contact-us|thank-you)$/;
+    // old HighLevel embeds → native forms
+    [].forEach.call(main.querySelectorAll(".ghl-form"), function (el) {
+      el.outerHTML = '<div class="kd-inline-form" data-kd-contact data-placement="Inquiry Form"></div>';
+    });
+    [].forEach.call(main.querySelectorAll("[data-booking]"), function (el) {
+      el.outerHTML = '<div class="kd-inline-form" data-kd-booking data-placement="Booking Page"></div>';
+    });
+    if (!pages.test(path)) return;
+    // FAQ: contact form beside the questions (the Contact page already has one, so it gets an image)
+    var faq = main.querySelector("#faq .stack");
+    if (faq && !faq.querySelector("[data-kd-contact], .faq-visual")) {
+      faq.insertAdjacentHTML("beforeend", path === "/contact-us"
+        ? '<figure class="faq-visual"><img src="' + CFG.faqImage + '" alt="' + (es ? "El CRM de KPI DRIVER en un teléfono" : "The KPI DRIVER CRM on a phone: pipeline, conversations and KPI dashboards") + '" loading="lazy" width="900" height="900"></figure>'
+        : '<div class="kd-inline-form" data-kd-contact data-placement="FAQ Contact Form"></div>');
+    }
+    // a booking button in every section that has none
+    var intro = false;
+    [].forEach.call(main.querySelectorAll("section"), function (sec, i) {
+      if (sec.classList.contains("cta") || sec.querySelector("[data-book], .section-cta, [data-kd-booking]")) return;
+      var id = sec.id;
+      // same naming rule as build.py section_ctas(), so English and Spanish pages match
+      if (!id) id = sec.classList.contains("hero") || sec.classList.contains("phead") ? "hero" : !intro ? (intro = true, "intro") : "section-" + (i + 1);
+      var text = CTA_FOR[id] || "Book a Discovery Call";
+      sec.insertAdjacentHTML("beforeend", '<div class="wrap section-cta"><a class="btn btn--primary" href="' + CFG.fallbackUrl + '" target="_blank" rel="noopener" data-book="' + CFG.calendarId +
+        '" data-event="discovery_call_click" data-label="' + id.replace(/-/g, " ") + '">' + (es ? CTA_ES[text] : text) + "</a></div>");
+    });
+  }
+
   function mountInline() {
     [].forEach.call(document.querySelectorAll("[data-kd-booking]"), function (el) {
       if (el.__kdb) return;
-      el.__kdb = new Booking(el, { source: el.getAttribute("data-kd-booking-source") || pageName() + CFG.sourceSeparator + "Booking Page" });
+      el.__kdb = new Booking(el, { source: el.getAttribute("data-kd-booking-source") || pageName() + CFG.sourceSeparator + titleCase(el.getAttribute("data-placement") || "Booking Page") });
     });
     [].forEach.call(document.querySelectorAll("[data-kd-contact]"), function (el) {
       if (el.__kdb) return;
-      el.__kdb = new Booking(el, { kind: "contact", source: el.getAttribute("data-kd-contact-source") || pageName() + CFG.sourceSeparator + "Inquiry Form" });
+      el.__kdb = new Booking(el, { kind: "contact", source: el.getAttribute("data-kd-contact-source") || pageName() + CFG.sourceSeparator + titleCase(el.getAttribute("data-placement") || "Inquiry Form") });
     });
   }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mountInline); else mountInline();
+  function start() { if (CFG.enhance) { try { enhancePage(); } catch (e) {} } mountInline(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 
-  window.KDBooking = { open: open, mount: mountInline, config: CFG, steps: STEPS, sourceFrom: sourceFrom, pageName: pageName };
+  window.KDBooking = { open: open, mount: mountInline, enhance: enhancePage, config: CFG, steps: STEPS, sourceFrom: sourceFrom, pageName: pageName };
 })();

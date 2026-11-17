@@ -1,0 +1,55 @@
+{
+  "sent": "2026-11-17T20:29:33.888Z",
+  "results": [
+    {
+      "kind": "booking",
+      "page": "/services/crm",
+      "button": "#kpis .section-cta a",
+      "source": "CRM – KPIs",
+      "campaign": "Business Discovery (SEO) CRM – KPIs",
+      "person": "Priya Nair",
+      "email": "priya.nair.kdtest1@example.com",
+      "call": "Thursday, November 26, 2026 at 2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "ok": true,
+      "appointmentId": "MzQAR8jpd23n6SkYmo3i",
+      "contactId": "DcTjuKE03qmPJFtsdBOn"
+    },
+    {
+      "kind": "booking",
+      "page": "/",
+      "button": "#lifecycle .section-cta a",
+      "source": "Home – Lifecycle",
+      "campaign": "Business Discovery (SEO) Home – Lifecycle",
+      "person": "Jordan Whitfield",
+      "email": "jordan.whitfield.kdtest2@example.com",
+      "call": "Friday, November 27, 2026 at 3:00 PM",
+      "timezone": "America/Chicago",
+      "ok": true,
+      "appointmentId": "mZD7D86NsJP2zsigNrnz",
+      "contactId": "cLJbI8eeXDsffdROoGSz"
+    },
+    {
+      "kind": "contact",
+      "page": "/services/ai-agent",
+      "form": "#faq [data-kd-contact]",
+      "source": "AI Agent – FAQ Contact Form",
+      "campaign": "Contact Us (SEO) AI Agent – FAQ Contact Form",
+      "person": "Kevin Brandt",
+      "email": "kevin.brandt.kdtest3@example.com",
+      "webhookStatus": 200,
+      "ok": true
+    },
+    {
+      "kind": "contact",
+      "page": "/",
+      "form": "#faq [data-kd-contact]",
+      "source": "Home – FAQ Contact Form",
+      "campaign": "Contact Us (SEO) Home – FAQ Contact Form",
+      "person": "Elena Vasquez",
+      "email": "elena.vasquez.kdtest4@example.com",
+      "webhookStatus": 200,
+      "ok": true
+    }
+  ]
+}

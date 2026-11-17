@@ -910,5 +910,16 @@
  "Back to home": "Volver al inicio",
  "Form not showing?": "¿No aparece el formulario?",
  "or email": "o escriba a",
- "Contact KPI DRIVER": "Contactar a KPI DRIVER"
+ "Contact KPI DRIVER": "Contactar a KPI DRIVER",
+ "Client Login": "Acceso de clientes",
+ "Services Overview": "Resumen de servicios",
+ "CRM Login": "Acceso al CRM",
+ "AI Suite Login": "Acceso a la AI Suite",
+ "Existing Clients": "Clientes actuales",
+ "Check CRM Status": "Ver el estado del CRM",
+ "The KPI DRIVER CRM on a phone: pipeline, conversations and KPI dashboards": "El CRM de KPI DRIVER en un teléfono: pipeline, conversaciones y tableros de KPIs",
+ "Talk It Through on a Call": "Hablémoslo en una llamada",
+ "See It Live on a Call": "Míralo en vivo en una llamada",
+ "Start With a Discovery Call": "Empieza con una llamada de descubrimiento",
+ "Not covered here? Send us a message.": "¿No está aquí? Envíanos un mensaje."
 }

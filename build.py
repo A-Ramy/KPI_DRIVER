@@ -16,13 +16,19 @@ ROOT = Path(__file__).parent
 SRC, OUT = ROOT / "src", ROOT / "site"
 ORIGIN = "https://www.kpidriver.com"
 PRODUCTION = "--production" in sys.argv
-BOOKING_URL = "https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L"
+BOOKING_URL = "https://link.kpidriver.com/widget/booking/9g3ccVyd2a9NsV51QuKN"
 STATUS_URL = "https://status.gohighlevel.com/"
 BOOK_BASE = "https://link.kpidriver.com/widget/booking/"
 # Booking calendars, as embedded on the current live site (one per placement).
-CAL = {"header": "17jl7cP7dvOAU48s6C3L", "footer": "l4rvIxCnb9DtsSTM6SoQ", "home": "9g3ccVyd2a9NsV51QuKN",
-       "services": "3bltGmUYGxpIUtG09p3V", "team": "o811nwxOSIS90zvrwX33", "contact": "usaNbU09ACXDqb1C52Rd"}
+# One discovery calendar for every placement (the others were deleted in HighLevel, 2026-11-17).
+# Placement tracking now travels with the booking itself (booking_source), not with separate calendars.
+_ONE_CAL = "9g3ccVyd2a9NsV51QuKN"
+CAL = {k: _ONE_CAL for k in ("header", "footer", "home", "services", "team", "contact")}
 PAGE_CAL = "header"
+# Native booking + contact forms (booking-form/). BRIDGE_URL = the deployed booking bridge (booking-form/bridge/worker.js).
+BOOKING_BRIDGE_URL = ""
+CONTACT_WEBHOOK = "https://services.leadconnectorhq.com/hooks/nLOdLoui5CvpzktszMJx/webhook-trigger/f280f1cb-657e-4819-a2fe-a022a7db9bfb"
+FORMS_DIR = Path(__file__).parent / "booking-form"
 
 
 def cal_for(path):
@@ -343,7 +349,48 @@ def head(meta, path, root):
 <link rel="preload" as="style" href="{FONTS}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{FONTS}"></noscript>
 <link rel="stylesheet" href="{root}assets/css/site.css">
+<link rel="stylesheet" href="{root}assets/css/kd-booking.css">
 {extra}"""
+
+
+def forms_script(root):
+    cfg = {"slotsUrl": BOOKING_BRIDGE_URL + "/slots" if BOOKING_BRIDGE_URL else "",
+           "bookUrl": BOOKING_BRIDGE_URL + "/book" if BOOKING_BRIDGE_URL else "", "contactUrl": CONTACT_WEBHOOK}
+    return f'<script>window.KD_BOOKING_CONFIG = {json.dumps(cfg)};</script>\n<script src="{root}assets/js/kd-booking.js" defer></script>'
+
+
+# Every section gets a booking button that opens the booking pop-up, tracked by its section ("Home – Lifecycle").
+CTA_TEXT = {
+    "See It Live on a Call": "workflow visibility capture find know kpis capabilities pipelines mobile how nurture ai-suite ai-agent",
+    "Talk It Through on a Call": "product-areas areas detail offerings difference model with-suite agent-note existing lifecycle",
+    "Start With a Discovery Call": "onboarding implementation support knowledge-base commitment team story experience reviews",
+}
+CTA_FOR = {sid: text for text, ids in CTA_TEXT.items() for sid in ids.split()}
+CTA_SKIP_PAGES = ("book-discovery-call.html", "blog.html", "post/", "blog-category/", "policies/")
+
+
+def section_ctas(html_, path):
+    if path.startswith(CTA_SKIP_PAGES):
+        return html_
+    seen = {"n": 0, "intro": False}
+    def add(m):
+        sec = m.group(0)
+        seen["n"] += 1
+        if "data-book" in sec or 'class="cta' in sec[:40]:
+            return sec
+        sid = (re.search(r'<section[^>]*\bid="([^"]+)"', sec) or [None, ""])[1]
+        if not sid:
+            # same naming rule as the runtime enhancer in kd-booking.js, so English and Spanish match
+            cls = (re.search(r'<section[^>]*\bclass="([^"]*)"', sec) or [None, ""])[1].split()
+            if "hero" in cls or "phead" in cls: sid = "hero"
+            elif not seen["intro"]: sid, seen["intro"] = "intro", True
+            else: sid = f"section-{seen['n']}"
+        label = sid.replace("-", " ")
+        text = CTA_FOR.get(sid, "Book a Discovery Call")
+        btn = (f'<div class="wrap section-cta"><a class="btn btn--primary" href="{book_attrs(PAGE_CAL)}" '
+               f'data-event="discovery_call_click" data-label="{label}">{text}</a></div>')
+        return sec[: -len("</section>")] + btn + "\n</section>"
+    return re.sub(r"<section\b.*?</section>", add, html_, flags=re.S)
 
 
 def render(path, meta, body):
@@ -355,7 +402,7 @@ def render(path, meta, body):
         current = meta.get("nav", path)
         inner = f"""{nav(root, current, path)}
 <main id="main"{' class="is-blog"' if current == "blog.html" else ''}>
-{expand(body, root)}
+{section_ctas(expand(body, root), path)}
 </main>
 {footer(root)}
 <div class="revline" aria-hidden="true"></div>
@@ -366,6 +413,7 @@ def render(path, meta, body):
   <div class="bookdlg__frame"></div>
   <p class="bookdlg__foot">Scheduler not loading? <a class="link" href="{BOOK_BASE}{CAL['header']}" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
 </dialog>
+{forms_script(root)}
 <script src="{root}assets/js/site.js" defer></script>"""
         hd = head(meta, path, root)
         if LANG == "es":
@@ -568,6 +616,8 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     shutil.copytree(SRC / "assets", OUT / "assets")
+    shutil.copy(FORMS_DIR / "kd-booking.js", OUT / "assets/js/kd-booking.js")
+    shutil.copy(FORMS_DIR / "kd-booking.css", OUT / "assets/css/kd-booking.css")
     built = []
     for f in sorted((SRC / "pages").rglob("*.html")):
         meta, body = parse(f.read_text(encoding="utf8"))

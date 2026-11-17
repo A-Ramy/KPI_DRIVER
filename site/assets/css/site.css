@@ -534,7 +534,7 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 560px; backgr
 
 /* streak under key headings */
 .tone-suite > .wrap > .head h2::after, .cta h2::after { content: ""; display: block; height: 3px; margin-top: 18px; width: min(320px, 60%); background: linear-gradient(90deg, var(--green), transparent); background-size: 200% 100%; animation: streak 2.8s ease-in-out infinite; }
-.cta h2::after { background-image: linear-gradient(90deg, var(--red), var(--orange), var(--amber), var(--green), transparent); }
+.cta h2::after { width: 100%; max-width: 420px; background-image: linear-gradient(90deg, var(--red), var(--orange), var(--amber), var(--green), var(--amber), var(--orange), var(--red)); }  /* same width as the gear line above */
 @keyframes streak { 0%, 100% { background-position: 100% 0; opacity: 0.55; } 50% { background-position: 0 0; opacity: 1; } }
 
 /* lifecycle circuit */
@@ -754,12 +754,12 @@ section[id] { scroll-margin-top: 76px; }
 @media (max-width: 420px) { .login { display: none; } }
 
 /* =====================================================================
-   v5 — brand assets + capitalised typography
-   Every word in running text starts with a capital, as in the brand's own
-   materials. Blog pages, legal text, quoted speech and typed input keep
-   natural sentence case.
+   v5 — brand assets + typography
+   Running text keeps natural sentence case (the owner asked to drop the
+   every-word capitals, 2026-11-17). `html body` also beats the old Webflow
+   stylesheet's `body { text-transform: capitalize }`.
    ===================================================================== */
-body { text-transform: capitalize; }
+html body { text-transform: none; }
 .is-blog, .legal, .bubble, .transcript__say, .keep-case, .field__err, .form__status, input, textarea, select { text-transform: none; }
 .brand img { height: 24px; width: auto; }
 .footer__brand img { height: 64px; width: auto; }
@@ -777,3 +777,30 @@ body { text-transform: capitalize; }
 .ghl-form { display: grid; gap: 14px; align-content: start; }
 .ghl-form__frame { background: #fff; border: 1px solid var(--rule); border-radius: var(--radius, 10px); overflow: hidden; min-height: 620px; }
 .ghl-form__frame iframe { display: block; min-height: 620px; }
+
+/* ---------- v3 owner fixes (2026-11-17) ---------- */
+/* Services menu opens on hover where the full nav shows (JS adds .nav-hover); the arrow button is not needed there */
+.nav-hover .nav__trigger { display: none; }
+.nav-hover .nav__item--has-menu:focus-within > .nav__menu { display: block; }
+.nav-hover .nav__menu::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+/* Client login: centred under its button, labels only */
+.login > div { left: 50%; right: auto; transform: translateX(-50%); min-width: 168px; }
+.login a { text-align: center; }
+.login a span { display: none; }
+/* Webflow pagination buttons: keep label and arrow on one line */
+.w-pagination-next, .w-pagination-previous { display: inline-flex !important; align-items: center; gap: 8px; white-space: nowrap; width: auto !important; height: auto !important; padding: 12px 18px !important; }
+.w-pagination-next > div, .w-pagination-previous > div { display: inline !important; }
+.w-pagination-next svg, .w-pagination-previous svg { flex: none; transform: none; }
+/* Boast video cards use a u-cursor-pointer class that the old-cursor hide rule caught */
+boast-display-widget .response-carousel-card { display: block !important; }
+/* CTA band with the booking calendar embedded */
+.cta--cal .wrap { align-items: start; }
+@media (min-width: 900px) { .cta--cal .wrap { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+.cta__book { display: grid; gap: 12px; }
+.cta__cal { background: #ffffff; border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; min-height: 680px; }
+.cta__cal iframe { display: block; width: 100%; min-height: 680px; border: 0; }
+.cta__book .note { text-align: right; }
+
+/* v3.1: centre the Services menu under its link; hover bridge for the client login menu */
+.nav-hover .nav__menu { left: 50%; transform: translateX(-50%); }
+.login > div::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
