@@ -26,7 +26,7 @@ check(up.body.customFields.length === 24 && up.body.customFields.some(f => f.id 
 check(up.body.customFields.some(f => f.id === 'UWxeByWt7W4EuIVVAQsm' && Array.isArray(f.fieldValue)), 'booking: checkbox answers sent as a list');
 check(!('tags' in up.body), 'booking: upsert does not overwrite tags');
 check(up.body.dndSettings.sms.status === 'inactive', 'booking: SMS allowed after consent');
-check(appt.body.contactId === 'CONTACT123' && appt.body.calendarId === '17jl7cP7dvOAU48s6C3L' && new Date(appt.body.endTime) - new Date(appt.body.startTime) === 45 * 60000, 'booking: appointment on the calendar, 45 min, linked to contact');
+check(appt.body.contactId === 'CONTACT123' && appt.body.calendarId === '9g3ccVyd2a9NsV51QuKN' && new Date(appt.body.endTime) - new Date(appt.body.startTime) === 45 * 60000, 'booking: appointment on the calendar, 45 min, linked to contact');
 check(tags.url.endsWith('/contacts/CONTACT123/tags') && tags.body.tags.includes('src: home – header'), `booking: tags ${JSON.stringify(tags.body.tags)}`);
 check(note.url.endsWith('/contacts/CONTACT123/notes') && /IP 203\.0\.113\.7/.test(note.body.body) && /Home – Header/.test(note.body.body), 'booking: note has answers, source and consent IP');
 
@@ -48,7 +48,7 @@ const wfS = load('kd-booking-slots.json');
 const now = Date.now();
 r = runWorkflow(wfS, { query: { start: String(now - 5 * 86400000), end: String(now + 40 * 86400000), timezone: 'America/Chicago' } }, fakeHL());
 const q = r.calls[0].query;
-check(r.calls[0].url.endsWith('/calendars/17jl7cP7dvOAU48s6C3L/free-slots') && q.timezone === 'America/Chicago', 'slots: free-slots call for the calendar + time zone');
+check(r.calls[0].url.endsWith('/calendars/9g3ccVyd2a9NsV51QuKN/free-slots') && q.timezone === 'America/Chicago', 'slots: free-slots call for the calendar + time zone');
 check(q.startDate >= now - 1000 && q.endDate - q.startDate <= 31 * 86400000, 'slots: range clamped to now … +31 days');
 check(r.response.status === 200 && JSON.stringify(r.response.body) === JSON.stringify({ '2026-11-18': { slots: ['2026-11-18T10:00:00-05:00'] } }), 'slots: only clean date → slots map returned');
 r = runWorkflow(wfS, { query: { start: 'x', end: 'y', timezone: 'Not/AZone' } }, req => ({ statusCode: 400, body: {} }));

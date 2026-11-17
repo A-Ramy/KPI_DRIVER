@@ -47,7 +47,7 @@ The campaign keeps the old prefixes ("Business Discovery (SEO) …", "Contact Us
 
 ### 1. HighLevel
 
-1. **Choose the one calendar.** The workflows default to `17jl7cP7dvOAU48s6C3L`, the current header calendar. To use another, change `CALENDAR_ID` in `n8n/src/config.js` and run `python3 booking-form/tools/build-n8n.py`, or edit the "Validate" node in n8n.
+1. **The one calendar** is `9g3ccVyd2a9NsV51QuKN` ("Business Discovery | KPI DRIVER", slug `seo_home`, collective, 45 min, 3 team members). It's the only website calendar still active: the header, footer, services, team and contact calendars (`17jl7c…`, `l4rvIx…`, `3bltGm…`, `o811nw…`, `usaNbU…`) are deleted in HighLevel, although their public booking pages still load. To use another, change `CALENDAR_ID` in `n8n/src/config.js` and run `python3 booking-form/tools/build-n8n.py`, or edit the "Validate" node in n8n.
 2. **Create a Private Integration token** in the KPI DRIVER sub-account (Settings → Private Integrations) with these scopes:
    - `calendars.readonly`
    - `calendars/events.write`
@@ -86,9 +86,12 @@ What each workflow does:
 - **Required consent.** Both old forms made the SMS box required, and the new forms copy that. Carrier reviewers generally expect SMS consent to be optional, not a condition of booking. To make it optional, set `req: false` on the two consent fields in `kd-booking.js`, and remove the consent check in `n8n/src/validate-*.js`, which currently rejects submissions without consent.
 - **Contact source.** Contacts keep `source: "SEO"`, as the old forms set it (`CONTACT_SOURCE` in `n8n/src/config.js`).
 
+## Live test (done)
+
+`tools/live-test.js` ran the generated workflows against the real account: real free slots, contact upsert with all 24 custom fields, appointment on `9g3ccV…`, tags, note, and a second booking of the same slot correctly answered `slot_taken`. Test appointments are created with automations off, and everything is deleted afterwards. The contact inbound webhook accepted a sample (CORS allows any origin, and the form-post fallback works too). The token is not in this repo; the test session's network proxy supplies it.
+
 ## Not verified yet
 
-- **Real HighLevel calls.** The API calls follow HighLevel's current docs (`Version: v3`; free slots, contact upsert, create appointment, add tags, add note) and pass the simulator. They haven't run against your account; that needs the token.
 - **Real n8n import.** The workflow files haven't been imported into a real n8n instance yet.
 
 ## Rebuild / test

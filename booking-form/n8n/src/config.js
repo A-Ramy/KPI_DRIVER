@@ -1,6 +1,6 @@
 // ===== Settings for the KPI DRIVER booking workflows (pasted at the top of each "Validate" node) =====
 const LOCATION_ID = 'nLOdLoui5CvpzktszMJx';      // KPI DRIVER sub-account (read from the live HighLevel forms)
-const CALENDAR_ID = '17jl7cP7dvOAU48s6C3L';      // the ONE discovery calendar. Default: the current header calendar.
+const CALENDAR_ID = '9g3ccVyd2a9NsV51QuKN';      // the ONE discovery calendar (slug seo_home; the only live website calendar)
 const DURATION_MIN = 45;                          // must match the calendar's slot length
 const CONTACT_SOURCE = 'SEO';                     // HighLevel contact "source", as the old forms set it
 // Custom fields the website may write (HighLevel custom field ids). Anything else in a request is ignored.
