@@ -126,3 +126,7 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
   - Title Case pass walks every text node (English only), block by block: small words (a, an, the, and, but, or, nor, for, so, as, at, by, from, in, into, of, on, per, than, to, via, vs, with) stay lower mid-sentence; first word, last word and words after . ! ? : — are capitalised; acronyms/mixed case kept; hyphen parts after the first follow the small-word rule; phrasal Log In / Sign In / Checking In.
   - Skipped: `.is-blog`, `.kd-post-1`, `.w-richtext`, blog cards (`.blog_item`, `.card-blog`), `.legal`, reviews, chat/transcript bubbles, quotes, form fields, `.keep-case`, `[data-no-tc]`. Spanish untouched.
   - CTA underline (`.cta h2::after`) now 100% / max 420px like the gear line above, with a full-width sweeping gradient (no transparent tail).
+
+## 2026-11-17: owner fixes, round 5 (live)
+- Native page scrollbar hidden site-wide (`html { scrollbar-width: none }` + `::-webkit-scrollbar { display: none }` on html/body); inner scroll areas keep theirs. Gear HUD gears are now clickable (jump to that sixth of the page; smooth unless reduced motion). HUD shows at >=1340px; the rev bar along the top shows progress at all widths.
+- kd-site-6.css `…/6afcb9a51800e1625a2300f8_kd-site-6.css` + kd-site-8.js `…/6afcb9a41101434010d368a5_kd-site-8.js` on all 16 site pages and 4 member pages.

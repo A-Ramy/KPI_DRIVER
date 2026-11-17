@@ -804,3 +804,11 @@ boast-display-widget .response-carousel-card { display: block !important; }
 /* v3.1: centre the Services menu under its link; hover bridge for the client login menu */
 .nav-hover .nav__menu { left: 50%; transform: translateX(-50%); }
 .login > div::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+
+/* The gear HUD (and the rev bar along the top) is the page's scroll indicator, so the browser's own
+   page scrollbar is hidden site-wide. Scrolling still works with wheel, trackpad, touch and keys;
+   inner scroll areas (menus, tabs, dialogs) keep their own scrollbars. */
+html { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0; height: 0; display: none; }
+.gearhud li { cursor: pointer; }
+.gearhud li:hover:not(.is-on) { color: #ffffff; background: rgba(255, 255, 255, 0.12); }

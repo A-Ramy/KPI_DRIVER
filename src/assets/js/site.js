@@ -458,6 +458,19 @@
     maps.insertAdjacentElement("afterend", box);
   }
 
+  /* gear HUD doubles as the page scroller (the native scrollbar is hidden): click a gear to jump there */
+  var hud = d.querySelector(".gearhud");
+  if (hud) {
+    var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    hud.querySelectorAll("li").forEach(function (li, i) {
+      li.title = es ? "Ir a la marcha " + (i + 1) : "Shift to gear " + (i + 1);
+      li.addEventListener("click", function () {
+        var max = r.scrollHeight - innerHeight;
+        window.scrollTo({ top: i === 5 ? max : Math.ceil(max * i / 6) + 2, behavior: still ? "auto" : "smooth" });
+      });
+    });
+  }
+
   /* Title Case for all running text (English only), the brand's style: every word capitalised except
      short articles, conjunctions and prepositions mid-sentence. Blog post content and excerpts, legal text,
      customer reviews, chat/transcript bubbles, quotes and typed text are left as written. */
