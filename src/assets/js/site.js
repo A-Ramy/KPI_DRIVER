@@ -435,3 +435,59 @@
     if (++n > 40 || !d.querySelector("[data-reviews]:not(.is-loaded)")) clearInterval(iv);
   }, 500);
 })();
+
+/* ===================== v4: owner fixes (2026-11-17, round 3) ===================== */
+(function () {
+  var d = document, r = d.documentElement, es = r.lang === "es";
+
+  /* footer: drop the "AI Suite terms at kpidriver.ai" link (and its separator) */
+  d.querySelectorAll(".footer__bottom a[href^='https://kpidriver.ai']").forEach(function (a) {
+    var p = a.previousSibling;
+    if (p && p.nodeType === 3) p.textContent = p.textContent.replace(/\s*·\s*$/, "");
+    a.remove();
+  });
+
+  /* contact page: show the office on a Google map under the address */
+  var maps = d.querySelector("main dd a[href*='share.google'], main dd a[href*='google.com/maps'], main dd a[href*='maps.app.goo.gl']");
+  if (maps && !d.querySelector(".kd-map")) {
+    var addr = "1858 NW 141st Ave, Pembroke Pines, FL 33028";
+    var box = d.createElement("div");
+    box.className = "kd-map";
+    box.style.cssText = "margin-top:14px;border:1px solid var(--line-strong,#cfd6de);border-radius:var(--radius,10px);overflow:hidden;aspect-ratio:16/10;background:var(--panel-2,#eef1f4)";
+    box.innerHTML = '<iframe src="https://www.google.com/maps?q=' + encodeURIComponent(addr) + '&z=15&output=embed" title="' + (es ? "Oficina de KPI DRIVER en Google Maps" : "KPI DRIVER office on Google Maps") + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="display:block;width:100%;height:100%;border:0"></iframe>';
+    maps.insertAdjacentElement("afterend", box);
+  }
+
+  /* Title Case for headings, navigation, buttons, links and labels (English only).
+     Paragraphs stay in sentence case; blog post pages, FAQ questions and typed text are left alone. */
+  if (es || !/^en/i.test(r.lang || "en")) return;
+  var SMALL = /^(a|an|and|as|at|but|by|for|from|if|in|into|nor|of|on|or|per|so|than|the|to|via|vs\.?|with|yet)$/i;
+  var SEL = "h1,h2,h3,h4,h5,h6,.nav__link,.nav__menu b,details.login summary,details.login b,.site-footer .footer__col a,.site-footer .footer__bottom a,.btn,a.link,dt,label,.tabs__tab,.crumbs li";
+  var SKIP = ".is-blog,.kd-post-1,.w-richtext,.kd-faq,.faq,input,textarea,select,.keep-case,[data-no-tc]";
+  function word(w, force) {
+    if (/[@\/]|\.(com|ai|io)\b|^\(?\+?\d/.test(w)) return w;            /* emails, links, numbers */
+    if (/[A-Z]/.test(w.slice(1)) || !/[a-z]/.test(w)) return w;        /* CRM, AI, iMessage, KPI DRIVER */
+    var core = w.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, "");
+    if (!force && SMALL.test(core)) return w.toLowerCase();
+    return w.split("-").map(function (h) { return h.replace(/^([^A-Za-z]*)([a-z])/, function (m, a, c) { return a + c.toUpperCase(); }); }).join("-");
+  }
+  function titleEl(el) {
+    var w = d.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], t;
+    while ((t = w.nextNode())) if (t.textContent.trim() && !t.parentElement.closest(".keep-case,svg")) nodes.push(t);
+    var prev = "";                                                      /* last word seen, across styled spans */
+    nodes.forEach(function (node, i) {
+      var parts = node.textContent.split(/(\s+)/), idx = [];
+      parts.forEach(function (p, k) { if (p && !/^\s+$/.test(p)) idx.push(k); });
+      idx.forEach(function (k, n) {
+        var first = !prev, last = i === nodes.length - 1 && n === idx.length - 1;
+        parts[k] = word(parts[k], first || last || /[:.!?—–]$/.test(prev));
+        prev = parts[k];
+      });
+      var out = parts.join("");
+      if (out !== node.textContent) node.textContent = out;
+    });
+  }
+  function run() { d.querySelectorAll(SEL).forEach(function (el) { if (!el.closest(SKIP)) titleEl(el); }); }
+  run();
+  addEventListener("load", run);                                        /* late content: related posts, reviews */
+})();

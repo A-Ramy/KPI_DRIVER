@@ -179,7 +179,7 @@ def nav(root, current, path="index.html"):
       <a class="btn btn--primary btn--sm nav__cta" href="{book_attrs('header')}" data-event="discovery_call_click" data-label="header">Book a Discovery Call</a>
     </nav>
     <details class="login">
-      <summary>Client login</summary>
+      <summary>Client Login</summary>
       <div><a href="https://crm.kpidriver.com" rel="noopener" data-event="client_login_click" data-label="crm"><b>CRM</b><span>crm.kpidriver.com</span></a><a href="https://kpidriver.ai" rel="noopener" data-event="client_login_click" data-label="ai suite"><b>AI Suite</b><span>kpidriver.ai</span></a></div>
     </details>
     {lang_link}
@@ -205,7 +205,7 @@ def footer(root):
       <div class="footer__col">
         <h2>SERVICES</h2>
         <ul>
-          <li><a href="{root}services.html">Services overview</a></li>
+          <li><a href="{root}services.html">Services Overview</a></li>
           <li><a href="{root}services/crm.html">CRM</a></li>
           <li><a href="{root}services/ai-suite.html">AI Suite</a></li>
           <li><a href="{root}services/ai-agent.html">AI Agent</a></li>
@@ -223,8 +223,8 @@ def footer(root):
       <div class="footer__col">
         <h2>CLIENTS</h2>
         <ul>
-          <li><a href="https://crm.kpidriver.com" rel="noopener" data-event="client_login_click" data-label="crm">CRM login</a></li>
-          <li><a href="https://kpidriver.ai" rel="noopener" data-event="client_login_click" data-label="ai suite">AI Suite login</a></li>
+          <li><a href="https://crm.kpidriver.com" rel="noopener" data-event="client_login_click" data-label="crm">CRM Login</a></li>
+          <li><a href="https://kpidriver.ai" rel="noopener" data-event="client_login_click" data-label="ai suite">AI Suite Login</a></li>
           <li><a href="{STATUS_URL}" rel="noopener">CRM Status</a></li>
         </ul>
       </div>
@@ -239,7 +239,7 @@ def footer(root):
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© <span id="year">{date.today().year}</span> KPI DRIVER, LLC. All rights reserved. · <a href="{root}policies/privacy-policy.html">Privacy Policy</a> · <a href="{root}policies/terms-conditions.html">Terms &amp; Conditions</a> · <a href="https://kpidriver.ai" rel="noopener">AI Suite terms at kpidriver.ai</a></p>
+      <p>© <span id="year">{date.today().year}</span> KPI DRIVER, LLC. All rights reserved. · <a href="{root}policies/privacy-policy.html">Privacy Policy</a> · <a href="{root}policies/terms-conditions.html">Terms &amp; Conditions</a></p>
       <p class="social">
         <a href="https://www.linkedin.com/company/kpi-driver" rel="noopener">LinkedIn</a>
         <a href="https://www.youtube.com/@KPI_DRIVER" rel="noopener">YouTube</a>
