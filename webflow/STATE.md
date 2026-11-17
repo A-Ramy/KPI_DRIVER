@@ -133,3 +133,12 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Published with publishToWebflowSubdomain only (customDomains []). **The next custom-domain publish will take this live.**
 - Unused uploads: kd-booking-1.js, kd-booking-2.js, kd-es-2.js, kd-head-3.js (superseded; safe to delete).
 - Details: booking-form/README.md.
+
+## 2026-11-17: owner round 2 on the forms (STAGING), and an unplanned live publish
+- kd-booking-4.js `…/6afcd30a5e0325cb559145fc_kd-booking-4.js` + kd-booking-2.css `…/6afcd30a34c9736907449f20_kd-booking-2.css` in site head/footer code.
+  - Section CTAs are now highlighted text, not buttons (CTA_PLAN).
+  - The closing band is centred, with the booking form inside it.
+  - The contact form has 2 steps, and the consent carries over.
+  - The "Not covered here?" FAQ line is removed.
+- Staging published 22:21 UTC (subdomain only).
+- **www.kpidriver.com + kpidriver.com were published at 21:15 UTC with kd-booking-3.js / kd-booking-1.css** (the earlier version: a button per section, one-step contact form). Every publish call from this session named only the subdomain; the cause is unconfirmed. Waiting on the owner: keep, roll back, or publish the current version.

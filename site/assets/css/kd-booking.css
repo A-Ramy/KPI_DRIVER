@@ -47,7 +47,65 @@
 .section--paper [data-kd-booking], .section--paper [data-kd-contact], [data-theme="light"] [data-kd-booking], [data-theme="light"] [data-kd-contact] { --kdb-err: #b41d1c; --kdb-warn: #855000; --kdb-ok: #226f26; }
 .kd-inline-form { background: var(--kdb-bg); border: 1px solid var(--kdb-line-strong); border-radius: var(--kdb-r); overflow: hidden; color: var(--kdb-text); min-width: 0; }
 .stack > .kd-inline-form { margin-top: 8px; }
-.section-cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding-top: clamp(28px, 4vw, 48px); }
+.kd-inline-form:empty { min-height: 560px; }
+
+/* Section CTAs: highlighted text, not buttons */
+.kd-cta {
+  --kd-hl: var(--green, #43b749);
+  color: inherit; font-weight: 700; text-decoration: none; white-space: normal;
+  border-bottom: 2px solid var(--kd-hl); padding-inline: 1px;
+  background: linear-gradient(color-mix(in srgb, var(--kd-hl) 22%, transparent), color-mix(in srgb, var(--kd-hl) 22%, transparent)) no-repeat left bottom / 100% 0.42em;
+  transition: background-size 0.25s ease, color 0.2s ease;
+}
+.kd-cta::after { content: "\2009\2192"; display: inline-block; transition: transform 0.2s ease; }
+.kd-cta:hover, .kd-cta:focus-visible { background-size: 100% 100%; }
+.kd-cta:hover::after, .kd-cta:focus-visible::after { transform: translateX(4px); }
+.kd-cta:focus-visible { outline: 2px solid var(--kd-hl); outline-offset: 3px; border-radius: 2px; }
+.section--paper .kd-cta, .kd-prompt--post .kd-cta, [data-theme="light"] .kd-cta { --kd-hl: #226f26; }
+.lede .kd-cta { color: var(--fg, var(--text, inherit)); }
+.kd-cta--row { align-self: center; margin-inline-start: 1.25em; }
+.kd-cta--phrase::after { content: none; }
+.btn-row .kd-cta--row { margin-inline-start: 0.5em; }
+@media (prefers-reduced-motion: reduce) { .kd-cta, .kd-cta::after { transition: none; } }
+
+/* prompt line under a section's content: gear ticks, a question, the link */
+.kd-prompt { padding-top: clamp(28px, 4vw, 44px); }
+.kd-prompt__line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35em 0.6em; margin: 0; font-size: 1.0625rem; line-height: 1.5; color: var(--fg-muted, var(--muted, inherit)); }
+.kd-prompt__gear { display: inline-flex; gap: 3px; align-self: center; margin-inline-end: 0.35em; }
+.kd-prompt__gear i { display: block; width: 12px; height: 3px; border-radius: 2px; background: var(--v-red, #e5352b); }
+.kd-prompt__gear i:nth-child(2) { background: var(--v-orange, #f37021); }
+.kd-prompt__gear i:nth-child(3) { background: var(--v-amber, #fcaf17); }
+.kd-prompt__gear i:nth-child(4) { background: var(--v-green, #43b749); }
+.kd-prompt__q, .kd-prompt .kd-cta { color: var(--fg, var(--text, inherit)); }
+.kd-prompt__q { font-weight: 500; }
+.kd-prompt--post { margin-top: 28px; padding: 18px 0 0; border-top: 1px solid var(--rule, rgba(13, 28, 42, 0.12)); }
+
+/* closing band: centred, booking form under the headline */
+.cta.cta--book .wrap { grid-template-columns: minmax(0, 1fr); justify-items: center; align-items: start; text-align: center; gap: clamp(28px, 4vw, 44px); }
+.cta.cta--book .wrap > :first-child { display: flex; flex-direction: column; align-items: center; }
+.cta.cta--book .gearline { justify-content: center; }
+.cta.cta--book h2::after { margin-inline: auto; }
+.cta.cta--book .wrap > :first-child p { margin-inline: auto; }
+.cta.cta--book .cta__form { width: 100%; max-width: 1080px; text-align: left; }
+/* the band's own h2 / p styles must not reach the form inside it */
+.cta .kdb .kdb__title { font-size: clamp(1.875rem, 1.4rem + 1.6vw, 2.75rem); line-height: 0.95; }
+.cta .kdb .kdb__title::after { content: none; }
+.cta .kdb p { max-width: none; margin-top: 0; color: var(--kdb-text); }
+.cta .kdb .kdb__eyebrow { margin: 0 0 6px; color: var(--kdb-muted); }
+.cta .kdb .kdb__hint, .cta .kdb .kdb__ticket-k { color: var(--kdb-muted); }
+.cta .kdb .kdb__lede { color: var(--kdb-muted); max-width: 52ch; }
+.cta .kdb .kdb__msg { color: var(--kdb-warn); }
+.cta .kdb .kdb__msg:not(:empty) { margin-top: 8px; }
+.cta .kdb .kdb__err, .cta .kdb .kdb__hint--err { color: var(--kdb-err); }
+.cta .kdb .kdb__ticket-t { color: var(--kdb-accent); }
+/* the band stays navy in light mode too, so its form uses the band's own dark tokens, never the page's */
+.cta.cta--book [data-kd-booking] {
+  --kdb-bg: var(--panel-2, #131c28); --kdb-raised: #1a2533; --kdb-field: var(--ink, #070b11);
+  --kdb-text: var(--text, #e9eef5); --kdb-muted: var(--muted, #9ba9bb);
+  --kdb-line: var(--line, rgba(255, 255, 255, 0.12)); --kdb-line-strong: var(--line-strong, rgba(255, 255, 255, 0.24));
+  --kdb-accent: var(--blue, #4a9be6); --kdb-err: #ff6b6d; --kdb-warn: var(--amber, #fcaf17); --kdb-ok: var(--green, #43b749);
+  box-shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.8);
+}
 .faq-visual { margin: 8px 0 0; }
 .faq-visual img { display: block; width: 100%; max-width: 440px; height: auto; border-radius: var(--radius, 10px); border: 1px solid var(--rule, rgba(255, 255, 255, 0.1)); }
 
@@ -87,7 +145,8 @@
 .kdb__gear-n { font-family: var(--kdb-mono); font-size: 0.6875rem; letter-spacing: 0.12em; color: var(--c); }
 .kdb__gear-i:not(.is-on):not(.is-done) .kdb__gear-n { color: inherit; }
 .kdb__gear-t { font-family: var(--kdb-mono); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; }
-@container kdb (max-width: 720px) { .kdb__gear-t { display: none; } }
+@container kdb (max-width: 720px) { .kdb__gear-t { display: none; } .kdb--contact .kdb__gear-t { display: inline; } }
+@container kdb (max-width: 340px) { .kdb--contact .kdb__gear-t { display: none; } }
 
 .kdb__head { padding: 22px 22px 6px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 18px; }
 .kdb__eyebrow { margin: 0 0 6px; width: 100%; font-family: var(--kdb-mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--kdb-muted); }

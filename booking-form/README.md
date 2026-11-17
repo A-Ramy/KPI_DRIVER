@@ -75,11 +75,24 @@ Installed through the **site-wide custom code**, not page embeds:
 - **Head** (after the existing Finsweet + Memberstack code): `kd-booking-1.css`
 - **Footer:** `window.KD_BOOKING_CONFIG` plus `kd-booking-3.js` (hosted Webflow assets, minified copies in `webflow/forms/`)
 
-At load the script (`enhancePage()` in `kd-booking.js`) brings the Webflow pages in line with the repo build:
+At load the script (`enhancePage()` in `kd-booking.js`) does the following, both on the Webflow pages and in the repo build (build.py no longer adds anything itself):
 - **Calendar links:** every booking link and scheduler link points at the one calendar.
-- **Booking buttons:** any `a[data-book]` (header, hero, section, CTA band, footer) opens the native popup and reports its own `booking_source`.
-- **Contact forms:** the old HighLevel contact embed becomes the native contact form ("Contact Us – Inquiry Form"). The FAQ sections of Home, Services, CRM, AI Suite and AI Agent get an embedded contact form ("<Page> – FAQ Contact Form"). The Contact Us FAQ gets an image instead.
-- **Section buttons:** every section without one gets a "Book a Discovery Call" style button, labelled `<Page> – <Section>`. The section name is its id, or "Hero", "Intro" or "Section N" (the same rule as build.py, so English and Spanish match).
+- **Booking triggers:** any `a[data-book]` or `[data-kd-book]` opens the native popup and reports its own `booking_source`, whether it's a button or text. `cta_type` says which kind: button, text link, inline form or contact form.
+- **Section CTAs (`CTA_PLAN`):** one per section, as highlighted text rather than a button, placed where the section asks for the next step. There are four styles:
+  - `lede`: a link at the end of the section's intro
+  - `prompt`: a question plus a link under the content
+  - `row`: joins the section's existing links
+  - `phrase`: turns words already in the text into the link
+
+  Each CTA's label is `<Page> – <Section>`, where the section is its id (or Hero / Intro / Section N without one).
+- **New content:** new sections on these pages get a default CTA automatically. New pages need one line in `CTA_PLAN`. New blog posts get an end-of-article line automatically (`Blog: <Post> – End of Article`).
+- **Closing band ("Make the gear shift."):** centred, with the booking form itself under the headline instead of a button (`<Page> – CTA Band`). It loads its free times only when scrolled near.
+- **Contact forms:** two steps.
+  - Step 1: first name, last name, email, phone.
+  - Step 2: business name, bundle, message.
+  - The SMS consent box shows on both steps with the same answer.
+  - The old HighLevel embed becomes this form ("Contact Us – Inquiry Form").
+  - FAQ sections on Home, Services, CRM, AI Suite and AI Agent embed it ("<Page> – FAQ Contact Form"), and their "Not covered here?" line is removed. The Contact Us FAQ gets an image instead.
 - **Booking page:** the scheduler embed becomes the inline booking form.
 
 Analytics events: `discovery_call_open`, `discovery_call_booked` and `contact_form_sent` are pushed to `dataLayer` with `booking_source`.

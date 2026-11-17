@@ -359,38 +359,7 @@ def forms_script(root):
     return f'<script>window.KD_BOOKING_CONFIG = {json.dumps(cfg)};</script>\n<script src="{root}assets/js/kd-booking.js" defer></script>'
 
 
-# Every section gets a booking button that opens the booking pop-up, tracked by its section ("Home – Lifecycle").
-CTA_TEXT = {
-    "See It Live on a Call": "workflow visibility capture find know kpis capabilities pipelines mobile how nurture ai-suite ai-agent",
-    "Talk It Through on a Call": "product-areas areas detail offerings difference model with-suite agent-note existing lifecycle",
-    "Start With a Discovery Call": "onboarding implementation support knowledge-base commitment team story experience reviews",
-}
-CTA_FOR = {sid: text for text, ids in CTA_TEXT.items() for sid in ids.split()}
-CTA_SKIP_PAGES = ("book-discovery-call.html", "blog.html", "post/", "blog-category/", "policies/")
-
-
-def section_ctas(html_, path):
-    if path.startswith(CTA_SKIP_PAGES):
-        return html_
-    seen = {"n": 0, "intro": False}
-    def add(m):
-        sec = m.group(0)
-        seen["n"] += 1
-        if "data-book" in sec or 'class="cta' in sec[:40]:
-            return sec
-        sid = (re.search(r'<section[^>]*\bid="([^"]+)"', sec) or [None, ""])[1]
-        if not sid:
-            # same naming rule as the runtime enhancer in kd-booking.js, so English and Spanish match
-            cls = (re.search(r'<section[^>]*\bclass="([^"]*)"', sec) or [None, ""])[1].split()
-            if "hero" in cls or "phead" in cls: sid = "hero"
-            elif not seen["intro"]: sid, seen["intro"] = "intro", True
-            else: sid = f"section-{seen['n']}"
-        label = sid.replace("-", " ")
-        text = CTA_FOR.get(sid, "Book a Discovery Call")
-        btn = (f'<div class="wrap section-cta"><a class="btn btn--primary" href="{book_attrs(PAGE_CAL)}" '
-               f'data-event="discovery_call_click" data-label="{label}">{text}</a></div>')
-        return sec[: -len("</section>")] + btn + "\n</section>"
-    return re.sub(r"<section\b.*?</section>", add, html_, flags=re.S)
+# Section CTAs are placed at runtime by booking-form/kd-booking.js (CTA_PLAN), the same code the Webflow site runs.
 
 
 def render(path, meta, body):
@@ -402,7 +371,7 @@ def render(path, meta, body):
         current = meta.get("nav", path)
         inner = f"""{nav(root, current, path)}
 <main id="main"{' class="is-blog"' if current == "blog.html" else ''}>
-{section_ctas(expand(body, root), path)}
+{expand(body, root)}
 </main>
 {footer(root)}
 <div class="revline" aria-hidden="true"></div>

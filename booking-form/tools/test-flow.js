@@ -113,17 +113,24 @@ async function fillStep(p) {
     await c.screenshot({ path: `${OUT}/${theme}-contact-1.png` });
     await c.click('[data-kd-contact] .kdb__btn--primary');
     const bad = await c.$$eval('[data-kd-contact] .kdb__field.is-invalid', e => e.length);
-    check(bad === 6, `${theme} contact: flags ${bad} required fields when empty (expect 6, message optional)`);
-    await c.evaluate(() => {
+    check(bad === 5, `${theme} contact step 1: flags ${bad} required fields when empty (expect 5: names, email, phone, consent)`);
+    const set = (vals) => c.evaluate(vals => {
       const f = document.querySelector('[data-kd-contact]');
-      const set = (n, v) => { const el = f.querySelector(`[name="${n}"]`); el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); };
-      set('firstName', 'Test'); set('lastName', 'Driver'); set('email', 'test.driver@example.com'); set('businessName', 'Example Holdings');
-      set('plan', "Don't Know Yet"); set('message', 'Hello from the demo.'); f.querySelector('[name="smsConsent"]').click();
-    });
+      for (const [n, v] of Object.entries(vals)) { const el = f.querySelector(`[name="${n}"]`); el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }
+    }, vals);
+    await set({ firstName: 'Test', lastName: 'Driver', email: 'test.driver@example.com', phone: '(305) 555-0100' });
+    await c.click('[data-kd-contact] [name="smsConsent"]');
+    await c.click('[data-kd-contact] .kdb__btn--primary'); await c.waitForSelector('[data-kd-contact] [name="businessName"]');
+    check(await c.isChecked('[data-kd-contact] [name="smsConsent"]'), `${theme} contact step 2: consent carried over from step 1`);
+    await c.screenshot({ path: `${OUT}/${theme}-contact-1b-step2.png` });
+    await c.click('[data-kd-contact] .kdb__btn--primary');
+    const bad2 = await c.$$eval('[data-kd-contact] .kdb__field.is-invalid', e => e.length);
+    check(bad2 === 2, `${theme} contact step 2: flags ${bad2} required fields when empty (expect 2: business, bundle; message optional)`);
+    await set({ businessName: 'Example Holdings', plan: "Don't Know Yet", message: 'Hello from the demo.' });
     await c.click('[data-kd-contact] .kdb__btn--primary'); await c.waitForSelector('[data-kd-contact] .kdb--done');
     await c.screenshot({ path: `${OUT}/${theme}-contact-2-sent.png` });
     const cp = await c.evaluate(() => window.KD_BOOKING_LAST_PAYLOAD);
-    check(cp.form === 'contact' && cp.first_name === 'Test' && cp.email === 'test.driver@example.com' && cp.your_message === 'Hello from the demo.', `${theme} contact: flat webhook payload`);
+    check(cp.form === 'contact' && cp.first_name === 'Test' && cp.email === 'test.driver@example.com' && cp.phone === '(305) 555-0100' && cp.your_message === 'Hello from the demo.', `${theme} contact: flat webhook payload`);
     check(cp.booking_source === 'Contact Us – Inquiry Form' && cp.campaign === 'Contact Us (SEO) Contact Us – Inquiry Form', `${theme} contact: source "${cp.booking_source}", campaign "${cp.campaign}"`);
     check(cp.sms_consent === 'Yes' && /822-8188/.test(cp.consent_text) && /Hello from the demo/.test(cp.note), `${theme} contact: consent + note included`);
     check(Object.values(cp).every(v => typeof v === 'string'), `${theme} contact: every value is a plain string (easy HighLevel mapping)`);

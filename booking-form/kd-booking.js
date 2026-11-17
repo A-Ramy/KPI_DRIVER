@@ -87,11 +87,16 @@
 
   /* contact form: same questions as the HighLevel "Contact Us" survey (hs57W9QgapW3WAyGZeZb) */
   var CONTACT_STEPS = [
-    { key: "contact", title: "Send a general inquiry", eyebrow: "Contact us", fields: [
+    { key: "details", title: "Send a general inquiry", gear: "Your details", eyebrow: "Contact us", fields: [
       { name: "firstName", std: "firstName", label: "First Name", type: "text", req: true, ph: "First Name", auto: "given-name", half: true },
       { name: "lastName", std: "lastName", label: "Last Name", type: "text", req: true, ph: "Last Name", auto: "family-name", half: true },
       { name: "email", std: "email", label: "Email", type: "email", req: true, ph: "Email", auto: "email", half: true },
-      { name: "businessName", key: "business_name", cf: "st1eCAFAHDcgPM4VvtNn", std: "companyName", label: "Business Name", type: "text", req: true, ph: "Business Name", auto: "organization", half: true },
+      { name: "phone", std: "phone", label: "Phone", type: "tel", req: true, ph: "Phone", auto: "tel", half: true },
+      { name: "smsConsent", label: CFG.contactConsentText || CONSENT_TEXT, type: "consent", req: true }
+    ] },
+    // the consent box shows again here, already ticked: it is the same answer, not a second consent
+    { key: "inquiry", title: "Your inquiry", gear: "Your inquiry", eyebrow: "Contact us", fields: [
+      { name: "businessName", key: "business_name", cf: "st1eCAFAHDcgPM4VvtNn", std: "companyName", label: "Business Name", type: "text", req: true, ph: "Business Name", auto: "organization" },
       { name: "plan", key: "which_bundle_are_you_interested_in", cf: "zntmhqZEVR510izM1Amv", label: "Which Bundle Are You Interested In", type: "select", req: true, options: ["Enterprise Optimization Suite + AI Agent", "Enterprise Optimization Suite", "Don't Know Yet"] },
       { name: "message", key: "your_message", cf: "2qGuyylBHmeIFy4ZQITo", label: "Your Message", type: "textarea", ph: "Your Message" },
       { name: "smsConsent", label: CFG.contactConsentText || CONSENT_TEXT, type: "consent", req: true }
@@ -108,14 +113,16 @@
   function titleCase(s) {
     return String(s || "").replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim()
       .replace(/\b(crm|ai|cta|seo|ppc|faq|kpi)\b/gi, function (w) { return w.toUpperCase(); }).replace(/\bkpis\b/gi, "KPIs").replace(/\bKPI Driver\b/g, "KPI DRIVER")
-      .replace(/\b[a-z]/g, function (c) { return c.toUpperCase(); });
+      .replace(/\b[a-z]/g, function (c) { return c.toUpperCase(); })
+      .replace(/(\S) (A|An|The|And|Or|Of|On|In|To|For|At|By|With)(?= )/g, function (m, p, w) { return p + " " + w.toLowerCase(); });
   }
   function pageName() {
     var path = location.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "").replace(/\/+$/, "") || "/";
     var es = /^\/es(\/|$)/.test(path);
     if (es) path = path.replace(/^\/es/, "") || "/";
     var name = PAGE_NAMES[path];
-    if (!name && /^\/blog\//.test(path)) name = "Blog: " + titleCase(path.split("/").pop());
+    if (!name && /^\/(blog|post)\//.test(path)) name = "Blog: " + titleCase(path.split("/").pop());
+    if (!name && /^\/blog-category\//.test(path)) name = "Blog Category: " + titleCase(path.split("/").pop());
     if (!name) name = (document.title.split(/[|—–]/)[0] || "").trim() || path;
     return es ? name + " (ES)" : name;
   }
@@ -246,7 +253,7 @@
     this.host = host; this.opts = opts || {}; this.id = "kdb" + (++uid);
     this.kind = this.opts.kind === "contact" ? "contact" : "booking";
     this.steps = this.kind === "contact" ? CONTACT_STEPS : STEPS;
-    this.state = { step: 0, tz: BROWSER_TZ, slot: null, view: null, data: {}, source: this.opts.source || pageName() + CFG.sourceSeparator + (this.kind === "contact" ? "Inquiry Form" : "Booking Page"), ctaLabel: this.opts.ctaLabel || "" };
+    this.state = { step: 0, tz: BROWSER_TZ, slot: null, view: null, data: {}, source: this.opts.source || pageName() + CFG.sourceSeparator + (this.kind === "contact" ? "Inquiry Form" : "Booking Page"), ctaLabel: this.opts.ctaLabel || "", ctaType: this.opts.ctaType || "" };
     var now = parts(new Date(), this.state.tz); this.state.view = { y: now.y, m0: now.m - 1 };
     this.render();
   }
@@ -256,8 +263,8 @@
     this.host.innerHTML = "";
     this.root = h("form", { class: "kdb kdb--" + this.kind + " keep-case", "data-no-tc": "", novalidate: true, "aria-labelledby": this.id + "-title", onsubmit: function (e) { e.preventDefault(); self.next(); } });
     // progress: the gear line, one segment per step
-    var gear = STEPS.length < 2 ? null : h("ol", { class: "kdb__gear", "aria-label": "Booking progress" }, STEPS.map(function (st, i) {
-      return h("li", { class: "kdb__gear-i" + (i < s.step ? " is-done" : "") + (i === s.step ? " is-on" : ""), "aria-current": i === s.step ? "step" : null }, [h("span", { class: "kdb__gear-n", text: "0" + (i + 1) }), h("span", { class: "kdb__gear-t", text: st.title })]);
+    var gear = STEPS.length < 2 ? null : h("ol", { class: "kdb__gear", "aria-label": this.kind === "contact" ? "Form progress" : "Booking progress" }, STEPS.map(function (st, i) {
+      return h("li", { class: "kdb__gear-i" + (i < s.step ? " is-done" : "") + (i === s.step ? " is-on" : ""), "aria-current": i === s.step ? "step" : null }, [h("span", { class: "kdb__gear-n", text: "0" + (i + 1) }), h("span", { class: "kdb__gear-t", text: st.gear || st.title })]);
     }));
     var st = STEPS[s.step];
     var head = h("div", { class: "kdb__head" }, [
@@ -477,6 +484,7 @@
       booking_source: s.source,
       campaign: campaign,
       cta_label: s.ctaLabel,
+      cta_type: s.ctaType || "inline form",
       slot: this.kind === "contact" ? null : { start: new Date(s.slot).toISOString(), end: new Date(s.slot + CFG.durationMin * 60000).toISOString(), timezone: s.tz, display: fmt(new Date(s.slot), s.tz, { dateStyle: "full", timeStyle: "short" }) },
       contact: contact,
       customFields: custom,
@@ -494,10 +502,10 @@
     var tags = ["website contact form", ("src: " + s.source).toLowerCase()];
     var out = {
       form: "contact",
-      first_name: contact.firstName || "", last_name: contact.lastName || "", email: contact.email || "",
+      first_name: contact.firstName || "", last_name: contact.lastName || "", email: contact.email || "", phone: contact.phone || "",
       business_name: d.businessName || "", which_bundle_are_you_interested_in: d.plan || "", your_message: d.message || "",
       sms_consent: d.smsConsent ? "Yes" : "No", consent_text: consentText, consent_timestamp: now, consent_page: location.href,
-      campaign: campaign, booking_source: s.source, cta_label: s.ctaLabel || "", tags: tags.join(", "),
+      campaign: campaign, booking_source: s.source, cta_label: s.ctaLabel || "", cta_type: s.ctaType || "contact form", tags: tags.join(", "),
       contact_source: "SEO", timezone: s.tz, lang: CFG.lang,
       page_url: location.href, page_title: document.title, landing_page: a.landing_page, referrer: a.first_referrer || document.referrer || "",
       utm_source: a.utm_source, utm_medium: a.utm_medium, utm_campaign: a.utm_campaign, utm_term: a.utm_term, utm_content: a.utm_content,
@@ -598,9 +606,9 @@
     document.body.appendChild(dlg);
     return dlg;
   }
-  function open(source, ctaLabel) {
+  function open(source, ctaLabel, ctaType) {
     var d = dialog(), body = d.querySelector(".kdb-dialog__body");
-    current = new Booking(body, { source: source, ctaLabel: ctaLabel });
+    current = new Booking(body, { source: source, ctaLabel: ctaLabel, ctaType: ctaType || "button" });
     if (d.showModal) d.showModal(); else d.setAttribute("open", "");
     current.focusTitle();
     try { (window.dataLayer = window.dataLayer || []).push({ event: "discovery_call_open", booking_source: source }); } catch (e) {}
@@ -610,27 +618,130 @@
     var a = e.target.closest && e.target.closest("a[data-book], [data-kd-book]");
     if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
     e.preventDefault(); e.stopImmediatePropagation();
-    open(sourceFrom(a), a.getAttribute("data-label") || "");
+    open(sourceFrom(a), a.getAttribute("data-label") || "", a.getAttribute("data-cta-type") || (/\bbtn\b/.test(a.className) ? "button" : "text link"));
   }, true);
   /* ---------- page enhancement (Webflow pages whose HTML predates the native forms) ----------
      Same result as the static build's section_ctas(): every content section gets a tracked booking button,
      FAQ sections get the contact form, the old HighLevel survey / scheduler embeds become the native forms.
      Anything already present is left alone, so it is a no-op on pages built with these changes. */
-  var CTA_ES = { "Book a Discovery Call": "Agenda una llamada de descubrimiento", "See It Live on a Call": "Míralo en vivo en una llamada",
-    "Talk It Through on a Call": "Hablémoslo en una llamada", "Start With a Discovery Call": "Empieza con una llamada de descubrimiento" };
-  var CTA_FOR = {};
-  [["See It Live on a Call", "workflow visibility capture find know kpis capabilities pipelines mobile how nurture ai-suite ai-agent"],
-   ["Talk It Through on a Call", "product-areas areas detail offerings difference model with-suite agent-note existing lifecycle"],
-   ["Start With a Discovery Call", "onboarding implementation support knowledge-base commitment team story experience reviews"]]
-    .forEach(function (r) { r[1].split(" ").forEach(function (id) { CTA_FOR[id] = r[0]; }); });
+  /* Section CTAs. Text, not buttons: each sits where the section naturally asks for the next step.
+       lede   = highlighted link at the end of the section's intro paragraph
+       prompt = one line under the section's content: a question, then the link
+       row    = joins the section's existing links ("Explore the CRM →  Book a discovery call →")
+       phrase = turns words already in the intro ("Book a discovery call") into the link
+     Each entry: [type, link text, question (prompt only), Spanish link, Spanish question].
+     Sections not listed (new ones) get the default below, so new sections are covered automatically.
+     The tracked label is the section id ("Home – Lifecycle"), or Hero / Intro / Section N without one. */
+  var Q_CALL = "Book a Discovery Call", Q_CALL_ES = "Agenda una llamada de descubrimiento";
+  var CTA_PLAN = {
+    "/": {
+      intro: ["prompt", "Ask Us on a Discovery Call", "Not Sure Which Part You Need First?", "Pregúntanos en una llamada de descubrimiento", "¿No sabes por dónde empezar?"],
+      lifecycle: ["prompt", "Walk Through It on a Call", "Want Your Own Pipelines Mapped Like This?", "Revísalo con nosotros en una llamada", "¿Quieres tus propios pipelines organizados así?"],
+      visibility: ["lede", "See Your KPIs Live on a Call", "", "Mira tus KPIs en vivo en una llamada"],
+      "product-areas": ["row", "Or Book a Discovery Call", "", "O agenda una llamada de descubrimiento"],
+      "ai-suite": ["row", "See the Tools on a Call", "", "Mira las herramientas en una llamada"],
+      workflow: ["prompt", Q_CALL, "Want to Hear It on One of Your Own Calls?", Q_CALL_ES, "¿Quieres escucharlo con una de tus propias llamadas?"],
+      "ai-agent": ["row", "Plan Your Rules on a Call", "", "Define tus reglas en una llamada"],
+      experience: ["row", "Talk to Them on a Call", "", "Habla con ellos en una llamada"],
+      support: ["lede", "Meet Your Team on a Call", "", "Conoce a tu equipo en una llamada"],
+      onboarding: ["prompt", "Book Yours Now", "Step One Is a 45-Minute Discovery Call.", "Agenda la tuya", "El primer paso es una llamada de descubrimiento de 45 minutos."],
+      reviews: ["prompt", Q_CALL, "Want Results Like These?", Q_CALL_ES, "¿Quieres resultados como estos?"]
+    },
+    "/services": {
+      areas: ["lede", "Not Sure Which You Need? Ask on a Call", "", "¿No sabes cuál necesitas? Pregunta en una llamada"],
+      detail: ["prompt", Q_CALL, "Want to Compare Them Against Your Setup?", Q_CALL_ES, "¿Quieres compararlos con tu operación actual?"],
+      lifecycle: ["prompt", "Walk Through It on a Call", "Want Your Own Pipelines Mapped Like This?", "Revísalo con nosotros en una llamada", "¿Quieres tus propios pipelines organizados así?"],
+      support: ["lede", "Meet Your Team on a Call", "", "Conoce a tu equipo en una llamada"]
+    },
+    "/services/crm": {
+      pipelines: ["prompt", "Map It Out on a Call", "Want Your Teams Set Up This Way?", "Diséñalo en una llamada", "¿Quieres a tus equipos organizados así?"],
+      capabilities: ["prompt", "See It Live on a Call", "Curious How It Fits Your Daily Work?", "Míralo en vivo en una llamada", "¿Te preguntas cómo encaja en tu día a día?"],
+      kpis: ["lede", "See the Dashboard Live on a Call", "", "Mira el dashboard en vivo en una llamada"],
+      mobile: ["lede", "See the App on a Call", "", "Mira la app en una llamada"],
+      "with-suite": ["row", "Or See Both on a Call", "", "O míralos juntos en una llamada"],
+      implementation: ["prompt", "Book Yours Now", "Implementation Starts with a Discovery Call.", "Agenda la tuya", "La implementación empieza con una llamada de descubrimiento."]
+    },
+    "/services/ai-suite": {
+      model: ["prompt", "Ask on a Discovery Call", "Want to Know What Usage Would Cost Your Team?", "Pregunta en una llamada de descubrimiento", "¿Quieres saber cuánto costaría el uso para tu equipo?"],
+      capture: ["prompt", "See It Live on a Call", "Want to Hear It on Your Own Calls?", "Míralo en vivo en una llamada", "¿Quieres oírlo con tus propias llamadas?"],
+      find: ["prompt", "Walk Through It on a Call", "Want Cleaner Data Behind Your Decisions?", "Revísalo en una llamada", "¿Quieres datos más limpios detrás de tus decisiones?"],
+      know: ["prompt", Q_CALL, "Want to Find Where Your Money Is Leaking?", Q_CALL_ES, "¿Quieres encontrar dónde se te escapa el dinero?"],
+      workflow: ["prompt", Q_CALL, "Want to Hear It on One of Your Own Calls?", Q_CALL_ES, "¿Quieres escucharlo con una de tus propias llamadas?"],
+      nurture: ["lede", "See Nurture Work on a Call", "", "Mira Nurture en acción en una llamada"],
+      "knowledge-base": ["lede", "Get a Walkthrough on a Call", "", "Recibe un recorrido en una llamada"],
+      "agent-note": ["row", "Or Ask About It on a Call", "", "O pregunta por él en una llamada"]
+    },
+    "/services/ai-agent": {
+      capabilities: ["prompt", "Set It Up on a Call", "Want Follow-Up That Never Forgets?", "Configúralo en una llamada", "¿Quieres un seguimiento que nunca se olvida?"],
+      how: ["prompt", "Plan Them on a Discovery Call", "Ready to Write Your Rules?", "Planéalas en una llamada de descubrimiento", "¿Listo para definir tus reglas?"],
+      difference: ["row", "Not Sure Which You Need? Ask on a Call", "", "¿No sabes cuál necesitas? Pregunta en una llamada"]
+    },
+    "/our-team": {
+      hero: ["lede", "Meet Them on a Discovery Call", "", "Conócelos en una llamada de descubrimiento"],
+      story: ["prompt", Q_CALL, "Want to Hear the Story Firsthand?", Q_CALL_ES, "¿Quieres escuchar la historia de primera mano?"],
+      team: ["prompt", Q_CALL, "These Are the People on Your Call.", Q_CALL_ES, "Estas son las personas de tu llamada."],
+      commitment: ["prompt", "Start with a Discovery Call", "Want That Commitment Behind Your Business?", "Empieza con una llamada de descubrimiento", "¿Quieres ese compromiso detrás de tu negocio?"]
+    },
+    "/contact-us": {
+      hero: ["phrase", "Book a Discovery Call", "", "Agenda una llamada de descubrimiento"],
+      faq: ["prompt", Q_CALL, "Rather Talk It Through Live?", Q_CALL_ES, "¿Prefieres hablarlo en vivo?"]
+    }
+  };
+  var CTA_DEFAULT = { lede: ["lede", "Talk It Through on a Call", "", "Hablémoslo en una llamada"],
+    prompt: ["prompt", Q_CALL, "Want to See How This Works for Your Team?", Q_CALL_ES, "¿Quieres ver cómo funciona para tu equipo?"] };
+  // blog posts (English, sentence case like the rest of the article): one line at the end of the article
+  var CTA_POST = ["prompt", "Book a discovery call", "Want this running in your own operation?"];
+
+  function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  function ctaLink(text, label, extra) {
+    return '<a class="kd-cta' + (extra || "") + '" href="' + CFG.fallbackUrl + '" target="_blank" rel="noopener" data-book="' + CFG.calendarId +
+      '" data-cta-type="text link" data-event="discovery_call_click" data-label="' + esc(label) + '">' + esc(text) + "</a>";
+  }
+  function promptHtml(q, a, label) {
+    return '<p class="kd-prompt__line"><span class="kd-prompt__gear" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="kd-prompt__q">' + esc(q) + "</span> " + ctaLink(a, label) + "</p>";
+  }
+  function introLede(sec) {
+    var all = sec.querySelectorAll(".head .lede, .stack > .lede, .phead__copy .lede, .wrap > .lede, .split .lede");
+    for (var i = 0; i < all.length; i++) if (!all[i].closest("article, li, .card, .spec, .faq")) return all[i];
+    return null;
+  }
+  function linkRow(sec) {
+    var rows = sec.querySelectorAll(".btn-row, p");
+    for (var i = rows.length - 1; i >= 0; i--) {
+      var r = rows[i];
+      if (r.closest(".triad, .cols, .offers, .compare-cols, .team, .faq, .reviews__fallback, .kd-prompt, article, li")) continue;
+      if (r.querySelector("a.link, a.btn")) return r;
+    }
+    return null;
+  }
+  function placeCta(sec, label, plan, es) {
+    var type = plan[0], text = es && plan[3] ? plan[3] : plan[1], q = es && plan[4] ? plan[4] : plan[2];
+    var lede = type === "lede" || type === "phrase" ? introLede(sec) : null, row = type === "row" ? linkRow(sec) : null;
+    if (type === "phrase" && lede) {
+      // wrap the words already in the intro, in whichever case the page shows them
+      var walker = document.createTreeWalker(lede, NodeFilter.SHOW_TEXT), n, re = new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
+      while ((n = walker.nextNode())) {
+        var m = re.exec(n.nodeValue); if (!m) continue;
+        var after = n.splitText(m.index); after.splitText(m[0].length);
+        var tmp = document.createElement("span"); tmp.innerHTML = ctaLink(m[0], label, " kd-cta--phrase"); after.parentNode.replaceChild(tmp.firstChild, after);
+        return true;
+      }
+      type = "lede"; text = es ? CTA_DEFAULT.lede[3] : CTA_DEFAULT.lede[1];
+    }
+    if (type === "lede" && lede) { lede.insertAdjacentHTML("beforeend", " " + ctaLink(text, label)); return true; }
+    if (type === "row" && row) { row.insertAdjacentHTML("beforeend", ctaLink(text, label, " kd-cta--row")); return true; }
+    if (type !== "prompt") { q = es ? CTA_DEFAULT.prompt[4] : CTA_DEFAULT.prompt[2]; text = es ? CTA_DEFAULT.prompt[3] : CTA_DEFAULT.prompt[1]; }
+    sec.insertAdjacentHTML("beforeend", '<div class="wrap kd-prompt">' + promptHtml(q, text, label) + "</div>");
+    return true;
+  }
+
   function enhancePage() {
-    var path = location.pathname.replace(/\/+$/, "") || "/", es = /^\/es(\/|$)/.test(path);
+    var path = location.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "").replace(/\/+$/, "") || "/", es = /^\/es(\/|$)/.test(path);
     if (es) path = path.replace(/^\/es/, "") || "/";
     var main = document.getElementById("main"); if (!main) return;
     // every booking link points at the one live calendar (matters for ctrl/cmd-click and no-JS)
     [].forEach.call(document.querySelectorAll("a[data-book]"), function (a) { a.setAttribute("data-book", CFG.calendarId); });
     [].forEach.call(document.querySelectorAll('a[href*="/widget/booking/"]'), function (a) { a.setAttribute("href", CFG.fallbackUrl); });
-    var pages = /^\/(|services|services\/(crm|ai-suite|ai-agent)|our-team|contact-us|thank-you)$/;
     // old HighLevel embeds → native forms
     [].forEach.call(main.querySelectorAll(".ghl-form"), function (el) {
       el.outerHTML = '<div class="kd-inline-form" data-kd-contact data-placement="Inquiry Form"></div>';
@@ -638,7 +749,24 @@
     [].forEach.call(main.querySelectorAll("[data-booking]"), function (el) {
       el.outerHTML = '<div class="kd-inline-form" data-kd-booking data-placement="Booking Page"></div>';
     });
-    if (!pages.test(path)) return;
+    // closing band ("Make the gear shift."): centred, with the booking form itself in place of the button
+    var hasBooking = !!main.querySelector("[data-kd-booking]");
+    [].forEach.call(document.querySelectorAll("section.cta"), function (band) {
+      if (band.querySelector("[data-kd-booking]")) return;
+      var btns = band.querySelector(".btn-row");
+      if (hasBooking) return;                      // the booking page already shows the form
+      band.classList.add("cta--book");
+      var form = '<div class="kd-inline-form cta__form" data-kd-booking data-placement="CTA Band"></div>';
+      if (btns) btns.outerHTML = form; else (band.querySelector(".wrap") || band).insertAdjacentHTML("beforeend", form);
+      hasBooking = true;
+    });
+    // blog posts: one line at the end of the article
+    if (/^\/(post|blog)\/[^/]+$/.test(path)) {
+      var body = main.querySelector(".article__body");
+      if (body && !main.querySelector(".kd-prompt")) body.insertAdjacentHTML("afterend", '<div class="kd-prompt kd-prompt--post">' + promptHtml(CTA_POST[2], CTA_POST[1], "end of article") + "</div>");
+      return;
+    }
+    var plan = CTA_PLAN[path]; if (!plan) return;
     // FAQ: contact form beside the questions (the Contact page already has one, so it gets an image)
     var faq = main.querySelector("#faq .stack");
     if (faq && !faq.querySelector("[data-kd-contact], .faq-visual")) {
@@ -646,23 +774,34 @@
         ? '<figure class="faq-visual"><img src="' + CFG.faqImage + '" alt="' + (es ? "El CRM de KPI DRIVER en un teléfono" : "The KPI DRIVER CRM on a phone: pipeline, conversations and KPI dashboards") + '" loading="lazy" width="900" height="900"></figure>'
         : '<div class="kd-inline-form" data-kd-contact data-placement="FAQ Contact Form"></div>');
     }
-    // a booking button in every section that has none
+    // the old "Not covered here? Send us a message." line points at the form that is now right there
+    if (faq && faq.querySelector("[data-kd-contact]")) [].forEach.call(faq.querySelectorAll("p"), function (p) {
+      if (/^\s*(not covered here|¿no está)/i.test(p.textContent) && !p.closest("[data-kd-contact]")) p.remove();
+    });
+    // one CTA per section that has none
     var intro = false;
     [].forEach.call(main.querySelectorAll("section"), function (sec, i) {
-      if (sec.classList.contains("cta") || sec.querySelector("[data-book], .section-cta, [data-kd-booking]")) return;
+      if (sec.parentElement.closest("section") || sec.classList.contains("cta")) return;
+      if (sec.querySelector("[data-book], [data-kd-book], [data-kd-booking], [data-kd-contact], .kd-cta")) return;
       var id = sec.id;
-      // same naming rule as build.py section_ctas(), so English and Spanish pages match
+      // same naming rule as before (build.py used it too), so English and Spanish pages match
       if (!id) id = sec.classList.contains("hero") || sec.classList.contains("phead") ? "hero" : !intro ? (intro = true, "intro") : "section-" + (i + 1);
-      var text = CTA_FOR[id] || "Book a Discovery Call";
-      sec.insertAdjacentHTML("beforeend", '<div class="wrap section-cta"><a class="btn btn--primary" href="' + CFG.fallbackUrl + '" target="_blank" rel="noopener" data-book="' + CFG.calendarId +
-        '" data-event="discovery_call_click" data-label="' + id.replace(/-/g, " ") + '">' + (es ? CTA_ES[text] : text) + "</a></div>");
+      placeCta(sec, id.replace(/-/g, " "), plan[id] || (introLede(sec) ? CTA_DEFAULT.lede : CTA_DEFAULT.prompt), es);
     });
   }
 
   function mountInline() {
-    [].forEach.call(document.querySelectorAll("[data-kd-booking]"), function (el) {
+    // booking forms build when they come near the screen, so pages don't ask for free times nobody looks at
+    var io = "IntersectionObserver" in window ? new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { io.unobserve(e.target); build(e.target); } });
+    }, { rootMargin: "800px 0px" }) : null;
+    function build(el) {
       if (el.__kdb) return;
-      el.__kdb = new Booking(el, { source: el.getAttribute("data-kd-booking-source") || pageName() + CFG.sourceSeparator + titleCase(el.getAttribute("data-placement") || "Booking Page") });
+      el.__kdb = new Booking(el, { source: el.getAttribute("data-kd-booking-source") || pageName() + CFG.sourceSeparator + titleCase(el.getAttribute("data-placement") || "Booking Page"), ctaType: "inline form" });
+    }
+    [].forEach.call(document.querySelectorAll("[data-kd-booking]"), function (el) {
+      if (el.__kdb || el.__kdbWait) return;
+      if (io) { el.__kdbWait = true; io.observe(el); } else build(el);
     });
     [].forEach.call(document.querySelectorAll("[data-kd-contact]"), function (el) {
       if (el.__kdb) return;

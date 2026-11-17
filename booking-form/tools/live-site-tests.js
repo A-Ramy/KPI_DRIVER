@@ -106,8 +106,10 @@ async function fillStep(page, root, person, n) {
     await p.waitForTimeout(1200);
     const form = p.locator(sel).first(); await form.scrollIntoViewIfNeeded();
     const rootSel = await form.evaluate(el => { el.setAttribute('data-test-target', '1'); return '[data-test-target="1"]'; });
-    await fillStep(p, rootSel, person, n);
-    await p.click(`${rootSel} .kdb__btn--primary`);
+    for (let step = 1; step <= 2; step++) {        // two steps: details, then the inquiry (consent carries over)
+      await fillStep(p, rootSel, person, n);
+      await p.click(`${rootSel} .kdb__btn--primary`); await p.waitForTimeout(300);
+    }
     await p.waitForSelector(`${rootSel} .kdb--done, ${rootSel} .kdb__msg:not(:empty)`, { timeout: 30000 });
     await p.waitForTimeout(800);
     await form.screenshot({ path: path.join(OUT, `live-contact-${n - 2}.png`) });
