@@ -400,3 +400,41 @@
   };
   var sc = d.createElement("script"); sc.src = window.KD_POSTS_URL; sc.async = true; d.head.appendChild(sc);
 })();
+
+/* ===================== v3: owner fixes (2026-11-17) ===================== */
+(function () {
+  var d = document, r = d.documentElement, es = r.lang === "es";
+  /* client logins and CRM status open in a new tab; status points at the HighLevel status page */
+  d.querySelectorAll("a[href]").forEach(function (a) {
+    if (/pulsetic\.com\/status/.test(a.getAttribute("href"))) a.href = "https://status.gohighlevel.com/";
+    if (/^https:\/\/(crm\.kpidriver\.com|kpidriver\.ai|status\.gohighlevel\.com)/.test(a.href)) { a.target = "_blank"; a.rel = "noopener"; }
+  });
+  /* services menu: hover where the full nav is visible, tap the arrow on phones */
+  var tg = d.querySelector(".nav-toggle"), item = d.querySelector(".nav__item--has-menu"), menu = d.getElementById("services-menu");
+  var hov = window.matchMedia && matchMedia("(hover: hover)");
+  function desk() { return !!(hov && hov.matches && tg && getComputedStyle(tg).display === "none"); }
+  function mark() { r.classList.toggle("nav-hover", desk()); }
+  mark(); addEventListener("resize", mark);
+  if (item && menu) {
+    var t;
+    item.addEventListener("mouseenter", function () { if (!desk()) return; clearTimeout(t); menu.hidden = false; });
+    item.addEventListener("mouseleave", function () { if (!desk()) return; t = setTimeout(function () { menu.hidden = true; }, 160); });
+  }
+  /* close the client login menu after choosing or clicking elsewhere */
+  d.addEventListener("click", function (e) { d.querySelectorAll("details.login[open]").forEach(function (x) { if (!x.contains(e.target) || e.target.closest("a")) x.open = false; }); });
+  /* CTA band: embed the booking calendar in place of the button */
+  var cal = false;
+  d.querySelectorAll(".cta").forEach(function (s) {
+    var a = s.querySelector("a[data-book]"); if (!a || s.querySelector(".cta__cal")) return;
+    var id = a.getAttribute("data-book"), src = "https://link.kpidriver.com/widget/booking/" + id, row = a.closest(".btn-row") || a;
+    var box = d.createElement("div"); box.className = "cta__book";
+    box.innerHTML = '<div class="cta__cal"><iframe src="' + src + '" scrolling="no" id="' + id + '_cta" title="' + (es ? "Agenda una llamada de descubrimiento con KPI DRIVER" : "Schedule a discovery call with KPI DRIVER") + '"></iframe></div><p class="note"><a class="link" href="' + src + '" target="_blank" rel="noopener">' + (es ? "¿No carga el calendario? Ábrelo en otra pestaña" : "Calendar not loading? Open it in a new tab") + "</a></p>";
+    row.parentNode.replaceChild(box, row); s.classList.add("cta--cal"); cal = true;
+  });
+  if (cal && !d.querySelector('script[src*="form_embed.js"]')) { var sc = d.createElement("script"); sc.src = "https://link.kpidriver.com/js/form_embed.js"; d.body.appendChild(sc); }
+  /* reviews: hide the fallback note once Boast or Elfsight has rendered (Boast replaces its placeholder element) */
+  var n = 0, iv = setInterval(function () {
+    d.querySelectorAll("[data-reviews]:not(.is-loaded)").forEach(function (b) { if (b.querySelector("boast-display-widget .swiper-slide, [class*='eapps-'], [class^='elfsight-app-'] > *")) b.classList.add("is-loaded"); });
+    if (++n > 40 || !d.querySelector("[data-reviews]:not(.is-loaded)")) clearInterval(iv);
+  }, 500);
+})();

@@ -17,7 +17,7 @@ SRC, OUT = ROOT / "src", ROOT / "site"
 ORIGIN = "https://www.kpidriver.com"
 PRODUCTION = "--production" in sys.argv
 BOOKING_URL = "https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L"
-STATUS_URL = "https://app.pulsetic.com/status/bXxHxF27/"
+STATUS_URL = "https://status.gohighlevel.com/"
 BOOK_BASE = "https://link.kpidriver.com/widget/booking/"
 # Booking calendars, as embedded on the current live site (one per placement).
 CAL = {"header": "17jl7cP7dvOAU48s6C3L", "footer": "l4rvIxCnb9DtsSTM6SoQ", "home": "9g3ccVyd2a9NsV51QuKN",

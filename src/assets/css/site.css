@@ -777,3 +777,26 @@ body { text-transform: capitalize; }
 .ghl-form { display: grid; gap: 14px; align-content: start; }
 .ghl-form__frame { background: #fff; border: 1px solid var(--rule); border-radius: var(--radius, 10px); overflow: hidden; min-height: 620px; }
 .ghl-form__frame iframe { display: block; min-height: 620px; }
+
+/* ---------- v3 owner fixes (2026-11-17) ---------- */
+/* Services menu opens on hover where the full nav shows (JS adds .nav-hover); the arrow button is not needed there */
+.nav-hover .nav__trigger { display: none; }
+.nav-hover .nav__item--has-menu:focus-within > .nav__menu { display: block; }
+.nav-hover .nav__menu::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+/* Client login: centred under its button, labels only */
+.login > div { left: 50%; right: auto; transform: translateX(-50%); min-width: 168px; }
+.login a { text-align: center; }
+.login a span { display: none; }
+/* Webflow pagination buttons: keep label and arrow on one line */
+.w-pagination-next, .w-pagination-previous { display: inline-flex !important; align-items: center; gap: 8px; white-space: nowrap; width: auto !important; height: auto !important; padding: 12px 18px !important; }
+.w-pagination-next > div, .w-pagination-previous > div { display: inline !important; }
+.w-pagination-next svg, .w-pagination-previous svg { flex: none; transform: none; }
+/* Boast video cards use a u-cursor-pointer class that the old-cursor hide rule caught */
+boast-display-widget .response-carousel-card { display: block !important; }
+/* CTA band with the booking calendar embedded */
+.cta--cal .wrap { align-items: start; }
+@media (min-width: 900px) { .cta--cal .wrap { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+.cta__book { display: grid; gap: 12px; }
+.cta__cal { background: #ffffff; border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; min-height: 680px; }
+.cta__cal iframe { display: block; width: 100%; min-height: 680px; border: 0; }
+.cta__book .note { text-align: right; }

@@ -88,3 +88,15 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Published to www.kpidriver.com + kpidriver.com (three publishes: launch, then two sitemap clean-ups).
 - Verified live: all main pages 200, /es and /es/services/* in Spanish, old-* pages 404, article covers + related posts, JSON-LD present, no horizontal scroll on mobile.
 - Sitemap: member pages + knowledge base categories (6) + articles (33) excluded in EN and ES. All 45 posts listed.
+
+## 2026-11-17: owner fixes, round 1 after launch (live)
+- kd-site-2.css `…/6afc3ad0e9c990f48c2ea42d_kd-site-2.css` + kd-site-4.js `…/6afc3ad01cbf020bc26c2ab7_kd-site-4.js` on every page (home, 404, template, all new pages, blog list/category/post templates).
+  - Services menu opens on hover (desktop, JS adds html.nav-hover; arrow hidden there, kept on phones).
+  - Client login menu centred, labels only; CRM/AI Suite logins + CRM Status open in a new tab; CRM Status -> https://status.gohighlevel.com/ (JS rewrite of old pulsetic link; source partials updated too).
+  - Every CTA band (.cta with a[data-book]) now embeds that booking calendar (GHL iframe + form_embed.js) instead of the button.
+  - Boast cards were hidden by the old-cursor rule `[class*=cursor]` (matches `u-cursor-pointer`); override added. Reviews fallback note hides once Boast/Elfsight render.
+  - Webflow pagination Next/Prev on one line.
+- Thumbnails: `tools/thumbs.js` -> `webflow/thumbs/` (900x900, centred for the 220x300 / 350x300 list crops); set on all 45 posts' Thumbnail image.
+- Deleted empty categories: Webinars & Events, Product News & Updates, Case Studies (Industry Insights and Tips & Tricks have posts, kept).
+- Site-wide footer code (old counter + jQuery 2.1.3) removed; copy in webflow/rollback/site-footer-code-old.html.
+- Drafts folder: needs the Designer companion app open (create_page_folder), pending.
