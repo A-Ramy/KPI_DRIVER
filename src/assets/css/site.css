@@ -754,12 +754,12 @@ section[id] { scroll-margin-top: 76px; }
 @media (max-width: 420px) { .login { display: none; } }
 
 /* =====================================================================
-   v5 — brand assets + capitalised typography
-   Every word in running text starts with a capital, as in the brand's own
-   materials. Blog pages, legal text, quoted speech and typed input keep
-   natural sentence case.
+   v5 — brand assets + typography
+   Running text keeps natural sentence case (the owner asked to drop the
+   every-word capitals, 2026-11-17). `html body` also beats the old Webflow
+   stylesheet's `body { text-transform: capitalize }`.
    ===================================================================== */
-body { text-transform: capitalize; }
+html body { text-transform: none; }
 .is-blog, .legal, .bubble, .transcript__say, .keep-case, .field__err, .form__status, input, textarea, select { text-transform: none; }
 .brand img { height: 24px; width: auto; }
 .footer__brand img { height: 64px; width: auto; }
