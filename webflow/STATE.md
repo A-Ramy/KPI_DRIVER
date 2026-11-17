@@ -100,3 +100,14 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Deleted empty categories: Webinars & Events, Product News & Updates, Case Studies (Industry Insights and Tips & Tricks have posts, kept).
 - Site-wide footer code (old counter + jQuery 2.1.3) removed; copy in webflow/rollback/site-footer-code-old.html.
 - Drafts folder `6afc3d063f5ff7bba067635b` (/drafts) holds the 6 old pages, KD Template, Home (new), Not Found (new); all still draft.
+
+## 2026-11-17: owner fixes, round 2 (live)
+- kd-site-3.css `…/6afc89bf17b0f29d6cbfdf90_kd-site-3.css` + kd-site-5.js `…/6afc89bf7bb79608ac600a6b_kd-site-5.js` on all 16 pages that had round-1 code.
+  - Services menu centred under its link (`.nav-hover .nav__menu` translateX(-50%)).
+  - Client login opens on hover with a mouse (JS mouseenter/mouseleave, 160 ms close delay; invisible bridge so the pointer can reach it).
+  - CTA band calendar embed paused at the owner's request (booking calendars and contact form being rebuilt in another chat): CTA bands show the button again. Re-enable later in site.js.
+- Member area restyled and still hidden (not in nav, out of sitemap): Knowledge Base `…8837`, Log in `…883d`, KB categories template `…882f`, KB articles template `…882e`.
+  - Each has a header embed (prepended to body; KB and Log in include a new hero) and a footer embed (appended). Embed ids: KB 729cc7da…/0605e9a9…, Log in 360db769…/d56287af…, categories f9317e67…/ab555572…, articles d82fc8db…/512401bd….
+  - Head code = original Memberstack/Finsweet code kept first, then kd-head-2.js, fonts, kd-site-3.css, kd-members-3.css `…/6afc8d4801eb3ff6c4c36ee1_kd-members-3.css`, kd-site-5.js (defer). Original Memberstack footer scripts untouched.
+  - kd-members.css (source) hides old navbar/footer/marquee/FAQ/cursor and restyles Memberstack login, Finsweet filter/sort, category cards, article body. Article hero order and phone overflow fixed.
+- Open question for the owner: For Clients B2B / B2C and Case Studies pages are template lorem ipsum (not real content).

@@ -422,16 +422,13 @@
   }
   /* close the client login menu after choosing or clicking elsewhere */
   d.addEventListener("click", function (e) { d.querySelectorAll("details.login[open]").forEach(function (x) { if (!x.contains(e.target) || e.target.closest("a")) x.open = false; }); });
-  /* CTA band: embed the booking calendar in place of the button */
-  var cal = false;
-  d.querySelectorAll(".cta").forEach(function (s) {
-    var a = s.querySelector("a[data-book]"); if (!a || s.querySelector(".cta__cal")) return;
-    var id = a.getAttribute("data-book"), src = "https://link.kpidriver.com/widget/booking/" + id, row = a.closest(".btn-row") || a;
-    var box = d.createElement("div"); box.className = "cta__book";
-    box.innerHTML = '<div class="cta__cal"><iframe src="' + src + '" scrolling="no" id="' + id + '_cta" title="' + (es ? "Agenda una llamada de descubrimiento con KPI DRIVER" : "Schedule a discovery call with KPI DRIVER") + '"></iframe></div><p class="note"><a class="link" href="' + src + '" target="_blank" rel="noopener">' + (es ? "¿No carga el calendario? Ábrelo en otra pestaña" : "Calendar not loading? Open it in a new tab") + "</a></p>";
-    row.parentNode.replaceChild(box, row); s.classList.add("cta--cal"); cal = true;
+  /* client login opens on hover too (devices with a mouse) */
+  d.querySelectorAll("details.login").forEach(function (x) {
+    var lt;
+    x.addEventListener("mouseenter", function () { if (!(hov && hov.matches)) return; clearTimeout(lt); x.open = true; });
+    x.addEventListener("mouseleave", function () { if (!(hov && hov.matches)) return; lt = setTimeout(function () { x.open = false; }, 160); });
   });
-  if (cal && !d.querySelector('script[src*="form_embed.js"]')) { var sc = d.createElement("script"); sc.src = "https://link.kpidriver.com/js/form_embed.js"; d.body.appendChild(sc); }
+  /* CTA band calendar embed: paused at the owner's request (2026-11-17) while the booking calendars are rebuilt; the button opens the scheduler popup */
   /* reviews: hide the fallback note once Boast or Elfsight has rendered (Boast replaces its placeholder element) */
   var n = 0, iv = setInterval(function () {
     d.querySelectorAll("[data-reviews]:not(.is-loaded)").forEach(function (b) { if (b.querySelector("boast-display-widget .swiper-slide, [class*='eapps-'], [class^='elfsight-app-'] > *")) b.classList.add("is-loaded"); });
