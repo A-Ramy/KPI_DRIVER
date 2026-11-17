@@ -534,7 +534,7 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 560px; backgr
 
 /* streak under key headings */
 .tone-suite > .wrap > .head h2::after, .cta h2::after { content: ""; display: block; height: 3px; margin-top: 18px; width: min(320px, 60%); background: linear-gradient(90deg, var(--green), transparent); background-size: 200% 100%; animation: streak 2.8s ease-in-out infinite; }
-.cta h2::after { background-image: linear-gradient(90deg, var(--red), var(--orange), var(--amber), var(--green), transparent); }
+.cta h2::after { width: 100%; max-width: 420px; background-image: linear-gradient(90deg, var(--red), var(--orange), var(--amber), var(--green), var(--amber), var(--orange), var(--red)); }  /* same width as the gear line above */
 @keyframes streak { 0%, 100% { background-position: 100% 0; opacity: 0.55; } 50% { background-position: 0 0; opacity: 1; } }
 
 /* lifecycle circuit */

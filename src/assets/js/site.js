@@ -458,36 +458,59 @@
     maps.insertAdjacentElement("afterend", box);
   }
 
-  /* Title Case for headings, navigation, buttons, links and labels (English only).
-     Paragraphs stay in sentence case; blog post pages, FAQ questions and typed text are left alone. */
+  /* Title Case for all running text (English only), the brand's style: every word capitalised except
+     short articles, conjunctions and prepositions mid-sentence. Blog post content and excerpts, legal text,
+     customer reviews, chat/transcript bubbles, quotes and typed text are left as written. */
   if (es || !/^en/i.test(r.lang || "en")) return;
-  var SMALL = /^(a|an|and|as|at|but|by|for|from|if|in|into|nor|of|on|or|per|so|than|the|to|via|vs\.?|with|yet)$/i;
-  var SEL = "h1,h2,h3,h4,h5,h6,.nav__link,.nav__menu b,details.login summary,details.login b,.site-footer .footer__col a,.site-footer .footer__bottom a,.btn,a.link,dt,label,.tabs__tab,.crumbs li";
-  var SKIP = ".is-blog,.kd-post-1,.w-richtext,.kd-faq,.faq,input,textarea,select,.keep-case,[data-no-tc]";
+  var SMALL = /^(a|an|and|as|at|but|by|for|from|in|into|nor|of|on|or|per|so|than|the|to|via|vs\.?|with)$/i;
+  var PHRASAL = /\b(Log|Logged|Logging|Sign|Signed|Signing|Check|Checking|Checked|Opt|Plug)(\s+)(in|on)\b/g;
+  var SKIP = ".is-blog,.kd-post-1,.w-richtext,.legal,.bubble,.transcript__say,.reviews,boast-display-widget,q,blockquote,.keep-case,.field__err,.form__status,.post-row,.post-feature,.post-card,.kd-post-card,.blog-list,.blog_item,.card-blog,input,textarea,select,option,script,style,noscript,code,pre,svg,iframe,[data-no-tc]";
+  var disp = new WeakMap();
+  function blockOf(e) {
+    while (e && e !== d.body) {
+      var v = disp.get(e); if (v === undefined) { v = getComputedStyle(e).display; disp.set(e, v); }
+      if (v !== "inline" && v !== "contents") return e;
+      e = e.parentElement;
+    }
+    return d.body;
+  }
+  function cap(h) { return h.replace(/^([^A-Za-z]*)([a-z])/, function (m, a, c) { return a + c.toUpperCase(); }); }
   function word(w, force) {
-    if (/[@\/]|\.(com|ai|io)\b|^\(?\+?\d/.test(w)) return w;            /* emails, links, numbers */
-    if (/[A-Z]/.test(w.slice(1)) || !/[a-z]/.test(w)) return w;        /* CRM, AI, iMessage, KPI DRIVER */
-    var core = w.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, "");
-    if (!force && SMALL.test(core)) return w.toLowerCase();
-    return w.split("-").map(function (h) { return h.replace(/^([^A-Za-z]*)([a-z])/, function (m, a, c) { return a + c.toUpperCase(); }); }).join("-");
+    if (/[A-Za-z][\u2014\u2013][A-Za-z]/.test(w)) {                                 /* tools\u2014they: each side is a word */
+      return w.split(/([\u2014\u2013])/).map(function (seg, i) { return i % 2 ? seg : word(seg, i === 0 ? force : true); }).join("");
+    }
+    if (/[@\/]|\.(com|ai|io|net|org)\b|^\(?\+?\d|^www\./i.test(w)) return w;     /* emails, links, numbers */
+    if (/[.!?:]["')\u201d]*$/.test(w)) force = true;                                 /* last word of a sentence */
+    var hs = w.split("-");
+    return hs.map(function (h, i) {
+      if (/[A-Z]/.test(h.slice(1)) || !/[a-z]/.test(h)) return h;                    /* CRM, AI, iMessage, KPI DRIVER */
+      var core = h.replace(/^[^A-Za-z]+|[^A-Za-z']+$/g, "");
+      var small = SMALL.test(core);
+      if (hs.length === 1) return small && !force ? h.toLowerCase() : cap(h);
+      return i > 0 && small ? h.toLowerCase() : cap(h);                               /* In-House, Pay-as-You-Go */
+    }).join("-");
   }
-  function titleEl(el) {
-    var w = d.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], t;
-    while ((t = w.nextNode())) if (t.textContent.trim() && !t.parentElement.closest(".keep-case,svg")) nodes.push(t);
-    var prev = "";                                                      /* last word seen, across styled spans */
-    nodes.forEach(function (node, i) {
-      var parts = node.textContent.split(/(\s+)/), idx = [];
-      parts.forEach(function (p, k) { if (p && !/^\s+$/.test(p)) idx.push(k); });
-      idx.forEach(function (k, n) {
-        var first = !prev, last = i === nodes.length - 1 && n === idx.length - 1;
-        parts[k] = word(parts[k], first || last || /[:.!?—–]$/.test(prev));
-        prev = parts[k];
-      });
-      var out = parts.join("");
-      if (out !== node.textContent) node.textContent = out;
-    });
+  function breaks(prev) { return !prev || /[.!?:\u2014\u2013]["')\u201d]*$/.test(prev) || /^[\u00b7|\u2022\u2014\u2013-]$/.test(prev); }
+  function run() {
+    var w = d.createTreeWalker(d.body, NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+      var p = n.parentElement;
+      return !p || !n.textContent.trim() || p.closest(SKIP) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+    } });
+    var last = null, prev = "", n;
+    while ((n = w.nextNode())) {
+      var blk = blockOf(n.parentElement);
+      if (blk !== last) { prev = ""; last = blk; }
+      var parts = n.textContent.split(/(\s+)/), changed = false;
+      for (var k = 0; k < parts.length; k++) {
+        var t = parts[k]; if (!t || !t.trim()) continue;
+        var v = word(t, breaks(prev));
+        if (v !== t) { parts[k] = v; changed = true; }
+        prev = v;
+      }
+      var out = parts.join("").replace(PHRASAL, function (m, a, b, c) { return a + b + c.charAt(0).toUpperCase() + c.slice(1); });  /* Log In, Sign In */
+      if (changed || out !== n.textContent) n.textContent = out;
+    }
   }
-  function run() { d.querySelectorAll(SEL).forEach(function (el) { if (!el.closest(SKIP)) titleEl(el); }); }
   run();
-  addEventListener("load", run);                                        /* late content: related posts, reviews */
+  addEventListener("load", run);                                        /* late content: related posts, menus */
 })();

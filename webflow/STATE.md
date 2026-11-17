@@ -119,3 +119,10 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
   - Footer: "AI Suite terms at kpidriver.ai" link removed (JS on live; removed from build.py and webflow/footer.html).
   - Contact page: Google map (keyless `google.com/maps?q=…&output=embed`, lazy) under the office address, EN + ES.
 - Sources updated for the items the owner named: build.py header/footer (Client Login, Services Overview, CRM Login, AI Suite Login, no AI Suite terms), src/pages/contact-us.html (Book a Discovery Call, Existing Clients, Check CRM Status, Send a General Inquiry), webflow/header.html + footer.html. The embeds on Webflow still hold the old wording; the script corrects it at load.
+
+## 2026-11-17: owner fixes, round 4 (live)
+- Owner wants proper Title Case on all running text (paragraphs included), not sentence case, and not the old naive `capitalize`. Blog post content is the exception.
+- kd-site-7.js `…/6afc9a472f10d0342e2d1974_kd-site-7.js` (footer of 16 site pages, head of 4 member pages) + kd-site-5.css `…/6afc9a483c9d7fbecc41a295_kd-site-5.css` (head, all 20).
+  - Title Case pass walks every text node (English only), block by block: small words (a, an, the, and, but, or, nor, for, so, as, at, by, from, in, into, of, on, per, than, to, via, vs, with) stay lower mid-sentence; first word, last word and words after . ! ? : — are capitalised; acronyms/mixed case kept; hyphen parts after the first follow the small-word rule; phrasal Log In / Sign In / Checking In.
+  - Skipped: `.is-blog`, `.kd-post-1`, `.w-richtext`, blog cards (`.blog_item`, `.card-blog`), `.legal`, reviews, chat/transcript bubbles, quotes, form fields, `.keep-case`, `[data-no-tc]`. Spanish untouched.
+  - CTA underline (`.cta h2::after`) now 100% / max 420px like the gear line above, with a full-width sweeping gradient (no transparent tail).
