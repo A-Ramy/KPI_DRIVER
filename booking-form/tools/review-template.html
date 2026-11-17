@@ -1,0 +1,291 @@
+<title>KPI DRIVER Form Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an instrument-panel review sheet: one narrow column of labelled panels, viewers and a scenario log. */
+:root {
+  --bg: #070b11; --panel: #0d141d; --panel-2: #131c28; --fg: #e9eef5; --muted: #9ba9bb; --faint: #6b7a8d;
+  --line: rgba(255,255,255,.1); --line-strong: rgba(255,255,255,.2); --accent: #4a9be6; --btn: #2a69a8;
+  --ok: #43b749; --warn: #fcaf17; --red: #ed2024; --orange: #ea8c1c;
+  --code-key: #8cc3f5; --code-str: #b8e0a8; --code-num: #f5c97a;
+  --display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif; --body: "Barlow", "Helvetica Neue", Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #fdfdfd; --panel: #f2f2f2; --panel-2: #e8e8ea; --fg: #0d1c2a; --muted: #4b5b70; --faint: #66768a;
+  --line: rgba(13,28,42,.12); --line-strong: rgba(13,28,42,.26); --accent: #1f65a8; --ok: #226f26; --warn: #855000;
+  --code-key: #1f65a8; --code-str: #226f26; --code-num: #855000; color-scheme: light; } }
+:root[data-theme="light"] {
+  --bg: #fdfdfd; --panel: #f2f2f2; --panel-2: #e8e8ea; --fg: #0d1c2a; --muted: #4b5b70; --faint: #66768a;
+  --line: rgba(13,28,42,.12); --line-strong: rgba(13,28,42,.26); --accent: #1f65a8; --ok: #226f26; --warn: #855000;
+  --code-key: #1f65a8; --code-str: #226f26; --code-num: #855000; color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; text-transform: uppercase; line-height: 1; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.4rem, 1.6rem + 3.2vw, 4rem); }
+h2 { font-size: clamp(1.7rem, 1.3rem + 1.6vw, 2.4rem); }
+h3 { font-size: 1.25rem; letter-spacing: .02em; }
+p { margin: 0; }
+.eyebrow { font: 500 .75rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+.eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--accent); }
+.lede { color: var(--muted); font-size: 1.125rem; max-width: 66ch; }
+.gear { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; width: min(320px, 70%); height: 4px; }
+.gear i { border-radius: 2px; } .gear i:nth-child(1) { background: var(--red); } .gear i:nth-child(2) { background: var(--orange); } .gear i:nth-child(3) { background: #fcaf17; } .gear i:nth-child(4) { background: #43b749; }
+header.top { padding-block: 56px 36px; display: grid; gap: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 500 .6875rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 7px 10px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--muted); }
+.chip--ok { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 50%, transparent); }
+section { padding-block: 40px; border-top: 1px solid var(--line); display: grid; gap: 22px; }
+.flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.flow > div { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 6px; align-content: start; position: relative; }
+.flow b { font: 600 1.1rem/1.1 var(--display); text-transform: uppercase; letter-spacing: .03em; }
+.flow span { color: var(--muted); font-size: .9375rem; }
+.flow small { font: .6875rem/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+/* viewer */
+.viewer { display: grid; gap: 14px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 8px; padding: 3px; gap: 3px; }
+.seg button, .steps button, .tabs button { font: 500 .75rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; background: none; border: 0; color: var(--muted); padding: 9px 12px; border-radius: 6px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--btn); color: #fff; }
+.steps { display: flex; flex-wrap: wrap; gap: 6px; }
+.steps button { border: 1px solid var(--line); }
+.steps button[aria-pressed="true"] { border-color: var(--accent); color: var(--fg); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--warn); outline-offset: 2px; }
+.screen { background: var(--panel); border: 1px solid var(--line-strong); border-radius: 10px; padding: 14px; display: grid; justify-items: center; }
+.screen__scroll { width: 100%; max-height: 78vh; overflow: auto; border-radius: 6px; display: grid; justify-items: center; }
+.screen img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.screen[data-dev="tablet"] img { max-width: 620px; }
+.screen[data-dev="mobile"] img { max-width: 360px; }
+.note { font-size: .875rem; color: var(--faint); }
+/* scenarios */
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 .6875rem/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--panel); position: sticky; top: 0; }
+tbody tr { cursor: pointer; }
+tbody tr:hover, tbody tr[aria-selected="true"] { background: color-mix(in srgb, var(--accent) 9%, transparent); }
+tbody tr[aria-selected="true"] td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+td code, .mono { font-family: var(--mono); font-size: .8125rem; }
+.src { font: 600 1rem/1.2 var(--display); letter-spacing: .02em; color: var(--fg); white-space: nowrap; }
+.kind { font: 500 .625rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; border: 1px solid var(--line-strong); color: var(--muted); white-space: nowrap; }
+.kind--contact { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 50%, transparent); }
+.detail { background: var(--panel); border: 1px solid var(--line-strong); border-radius: 10px; padding: 20px; display: grid; gap: 16px; }
+.detail__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; align-items: flex-end; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.fact { background: var(--panel-2); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0; }
+.fact span { font: 500 .625rem/1.2 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.fact b { font-weight: 500; overflow-wrap: anywhere; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.tabs button[aria-selected="true"] { color: var(--fg); background: var(--panel-2); }
+pre { margin: 0; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; overflow: auto; max-height: 560px; font: .8125rem/1.6 var(--mono); white-space: pre; }
+pre.wrap-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.k { color: var(--code-key); } .s { color: var(--code-str); } .n { color: var(--code-num); }
+.copy { justify-self: start; font: 500 .6875rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; background: none; border: 1px solid var(--line-strong); color: var(--fg); padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+.kv { display: grid; grid-template-columns: minmax(140px, 260px) 1fr; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.kv > div { padding: 9px 12px; border-bottom: 1px solid var(--line); min-width: 0; overflow-wrap: anywhere; font-size: .9375rem; }
+.kv > div:nth-child(odd) { font-family: var(--mono); font-size: .8125rem; color: var(--muted); background: var(--panel-2); }
+@media (max-width: 560px) { .kv { grid-template-columns: 1fr; } .kv > div:nth-child(odd) { border-bottom: 0; padding-bottom: 2px; } }
+.checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.checklist li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+.checklist li::before { content: ""; width: 18px; height: 18px; margin-top: 3px; border: 1.5px solid var(--line-strong); border-radius: 4px; }
+.split2 { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .split2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+footer { padding-block: 32px 56px; color: var(--faint); font-size: .875rem; border-top: 1px solid var(--line); }
+@media (prefers-reduced-motion: no-preference) { .screen img { transition: opacity .2s ease; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">For approval</p>
+    <h1>Booking &amp; contact forms</h1>
+    <div class="gear" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <p class="lede">One booking form and one contact form for the whole website, in the site's own design. Below: every screen on desktop, tablet and phone in dark and light, and the exact data each button sends, with what lands in HighLevel.</p>
+    <div class="chips"><span class="chip chip--ok">Same questions as today</span><span class="chip chip--ok">Same HighLevel fields</span><span class="chip">Sample availability · nothing was sent</span><span class="chip" id="gen"></span></div>
+  </header>
+
+  <section aria-labelledby="how">
+    <p class="eyebrow">How it works</p>
+    <h2 id="how">One form, every button</h2>
+    <div class="flow">
+      <div><small>1 · Any button</small><b>Book a Discovery Call</b><span>Header, hero, footer, service pages, blog, Spanish pages. New buttons work automatically.</span></div>
+      <div><small>2 · The form</small><b>Records where it came from</b><span>Page + button, e.g. <span class="mono">Home – Header</span>, plus ad tracking (UTMs, gclid, fbclid) from the landing page.</span></div>
+      <div><small>3a · Booking</small><b>n8n → HighLevel</b><span>Live free times, contact created or updated, appointment booked on one calendar, tags and a note added.</span></div>
+      <div><small>3b · Contact form</small><b>Inbound webhook</b><span>Posts straight to your HighLevel workflow. Every value arrives as its own field, ready to map.</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="bk">
+    <p class="eyebrow">The booking form</p>
+    <h2 id="bk">Five steps and a confirmation</h2>
+    <div class="viewer" data-form="booking"></div>
+    <p class="note">Each image shows the whole step. On a real device the step scrolls inside the window, and the Back / Continue bar stays pinned to the bottom.</p>
+  </section>
+
+  <section aria-labelledby="ct">
+    <p class="eyebrow">The contact form</p>
+    <h2 id="ct">Replaces the HighLevel survey</h2>
+    <div class="viewer" data-form="contact"></div>
+  </section>
+
+  <section aria-labelledby="sc">
+    <p class="eyebrow">Payload examples</p>
+    <h2 id="sc">Where each booking came from</h2>
+    <p class="lede">Twelve real runs with sample people. Pick a row to see what the website sends and what HighLevel receives.</p>
+    <div class="table-scroll"><table><thead><tr><th>What the visitor did</th><th>Form</th><th>Source recorded</th><th>Campaign field in HighLevel</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <div class="detail" id="detail" aria-live="polite"></div>
+  </section>
+
+  <section aria-labelledby="map">
+    <p class="eyebrow">Contact form · inbound webhook</p>
+    <h2 id="map">What to map in your HighLevel workflow</h2>
+    <p class="lede">Trigger: Inbound Webhook. Then Create/Update Contact, Add Tag and Add Note, picking these values from <span class="mono">inboundWebhookRequest</span>.</p>
+    <div class="kv" id="fieldmap"></div>
+  </section>
+
+  <section aria-labelledby="ok">
+    <p class="eyebrow">Sign-off</p>
+    <h2 id="ok">What to approve</h2>
+    <div class="split2">
+      <ul class="checklist">
+        <li><div>The look of both forms on desktop, tablet and phone, in dark and light.</div></li>
+        <li><div>The source labels, e.g. <span class="mono">Home – Header</span>, <span class="mono">CRM – Hero</span>, <span class="mono">Home (ES) – Hero</span>.</div></li>
+        <li><div>The campaign value keeps the old prefixes: <span class="mono">Business Discovery (SEO) …</span> and <span class="mono">Contact Us (SEO) …</span>.</div></li>
+        <li><div>Tags <span class="mono">website booking</span> / <span class="mono">website contact form</span> plus <span class="mono">src: …</span>, and the contact note.</div></li>
+        <li><div>SMS consent stays required, with the current wording (HELP to (786) 822-8188).</div></li>
+      </ul>
+      <div style="display:grid;gap:12px;align-content:start">
+        <h3>Then send me</h3>
+        <p class="lede">The HighLevel <b>inbound webhook URL</b> for the contact form, and the <b>Private Integration token</b> for booking (scopes: calendars.readonly, calendars/events.write, contacts.write). I'll test against your real calendar before anything goes live.</p>
+        <p class="note">Good to know: HighLevel's "Time Zone" question only offers US zones, so visitors outside the US pick the closest one themselves. The date picker itself supports every time zone.</p>
+      </div>
+    </div>
+  </section>
+  <footer>Generated from the booking-form prototype. People, emails and phone numbers are fictional examples.</footer>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById("data").textContent);
+  document.getElementById("gen").textContent = "Captured " + new Date(D.generated).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  function el(tag, attrs, kids) { var e = document.createElement(tag); for (var k in attrs || {}) { if (k === "text") e.textContent = attrs[k]; else if (k === "html") e.innerHTML = attrs[k]; else if (k.slice(0, 2) === "on") e.addEventListener(k.slice(2), attrs[k]); else e.setAttribute(k, attrs[k]); } (kids || []).forEach(function (c) { if (c) e.appendChild(typeof c === "string" ? document.createTextNode(c) : c); }); return e; }
+  function esc(s) { return String(s).replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; }); }
+  function hl(obj) {
+    return esc(JSON.stringify(obj, null, 2)).replace(/("(?:\\.|[^"\\])*")(\s*:)?|\b(-?\d+(?:\.\d+)?)\b|\b(true|false|null)\b/g, function (m, str, colon, num, lit) {
+      if (str) return colon ? '<span class="k">' + str + "</span>" + colon : '<span class="s">' + str + "</span>";
+      if (num) return '<span class="n">' + num + "</span>";
+      return '<span class="n">' + lit + "</span>";
+    });
+  }
+  function copyBtn(getText) {
+    var b = el("button", { class: "copy", type: "button", text: "Copy JSON" });
+    b.addEventListener("click", function () {
+      var t = getText();
+      try { navigator.clipboard.writeText(t).then(function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy JSON"; }, 1400); }, fallback); } catch (e) { fallback(); }
+      function fallback() { var pre = b.nextElementSibling; if (pre && window.getSelection) { var r = document.createRange(); r.selectNodeContents(pre); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected · press copy"; } }
+    });
+    return b;
+  }
+
+  /* ---------- viewers ---------- */
+  var DEVLABEL = { desktop: "Desktop", tablet: "Tablet", mobile: "Phone" };
+  document.querySelectorAll(".viewer").forEach(function (box) {
+    var form = box.getAttribute("data-form");
+    var sets = D.views.filter(function (v) { return v.form === form; });
+    var st = { dev: "desktop", theme: "dark", step: 0 };
+    try { var saved = JSON.parse(localStorage.getItem("kd-review-" + form) || "null"); if (saved) st = Object.assign(st, saved); } catch (e) {}
+    var controls = el("div", { class: "controls" }), steps = el("div", { class: "steps", role: "group", "aria-label": "Steps" });
+    var screen = el("div", { class: "screen" }), scroll = el("div", { class: "screen__scroll" }), img = el("img", { alt: "" });
+    scroll.appendChild(img); screen.appendChild(scroll);
+    function seg(key, options, label) {
+      var g = el("div", { class: "seg", role: "group", "aria-label": label });
+      options.forEach(function (o) { g.appendChild(el("button", { type: "button", "data-v": o[0], text: o[1], onclick: function () { st[key] = o[0]; draw(); } })); });
+      return g;
+    }
+    var devSeg = seg("dev", [["desktop", "Desktop"], ["tablet", "Tablet"], ["mobile", "Phone"]], "Device");
+    var themeSeg = seg("theme", [["dark", "Dark"], ["light", "Light"]], "Theme");
+    controls.appendChild(devSeg); controls.appendChild(themeSeg);
+    box.appendChild(controls); box.appendChild(steps); box.appendChild(screen);
+    function draw() {
+      var set = sets.filter(function (v) { return v.dev === st.dev && v.theme === st.theme; })[0];
+      if (st.step >= set.steps.length) st.step = 0;
+      [devSeg, themeSeg].forEach(function (g, i) { [].forEach.call(g.children, function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-v") === (i ? st.theme : st.dev)); }); });
+      steps.innerHTML = "";
+      set.steps.forEach(function (s, i) { steps.appendChild(el("button", { type: "button", "aria-pressed": i === st.step, text: (i + 1) + " · " + s.label, onclick: function () { st.step = i; draw(); } })); });
+      var s = set.steps[st.step];
+      screen.setAttribute("data-dev", st.dev);
+      img.src = "img/" + s.file; img.alt = (form === "booking" ? "Booking form" : "Contact form") + ", " + s.label + ", " + DEVLABEL[st.dev] + ", " + st.theme + " theme";
+      scroll.scrollTop = 0;
+      try { localStorage.setItem("kd-review-" + form, JSON.stringify(st)); } catch (e) {}
+    }
+    draw();
+  });
+
+  /* ---------- scenarios ---------- */
+  var rows = document.getElementById("rows"), detail = document.getElementById("detail");
+  D.scenarios.forEach(function (sc, i) {
+    var p = sc.payload, isContact = p.form === "contact";
+    var tr = el("tr", { tabindex: "0", "aria-selected": "false", onclick: function () { show(i); }, onkeydown: function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(i); } } }, [
+      el("td", {}, [el("div", { text: sc.title }), el("div", { class: "note mono", text: sc.page_url.replace("https://www.kpidriver.com", "") || "/" })]),
+      el("td", {}, [el("span", { class: "kind" + (isContact ? " kind--contact" : ""), text: isContact ? "Contact" : "Booking" })]),
+      el("td", {}, [el("span", { class: "src", text: p.booking_source })]),
+      el("td", {}, [el("code", { text: p.campaign })])
+    ]);
+    rows.appendChild(tr);
+  });
+  function fact(k, v) { return el("div", { class: "fact" }, [el("span", { text: k }), el("b", { text: v || "—" })]); }
+  function show(i) {
+    [].forEach.call(rows.children, function (r, j) { r.setAttribute("aria-selected", i === j); });
+    var sc = D.scenarios[i], p = sc.payload, isContact = p.form === "contact";
+    detail.innerHTML = "";
+    detail.appendChild(el("div", { class: "detail__head" }, [
+      el("div", {}, [el("p", { class: "eyebrow", text: isContact ? "Contact form" : "Booking" }), el("h3", { text: sc.title, style: "margin-top:8px" })]),
+      el("span", { class: "chip", text: "Sends to: " + sc.destination })
+    ]));
+    var ctx = isContact ? p : p.context, who = isContact ? p.first_name + " " + p.last_name : p.contact.firstName + " " + p.contact.lastName;
+    var utm = ["utm_source", "utm_medium", "utm_campaign"].map(function (k) { return ctx[k]; }).filter(Boolean).join(" / ");
+    detail.appendChild(el("div", { class: "facts" }, [
+      fact("Source recorded", p.booking_source),
+      fact("Campaign field", p.campaign),
+      fact(isContact ? "Person" : "Person · call time", isContact ? who : who + " · " + p.slot.display),
+      fact("Visitor time zone", isContact ? p.timezone : p.slot.timezone),
+      fact("Ad tracking", utm ? utm + (ctx.gclid ? " · gclid" : "") + (ctx.fbclid ? " · fbclid" : "") : "None (direct visit)"),
+      fact("Landing page", (ctx.landing_page || "").replace("https://www.kpidriver.com", ""))
+    ]));
+    var tabs = el("div", { class: "tabs", role: "tablist" }), pane = el("div", { style: "display:grid;gap:10px" });
+    var views = isContact ? [
+      ["Webhook receives", function () { return [copyBtn(function () { return JSON.stringify(p, null, 2); }), el("pre", { html: hl(p) })]; }],
+      ["Contact note", function () { return [el("pre", { class: "wrap-text", text: p.note })]; }]
+    ] : [
+      ["Website sends", function () { return [copyBtn(function () { return JSON.stringify(p, null, 2); }), el("pre", { html: hl(p) })]; }],
+      ["Contact in HighLevel", function () { return [el("p", { class: "note", text: "Create/update contact (matched by email or phone). Custom fields are written by their HighLevel field id." }), copyBtn(function () { return JSON.stringify(sc.highlevel.upsert, null, 2); }), el("pre", { html: hl(sc.highlevel.upsert) })]; }],
+      ["Appointment", function () { return [el("pre", { html: hl(sc.highlevel.appointment) })]; }],
+      ["Tags + note", function () { return [el("div", { class: "chips" }, sc.highlevel.tags.map(function (t) { return el("span", { class: "chip chip--ok", text: t }); })), el("pre", { class: "wrap-text", text: sc.highlevel.note })]; }]
+    ];
+    views.forEach(function (v, j) {
+      tabs.appendChild(el("button", { type: "button", role: "tab", "aria-selected": j === 0, text: v[0], onclick: function () {
+        [].forEach.call(tabs.children, function (b, k) { b.setAttribute("aria-selected", k === j); });
+        pane.innerHTML = ""; v[1]().forEach(function (n) { pane.appendChild(n); });
+      } }));
+    });
+    detail.appendChild(tabs); detail.appendChild(pane);
+    views[0][1]().forEach(function (n) { pane.appendChild(n); });
+  }
+  show(0);
+
+  /* ---------- inbound webhook field map ---------- */
+  var MAP = [
+    ["first_name", "Contact · First Name"], ["last_name", "Contact · Last Name"], ["email", "Contact · Email"],
+    ["business_name", "Custom field · Business Name (st1eCAFAHDcgPM4VvtNn)"], ["which_bundle_are_you_interested_in", "Custom field · Which Bundle Are You Interested In (zntmhqZEVR510izM1Amv)"],
+    ["your_message", "Custom field · Your Message (2qGuyylBHmeIFy4ZQITo)"], ["campaign", "Custom field · Campaign (O5yyMN7TXsWzblxrHUfO)"],
+    ["contact_source", "Contact · Source (\"SEO\", as before)"], ["timezone", "Contact · Time Zone"],
+    ["sms_consent, consent_text, consent_timestamp, consent_page", "Consent record (also inside the note). With sms_consent = Yes, allow SMS for the contact."],
+    ["tags", "Add Tag (comma-separated: website contact form, src: …)"], ["note", "Add Note (answers, consent, landing page, referrer, UTMs)"],
+    ["booking_source, page_url, landing_page, referrer, utm_*, gclid, fbclid", "Optional extra custom fields if you want to report on them"],
+    ["hp", "Spam trap. Always empty for real people; filled-in requests are never sent."]
+  ];
+  var fm = document.getElementById("fieldmap");
+  MAP.forEach(function (r) { fm.appendChild(el("div", { text: r[0] })); fm.appendChild(el("div", { text: r[1] })); });
+})();
+</script>

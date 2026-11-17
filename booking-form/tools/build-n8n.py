@@ -1,8 +1,9 @@
-"""Build the three importable n8n workflows from booking-form/n8n/src/*.js.
+"""Build the two importable n8n workflows from booking-form/n8n/src/*.js.
 
     python3 booking-form/tools/build-n8n.py
 
-Outputs booking-form/n8n/kd-booking-slots.json, kd-booking-create.json, kd-contact.json.
+Outputs booking-form/n8n/kd-booking-slots.json and kd-booking-create.json.
+(The contact form posts straight to a HighLevel inbound webhook, so it has no n8n workflow.)
 Each uses one n8n credential, "HighLevel PIT" (type: Header Auth, name "Authorization",
 value "Bearer <your HighLevel Private Integration token>"). Import, pick the credential, activate.
 """
@@ -144,26 +145,5 @@ w.chain(d, e, f)
 w.link(f, g, 0); w.link(f, crm_fail, 1)
 w.chain(g, h, i)
 w.link(i, j, 0); w.link(i, slot_fail, 1)
-w.chain(j, k, ok)
-w.save()
-
-# ---------- 3. contact form ----------
-w = WF("KPI DRIVER · Contact form", "kd-contact")
-a = webhook(w, "kd-contact", "POST")
-b = code(w, "Validate", js("config", "common", "validate-contact"))
-c = is_ok(w, "Valid?")
-d = http(w, "Upsert contact", "POST", API + "/contacts/upsert", body="={{ JSON.stringify($json.upsert) }}")
-e = code(w, "Check contact", js("check-contact"))
-f = is_ok(w, "Contact saved?")
-j = http(w, "Add tags", "POST", "=" + API + "/contacts/{{ $json.contactId }}/tags", body="={{ JSON.stringify({ tags: $json.tags }) }}")
-k = http(w, "Add note", "POST", "=" + API + "/contacts/{{ $('Check contact').first().json.contactId }}/notes",
-         body="={{ JSON.stringify({ body: $('Check contact').first().json.note }) }}")
-ok = respond(w, "Respond: sent", "={{ JSON.stringify({ ok: true }) }}", "=200")
-self_fail = respond(w, "Respond: rejected", FAIL_BODY, FAIL_CODE, y=220)
-crm_fail = respond(w, "Respond: CRM error", FAIL_BODY, FAIL_CODE, y=220)
-w.chain(a, b, c)
-w.link(c, d, 0); w.link(c, self_fail, 1)
-w.chain(d, e, f)
-w.link(f, j, 0); w.link(f, crm_fail, 1)
 w.chain(j, k, ok)
 w.save()

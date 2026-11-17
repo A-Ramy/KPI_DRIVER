@@ -19,7 +19,7 @@
   var CFG = Object.assign({
     slotsUrl: "",                      // n8n webhook: free slots
     bookUrl: "",                       // n8n webhook: create booking
-    contactUrl: "",                    // n8n webhook: contact form
+    contactUrl: "",                    // HighLevel workflow "Inbound Webhook" URL (contact form posts straight to it)
     contactCampaignPrefix: "Contact Us (SEO) ",
     contactConsentText: "",            // defaults to the booking form's consent text (see README)
     mock: true,                        // sample availability, no network
@@ -87,9 +87,9 @@
       { name: "firstName", std: "firstName", label: "First Name", type: "text", req: true, ph: "First Name", auto: "given-name", half: true },
       { name: "lastName", std: "lastName", label: "Last Name", type: "text", req: true, ph: "Last Name", auto: "family-name", half: true },
       { name: "email", std: "email", label: "Email", type: "email", req: true, ph: "Email", auto: "email", half: true },
-      { name: "businessName", cf: "st1eCAFAHDcgPM4VvtNn", std: "companyName", label: "Business Name", type: "text", req: true, ph: "Business Name", auto: "organization", half: true },
-      { name: "plan", cf: "zntmhqZEVR510izM1Amv", label: "Which Bundle Are You Interested In", type: "select", req: true, options: ["Enterprise Optimization Suite + AI Agent", "Enterprise Optimization Suite", "Don't Know Yet"] },
-      { name: "message", cf: "2qGuyylBHmeIFy4ZQITo", label: "Your Message", type: "textarea", ph: "Your Message" },
+      { name: "businessName", key: "business_name", cf: "st1eCAFAHDcgPM4VvtNn", std: "companyName", label: "Business Name", type: "text", req: true, ph: "Business Name", auto: "organization", half: true },
+      { name: "plan", key: "which_bundle_are_you_interested_in", cf: "zntmhqZEVR510izM1Amv", label: "Which Bundle Are You Interested In", type: "select", req: true, options: ["Enterprise Optimization Suite + AI Agent", "Enterprise Optimization Suite", "Don't Know Yet"] },
+      { name: "message", key: "your_message", cf: "2qGuyylBHmeIFy4ZQITo", label: "Your Message", type: "textarea", ph: "Your Message" },
       { name: "smsConsent", label: CFG.contactConsentText || CONSENT_TEXT, type: "consent", req: true }
     ] }
   ];
@@ -123,7 +123,11 @@
       if (el.closest("header, .site-header")) place = "header";
       else if (el.closest("footer, .site-footer")) place = "footer";
     }
-    return pageName() + CFG.sourceSeparator + titleCase(place || "Link");
+    var page = pageName(), label = titleCase(place || "Link").split(" ");
+    // "crm hero" on the CRM page reads "CRM – Hero", not "CRM – CRM Hero"
+    var last = page.replace(/\s*\(ES\)$/, "").split(/[\s:]+/).pop().toLowerCase();
+    if (label.length > 1 && label[0].toLowerCase() === last) label.shift();
+    return page + CFG.sourceSeparator + label.join(" ");
   }
   function attribution() {
     var q = new URLSearchParams(location.search), a = {};
@@ -261,7 +265,7 @@
     if (st.key === "time") this.renderTime(body); else this.renderFields(body, st.fields);
     var foot = h("div", { class: "kdb__foot" }, [
       s.step > 0 ? h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", onclick: function () { self.back(); } }, [h("span", { class: "kdb__arr", "aria-hidden": "true", text: "←" }), "Back"]) : h("span"),
-      STEPS.length > 1 ? h("span", { class: "kdb__count", text: "Step " + (s.step + 1) + " / " + STEPS.length }) : h("span"),
+      h("span", { class: "kdb__count", text: STEPS.length > 1 ? "Step " + (s.step + 1) + " / " + STEPS.length : "" }),
       h("button", { type: "submit", class: "kdb__btn kdb__btn--primary" }, s.step === STEPS.length - 1 ? [this.kind === "contact" ? "Send message" : "Book my call"] : ["Continue", h("span", { class: "kdb__arr", "aria-hidden": "true", text: "→" })])
     ]);
     this.msg = h("p", { class: "kdb__msg", role: "alert", "aria-live": "assertive" });
@@ -402,7 +406,10 @@
     else if (f.type === "checkbox") d[f.name] = [].map.call(box.querySelectorAll("input:checked"), function (x) { return x.value; });
     else if (f.type === "consent") d[f.name] = box.querySelector("input").checked;
     else d[f.name] = box.querySelector(".kdb__input").value.trim();
-    if (box.classList.contains("is-invalid")) this.validateField(f);
+    if (box.classList.contains("is-invalid")) {
+      this.validateField(f);
+      if (!this.root.querySelector(".is-invalid") && /attention/.test(this.msg.textContent)) this.msg.textContent = "";
+    }
   };
   Booking.prototype.validateField = function (f) {
     var v = this.state.data[f.name], msg = "";
@@ -457,6 +464,7 @@
     custom.push({ id: CAMPAIGN_FIELD, fieldValue: campaign });
     contact.timezone = s.tz;
     var root = this.root.querySelector('input[name="website"]');
+    if (this.kind === "contact") return this.flatPayload(contact, answers, campaign, root);
     return {
       version: 1,
       type: this.kind,
@@ -472,14 +480,50 @@
       hp: root ? root.value : ""
     };
   };
+  /* Contact form → HighLevel inbound webhook: one flat object, so every value is a single
+     pick in HighLevel's mapper ({{inboundWebhookRequest.first_name}} etc.). */
+  Booking.prototype.flatPayload = function (contact, answers, campaign, hp) {
+    var s = this.state, d = s.data, a = attribution(), now = new Date().toISOString();
+    var consentText = CFG.contactConsentText || CONSENT_TEXT;
+    var tags = ["website contact form", ("src: " + s.source).toLowerCase()];
+    var out = {
+      form: "contact",
+      first_name: contact.firstName || "", last_name: contact.lastName || "", email: contact.email || "",
+      business_name: d.businessName || "", which_bundle_are_you_interested_in: d.plan || "", your_message: d.message || "",
+      sms_consent: d.smsConsent ? "Yes" : "No", consent_text: consentText, consent_timestamp: now, consent_page: location.href,
+      campaign: campaign, booking_source: s.source, cta_label: s.ctaLabel || "", tags: tags.join(", "),
+      contact_source: "SEO", timezone: s.tz, lang: CFG.lang,
+      page_url: location.href, page_title: document.title, landing_page: a.landing_page, referrer: a.first_referrer || document.referrer || "",
+      utm_source: a.utm_source, utm_medium: a.utm_medium, utm_campaign: a.utm_campaign, utm_term: a.utm_term, utm_content: a.utm_content,
+      gclid: a.gclid, fbclid: a.fbclid, submitted_at: now
+    };
+    out.note = ["Website contact form · " + s.source, ""].concat(answers.map(function (x) { return x.q + ": " + x.a; }), ["",
+      "SMS consent: " + out.sms_consent + " · " + now + " · " + location.href, "Consent text: " + consentText, "",
+      "Page: " + location.href, "Landing page: " + a.landing_page, "Referrer: " + (out.referrer || "direct")],
+      ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid"].filter(function (k) { return a[k]; }).map(function (k) { return k + ": " + a[k]; })).join("\n");
+    out.hp = hp ? hp.value : "";
+    return out;
+  };
+  // HighLevel inbound webhooks may not send CORS headers: try a normal JSON post, and if the browser
+  // blocks it before sending (preflight), send the same data as a simple form post instead.
+  function postToWebhook(url, data) {
+    return fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
+      .then(function (r) { return { ok: r.ok }; })
+      .catch(function () {
+        var form = new URLSearchParams(); Object.keys(data).forEach(function (k) { if (data[k] != null) form.append(k, data[k]); });
+        return fetch(url, { method: "POST", mode: "no-cors", body: form }).then(function () { return { ok: true }; });
+      });
+  }
   Booking.prototype.submit = function () {
     var self = this, s = this.state, body = this.payload(), btn = this.root.querySelector(".kdb__btn--primary");
     var url = this.kind === "contact" ? CFG.contactUrl : CFG.bookUrl, label = this.kind === "contact" ? "Send message" : "Book my call";
     this.busy = true; btn.disabled = true; btn.textContent = this.kind === "contact" ? "Sending…" : "Booking…"; this.msg.textContent = "";
     var req = CFG.mock || !url
       ? new Promise(function (r) { setTimeout(function () { window.KD_BOOKING_LAST_PAYLOAD = body; r(body.slot ? { ok: true, appointment: { id: "mock", startTime: body.slot.start } } : { ok: true, contactId: "mock" }); }, 700); })
-      : fetch(url, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(body) })
-          .then(function (r) { return r.json().catch(function () { return { ok: false, code: "bad_response" }; }); });
+      : this.kind === "contact"
+        ? (body.hp ? Promise.resolve({ ok: true }) : postToWebhook(url, body))     // honeypot: show success, send nothing
+        : fetch(url, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(body) })
+            .then(function (r) { return r.json().catch(function () { return { ok: false, code: "bad_response" }; }); });
     req.then(function (res) {
       self.busy = false;
       if (res && res.ok) {

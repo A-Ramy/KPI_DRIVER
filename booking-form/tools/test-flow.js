@@ -123,9 +123,10 @@ async function fillStep(p) {
     await c.click('[data-kd-contact] .kdb__btn--primary'); await c.waitForSelector('[data-kd-contact] .kdb--done');
     await c.screenshot({ path: `${OUT}/${theme}-contact-2-sent.png` });
     const cp = await c.evaluate(() => window.KD_BOOKING_LAST_PAYLOAD);
-    check(cp.type === 'contact' && cp.slot === null, `${theme} contact: type=contact, no slot`);
+    check(cp.form === 'contact' && cp.first_name === 'Test' && cp.email === 'test.driver@example.com' && cp.your_message === 'Hello from the demo.', `${theme} contact: flat webhook payload`);
     check(cp.booking_source === 'Contact Us – Inquiry Form' && cp.campaign === 'Contact Us (SEO) Contact Us – Inquiry Form', `${theme} contact: source "${cp.booking_source}", campaign "${cp.campaign}"`);
-    check(cp.customFields.some(x => x.id === '2qGuyylBHmeIFy4ZQITo' && x.fieldValue === 'Hello from the demo.'), `${theme} contact: message mapped to its custom field`);
+    check(cp.sms_consent === 'Yes' && /822-8188/.test(cp.consent_text) && /Hello from the demo/.test(cp.note), `${theme} contact: consent + note included`);
+    check(Object.values(cp).every(v => typeof v === 'string'), `${theme} contact: every value is a plain string (easy HighLevel mapping)`);
     check(cerr.length === 0, `${theme} contact: no page errors ${cerr.join(' | ')}`);
     if (theme === 'dark') fs.writeFileSync(path.join(OUT, 'sample-payload-contact.json'), JSON.stringify(cp, null, 2));
     await c.close();

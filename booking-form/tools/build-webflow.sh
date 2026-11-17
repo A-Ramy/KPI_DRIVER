@@ -12,13 +12,13 @@ css=$($ESBUILD kd-booking.css --minify --log-level=warning)
 js=$($ESBUILD kd-booking.js --minify --target=es2019 --log-level=warning)
 printf '<!-- KPI DRIVER booking + contact forms: styles -->\n<style>%s</style>\n' "$css" > webflow/embed-1-styles.html
 cat > webflow/embed-2-script.html <<EOF
-<!-- KPI DRIVER booking + contact forms. Set the three n8n webhook URLs, then mock:false. -->
+<!-- KPI DRIVER booking + contact forms. Set the two n8n webhook URLs and the HighLevel inbound webhook URL, then mock:false. -->
 <script>
 window.KD_BOOKING_CONFIG = {
   mock: true,
   slotsUrl: "https://YOUR-N8N-HOST/webhook/kd-booking-slots",
   bookUrl: "https://YOUR-N8N-HOST/webhook/kd-booking-create",
-  contactUrl: "https://YOUR-N8N-HOST/webhook/kd-contact"
+  contactUrl: "PASTE-YOUR-HIGHLEVEL-INBOUND-WEBHOOK-URL"
 };
 </script>
 <script>${js}</script>

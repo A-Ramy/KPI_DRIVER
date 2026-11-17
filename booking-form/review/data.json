@@ -1,0 +1,5046 @@
+{
+  "generated": "2026-11-17T17:25:06.776Z",
+  "views": [
+    {
+      "form": "booking",
+      "theme": "dark",
+      "dev": "desktop",
+      "steps": [
+        {
+          "key": "1-time",
+          "label": "Pick a time",
+          "file": "booking-1-time-desktop-dark.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "booking-2-errors-desktop-dark.jpg"
+        },
+        {
+          "key": "3-about",
+          "label": "About you",
+          "file": "booking-3-about-desktop-dark.jpg"
+        },
+        {
+          "key": "4-leads",
+          "label": "Your lead flow",
+          "file": "booking-4-leads-desktop-dark.jpg"
+        },
+        {
+          "key": "5-crm",
+          "label": "Your CRM",
+          "file": "booking-5-crm-desktop-dark.jpg"
+        },
+        {
+          "key": "6-goals",
+          "label": "Your goals",
+          "file": "booking-6-goals-desktop-dark.jpg"
+        },
+        {
+          "key": "7-done",
+          "label": "Confirmed",
+          "file": "booking-7-done-desktop-dark.jpg"
+        }
+      ]
+    },
+    {
+      "form": "contact",
+      "theme": "dark",
+      "dev": "desktop",
+      "steps": [
+        {
+          "key": "1-empty",
+          "label": "Contact form",
+          "file": "contact-1-empty-desktop-dark.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "contact-2-errors-desktop-dark.jpg"
+        },
+        {
+          "key": "3-filled",
+          "label": "Filled in",
+          "file": "contact-3-filled-desktop-dark.jpg"
+        },
+        {
+          "key": "4-sent",
+          "label": "Message sent",
+          "file": "contact-4-sent-desktop-dark.jpg"
+        }
+      ]
+    },
+    {
+      "form": "booking",
+      "theme": "dark",
+      "dev": "tablet",
+      "steps": [
+        {
+          "key": "1-time",
+          "label": "Pick a time",
+          "file": "booking-1-time-tablet-dark.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "booking-2-errors-tablet-dark.jpg"
+        },
+        {
+          "key": "3-about",
+          "label": "About you",
+          "file": "booking-3-about-tablet-dark.jpg"
+        },
+        {
+          "key": "4-leads",
+          "label": "Your lead flow",
+          "file": "booking-4-leads-tablet-dark.jpg"
+        },
+        {
+          "key": "5-crm",
+          "label": "Your CRM",
+          "file": "booking-5-crm-tablet-dark.jpg"
+        },
+        {
+          "key": "6-goals",
+          "label": "Your goals",
+          "file": "booking-6-goals-tablet-dark.jpg"
+        },
+        {
+          "key": "7-done",
+          "label": "Confirmed",
+          "file": "booking-7-done-tablet-dark.jpg"
+        }
+      ]
+    },
+    {
+      "form": "contact",
+      "theme": "dark",
+      "dev": "tablet",
+      "steps": [
+        {
+          "key": "1-empty",
+          "label": "Contact form",
+          "file": "contact-1-empty-tablet-dark.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "contact-2-errors-tablet-dark.jpg"
+        },
+        {
+          "key": "3-filled",
+          "label": "Filled in",
+          "file": "contact-3-filled-tablet-dark.jpg"
+        },
+        {
+          "key": "4-sent",
+          "label": "Message sent",
+          "file": "contact-4-sent-tablet-dark.jpg"
+        }
+      ]
+    },
+    {
+      "form": "booking",
+      "theme": "dark",
+      "dev": "mobile",
+      "steps": [
+        {
+          "key": "1-time",
+          "label": "Pick a time",
+          "file": "booking-1-time-mobile-dark.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "booking-2-errors-mobile-dark.jpg"
+        },
+        {
+          "key": "3-about",
+          "label": "About you",
+          "file": "booking-3-about-mobile-dark.jpg"
+        },
+        {
+          "key": "4-leads",
+          "label": "Your lead flow",
+          "file": "booking-4-leads-mobile-dark.jpg"
+        },
+        {
+          "key": "5-crm",
+          "label": "Your CRM",
+          "file": "booking-5-crm-mobile-dark.jpg"
+        },
+        {
+          "key": "6-goals",
+          "label": "Your goals",
+          "file": "booking-6-goals-mobile-dark.jpg"
+        },
+        {
+          "key": "7-done",
+          "label": "Confirmed",
+          "file": "booking-7-done-mobile-dark.jpg"
+        }
+      ]
+    },
+    {
+      "form": "contact",
+      "theme": "dark",
+      "dev": "mobile",
+      "steps": [
+        {
+          "key": "1-empty",
+          "label": "Contact form",
+          "file": "contact-1-empty-mobile-dark.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "contact-2-errors-mobile-dark.jpg"
+        },
+        {
+          "key": "3-filled",
+          "label": "Filled in",
+          "file": "contact-3-filled-mobile-dark.jpg"
+        },
+        {
+          "key": "4-sent",
+          "label": "Message sent",
+          "file": "contact-4-sent-mobile-dark.jpg"
+        }
+      ]
+    },
+    {
+      "form": "booking",
+      "theme": "light",
+      "dev": "desktop",
+      "steps": [
+        {
+          "key": "1-time",
+          "label": "Pick a time",
+          "file": "booking-1-time-desktop-light.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "booking-2-errors-desktop-light.jpg"
+        },
+        {
+          "key": "3-about",
+          "label": "About you",
+          "file": "booking-3-about-desktop-light.jpg"
+        },
+        {
+          "key": "4-leads",
+          "label": "Your lead flow",
+          "file": "booking-4-leads-desktop-light.jpg"
+        },
+        {
+          "key": "5-crm",
+          "label": "Your CRM",
+          "file": "booking-5-crm-desktop-light.jpg"
+        },
+        {
+          "key": "6-goals",
+          "label": "Your goals",
+          "file": "booking-6-goals-desktop-light.jpg"
+        },
+        {
+          "key": "7-done",
+          "label": "Confirmed",
+          "file": "booking-7-done-desktop-light.jpg"
+        }
+      ]
+    },
+    {
+      "form": "contact",
+      "theme": "light",
+      "dev": "desktop",
+      "steps": [
+        {
+          "key": "1-empty",
+          "label": "Contact form",
+          "file": "contact-1-empty-desktop-light.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "contact-2-errors-desktop-light.jpg"
+        },
+        {
+          "key": "3-filled",
+          "label": "Filled in",
+          "file": "contact-3-filled-desktop-light.jpg"
+        },
+        {
+          "key": "4-sent",
+          "label": "Message sent",
+          "file": "contact-4-sent-desktop-light.jpg"
+        }
+      ]
+    },
+    {
+      "form": "booking",
+      "theme": "light",
+      "dev": "tablet",
+      "steps": [
+        {
+          "key": "1-time",
+          "label": "Pick a time",
+          "file": "booking-1-time-tablet-light.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "booking-2-errors-tablet-light.jpg"
+        },
+        {
+          "key": "3-about",
+          "label": "About you",
+          "file": "booking-3-about-tablet-light.jpg"
+        },
+        {
+          "key": "4-leads",
+          "label": "Your lead flow",
+          "file": "booking-4-leads-tablet-light.jpg"
+        },
+        {
+          "key": "5-crm",
+          "label": "Your CRM",
+          "file": "booking-5-crm-tablet-light.jpg"
+        },
+        {
+          "key": "6-goals",
+          "label": "Your goals",
+          "file": "booking-6-goals-tablet-light.jpg"
+        },
+        {
+          "key": "7-done",
+          "label": "Confirmed",
+          "file": "booking-7-done-tablet-light.jpg"
+        }
+      ]
+    },
+    {
+      "form": "contact",
+      "theme": "light",
+      "dev": "tablet",
+      "steps": [
+        {
+          "key": "1-empty",
+          "label": "Contact form",
+          "file": "contact-1-empty-tablet-light.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "contact-2-errors-tablet-light.jpg"
+        },
+        {
+          "key": "3-filled",
+          "label": "Filled in",
+          "file": "contact-3-filled-tablet-light.jpg"
+        },
+        {
+          "key": "4-sent",
+          "label": "Message sent",
+          "file": "contact-4-sent-tablet-light.jpg"
+        }
+      ]
+    },
+    {
+      "form": "booking",
+      "theme": "light",
+      "dev": "mobile",
+      "steps": [
+        {
+          "key": "1-time",
+          "label": "Pick a time",
+          "file": "booking-1-time-mobile-light.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "booking-2-errors-mobile-light.jpg"
+        },
+        {
+          "key": "3-about",
+          "label": "About you",
+          "file": "booking-3-about-mobile-light.jpg"
+        },
+        {
+          "key": "4-leads",
+          "label": "Your lead flow",
+          "file": "booking-4-leads-mobile-light.jpg"
+        },
+        {
+          "key": "5-crm",
+          "label": "Your CRM",
+          "file": "booking-5-crm-mobile-light.jpg"
+        },
+        {
+          "key": "6-goals",
+          "label": "Your goals",
+          "file": "booking-6-goals-mobile-light.jpg"
+        },
+        {
+          "key": "7-done",
+          "label": "Confirmed",
+          "file": "booking-7-done-mobile-light.jpg"
+        }
+      ]
+    },
+    {
+      "form": "contact",
+      "theme": "light",
+      "dev": "mobile",
+      "steps": [
+        {
+          "key": "1-empty",
+          "label": "Contact form",
+          "file": "contact-1-empty-mobile-light.jpg"
+        },
+        {
+          "key": "2-errors",
+          "label": "Missing answers",
+          "file": "contact-2-errors-mobile-light.jpg"
+        },
+        {
+          "key": "3-filled",
+          "label": "Filled in",
+          "file": "contact-3-filled-mobile-light.jpg"
+        },
+        {
+          "key": "4-sent",
+          "label": "Message sent",
+          "file": "contact-4-sent-mobile-light.jpg"
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "home-header",
+      "title": "Header button on the home page",
+      "visits": [
+        "/"
+      ],
+      "click": ".site-header [data-book]",
+      "who": "maria",
+      "tz": "America/New_York",
+      "slot": 2,
+      "page_url": "https://www.kpidriver.com/",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Home – Header",
+        "campaign": "Business Discovery (SEO) Home – Header",
+        "cta_label": "header",
+        "slot": {
+          "start": "2026-11-18T19:00:00.000Z",
+          "end": "2026-11-18T19:45:00.000Z",
+          "timezone": "America/New_York",
+          "display": "Wednesday, November 18, 2026 at 2:00 PM"
+        },
+        "contact": {
+          "firstName": "Maria",
+          "lastName": "Gonzalez",
+          "email": "maria@gonzalezhomebuyers.example.com",
+          "phone": "(305) 555-0142",
+          "companyName": "Gonzalez Home Buyers LLC",
+          "address1": "1200 Brickell Ave",
+          "city": "Miami",
+          "state": "FL",
+          "postalCode": "33131",
+          "country": "US",
+          "timezone": "America/New_York"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Gonzalez Home Buyers LLC"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite + AI Agent"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Both (In-House & Outsourced)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "4 - 6"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "Cold Calling",
+              "SMS",
+              "PPL",
+              "Direct Mailer"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Submitting Forms Directly Into the System (CRM)",
+              "Manual Entry"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 4
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 2
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 3
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "Podio"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "No"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ & Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 3
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "QuickBooks plus a deal tracker in Google Sheets."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Google Search"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "ASAP"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Home – Header"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Maria"
+          },
+          {
+            "q": "Last Name",
+            "a": "Gonzalez"
+          },
+          {
+            "q": "Business Email",
+            "a": "maria@gonzalezhomebuyers.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(305) 555-0142"
+          },
+          {
+            "q": "Business Name",
+            "a": "Gonzalez Home Buyers LLC"
+          },
+          {
+            "q": "Street Address",
+            "a": "1200 Brickell Ave"
+          },
+          {
+            "q": "City",
+            "a": "Miami"
+          },
+          {
+            "q": "State",
+            "a": "FL"
+          },
+          {
+            "q": "Postal code",
+            "a": "33131"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite + AI Agent"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Both (In-House & Outsourced)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "4 - 6"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "Cold Calling, SMS, PPL, Direct Mailer"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Submitting Forms Directly Into the System (CRM), Manual Entry"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "4"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "2"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "3"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "Podio"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "No"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ & Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "3"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "QuickBooks plus a deal tracker in Google Sheets."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Google Search"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "ASAP"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:34.990Z",
+          "page": "https://www.kpidriver.com/"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/",
+          "page_title": "KPI DRIVER — CRM, KPI Tracking & AI Suite for Real Estate Investors",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T19:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Maria",
+          "lastName": "Gonzalez",
+          "email": "maria@gonzalezhomebuyers.example.com",
+          "phone": "+13055550142",
+          "companyName": "Gonzalez Home Buyers LLC",
+          "address1": "1200 Brickell Ave",
+          "city": "Miami",
+          "state": "FL",
+          "postalCode": "33131",
+          "country": "US",
+          "timezone": "America/New_York",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Gonzalez Home Buyers LLC"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite + AI Agent"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Both (In-House & Outsourced)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "4 - 6"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "Cold Calling",
+                "SMS",
+                "PPL",
+                "Direct Mailer"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Submitting Forms Directly Into the System (CRM)",
+                "Manual Entry"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 4
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 2
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 3
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "Podio"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "No"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ & Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 3
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "QuickBooks plus a deal tracker in Google Sheets."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Google Search"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "ASAP"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Home – Header"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T19:00:00.000Z",
+          "endTime": "2026-11-18T19:45:00.000Z",
+          "title": "Discovery Call · Maria Gonzalez",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Home – Header",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: home – header"
+        ],
+        "note": "Website booking · Home – Header\nCall: Wednesday, November 18, 2026 at 2:00 PM (America/New_York)\n\nFirst Name: Maria\nLast Name: Gonzalez\nBusiness Email: maria@gonzalezhomebuyers.example.com\nPhone: (305) 555-0142\nBusiness Name: Gonzalez Home Buyers LLC\nStreet Address: 1200 Brickell Ave\nCity: Miami\nState: FL\nPostal code: 33131\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite + AI Agent\nDo You Outsource Your Marketing?: Both (In-House & Outsourced)\nHow Many Lead Sources Do You Have?: 4 - 6\nWhat Are Your Lead Sources?: Cold Calling, SMS, PPL, Direct Mailer\nHow Are These Lead Sources Entering Your Business?: Submitting Forms Directly Into the System (CRM), Manual Entry\nHow Many Agents Do You Have On Cold Calling?: 4\nHow Many Agents Do You Have On SMS?: 2\nHow Many PPL Providers Do You Use?: 3\nDo You Need a CRM?: Yes\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: Podio\nDoes Your CRM Have Follow Up Automations?: No\nWhat Are You Using Your CRM For?: ACQ & Dispo\nHow Many Sales Representatives Do You Have?: 3\nHow Do You Measure Your KPIs?: Weekly spreadsheet from each acquisition manager, mostly calls and offers made.\nHow Do You Keep Track of Your Profits & Losses?: QuickBooks plus a deal tracker in Google Sheets.\nHow Did You Hear About Us: Google Search\nWhat Difficulties Are You Facing In Your Business Generally?: Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline.\nWhat Are Your Expectations With KPI DRIVER?: One CRM with dashboards, automated follow-up and clear KPIs per rep.\nHow Soon Are You Looking To Start?: ASAP\n\nSMS consent: YES · 2026-11-17T17:23:34.990Z · IP 198.51.100.23 · https://www.kpidriver.com/\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/\nLanding page: https://www.kpidriver.com/\nReferrer: direct"
+      }
+    },
+    {
+      "id": "home-hero",
+      "title": "Hero button on the home page",
+      "visits": [
+        "/"
+      ],
+      "click": "[data-label=\"hero\"]",
+      "who": "derek",
+      "tz": "America/Chicago",
+      "slot": 0,
+      "page_url": "https://www.kpidriver.com/",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Home – Hero",
+        "campaign": "Business Discovery (SEO) Home – Hero",
+        "cta_label": "hero",
+        "slot": {
+          "start": "2026-11-18T15:00:00.000Z",
+          "end": "2026-11-18T15:45:00.000Z",
+          "timezone": "America/Chicago",
+          "display": "Wednesday, November 18, 2026 at 9:00 AM"
+        },
+        "contact": {
+          "firstName": "Derek",
+          "lastName": "Shaw",
+          "email": "derek@shawcapital.example.com",
+          "phone": "(512) 555-0178",
+          "companyName": "Shaw Capital Partners",
+          "address1": "600 Congress Ave",
+          "city": "Austin",
+          "state": "TX",
+          "postalCode": "78701",
+          "country": "US",
+          "timezone": "America/Chicago"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Shaw Capital Partners"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Central Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Don't Know Yet"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "No (In-House Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "1 - 3"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "PPC",
+              "SEO"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Direct Integration With The Platform"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 0
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 1
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 0
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "No"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "None"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "No"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 1
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "We do not track KPIs consistently yet."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Our accountant sends a monthly P&L."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Linkedin"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Growing from 2 to 6 people and losing track of who is following up with whom."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "A system our new hires can use from day one."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "Next Month"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Home – Hero"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Derek"
+          },
+          {
+            "q": "Last Name",
+            "a": "Shaw"
+          },
+          {
+            "q": "Business Email",
+            "a": "derek@shawcapital.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(512) 555-0178"
+          },
+          {
+            "q": "Business Name",
+            "a": "Shaw Capital Partners"
+          },
+          {
+            "q": "Street Address",
+            "a": "600 Congress Ave"
+          },
+          {
+            "q": "City",
+            "a": "Austin"
+          },
+          {
+            "q": "State",
+            "a": "TX"
+          },
+          {
+            "q": "Postal code",
+            "a": "78701"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Central Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Don't Know Yet"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "No (In-House Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "1 - 3"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "PPC, SEO"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Direct Integration With The Platform"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "0"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "1"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "0"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "No"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "None"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "No"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "1"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "We do not track KPIs consistently yet."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Our accountant sends a monthly P&L."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Linkedin"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Growing from 2 to 6 people and losing track of who is following up with whom."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "A system our new hires can use from day one."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "Next Month"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:38.452Z",
+          "page": "https://www.kpidriver.com/"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/",
+          "page_title": "KPI DRIVER — CRM, KPI Tracking & AI Suite for Real Estate Investors",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T15:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Derek",
+          "lastName": "Shaw",
+          "email": "derek@shawcapital.example.com",
+          "phone": "+15125550178",
+          "companyName": "Shaw Capital Partners",
+          "address1": "600 Congress Ave",
+          "city": "Austin",
+          "state": "TX",
+          "postalCode": "78701",
+          "country": "US",
+          "timezone": "America/Chicago",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Shaw Capital Partners"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Central Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Don't Know Yet"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "No (In-House Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "1 - 3"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "PPC",
+                "SEO"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Direct Integration With The Platform"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 0
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 1
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 0
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "No"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "None"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "No"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 1
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "We do not track KPIs consistently yet."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Our accountant sends a monthly P&L."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Linkedin"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Growing from 2 to 6 people and losing track of who is following up with whom."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "A system our new hires can use from day one."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "Next Month"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Home – Hero"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T15:00:00.000Z",
+          "endTime": "2026-11-18T15:45:00.000Z",
+          "title": "Discovery Call · Derek Shaw",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Home – Hero",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: home – hero"
+        ],
+        "note": "Website booking · Home – Hero\nCall: Wednesday, November 18, 2026 at 9:00 AM (America/Chicago)\n\nFirst Name: Derek\nLast Name: Shaw\nBusiness Email: derek@shawcapital.example.com\nPhone: (512) 555-0178\nBusiness Name: Shaw Capital Partners\nStreet Address: 600 Congress Ave\nCity: Austin\nState: TX\nPostal code: 78701\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Central Standard Time\nWhich Plan Are You Interested In: Don't Know Yet\nDo You Outsource Your Marketing?: No (In-House Only)\nHow Many Lead Sources Do You Have?: 1 - 3\nWhat Are Your Lead Sources?: PPC, SEO\nHow Are These Lead Sources Entering Your Business?: Direct Integration With The Platform\nHow Many Agents Do You Have On Cold Calling?: 0\nHow Many Agents Do You Have On SMS?: 1\nHow Many PPL Providers Do You Use?: 0\nDo You Need a CRM?: Yes\nDo You Use A CRM?: No\nWhich CRM Do You Use?: None\nDoes Your CRM Have Follow Up Automations?: No\nWhat Are You Using Your CRM For?: ACQ\nHow Many Sales Representatives Do You Have?: 1\nHow Do You Measure Your KPIs?: We do not track KPIs consistently yet.\nHow Do You Keep Track of Your Profits & Losses?: Our accountant sends a monthly P&L.\nHow Did You Hear About Us: Linkedin\nWhat Difficulties Are You Facing In Your Business Generally?: Growing from 2 to 6 people and losing track of who is following up with whom.\nWhat Are Your Expectations With KPI DRIVER?: A system our new hires can use from day one.\nHow Soon Are You Looking To Start?: Next Month\n\nSMS consent: YES · 2026-11-17T17:23:38.452Z · IP 198.51.100.23 · https://www.kpidriver.com/\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/\nLanding page: https://www.kpidriver.com/\nReferrer: direct"
+      }
+    },
+    {
+      "id": "crm-hero",
+      "title": "Hero button on the CRM service page",
+      "visits": [
+        "/services/crm"
+      ],
+      "click": "[data-label=\"crm hero\"]",
+      "who": "tom",
+      "tz": "America/New_York",
+      "slot": 4,
+      "page_url": "https://www.kpidriver.com/services/crm",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "CRM – Hero",
+        "campaign": "Business Discovery (SEO) CRM – Hero",
+        "cta_label": "crm hero",
+        "slot": {
+          "start": "2026-11-18T21:00:00.000Z",
+          "end": "2026-11-18T21:45:00.000Z",
+          "timezone": "America/New_York",
+          "display": "Wednesday, November 18, 2026 at 4:00 PM"
+        },
+        "contact": {
+          "firstName": "Tom",
+          "lastName": "Becker",
+          "email": "tom@beckerpropertygroup.example.com",
+          "phone": "(614) 555-0110",
+          "companyName": "Becker Property Group",
+          "address1": "41 S High St",
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US",
+          "timezone": "America/New_York"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Becker Property Group"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Yes (Outsourced Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "7 - 9"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "Cold Calling",
+              "SMS",
+              "PPC",
+              "PPL",
+              "Direct Mailer",
+              "TV Advertising",
+              "Radio Advertising"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 12
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 4
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 5
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "No"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "GHL"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ & Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 6
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Dashboards in our current CRM, but they do not match finance numbers."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Bookkeeper, monthly."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Referral"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Cost per contract by lead source is a guess."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "Trustworthy cost-per-contract and AI call scoring."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "ASAP"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) CRM – Hero"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Tom"
+          },
+          {
+            "q": "Last Name",
+            "a": "Becker"
+          },
+          {
+            "q": "Business Email",
+            "a": "tom@beckerpropertygroup.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(614) 555-0110"
+          },
+          {
+            "q": "Business Name",
+            "a": "Becker Property Group"
+          },
+          {
+            "q": "Street Address",
+            "a": "41 S High St"
+          },
+          {
+            "q": "City",
+            "a": "Columbus"
+          },
+          {
+            "q": "State",
+            "a": "OH"
+          },
+          {
+            "q": "Postal code",
+            "a": "43215"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Yes (Outsourced Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "7 - 9"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "Cold Calling, SMS, PPC, PPL, Direct Mailer, TV Advertising, Radio Advertising"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "12"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "4"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "5"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "No"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "GHL"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "Yes"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ & Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "6"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Dashboards in our current CRM, but they do not match finance numbers."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Bookkeeper, monthly."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Referral"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Cost per contract by lead source is a guess."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "Trustworthy cost-per-contract and AI call scoring."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "ASAP"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:41.725Z",
+          "page": "https://www.kpidriver.com/services/crm"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/services/crm",
+          "page_title": "CRM | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/services/crm",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T21:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Tom",
+          "lastName": "Becker",
+          "email": "tom@beckerpropertygroup.example.com",
+          "phone": "+16145550110",
+          "companyName": "Becker Property Group",
+          "address1": "41 S High St",
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US",
+          "timezone": "America/New_York",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Becker Property Group"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Yes (Outsourced Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "7 - 9"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "Cold Calling",
+                "SMS",
+                "PPC",
+                "PPL",
+                "Direct Mailer",
+                "TV Advertising",
+                "Radio Advertising"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 12
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 4
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 5
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "No"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "GHL"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ & Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 6
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Dashboards in our current CRM, but they do not match finance numbers."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Bookkeeper, monthly."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Referral"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Cost per contract by lead source is a guess."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "Trustworthy cost-per-contract and AI call scoring."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "ASAP"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) CRM – Hero"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T21:00:00.000Z",
+          "endTime": "2026-11-18T21:45:00.000Z",
+          "title": "Discovery Call · Tom Becker",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · CRM – Hero",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: crm – hero"
+        ],
+        "note": "Website booking · CRM – Hero\nCall: Wednesday, November 18, 2026 at 4:00 PM (America/New_York)\n\nFirst Name: Tom\nLast Name: Becker\nBusiness Email: tom@beckerpropertygroup.example.com\nPhone: (614) 555-0110\nBusiness Name: Becker Property Group\nStreet Address: 41 S High St\nCity: Columbus\nState: OH\nPostal code: 43215\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite\nDo You Outsource Your Marketing?: Yes (Outsourced Only)\nHow Many Lead Sources Do You Have?: 7 - 9\nWhat Are Your Lead Sources?: Cold Calling, SMS, PPC, PPL, Direct Mailer, TV Advertising, Radio Advertising\nHow Are These Lead Sources Entering Your Business?: Submitting Forms Indirectly Via 3rd Party (eg. Zapier)\nHow Many Agents Do You Have On Cold Calling?: 12\nHow Many Agents Do You Have On SMS?: 4\nHow Many PPL Providers Do You Use?: 5\nDo You Need a CRM?: No\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: GHL\nDoes Your CRM Have Follow Up Automations?: Yes\nWhat Are You Using Your CRM For?: ACQ & Dispo\nHow Many Sales Representatives Do You Have?: 6\nHow Do You Measure Your KPIs?: Dashboards in our current CRM, but they do not match finance numbers.\nHow Do You Keep Track of Your Profits & Losses?: Bookkeeper, monthly.\nHow Did You Hear About Us: Referral\nWhat Difficulties Are You Facing In Your Business Generally?: Cost per contract by lead source is a guess.\nWhat Are Your Expectations With KPI DRIVER?: Trustworthy cost-per-contract and AI call scoring.\nHow Soon Are You Looking To Start?: ASAP\n\nSMS consent: YES · 2026-11-17T17:23:41.725Z · IP 198.51.100.23 · https://www.kpidriver.com/services/crm\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/services/crm\nLanding page: https://www.kpidriver.com/services/crm\nReferrer: direct"
+      }
+    },
+    {
+      "id": "services-offer",
+      "title": "“Suite + AI Agent” offer on the Services page",
+      "visits": [
+        "/services"
+      ],
+      "click": "[data-label=\"offer suite agent\"]",
+      "who": "maria",
+      "tz": "America/New_York",
+      "slot": 1,
+      "page_url": "https://www.kpidriver.com/services",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Services – Offer Suite Agent",
+        "campaign": "Business Discovery (SEO) Services – Offer Suite Agent",
+        "cta_label": "offer suite agent",
+        "slot": {
+          "start": "2026-11-18T16:00:00.000Z",
+          "end": "2026-11-18T16:45:00.000Z",
+          "timezone": "America/New_York",
+          "display": "Wednesday, November 18, 2026 at 11:00 AM"
+        },
+        "contact": {
+          "firstName": "Maria",
+          "lastName": "Gonzalez",
+          "email": "maria@gonzalezhomebuyers.example.com",
+          "phone": "(305) 555-0142",
+          "companyName": "Gonzalez Home Buyers LLC",
+          "address1": "1200 Brickell Ave",
+          "city": "Miami",
+          "state": "FL",
+          "postalCode": "33131",
+          "country": "US",
+          "timezone": "America/New_York"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Gonzalez Home Buyers LLC"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite + AI Agent"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Both (In-House & Outsourced)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "4 - 6"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "Cold Calling",
+              "SMS",
+              "PPL",
+              "Direct Mailer"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Submitting Forms Directly Into the System (CRM)",
+              "Manual Entry"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 4
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 2
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 3
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "Podio"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "No"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ & Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 3
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "QuickBooks plus a deal tracker in Google Sheets."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Google Search"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "ASAP"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Services – Offer Suite Agent"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Maria"
+          },
+          {
+            "q": "Last Name",
+            "a": "Gonzalez"
+          },
+          {
+            "q": "Business Email",
+            "a": "maria@gonzalezhomebuyers.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(305) 555-0142"
+          },
+          {
+            "q": "Business Name",
+            "a": "Gonzalez Home Buyers LLC"
+          },
+          {
+            "q": "Street Address",
+            "a": "1200 Brickell Ave"
+          },
+          {
+            "q": "City",
+            "a": "Miami"
+          },
+          {
+            "q": "State",
+            "a": "FL"
+          },
+          {
+            "q": "Postal code",
+            "a": "33131"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite + AI Agent"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Both (In-House & Outsourced)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "4 - 6"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "Cold Calling, SMS, PPL, Direct Mailer"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Submitting Forms Directly Into the System (CRM), Manual Entry"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "4"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "2"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "3"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "Podio"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "No"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ & Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "3"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "QuickBooks plus a deal tracker in Google Sheets."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Google Search"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "ASAP"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:44.920Z",
+          "page": "https://www.kpidriver.com/services"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/services",
+          "page_title": "Services | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/services",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T16:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Maria",
+          "lastName": "Gonzalez",
+          "email": "maria@gonzalezhomebuyers.example.com",
+          "phone": "+13055550142",
+          "companyName": "Gonzalez Home Buyers LLC",
+          "address1": "1200 Brickell Ave",
+          "city": "Miami",
+          "state": "FL",
+          "postalCode": "33131",
+          "country": "US",
+          "timezone": "America/New_York",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Gonzalez Home Buyers LLC"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite + AI Agent"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Both (In-House & Outsourced)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "4 - 6"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "Cold Calling",
+                "SMS",
+                "PPL",
+                "Direct Mailer"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Submitting Forms Directly Into the System (CRM)",
+                "Manual Entry"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 4
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 2
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 3
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "Podio"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "No"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ & Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 3
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "QuickBooks plus a deal tracker in Google Sheets."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Google Search"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "ASAP"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Services – Offer Suite Agent"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T16:00:00.000Z",
+          "endTime": "2026-11-18T16:45:00.000Z",
+          "title": "Discovery Call · Maria Gonzalez",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Services – Offer Suite Agent",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: services – offer suite agent"
+        ],
+        "note": "Website booking · Services – Offer Suite Agent\nCall: Wednesday, November 18, 2026 at 11:00 AM (America/New_York)\n\nFirst Name: Maria\nLast Name: Gonzalez\nBusiness Email: maria@gonzalezhomebuyers.example.com\nPhone: (305) 555-0142\nBusiness Name: Gonzalez Home Buyers LLC\nStreet Address: 1200 Brickell Ave\nCity: Miami\nState: FL\nPostal code: 33131\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite + AI Agent\nDo You Outsource Your Marketing?: Both (In-House & Outsourced)\nHow Many Lead Sources Do You Have?: 4 - 6\nWhat Are Your Lead Sources?: Cold Calling, SMS, PPL, Direct Mailer\nHow Are These Lead Sources Entering Your Business?: Submitting Forms Directly Into the System (CRM), Manual Entry\nHow Many Agents Do You Have On Cold Calling?: 4\nHow Many Agents Do You Have On SMS?: 2\nHow Many PPL Providers Do You Use?: 3\nDo You Need a CRM?: Yes\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: Podio\nDoes Your CRM Have Follow Up Automations?: No\nWhat Are You Using Your CRM For?: ACQ & Dispo\nHow Many Sales Representatives Do You Have?: 3\nHow Do You Measure Your KPIs?: Weekly spreadsheet from each acquisition manager, mostly calls and offers made.\nHow Do You Keep Track of Your Profits & Losses?: QuickBooks plus a deal tracker in Google Sheets.\nHow Did You Hear About Us: Google Search\nWhat Difficulties Are You Facing In Your Business Generally?: Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline.\nWhat Are Your Expectations With KPI DRIVER?: One CRM with dashboards, automated follow-up and clear KPIs per rep.\nHow Soon Are You Looking To Start?: ASAP\n\nSMS consent: YES · 2026-11-17T17:23:44.920Z · IP 198.51.100.23 · https://www.kpidriver.com/services\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/services\nLanding page: https://www.kpidriver.com/services\nReferrer: direct"
+      }
+    },
+    {
+      "id": "blog-header",
+      "title": "Header button while reading a blog post",
+      "visits": [
+        "/blog/speed-to-lead-real-estate-investors"
+      ],
+      "click": ".site-header [data-book]",
+      "who": "derek",
+      "tz": "America/Denver",
+      "slot": 3,
+      "page_url": "https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Blog: Speed To Lead Real Estate Investors – Header",
+        "campaign": "Business Discovery (SEO) Blog: Speed To Lead Real Estate Investors – Header",
+        "cta_label": "header",
+        "slot": {
+          "start": "2026-11-18T20:00:00.000Z",
+          "end": "2026-11-18T20:45:00.000Z",
+          "timezone": "America/Denver",
+          "display": "Wednesday, November 18, 2026 at 1:00 PM"
+        },
+        "contact": {
+          "firstName": "Derek",
+          "lastName": "Shaw",
+          "email": "derek@shawcapital.example.com",
+          "phone": "(512) 555-0178",
+          "companyName": "Shaw Capital Partners",
+          "address1": "600 Congress Ave",
+          "city": "Austin",
+          "state": "TX",
+          "postalCode": "78701",
+          "country": "US",
+          "timezone": "America/Denver"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Shaw Capital Partners"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Mountain Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Don't Know Yet"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "No (In-House Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "1 - 3"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "PPC",
+              "SEO"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Direct Integration With The Platform"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 0
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 1
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 0
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "No"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "None"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "No"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 1
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "We do not track KPIs consistently yet."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Our accountant sends a monthly P&L."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Linkedin"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Growing from 2 to 6 people and losing track of who is following up with whom."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "A system our new hires can use from day one."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "Next Month"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Blog: Speed To Lead Real Estate Investors – Header"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Derek"
+          },
+          {
+            "q": "Last Name",
+            "a": "Shaw"
+          },
+          {
+            "q": "Business Email",
+            "a": "derek@shawcapital.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(512) 555-0178"
+          },
+          {
+            "q": "Business Name",
+            "a": "Shaw Capital Partners"
+          },
+          {
+            "q": "Street Address",
+            "a": "600 Congress Ave"
+          },
+          {
+            "q": "City",
+            "a": "Austin"
+          },
+          {
+            "q": "State",
+            "a": "TX"
+          },
+          {
+            "q": "Postal code",
+            "a": "78701"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Mountain Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Don't Know Yet"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "No (In-House Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "1 - 3"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "PPC, SEO"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Direct Integration With The Platform"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "0"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "1"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "0"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "No"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "None"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "No"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "1"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "We do not track KPIs consistently yet."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Our accountant sends a monthly P&L."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Linkedin"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Growing from 2 to 6 people and losing track of who is following up with whom."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "A system our new hires can use from day one."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "Next Month"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:48.177Z",
+          "page": "https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors",
+          "page_title": "Speed to Lead for Real Estate Investors | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T20:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Derek",
+          "lastName": "Shaw",
+          "email": "derek@shawcapital.example.com",
+          "phone": "+15125550178",
+          "companyName": "Shaw Capital Partners",
+          "address1": "600 Congress Ave",
+          "city": "Austin",
+          "state": "TX",
+          "postalCode": "78701",
+          "country": "US",
+          "timezone": "America/Denver",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Shaw Capital Partners"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Mountain Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Don't Know Yet"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "No (In-House Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "1 - 3"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "PPC",
+                "SEO"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Direct Integration With The Platform"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 0
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 1
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 0
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "No"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "None"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "No"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 1
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "We do not track KPIs consistently yet."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Our accountant sends a monthly P&L."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Linkedin"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Growing from 2 to 6 people and losing track of who is following up with whom."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "A system our new hires can use from day one."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "Next Month"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Blog: Speed To Lead Real Estate Investors – Header"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T20:00:00.000Z",
+          "endTime": "2026-11-18T20:45:00.000Z",
+          "title": "Discovery Call · Derek Shaw",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Blog: Speed To Lead Real Estate Investors – Header",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: blog: speed to lead real estate investors – header"
+        ],
+        "note": "Website booking · Blog: Speed To Lead Real Estate Investors – Header\nCall: Wednesday, November 18, 2026 at 1:00 PM (America/Denver)\n\nFirst Name: Derek\nLast Name: Shaw\nBusiness Email: derek@shawcapital.example.com\nPhone: (512) 555-0178\nBusiness Name: Shaw Capital Partners\nStreet Address: 600 Congress Ave\nCity: Austin\nState: TX\nPostal code: 78701\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Mountain Standard Time\nWhich Plan Are You Interested In: Don't Know Yet\nDo You Outsource Your Marketing?: No (In-House Only)\nHow Many Lead Sources Do You Have?: 1 - 3\nWhat Are Your Lead Sources?: PPC, SEO\nHow Are These Lead Sources Entering Your Business?: Direct Integration With The Platform\nHow Many Agents Do You Have On Cold Calling?: 0\nHow Many Agents Do You Have On SMS?: 1\nHow Many PPL Providers Do You Use?: 0\nDo You Need a CRM?: Yes\nDo You Use A CRM?: No\nWhich CRM Do You Use?: None\nDoes Your CRM Have Follow Up Automations?: No\nWhat Are You Using Your CRM For?: ACQ\nHow Many Sales Representatives Do You Have?: 1\nHow Do You Measure Your KPIs?: We do not track KPIs consistently yet.\nHow Do You Keep Track of Your Profits & Losses?: Our accountant sends a monthly P&L.\nHow Did You Hear About Us: Linkedin\nWhat Difficulties Are You Facing In Your Business Generally?: Growing from 2 to 6 people and losing track of who is following up with whom.\nWhat Are Your Expectations With KPI DRIVER?: A system our new hires can use from day one.\nHow Soon Are You Looking To Start?: Next Month\n\nSMS consent: YES · 2026-11-17T17:23:48.177Z · IP 198.51.100.23 · https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors\nLanding page: https://www.kpidriver.com/blog/speed-to-lead-real-estate-investors\nReferrer: direct"
+      }
+    },
+    {
+      "id": "team-footer",
+      "title": "Footer link on the Our Team page",
+      "visits": [
+        "/our-team"
+      ],
+      "click": ".site-footer [data-book]",
+      "who": "tom",
+      "tz": "America/New_York",
+      "slot": 0,
+      "page_url": "https://www.kpidriver.com/our-team",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Our Team – Footer",
+        "campaign": "Business Discovery (SEO) Our Team – Footer",
+        "cta_label": "footer",
+        "slot": {
+          "start": "2026-11-18T15:00:00.000Z",
+          "end": "2026-11-18T15:45:00.000Z",
+          "timezone": "America/New_York",
+          "display": "Wednesday, November 18, 2026 at 10:00 AM"
+        },
+        "contact": {
+          "firstName": "Tom",
+          "lastName": "Becker",
+          "email": "tom@beckerpropertygroup.example.com",
+          "phone": "(614) 555-0110",
+          "companyName": "Becker Property Group",
+          "address1": "41 S High St",
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US",
+          "timezone": "America/New_York"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Becker Property Group"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Yes (Outsourced Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "7 - 9"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "Cold Calling",
+              "SMS",
+              "PPC",
+              "PPL",
+              "Direct Mailer",
+              "TV Advertising",
+              "Radio Advertising"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 12
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 4
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 5
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "No"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "GHL"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ & Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 6
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Dashboards in our current CRM, but they do not match finance numbers."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Bookkeeper, monthly."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Referral"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Cost per contract by lead source is a guess."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "Trustworthy cost-per-contract and AI call scoring."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "ASAP"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Our Team – Footer"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Tom"
+          },
+          {
+            "q": "Last Name",
+            "a": "Becker"
+          },
+          {
+            "q": "Business Email",
+            "a": "tom@beckerpropertygroup.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(614) 555-0110"
+          },
+          {
+            "q": "Business Name",
+            "a": "Becker Property Group"
+          },
+          {
+            "q": "Street Address",
+            "a": "41 S High St"
+          },
+          {
+            "q": "City",
+            "a": "Columbus"
+          },
+          {
+            "q": "State",
+            "a": "OH"
+          },
+          {
+            "q": "Postal code",
+            "a": "43215"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Yes (Outsourced Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "7 - 9"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "Cold Calling, SMS, PPC, PPL, Direct Mailer, TV Advertising, Radio Advertising"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "12"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "4"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "5"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "No"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "GHL"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "Yes"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ & Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "6"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Dashboards in our current CRM, but they do not match finance numbers."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Bookkeeper, monthly."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Referral"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Cost per contract by lead source is a guess."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "Trustworthy cost-per-contract and AI call scoring."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "ASAP"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:51.463Z",
+          "page": "https://www.kpidriver.com/our-team"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/our-team",
+          "page_title": "Our Team | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/our-team",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T15:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Tom",
+          "lastName": "Becker",
+          "email": "tom@beckerpropertygroup.example.com",
+          "phone": "+16145550110",
+          "companyName": "Becker Property Group",
+          "address1": "41 S High St",
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US",
+          "timezone": "America/New_York",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Becker Property Group"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Yes (Outsourced Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "7 - 9"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "Cold Calling",
+                "SMS",
+                "PPC",
+                "PPL",
+                "Direct Mailer",
+                "TV Advertising",
+                "Radio Advertising"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 12
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 4
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 5
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "No"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "GHL"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ & Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 6
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Dashboards in our current CRM, but they do not match finance numbers."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Bookkeeper, monthly."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Referral"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Cost per contract by lead source is a guess."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "Trustworthy cost-per-contract and AI call scoring."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "ASAP"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Our Team – Footer"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T15:00:00.000Z",
+          "endTime": "2026-11-18T15:45:00.000Z",
+          "title": "Discovery Call · Tom Becker",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Our Team – Footer",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: our team – footer"
+        ],
+        "note": "Website booking · Our Team – Footer\nCall: Wednesday, November 18, 2026 at 10:00 AM (America/New_York)\n\nFirst Name: Tom\nLast Name: Becker\nBusiness Email: tom@beckerpropertygroup.example.com\nPhone: (614) 555-0110\nBusiness Name: Becker Property Group\nStreet Address: 41 S High St\nCity: Columbus\nState: OH\nPostal code: 43215\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite\nDo You Outsource Your Marketing?: Yes (Outsourced Only)\nHow Many Lead Sources Do You Have?: 7 - 9\nWhat Are Your Lead Sources?: Cold Calling, SMS, PPC, PPL, Direct Mailer, TV Advertising, Radio Advertising\nHow Are These Lead Sources Entering Your Business?: Submitting Forms Indirectly Via 3rd Party (eg. Zapier)\nHow Many Agents Do You Have On Cold Calling?: 12\nHow Many Agents Do You Have On SMS?: 4\nHow Many PPL Providers Do You Use?: 5\nDo You Need a CRM?: No\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: GHL\nDoes Your CRM Have Follow Up Automations?: Yes\nWhat Are You Using Your CRM For?: ACQ & Dispo\nHow Many Sales Representatives Do You Have?: 6\nHow Do You Measure Your KPIs?: Dashboards in our current CRM, but they do not match finance numbers.\nHow Do You Keep Track of Your Profits & Losses?: Bookkeeper, monthly.\nHow Did You Hear About Us: Referral\nWhat Difficulties Are You Facing In Your Business Generally?: Cost per contract by lead source is a guess.\nWhat Are Your Expectations With KPI DRIVER?: Trustworthy cost-per-contract and AI call scoring.\nHow Soon Are You Looking To Start?: ASAP\n\nSMS consent: YES · 2026-11-17T17:23:51.463Z · IP 198.51.100.23 · https://www.kpidriver.com/our-team\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/our-team\nLanding page: https://www.kpidriver.com/our-team\nReferrer: direct"
+      }
+    },
+    {
+      "id": "es-hero",
+      "title": "Spanish home page, visitor in Mexico City",
+      "visits": [
+        "/es"
+      ],
+      "click": "[data-label=\"hero\"]",
+      "who": "ana",
+      "tz": "America/Mexico_City",
+      "slot": 2,
+      "page_url": "https://www.kpidriver.com/es",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Home (ES) – Hero",
+        "campaign": "Business Discovery (SEO) Home (ES) – Hero",
+        "cta_label": "hero",
+        "slot": {
+          "start": "2026-11-18T19:00:00.000Z",
+          "end": "2026-11-18T19:45:00.000Z",
+          "timezone": "America/Mexico_City",
+          "display": "Wednesday, November 18, 2026 at 1:00 PM"
+        },
+        "contact": {
+          "firstName": "Ana",
+          "lastName": "Ríos",
+          "email": "ana@riosinversiones.example.com",
+          "phone": "+52 55 5555 0199",
+          "companyName": "Ríos Inversiones",
+          "address1": "Av. Reforma 250",
+          "city": "Ciudad de México",
+          "state": "CDMX",
+          "postalCode": "06600",
+          "country": "MX",
+          "timezone": "America/Mexico_City"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Ríos Inversiones"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Yes (Outsourced Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "1 - 3"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "SMS",
+              "On-Market"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Google Sheets"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 0
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 3
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 1
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "Other"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 2
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Monthly closings only."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Excel workbook."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Instagram"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Spanish-speaking sellers and English-speaking buyers in two different tools."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "Bilingual follow-up from one place."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "Start of Next Quarter"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Home (ES) – Hero"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Ana"
+          },
+          {
+            "q": "Last Name",
+            "a": "Ríos"
+          },
+          {
+            "q": "Business Email",
+            "a": "ana@riosinversiones.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "+52 55 5555 0199"
+          },
+          {
+            "q": "Business Name",
+            "a": "Ríos Inversiones"
+          },
+          {
+            "q": "Street Address",
+            "a": "Av. Reforma 250"
+          },
+          {
+            "q": "City",
+            "a": "Ciudad de México"
+          },
+          {
+            "q": "State",
+            "a": "CDMX"
+          },
+          {
+            "q": "Postal code",
+            "a": "06600"
+          },
+          {
+            "q": "Country",
+            "a": "MX"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Yes (Outsourced Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "1 - 3"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "SMS, On-Market"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Google Sheets"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "0"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "3"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "1"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "Other"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "Yes"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "2"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Monthly closings only."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Excel workbook."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Instagram"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Spanish-speaking sellers and English-speaking buyers in two different tools."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "Bilingual follow-up from one place."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "Start of Next Quarter"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:55.080Z",
+          "page": "https://www.kpidriver.com/es"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/es",
+          "page_title": "KPI DRIVER — CRM y KPIs para inversionistas",
+          "referrer": "",
+          "lang": "es",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/es",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T19:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Ana",
+          "lastName": "Ríos",
+          "email": "ana@riosinversiones.example.com",
+          "phone": "+525555550199",
+          "companyName": "Ríos Inversiones",
+          "address1": "Av. Reforma 250",
+          "city": "Ciudad de México",
+          "state": "CDMX",
+          "postalCode": "06600",
+          "country": "MX",
+          "timezone": "America/Mexico_City",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Ríos Inversiones"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Yes (Outsourced Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "1 - 3"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "SMS",
+                "On-Market"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Google Sheets"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 0
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 3
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 1
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "Other"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 2
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Monthly closings only."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Excel workbook."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Instagram"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Spanish-speaking sellers and English-speaking buyers in two different tools."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "Bilingual follow-up from one place."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "Start of Next Quarter"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Home (ES) – Hero"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T19:00:00.000Z",
+          "endTime": "2026-11-18T19:45:00.000Z",
+          "title": "Discovery Call · Ana Ríos",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Home (ES) – Hero",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: home (es) – hero"
+        ],
+        "note": "Website booking · Home (ES) – Hero\nCall: Wednesday, November 18, 2026 at 1:00 PM (America/Mexico_City)\n\nFirst Name: Ana\nLast Name: Ríos\nBusiness Email: ana@riosinversiones.example.com\nPhone: +52 55 5555 0199\nBusiness Name: Ríos Inversiones\nStreet Address: Av. Reforma 250\nCity: Ciudad de México\nState: CDMX\nPostal code: 06600\nCountry: MX\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite\nDo You Outsource Your Marketing?: Yes (Outsourced Only)\nHow Many Lead Sources Do You Have?: 1 - 3\nWhat Are Your Lead Sources?: SMS, On-Market\nHow Are These Lead Sources Entering Your Business?: Google Sheets\nHow Many Agents Do You Have On Cold Calling?: 0\nHow Many Agents Do You Have On SMS?: 3\nHow Many PPL Providers Do You Use?: 1\nDo You Need a CRM?: Yes\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: Other\nDoes Your CRM Have Follow Up Automations?: Yes\nWhat Are You Using Your CRM For?: Dispo\nHow Many Sales Representatives Do You Have?: 2\nHow Do You Measure Your KPIs?: Monthly closings only.\nHow Do You Keep Track of Your Profits & Losses?: Excel workbook.\nHow Did You Hear About Us: Instagram\nWhat Difficulties Are You Facing In Your Business Generally?: Spanish-speaking sellers and English-speaking buyers in two different tools.\nWhat Are Your Expectations With KPI DRIVER?: Bilingual follow-up from one place.\nHow Soon Are You Looking To Start?: Start of Next Quarter\n\nSMS consent: YES · 2026-11-17T17:23:55.080Z · IP 198.51.100.23 · https://www.kpidriver.com/es\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/es\nLanding page: https://www.kpidriver.com/es\nReferrer: direct"
+      }
+    },
+    {
+      "id": "facebook-ai-suite",
+      "title": "Facebook ad → browses → books from the AI Suite page",
+      "visits": [
+        "/?utm_source=facebook&utm_medium=paid_social&utm_campaign=nov-investors&utm_content=video-a&fbclid=IwAR0demo123",
+        "/services/ai-suite"
+      ],
+      "click": "[data-label=\"suite hero\"]",
+      "who": "maria",
+      "tz": "America/New_York",
+      "slot": 1,
+      "referrer": "https://l.facebook.com/",
+      "page_url": "https://www.kpidriver.com/services/ai-suite",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "AI Suite – Hero",
+        "campaign": "Business Discovery (SEO) AI Suite – Hero",
+        "cta_label": "suite hero",
+        "slot": {
+          "start": "2026-11-18T16:00:00.000Z",
+          "end": "2026-11-18T16:45:00.000Z",
+          "timezone": "America/New_York",
+          "display": "Wednesday, November 18, 2026 at 11:00 AM"
+        },
+        "contact": {
+          "firstName": "Maria",
+          "lastName": "Gonzalez",
+          "email": "maria@gonzalezhomebuyers.example.com",
+          "phone": "(305) 555-0142",
+          "companyName": "Gonzalez Home Buyers LLC",
+          "address1": "1200 Brickell Ave",
+          "city": "Miami",
+          "state": "FL",
+          "postalCode": "33131",
+          "country": "US",
+          "timezone": "America/New_York"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Gonzalez Home Buyers LLC"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite + AI Agent"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Both (In-House & Outsourced)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "4 - 6"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "Cold Calling",
+              "SMS",
+              "PPL",
+              "Direct Mailer"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Submitting Forms Directly Into the System (CRM)",
+              "Manual Entry"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 4
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 2
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 3
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "Podio"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "No"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ & Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 3
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "QuickBooks plus a deal tracker in Google Sheets."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Google Search"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "ASAP"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) AI Suite – Hero"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Maria"
+          },
+          {
+            "q": "Last Name",
+            "a": "Gonzalez"
+          },
+          {
+            "q": "Business Email",
+            "a": "maria@gonzalezhomebuyers.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(305) 555-0142"
+          },
+          {
+            "q": "Business Name",
+            "a": "Gonzalez Home Buyers LLC"
+          },
+          {
+            "q": "Street Address",
+            "a": "1200 Brickell Ave"
+          },
+          {
+            "q": "City",
+            "a": "Miami"
+          },
+          {
+            "q": "State",
+            "a": "FL"
+          },
+          {
+            "q": "Postal code",
+            "a": "33131"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite + AI Agent"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Both (In-House & Outsourced)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "4 - 6"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "Cold Calling, SMS, PPL, Direct Mailer"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Submitting Forms Directly Into the System (CRM), Manual Entry"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "4"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "2"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "3"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "Podio"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "No"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ & Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "3"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "QuickBooks plus a deal tracker in Google Sheets."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Google Search"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "ASAP"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:23:58.774Z",
+          "page": "https://www.kpidriver.com/services/ai-suite"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/services/ai-suite",
+          "page_title": "AI Suite | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "facebook",
+          "utm_medium": "paid_social",
+          "utm_campaign": "nov-investors",
+          "utm_term": "",
+          "utm_content": "video-a",
+          "gclid": "",
+          "fbclid": "IwAR0demo123",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=nov-investors&utm_content=video-a&fbclid=IwAR0demo123",
+          "first_referrer": "https://l.facebook.com/"
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T16:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Maria",
+          "lastName": "Gonzalez",
+          "email": "maria@gonzalezhomebuyers.example.com",
+          "phone": "+13055550142",
+          "companyName": "Gonzalez Home Buyers LLC",
+          "address1": "1200 Brickell Ave",
+          "city": "Miami",
+          "state": "FL",
+          "postalCode": "33131",
+          "country": "US",
+          "timezone": "America/New_York",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Gonzalez Home Buyers LLC"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite + AI Agent"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Both (In-House & Outsourced)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "4 - 6"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "Cold Calling",
+                "SMS",
+                "PPL",
+                "Direct Mailer"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Submitting Forms Directly Into the System (CRM)",
+                "Manual Entry"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 4
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 2
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 3
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "Podio"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "No"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ & Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 3
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Weekly spreadsheet from each acquisition manager, mostly calls and offers made."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "QuickBooks plus a deal tracker in Google Sheets."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Google Search"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "One CRM with dashboards, automated follow-up and clear KPIs per rep."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "ASAP"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) AI Suite – Hero"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T16:00:00.000Z",
+          "endTime": "2026-11-18T16:45:00.000Z",
+          "title": "Discovery Call · Maria Gonzalez",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · AI Suite – Hero",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: ai suite – hero"
+        ],
+        "note": "Website booking · AI Suite – Hero\nCall: Wednesday, November 18, 2026 at 11:00 AM (America/New_York)\n\nFirst Name: Maria\nLast Name: Gonzalez\nBusiness Email: maria@gonzalezhomebuyers.example.com\nPhone: (305) 555-0142\nBusiness Name: Gonzalez Home Buyers LLC\nStreet Address: 1200 Brickell Ave\nCity: Miami\nState: FL\nPostal code: 33131\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite + AI Agent\nDo You Outsource Your Marketing?: Both (In-House & Outsourced)\nHow Many Lead Sources Do You Have?: 4 - 6\nWhat Are Your Lead Sources?: Cold Calling, SMS, PPL, Direct Mailer\nHow Are These Lead Sources Entering Your Business?: Submitting Forms Directly Into the System (CRM), Manual Entry\nHow Many Agents Do You Have On Cold Calling?: 4\nHow Many Agents Do You Have On SMS?: 2\nHow Many PPL Providers Do You Use?: 3\nDo You Need a CRM?: Yes\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: Podio\nDoes Your CRM Have Follow Up Automations?: No\nWhat Are You Using Your CRM For?: ACQ & Dispo\nHow Many Sales Representatives Do You Have?: 3\nHow Do You Measure Your KPIs?: Weekly spreadsheet from each acquisition manager, mostly calls and offers made.\nHow Do You Keep Track of Your Profits & Losses?: QuickBooks plus a deal tracker in Google Sheets.\nHow Did You Hear About Us: Google Search\nWhat Difficulties Are You Facing In Your Business Generally?: Leads fall through the cracks between cold calling and follow-up. No single view of the pipeline.\nWhat Are Your Expectations With KPI DRIVER?: One CRM with dashboards, automated follow-up and clear KPIs per rep.\nHow Soon Are You Looking To Start?: ASAP\n\nSMS consent: YES · 2026-11-17T17:23:58.774Z · IP 198.51.100.23 · https://www.kpidriver.com/services/ai-suite\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/services/ai-suite\nLanding page: https://www.kpidriver.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=nov-investors&utm_content=video-a&fbclid=IwAR0demo123\nReferrer: https://l.facebook.com/\nutm_source: facebook\nutm_medium: paid_social\nutm_campaign: nov-investors\nutm_content: video-a\nfbclid: IwAR0demo123"
+      }
+    },
+    {
+      "id": "booking-page",
+      "title": "Inline form on the Book a Discovery Call page",
+      "visits": [
+        "/book-discovery-call"
+      ],
+      "inline": "booking",
+      "who": "derek",
+      "tz": "America/Los_Angeles",
+      "slot": 0,
+      "page_url": "https://www.kpidriver.com/book-discovery-call",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Book a Discovery Call – Booking Page",
+        "campaign": "Business Discovery (SEO) Book a Discovery Call – Booking Page",
+        "cta_label": "",
+        "slot": {
+          "start": "2026-11-18T15:00:00.000Z",
+          "end": "2026-11-18T15:45:00.000Z",
+          "timezone": "America/Los_Angeles",
+          "display": "Wednesday, November 18, 2026 at 7:00 AM"
+        },
+        "contact": {
+          "firstName": "Derek",
+          "lastName": "Shaw",
+          "email": "derek@shawcapital.example.com",
+          "phone": "(512) 555-0178",
+          "companyName": "Shaw Capital Partners",
+          "address1": "600 Congress Ave",
+          "city": "Austin",
+          "state": "TX",
+          "postalCode": "78701",
+          "country": "US",
+          "timezone": "America/Los_Angeles"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Shaw Capital Partners"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Pacific Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Don't Know Yet"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "No (In-House Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "1 - 3"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "PPC",
+              "SEO"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Direct Integration With The Platform"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 0
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 1
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 0
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "No"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "None"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "No"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 1
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "We do not track KPIs consistently yet."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Our accountant sends a monthly P&L."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Linkedin"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Growing from 2 to 6 people and losing track of who is following up with whom."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "A system our new hires can use from day one."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "Next Month"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Book a Discovery Call – Booking Page"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Derek"
+          },
+          {
+            "q": "Last Name",
+            "a": "Shaw"
+          },
+          {
+            "q": "Business Email",
+            "a": "derek@shawcapital.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(512) 555-0178"
+          },
+          {
+            "q": "Business Name",
+            "a": "Shaw Capital Partners"
+          },
+          {
+            "q": "Street Address",
+            "a": "600 Congress Ave"
+          },
+          {
+            "q": "City",
+            "a": "Austin"
+          },
+          {
+            "q": "State",
+            "a": "TX"
+          },
+          {
+            "q": "Postal code",
+            "a": "78701"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Pacific Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Don't Know Yet"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "No (In-House Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "1 - 3"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "PPC, SEO"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Direct Integration With The Platform"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "0"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "1"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "0"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "No"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "None"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "No"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "1"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "We do not track KPIs consistently yet."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Our accountant sends a monthly P&L."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Linkedin"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Growing from 2 to 6 people and losing track of who is following up with whom."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "A system our new hires can use from day one."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "Next Month"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:24:01.369Z",
+          "page": "https://www.kpidriver.com/book-discovery-call"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/book-discovery-call",
+          "page_title": "Book a Discovery Call | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/book-discovery-call",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T15:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Derek",
+          "lastName": "Shaw",
+          "email": "derek@shawcapital.example.com",
+          "phone": "+15125550178",
+          "companyName": "Shaw Capital Partners",
+          "address1": "600 Congress Ave",
+          "city": "Austin",
+          "state": "TX",
+          "postalCode": "78701",
+          "country": "US",
+          "timezone": "America/Los_Angeles",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Shaw Capital Partners"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Pacific Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Don't Know Yet"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "No (In-House Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "1 - 3"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "PPC",
+                "SEO"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Direct Integration With The Platform"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 0
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 1
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 0
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "No"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "None"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "No"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 1
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "We do not track KPIs consistently yet."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Our accountant sends a monthly P&L."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Linkedin"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Growing from 2 to 6 people and losing track of who is following up with whom."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "A system our new hires can use from day one."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "Next Month"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Book a Discovery Call – Booking Page"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T15:00:00.000Z",
+          "endTime": "2026-11-18T15:45:00.000Z",
+          "title": "Discovery Call · Derek Shaw",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Book a Discovery Call – Booking Page",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: book a discovery call – booking page"
+        ],
+        "note": "Website booking · Book a Discovery Call – Booking Page\nCall: Wednesday, November 18, 2026 at 7:00 AM (America/Los_Angeles)\n\nFirst Name: Derek\nLast Name: Shaw\nBusiness Email: derek@shawcapital.example.com\nPhone: (512) 555-0178\nBusiness Name: Shaw Capital Partners\nStreet Address: 600 Congress Ave\nCity: Austin\nState: TX\nPostal code: 78701\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Pacific Standard Time\nWhich Plan Are You Interested In: Don't Know Yet\nDo You Outsource Your Marketing?: No (In-House Only)\nHow Many Lead Sources Do You Have?: 1 - 3\nWhat Are Your Lead Sources?: PPC, SEO\nHow Are These Lead Sources Entering Your Business?: Direct Integration With The Platform\nHow Many Agents Do You Have On Cold Calling?: 0\nHow Many Agents Do You Have On SMS?: 1\nHow Many PPL Providers Do You Use?: 0\nDo You Need a CRM?: Yes\nDo You Use A CRM?: No\nWhich CRM Do You Use?: None\nDoes Your CRM Have Follow Up Automations?: No\nWhat Are You Using Your CRM For?: ACQ\nHow Many Sales Representatives Do You Have?: 1\nHow Do You Measure Your KPIs?: We do not track KPIs consistently yet.\nHow Do You Keep Track of Your Profits & Losses?: Our accountant sends a monthly P&L.\nHow Did You Hear About Us: Linkedin\nWhat Difficulties Are You Facing In Your Business Generally?: Growing from 2 to 6 people and losing track of who is following up with whom.\nWhat Are Your Expectations With KPI DRIVER?: A system our new hires can use from day one.\nHow Soon Are You Looking To Start?: Next Month\n\nSMS consent: YES · 2026-11-17T17:24:01.369Z · IP 198.51.100.23 · https://www.kpidriver.com/book-discovery-call\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/book-discovery-call\nLanding page: https://www.kpidriver.com/book-discovery-call\nReferrer: direct"
+      }
+    },
+    {
+      "id": "contact-card",
+      "title": "“Book a Discovery Call” on the Contact Us page",
+      "visits": [
+        "/contact-us"
+      ],
+      "click": "[data-label=\"contact card\"]",
+      "who": "tom",
+      "tz": "America/New_York",
+      "slot": 2,
+      "page_url": "https://www.kpidriver.com/contact-us",
+      "payload": {
+        "version": 1,
+        "type": "booking",
+        "booking_source": "Contact Us – Contact Card",
+        "campaign": "Business Discovery (SEO) Contact Us – Contact Card",
+        "cta_label": "contact card",
+        "slot": {
+          "start": "2026-11-18T19:00:00.000Z",
+          "end": "2026-11-18T19:45:00.000Z",
+          "timezone": "America/New_York",
+          "display": "Wednesday, November 18, 2026 at 2:00 PM"
+        },
+        "contact": {
+          "firstName": "Tom",
+          "lastName": "Becker",
+          "email": "tom@beckerpropertygroup.example.com",
+          "phone": "(614) 555-0110",
+          "companyName": "Becker Property Group",
+          "address1": "41 S High St",
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US",
+          "timezone": "America/New_York"
+        },
+        "customFields": [
+          {
+            "id": "st1eCAFAHDcgPM4VvtNn",
+            "fieldValue": "Becker Property Group"
+          },
+          {
+            "id": "Z8TSBkLl0c3nkOh0d0bj",
+            "fieldValue": "Real Estate"
+          },
+          {
+            "id": "h4JApkD7A1meEgqfLJ4v",
+            "fieldValue": "Eastern Standard Time"
+          },
+          {
+            "id": "zntmhqZEVR510izM1Amv",
+            "fieldValue": "Enterprise Optimization Suite"
+          },
+          {
+            "id": "ARe4MceHNpyuA2cKkIEw",
+            "fieldValue": "Yes (Outsourced Only)"
+          },
+          {
+            "id": "qmkmAZyHzfeRFjkRKQaw",
+            "fieldValue": "7 - 9"
+          },
+          {
+            "id": "UWxeByWt7W4EuIVVAQsm",
+            "fieldValue": [
+              "Cold Calling",
+              "SMS",
+              "PPC",
+              "PPL",
+              "Direct Mailer",
+              "TV Advertising",
+              "Radio Advertising"
+            ]
+          },
+          {
+            "id": "J1MTiekQt4vbamz8JFee",
+            "fieldValue": [
+              "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+            ]
+          },
+          {
+            "id": "u6f3OtUsag2gUpFKEHCy",
+            "fieldValue": 12
+          },
+          {
+            "id": "TgvNUU7bOSq4YSB2FS9w",
+            "fieldValue": 4
+          },
+          {
+            "id": "xOz64JUSqg9hFWthmar5",
+            "fieldValue": 5
+          },
+          {
+            "id": "QfNSOY8w6fJUpyxW9al1",
+            "fieldValue": "No"
+          },
+          {
+            "id": "9aMGEJzyATDb4ZGnPLt7",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "rihpUXcXicHdCxEo4CfX",
+            "fieldValue": "GHL"
+          },
+          {
+            "id": "sqX5fTAKqUuNRwdoxaag",
+            "fieldValue": "Yes"
+          },
+          {
+            "id": "uclYhjBFIyedqd8xqYwE",
+            "fieldValue": "ACQ & Dispo"
+          },
+          {
+            "id": "VLoxJWATbFZMgMOfBb4P",
+            "fieldValue": 6
+          },
+          {
+            "id": "kjvFHgnOa8iVNV7YiiBN",
+            "fieldValue": "Dashboards in our current CRM, but they do not match finance numbers."
+          },
+          {
+            "id": "LNdrE1FEgFjbPydSCntV",
+            "fieldValue": "Bookkeeper, monthly."
+          },
+          {
+            "id": "FohJiIh9tGFKXI02LSUD",
+            "fieldValue": "Referral"
+          },
+          {
+            "id": "crnTGUSW3StY8VTOqaR2",
+            "fieldValue": "Cost per contract by lead source is a guess."
+          },
+          {
+            "id": "EI2ls6K7uJFe75PmRPaX",
+            "fieldValue": "Trustworthy cost-per-contract and AI call scoring."
+          },
+          {
+            "id": "U26ojrxlzQxC1kwAMvki",
+            "fieldValue": "ASAP"
+          },
+          {
+            "id": "O5yyMN7TXsWzblxrHUfO",
+            "fieldValue": "Business Discovery (SEO) Contact Us – Contact Card"
+          }
+        ],
+        "answers": [
+          {
+            "q": "First Name",
+            "a": "Tom"
+          },
+          {
+            "q": "Last Name",
+            "a": "Becker"
+          },
+          {
+            "q": "Business Email",
+            "a": "tom@beckerpropertygroup.example.com"
+          },
+          {
+            "q": "Phone",
+            "a": "(614) 555-0110"
+          },
+          {
+            "q": "Business Name",
+            "a": "Becker Property Group"
+          },
+          {
+            "q": "Street Address",
+            "a": "41 S High St"
+          },
+          {
+            "q": "City",
+            "a": "Columbus"
+          },
+          {
+            "q": "State",
+            "a": "OH"
+          },
+          {
+            "q": "Postal code",
+            "a": "43215"
+          },
+          {
+            "q": "Country",
+            "a": "US"
+          },
+          {
+            "q": "Business Niche",
+            "a": "Real Estate"
+          },
+          {
+            "q": "Time Zone",
+            "a": "Eastern Standard Time"
+          },
+          {
+            "q": "Which Plan Are You Interested In",
+            "a": "Enterprise Optimization Suite"
+          },
+          {
+            "q": "Do You Outsource Your Marketing?",
+            "a": "Yes (Outsourced Only)"
+          },
+          {
+            "q": "How Many Lead Sources Do You Have?",
+            "a": "7 - 9"
+          },
+          {
+            "q": "What Are Your Lead Sources?",
+            "a": "Cold Calling, SMS, PPC, PPL, Direct Mailer, TV Advertising, Radio Advertising"
+          },
+          {
+            "q": "How Are These Lead Sources Entering Your Business?",
+            "a": "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+          },
+          {
+            "q": "How Many Agents Do You Have On Cold Calling?",
+            "a": "12"
+          },
+          {
+            "q": "How Many Agents Do You Have On SMS?",
+            "a": "4"
+          },
+          {
+            "q": "How Many PPL Providers Do You Use?",
+            "a": "5"
+          },
+          {
+            "q": "Do You Need a CRM?",
+            "a": "No"
+          },
+          {
+            "q": "Do You Use A CRM?",
+            "a": "Yes"
+          },
+          {
+            "q": "Which CRM Do You Use?",
+            "a": "GHL"
+          },
+          {
+            "q": "Does Your CRM Have Follow Up Automations?",
+            "a": "Yes"
+          },
+          {
+            "q": "What Are You Using Your CRM For?",
+            "a": "ACQ & Dispo"
+          },
+          {
+            "q": "How Many Sales Representatives Do You Have?",
+            "a": "6"
+          },
+          {
+            "q": "How Do You Measure Your KPIs?",
+            "a": "Dashboards in our current CRM, but they do not match finance numbers."
+          },
+          {
+            "q": "How Do You Keep Track of Your Profits & Losses?",
+            "a": "Bookkeeper, monthly."
+          },
+          {
+            "q": "How Did You Hear About Us",
+            "a": "Referral"
+          },
+          {
+            "q": "What Difficulties Are You Facing In Your Business Generally?",
+            "a": "Cost per contract by lead source is a guess."
+          },
+          {
+            "q": "What Are Your Expectations With KPI DRIVER?",
+            "a": "Trustworthy cost-per-contract and AI call scoring."
+          },
+          {
+            "q": "How Soon Are You Looking To Start?",
+            "a": "ASAP"
+          }
+        ],
+        "consent": {
+          "sms": true,
+          "text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+          "at": "2026-11-17T17:24:05.505Z",
+          "page": "https://www.kpidriver.com/contact-us"
+        },
+        "context": {
+          "page_url": "https://www.kpidriver.com/contact-us",
+          "page_title": "Contact Us | KPI DRIVER",
+          "referrer": "",
+          "lang": "en",
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "utm_source": "",
+          "utm_medium": "",
+          "utm_campaign": "",
+          "utm_term": "",
+          "utm_content": "",
+          "gclid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "landing_page": "https://www.kpidriver.com/contact-us",
+          "first_referrer": ""
+        },
+        "hp": ""
+      },
+      "destination": "n8n → HighLevel API",
+      "highlevel": {
+        "response": {
+          "status": 200,
+          "body": {
+            "ok": true,
+            "appointment": {
+              "id": "APPT789",
+              "startTime": "2026-11-18T19:00:00.000Z"
+            }
+          }
+        },
+        "upsert": {
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "firstName": "Tom",
+          "lastName": "Becker",
+          "email": "tom@beckerpropertygroup.example.com",
+          "phone": "+16145550110",
+          "companyName": "Becker Property Group",
+          "address1": "41 S High St",
+          "city": "Columbus",
+          "state": "OH",
+          "postalCode": "43215",
+          "country": "US",
+          "timezone": "America/New_York",
+          "source": "SEO",
+          "customFields": [
+            {
+              "id": "st1eCAFAHDcgPM4VvtNn",
+              "fieldValue": "Becker Property Group"
+            },
+            {
+              "id": "Z8TSBkLl0c3nkOh0d0bj",
+              "fieldValue": "Real Estate"
+            },
+            {
+              "id": "h4JApkD7A1meEgqfLJ4v",
+              "fieldValue": "Eastern Standard Time"
+            },
+            {
+              "id": "zntmhqZEVR510izM1Amv",
+              "fieldValue": "Enterprise Optimization Suite"
+            },
+            {
+              "id": "ARe4MceHNpyuA2cKkIEw",
+              "fieldValue": "Yes (Outsourced Only)"
+            },
+            {
+              "id": "qmkmAZyHzfeRFjkRKQaw",
+              "fieldValue": "7 - 9"
+            },
+            {
+              "id": "UWxeByWt7W4EuIVVAQsm",
+              "fieldValue": [
+                "Cold Calling",
+                "SMS",
+                "PPC",
+                "PPL",
+                "Direct Mailer",
+                "TV Advertising",
+                "Radio Advertising"
+              ]
+            },
+            {
+              "id": "J1MTiekQt4vbamz8JFee",
+              "fieldValue": [
+                "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)"
+              ]
+            },
+            {
+              "id": "u6f3OtUsag2gUpFKEHCy",
+              "fieldValue": 12
+            },
+            {
+              "id": "TgvNUU7bOSq4YSB2FS9w",
+              "fieldValue": 4
+            },
+            {
+              "id": "xOz64JUSqg9hFWthmar5",
+              "fieldValue": 5
+            },
+            {
+              "id": "QfNSOY8w6fJUpyxW9al1",
+              "fieldValue": "No"
+            },
+            {
+              "id": "9aMGEJzyATDb4ZGnPLt7",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "rihpUXcXicHdCxEo4CfX",
+              "fieldValue": "GHL"
+            },
+            {
+              "id": "sqX5fTAKqUuNRwdoxaag",
+              "fieldValue": "Yes"
+            },
+            {
+              "id": "uclYhjBFIyedqd8xqYwE",
+              "fieldValue": "ACQ & Dispo"
+            },
+            {
+              "id": "VLoxJWATbFZMgMOfBb4P",
+              "fieldValue": 6
+            },
+            {
+              "id": "kjvFHgnOa8iVNV7YiiBN",
+              "fieldValue": "Dashboards in our current CRM, but they do not match finance numbers."
+            },
+            {
+              "id": "LNdrE1FEgFjbPydSCntV",
+              "fieldValue": "Bookkeeper, monthly."
+            },
+            {
+              "id": "FohJiIh9tGFKXI02LSUD",
+              "fieldValue": "Referral"
+            },
+            {
+              "id": "crnTGUSW3StY8VTOqaR2",
+              "fieldValue": "Cost per contract by lead source is a guess."
+            },
+            {
+              "id": "EI2ls6K7uJFe75PmRPaX",
+              "fieldValue": "Trustworthy cost-per-contract and AI call scoring."
+            },
+            {
+              "id": "U26ojrxlzQxC1kwAMvki",
+              "fieldValue": "ASAP"
+            },
+            {
+              "id": "O5yyMN7TXsWzblxrHUfO",
+              "fieldValue": "Business Discovery (SEO) Contact Us – Contact Card"
+            }
+          ],
+          "dndSettings": {
+            "sms": {
+              "status": "inactive",
+              "message": "SMS consent given on the website booking form"
+            }
+          }
+        },
+        "appointment": {
+          "calendarId": "17jl7cP7dvOAU48s6C3L",
+          "locationId": "nLOdLoui5CvpzktszMJx",
+          "startTime": "2026-11-18T19:00:00.000Z",
+          "endTime": "2026-11-18T19:45:00.000Z",
+          "title": "Discovery Call · Tom Becker",
+          "appointmentStatus": "confirmed",
+          "description": "Booked on the website · Contact Us – Contact Card",
+          "toNotify": true,
+          "contactId": "CONTACT123"
+        },
+        "tags": [
+          "website booking",
+          "src: contact us – contact card"
+        ],
+        "note": "Website booking · Contact Us – Contact Card\nCall: Wednesday, November 18, 2026 at 2:00 PM (America/New_York)\n\nFirst Name: Tom\nLast Name: Becker\nBusiness Email: tom@beckerpropertygroup.example.com\nPhone: (614) 555-0110\nBusiness Name: Becker Property Group\nStreet Address: 41 S High St\nCity: Columbus\nState: OH\nPostal code: 43215\nCountry: US\nBusiness Niche: Real Estate\nTime Zone: Eastern Standard Time\nWhich Plan Are You Interested In: Enterprise Optimization Suite\nDo You Outsource Your Marketing?: Yes (Outsourced Only)\nHow Many Lead Sources Do You Have?: 7 - 9\nWhat Are Your Lead Sources?: Cold Calling, SMS, PPC, PPL, Direct Mailer, TV Advertising, Radio Advertising\nHow Are These Lead Sources Entering Your Business?: Submitting Forms Indirectly Via 3rd Party (eg. Zapier)\nHow Many Agents Do You Have On Cold Calling?: 12\nHow Many Agents Do You Have On SMS?: 4\nHow Many PPL Providers Do You Use?: 5\nDo You Need a CRM?: No\nDo You Use A CRM?: Yes\nWhich CRM Do You Use?: GHL\nDoes Your CRM Have Follow Up Automations?: Yes\nWhat Are You Using Your CRM For?: ACQ & Dispo\nHow Many Sales Representatives Do You Have?: 6\nHow Do You Measure Your KPIs?: Dashboards in our current CRM, but they do not match finance numbers.\nHow Do You Keep Track of Your Profits & Losses?: Bookkeeper, monthly.\nHow Did You Hear About Us: Referral\nWhat Difficulties Are You Facing In Your Business Generally?: Cost per contract by lead source is a guess.\nWhat Are Your Expectations With KPI DRIVER?: Trustworthy cost-per-contract and AI call scoring.\nHow Soon Are You Looking To Start?: ASAP\n\nSMS consent: YES · 2026-11-17T17:24:05.505Z · IP 198.51.100.23 · https://www.kpidriver.com/contact-us\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/contact-us\nLanding page: https://www.kpidriver.com/contact-us\nReferrer: direct"
+      }
+    },
+    {
+      "id": "contact-form",
+      "title": "Contact form on the Contact Us page",
+      "visits": [
+        "/contact-us"
+      ],
+      "contact": true,
+      "who": "derek",
+      "tz": "America/Chicago",
+      "message": "We are growing from 2 to 6 people. Can the CRM handle separate acquisition and dispo teams?",
+      "page_url": "https://www.kpidriver.com/contact-us",
+      "payload": {
+        "form": "contact",
+        "first_name": "Derek",
+        "last_name": "Shaw",
+        "email": "derek@shawcapital.example.com",
+        "business_name": "Shaw Capital Partners",
+        "which_bundle_are_you_interested_in": "Don't Know Yet",
+        "your_message": "We are growing from 2 to 6 people. Can the CRM handle separate acquisition and dispo teams?",
+        "sms_consent": "Yes",
+        "consent_text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+        "consent_timestamp": "2026-11-17T17:24:07.266Z",
+        "consent_page": "https://www.kpidriver.com/contact-us",
+        "campaign": "Contact Us (SEO) Contact Us – Inquiry Form",
+        "booking_source": "Contact Us – Inquiry Form",
+        "cta_label": "",
+        "tags": "website contact form, src: contact us – inquiry form",
+        "contact_source": "SEO",
+        "timezone": "America/Chicago",
+        "lang": "en",
+        "page_url": "https://www.kpidriver.com/contact-us",
+        "page_title": "Contact Us | KPI DRIVER",
+        "landing_page": "https://www.kpidriver.com/contact-us",
+        "referrer": "",
+        "utm_source": "",
+        "utm_medium": "",
+        "utm_campaign": "",
+        "utm_term": "",
+        "utm_content": "",
+        "gclid": "",
+        "fbclid": "",
+        "submitted_at": "2026-11-17T17:24:07.266Z",
+        "note": "Website contact form · Contact Us – Inquiry Form\n\nFirst Name: Derek\nLast Name: Shaw\nEmail: derek@shawcapital.example.com\nBusiness Name: Shaw Capital Partners\nWhich Bundle Are You Interested In: Don't Know Yet\nYour Message: We are growing from 2 to 6 people. Can the CRM handle separate acquisition and dispo teams?\n\nSMS consent: Yes · 2026-11-17T17:24:07.266Z · https://www.kpidriver.com/contact-us\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/contact-us\nLanding page: https://www.kpidriver.com/contact-us\nReferrer: direct",
+        "hp": ""
+      },
+      "destination": "HighLevel inbound webhook (contact workflow)"
+    },
+    {
+      "id": "google-contact",
+      "title": "Google ad → Contact form",
+      "visits": [
+        "/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456"
+      ],
+      "contact": true,
+      "who": "maria",
+      "tz": "America/New_York",
+      "message": "Do you migrate data from Podio? We have about 40,000 records.",
+      "referrer": "https://www.google.com/",
+      "page_url": "https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456",
+      "payload": {
+        "form": "contact",
+        "first_name": "Maria",
+        "last_name": "Gonzalez",
+        "email": "maria@gonzalezhomebuyers.example.com",
+        "business_name": "Gonzalez Home Buyers LLC",
+        "which_bundle_are_you_interested_in": "Enterprise Optimization Suite + AI Agent",
+        "your_message": "Do you migrate data from Podio? We have about 40,000 records.",
+        "sms_consent": "Yes",
+        "consent_text": "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.",
+        "consent_timestamp": "2026-11-17T17:24:08.771Z",
+        "consent_page": "https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456",
+        "campaign": "Contact Us (SEO) Contact Us – Inquiry Form",
+        "booking_source": "Contact Us – Inquiry Form",
+        "cta_label": "",
+        "tags": "website contact form, src: contact us – inquiry form",
+        "contact_source": "SEO",
+        "timezone": "America/New_York",
+        "lang": "en",
+        "page_url": "https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456",
+        "page_title": "Contact Us | KPI DRIVER",
+        "landing_page": "https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456",
+        "referrer": "https://www.google.com/",
+        "utm_source": "google",
+        "utm_medium": "cpc",
+        "utm_campaign": "crm-for-investors",
+        "utm_term": "real estate crm",
+        "utm_content": "",
+        "gclid": "Cj0KCQdemo456",
+        "fbclid": "",
+        "submitted_at": "2026-11-17T17:24:08.771Z",
+        "note": "Website contact form · Contact Us – Inquiry Form\n\nFirst Name: Maria\nLast Name: Gonzalez\nEmail: maria@gonzalezhomebuyers.example.com\nBusiness Name: Gonzalez Home Buyers LLC\nWhich Bundle Are You Interested In: Enterprise Optimization Suite + AI Agent\nYour Message: Do you migrate data from Podio? We have about 40,000 records.\n\nSMS consent: Yes · 2026-11-17T17:24:08.771Z · https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456\nConsent text: I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.\n\nPage: https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456\nLanding page: https://www.kpidriver.com/contact-us?utm_source=google&utm_medium=cpc&utm_campaign=crm-for-investors&utm_term=real+estate+crm&gclid=Cj0KCQdemo456\nReferrer: https://www.google.com/\nutm_source: google\nutm_medium: cpc\nutm_campaign: crm-for-investors\nutm_term: real estate crm\ngclid: Cj0KCQdemo456",
+        "hp": ""
+      },
+      "destination": "HighLevel inbound webhook (contact workflow)"
+    }
+  ]
+}

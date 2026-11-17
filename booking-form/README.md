@@ -1,6 +1,6 @@
 # KPI DRIVER · native booking + contact forms
 
-Replaces the six HighLevel booking widgets and the HighLevel "Contact Us" survey with **one booking form and one contact form**, styled by the website's own design system (light and dark), wired to HighLevel through **n8n**.
+Replaces the six HighLevel booking widgets and the HighLevel "Contact Us" survey with **one booking form and one contact form**, styled by the website's own design system (light and dark), wired to HighLevel: bookings go through **n8n** (live free slots + booking via the API), the contact form posts straight to a **HighLevel inbound webhook**.
 
 - **One booking form, one calendar.** Every booking button opens the same form. A hidden field records where it came from, for example `booking_source = "Home – Header"`. To add a CTA, add a button; nothing else is needed.
 - **Same questions** as today's HighLevel forms. Each answer is written to the same HighLevel custom field the old forms used, by field id, so smart lists, workflows and reports keep working.
@@ -17,11 +17,11 @@ Nothing on the live site or in HighLevel has been changed. Everything below runs
 | `webflow/embed-1-styles.html`, `webflow/embed-2-script.html` | **What goes into Webflow**: minified, about 16K and 32K characters. Built by `tools/build-webflow.sh`. |
 | `n8n/kd-booking-slots.json` | n8n workflow: free slots for the picker. |
 | `n8n/kd-booking-create.json` | n8n workflow: create/update the contact, book the appointment, tag it, add a note. |
-| `n8n/kd-contact.json` | n8n workflow: contact form → contact + tags + note. |
 | `n8n/src/*.js` | The workflows' logic, one file per Code node. `tools/build-n8n.py` assembles the JSON from these. |
 | `demo/index.html`, `demo/contact.html` | Demo pages using the site's real stylesheet (sample availability; nothing is sent). |
 | `tools/test-flow.js` | Browser test: 32 checks on both forms, both themes, mobile. |
-| `tools/test-n8n.js` | Runs the generated workflows in a simulator with fake HighLevel replies: 24 checks. |
+| `tools/test-n8n.js` | Runs the generated workflows in a simulator with fake HighLevel replies (`tools/n8n-sim.js`). |
+| `review/` | The approval page (also published as an Artifact): every screen per device/theme and 12 payload scenarios. Rebuilt by `tools/review-capture.js`. |
 | `screenshots/` | Every step in dark, light and mobile, plus `sample-payload*.json` (exactly what n8n receives). |
 
 ## Where a booking came from
@@ -57,8 +57,12 @@ The campaign keeps the old prefixes ("Business Discovery (SEO) …", "Contact Us
 ### 2. n8n
 
 1. **Credential:** create one, type **Header Auth**, named `HighLevel PIT`. Header name `Authorization`, value `Bearer <token>`.
-2. **Import the workflows:** import the three files in `n8n/`, open each HTTP node and select that credential.
-3. **Activate** all three. Your webhook URLs will be `https://<your-n8n>/webhook/kd-booking-slots`, `/webhook/kd-booking-create` and `/webhook/kd-contact`.
+2. **Import the workflows:** import the two files in `n8n/`, open each HTTP node and select that credential.
+
+### 2b. HighLevel contact workflow
+
+Create a workflow with an **Inbound Webhook** trigger. Add Create/Update Contact, Add Tag and Add Note, mapping the flat values the form sends (`first_name`, `last_name`, `email`, `business_name`, `which_bundle_are_you_interested_in`, `your_message`, `campaign`, `tags`, `note`…). The review page lists every key. Put the webhook URL in `contactUrl`. The form first tries a normal JSON post; if the browser blocks it for cross-site reasons, it re-sends the same values as a simple form post.
+3. **Activate** both. Your webhook URLs will be `https://<your-n8n>/webhook/kd-booking-slots` and `/webhook/kd-booking-create`.
 4. **Allowed sites:** the webhooks only accept calls from `www.kpidriver.com`, `kpidriver.com` and `kpidriver.webflow.io`. That's the "Allowed origins" option on each Webhook node.
 
 What each workflow does:
@@ -68,7 +72,7 @@ What each workflow does:
 ### 3. Webflow
 
 1. **Install the code:** in the **site-wide footer component**, add two Code Embeds, pasting `webflow/embed-1-styles.html` and then `webflow/embed-2-script.html`. These go in Code Embeds because the site's Head custom-code box is already at 47K of Webflow's 50K limit.
-2. **Connect it:** in embed 2, put in the three webhook URLs and change `mock: true` to `mock: false`.
+2. **Connect it:** in embed 2, put in the two n8n URLs and the HighLevel inbound webhook URL, and change `mock: true` to `mock: false`.
 3. **Contact page:** replace the HighLevel survey iframe block with `<div data-kd-contact></div>`.
 4. **Booking page** (optional inline form): replace the scheduler embed with `<div data-kd-booking></div>`.
 5. **Booking buttons:** leave them as they are. The script intercepts `a[data-book]` before the site's old pop-up does. Without JavaScript the links still open the old HighLevel scheduler as a fallback.

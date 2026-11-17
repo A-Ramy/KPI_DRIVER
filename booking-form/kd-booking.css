@@ -153,7 +153,8 @@ select.kdb__input option, select.kdb__input optgroup { background: var(--kdb-rai
 .kdb__input:focus { outline: none; border-color: var(--kdb-accent); box-shadow: 0 0 0 3px var(--kdb-tint-2), 0 0 16px var(--kdb-glow); }
 .kdb__choices { display: flex; flex-direction: column; gap: 8px; }
 .kdb__choices--inline { flex-direction: row; flex-wrap: wrap; }
-.kdb__choices--grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+.kdb__choices--grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+@media (max-width: 480px) { .kdb__count { display: none; } .kdb__foot { grid-template-columns: auto 1fr; } .kdb__foot > :last-child { justify-self: end; } .kdb__chip { font-size: 0.6875rem; padding: 6px 10px; } }
 .kdb__choice { display: flex; align-items: center; gap: 12px; padding: 11px 14px; border: 1px solid var(--kdb-line); border-radius: var(--kdb-r-sm); cursor: pointer; line-height: 1.35; transition: border-color 0.15s ease, background-color 0.15s ease; }
 .kdb__choices--inline .kdb__choice { padding: 10px 16px; }
 .kdb__choice:hover { border-color: var(--kdb-edge); }
