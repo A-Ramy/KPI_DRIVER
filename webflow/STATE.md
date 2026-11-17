@@ -82,3 +82,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - New pages took real slugs: services, our-team, contact-us, thank-you, policies/privacy-policy, policies/terms-conditions; crm, ai-suite, ai-agent (waiting for the owner's `services` folder; then they become /services/*).
 - Member pages excluded from sitemap. Spanish locale switched on by the owner.
 - Rollback: unhide old wrappers, set old pages draft:false with original slugs, swap new ones back to kd-*.
+
+## 2026-11-17: LIVE
+- Owner said "go". Services folder `6afc2be72931cce2df0049b5` (created by owner) holds CRM / AI Suite / AI Agent -> /services/*.
+- Published to www.kpidriver.com + kpidriver.com (three publishes: launch, then two sitemap clean-ups).
+- Verified live: all main pages 200, /es and /es/services/* in Spanish, old-* pages 404, article covers + related posts, JSON-LD present, no horizontal scroll on mobile.
+- Sitemap: member pages + knowledge base categories (6) + articles (33) excluded in EN and ES. All 45 posts listed.
