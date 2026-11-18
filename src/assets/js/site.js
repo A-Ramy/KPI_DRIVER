@@ -207,33 +207,6 @@
     });
   })();
   /* ---- end lifecycle journey v5 ---- */
-  /* ---- tabs (WAI-ARIA tabs with arrow-key support) ---- */
-  doc.querySelectorAll("[data-tabs]").forEach(function (root) {
-    var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
-    function select(tab, focus) {
-      tabs.forEach(function (t) {
-        var on = t === tab;
-        t.setAttribute("aria-selected", String(on));
-        t.tabIndex = on ? 0 : -1;
-        var panel = doc.getElementById(t.getAttribute("aria-controls"));
-        if (panel) panel.hidden = !on;
-      });
-      if (focus) tab.focus();
-      track("product_explore", { label: (tab.textContent || "").trim(), group: root.getAttribute("data-tabs") });
-    }
-    tabs.forEach(function (tab, i) {
-      tab.addEventListener("click", function () { select(tab, false); });
-      tab.addEventListener("keydown", function (e) {
-        var n = null;
-        if (e.key === "ArrowRight") n = tabs[(i + 1) % tabs.length];
-        if (e.key === "ArrowLeft") n = tabs[(i - 1 + tabs.length) % tabs.length];
-        if (e.key === "Home") n = tabs[0];
-        if (e.key === "End") n = tabs[tabs.length - 1];
-        if (n) { e.preventDefault(); select(n, true); }
-      });
-    });
-  });
-
   /* ---- workflow demo: steps highlight one pane at a time; all content is in the DOM at rest ---- */
   doc.querySelectorAll("[data-flow]").forEach(function (flow) {
     var steps = Array.prototype.slice.call(flow.querySelectorAll(".flow__step"));
@@ -262,67 +235,6 @@
     }
   });
 
-  /* ---- forms: validate, then hand off. No success message is shown unless a real endpoint confirms. ---- */
-  doc.querySelectorAll("form[data-form]").forEach(function (form) {
-    var status = form.querySelector(".form__status");
-    function setErr(input, msg) {
-      var err = doc.getElementById(input.id + "-err");
-      input.setAttribute("aria-invalid", msg ? "true" : "false");
-      if (err) err.textContent = msg || "";
-    }
-    function check(input) {
-      var v = (input.value || "").trim(), msg = "";
-      if (input.required && !v) msg = L("Enter ", "Escribe ") + (input.getAttribute("data-name") || L("this field", "este campo")) + ".";
-      else if (input.type === "email" && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) msg = L("Enter an email address like name@company.com.", "Escribe un correo como nombre@empresa.com.");
-      else if (input.type === "tel" && v && v.replace(/\D/g, "").length < 10) msg = L("Enter a phone number with area code.", "Escribe un teléfono con código de área.");
-      setErr(input, msg);
-      return !msg;
-    }
-    var inputs = Array.prototype.slice.call(form.querySelectorAll("input:not([type=checkbox]):not(.hp input), select, textarea"));
-    inputs.forEach(function (i) { i.addEventListener("blur", function () { if (i.value || i.getAttribute("aria-invalid") === "true") check(i); }); });
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var firstBad = null;
-      inputs.forEach(function (i) { if (!check(i) && !firstBad) firstBad = i; });
-      if (firstBad) {
-        status.hidden = false; status.setAttribute("data-state", "error");
-        status.textContent = L("Check the highlighted fields and send again.", "Revisa los campos marcados y vuelve a enviar.");
-        firstBad.focus();
-        return;
-      }
-      var honeypot = form.querySelector(".hp input");
-      if (honeypot && honeypot.value) return; /* bot: drop silently */
-      var endpoint = form.getAttribute("data-endpoint");
-      if (!endpoint) {
-        /* Preview build: no submission destination is connected yet. Say so plainly. */
-        status.hidden = false; status.setAttribute("data-state", "error");
-        status.innerHTML = L("<strong>This preview form is not connected yet, so nothing was sent.</strong> To reach the team now, email info@kpidriver.com or book a discovery call.", "<strong>Este formulario de vista previa aún no está conectado, así que no se envió nada.</strong> Para contactar al equipo ahora, escribe a info@kpidriver.com o agenda una llamada.");
-        status.focus();
-        return;
-      }
-      var btn = form.querySelector("[type=submit]");
-      btn.disabled = true; btn.textContent = L("Sending…", "Enviando…");
-      fetch(endpoint, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-        .then(function (r) { if (!r.ok) throw new Error(String(r.status)); track("form_complete", { form: form.getAttribute("data-form") }); window.location.href = form.getAttribute("data-success") || "thank-you.html"; })
-        .catch(function () {
-          btn.disabled = false; btn.textContent = "Send message";
-          status.hidden = false; status.setAttribute("data-state", "error");
-          status.textContent = L("Your message did not send. Try again, or email info@kpidriver.com.", "Tu mensaje no se envió. Inténtalo de nuevo o escribe a info@kpidriver.com.");
-          status.focus();
-        });
-    });
-  });
-
-  /* ---- booking embed: load the scheduler only where framing is allowed; the direct link always works ---- */
-  doc.querySelectorAll("[data-booking]").forEach(function (box) {
-    var src = box.getAttribute("data-booking");
-    var slot = box.querySelector(".booking__frame");
-    if (!slot || !src || /claude|artifact/i.test(location.hostname)) return;
-    var f = doc.createElement("iframe");
-    f.src = src; f.title = "Schedule a discovery call with KPI DRIVER"; f.loading = "lazy";
-    slot.appendChild(f);
-  });
-
   var y = doc.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
@@ -332,27 +244,6 @@
   "use strict";
   var doc = document, root = doc.documentElement;
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var sandboxed = /claude|artifact/i.test(location.hostname); /* hosts that block third-party frames */
-
-  /* ---- booking popup: every booking CTA opens the embedded scheduler ---- */
-  var dlg = doc.getElementById("book-dialog");
-  if (dlg && dlg.showModal && !sandboxed) {
-    var frame = dlg.querySelector(".bookdlg__frame"), alt = dlg.querySelector(".bookdlg__foot a");
-    doc.addEventListener("click", function (e) {
-      var a = e.target.closest("a[data-book]");
-      if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
-      e.preventDefault();
-      var src = "https://link.kpidriver.com/widget/booking/" + a.getAttribute("data-book");
-      frame.innerHTML = "";
-      var f = doc.createElement("iframe");
-      f.src = src; f.title = "Schedule a discovery call with KPI DRIVER";
-      frame.appendChild(f); alt.href = src;
-      dlg.showModal();
-    });
-    dlg.querySelector(".bookdlg__close").addEventListener("click", function () { dlg.close(); });
-    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
-    dlg.addEventListener("close", function () { frame.innerHTML = ""; });
-  }
 
   /* ---- reviews widget: hide the fallback once Elfsight has rendered ---- */
   doc.querySelectorAll("[data-reviews]").forEach(function (box) {
@@ -369,27 +260,6 @@
     el.style.setProperty("--mx", (e.clientX - r.left) + "px");
     el.style.setProperty("--my", (e.clientY - r.top) + "px");
   }, { passive: true });
-
-  /* ---- lifecycle circuit: nodes mirror the tabs; outgoing routes light up ---- */
-  doc.querySelectorAll("[data-circuit]").forEach(function (wrap) {
-    var nodes = wrap.querySelectorAll(".circuit__node"), edges = wrap.querySelectorAll(".circuit__edge");
-    var tabs = wrap.querySelectorAll('[role="tab"]');
-    function paint() {
-      var on = -1;
-      tabs.forEach(function (t, i) { if (t.getAttribute("aria-selected") === "true") on = i; });
-      var next = {};
-      edges.forEach(function (ed) {
-        var from = +ed.getAttribute("data-from"), to = +ed.getAttribute("data-to");
-        ed.classList.toggle("is-live", from === on);
-        ed.classList.toggle("is-in", false);
-        if (from === on) next[to] = 1;
-      });
-      nodes.forEach(function (n, i) { n.classList.toggle("is-on", i === on); n.classList.toggle("is-next", !!next[i]); });
-    }
-    nodes.forEach(function (n, i) { n.addEventListener("click", function () { if (tabs[i]) tabs[i].click(); }); });
-    tabs.forEach(function (t) { t.addEventListener("click", paint); t.addEventListener("keydown", function () { setTimeout(paint, 0); }); });
-    paint();
-  });
 
   /* ---- gear HUD + rev bar: scrolling the page shifts gears ---- */
   var hud = doc.querySelector(".gearhud");
@@ -583,7 +453,6 @@
     x.addEventListener("mouseenter", function () { if (!(hov && hov.matches)) return; clearTimeout(lt); x.open = true; });
     x.addEventListener("mouseleave", function () { if (!(hov && hov.matches)) return; lt = setTimeout(function () { x.open = false; }, 160); });
   });
-  /* CTA band calendar embed: paused at the owner's request (2026-11-17) while the booking calendars are rebuilt; the button opens the scheduler popup */
   /* reviews: hide the fallback note once Boast or Elfsight has rendered (Boast replaces its placeholder element) */
   var n = 0, iv = setInterval(function () {
     d.querySelectorAll("[data-reviews]:not(.is-loaded)").forEach(function (b) { if (b.querySelector("boast-display-widget .swiper-slide, [class*='eapps-'], [class^='elfsight-app-'] > *")) b.classList.add("is-loaded"); });

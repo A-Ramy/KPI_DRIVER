@@ -111,10 +111,14 @@ mod = open("src/assets/js/lifecycle.js", encoding="utf-8").read()
 mod = mod.replace("/*LC_DATA*/null", json.dumps({"en": EN, "es": ES}, ensure_ascii=False, separators=(",", ":")))
 site = open("src/assets/js/site.js", encoding="utf-8").read()
 # replace an earlier splice, or insert before the tabs block
-site = re.sub(r"  /\* ---- lifecycle journey v5:.*?/\* ---- end lifecycle journey v5 ---- \*/\n", "", site, flags=re.S)
-marker = "  /* ---- tabs (WAI-ARIA tabs with arrow-key support) ---- */"
-assert marker in site
-site = site.replace(marker, mod + marker, 1)
+# replace the block in place; first run inserts it before the workflow demo block
+pat = re.compile(r"  /\* ---- lifecycle journey v5:.*?/\* ---- end lifecycle journey v5 ---- \*/\n", re.S)
+if pat.search(site):
+    site = pat.sub(lambda m: mod, site, count=1)
+else:
+    marker = "  /* ---- workflow demo:"
+    assert marker in site
+    site = site.replace(marker, mod + marker, 1)
 # drop the old route-chain and diagram-label shims (the block now renders them itself)
 a = site.find("  /* ---- content updates (owner, 2026-11-18)")
 if a > -1 and "  /* lifecycle diagram label, hero eyebrow and Ahmed's title */" in site:
