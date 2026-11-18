@@ -25,6 +25,16 @@ var s=d.querySelector('a.skip');if(s)s.textContent='Saltar al contenido';
 [].forEach.call(d.querySelectorAll('[data-kd-t]'),function(e){var k=e.getAttribute('data-kd-t');if(D.s[k])e.textContent=D.s[k]});
 r.setAttribute('lang','es')}catch(e){}r.classList.remove('es-wait')})();""" % json.dumps({"h": header, "f": footer, "d": dialog, "p": pages, "t": TEMP, "s": T}, ensure_ascii=False, separators=(",", ":"))
 (ROOT / "webflow/kd-es.js").write_text(js, encoding="utf8")
+# Per-page bundles (audit B5): each /es page loads only the shared header/footer/dialog plus its own body.
+# webflow/dist/es/kd-es-<key>.js; key "base" has no body (blog, posts, policies, 404). kd-head picks the file by path.
+out = ROOT / "webflow/dist/es"; out.mkdir(parents=True, exist_ok=True)
+for f in out.glob("kd-es-*.js"): f.unlink()
+def key(path): return "home" if path == "/" else path.strip("/").replace("/", "-")
+for path in [None] + [x for x in pages if not x.startswith("/kd-")]:
+    one = {"h": header, "f": footer, "d": dialog, "p": ({path: pages[path]} if path else {}), "t": {}, "s": T}
+    body = js[:js.index("var D=") + 6] + json.dumps(one, ensure_ascii=False, separators=(",", ":")) + js[js.index(",d=document"):]
+    (out / ("kd-es-%s.js" % (key(path) if path else "base"))).write_text(body, encoding="utf8")
+print("per-page:", sorted((f.name, f.stat().st_size) for f in out.glob("kd-es-*.js")))
 idx = json.loads((ROOT / "webflow/cms/post-index.json").read_text())
 by = {p["slug"]: p for p in idx}
 import importlib.util, io, contextlib
