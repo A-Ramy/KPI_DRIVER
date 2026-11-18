@@ -453,11 +453,27 @@
     x.addEventListener("mouseenter", function () { if (!(hov && hov.matches)) return; clearTimeout(lt); x.open = true; });
     x.addEventListener("mouseleave", function () { if (!(hov && hov.matches)) return; lt = setTimeout(function () { x.open = false; }, 160); });
   });
-  /* reviews: hide the fallback note once Boast or Elfsight has rendered (Boast replaces its placeholder element) */
-  var n = 0, iv = setInterval(function () {
-    d.querySelectorAll("[data-reviews]:not(.is-loaded)").forEach(function (b) { if (b.querySelector("boast-display-widget .swiper-slide, [class*='eapps-'], [class^='elfsight-app-'] > *")) b.classList.add("is-loaded"); });
-    if (++n > 40 || !d.querySelector("[data-reviews]:not(.is-loaded)")) clearInterval(iv);
-  }, 500);
+  /* reviews: load the Boast and Elfsight widgets only when the reviews block comes near the screen
+     (they weigh ~1 MB), then hide the fallback note once they have rendered (Boast replaces its placeholder) */
+  var revs = d.querySelectorAll("[data-reviews]");
+  if (revs.length) {
+    var loaded = false, loadReviews = function () {
+      if (loaded) return; loaded = true;
+      [["https://widgets.boast.io/current/components.js", "[data-boast-component]"], ["https://static.elfsight.com/platform/platform.js", "[class^='elfsight-app-']"]].forEach(function (x) {
+        if (!d.querySelector(x[1]) || d.querySelector("script[data-kd-rev='" + x[0] + "']")) return;
+        var s = d.createElement("script"); s.src = x[0]; s.async = true; s.setAttribute("data-kd-rev", x[0]); d.body.appendChild(s);
+      });
+      var n = 0, iv = setInterval(function () {
+        d.querySelectorAll("[data-reviews]:not(.is-loaded)").forEach(function (b) { if (b.querySelector("boast-display-widget .swiper-slide, [class*='eapps-'], [class^='elfsight-app-'] > *")) b.classList.add("is-loaded"); });
+        if (++n > 60 || !d.querySelector("[data-reviews]:not(.is-loaded)")) clearInterval(iv);
+      }, 500);
+    };
+    if (!("IntersectionObserver" in window)) loadReviews();
+    else {
+      var rio = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { rio.disconnect(); loadReviews(); } }, { rootMargin: "900px 0px" });
+      revs.forEach(function (b) { rio.observe(b); });
+    }
+  }
 })();
 
 /* ===================== v4: owner fixes (2026-11-17, round 3) ===================== */
