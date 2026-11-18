@@ -93,7 +93,7 @@ TOOLS = [
 ]
 NURTURE = ["No Motivation", "High Asking", "Long Timeline", "No Equity", "Listed", "Not Interested", "Not Ready To Sell", "Trying Traditional Sale", "Property Or Financial Issue Pending"]
 TEAM = [("brandy", "Brandy Pollack", "Chief Executive Officer", "30+ years in real estate investing. Keeps KPI DRIVER's strategy tied to client success."),
-        ("ahmed", "Ahmed Ramy", "Chief Technology Officer", "Leads development of the KPI tracking engine, automations and integrations."),
+        ("ahmed", "Ahmed Ramy", "Chief Operations & Technology Officer", "Leads development of the KPI tracking engine, automations and integrations."),
         ("anas", "Anas Abid", "Tech &amp; Support Lead", "Oversees technical support from onboarding to daily operations."),
         ("jan", "Jan Arpilleda", "Lead Account Manager", "Runs onboarding strategy sessions and ongoing optimization with clients."),
         ("mostafa", "Mostafa Kourany", "Accounting &amp; Financial Advisor", "Leads bookkeeping and financial advisory, bringing financial insight into KPI dashboards.")]

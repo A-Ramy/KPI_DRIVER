@@ -50,7 +50,7 @@ THEME_JS = ("<script>(function(){var d=document.documentElement;try{if(!d.hasAtt
             "e.viewTransition.finished.then(z,z)})})()</script>")
 GEARS = ["index.html", "services.html", "services/crm.html", "services/ai-suite.html", "services/ai-agent.html", "our-team.html", "blog.html",
          "contact-us.html", "book-discovery-call.html"]
-TEAM = [("Brandy Pollack", "Chief Executive Officer"), ("Ahmed Ramy", "Chief Technology Officer"), ("Jan Arpilleda", "Lead Account Manager"),
+TEAM = [("Brandy Pollack", "Chief Executive Officer"), ("Ahmed Ramy", "Chief Operations & Technology Officer"), ("Jan Arpilleda", "Lead Account Manager"),
         ("Anas Abid", "Tech & Support Team Lead"), ("Mostafa Kourany", "Accounting & Financial Advisor")]
 NOINDEX = set()
 
@@ -514,7 +514,7 @@ def blog_pages():
         pil = PILLAR.get(p["category_slug"])
         post_ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "datePublished": p["date"], "dateModified": p["date"],
               "description": p["summary"], "articleSection": p["category"], "inLanguage": "en-US", "image": f"{ORIGIN}/assets/img/og-default.png",
-              "author": {"@type": "Person", "name": p["author"], "jobTitle": "Chief Technology Officer", "url": f"{ORIGIN}/our-team"},
+              "author": {"@type": "Person", "name": p["author"], "jobTitle": "Chief Operations & Technology Officer", "url": f"{ORIGIN}/our-team"},
               "publisher": {"@type": "Organization", "name": "KPI DRIVER", "url": ORIGIN}, "mainEntityOfPage": f"{ORIGIN}/post/{p['slug']}"}
         hub_guide = f' Start with the guide: <a class="link" href="{R}post/{pil["slug"]}.html">{esc(pil["title"])}</a>.' if pil and pil is not p else ""
         hub = f'<aside class="hub tone-crm"><p class="note">Part of {esc(p["category"])}</p><p>{esc(CAT[p["category_slug"]]["desc"])}{hub_guide}</p><p><a class="link arrow" href="{R}blog-category/{p["category_slug"]}.html">All {esc(p["category"])} articles</a></p></aside>'
@@ -524,7 +524,7 @@ def blog_pages():
 <ol class="crumbs"><li><a href="{R}index.html">Home</a></li><li><a href="{R}blog.html">Blog</a></li><li><a href="{R}blog-category/{p['category_slug']}.html">{esc(p['category'])}</a></li></ol>
 <h1 style="max-width:20ch">{esc(p['title'])}</h1>
 <p class="lede">{esc(p['summary'])}</p>
-<div class="byline"><img src="{R}assets/img/team/ahmed.webp" alt="" width="44" height="44"><span>By <a class="link" href="{R}our-team.html"><b>{esc(p['author'])}</b></a>, Chief Technology Officer</span><span>·</span><time datetime="{p['date']}">{fmt_date(p['date'])}</time><span class="typechip">{p['type']}</span></div>
+<div class="byline"><img src="{R}assets/img/team/ahmed.webp" alt="" width="44" height="44"><span>By <a class="link" href="{R}our-team.html"><b>{esc(p['author'])}</b></a>, Chief Operations & Technology Officer</span><span>·</span><time datetime="{p['date']}">{fmt_date(p['date'])}</time><span class="typechip">{p['type']}</span></div>
 </div></section>
 <section class="section section--paper section--tight"><div class="wrap"><article class="article"><div class="article__body">{p['body']}</div>{hub}</article></div></section>
 {rel}

@@ -143,3 +143,15 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Members pages: removed hidden old navbar / section-footer / section-marquee component instances (dead /drafts links); inline head script on KB, Log in, Articles template repoints remaining old buttons (inside shared components) from /drafts/* to live pages (webflow/members-draft-links.html). kd-members-4.css `…/6afd0698091366265f5857f8_kd-members-4.css`: readable "All Articles" button, restyled "Articles" pill, login divider legible in dark.
 - kd-site-9.css `…/6afd0698091366265f5857e9_kd-site-9.css` (sticky + phone tap targets: footer links 38px, crumbs 34px, logo 40px) and kd-site-10.js `…/6afd0698091366265f5857da_kd-site-10.js` (show-password aria-label) on all 16 site pages + 4 member pages.
 - Audit notes: sandbox blocks Webflow's jQuery CDN (d3e54v103j8qbb.cloudfront.net) -> serve jquery@3.5.1 locally when testing; with it, no script errors on 23 pages. Internal links all 200. Not changed (owner decision): dark theme keeps light "paper" sections; Spanish blog category names + kd-booking form labels are English on /es.
+
+## 2026-11-18 — owner fixes round 4 (published live)
+- kd-site-10.css `…/6afd16cc42940860b6d27618_kd-site-10.css` and kd-site-11.js `…/6afd16ccc30d118bdbf5d3b1_kd-site-11.js` on all 16 site pages + 4 member heads (Memberstack/Finsweet/drafts-remap code kept).
+- Corner accents on `.hud` cards and the booking pop-up `.kdb-dialog` now follow the rounded border (masked overlay).
+- `.kd-cta` highlight band: line-height 1.2 + box-decoration-break so the band sits at the same height inline and in button rows.
+- Common routes rendered as stage chains (New Lead → Appointment Set → Offer Made → Contract Sent → Contract Signed, etc.) by JS into #jp-0..6 .routes, EN + ES.
+- Lifecycle label "Contractors" → "Contractors & Vendors" (ES "Contratistas y proveedores"), via JS.
+- Hero eyebrow → "Built by Real Estate Investors. For Real Estate Investors." (JS + sources).
+- Ahmed Ramy → Chief Operations & Technology Officer: Our Team embed, Our Team JSON-LD, post template byline String, home "Built in-house" sentence (JS), ES via JS, repo sources.
+- Contact form beside FAQs: two-column fields, step bar under the heading spanning the card.
+- Contact FAQ phone image: frame removed. AI Agent iMessage chip: inner span no longer drawn as a second chip.
+- Lifecycle diagram: 3 proposals (A finish line, B pipelines converge, C gears) in webflow/lifecycle-proposals.html, awaiting owner pick. After the pick: rebuild the journey block in home/services/crm embeds + kd-es.js and drop the JS shims (routes, label, eyebrow, title).

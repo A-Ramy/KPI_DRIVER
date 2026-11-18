@@ -840,3 +840,38 @@ html { scroll-padding-top: 84px; }
   .crumbs a { display: inline-block; padding-block: 8px; }
   .site-header .brand { padding-block: 10px; }
 }
+
+/* Corner accents that follow the card's own rounded border. One overlay with the card's exact border box and
+   radius, masked so only the top-left and bottom-right corners show; the curve always matches the card. */
+.hud::before, .kdb-dialog::before {
+  content: ""; position: absolute; inset: -1px; width: auto; height: auto; pointer-events: none; z-index: 3;
+  border: 2px solid var(--accent, var(--kdb-accent)); border-radius: inherit;
+  -webkit-mask: linear-gradient(#000 0 0) top left / 30px 30px no-repeat, linear-gradient(#000 0 0) bottom right / 30px 30px no-repeat;
+  mask: linear-gradient(#000 0 0) top left / 30px 30px no-repeat, linear-gradient(#000 0 0) bottom right / 30px 30px no-repeat;
+}
+.kdb-dialog::before { border-color: var(--kdb-accent); }
+.hud::after, .kdb-dialog::after { content: none; }
+
+/* Discovery-call text CTAs: same highlight band position whether the link sits in a sentence or in a button row
+   (in a row it becomes a block and its box grew to the full line height, so the band dropped below the words). */
+.kd-cta { line-height: 1.2; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.kd-cta::after { line-height: 1; }
+
+/* contact FAQ phone visual: no frame around the transparent product shot */
+.faq-visual img { border: 0; border-radius: 0; background: none; box-shadow: none; }
+/* AI Agent channel chips: the inner keep-case span on iMessage was styled as a second chip */
+.cc__agent-ch span span { border: 0; padding: 0; border-radius: 0; font: inherit; color: inherit; background: none; }
+
+/* journey: common routes as stage chains */
+.routes.routes--chain { flex-direction: column; flex-wrap: nowrap; align-items: flex-start; gap: 10px; }
+.routes--chain .route { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 0; border: 0; border-radius: 0; font-size: inherit; }
+.routes--chain .route b { font-weight: 500; font-size: var(--step--1); line-height: 1.2; padding: 5px 10px; border: 1px solid var(--rule-strong); border-radius: 999px; white-space: nowrap; background: var(--surface, transparent); }
+.routes--chain .route b:last-child { border-color: var(--accent); }
+.routes--chain .route i { font-style: normal; color: var(--accent); font-size: var(--step--1); }
+
+/* Contact form beside the FAQs: two-column fields and the step bar under the heading, spanning the card,
+   so the form is about as tall as the FAQ list (booking widget markup unchanged; overrides only). */
+.kdb--contact .kdb__head { order: -2; padding-bottom: 4px; }
+.kdb--contact .kdb__gear { order: -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 6px 22px 2px; }
+.kdb--contact .kdb__gear-t { display: inline; }
+@container kdb (min-width: 380px) { .kdb--contact .kdb__field--half { grid-column: span 3; } }

@@ -440,6 +440,40 @@
 (function () {
   var d = document, r = d.documentElement, es = r.lang === "es";
 
+  /* ---- content updates (owner, 2026-11-18): applied here until the journey block is rebuilt in the pages ---- */
+  /* journey: common routes as stage chains */
+  var ROUTES = es ? [
+    [["Lead nuevo", "Cita agendada", "Oferta hecha", "Contrato enviado", "Contrato firmado"], ["Lead nuevo", "Contactado", "Aún no está listo", "Nurture"], ["Lead nuevo", "Cita agendada", "Oferta hecha", "Oferta rechazada", "Nurture"]],
+    [["Cita agendada", "Oferta hecha", "Contrato enviado", "Contrato firmado", "Disposiciones"], ["Contrato firmado", "Coordinación de transacciones", "Cerrado y financiado"], ["Oferta hecha", "Sin respuesta", "Nurture"]],
+    [["Nurture", "El vendedor responde", "Cita agendada", "Oferta hecha", "Contrato firmado"], ["Nurture", "Secuencia de seguimiento", "Sigue en silencio", "Nurture a largo plazo"]],
+    [["Bajo contrato", "Ofrecido a compradores", "Oferta recibida", "Comprador asegurado", "Coordinación de transacciones"], ["Bajo contrato", "Se conserva", "Propiedades y rentas"]],
+    [["Contrato firmado", "Título solicitado", "Inspección y documentos", "Listo para cerrar", "Cerrado y financiado"], ["Cerrado y financiado", "Requiere reparaciones", "Contratistas y proveedores"], ["Cerrado y financiado", "Se conserva", "Propiedades y rentas"]],
+    [["Alcance aprobado", "Proveedor asignado", "Trabajo en curso", "Revisión final", "Terminado"], ["Terminado", "Listo para vender", "Disposiciones"], ["Terminado", "Listo para rentar", "Propiedades y rentas"]],
+    [["Vacante", "Publicada", "Inquilino aprobado", "Contrato de renta firmado", "Rentada"], ["Rentada", "Solicitud de mantenimiento", "Contratistas y proveedores"], ["Rentada", "Se vende", "Disposiciones"]]
+  ] : [
+    [["New Lead", "Appointment Set", "Offer Made", "Contract Sent", "Contract Signed"], ["New Lead", "Contacted", "Not Ready", "Nurture"], ["New Lead", "Appointment Set", "Offer Made", "Offer Declined", "Nurture"]],
+    [["Appointment Set", "Offer Made", "Contract Sent", "Contract Signed", "Dispositions"], ["Contract Signed", "Transaction Coordination", "Closed & Funded"], ["Offer Made", "No Response", "Nurture"]],
+    [["Nurture", "Seller Re-Engages", "Appointment Set", "Offer Made", "Contract Signed"], ["Nurture", "Follow-Up Sequence", "Still Quiet", "Long-Term Nurture"]],
+    [["Under Contract", "Marketed to Buyers", "Offer Received", "Buyer Secured", "Transaction Coordination"], ["Under Contract", "Keeping It", "Owned & Rentals"]],
+    [["Contract Signed", "Title Ordered", "Inspection & Docs", "Clear to Close", "Closed & Funded"], ["Closed & Funded", "Repairs Needed", "Contractors & Vendors"], ["Closed & Funded", "Held", "Owned & Rentals"]],
+    [["Scope Approved", "Vendor Assigned", "Work in Progress", "Final Walkthrough", "Complete"], ["Complete", "Ready to Sell", "Dispositions"], ["Complete", "Ready to Rent", "Owned & Rentals"]],
+    [["Vacant", "Listed", "Tenant Approved", "Lease Signed", "Rented"], ["Rented", "Maintenance Request", "Contractors & Vendors"], ["Rented", "Selling", "Dispositions"]]
+  ];
+  var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+  ROUTES.forEach(function (routes, i) {
+    var dd = d.querySelector("#jp-" + i + " .routes"); if (!dd) return;
+    dd.classList.add("routes--chain");
+    dd.innerHTML = routes.map(function (r) { return '<span class="route">' + r.map(function (step) { return "<b>" + esc(step) + "</b>"; }).join('<i aria-hidden="true">→</i>') + "</span>"; }).join("");
+  });
+  /* lifecycle diagram label, hero eyebrow and Ahmed's title */
+  var SWAP = es ? [["Contratistas", "Contratistas y proveedores", "svg text"], ["Diseñado para toda la operación.", "Para inversionistas inmobiliarios.", null], ["Director de tecnología (CTO)", "Director de Operaciones y Tecnología", null], ["Chief Technology Officer", "Director de Operaciones y Tecnología", null], ["El CTO Ahmed Ramy dirige", "Ahmed Ramy, nuestro Director de Operaciones y Tecnología, dirige", null]]
+                : [["Contractors", "Contractors & Vendors", "svg text"], ["Engineered for the entire operation.", "For real estate investors.", null], ["Chief Technology Officer", "Chief Operations & Technology Officer", null], ["CTO Ahmed Ramy leads", "Ahmed Ramy, our Chief Operations & Technology Officer, leads", null]];
+  SWAP.forEach(function (sw) {
+    if (sw[2]) { d.querySelectorAll(sw[2]).forEach(function (t) { if (t.textContent.trim() === sw[0]) t.textContent = sw[1]; }); return; }
+    var w = d.createTreeWalker(d.body, NodeFilter.SHOW_TEXT, null), n;
+    while ((n = w.nextNode())) if (n.textContent.indexOf(sw[0]) > -1) n.textContent = n.textContent.split(sw[0]).join(sw[1]);
+  });
+
   /* members log-in form: the show-password toggle is an icon-only link; give it a name */
   d.querySelectorAll("a.show-password").forEach(function (a) { a.setAttribute("role", "button"); a.setAttribute("aria-label", es ? "Mostrar contrase\u00f1a" : "Show password"); });
 
