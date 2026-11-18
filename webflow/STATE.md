@@ -142,3 +142,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
   - The "Not covered here?" FAQ line is removed.
 - Staging published 22:21 UTC (subdomain only).
 - **www.kpidriver.com + kpidriver.com were published at 21:15 UTC with kd-booking-3.js / kd-booking-1.css** (the earlier version: a button per section, one-step contact form). Every publish call from this session named only the subdomain; the cause is unconfirmed. Waiting on the owner: keep, roll back, or publish the current version.
+
+## 2026-11-18: published live (owner approved)
+- kd-booking-5.js `…/6afce87a8c6000918d7d88d1_kd-booking-5.js` (site footer) + kd-booking-2.css (site head).
+  - Until the bridge is configured, booking forms show a calm "pick your time in our scheduler" message with the scheduler button (no red error, no Try again).
+- Published to www.kpidriver.com, kpidriver.com and kpidriver.webflow.io. Verified on all main pages, EN + ES, desktop + phone.
+- Booking bridge: Webflow Cloud chosen if the plan includes it. Not checkable yet: the Webflow connection lacks the cloud_apps scopes, and developers.webflow.com is blocked in this session's network.

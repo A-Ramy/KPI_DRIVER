@@ -350,9 +350,11 @@
       if (pick) { s.day = pick; cells.forEach(function (c) { var on = c.getAttribute("data-day") === pick; c.classList.toggle("is-sel", on); c.setAttribute("aria-pressed", on); }); self.drawSlots(slotsEl, byDay[pick]); }
       else { slotsEl.innerHTML = ""; slotsEl.appendChild(h("p", { class: "kdb__hint", text: "No open times this month." })); slotsEl.appendChild(h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", text: "See next month →", onclick: function () { self.shift(1, cal, slotsEl); } })); }
     }).catch(function () {
-      slotsEl.innerHTML = ""; slotsEl.appendChild(h("p", { class: "kdb__hint kdb__hint--err", text: "We couldn't load the calendar right now. You can still book in the scheduler." }));
-      slotsEl.appendChild(h("a", { class: "kdb__btn kdb__btn--primary", href: CFG.fallbackUrl, target: "_blank", rel: "noopener" }, ["Open the scheduler", h("span", { class: "kdb__arr", "aria-hidden": "true", text: "↗" })]));
-      slotsEl.appendChild(h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", text: "Try again", onclick: function () { slotCache = {}; self.drawCalendar(cal, slotsEl); } }));
+      // no live availability configured yet is not an error: point to the scheduler calmly
+      var setUp = !CFG.slotsUrl && !CFG.mock;
+      slotsEl.innerHTML = ""; slotsEl.appendChild(h("p", { class: setUp ? "kdb__hint" : "kdb__hint kdb__hint--err", text: setUp ? "Pick your time in our scheduler. It opens in a new tab and takes about a minute." : "We couldn't load the calendar right now. You can still book in the scheduler." }));
+      slotsEl.appendChild(h("a", { class: "kdb__btn kdb__btn--primary", href: CFG.fallbackUrl, target: "_blank", rel: "noopener", "data-cta-type": "scheduler link", onclick: function () { try { (window.dataLayer = window.dataLayer || []).push({ event: "discovery_call_scheduler_open", booking_source: self.state.source }); } catch (e) {} } }, ["Open the scheduler", h("span", { class: "kdb__arr", "aria-hidden": "true", text: "↗" })]));
+      if (!setUp) slotsEl.appendChild(h("button", { type: "button", class: "kdb__btn kdb__btn--ghost", text: "Try again", onclick: function () { slotCache = {}; self.drawCalendar(cal, slotsEl); } }));
     });
   };
   Booking.prototype.shift = function (n, cal, slotsEl) {
