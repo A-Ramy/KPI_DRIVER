@@ -873,3 +873,23 @@ html[lang="es"] [data-lc] .tabs__tab { padding: 9px 7px; gap: 6px; font-size: cl
 [data-lc] .lc-panels > .tabs__panel { grid-area: 1 / 1; }
 [data-lc] .lc-panels > .tabs__panel[hidden] { display: block; visibility: hidden; }
 @media (prefers-reduced-motion: reduce) { .lc-trace.is-live, .lc-trace.is-in { animation: none; } .lc-hud-d, .lc-hud-fill { transition: none; } .lc-shock { display: none; } }
+
+/* Phones and tablets (2026-11-18 pass). Touch screens of any width get the larger tap targets that phones
+   already had; footer legal and social links grow an invisible hit area without moving anything. */
+@media (pointer: coarse) {
+  .footer__col ul { gap: 0; }
+  .footer__col a { display: inline-block; padding-block: 6px; }
+  .crumbs a { display: inline-block; padding-block: 8px; }
+}
+@media (max-width: 700px), (pointer: coarse) {
+  .footer__bottom p a { display: inline-block; padding: 11px 6px; margin: -11px -6px; }
+  .social a { min-width: 24px; text-align: center; }
+}
+/* Small screens: mono labels no smaller than 12px (were 10-11px), and long route pills (Spanish) wrap
+   inside the box instead of pushing the page sideways. */
+@media (max-width: 700px) {
+  .crumbs, .post-row__meta, .contact-list dt, .footer__col h2, .handoff dt { font-size: 0.75rem; }
+  .typechip { font-size: 0.6875rem; }
+  .handoff > div { min-width: 0; }
+  .routes--chain .route b { white-space: normal; max-width: 100%; }
+}
