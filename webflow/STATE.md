@@ -158,3 +158,11 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Owner picked Option F, revised: Owned & Rentals on the Acquisitions line closing the Dispositions/TC fork, 'sell again' back into the pair, Closed & Funded on the same line as the finish. Interactive preview with full tab text in webflow/lifecycle-final.html, awaiting approval.
 - Gear version of the preview: rev-bar track (1 Capture, 2 Acquisitions, 3 Dispositions/TC, 4 Closed & Funded top gear, N Nurture, P Owned & Rentals), gear readout + pulse + light-run animation on select; same URL, awaiting approval.
 - Preview v3: all gears (1 Capture, 2 Acquisitions, 3 Dispositions/TC, 4 Closed before P Owned & Rentals, 5 Closed, 6 Funded top gear, N Nurture, R Contractors & Vendors); tabs on one row with gear badges; tab panels stacked in one grid cell so the box holds the tallest tab's height.
+
+## 2026-11-18 — lifecycle journey v5 live (owner approved)
+- kd-site-11.css `…/6afd79601cf45b67e80ca01e_kd-site-11.css` and kd-site-12.js `…/6afd79603a8d5b692f50c786_kd-site-12.js` on all 16 site pages + 4 member heads.
+- The journey block on Home, Services and CRM (EN + ES) is rebuilt in place by site.js from src/assets/js/lifecycle.js; data and Spanish text come from webflow/build_lifecycle.py (run it to re-splice into site.js). The old JS shims for route chains and the diagram label are gone; the hero eyebrow / Ahmed title swaps remain until the page embeds are rebuilt.
+- Gear track: 1 Capture, 2 Acquisitions, 3 Dispositions + 3 TC in parallel, 4 Closed (kept) → P Owned & Rentals → sell again into the pair, 5 Closed → 6 Funded (top gear); N Nurture, R Contractors & Vendors (coordinated by TC).
+- Selecting a stage: gear readout rolls (fixed width = longest stage name, measured after fonts load), pulse from the stage, light runs along outgoing lines (only while the diagram is on screen; off with reduced motion). 4/5/6 are clickable but have no tab.
+- Tabs on one row with gear badges (ES uses tighter type to fit); panels stacked in one grid cell so the box keeps the tallest stage's height. Verified on staging and live, light + dark, no errors.
+- The page embeds still hold the old journey HTML as the no-JS fallback; rebuilding the three embeds would put the new text in the page source.

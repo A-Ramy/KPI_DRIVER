@@ -875,3 +875,65 @@ html { scroll-padding-top: 84px; }
 .kdb--contact .kdb__gear { order: -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 6px 22px 2px; }
 .kdb--contact .kdb__gear-t { display: inline; }
 @container kdb (min-width: 380px) { .kdb--contact .kdb__field--half { grid-column: span 3; } }
+
+/* ---------- lifecycle journey v5: gear-track diagram, one-row gear tabs, fixed-height panels ---------- */
+[data-lc] .lc-circuit { display: none; margin-bottom: 10px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--navy); padding: 10px 18px; }
+@media (min-width: 820px) { [data-lc] .lc-circuit { display: block; } }
+[data-lc] .lc-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.lc-edge { fill: none; stroke: rgba(255, 255, 255, 0.18); stroke-width: 2; }
+.lc-edge.track { stroke: url(#lc-rev); stroke-width: 7; stroke-linecap: round; opacity: 0.8; }
+.lc-edge.track.thin { stroke-width: 4; opacity: 0.65; }
+.lc-edge.coord { stroke: rgba(242, 165, 49, 0.45); stroke-dasharray: 2 6; }
+.lc-edge.again { stroke: rgba(242, 165, 49, 0.5); stroke-dasharray: 8 6; }
+.lc-trace { fill: none; stroke: none; pointer-events: none; }
+.lc-trace.is-live { stroke: #cfe6ff; stroke-width: 2.5; stroke-dasharray: 6 8; animation: flowdash 1s linear infinite; filter: drop-shadow(0 0 6px rgba(74, 155, 230, 1)); }
+.lc-trace.is-in { stroke: #d9ffe9; stroke-width: 2.5; stroke-dasharray: 6 8; animation: flowdash 1s linear infinite; filter: drop-shadow(0 0 6px rgba(63, 191, 127, 1)); }
+.lc-node { cursor: pointer; outline: none; }
+.lc-node text { fill: #9ba9bb; font-family: var(--font-display); font-weight: 600; font-size: 17px; letter-spacing: 0.04em; text-transform: uppercase; }
+.lc-node .lc-gbg { fill: #13283b; stroke: rgba(255, 255, 255, 0.32); stroke-width: 2; transition: stroke 0.2s ease, filter 0.2s ease; }
+.lc-node .lc-gd { fill: #fff; font-family: var(--font-mono); font-weight: 700; font-size: 14px; letter-spacing: 0; text-transform: none; pointer-events: none; }
+.lc-node:hover .lc-gbg, .lc-node:focus-visible .lc-gbg { stroke: #fff; }
+.lc-node.is-on .lc-gbg { stroke: var(--blue); stroke-width: 2.5; filter: drop-shadow(0 0 10px rgba(74, 155, 230, 0.9)); }
+.lc-node.is-on text { fill: #fff; }
+.lc-node.is-next .lc-gbg { stroke: var(--amber); stroke-width: 2.5; }
+.lc-finish .lc-ring { fill: none; stroke: var(--green); stroke-width: 2; opacity: 0.35; transition: opacity 0.2s ease; }
+.lc-finish .lc-disc { fill: #0f2a21; stroke: var(--green); stroke-width: 2.5; }
+.lc-finish .lc-gd { font-size: 24px; }
+.lc-finish text:not(.lc-gd):not(.lc-top) { fill: #fff; font-weight: 700; font-size: 18px; }
+.lc-finish .lc-top { fill: var(--green); font-family: var(--font-mono); font-weight: 500; font-size: 11px; letter-spacing: 0.1em; }
+.lc-finish.is-on .lc-ring, .lc-finish.is-next .lc-ring { opacity: 0.8; }
+.lc-finish.is-on .lc-disc, .lc-finish.is-next .lc-disc { filter: drop-shadow(0 0 12px rgba(63, 191, 127, 0.7)); }
+.lc-finish.is-next .lc-disc { stroke: var(--amber); }
+.lc-tag { fill: #74859a; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; pointer-events: none; }
+.lc-tag.amb { fill: var(--amber); }
+.lc-shock { fill: none; stroke: var(--blue); stroke-width: 2; transform-box: fill-box; transform-origin: center; animation: lc-shock 0.8s ease-out forwards; pointer-events: none; }
+.lc-shock.green { stroke: var(--green); }
+@keyframes lc-shock { from { transform: scale(1); opacity: 0.95; } to { transform: scale(2.8); opacity: 0; } }
+.lc-comet { fill: #fff; filter: drop-shadow(0 0 6px #4a9be6) drop-shadow(0 0 12px #4a9be6); pointer-events: none; }
+.lc-comet.green { filter: drop-shadow(0 0 6px #3fbf7f) drop-shadow(0 0 12px #3fbf7f); }
+.lc-comet.tail { opacity: 0.45; }
+.lc-hud-bg { fill: rgba(8, 19, 30, 0.75); stroke: rgba(255, 255, 255, 0.14); }
+.lc-hud-win { fill: #13283b; stroke: rgba(255, 255, 255, 0.2); }
+.lc-hud-l { fill: #74859a; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; }
+.lc-hud-n { fill: #dce6f1; font-family: var(--font-display); font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; }
+.lc-hud-d { fill: #fff; font-family: var(--font-mono); font-weight: 700; font-size: 24px; transition: transform 0.38s cubic-bezier(0.2, 0.9, 0.2, 1.15); }
+.lc-hud-d.in { transform: translateY(40px); }
+.lc-hud-d.out { transform: translateY(-40px); }
+.lc-hud-track { fill: rgba(255, 255, 255, 0.1); }
+.lc-hud-fill { transform-box: fill-box; transform-origin: left center; transform: scaleX(0.14); transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.lc-status { margin: 0 0 18px; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.04em; color: var(--fg-muted); min-height: 1.5em; }
+.lc-status b { color: var(--fg); font-weight: 500; }
+@media (max-width: 819px) { .lc-status { display: none; } }
+/* tabs: one row, gear badges */
+[data-lc] .tabs__list { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 6px; }
+[data-lc] .tabs__list::-webkit-scrollbar { display: none; }
+[data-lc] .tabs__tab { flex: 1 1 auto; justify-content: center; white-space: nowrap; padding: 9px 10px; gap: 7px; font-size: clamp(0.875rem, 1.3vw, 1.0625rem); }
+html[lang="es"] [data-lc] .tabs__list { gap: 4px; }
+html[lang="es"] [data-lc] .tabs__tab { padding: 9px 7px; gap: 6px; font-size: clamp(0.8125rem, 1.12vw, 0.96rem); letter-spacing: 0.01em; }
+.lc-g { flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #13283b; color: #fff; font-family: var(--font-mono); font-weight: 700; font-size: 11px; line-height: 1; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.28); }
+[data-lc] .tabs__tab[aria-selected="true"] .lc-g { background: var(--blue); box-shadow: none; }
+/* panels: stacked in one cell, so the box keeps the tallest stage's height and never resizes */
+[data-lc] .lc-panels { display: grid; }
+[data-lc] .lc-panels > .tabs__panel { grid-area: 1 / 1; }
+[data-lc] .lc-panels > .tabs__panel[hidden] { display: block; visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .lc-trace.is-live, .lc-trace.is-in { animation: none; } .lc-hud-d, .lc-hud-fill { transition: none; } .lc-shock { display: none; } }
