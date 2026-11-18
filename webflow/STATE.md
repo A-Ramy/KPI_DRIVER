@@ -148,3 +148,14 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
   - Until the bridge is configured, booking forms show a calm "pick your time in our scheduler" message with the scheduler button (no red error, no Try again).
 - Published to www.kpidriver.com, kpidriver.com and kpidriver.webflow.io. Verified on all main pages, EN + ES, desktop + phone.
 - Booking bridge: Webflow Cloud chosen if the plan includes it. Not checkable yet: the Webflow connection lacks the cloud_apps scopes, and developers.webflow.com is blocked in this session's network.
+
+## 2026-11-18: live booking through Webflow Cloud
+- Webflow Cloud app `kd-booking-bridge` (site-attached), created by the owner from GitHub a-ramy/kpi_driver, branch ccr-9f523f3d-oiee4l.
+  - Mount path /api/booking; app root booking-form/bridge/webflow-cloud.
+  - Secret HL_TOKEN is the rotated key; the old key is revoked.
+- Site footer config: slotsUrl "/api/booking/slots", bookUrl "/api/booking/book" (same site; works on webflow.io and both custom domains).
+- End-to-end test from staging, CRM – KPIs text link:
+  - Booked appointment bLejnO3Z33Njpttz1HSM (Wed Nov 25 2026, 5:00 PM ET) for contact V7eVWbkudE76OOFGkIEo ("Marcus Bell", marcus.bell.kdtest-e2e@example.com).
+  - To be deleted by the owner: this session's key no longer works after the rotation.
+- Published to all domains. Live check: the closing band and the popup load real open days.
+- Note: the Webflow Cloud app deploys from the branch above; pushes to it redeploy the bridge.
