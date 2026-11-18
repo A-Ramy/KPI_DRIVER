@@ -97,13 +97,11 @@ At load the script (`enhancePage()` in `kd-booking.js`) does the following, both
 
 Analytics events: `discovery_call_open`, `discovery_call_booked` and `contact_form_sent` are pushed to `dataLayer` with `booking_source`.
 
-## Decisions to confirm
+## Decisions (confirmed by the owner, 2026-11-18)
 
-- **SMS consent text.** The booking forms say "…from KPI DRIVER, LLC… Text HELP to (786) 822-8188". The old contact survey says "…from **company**… Text HELP to (786) **404-9848**". "company" is an unfilled placeholder.
-  - Both new forms currently use the booking wording.
-  - Confirm which number is registered for your A2P campaign, and set `contactConsentText` if the contact form needs different wording.
-- **Required consent.** Both old forms made the SMS box required, and the new forms copy that. Carrier reviewers generally expect SMS consent to be optional, not a condition of booking. To make it optional, set `req: false` on the two consent fields in `kd-booking.js`, and remove the consent check in `n8n/src/validate-*.js`, which currently rejects submissions without consent.
-- **Contact source.** Contacts keep `source: "SEO"`, as the old forms set it (`CONTACT_SOURCE` in `n8n/src/config.js`).
+- **SMS consent text:** both forms use the booking wording with **(786) 822-8188**, which is the registered texting number. The old contact survey's "company" placeholder and its (786) 404-9848 number are retired.
+- **Required consent:** the SMS box is required on both forms. On the contact form, ticking it on step 1 carries over to step 2. The bridge also rejects a booking without consent.
+- **Contact source:** contacts keep `source: "SEO"`, as the old forms set it.
 
 ## Live tests
 
