@@ -208,3 +208,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Rollback: set the two pages draft:false, publish_collection_items for the ids in the rollback file (categories/audiences first), publish.
 - Left for the booking chat (site-wide code): remove Memberstack (now unused) — note updated in handoff-booking-chat.md. Optional for the owner: 301 /knowledge-base and /log-in to /services/ai-suite#knowledge-base in Site settings → Publishing.
 - C7 (Designer style clean-up) waits for the Designer to be open.
+
+## 2026-11-18 — DONE C7 unused-styles clean-up (live)
+- No "Clean up" action in the MCP, so done by hand: 870 styles listed; class chains collected from every page tree (all 33 pages incl. drafts the owner keeps, CMS templates) and all 37 component definitions (586 distinct chains); 237 styles used by nothing; 70 of those kept anyway because their class name appears in our CSS/JS, the ES bundles or the HTML of the 132 live pages; 166 removed (12 combos, 154 globals: auto-named Ikonik/Path/Svg/Rect icon styles, unused signup/slider/hero pieces, 3 leftover kdt-* test styles). "Nav BlockFooter " (trailing space) could not be addressed by name; left.
+- Webflow shared CSS 172.9 KB → 154.6 KB. Verified staging vs live: computed styles of every element on 17 pages (EN + ES) at 1440 and 390 px identical (0 differences), then published live; all 132 sitemap URLs serve the new shared CSS.
+- Data and scripts: webflow/audit/c7/ (styles-all.txt, trees/, usage.py, extract.py, unused-candidates.json, remove.json, remove-actions.json).
+- Deleted the 7 superseded hosted files now unreferenced: kd-site-14.css/.js, kd-head-3.js, kd-es-contact-us.js (v1), kd-site-13.css, kd-es.js, kd-head-2.js.
