@@ -20,7 +20,7 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
 .lede { margin: 0; max-width: 70ch; color: var(--muted) }
 /* diagram */
 .circuit { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--panel); padding: 10px 18px; overflow-x: auto }
-.circuit svg { display: block; width: 100%; min-width: 760px; height: auto }
+.circuit svg { display: block; width: 100%; min-width: 820px; height: auto }
 .status { margin: 10px 2px 0; font: 500 12px/1.5 var(--mono); letter-spacing: .06em; color: var(--muted) }
 .status b { color: var(--fg); font-weight: 500 }
 .edge { fill: none; stroke: var(--edge); stroke-width: 2; transition: stroke .2s }
@@ -50,6 +50,7 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
 /* gear track */
 .circuit { position: relative }
 .edge.track { stroke: url(#rev); stroke-width: 7; stroke-linecap: round; opacity: .8 }
+.edge.track.thin { stroke-width: 4; opacity: .65 }
 .hl { fill: none; stroke: none; pointer-events: none }
 .hl.is-live { stroke: #cfe6ff; stroke-width: 2.5; stroke-dasharray: 6 8; animation: flow 1s linear infinite; filter: drop-shadow(0 0 6px rgba(74,155,230,1)) }
 .hl.is-in { stroke: #d9ffe9; stroke-width: 2.5; stroke-dasharray: 6 8; animation: flow 1s linear infinite; filter: drop-shadow(0 0 6px rgba(63,191,127,1)) }
@@ -81,17 +82,21 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
 .gh-l { position: absolute; top: -8px; left: 12px; font: 500 9.5px/1 var(--mono); letter-spacing: .16em; color: var(--tag); background: var(--panel); padding: 0 4px }
 @media (prefers-reduced-motion: reduce) { .gh-d, .gh-bar i { transition: none } .shock { display: none } }
 /* tabs */
-.tabs__list { display: flex; gap: 6px; flex-wrap: wrap }
-.tabs__tab { flex: none; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--rule); background: transparent; cursor: pointer; font: 600 18px/1 var(--display); letter-spacing: .03em; text-transform: uppercase; color: var(--muted); display: inline-flex; gap: 8px; align-items: center }
+.tabs__list { display: flex; gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px }
+.tabs__list::-webkit-scrollbar { display: none }
+.tabs__tab { flex: 1 1 auto; justify-content: center; white-space: nowrap; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--rule); background: transparent; cursor: pointer; font: 600 clamp(14px, 1.35vw, 17px)/1 var(--display); letter-spacing: .03em; text-transform: uppercase; color: var(--muted); display: inline-flex; gap: 8px; align-items: center }
 .tabs__tab:hover { color: var(--fg); border-color: var(--rule-strong) }
 .tabs__tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
 .tabs__tab[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg) }
-.tabs__tab small { font: 500 11px var(--mono) }
+.tabs__tab .g { flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #13283b; color: #fff; font: 700 11px/1 var(--mono); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.28) }
+.tabs__tab[aria-selected="true"] .g { background: var(--blue); box-shadow: none }
+#panels { display: grid }
+#panels > .tabs__panel { grid-area: 1 / 1 }
 .tabs__panel { margin-top: 22px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); padding: clamp(20px, 3.5vw, 40px); position: relative }
 .tabs__panel::before { content: ""; position: absolute; inset: -1px; pointer-events: none; border: 2px solid var(--accent); border-radius: inherit;
   -webkit-mask: linear-gradient(#000 0 0) top left / 30px 30px no-repeat, linear-gradient(#000 0 0) bottom right / 30px 30px no-repeat;
   mask: linear-gradient(#000 0 0) top left / 30px 30px no-repeat, linear-gradient(#000 0 0) bottom right / 30px 30px no-repeat }
-.tabs__panel[hidden] { display: none }
+.tabs__panel[hidden] { display: block; visibility: hidden }
 .body { display: grid; gap: 32px; grid-template-columns: minmax(0, 1fr) }
 @media (min-width: 900px) { .body { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr) } }
 .stack { display: grid; gap: 14px; align-content: start; min-width: 0 }
@@ -122,51 +127,56 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
   <div data-no-tc>
     <p class="eyebrow">KPI DRIVER · Option F with gears · Preview for approval</p>
     <h1>Lead lifecycle, as it will work on the site</h1>
-    <p class="lede">Click any stage in the diagram or any tab below it. Blue lines show where the selected stage goes next and amber rings mark those stages, the same way the live block behaves. Click Closed &amp; Funded to light every path that ends in a sale.</p>
+    <p class="lede">Click any stage in the diagram or any tab below it. Blue lines show where the selected stage goes next and amber rings mark those stages, the same way the live block behaves. Click Funded, top gear, to light every path that ends in a sale.</p>
   </div>
 
   <section id="journey" aria-label="Investment lifecycle">
     <div class="circuit">
       <div class="gearhud" aria-hidden="true"><span class="gh-l">GEAR</span><span class="gh-win"><span class="gh-d">2</span></span><span class="gh-n">Acquisitions</span><span class="gh-bar"><i></i></span></div>
-      <svg viewBox="0 0 1000 360" role="group" aria-label="Lifecycle diagram">
-        <defs><linearGradient id="rev" gradientUnits="userSpaceOnUse" x1="70" y1="0" x2="905" y2="0"><stop offset="0" stop-color="#e5484d"/><stop offset=".45" stop-color="#f2a531"/><stop offset="1" stop-color="#3fbf7f"/></linearGradient></defs>
-        <!-- the gear track: the main road from Capture to Closed & Funded -->
-        <path class="edge track" data-from="0" data-to="1" d="M70 150 H270"/>
-        <path class="edge track" data-from="1" data-to="3" d="M270 150 C380 150 390 70 500 70"/>
-        <path class="edge track" data-from="1" data-to="4" d="M270 150 C380 150 390 230 500 230"/>
-        <path class="edge track" data-from="3" data-to="7" d="M500 70 C690 36 800 98 868 138"/>
-        <path class="edge track" data-from="4" data-to="7" d="M500 230 C690 264 800 202 868 162"/>
+      <svg viewBox="0 0 1100 380" role="group" aria-label="Lifecycle diagram">
+        <defs><linearGradient id="rev" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="1030" y2="0"><stop offset="0" stop-color="#e5484d"/><stop offset=".45" stop-color="#f2a531"/><stop offset="1" stop-color="#3fbf7f"/></linearGradient></defs>
+        <!-- the gear track: 1 to 6 -->
+        <path class="edge track" data-from="0" data-to="1" d="M60 160 H220"/>
+        <path class="edge track" data-from="1" data-to="3" d="M220 160 C320 160 330 80 400 80"/>
+        <path class="edge track" data-from="1" data-to="4" d="M220 160 C320 160 330 240 400 240"/>
+        <path class="edge track" data-from="3" data-to="8" d="M400 80 C620 30 800 100 884 150"/>
+        <path class="edge track" data-from="4" data-to="8" d="M400 240 C620 290 800 220 884 170"/>
+        <path class="edge track" data-from="8" data-to="9" d="M900 160 H1030"/>
+        <!-- kept: closing the fork into 4, then parked -->
+        <path class="edge track thin" data-from="3" data-to="7" d="M400 80 C470 80 510 160 560 160"/>
+        <path class="edge track thin" data-from="4" data-to="7" d="M400 240 C470 240 510 160 560 160"/>
+        <path class="edge track thin" data-from="7" data-to="6" d="M560 160 H690"/>
         <!-- nurture loop -->
-        <path class="edge" data-from="1" data-to="2" d="M258 150 C230 120 230 80 258 46"/>
-        <path class="edge" data-from="2" data-to="1" d="M282 46 C312 80 312 120 282 150"/>
+        <path class="edge" data-from="1" data-to="2" d="M208 160 C180 130 180 86 208 52"/>
+        <path class="edge" data-from="2" data-to="1" d="M232 52 C260 86 260 130 232 160"/>
         <!-- dispositions and TC in parallel -->
-        <path class="edge" data-from="3 4" data-to="3 4" d="M494 86 V214"/>
-        <path class="edge" data-from="3 4" data-to="3 4" d="M506 86 V214"/>
-        <!-- kept: closing the fork into owned & rentals -->
-        <path class="edge" data-from="3" data-to="6" d="M514 76 C620 84 700 96 700 135"/>
-        <path class="edge" data-from="4" data-to="6" d="M514 224 C620 216 700 204 700 165"/>
+        <path class="edge" data-from="3 4" data-to="3 4" d="M394 98 V222"/>
+        <path class="edge" data-from="3 4" data-to="3 4" d="M406 98 V222"/>
         <!-- sell again: back into the pair -->
-        <path class="edge again" data-from="6" data-to="3 4" d="M685 150 H510"/>
-        <!-- TC coordinates contractors & vendors -->
-        <path class="edge coord" data-from="4 5" data-to="4 5" d="M500 248 C512 292 570 306 624 306"/>
+        <path class="edge again" data-from="6" data-to="3" d="M692 148 C650 96 520 66 418 76"/>
+        <path class="edge again" data-from="6" data-to="4" d="M692 172 C650 224 520 254 418 244"/>
+        <!-- TC coordinates contractors & vendors (reverse gear) -->
+        <path class="edge coord" data-from="4 5" data-to="4 5" d="M400 258 C410 312 480 332 542 332"/>
         <g id="hl"></g><g id="fx"></g>
 
-        <g class="node gear-node" data-node="0" transform="translate(70 150)" tabindex="0" role="button" aria-label="Capture, gear 1"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">1</text><text y="42" text-anchor="middle">Capture</text></g>
-        <g class="node gear-node" data-node="1" transform="translate(270 150)" tabindex="0" role="button" aria-label="Acquisitions, gear 2"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">2</text><text y="42" text-anchor="middle">Acquisitions</text></g>
-        <g class="node gear-node" data-node="2" transform="translate(270 46)" tabindex="0" role="button" aria-label="Nurture, neutral"><circle class="gbg" r="15"/><text class="gd" y="5" text-anchor="middle">N</text><text y="-26" text-anchor="middle">Nurture</text></g>
-        <g class="node gear-node" data-node="3" transform="translate(500 70)" tabindex="0" role="button" aria-label="Dispositions, gear 3"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">3</text><text y="-28" text-anchor="middle">Dispositions</text></g>
-        <g class="node gear-node" data-node="4" transform="translate(500 230)" tabindex="0" role="button" aria-label="Transaction Coordination, gear 3"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">3</text><text x="-28" y="6" text-anchor="end">Transaction Coord.</text></g>
-        <g class="node" data-node="5" transform="translate(640 306)" tabindex="0" role="button" aria-label="Contractors and Vendors"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Contractors &amp; Vendors</text></g>
-        <g class="node gear-node" data-node="6" transform="translate(700 150)" tabindex="0" role="button" aria-label="Owned and Rentals, parked"><circle class="gbg" r="16"/><text class="gd" y="5" text-anchor="middle">P</text><text x="26" y="6">Owned &amp; Rentals</text></g>
-        <g class="node finish" data-node="7" transform="translate(905 150)" tabindex="0" role="button" aria-label="Closed and Funded, top gear"><circle class="ring" r="44"/><circle class="disc" r="30"/><text class="gd" y="8" text-anchor="middle">4</text><text class="top" y="-54" text-anchor="middle">top gear</text><text y="72" text-anchor="middle">Closed &amp; Funded</text></g>
+        <g class="node gear-node" data-node="0" transform="translate(60 160)" tabindex="0" role="button" aria-label="Capture, gear 1"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">1</text><text y="42" text-anchor="middle">Capture</text></g>
+        <g class="node gear-node" data-node="1" transform="translate(220 160)" tabindex="0" role="button" aria-label="Acquisitions, gear 2"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">2</text><text y="42" text-anchor="middle">Acquisitions</text></g>
+        <g class="node gear-node" data-node="2" transform="translate(220 52)" tabindex="0" role="button" aria-label="Nurture, neutral"><circle class="gbg" r="16"/><text class="gd" y="5" text-anchor="middle">N</text><text y="-26" text-anchor="middle">Nurture</text></g>
+        <g class="node gear-node" data-node="3" transform="translate(400 80)" tabindex="0" role="button" aria-label="Dispositions, gear 3"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">3</text><text y="-28" text-anchor="middle">Dispositions</text></g>
+        <g class="node gear-node" data-node="4" transform="translate(400 240)" tabindex="0" role="button" aria-label="Transaction Coordination, gear 3"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">3</text><text x="-28" y="6" text-anchor="end">Transaction Coord.</text></g>
+        <g class="node gear-node" data-node="5" transform="translate(560 332)" tabindex="0" role="button" aria-label="Contractors and Vendors, reverse"><circle class="gbg" r="16"/><text class="gd" y="5" text-anchor="middle">R</text><text x="26" y="6">Contractors &amp; Vendors</text></g>
+        <g class="node gear-node" data-node="7" transform="translate(560 160)" tabindex="0" role="button" aria-label="Closed, gear 4"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">4</text><text y="44" text-anchor="middle">Closed</text></g>
+        <g class="node gear-node" data-node="6" transform="translate(706 160)" tabindex="0" role="button" aria-label="Owned and Rentals, parked"><circle class="gbg" r="16"/><text class="gd" y="5" text-anchor="middle">P</text><text x="26" y="6">Owned &amp; Rentals</text></g>
+        <g class="node gear-node" data-node="8" transform="translate(900 160)" tabindex="0" role="button" aria-label="Closed, gear 5"><circle class="gbg" r="18"/><text class="gd" y="5" text-anchor="middle">5</text><text y="48" text-anchor="middle">Closed</text></g>
+        <g class="node finish" data-node="9" transform="translate(1030 160)" tabindex="0" role="button" aria-label="Funded, top gear 6"><circle class="ring" r="44"/><circle class="disc" r="30"/><text class="gd" y="8" text-anchor="middle">6</text><text class="top" y="-54" text-anchor="middle">top gear</text><text y="74" text-anchor="middle">Funded</text></g>
 
-        <text class="tag" x="196" y="100" text-anchor="end">needs backup</text>
-        <text class="tag" x="344" y="100">revived</text>
-        <text class="tag" x="486" y="154" text-anchor="end">in parallel</text>
-        <text class="tag" x="640" y="112" text-anchor="middle">kept</text>
-        <text class="tag amb" x="598" y="142" text-anchor="middle">sell again</text>
-        <text class="tag" x="846" y="92" text-anchor="end">sold</text>
-        <text class="tag amb" x="590" y="276" text-anchor="middle">TC coordinates</text>
+        <text class="tag" x="150" y="110" text-anchor="end">needs backup</text>
+        <text class="tag" x="262" y="104">revived</text>
+        <text class="tag" x="386" y="164" text-anchor="end">in parallel</text>
+        <text class="tag" x="492" y="164" text-anchor="middle">kept</text>
+        <text class="tag amb" x="630" y="122" text-anchor="middle">sell again</text>
+        <text class="tag" x="846" y="96" text-anchor="end">sold</text>
+        <text class="tag amb" x="470" y="302" text-anchor="middle">TC coordinates</text>
       </svg>
     </div>
     <p class="status" id="status" aria-live="polite" data-no-tc></p>
@@ -179,10 +189,11 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
   <section class="changes" data-no-tc aria-labelledby="ch-h">
     <h2 id="ch-h">What's new in this version</h2>
     <ul>
-      <li>The main road is the red-to-green rev track from Option E: Capture (gear 1) to Acquisitions (2), splitting into Dispositions and TC (both gear 3, side by side), and ending at Closed &amp; Funded (4, top gear).</li>
-      <li>Nurture is N, neutral: the lead idles until it is revived. Owned &amp; Rentals is P, parked: kept until it is sold again. Contractors &amp; Vendors stays a plain node in TC's pit.</li>
-      <li>Choosing a stage shifts the gear readout in the corner, sends a pulse out from the stage, and runs light along each line to where it goes next. Closed &amp; Funded runs green light in along both "sold" lines. The animation is off for visitors who turn off motion in their device settings.</li>
-      <li>Layout is unchanged from the version you liked: Owned &amp; Rentals closes the fork on the Acquisitions line, and "sell again" goes back into Dispositions and TC.</li>
+      <li>All the gears: 1 Capture, 2 Acquisitions, 3 Dispositions and TC side by side, 4 Closed on the way into Owned &amp; Rentals, 5 Closed and 6 Funded at top gear. N is Nurture, R is Contractors &amp; Vendors and P is Owned &amp; Rentals.</li>
+      <li>The fork closes at 4 Closed, then parks at P. "Sell again" runs from P back into both Dispositions and TC, which take it through 5 Closed to 6 Funded.</li>
+      <li>The tabs sit on one row with the same gear badges as the diagram.</li>
+      <li>The text box below holds the height of the tallest tab, so nothing below it jumps when you switch tabs.</li>
+      <li>Choosing a stage shifts the gear readout, pulses the stage and runs light to where it goes next. It is off for visitors who turn off motion in their device settings.</li>
       <li>Tab text is the round 2 wording you approved. One small addition: Acquisitions routes now name "Dispositions + Transaction Coordination" together, since both start at contract signing.</li>
       <li>Spanish gets the same diagram and text (Contratistas y proveedores, Cerrado y financiado, Propiedades y rentas).</li>
     </ul>
@@ -194,48 +205,48 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
 <script>
 (function () {
   var STAGES = [
-    { tab: "Capture", note: "Capture", h: "Every lead lands in one place",
+    { tab: "Capture", gear: "1", note: "Capture", h: "Every lead lands in one place",
       p: "Leads from web forms, PPC campaigns, inbound calls, SMS, email and social arrive in a single acquisitions pipeline, so nothing lives in a spreadsheet or someone's inbox.",
       ticks: ["See every new lead in one organized view", "Assign the lead to the right team member as it arrives", "Keep the full history from first contact onward"],
       next: "New leads go straight to the people who close.",
       routes: [["New Lead", "Appointment Set", "Offer Made", "Contract Sent", "Contract Signed"], ["New Lead", "Contacted", "Not Ready", "Nurture"], ["New Lead", "Appointment Set", "Offer Made", "Offer Declined", "Nurture"]] },
-    { tab: "Acquisitions", note: "Acquisitions", h: "Work the seller, secure the property",
+    { tab: "Acquisitions", gear: "2", note: "Acquisitions", h: "Work the seller, secure the property",
       p: "Your acquisitions team negotiates terms and gets the property under contract, with offers, follow-ups and documents tracked against the deal.",
       ticks: ["Track negotiations and offers in one view", "Set reminders for follow-ups and decision dates", "Keep property details and documents with the deal"],
       next: "A signed contract opens two tracks at once. A stalled seller gets backup.",
       routes: [["Appointment Set", "Offer Made", "Contract Sent", "Contract Signed", "Dispositions + Transaction Coordination"], ["Contract Signed", "Dispositions + Transaction Coordination", "Closed & Funded"], ["Offer Made", "No Response", "Nurture"]] },
-    { tab: "Nurture", note: "Nurture", h: "Backup for your acquisitions team",
+    { tab: "Nurture", gear: "N", note: "Nurture", h: "Backup for your acquisitions team",
       p: "When a seller goes quiet or is not ready, Nurture steps in behind your acquisition managers. Drip campaigns over SMS and email, matched to why the deal stalled, keep working the lead until it comes back to life.",
       ticks: ["Takes stalled leads off your closers' plates", "Situational, timed and AI-tailored nurtures, in English and Spanish", "Hands revived leads back to acquisitions to close"],
       next: "Nurture does not close deals. It revives them for the people who do.",
       routes: [["Nurture", "Seller Re-Engages", "Appointment Set", "Offer Made", "Contract Signed"], ["Nurture", "Follow-Up Sequence", "Still Quiet", "Long-Term Nurture"]] },
-    { tab: "Dispositions", note: "Dispositions", h: "Market and sell the deal",
+    { tab: "Dispositions", gear: "3", note: "Dispositions", h: "Market and sell the deal",
       p: "Once a property is under contract, the dispositions pipeline covers marketing to agents, investors and buyers, showings, offers and the buyer agreement.",
       ticks: ["Send listings to your investor network", "Track incoming offers and counteroffers", "Schedule showings and log feedback"],
       next: "Works side by side with Transaction Coordination until the deal is sold or kept.",
       routes: [["Under Contract", "Marketed to Buyers", "Offer Received", "Buyer Secured", "Closed & Funded"], ["Under Contract", "Keeping It", "Owned & Rentals"], ["Owned & Rentals", "Back on the Market", "Buyer Secured", "Closed & Funded"]] },
-    { tab: "Transaction Coordination", note: "Transaction Coordination", h: "From contract to close",
+    { tab: "Transaction Coordination", gear: "3", note: "Transaction Coordination", h: "From contract to close",
       p: "Contracts, documents, payoffs and timelines are tracked through closing, with tasks assigned to the people responsible and documents signed inside the platform. TC also schedules and follows contractors and vendors, before the sale and while you own the property.",
       ticks: ["Send contracts for e-signature without leaving the system", "Follow closing timelines and pending items", "Keep every document linked to its deal"],
       next: "Runs alongside Dispositions to Closed & Funded, and keeps vendor work on schedule.",
       routes: [["Contract Signed", "Title Ordered", "Inspection & Docs", "Clear to Close", "Closed & Funded"], ["Inspection Findings", "Contractors & Vendors", "Repairs Complete", "Clear to Close"], ["Purchase Closed", "Kept", "Owned & Rentals"]] },
-    { tab: "Contractors & Vendors", note: "Contractors & Vendors", h: "Repairs and vendor work, tracked",
+    { tab: "Contractors & Vendors", gear: "R", note: "Contractors & Vendors", h: "Repairs and vendor work, tracked",
       p: "A dedicated pipeline for repairs, renovations and vendor tasks, coordinated by Transaction Coordination and tied to the deal or property the work belongs to.",
       ticks: ["Assign jobs and follow timelines", "Track expenses against project budgets", "Attach invoices, receipts and reports to each job"],
       next: "Finished work returns the property to its next step.",
       routes: [["TC Schedules Work", "Vendor Assigned", "Work in Progress", "Final Walkthrough", "Complete"], ["Complete", "Ready to Sell", "Dispositions"], ["Maintenance Request", "Vendor Assigned", "Complete", "Owned & Rentals"]] },
-    { tab: "Owned & Rentals", note: "Owned & Rentals", h: "The portfolio you keep",
+    { tab: "Owned & Rentals", gear: "P", note: "Owned & Rentals", h: "The portfolio you keep",
       p: "Vacant properties, active rentals, tenants, lease dates and income are managed in a rentals pipeline that reports into the same KPI tracking.",
       ticks: ["Track rental income and expenses per property", "Follow lease start and end dates", "Keep tenant communication and lease documents together"],
       next: "Kept until sold again: a sale goes back through Dispositions and TC to Closed & Funded.",
       routes: [["Rented", "Maintenance Request", "TC", "Contractors & Vendors"], ["Rented", "Selling", "Dispositions + TC", "Closed & Funded"]] }
   ];
-  var NAMES = STAGES.map(function (s) { return s.tab; }).concat("Closed & Funded");
+  var NAMES = STAGES.map(function (s) { return s.tab; }).concat("Closed", "Closed", "Funded");
   var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
   var list = document.querySelector('[role="tablist"]'), panels = document.getElementById("panels");
   STAGES.forEach(function (s, i) {
     var id = String(i + 1).padStart(2, "0");
-    list.insertAdjacentHTML("beforeend", '<button class="tabs__tab" role="tab" type="button" id="jt-' + i + '" aria-controls="jp-' + i + '" aria-selected="' + (i === 1) + '" tabindex="' + (i === 1 ? 0 : -1) + '"><small>' + id + "</small>" + esc(s.tab) + "</button>");
+    list.insertAdjacentHTML("beforeend", '<button class="tabs__tab" role="tab" type="button" id="jt-' + i + '" aria-controls="jp-' + i + '" aria-selected="' + (i === 1) + '" tabindex="' + (i === 1 ? 0 : -1) + '"><span class="g" aria-hidden="true">' + s.gear + "</span>" + esc(s.tab.replace("Transaction Coordination", "Transaction Coord.")) + "</button>");
     panels.insertAdjacentHTML("beforeend",
       '<div class="tabs__panel" role="tabpanel" id="jp-' + i + '" aria-labelledby="jt-' + i + '" tabindex="0"' + (i === 1 ? "" : " hidden") + '><div class="body">' +
       '<div class="stack"><p class="note">' + esc(s.note) + "</p><h3>" + esc(s.h) + '</h3><p class="muted">' + esc(s.p) + '</p><ul class="ticks">' + s.ticks.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul></div>" +
@@ -254,7 +265,7 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
   nodes.forEach(function (n) { var m = n.getAttribute("transform").match(/translate\(([\d.]+) ([\d.]+)\)/); POS[n.getAttribute("data-node")] = [+m[1], +m[2]]; });
   edges.forEach(function (ed) { var h = document.createElementNS(SVGNS, "path"); h.setAttribute("d", ed.getAttribute("d")); h.setAttribute("class", "hl"); hlG.appendChild(h); ed._hl = h; ed._len = ed.getTotalLength(); });
   /* gear readout */
-  var GEAR = ["1", "2", "N", "3", "3", "PIT", "P", "4"], LVL = [18, 40, 8, 68, 68, 55, 50, 100];
+  var GEAR = ["1", "2", "N", "3", "3", "R", "P", "4", "5", "6"], LVL = [14, 30, 6, 48, 48, 22, 58, 64, 82, 100];
   var hud = document.querySelector(".gearhud"), win = hud.querySelector(".gh-win"), hudName = hud.querySelector(".gh-n"), cur = null;
   function shift(on) {
     hud.style.setProperty("--lvl", LVL[on] + "%"); hudName.textContent = NAMES[on].replace("Transaction Coordination", "Transaction Coord.");
@@ -270,15 +281,15 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
     cancelAnimationFrame(raf); fxG.textContent = ""; runs = [];
     if (reduce) return;
     var p = POS[on], s = document.createElementNS(SVGNS, "circle");
-    s.setAttribute("cx", p[0]); s.setAttribute("cy", p[1]); s.setAttribute("r", on === 7 ? 30 : 18); s.setAttribute("class", "shock" + (on === 7 ? " green" : ""));
+    s.setAttribute("cx", p[0]); s.setAttribute("cy", p[1]); s.setAttribute("r", on === 9 ? 30 : 18); s.setAttribute("class", "shock" + (on === 9 ? " green" : ""));
     fxG.appendChild(s);
     edges.forEach(function (ed, k) {
       var from = nums(ed.getAttribute("data-from")), to = nums(ed.getAttribute("data-to"));
-      var live = on < 7 && from.indexOf(on) > -1, inn = on === 7 && to.indexOf(7) > -1;
+      var live = on !== 9 && from.indexOf(on) > -1, inn = on === 9 && (to.indexOf(9) > -1 || to.indexOf(8) > -1);
       if (!live && !inn) return;
       var a = ed.getPointAtLength(0), b = ed.getPointAtLength(ed._len), q = POS[on];
       var nearStart = Math.hypot(a.x - q[0], a.y - q[1]) < Math.hypot(b.x - q[0], b.y - q[1]);
-      var rev = inn ? nearStart : !nearStart;
+      var rev = inn ? (function () { var f = POS[9]; return Math.hypot(a.x - f[0], a.y - f[1]) < Math.hypot(b.x - f[0], b.y - f[1]); })() : !nearStart;
       var dots = [0, 1, 2].map(function (j) { var c = document.createElementNS(SVGNS, "circle"); c.setAttribute("r", j ? 3 - j * 0.6 : 4.5); c.setAttribute("class", "comet" + (inn ? " green" : "") + (j ? " tail" : "")); c.style.opacity = 0; fxG.appendChild(c); return c; });
       runs.push({ ed: ed, rev: rev, dots: dots, dur: Math.max(700, ed._len / 0.26), delay: 250 + (k % 3) * 120 });
     });
@@ -301,16 +312,17 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
     var next = {};
     edges.forEach(function (ed) {
       var from = nums(ed.getAttribute("data-from")), to = nums(ed.getAttribute("data-to"));
-      var live = on < 7 && from.indexOf(on) > -1, inn = on === 7 && to.indexOf(7) > -1;
+      var live = on !== 9 && from.indexOf(on) > -1, inn = on === 9 && (to.indexOf(9) > -1 || to.indexOf(8) > -1);
       ed._hl.classList.toggle("is-live", live); ed._hl.classList.toggle("is-in", inn);
       if (live) to.forEach(function (t) { if (t !== on) next[t] = 1; });
     });
     shift(on); fx(on);
     nodes.forEach(function (n) { var i = +n.getAttribute("data-node"); n.classList.toggle("is-on", i === on); n.classList.toggle("is-next", !!next[i]); });
     var goes = Object.keys(next).map(function (k) { return NAMES[k]; });
-    status.innerHTML = on === 7
-      ? "<b>Closed &amp; Funded</b> · the finish. Green lines: the two ways a deal gets there, from Dispositions and Transaction Coordination working together."
-      : "<b>" + esc(NAMES[on]) + "</b> · goes next to " + esc(goes.join(", ").replace(/, ([^,]*)$/, " and $1")) + ".";
+    var EXTRA = { 7: "<b>4 · Closed</b> · the purchase closes and the property is kept. Goes next to Owned &amp; Rentals.",
+                  8: "<b>5 · Closed</b> · the sale closes. Goes next to Funded.",
+                  9: "<b>6 · Funded</b> · top gear, the finish. Green lines: every path that ends in a sale." };
+    status.innerHTML = EXTRA[on] || "<b>" + GEAR[on] + " · " + esc(NAMES[on]) + "</b> · goes next to " + esc(goes.join(", ").replace(/, ([^,]*)$/, " and $1")) + ".";
   }
   function select(i, focus) {
     tabs.forEach(function (t, k) { var on = k === i; t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; document.getElementById("jp-" + k).hidden = !on; });
@@ -330,7 +342,7 @@ h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: upp
   });
   nodes.forEach(function (n) {
     var i = +n.getAttribute("data-node");
-    var go = function () { if (i < 7) select(i, false); else paint(7); };
+    var go = function () { if (i < 7) select(i, false); else paint(i); };
     n.addEventListener("click", go);
     n.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
   });
