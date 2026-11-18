@@ -4,6 +4,8 @@
 //
 //   GET  /slots?start=<ms>&end=<ms>&timezone=<IANA>   → { "YYYY-MM-DD": { slots: [iso…] }, … }
 //   POST /book   (JSON payload from the form)          → { ok:true, appointment } | { ok:false, code, message }
+//   POST /contact (flat JSON from the contact form)     → { ok:true } | { ok:false, code, message }
+//                 Forwards to the HighLevel inbound webhook, whose URL stays a server secret.
 //
 // Settings (environment variables / secrets):
 //   HL_TOKEN      secret · HighLevel Private Integration token (scopes: calendars.readonly,
@@ -11,6 +13,7 @@
 //   LOCATION_ID   KPI DRIVER sub-account id        (default below)
 //   CALENDAR_ID   the one discovery calendar        (default below)
 //   ALLOWED_ORIGINS comma list of sites allowed to call the bridge (default below)
+//   CONTACT_WEBHOOK_URL secret · HighLevel workflow "Inbound Webhook" URL for the contact form
 
 const API = 'https://services.leadconnectorhq.com';
 const DEFAULTS = {
@@ -146,12 +149,61 @@ async function book(request, env) {
   return { status: 200, body: { ok: true, appointment: { id: appt.data.id, startTime: appt.data.startTime || new Date(start).toISOString() }, contactId } };
 }
 
+// ---------- contact form → HighLevel inbound webhook ----------
+// Same flat object the page used to post straight to the webhook, so the HighLevel field mapping
+// ({{inboundWebhookRequest.first_name}} etc.) is unchanged. Only these keys are passed on.
+const CONTACT_KEYS = ['form', 'first_name', 'last_name', 'email', 'phone', 'business_name', 'which_bundle_are_you_interested_in',
+  'your_message', 'sms_consent', 'consent_text', 'consent_timestamp', 'consent_page', 'campaign', 'booking_source', 'cta_label',
+  'cta_type', 'tags', 'contact_source', 'timezone', 'lang', 'page_url', 'page_title', 'landing_page', 'referrer', 'utm_source',
+  'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'submitted_at', 'note'];
+const CONTACT_LONG = { your_message: 5000, note: 8000, consent_text: 1000, page_url: 1000, consent_page: 1000, landing_page: 1000, referrer: 1000 };
+const CONTACT_LIMIT = { max: 5, windowMs: 10 * 60000 };   // per IP; best effort (memory of one edge instance)
+const hits = new Map();
+function rateLimited(key) {
+  const now = Date.now(), recent = (hits.get(key) || []).filter(t => now - t < CONTACT_LIMIT.windowMs);
+  recent.push(now); hits.set(key, recent);
+  if (hits.size > 5000) hits.clear();
+  return recent.length > CONTACT_LIMIT.max;
+}
+async function readForm(request) {
+  const text = await request.text();
+  if (text.length > 64000) return null;
+  try { return JSON.parse(text); } catch (e) { /* the page's fallback sends a simple form post */ }
+  try { return Object.fromEntries(new URLSearchParams(text)); } catch (e) { return null; }
+}
+async function contact(request, env, origin) {
+  const allowed = (env.ALLOWED_ORIGINS || DEFAULTS.ALLOWED_ORIGINS).split(',').map(s => s.trim());
+  if (!allowed.includes(origin)) return { status: 403, body: { ok: false, code: 'forbidden', message: 'Not allowed.' } };
+  if (!env.CONTACT_WEBHOOK_URL) return { status: 503, body: { ok: false, code: 'not_configured', message: 'The contact form is not set up yet. Please email info@kpidriver.com.' } };
+  const ip = str(request.headers.get('cf-connecting-ip') || request.headers.get('x-forwarded-for') || '', 100).split(',')[0].trim();
+  if (rateLimited(ip || 'unknown')) return { status: 429, body: { ok: false, code: 'rate_limited', message: 'Too many messages from this connection. Please wait a few minutes, or email info@kpidriver.com.' } };
+  const b = await readForm(request);
+  if (!b || typeof b !== 'object') return { status: 400, body: { ok: false, code: 'invalid', message: 'Bad request.' } };
+  if (b.hp) return { status: 200, body: { ok: true } };                                   // spam trap: pretend all is well, send nothing
+  if (b.form !== 'contact') return { status: 400, body: { ok: false, code: 'invalid', message: 'Unexpected form type.' } };
+  const email = str(b.email, 200).toLowerCase();
+  if (!str(b.first_name) || !str(b.last_name) || !isEmail(email) || str(b.phone, 40).replace(/\D/g, '').length < 7)
+    return { status: 400, body: { ok: false, code: 'invalid', message: 'Please fill in your name, email and phone.' } };
+  if (b.sms_consent !== 'Yes') return { status: 400, body: { ok: false, code: 'invalid', message: 'Please tick the SMS consent box.' } };
+  const out = {};
+  for (const k of CONTACT_KEYS) { const v = str(b[k], CONTACT_LONG[k] || 300); if (v) out[k] = v; }
+  out.email = email;
+  if (ip) out.ip = ip;
+  const r = await fetch(env.CONTACT_WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(out) });
+  if (!r.ok) return { status: 502, body: { ok: false, code: 'crm_error', message: "We couldn't send your message. Please try again, or email info@kpidriver.com." } };
+  return { status: 200, body: { ok: true } };
+}
+
 export default {
   async fetch(request, env) {
     env = env || {};
     const url = new URL(request.url);
     const h = cors(request.headers.get('Origin') || '', env);
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
+    if (request.method === 'POST' && url.pathname.endsWith('/contact')) {
+      try { const r = await contact(request, env, request.headers.get('Origin') || ''); return json(r.body, r.status, h); }
+      catch (e) { return json({ ok: false, code: 'crm_error', message: "We couldn't send your message. Please try again, or email info@kpidriver.com." }, 502, h); }
+    }
     if (!env.HL_TOKEN) return json({ ok: false, code: 'not_configured', message: 'Booking is not configured yet.' }, 503, h);
     try {
       if (request.method === 'GET' && url.pathname.endsWith('/slots')) { const r = await slots(url, env); return json(r.body, r.status, { ...h, 'Cache-Control': 'public, max-age=60' }); }

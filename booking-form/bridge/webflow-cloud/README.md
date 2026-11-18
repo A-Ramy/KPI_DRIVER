@@ -4,6 +4,7 @@ A thin Astro app around `../worker.js`, the only copy of the bridge logic. Webfl
 
 - `GET  /api/booking/slots` – free times for the one calendar
 - `POST /api/booking/book`  – books the call in HighLevel (contact, appointment, tags, note)
+- `POST /api/booking/contact` – passes the contact form to the HighLevel inbound webhook, so the webhook URL is never in the page source (same-site origin check, field whitelist, honeypot, about 5 messages per 10 minutes per IP)
 
 ## Set up (once, in Webflow)
 
@@ -13,9 +14,10 @@ A thin Astro app around `../worker.js`, the only copy of the bridge logic. Webfl
    - **Mount path:** `/api/booking`
    - **App root (Advanced settings):** `booking-form/bridge/webflow-cloud`
 4. **Add the key.** In the environment, open **Environment variables** and add `HL_TOKEN` = your HighLevel Private Integration token. Turn on **Secret**.
+   - Add `CONTACT_WEBHOOK_URL` = the HighLevel workflow's Inbound Webhook URL. Turn on **Secret**.
    - Optional variables: `TO_NOTIFY` (`false` mutes the calendar's notifications), `CALENDAR_ID`, `LOCATION_ID`.
 5. **Deploy.** Then the website config points at it with same-site addresses:
-   `window.KD_BOOKING_CONFIG = { slotsUrl: "/api/booking/slots", bookUrl: "/api/booking/book", contactUrl: "…" }`
+   `window.KD_BOOKING_CONFIG = { slotsUrl: "/api/booking/slots", bookUrl: "/api/booking/book", contactUrl: "/api/booking/contact" }`
 
 ## Notes
 
