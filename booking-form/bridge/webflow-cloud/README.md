@@ -25,3 +25,7 @@ A thin Astro app around `../worker.js`, the only copy of the bridge logic. Webfl
 - **Edge runtime:** each route declares `export const config = { runtime: "edge" }`, as Webflow Cloud requires.
 - **Secrets:** they arrive as `locals.runtime.env` and are passed to the bridge unchanged.
 - **Local check:** `npm install && npx astro build && npx wrangler pages dev dist`. Put a placeholder `HL_TOKEN=…` in `.dev.vars`, which is git-ignored. Never use the real key locally.
+
+## Status
+
+- 2026-11-18: `CONTACT_WEBHOOK_URL` added as a secret by the owner; the site's contact form now posts to `/api/booking/contact`.
