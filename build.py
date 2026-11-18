@@ -77,7 +77,7 @@ def T(s):
 
 
 _TOK = re.compile(r"(<script.*?</script>|<style.*?</style>|<!--.*?-->|<[^>]+>)", re.S)
-_ATTR = re.compile(r'\b(aria-label|alt|placeholder|data-name)="([^"]+)"')
+_ATTR = re.compile(r'\b(aria-label|alt|placeholder|data-name|title)="([^"]+)"')
 
 
 _KEEP = re.compile(r"(iMessage|iOS|[\w.+-]+@[\w-]+\.[\w.]+|(?:crm\.|www\.)?kpidriver\.(?:com|ai))")

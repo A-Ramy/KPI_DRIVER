@@ -480,35 +480,18 @@
 (function () {
   var d = document, r = d.documentElement, es = r.lang === "es";
 
-  /* ---- content updates (owner, 2026-11-18): hero eyebrow and Ahmed's title, until the page embeds are rebuilt ---- */
-  var SWAP = es ? [["Diseñado para toda la operación.", "Para inversionistas inmobiliarios.", null], ["Director de tecnología (CTO)", "Director de Operaciones y Tecnología", null], ["Chief Technology Officer", "Director de Operaciones y Tecnología", null], ["El CTO Ahmed Ramy dirige", "Ahmed Ramy, nuestro Director de Operaciones y Tecnología, dirige", null]]
-                : [["Engineered for the entire operation.", "For real estate investors.", null], ["Chief Technology Officer", "Chief Operations & Technology Officer", null], ["CTO Ahmed Ramy leads", "Ahmed Ramy, our Chief Operations & Technology Officer, leads", null]];
-  SWAP.forEach(function (sw) {
-    if (sw[2]) { d.querySelectorAll(sw[2]).forEach(function (t) { if (t.textContent.trim() === sw[0]) t.textContent = sw[1]; }); return; }
-    var w = d.createTreeWalker(d.body, NodeFilter.SHOW_TEXT, null), n;
-    while ((n = w.nextNode())) if (n.textContent.indexOf(sw[0]) > -1) n.textContent = n.textContent.split(sw[0]).join(sw[1]);
+  /* current page in the main menu (one shared header for every page, EN + ES): Services covers its three pages,
+     Blog covers posts and categories */
+  var here = location.pathname.replace(/^\/es(?=\/|$)/, "").replace(/\/$/, "") || "/";
+  if (/^\/(post|blog-category)\//.test(here)) here = "/blog";
+  if (/^\/services\//.test(here)) here = "/services";
+  d.querySelectorAll(".site-header .nav__link").forEach(function (a) {
+    var h = (a.getAttribute("href") || "").replace(/^\/es(?=\/|$)/, "").replace(/\/$/, "") || "/";
+    if (h === here) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
 
   /* members log-in form: the show-password toggle is an icon-only link; give it a name */
   d.querySelectorAll("a.show-password").forEach(function (a) { a.setAttribute("role", "button"); a.setAttribute("aria-label", es ? "Mostrar contrase\u00f1a" : "Show password"); });
-
-  /* footer: drop the "AI Suite terms at kpidriver.ai" link (and its separator) */
-  d.querySelectorAll(".footer__bottom a[href^='https://kpidriver.ai']").forEach(function (a) {
-    var p = a.previousSibling;
-    if (p && p.nodeType === 3) p.textContent = p.textContent.replace(/\s*·\s*$/, "");
-    a.remove();
-  });
-
-  /* contact page: show the office on a Google map under the address */
-  var maps = d.querySelector("main dd a[href*='share.google'], main dd a[href*='google.com/maps'], main dd a[href*='maps.app.goo.gl']");
-  if (maps && !d.querySelector(".kd-map")) {
-    var addr = "1858 NW 141st Ave, Pembroke Pines, FL 33028";
-    var box = d.createElement("div");
-    box.className = "kd-map";
-    box.style.cssText = "margin-top:14px;border:1px solid var(--line-strong,#cfd6de);border-radius:var(--radius,10px);overflow:hidden;aspect-ratio:16/10;background:var(--panel-2,#eef1f4)";
-    box.innerHTML = '<iframe src="https://www.google.com/maps?q=' + encodeURIComponent(addr) + '&z=15&output=embed" title="' + (es ? "Oficina de KPI DRIVER en Google Maps" : "KPI DRIVER office on Google Maps") + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="display:block;width:100%;height:100%;border:0"></iframe>';
-    maps.insertAdjacentElement("afterend", box);
-  }
 
   /* scrollbar width of this device (0 where scrollbars overlay the content); CSS uses it to push the
      scheduler's own scrollbar just outside the visible edge of the booking pop-up */
