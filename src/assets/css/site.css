@@ -897,3 +897,6 @@ html[lang="es"] [data-lc] .tabs__tab { padding: 9px 7px; gap: 6px; font-size: cl
 /* contact page: office map (in the page markup since audit B6; was added by script) */
 .kd-map { margin-top: 14px; border: 1px solid var(--line-strong, #cfd6de); border-radius: var(--radius, 10px); overflow: hidden; aspect-ratio: 16/10; background: var(--panel-2, #eef1f4); }
 .kd-map iframe { display: block; width: 100%; height: 100%; border: 0; }
+/* Green text CTAs: at rest the tint band sits in a strip just under the words instead of over the bottom of the letters;
+   on hover it still fills the whole link (that rule lives in the booking stylesheet). */
+.kd-cta { padding-bottom: .22em; background-size: 100% .22em; }

@@ -214,3 +214,10 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Webflow shared CSS 172.9 KB → 154.6 KB. Verified staging vs live: computed styles of every element on 17 pages (EN + ES) at 1440 and 390 px identical (0 differences), then published live; all 132 sitemap URLs serve the new shared CSS.
 - Data and scripts: webflow/audit/c7/ (styles-all.txt, trees/, usage.py, extract.py, unused-candidates.json, remove.json, remove-actions.json).
 - Deleted the 7 superseded hosted files now unreferenced: kd-site-14.css/.js, kd-head-3.js, kd-es-contact-us.js (v1), kd-site-13.css, kd-es.js, kd-head-2.js.
+
+## 2026-11-18 late: D2 + D3 done here, CTA band fix
+- Owner asked why the site chat couldn't do the booking-chat items. D2/D3 done here: site-wide head now holds only the kd-booking-2.css link (byte-identical); Finsweet Attributes v2 and Memberstack removed. Footer (KD_BOOKING_CONFIG + kd-booking-5.js) untouched. Before: webflow/rollback/site-head-before-d2-d3.html. Checked first: no live page (132) used data-ms-* or fs-list attributes.
+- D1 still open: needs a /contact route in the Webflow Cloud app (booking-form/bridge on branch ccr-9f523f3d-oiee4l, which Webflow Cloud deploys from) plus a secret env var holding the GoHighLevel webhook URL (owner sets it in Webflow Cloud). Not done: needs permission to push to that branch.
+- Green text CTAs (.kd-cta, styled in kd-booking-2.css): at rest the 0.42em tint band overlapped the bottom of the letters. Override in site.css: padding-bottom .22em + background-size 100% .22em, so the band sits in a strip under the words; hover still fills the link (.kd-cta:hover wins on specificity).
+- kd-site-16.css `6afe2ccfe65746ecd6aa941a` on the 15 live page heads. The 4 retired KB/Log in heads still point at kd-site-15.css (not public); kd-site-15.css must stay until they are updated or deleted.
+- Verified staging then live: 132/132 sitemap URLs load kd-site-16 and no Memberstack; booking pop-up opens; band below text at 1280/390, EN + ES.
