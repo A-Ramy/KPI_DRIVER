@@ -1,0 +1,280 @@
+<title>Lead Lifecycle Preview</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a copy of the site's journey block (diagram panel, tab row, tab panel), then a short list of what changed. */
+:root {
+  --bg: #f3f4f6; --surface: #ffffff; --fg: #0e1b2a; --muted: #56657a; --rule: #d8dde5; --rule-strong: #b9c2cf; --accent: #2b6cb0;
+  --panel: #0d1c2a; --edge: rgba(255,255,255,.18); --node: #0d1c2a; --node-stroke: rgba(255,255,255,.38); --label: #9ba9bb; --tag: #74859a;
+  --blue: #4a9be6; --green: #3fbf7f; --amber: #f2a531; --radius: 12px;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif; --body: "Barlow", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #08131e; --surface: #0f1e2d; --fg: #e8edf3; --muted: #9aa8ba; --rule: #22344a; --rule-strong: #34506d; --accent: #4a9be6; --panel: #0b1824; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #08131e; --surface: #0f1e2d; --fg: #e8edf3; --muted: #9aa8ba; --rule: #22344a; --rule-strong: #34506d; --accent: #4a9be6; --panel: #0b1824; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px }
+.wrap { max-width: 1160px; margin: 0 auto; display: grid; gap: 26px }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px; margin: 0 }
+.eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--accent) }
+h1 { font: 700 clamp(32px, 4.6vw, 48px)/1.02 var(--display); text-transform: uppercase; margin: 10px 0 10px; text-wrap: balance }
+.lede { margin: 0; max-width: 70ch; color: var(--muted) }
+/* diagram */
+.circuit { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--panel); padding: 10px 18px; overflow-x: auto }
+.circuit svg { display: block; width: 100%; min-width: 760px; height: auto }
+.status { margin: 10px 2px 0; font: 500 12px/1.5 var(--mono); letter-spacing: .06em; color: var(--muted) }
+.status b { color: var(--fg); font-weight: 500 }
+.edge { fill: none; stroke: var(--edge); stroke-width: 2; transition: stroke .2s }
+.edge.coord { stroke: rgba(242,165,49,.45); stroke-dasharray: 2 6 }
+.edge.again { stroke: rgba(242,165,49,.5); stroke-dasharray: 8 6 }
+.edge.is-live { stroke: var(--blue); stroke-width: 2.5; stroke-dasharray: 6 8; animation: flow 1s linear infinite; filter: drop-shadow(0 0 5px rgba(74,155,230,.8)) }
+.edge.is-in { stroke: var(--green); stroke-width: 2.5; stroke-dasharray: 6 8; animation: flow 1s linear infinite }
+.node { cursor: pointer; outline: none }
+.node circle { fill: var(--node); stroke: var(--node-stroke); stroke-width: 2; transition: all .2s }
+.node .core { fill: rgba(255,255,255,.45); stroke: none }
+.node text { fill: var(--label); font: 600 17px var(--display); letter-spacing: .04em; text-transform: uppercase }
+.node:hover circle, .node:focus-visible circle { stroke: #fff }
+.node.is-on circle { stroke: var(--blue); filter: drop-shadow(0 0 10px rgba(74,155,230,.9)) }
+.node.is-on .core { fill: var(--blue) }
+.node.is-on text { fill: #fff }
+.node.is-next circle { stroke: var(--amber) }
+.finish .ring { fill: none; stroke: var(--green); stroke-width: 2; opacity: .35; transition: opacity .2s }
+.finish .disc { fill: #0f2a21; stroke: var(--green); stroke-width: 2.5 }
+.finish .flag { fill: none; stroke: var(--green); stroke-width: 2.5 }
+.finish text { fill: #fff; font: 700 18px var(--display); letter-spacing: .05em; text-transform: uppercase }
+.finish.is-on .ring, .finish.is-next .ring { opacity: .8 }
+.finish.is-on .disc, .finish.is-next .disc { filter: drop-shadow(0 0 12px rgba(63,191,127,.7)) }
+.tag { fill: var(--tag); font: 500 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; pointer-events: none }
+.tag.amb { fill: var(--amber) }
+@keyframes flow { to { stroke-dashoffset: -28 } }
+@media (prefers-reduced-motion: reduce) { .edge.is-live, .edge.is-in { animation: none } }
+/* tabs */
+.tabs__list { display: flex; gap: 6px; flex-wrap: wrap }
+.tabs__tab { flex: none; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--rule); background: transparent; cursor: pointer; font: 600 18px/1 var(--display); letter-spacing: .03em; text-transform: uppercase; color: var(--muted); display: inline-flex; gap: 8px; align-items: center }
+.tabs__tab:hover { color: var(--fg); border-color: var(--rule-strong) }
+.tabs__tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.tabs__tab[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg) }
+.tabs__tab small { font: 500 11px var(--mono) }
+.tabs__panel { margin-top: 22px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); padding: clamp(20px, 3.5vw, 40px); position: relative }
+.tabs__panel::before { content: ""; position: absolute; inset: -1px; pointer-events: none; border: 2px solid var(--accent); border-radius: inherit;
+  -webkit-mask: linear-gradient(#000 0 0) top left / 30px 30px no-repeat, linear-gradient(#000 0 0) bottom right / 30px 30px no-repeat;
+  mask: linear-gradient(#000 0 0) top left / 30px 30px no-repeat, linear-gradient(#000 0 0) bottom right / 30px 30px no-repeat }
+.tabs__panel[hidden] { display: none }
+.body { display: grid; gap: 32px; grid-template-columns: minmax(0, 1fr) }
+@media (min-width: 900px) { .body { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr) } }
+.stack { display: grid; gap: 14px; align-content: start; min-width: 0 }
+.note { font: 500 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 }
+.stack h3 { font: 700 clamp(26px, 3vw, 34px)/1.05 var(--display); margin: 0; text-wrap: balance }
+.muted { color: var(--muted); margin: 0 }
+.ticks { display: grid; gap: 10px; margin: 4px 0 0; padding: 0; list-style: none }
+.ticks li { display: grid; grid-template-columns: 18px 1fr; gap: 10px }
+.ticks li::before { content: ""; width: 10px; height: 10px; margin-top: 9px; border-radius: 2px; background: var(--accent) }
+.handoff { border-left: 2px solid var(--accent); padding: 4px 0 4px 18px; display: grid; gap: 14px; align-content: start; margin: 0; min-width: 0 }
+.handoff dt { font: 500 11px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted) }
+.handoff dd { margin: 4px 0 0 }
+.routes { display: flex; flex-direction: column; align-items: flex-start; gap: 10px }
+.route { display: flex; flex-wrap: wrap; align-items: center; gap: 6px }
+.route b { font-weight: 500; font-size: 15px; line-height: 1.2; padding: 5px 10px; border: 1px solid var(--rule-strong); border-radius: 999px; white-space: nowrap; background: var(--surface) }
+.route b:last-child { border-color: var(--accent) }
+.route i { font-style: normal; color: var(--accent); font-size: 15px }
+.fine { color: var(--muted); font-size: 14px; margin: 14px 0 0 }
+/* changes */
+.changes { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 22px; display: grid; gap: 12px }
+.changes h2 { font: 700 24px/1.1 var(--display); text-transform: uppercase; margin: 0 }
+.changes ul { margin: 0; padding-left: 20px; display: grid; gap: 6px }
+.changes li::marker { color: var(--accent) }
+.pick { font: 500 13px/1.5 var(--mono); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin: 0 }
+</style>
+
+<div class="wrap">
+  <div data-no-tc>
+    <p class="eyebrow">KPI DRIVER · Option F, revised · Preview for approval</p>
+    <h1>Lead lifecycle, as it will work on the site</h1>
+    <p class="lede">Click any stage in the diagram or any tab below it. Blue lines show where the selected stage goes next and amber rings mark those stages, the same way the live block behaves. Click Closed &amp; Funded to light every path that ends in a sale.</p>
+  </div>
+
+  <section id="journey" aria-label="Investment lifecycle">
+    <div class="circuit">
+      <svg viewBox="0 0 1000 360" role="group" aria-label="Lifecycle diagram">
+        <!-- lead side -->
+        <path class="edge" data-from="0" data-to="1" d="M70 150 H270"/>
+        <path class="edge" data-from="1" data-to="2" d="M258 150 C230 120 230 80 258 46"/>
+        <path class="edge" data-from="2" data-to="1" d="M282 46 C312 80 312 120 282 150"/>
+        <!-- the fork -->
+        <path class="edge" data-from="1" data-to="3" d="M270 150 C380 150 390 70 500 70"/>
+        <path class="edge" data-from="1" data-to="4" d="M270 150 C380 150 390 230 500 230"/>
+        <!-- dispositions and TC in parallel -->
+        <path class="edge" data-from="3 4" data-to="3 4" d="M494 86 V214"/>
+        <path class="edge" data-from="3 4" data-to="3 4" d="M506 86 V214"/>
+        <!-- kept: closing the fork into owned & rentals -->
+        <path class="edge" data-from="3" data-to="6" d="M514 76 C620 84 700 96 700 135"/>
+        <path class="edge" data-from="4" data-to="6" d="M514 224 C620 216 700 204 700 165"/>
+        <!-- sell again: back into the pair -->
+        <path class="edge again" data-from="6" data-to="3 4" d="M685 150 H510"/>
+        <!-- sold -->
+        <path class="edge" data-from="3" data-to="7" d="M514 64 C690 34 800 96 864 136"/>
+        <path class="edge" data-from="4" data-to="7" d="M514 236 C690 266 800 204 864 164"/>
+        <!-- TC coordinates contractors & vendors -->
+        <path class="edge coord" data-from="4 5" data-to="4 5" d="M500 246 C512 292 570 306 624 306"/>
+
+        <g class="node" data-node="0" transform="translate(70 150)" tabindex="0" role="button" aria-label="Capture"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Capture</text></g>
+        <g class="node" data-node="1" transform="translate(270 150)" tabindex="0" role="button" aria-label="Acquisitions"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Acquisitions</text></g>
+        <g class="node" data-node="2" transform="translate(270 46)" tabindex="0" role="button" aria-label="Nurture"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Nurture</text></g>
+        <g class="node" data-node="3" transform="translate(500 70)" tabindex="0" role="button" aria-label="Dispositions"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Dispositions</text></g>
+        <g class="node" data-node="4" transform="translate(500 230)" tabindex="0" role="button" aria-label="Transaction Coordination"><circle r="15"/><circle class="core" r="5"/><text x="-24" y="6" text-anchor="end">Transaction Coord.</text></g>
+        <g class="node" data-node="5" transform="translate(640 306)" tabindex="0" role="button" aria-label="Contractors and Vendors"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Contractors &amp; Vendors</text></g>
+        <g class="node" data-node="6" transform="translate(700 150)" tabindex="0" role="button" aria-label="Owned and Rentals"><circle r="15"/><circle class="core" r="5"/><text x="24" y="6">Owned &amp; Rentals</text></g>
+        <g class="node finish" data-node="7" transform="translate(905 150)" tabindex="0" role="button" aria-label="Closed and Funded"><circle class="ring" r="44"/><circle class="disc" r="30"/><path class="flag" d="M-8 -12 V12 M-8 -12 H10 L6 -6 L10 0 H-8"/><text y="72" text-anchor="middle">Closed &amp; Funded</text></g>
+
+        <text class="tag" x="196" y="100" text-anchor="end">needs backup</text>
+        <text class="tag" x="344" y="100">revived</text>
+        <text class="tag" x="486" y="154" text-anchor="end">in parallel</text>
+        <text class="tag" x="640" y="112" text-anchor="middle">kept</text>
+        <text class="tag amb" x="598" y="142" text-anchor="middle">sell again</text>
+        <text class="tag" x="868" y="98" text-anchor="end">sold</text>
+        <text class="tag amb" x="590" y="276" text-anchor="middle">TC coordinates</text>
+      </svg>
+    </div>
+    <p class="status" id="status" aria-live="polite" data-no-tc></p>
+
+    <div class="tabs__list" role="tablist" aria-label="Stages of the investment lifecycle" style="margin-top:22px"></div>
+    <div id="panels"></div>
+    <p class="fine">Your pipelines are configured to how your business runs. Routes shown are common examples, not a fixed sequence.</p>
+  </section>
+
+  <section class="changes" data-no-tc aria-labelledby="ch-h">
+    <h2 id="ch-h">What changed since Option F</h2>
+    <ul>
+      <li>Owned &amp; Rentals sits on the Acquisitions line, between Dispositions and TC, closing the fork. A kept property comes out of both teams.</li>
+      <li>The amber "sell again" line runs from Owned &amp; Rentals back into the Dispositions and TC pair, which then takes it to Closed &amp; Funded.</li>
+      <li>Closed &amp; Funded is on the same line too, as the finish. Only the two "sold" lines reach it.</li>
+      <li>Tab text is the round 2 wording you approved. One small addition: Acquisitions routes now name "Dispositions + Transaction Coordination" together, since both start at contract signing.</li>
+      <li>Spanish gets the same diagram and text (Contratistas y proveedores, Cerrado y financiado, Propiedades y rentas).</li>
+    </ul>
+  </section>
+
+  <p class="pick" data-no-tc>Reply "approved" to put this on Home, Services and CRM in English and Spanish, or tell me what to move.</p>
+</div>
+
+<script>
+(function () {
+  var STAGES = [
+    { tab: "Capture", note: "Capture", h: "Every lead lands in one place",
+      p: "Leads from web forms, PPC campaigns, inbound calls, SMS, email and social arrive in a single acquisitions pipeline, so nothing lives in a spreadsheet or someone's inbox.",
+      ticks: ["See every new lead in one organized view", "Assign the lead to the right team member as it arrives", "Keep the full history from first contact onward"],
+      next: "New leads go straight to the people who close.",
+      routes: [["New Lead", "Appointment Set", "Offer Made", "Contract Sent", "Contract Signed"], ["New Lead", "Contacted", "Not Ready", "Nurture"], ["New Lead", "Appointment Set", "Offer Made", "Offer Declined", "Nurture"]] },
+    { tab: "Acquisitions", note: "Acquisitions", h: "Work the seller, secure the property",
+      p: "Your acquisitions team negotiates terms and gets the property under contract, with offers, follow-ups and documents tracked against the deal.",
+      ticks: ["Track negotiations and offers in one view", "Set reminders for follow-ups and decision dates", "Keep property details and documents with the deal"],
+      next: "A signed contract opens two tracks at once. A stalled seller gets backup.",
+      routes: [["Appointment Set", "Offer Made", "Contract Sent", "Contract Signed", "Dispositions + Transaction Coordination"], ["Contract Signed", "Dispositions + Transaction Coordination", "Closed & Funded"], ["Offer Made", "No Response", "Nurture"]] },
+    { tab: "Nurture", note: "Nurture", h: "Backup for your acquisitions team",
+      p: "When a seller goes quiet or is not ready, Nurture steps in behind your acquisition managers. Drip campaigns over SMS and email, matched to why the deal stalled, keep working the lead until it comes back to life.",
+      ticks: ["Takes stalled leads off your closers' plates", "Situational, timed and AI-tailored nurtures, in English and Spanish", "Hands revived leads back to acquisitions to close"],
+      next: "Nurture does not close deals. It revives them for the people who do.",
+      routes: [["Nurture", "Seller Re-Engages", "Appointment Set", "Offer Made", "Contract Signed"], ["Nurture", "Follow-Up Sequence", "Still Quiet", "Long-Term Nurture"]] },
+    { tab: "Dispositions", note: "Dispositions", h: "Market and sell the deal",
+      p: "Once a property is under contract, the dispositions pipeline covers marketing to agents, investors and buyers, showings, offers and the buyer agreement.",
+      ticks: ["Send listings to your investor network", "Track incoming offers and counteroffers", "Schedule showings and log feedback"],
+      next: "Works side by side with Transaction Coordination until the deal is sold or kept.",
+      routes: [["Under Contract", "Marketed to Buyers", "Offer Received", "Buyer Secured", "Closed & Funded"], ["Under Contract", "Keeping It", "Owned & Rentals"], ["Owned & Rentals", "Back on the Market", "Buyer Secured", "Closed & Funded"]] },
+    { tab: "Transaction Coordination", note: "Transaction Coordination", h: "From contract to close",
+      p: "Contracts, documents, payoffs and timelines are tracked through closing, with tasks assigned to the people responsible and documents signed inside the platform. TC also schedules and follows contractors and vendors, before the sale and while you own the property.",
+      ticks: ["Send contracts for e-signature without leaving the system", "Follow closing timelines and pending items", "Keep every document linked to its deal"],
+      next: "Runs alongside Dispositions to Closed & Funded, and keeps vendor work on schedule.",
+      routes: [["Contract Signed", "Title Ordered", "Inspection & Docs", "Clear to Close", "Closed & Funded"], ["Inspection Findings", "Contractors & Vendors", "Repairs Complete", "Clear to Close"], ["Purchase Closed", "Kept", "Owned & Rentals"]] },
+    { tab: "Contractors & Vendors", note: "Contractors & Vendors", h: "Repairs and vendor work, tracked",
+      p: "A dedicated pipeline for repairs, renovations and vendor tasks, coordinated by Transaction Coordination and tied to the deal or property the work belongs to.",
+      ticks: ["Assign jobs and follow timelines", "Track expenses against project budgets", "Attach invoices, receipts and reports to each job"],
+      next: "Finished work returns the property to its next step.",
+      routes: [["TC Schedules Work", "Vendor Assigned", "Work in Progress", "Final Walkthrough", "Complete"], ["Complete", "Ready to Sell", "Dispositions"], ["Maintenance Request", "Vendor Assigned", "Complete", "Owned & Rentals"]] },
+    { tab: "Owned & Rentals", note: "Owned & Rentals", h: "The portfolio you keep",
+      p: "Vacant properties, active rentals, tenants, lease dates and income are managed in a rentals pipeline that reports into the same KPI tracking.",
+      ticks: ["Track rental income and expenses per property", "Follow lease start and end dates", "Keep tenant communication and lease documents together"],
+      next: "Kept until sold again: a sale goes back through Dispositions and TC to Closed & Funded.",
+      routes: [["Rented", "Maintenance Request", "TC", "Contractors & Vendors"], ["Rented", "Selling", "Dispositions + TC", "Closed & Funded"]] }
+  ];
+  var NAMES = STAGES.map(function (s) { return s.tab; }).concat("Closed & Funded");
+  var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+  var list = document.querySelector('[role="tablist"]'), panels = document.getElementById("panels");
+  STAGES.forEach(function (s, i) {
+    var id = String(i + 1).padStart(2, "0");
+    list.insertAdjacentHTML("beforeend", '<button class="tabs__tab" role="tab" type="button" id="jt-' + i + '" aria-controls="jp-' + i + '" aria-selected="' + (i === 1) + '" tabindex="' + (i === 1 ? 0 : -1) + '"><small>' + id + "</small>" + esc(s.tab) + "</button>");
+    panels.insertAdjacentHTML("beforeend",
+      '<div class="tabs__panel" role="tabpanel" id="jp-' + i + '" aria-labelledby="jt-' + i + '" tabindex="0"' + (i === 1 ? "" : " hidden") + '><div class="body">' +
+      '<div class="stack"><p class="note">' + esc(s.note) + "</p><h3>" + esc(s.h) + '</h3><p class="muted">' + esc(s.p) + '</p><ul class="ticks">' + s.ticks.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul></div>" +
+      '<dl class="handoff"><div><dt>Where it goes next</dt><dd>' + esc(s.next) + '</dd></div><div><dt>Common routes</dt><dd class="routes">' +
+      s.routes.map(function (r) { return '<span class="route">' + r.map(function (x) { return "<b>" + esc(x) + "</b>"; }).join('<i aria-hidden="true">→</i>') + "</span>"; }).join("") +
+      "</dd></div></dl></div></div>");
+  });
+
+  var tabs = [].slice.call(list.querySelectorAll('[role="tab"]'));
+  var nodes = [].slice.call(document.querySelectorAll(".node")), edges = [].slice.call(document.querySelectorAll(".edge"));
+  var status = document.getElementById("status");
+  var nums = function (a) { return (a || "").split(" ").filter(Boolean).map(Number); };
+  function paint(on) {
+    var next = {};
+    edges.forEach(function (ed) {
+      var from = nums(ed.getAttribute("data-from")), to = nums(ed.getAttribute("data-to"));
+      var live = on < 7 && from.indexOf(on) > -1, inn = on === 7 && to.indexOf(7) > -1;
+      ed.classList.toggle("is-live", live); ed.classList.toggle("is-in", inn);
+      if (live) to.forEach(function (t) { if (t !== on) next[t] = 1; });
+    });
+    nodes.forEach(function (n) { var i = +n.getAttribute("data-node"); n.classList.toggle("is-on", i === on); n.classList.toggle("is-next", !!next[i]); });
+    var goes = Object.keys(next).map(function (k) { return NAMES[k]; });
+    status.innerHTML = on === 7
+      ? "<b>Closed &amp; Funded</b> · the finish. Green lines: the two ways a deal gets there, from Dispositions and Transaction Coordination working together."
+      : "<b>" + esc(NAMES[on]) + "</b> · goes next to " + esc(goes.join(", ").replace(/, ([^,]*)$/, " and $1")) + ".";
+  }
+  function select(i, focus) {
+    tabs.forEach(function (t, k) { var on = k === i; t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; document.getElementById("jp-" + k).hidden = !on; });
+    if (focus) tabs[i].focus();
+    paint(i);
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { select(i, false); });
+    t.addEventListener("keydown", function (e) {
+      var n = null;
+      if (e.key === "ArrowRight") n = (i + 1) % tabs.length;
+      if (e.key === "ArrowLeft") n = (i - 1 + tabs.length) % tabs.length;
+      if (e.key === "Home") n = 0;
+      if (e.key === "End") n = tabs.length - 1;
+      if (n !== null) { e.preventDefault(); select(n, true); }
+    });
+  });
+  nodes.forEach(function (n) {
+    var i = +n.getAttribute("data-node");
+    var go = function () { if (i < 7) select(i, false); else paint(7); };
+    n.addEventListener("click", go);
+    n.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+  });
+
+  /* Title Case, same rules as the live site (English running text). */
+  var SMALL = /^(a|an|and|as|at|but|by|for|from|in|into|nor|of|on|or|per|so|than|the|to|via|vs\.?|with)$/i;
+  var SKIP = "svg,script,style,[data-no-tc]";
+  function cap(h) { return h.replace(/^([^A-Za-z]*)([a-z])/, function (m, a, c) { return a + c.toUpperCase(); }); }
+  function word(w, force) {
+    if (/[@\/]|^\(?\+?\d/.test(w)) return w;
+    if (/[.!?:]["')”]*$/.test(w)) force = true;
+    var hs = w.split("-");
+    return hs.map(function (h, i) {
+      if (/[A-Z]/.test(h.slice(1)) || !/[a-z]/.test(h)) return h;
+      var core = h.replace(/^[^A-Za-z]+|[^A-Za-z']+$/g, ""), small = SMALL.test(core);
+      if (hs.length === 1) return small && !force ? h.toLowerCase() : cap(h);
+      return i > 0 && small ? h.toLowerCase() : cap(h);
+    }).join("-");
+  }
+  function breaks(prev) { return !prev || /[.!?:—–]["')”]*$/.test(prev); }
+  var w = document.createTreeWalker(document.getElementById("journey"), NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+    var p = n.parentElement; return !p || !n.textContent.trim() || p.closest(SKIP) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT; } });
+  var n, last = null, prev = "";
+  while ((n = w.nextNode())) {
+    var blk = n.parentElement.closest("p,li,h3,dd,dt,b,button"); if (blk !== last) { prev = ""; last = blk; }
+    var parts = n.textContent.split(/(\s+)/);
+    for (var k = 0; k < parts.length; k++) { var t = parts[k]; if (!t || !t.trim()) continue; parts[k] = word(t, breaks(prev)); prev = parts[k]; }
+    n.textContent = parts.join("");
+  }
+
+  select(1, false);
+})();
+</script>
