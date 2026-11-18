@@ -2,15 +2,16 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one column of proposal cards; each card = diagram panel (site navy, both themes) + short read-out. */
+/* Layout: intro, three diagram cards (site navy panel in both themes), then one shared table of tab-text changes. */
 :root {
-  --bg: #f3f4f6; --surface: #ffffff; --fg: #0e1b2a; --muted: #56657a; --rule: #d8dde5;
-  --panel: #0d1c2a; --panel-rule: rgba(255,255,255,.16); --node: #0d1c2a; --node-stroke: rgba(255,255,255,.38);
-  --label: #9ba9bb; --tag: #6f7f93; --blue: #4a9be6; --green: #3fbf7f; --amber: #f2a531; --red: #e5484d;
+  --bg: #f3f4f6; --surface: #ffffff; --fg: #0e1b2a; --muted: #56657a; --rule: #d8dde5; --row: #f7f8fa;
+  --panel: #0d1c2a; --panel-rule: rgba(255,255,255,.18); --node: #0d1c2a; --node-stroke: rgba(255,255,255,.38);
+  --label: #9ba9bb; --tag: #74859a; --blue: #4a9be6; --green: #3fbf7f; --amber: #f2a531; --red: #e5484d;
+  --old: #8a6a1f; --new: #1f7a4f;
   --display: "Barlow Condensed", "Arial Narrow", sans-serif; --body: "Barlow", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #08131e; --surface: #0f1e2d; --fg: #e8edf3; --muted: #9aa8ba; --rule: #22344a; --panel: #0b1824; color-scheme: dark } }
-:root[data-theme="dark"] { --bg: #08131e; --surface: #0f1e2d; --fg: #e8edf3; --muted: #9aa8ba; --rule: #22344a; --panel: #0b1824; color-scheme: dark }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #08131e; --surface: #0f1e2d; --fg: #e8edf3; --muted: #9aa8ba; --rule: #22344a; --row: #12243a; --panel: #0b1824; --old: #e0b25a; --new: #6fd6a2; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #08131e; --surface: #0f1e2d; --fg: #e8edf3; --muted: #9aa8ba; --rule: #22344a; --row: #12243a; --panel: #0b1824; --old: #e0b25a; --new: #6fd6a2; color-scheme: dark }
 * { box-sizing: border-box }
 body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px }
 .wrap { max-width: 1080px; margin: 0 auto; display: grid; gap: 28px }
@@ -18,7 +19,11 @@ body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); pad
 .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--blue) }
 h1 { font: 700 clamp(34px, 5vw, 52px)/1 var(--display); text-transform: uppercase; letter-spacing: .01em; margin: 10px 0 12px; text-wrap: balance }
 h1 em { font-style: normal; color: var(--green) }
-.lede { margin: 0; max-width: 64ch; color: var(--muted) }
+.lede { margin: 0; max-width: 68ch; color: var(--muted) }
+.model { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; font: 500 13px/1.3 var(--mono) }
+.model li { border: 1px solid var(--rule); border-radius: 999px; padding: 6px 12px; background: var(--surface) }
+.model .arrow { border: 0; padding: 0; background: none; color: var(--blue) }
+.model .end { border-color: var(--green); color: var(--new) }
 .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 22px; display: grid; gap: 18px; min-width: 0 }
 .card header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px }
 .card h2 { font: 700 26px/1.1 var(--display); text-transform: uppercase; margin: 0 }
@@ -27,16 +32,16 @@ h1 em { font-style: normal; color: var(--green) }
 .panel { background: var(--panel); border-radius: 10px; padding: 12px 16px; overflow-x: auto }
 .panel svg { display: block; width: 100%; min-width: 760px; height: auto }
 .notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 28px; margin: 0; padding: 0; list-style: none }
-.notes li { min-width: 0; padding-left: 16px; position: relative; color: var(--fg) }
+.notes li { min-width: 0; padding-left: 16px; position: relative }
 .notes li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; background: var(--blue); border-radius: 2px }
 .notes b { font-weight: 600 }
-.current { opacity: .92 }
-.current .panel svg { min-width: 680px }
 /* SVG parts */
 .e { fill: none; stroke: var(--panel-rule); stroke-width: 2 }
-.e-main { fill: none; stroke: rgba(255,255,255,.34); stroke-width: 2.5 }
 .e-live { fill: none; stroke: var(--blue); stroke-width: 2.5; stroke-dasharray: 6 8; animation: dash 1s linear infinite }
 .e-end { fill: none; stroke: var(--green); stroke-width: 2.5 }
+.e-sync { fill: none; stroke: rgba(255,255,255,.3); stroke-width: 1.5; stroke-dasharray: 3 5 }
+.e-coord { fill: none; stroke: var(--amber); stroke-width: 2; stroke-dasharray: 2 6; opacity: .85 }
+.e-again { fill: none; stroke: var(--amber); stroke-width: 2; stroke-dasharray: 8 6; opacity: .7 }
 .n circle { fill: var(--node); stroke: var(--node-stroke); stroke-width: 2 }
 .n .core { fill: rgba(255,255,255,.5); stroke: none }
 .n text, .lbl { fill: var(--label); font: 600 16px var(--display); letter-spacing: .04em; text-transform: uppercase }
@@ -47,143 +52,174 @@ h1 em { font-style: normal; color: var(--green) }
 .end circle.ring { fill: none; stroke: var(--green); stroke-width: 2; opacity: .45 }
 .end circle.disc { fill: #0f2a21; stroke: var(--green); stroke-width: 2.5; filter: drop-shadow(0 0 12px rgba(63,191,127,.55)) }
 .end text { fill: #fff; font: 700 18px var(--display); letter-spacing: .05em; text-transform: uppercase }
-.end .flag { fill: var(--green) }
+.flag { fill: none; stroke: var(--green); stroke-width: 2.5 }
 .tag { fill: var(--tag); font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase }
-.lane { fill: rgba(255,255,255,.035); stroke: rgba(255,255,255,.07) }
-.lane-t { fill: var(--tag); font: 500 11px var(--mono); letter-spacing: .14em; text-transform: uppercase }
+.tag.amb { fill: var(--amber) }
+.gear-bg { fill: #13283b; stroke: rgba(255,255,255,.3); stroke-width: 2 }
 .gear { fill: #fff; font: 700 13px var(--mono) }
-.gear-bg { fill: #13283b; stroke: rgba(255,255,255,.25) }
 @keyframes dash { to { stroke-dashoffset: -28 } }
 @media (prefers-reduced-motion: reduce) { .e-live { animation: none } }
-.pick { font: 500 13px/1.4 var(--mono); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin: 0 }
+/* tab changes */
+h3.sec { font: 700 28px/1.1 var(--display); text-transform: uppercase; margin: 0 }
+.tbl { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px }
+table { width: 100%; border-collapse: collapse; min-width: 720px; font-size: 15px }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--rule) }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); background: var(--row) }
+tr:last-child td { border-bottom: 0 }
+td.tab { font: 700 17px/1.2 var(--display); text-transform: uppercase; white-space: nowrap }
+td .k { display: block; font: 500 10.5px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 8px 0 3px }
+td .k:first-child { margin-top: 0 }
+.was { color: var(--old) }
+.now { color: var(--new) }
+.chain { font: 500 13px/1.5 var(--mono) }
+.same { color: var(--muted); font-style: italic }
+.pick { font: 500 13px/1.5 var(--mono); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin: 0 }
 </style>
 
 <div class="wrap">
   <div>
-    <p class="eyebrow">KPI DRIVER · Home, Services &amp; CRM pages</p>
-    <h1>Lead lifecycle, ending at <em>Closed &amp; Funded</em></h1>
-    <p class="lede">Three ways to redraw the lifecycle diagram so every path visibly finishes at Closed &amp; Funded. All three use "Contractors &amp; Vendors", keep the site's navy panel, and stay clickable stage by stage like today. The blue dashed line shows the example of a lead moving from Acquisitions onward.</p>
+    <p class="eyebrow">KPI DRIVER · Lifecycle diagram, round 2</p>
+    <h1>Fork after Acquisitions, finish at <em>Closed &amp; Funded</em></h1>
+    <p class="lede">Redrawn around how the business actually runs. A signed contract forks into Dispositions and Transaction Coordination working side by side. The deal is either sold or kept, and a kept property comes back through the same pair when it sells. TC coordinates Contractors &amp; Vendors the whole way through. All three keep the original node style, and the blue dashed lines show the fork.</p>
+    <ul class="model" aria-label="The lifecycle in one line">
+      <li>Capture</li><li class="arrow">→</li><li>Acquisitions</li><li class="arrow">→</li><li>Dispositions ∥ Transaction Coord.</li><li class="arrow">→</li><li class="end">Closed &amp; Funded</li><li class="arrow">or</li><li>Owned &amp; Rentals, until sold again</li>
+    </ul>
   </div>
 
-  <!-- Current, for reference -->
-  <section class="card current" aria-labelledby="cur-h">
-    <header><span class="letter">TODAY</span><h2 id="cur-h">Current diagram</h2><p class="tagline">No end point; the eye stops on Owned &amp; Rentals.</p></header>
-    <div class="panel"><svg viewBox="0 0 1000 290" role="img" aria-label="Current lifecycle diagram">
-      <path class="e" d="M70 150 H270"/><path class="e" d="M258 150 C230 120 230 80 258 46"/><path class="e" d="M282 46 C312 80 312 120 282 150"/><path class="e" d="M270 150 C380 150 390 84 500 84"/><path class="e" d="M270 150 C380 150 390 222 500 222"/><path class="e" d="M500 84 V222"/><path class="e" d="M500 222 H730"/><path class="e" d="M500 84 C700 84 800 100 920 130"/><path class="e" d="M730 222 C830 222 880 180 920 130"/><path class="e" d="M730 222 C700 150 600 100 500 84"/>
+  <!-- Option D: Side by side -->
+  <section class="card" aria-labelledby="d-h">
+    <header><span class="letter">OPTION D</span><h2 id="d-h">Side by side</h2><p class="tagline">Two parallel tracks after the fork, joined by sync lines, merging into Closed &amp; Funded.</p></header>
+    <div class="panel"><svg viewBox="0 0 1000 370" role="img" aria-label="Option D: Dispositions and Transaction Coordination on parallel tracks after Acquisitions, merging into Closed and Funded, with Owned and Rentals looping back">
+      <path class="e" d="M70 170 H260"/>
+      <path class="e" d="M248 170 C220 140 220 92 248 62"/><path class="e" d="M272 62 C300 92 300 140 272 170"/>
+      <path class="e-live" d="M260 170 C350 170 360 100 450 100"/><path class="e-live" d="M260 170 C350 170 360 240 450 240"/>
+      <path class="e" d="M450 100 H690"/><path class="e" d="M450 240 H690"/>
+      <path class="e-sync" d="M510 116 V224"/><path class="e-sync" d="M640 116 V224"/>
+      <path class="e-end" d="M690 100 C780 100 800 170 862 170"/><path class="e-end" d="M690 240 C780 240 800 170 862 170"/>
+      <path class="e-coord" d="M480 240 C480 300 520 326 543 326"/><path class="e-coord" d="M660 240 C660 300 620 326 577 326"/>
+      <path class="e" d="M690 240 C740 240 760 310 776 310"/>
+      <path class="e-again" d="M806 310 C1040 310 1040 22 640 22 C540 22 480 50 458 82"/>
+      <g class="n" transform="translate(70 170)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Capture</text></g>
+      <g class="n" transform="translate(260 62)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Nurture</text></g>
+      <g class="n on" transform="translate(260 170)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Acquisitions</text></g>
+      <g class="n" transform="translate(450 100)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Dispositions</text></g>
+      <g class="n amber" transform="translate(450 240)"><circle r="15"/><circle class="core" r="5"/><text x="-24" y="40" text-anchor="middle">Transaction Coord.</text></g>
+      <g class="n" transform="translate(560 326)"><circle r="15"/><circle class="core" r="5"/><text x="26" y="6">Contractors &amp; Vendors</text></g>
+      <g class="n" transform="translate(791 310)"><circle r="15"/><circle class="core" r="5"/><text y="40" text-anchor="middle">Owned &amp; Rentals</text></g>
+      <g class="end" transform="translate(900 170)"><circle class="ring" r="44"/><circle class="disc" r="30"/><path class="flag" d="M-8 -12 V12 M-8 -12 H10 L6 -6 L10 0 H-8"/><text y="72" text-anchor="middle">Closed &amp; Funded</text></g>
+      <text class="tag" x="202" y="118" text-anchor="end">needs backup</text>
+      <text class="tag" x="318" y="118">revived</text>
+      <text class="tag" x="575" y="174" text-anchor="middle">side by side</text>
+      <text class="tag" x="752" y="160">sold</text>
+      <text class="tag" x="738" y="290" text-anchor="end">kept</text>
+      <text class="tag amb" x="760" y="40" text-anchor="middle">sell again</text>
+      <text class="tag amb" x="570" y="292" text-anchor="middle">TC coordinates</text>
+    </svg></div>
+    <ul class="notes">
+      <li><b>Reads in one glance:</b> the two tracks merging into the flag say "both teams are working toward one closing".</li>
+      <li><b>Closest to the original:</b> same nodes, curves and click-through, with the fork and the finish added.</li>
+      <li><b>Kept properties loop back:</b> the amber "sell again" line returns Owned &amp; Rentals to the tracks.</li>
+    </ul>
+  </section>
+
+  <!-- Option E: Split gear track -->
+  <section class="card" aria-labelledby="e-h">
+    <header><span class="letter">OPTION E</span><h2 id="e-h">Split gear track</h2><p class="tagline">Option C's rev bar, splitting into two lanes in the same gear, with a pit lane for property work.</p></header>
+    <div class="panel"><svg viewBox="0 0 1000 400" role="img" aria-label="Option E: rev bar from Capture to Acquisitions splits into Dispositions and Transaction Coordination lanes that rejoin at Closed and Funded, with a pit lane for Contractors and Vendors and Owned and Rentals">
+      <defs><linearGradient id="rev" gradientUnits="userSpaceOnUse" x1="70" y1="0" x2="880" y2="0"><stop offset="0" stop-color="#e5484d"/><stop offset=".45" stop-color="#f2a531"/><stop offset="1" stop-color="#3fbf7f"/></linearGradient></defs>
+      <path d="M70 180 H330" stroke="url(#rev)" stroke-width="8" stroke-linecap="round" fill="none" opacity=".9"/>
+      <path d="M330 180 C380 180 390 110 440 110 H720 C780 110 800 180 860 180" stroke="url(#rev)" stroke-width="8" fill="none" opacity=".9"/>
+      <path d="M330 180 C380 180 390 250 440 250 H720 C780 250 800 180 860 180" stroke="url(#rev)" stroke-width="8" fill="none" opacity=".9"/>
+      <path class="e-live" d="M280 180 H330 C380 180 390 110 440 110 H450"/><path class="e-live" d="M330 180 C380 180 390 250 440 250 H450"/>
+      <path class="e-sync" d="M570 120 V240"/><path class="e-sync" d="M690 120 V240"/>
+      <path class="e" d="M268 172 C246 140 246 92 268 66"/><path class="e" d="M292 66 C314 92 314 140 292 172"/>
+      <path class="e-coord" d="M540 256 C548 320 560 340 580 340 H750 C780 340 792 300 796 230"/>
+      <g transform="translate(70 180)"><circle class="gear-bg" r="18"/><text class="gear" y="5" text-anchor="middle">1</text><text class="lbl" y="-32" text-anchor="middle">Capture</text></g>
+      <g transform="translate(280 180)"><circle class="gear-bg" r="18" style="stroke:#4a9be6;stroke-width:2.5;filter:drop-shadow(0 0 8px rgba(74,155,230,.8))"/><text class="gear" y="5" text-anchor="middle">2</text><text class="lbl" y="46" text-anchor="middle" style="fill:#fff">Acquisitions</text></g>
+      <g class="n" transform="translate(280 56)"><circle r="12"/><circle class="core" r="4"/><text x="24" y="6">Nurture</text></g>
+      <g transform="translate(450 110)"><circle class="gear-bg" r="18"/><text class="gear" y="5" text-anchor="middle">3</text><text class="lbl" y="-32" text-anchor="middle">Dispositions</text></g>
+      <g transform="translate(450 250)"><circle class="gear-bg" r="18" style="stroke:#f2a531;stroke-width:2.5"/><text class="gear" y="5" text-anchor="middle">3</text><text class="lbl" y="46" text-anchor="middle">Transaction Coord.</text></g>
+      <g class="n" transform="translate(580 340)"><circle r="13"/><circle class="core" r="4"/><text y="34" text-anchor="middle">Contractors &amp; Vendors</text></g>
+      <g class="n" transform="translate(750 340)"><circle r="13"/><circle class="core" r="4"/><text y="34" text-anchor="middle">Owned &amp; Rentals</text></g>
+      <g class="end" transform="translate(905 180)"><circle class="ring" r="44"/><circle class="disc" r="30"/><text y="7" text-anchor="middle" style="font-size:22px">4</text><text y="70" text-anchor="middle">Closed &amp; Funded</text><text class="tag" y="-54" text-anchor="middle" style="fill:#3fbf7f">top gear</text></g>
+      <text class="tag" x="630" y="184" text-anchor="middle">same gear, side by side</text>
+      <text class="tag" x="236" y="128" text-anchor="end">revived</text>
+      <text class="tag amb" x="808" y="290">sell again</text>
+      <text class="tag amb" x="665" y="392" text-anchor="middle">pit lane: TC runs repairs, hold, rent</text>
+    </svg></div>
+    <ul class="notes">
+      <li><b>Most on-brand:</b> keeps the red-to-green rev bar and gear numbers from the site's gear HUD.</li>
+      <li><b>Numbers are real order:</b> both lanes are gear 3 because the two teams work at the same time; Closed &amp; Funded is top gear.</li>
+      <li><b>The pit lane leaves from TC's lane and rejoins it:</b> repairs, holding and renting happen there, coordinated by TC, until the property sells again.</li>
+    </ul>
+  </section>
+
+  <!-- Option F: Original layout, corrected -->
+  <section class="card" aria-labelledby="f-h">
+    <header><span class="letter">OPTION F</span><h2 id="f-h">Original, corrected</h2><p class="tagline">The node positions you have today, rewired: Dispositions and TC linked in parallel, Closed &amp; Funded at the end.</p></header>
+    <div class="panel"><svg viewBox="0 0 1000 360" role="img" aria-label="Option F: the original layout with Dispositions and Transaction Coordination linked in parallel and Closed and Funded as the end point">
+      <path class="e" d="M70 150 H270"/><path class="e" d="M258 150 C230 120 230 80 258 46"/><path class="e" d="M282 46 C312 80 312 120 282 150"/>
+      <path class="e-live" d="M270 150 C380 150 390 84 500 84"/><path class="e-live" d="M270 150 C380 150 390 222 500 222"/>
+      <path class="e" d="M494 100 V206"/><path class="e" d="M506 100 V206"/>
+      <path class="e-end" d="M500 84 C700 84 790 112 862 142"/><path class="e-end" d="M500 222 C700 222 790 188 862 158"/>
+      <path class="e-coord" d="M500 222 C514 280 560 304 605 304"/>
+      <path class="e" d="M500 222 C640 222 740 296 826 296"/>
+      <path class="e-again" d="M856 296 C1040 296 1040 12 640 12 C560 12 524 40 508 68"/>
       <g class="n" transform="translate(70 150)"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Capture</text></g>
-      <g class="n" transform="translate(270 150)"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Acquisitions</text></g>
+      <g class="n on" transform="translate(270 150)"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Acquisitions</text></g>
       <g class="n" transform="translate(270 46)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Nurture</text></g>
       <g class="n" transform="translate(500 84)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Dispositions</text></g>
-      <g class="n" transform="translate(500 222)"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Transaction Coord.</text></g>
-      <g class="n" transform="translate(730 222)"><circle r="15"/><circle class="core" r="5"/><text y="36" text-anchor="middle">Contractors &amp; Vendors</text></g>
-      <g class="n" transform="translate(920 130)"><circle r="15"/><circle class="core" r="5"/><text y="44" text-anchor="middle">Owned &amp; Rentals</text></g>
-    </svg></div>
-  </section>
-
-  <!-- A: Finish line -->
-  <section class="card" aria-labelledby="a-h">
-    <header><span class="letter">OPTION A</span><h2 id="a-h">Finish line</h2><p class="tagline">One main road, left to right, ending at a flagged Closed &amp; Funded.</p></header>
-    <div class="panel"><svg viewBox="0 0 1000 330" role="img" aria-label="Option A: main road from Capture through Acquisitions and Transaction Coordination to Closed and Funded">
-      <!-- main road -->
-      <path class="e-main" d="M70 170 H300"/>
-      <path class="e-live" d="M300 170 H610"/>
-      <path class="e-end" d="M610 170 H858"/>
-      <!-- nurture loop -->
-      <path class="e" d="M288 170 C260 140 260 90 288 58"/><path class="e" d="M312 58 C340 90 340 140 312 170"/>
-      <!-- dispositions (wholesale / resale) -->
-      <path class="e" d="M300 170 C380 170 380 80 455 80"/><path class="e" d="M455 80 C530 80 540 170 610 170"/>
-      <!-- hold & improve lane -->
-      <path class="e" d="M300 170 C360 170 360 268 430 268"/>
-      <path class="e" d="M430 268 H640"/>
-      <path class="e" d="M430 268 C440 190 445 120 455 80"/>
-      <path class="e" d="M640 268 C700 268 720 170 760 170"/>
-      <g class="n" transform="translate(70 170)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Capture</text></g>
-      <g class="n" transform="translate(300 58)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Nurture</text></g>
-      <g class="n on" transform="translate(300 170)"><circle r="15"/><circle class="core" r="5"/><text x="-22" y="38" text-anchor="end">Acquisitions</text></g>
-      <g class="n" transform="translate(455 80)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Dispositions</text></g>
-      <g class="n amber" transform="translate(610 170)"><circle r="15"/><circle class="core" r="5"/><text y="-26" text-anchor="middle">Transaction Coord.</text></g>
-      <g class="n" transform="translate(430 268)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Contractors &amp; Vendors</text></g>
-      <g class="n" transform="translate(640 268)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Owned &amp; Rentals</text></g>
-      <g class="end" transform="translate(890 170)"><circle class="ring" r="44"/><circle class="disc" r="30"/>
-        <path class="flag" d="M-8 -12 V12 M-8 -12 H10 L6 -6 L10 0 H-8" stroke="#3fbf7f" stroke-width="2.5" fill="none"/>
-        <text y="70" text-anchor="middle">Closed &amp; Funded</text></g>
-      <text class="tag" x="242" y="118" text-anchor="end">needs backup</text>
-      <text class="tag" x="360" y="118">revived</text>
-      <text class="tag" x="700" y="160">finish</text>
-      <text class="tag" x="535" y="254" text-anchor="middle">hold &amp; improve</text>
+      <g class="n amber" transform="translate(500 222)"><circle r="15"/><circle class="core" r="5"/><text x="-24" y="6" text-anchor="end">Transaction Coord.</text></g>
+      <g class="n" transform="translate(620 304)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Contractors &amp; Vendors</text></g>
+      <g class="n" transform="translate(841 296)"><circle r="15"/><circle class="core" r="5"/><text y="38" text-anchor="middle">Owned &amp; Rentals</text></g>
+      <g class="end" transform="translate(900 150)"><circle class="ring" r="44"/><circle class="disc" r="30"/><path class="flag" d="M-8 -12 V12 M-8 -12 H10 L6 -6 L10 0 H-8"/><text y="72" text-anchor="middle">Closed &amp; Funded</text></g>
+      <text class="tag" x="196" y="100" text-anchor="end">needs backup</text>
+      <text class="tag" x="344" y="100">revived</text>
+      <text class="tag" x="518" y="157">in parallel</text>
+      <text class="tag" x="760" y="246">kept</text>
+      <text class="tag amb" x="760" y="30" text-anchor="middle">sell again</text>
+      <text class="tag amb" x="572" y="268" text-anchor="end">TC coordinates</text>
     </svg></div>
     <ul class="notes">
-      <li><b>Reads in one glance:</b> the straight road says "this is where every lead is headed".</li>
-      <li><b>Closest to today:</b> same node style and click-through, so it is the smallest change to build.</li>
-      <li><b>Property work is a side lane</b> that rejoins Dispositions or the final closing.</li>
+      <li><b>Smallest visual change:</b> Capture, Acquisitions, Nurture, Dispositions and TC stay exactly where they are today.</li>
+      <li><b>The double line</b> between Dispositions and TC shows the two teams working the same deal at once.</li>
+      <li><b>Owned &amp; Rentals moves off the end:</b> Closed &amp; Funded takes its place, and kept properties loop back to sell again.</li>
     </ul>
   </section>
 
-  <!-- B: Swimlanes -->
-  <section class="card" aria-labelledby="b-h">
-    <header><span class="letter">OPTION B</span><h2 id="b-h">Pipelines converge</h2><p class="tagline">Three lanes (Lead, Deal, Property) that all pour into one Closed &amp; Funded end cap.</p></header>
-    <div class="panel"><svg viewBox="0 0 1000 340" role="img" aria-label="Option B: lead, deal and property lanes converging into Closed and Funded">
-      <rect class="lane" x="10" y="22" width="820" height="88" rx="8"/><rect class="lane" x="10" y="126" width="820" height="88" rx="8"/><rect class="lane" x="10" y="230" width="820" height="88" rx="8"/>
-      <text class="lane-t" x="26" y="44">Lead</text><text class="lane-t" x="26" y="148">Deal</text><text class="lane-t" x="26" y="252">Property</text>
-      <!-- lead lane -->
-      <path class="e" d="M150 70 H330"/><path class="e" d="M330 70 H510"/><path class="e" d="M150 70 C230 30 430 30 510 70"/>
-      <!-- lead -> deal / property -->
-      <path class="e-live" d="M510 70 C560 70 560 170 610 170"/>
-      <path class="e" d="M510 70 C540 120 470 230 480 274"/>
-      <!-- deal lane -->
-      <path class="e-live" d="M610 170 H780"/>
-      <!-- property lane -->
-      <path class="e" d="M480 274 H680"/><path class="e" d="M480 274 C520 230 570 200 610 170"/><path class="e" d="M680 274 C730 274 750 200 780 170"/>
-      <!-- into end cap -->
-      <path class="e-end" d="M780 170 H858"/>
-      <path class="e-end" d="M680 274 C760 274 800 250 858 240" opacity=".55"/>
-      <g class="n" transform="translate(150 70)"><circle r="14"/><circle class="core" r="5"/><text y="34" text-anchor="middle">Capture</text></g>
-      <g class="n" transform="translate(330 70)"><circle r="14"/><circle class="core" r="5"/><text y="34" text-anchor="middle">Nurture</text></g>
-      <g class="n on" transform="translate(510 70)"><circle r="14"/><circle class="core" r="5"/><text y="34" text-anchor="middle">Acquisitions</text></g>
-      <g class="n" transform="translate(610 170)"><circle r="14"/><circle class="core" r="5"/><text y="-24" text-anchor="middle">Dispositions</text></g>
-      <g class="n amber" transform="translate(780 170)"><circle r="14"/><circle class="core" r="5"/><text x="60" y="-24" text-anchor="end">Transaction Coord.</text></g>
-      <g class="n" transform="translate(480 274)"><circle r="14"/><circle class="core" r="5"/><text y="34" text-anchor="middle">Contractors &amp; Vendors</text></g>
-      <g class="n" transform="translate(680 274)"><circle r="14"/><circle class="core" r="5"/><text y="34" text-anchor="middle">Owned &amp; Rentals</text></g>
-      <g class="end"><rect x="858" y="22" width="130" height="296" rx="12" fill="#0f2a21" stroke="#3fbf7f" stroke-width="2.5" style="filter:drop-shadow(0 0 12px rgba(63,191,127,.45))"/>
-        <path d="M908 136 V176 M908 136 H936 L930 146 L936 156 H908" stroke="#3fbf7f" stroke-width="2.5" fill="none"/>
-        <text x="923" y="206" text-anchor="middle">Closed &amp;</text><text x="923" y="228" text-anchor="middle">Funded</text></g>
-      <text class="tag" x="330" y="34" text-anchor="middle">fast track</text>
-    </svg></div>
-    <ul class="notes">
-      <li><b>Mirrors the CRM itself:</b> each lane is a pipeline the client will actually see in the product.</li>
-      <li><b>The end cap is the boldest</b> Closed &amp; Funded of the three; nothing competes with it.</li>
-      <li><b>Taller diagram;</b> on tablets the labels get smaller than in A.</li>
-    </ul>
+  <!-- Tab text changes -->
+  <section class="card" aria-labelledby="t-h">
+    <header><h3 class="sec" id="t-h">Tab text below the diagram</h3><p class="tagline">Same for all three options. Only lines your model changes are listed; the rest stays word for word.</p></header>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">Tab</th><th scope="col">Today</th><th scope="col">Proposed</th></tr></thead>
+      <tbody>
+        <tr><td class="tab">Capture, Acquisitions, Nurture</td><td colspan="2"><span class="same">No change. Acquisitions already says "A signed contract opens two tracks at once", which matches the fork.</span></td></tr>
+        <tr><td class="tab">Dispositions</td>
+          <td><span class="k">Where it goes next</span><span class="was">A committed buyer hands the deal to coordination. Some deals you keep.</span>
+            <span class="k">Common routes</span><span class="was chain">Under Contract → Marketed to Buyers → Offer Received → Buyer Secured → Transaction Coordination<br>Under Contract → Keeping It → Owned &amp; Rentals</span></td>
+          <td><span class="k">Where it goes next</span><span class="now">Works side by side with Transaction Coordination until the deal is sold or kept.</span>
+            <span class="k">Common routes</span><span class="now chain">Under Contract → Marketed to Buyers → Offer Received → Buyer Secured → Closed &amp; Funded<br>Under Contract → Keeping It → Owned &amp; Rentals<br>Owned &amp; Rentals → Back on the Market → Buyer Secured → Closed &amp; Funded</span></td></tr>
+        <tr><td class="tab">Transaction Coordination</td>
+          <td><span class="k">Description</span><span class="same">Contracts, documents, payoffs and timelines are tracked through closing, with tasks assigned to the people responsible and documents signed inside the platform.</span>
+            <span class="k">Where it goes next</span><span class="was">Closing is not always the end of the record.</span>
+            <span class="k">Common routes</span><span class="was chain">Contract Signed → Title Ordered → Inspection &amp; Docs → Clear to Close → Closed &amp; Funded<br>Closed &amp; Funded → Repairs Needed → Contractors &amp; Vendors<br>Closed &amp; Funded → Held → Owned &amp; Rentals</span></td>
+          <td><span class="k">Description (one sentence added)</span><span class="now">… documents signed inside the platform. TC also schedules and follows contractors and vendors, before the sale and while you own the property.</span>
+            <span class="k">Where it goes next</span><span class="now">Runs alongside Dispositions to Closed &amp; Funded, and keeps vendor work on schedule.</span>
+            <span class="k">Common routes</span><span class="now chain">Contract Signed → Title Ordered → Inspection &amp; Docs → Clear to Close → Closed &amp; Funded<br>Inspection Findings → Contractors &amp; Vendors → Repairs Complete → Clear to Close<br>Purchase Closed → Kept → Owned &amp; Rentals</span></td></tr>
+        <tr><td class="tab">Contractors &amp; Vendors</td>
+          <td><span class="k">Description</span><span class="was">A dedicated pipeline for repairs, renovations and vendor tasks, tied to the deal or property the work belongs to.</span>
+            <span class="k">Common routes</span><span class="was chain">Scope Approved → Vendor Assigned → Work in Progress → Final Walkthrough → Complete<br>Complete → Ready to Sell → Dispositions<br>Complete → Ready to Rent → Owned &amp; Rentals</span></td>
+          <td><span class="k">Description</span><span class="now">A dedicated pipeline for repairs, renovations and vendor tasks, coordinated by Transaction Coordination and tied to the deal or property the work belongs to.</span>
+            <span class="k">Common routes</span><span class="now chain">TC Schedules Work → Vendor Assigned → Work in Progress → Final Walkthrough → Complete<br>Complete → Ready to Sell → Dispositions<br>Maintenance Request → Vendor Assigned → Complete → Owned &amp; Rentals</span></td></tr>
+        <tr><td class="tab">Owned &amp; Rentals</td>
+          <td><span class="k">Where it goes next</span><span class="was">Owned properties keep feeding the picture.</span>
+            <span class="k">Common routes</span><span class="was chain">Rented → Maintenance Request → Contractors &amp; Vendors<br>Rented → Selling → Dispositions</span></td>
+          <td><span class="k">Where it goes next</span><span class="now">Kept until sold again: a sale goes back through Dispositions and TC to Closed &amp; Funded.</span>
+            <span class="k">Common routes</span><span class="now chain">Rented → Maintenance Request → TC → Contractors &amp; Vendors<br>Rented → Selling → Dispositions + TC → Closed &amp; Funded</span></td></tr>
+        <tr><td class="tab">Closed &amp; Funded</td><td colspan="2">New finish node. Clicking it lights up every path that leads into it. It does not get its own tab, so the seven tabs stay as they are.</td></tr>
+      </tbody>
+    </table></div>
   </section>
 
-  <!-- C: Gearbox -->
-  <section class="card" aria-labelledby="c-h">
-    <header><span class="letter">OPTION C</span><h2 id="c-h">Shift through the gears</h2><p class="tagline">A rev bar from red to green with numbered stages; Closed &amp; Funded is top gear.</p></header>
-    <div class="panel"><svg viewBox="0 0 1000 320" role="img" aria-label="Option C: numbered gear stages from Capture to Closed and Funded with a pit lane for property work">
-      <defs><linearGradient id="rev" x1="0" x2="1"><stop offset="0" stop-color="#e5484d"/><stop offset=".5" stop-color="#f2a531"/><stop offset="1" stop-color="#3fbf7f"/></linearGradient></defs>
-      <rect x="70" y="146" width="810" height="8" rx="4" fill="url(#rev)" opacity=".85"/>
-      <!-- nurture loop above gear 2 -->
-      <path class="e" d="M262 140 C240 110 240 70 262 46"/><path class="e" d="M298 46 C320 70 320 110 298 140"/>
-      <!-- pit lane -->
-      <path class="e" d="M280 160 C320 250 360 262 420 262 H620 C680 262 700 230 720 160" stroke-dasharray="2 6"/>
-      <path class="e-live" d="M280 150 H490"/>
-      <g transform="translate(70 150)"><circle class="gear-bg" r="18"/><text class="gear" y="5" text-anchor="middle">1</text><text class="lbl" y="-32" text-anchor="middle">Capture</text></g>
-      <g transform="translate(280 150)"><circle class="gear-bg" r="18" stroke="#4a9be6" stroke-width="2.5" style="filter:drop-shadow(0 0 8px rgba(74,155,230,.8))"/><text class="gear" y="5" text-anchor="middle">2</text><text class="lbl" y="44" text-anchor="middle" fill="#fff">Acquisitions</text></g>
-      <g class="n" transform="translate(280 40)"><circle r="12"/><circle class="core" r="4"/><text x="24" y="6">Nurture</text></g>
-      <g transform="translate(490 150)"><circle class="gear-bg" r="18"/><text class="gear" y="5" text-anchor="middle">3</text><text class="lbl" y="-32" text-anchor="middle">Dispositions</text></g>
-      <g transform="translate(720 150)"><circle class="gear-bg" r="18" stroke="#f2a531" stroke-width="2.5"/><text class="gear" y="5" text-anchor="middle">4</text><text class="lbl" y="-32" text-anchor="middle">Transaction Coord.</text></g>
-      <g class="n" transform="translate(420 262)"><circle r="12"/><circle class="core" r="4"/><text y="34" text-anchor="middle">Contractors &amp; Vendors</text></g>
-      <g class="n" transform="translate(620 262)"><circle r="12"/><circle class="core" r="4"/><text y="34" text-anchor="middle">Owned &amp; Rentals</text></g>
-      <g class="end" transform="translate(905 150)"><circle class="ring" r="44"/><circle class="disc" r="30"/><text y="7" text-anchor="middle" style="font-size:22px">5</text><text y="68" text-anchor="middle">Closed &amp; Funded</text><text y="-52" text-anchor="middle" class="tag" style="fill:#3fbf7f">top gear</text></g>
-      <text class="tag" x="520" y="244" text-anchor="middle">pit lane: hold, rehab, rent</text>
-      <text class="tag" x="236" y="96" text-anchor="end">revived</text>
-    </svg></div>
-    <ul class="notes">
-      <li><b>Most on-brand:</b> uses the same red-to-green rev bar and gear numbers as the site's gear HUD and "Make the gear shift" line.</li>
-      <li><b>Numbers are real order:</b> stages 1–5 run in sequence; the property work sits in a pit lane off the track.</li>
-      <li><b>Most stylised;</b> simplest for a first-time visitor, least literal about loops between stages.</li>
-    </ul>
-  </section>
-
-  <p class="pick">Reply with A, B or C (or a mix, such as "C with B's end cap"). The chosen version replaces the diagram on Home, Services and CRM in English and Spanish.</p>
+  <p class="pick">Reply with D, E or F (or a mix, such as "F with E's rev bar"). The chosen diagram and the tab text above go onto Home, Services and CRM, in English and Spanish.</p>
 </div>

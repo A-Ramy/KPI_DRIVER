@@ -154,4 +154,4 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Ahmed Ramy → Chief Operations & Technology Officer: Our Team embed, Our Team JSON-LD, post template byline String, home "Built in-house" sentence (JS), ES via JS, repo sources.
 - Contact form beside FAQs: two-column fields, step bar under the heading spanning the card.
 - Contact FAQ phone image: frame removed. AI Agent iMessage chip: inner span no longer drawn as a second chip.
-- Lifecycle diagram: 3 proposals (A finish line, B pipelines converge, C gears) in webflow/lifecycle-proposals.html, awaiting owner pick. After the pick: rebuild the journey block in home/services/crm embeds + kd-es.js and drop the JS shims (routes, label, eyebrow, title).
+- Lifecycle diagram round 2 (owner model: fork after Acquisitions into Dispositions ∥ TC, sold → Closed & Funded or kept → Owned & Rentals → sell again; TC coordinates Contractors & Vendors throughout): options D side by side, E split gear track, F original corrected, plus tab-text changes, in webflow/lifecycle-proposals.html. Awaiting pick; then rebuild journey block in home/services/crm embeds + kd-es.js and drop the JS shims.
