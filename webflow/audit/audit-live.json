@@ -1,0 +1,4745 @@
+[
+ {
+  "u": "/",
+  "status": 200,
+  "n": 39,
+  "kb": 2308,
+  "byType": {
+   "document": 52,
+   "script": 813,
+   "stylesheet": 292,
+   "image": 892,
+   "font": 231,
+   "xhr": 27,
+   "ping": 0,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 11,
+   "ajax.googleapis.com": 1,
+   "fonts.googleapis.com": 2,
+   "fonts.gstatic.com": 8,
+   "widgets.boast.io": 1,
+   "api.boast.io": 3,
+   "boast-assets.s3.amazonaws.com": 10
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://static.elfsight.com/platform/platform.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "https://www.kpidriver.com/",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "https://www.kpidriver.com/",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "https://www.kpidriver.com/",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   },
+   {
+    "url": "components.js",
+    "total": 948247,
+    "used": 948247
+   }
+  ],
+  "css": [
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 41470
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 5729
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13489
+   },
+   {
+    "url": "",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "",
+    "total": 74,
+    "used": 74
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 2120,
+  "hidden": [],
+  "imgs": 23,
+  "big": [
+   {
+    "src": "photo-medium-362daa3560b6adce6b99440cd1ede280.jpg?",
+    "nw": 1280,
+    "w": 350,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "photo-medium-362daa3560b6adce6b99440cd1ede280.jpg?",
+    "nw": 1280,
+    "w": 350,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "photo-medium-aa573a0df51b5a76ed3025ebf38a65fe.jpg?",
+    "nw": 1280,
+    "w": 350,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "photo-medium-aa573a0df51b5a76ed3025ebf38a65fe.jpg?",
+    "nw": 1280,
+    "w": 350,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "photo-medium-dde7eaf8c5e20d8a680fbecc454512e6.jpg?",
+    "nw": 1280,
+    "w": 350,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "photo-medium-dde7eaf8c5e20d8a680fbecc454512e6.jpg?",
+    "nw": 1280,
+    "w": 350,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   }
+  ],
+  "nodims": 20,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:4607",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "inline:4301",
+   "widgets.boast.io/current/components.js",
+   "static.elfsight.com/platform/platform.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:76571",
+   "inline-style:67",
+   "inline-style:74"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "KPI DRIVER | Real Estate Investor CRM, KPI Tracking and AI Suite"
+ },
+ {
+  "u": "/services",
+  "status": 200,
+  "n": 25,
+  "kb": 1203,
+  "byType": {
+   "document": 41,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 85,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "fonts.googleapis.com": 2,
+   "cdn.prod.website-files.com": 11,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "services",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "services",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "services",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4854
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13384
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 33509
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   }
+  ],
+  "all": 1451,
+  "hidden": [],
+  "imgs": 3,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:4551",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Services: CRM, AI Suite and AI Agent | KPI DRIVER"
+ },
+ {
+  "u": "/services/crm",
+  "status": 200,
+  "n": 26,
+  "kb": 1261,
+  "byType": {
+   "document": 37,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 147,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 12,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "crm",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "crm",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "crm",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13442
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 31855
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4915
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 1430,
+  "hidden": [],
+  "imgs": 4,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:3317",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Real Estate Investor CRM with KPI Tracking | KPI DRIVER"
+ },
+ {
+  "u": "/services/ai-suite",
+  "status": 200,
+  "n": 25,
+  "kb": 1202,
+  "byType": {
+   "document": 40,
+   "script": 553,
+   "stylesheet": 292,
+   "font": 231,
+   "image": 85,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 11,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "ai-suite",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "ai-suite",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "ai-suite",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13442
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 5529
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 28660
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   }
+  ],
+  "all": 1379,
+  "hidden": [],
+  "imgs": 3,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:4328",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "AI Suite for Real Estate Investors | KPI DRIVER"
+ },
+ {
+  "u": "/services/ai-agent",
+  "status": 200,
+  "n": 25,
+  "kb": 1187,
+  "byType": {
+   "document": 25,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 85,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 11,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "ai-agent",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "ai-agent",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "ai-agent",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 23654
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4939
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13390
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 960,
+  "hidden": [],
+  "imgs": 3,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:3522",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "AI Agent for Real Estate Lead Follow-Up | KPI DRIVER"
+ },
+ {
+  "u": "/our-team",
+  "status": 200,
+  "n": 30,
+  "kb": 1280,
+  "byType": {
+   "document": 19,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 184,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 16,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "our-team",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "our-team",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "our-team",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 18670
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4743
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 11960
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 819,
+  "hidden": [],
+  "imgs": 8,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:1271",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Our Team | KPI DRIVER"
+ },
+ {
+  "u": "/contact-us",
+  "status": 200,
+  "n": 33,
+  "kb": 1611,
+  "byType": {
+   "document": 112,
+   "script": 593,
+   "stylesheet": 486,
+   "image": 147,
+   "font": 273
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 12,
+   "fonts.googleapis.com": 4,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 9,
+   "link.kpidriver.com": 2,
+   "stcdn.leadconnectorhq.com": 2,
+   "storage.googleapis.com": 1
+  },
+  "fonts": 9,
+  "dupReq": [
+   "https://stcdn.leadconnectorhq.com/_preview/style.DHChrfps.css"
+  ],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://images.leadconnectorhq.com/image/f_webp/q_100/r_1000/u_https://storage.googleapis.com/highle",
+   "https://stcdn.leadconnectorhq.com/_preview/BuCXqppA.js",
+   "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+   "https://www.google.com/maps?q=1858%20NW%20141st%20Ave%2C%20Pembroke%20Pines%2C%20FL%2033028&z=15&out"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "contact-us",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "contact-us",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "contact-us",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 16,
+    "used": 16
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 4668,
+    "used": 4668
+   },
+   {
+    "url": "iframeResizer.contentWindow.min.js",
+    "total": 22332,
+    "used": 22332
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 16,
+    "used": 16
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 18070
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 8773
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4766
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "contact-us",
+    "total": 221,
+    "used": 221
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 844,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 509,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 6064,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 39,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 6109,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 8636,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 31578,
+    "used": 0
+   },
+   {
+    "url": "hs57W9QgapW3WAyGZeZb",
+    "total": 2335,
+    "used": 0
+   },
+   {
+    "url": "css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,70",
+    "total": 66948,
+    "used": 0
+   },
+   {
+    "url": "style.DHChrfps.css",
+    "total": 121753,
+    "used": 0
+   },
+   {
+    "url": "css?family=Inter:100,100i,300,300i,400,400i,500,500i,700,700",
+    "total": 92502,
+    "used": 0
+   }
+  ],
+  "all": 337,
+  "hidden": [],
+  "imgs": 4,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:585",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:2975",
+   "inline-style:221"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Contact KPI DRIVER | Book a Discovery Call"
+ },
+ {
+  "u": "/book-discovery-call",
+  "status": 200,
+  "n": 25,
+  "kb": 1176,
+  "byType": {
+   "document": 14,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 85,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "fonts.googleapis.com": 2,
+   "cdn.prod.website-files.com": 11,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "book-discovery-call",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "book-discovery-call",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "book-discovery-call",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4743
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 9239
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 16431
+   }
+  ],
+  "all": 737,
+  "hidden": [],
+  "imgs": 3,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:474",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Book a Discovery Call | KPI DRIVER"
+ },
+ {
+  "u": "/thank-you",
+  "status": 200,
+  "n": 25,
+  "kb": 1392,
+  "byType": {
+   "document": 13,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 303,
+   "font": 231
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 12,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "thank-you",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "thank-you",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "thank-you",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 14242
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 0
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4333
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 211,
+  "hidden": [],
+  "imgs": 4,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Thank You | KPI DRIVER"
+ },
+ {
+  "u": "/blog",
+  "status": 200,
+  "n": 129,
+  "kb": 2729,
+  "byType": {
+   "document": 109,
+   "script": 1667,
+   "stylesheet": 370,
+   "image": 353,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "fonts.googleapis.com": 3,
+   "cdn.prod.website-files.com": 17,
+   "ajax.googleapis.com": 1,
+   "link.kpidriver.com": 2,
+   "fonts.gstatic.com": 8,
+   "storage.googleapis.com": 1,
+   "stcdn.leadconnectorhq.com": 94
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "blog",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "blog",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "blog",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 4668,
+    "used": 4668
+   },
+   {
+    "url": "iframeResizer.contentWindow.min.js",
+    "total": 22332,
+    "used": 22332
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 16,
+    "used": 16
+   },
+   {
+    "url": "utils.min.js",
+    "total": 245403,
+    "used": 245403
+   },
+   {
+    "url": "libphonenumber-js.min.js",
+    "total": 181182,
+    "used": 181182
+   },
+   {
+    "url": "xYS3DG92.js",
+    "total": 819274,
+    "used": 819274
+   },
+   {
+    "url": "intlTelInput.min.js",
+    "total": 28932,
+    "used": 28932
+   },
+   {
+    "url": "csj4nmaI.js",
+    "total": 1734,
+    "used": 1734
+   },
+   {
+    "url": "B6uQOFEn.js",
+    "total": 9747,
+    "used": 9747
+   },
+   {
+    "url": "aHGdU-VF.js",
+    "total": 67572,
+    "used": 67572
+   },
+   {
+    "url": "D7Xd77wU.js",
+    "total": 103959,
+    "used": 103959
+   },
+   {
+    "url": "C3XJDohm.js",
+    "total": 11391,
+    "used": 11391
+   },
+   {
+    "url": "edcvo9Df.js",
+    "total": 255,
+    "used": 255
+   },
+   {
+    "url": "BAoQ-xbn.js",
+    "total": 1093,
+    "used": 1093
+   },
+   {
+    "url": "DuFGbNdR.js",
+    "total": 11916,
+    "used": 11916
+   },
+   {
+    "url": "pIy_QS3G.js",
+    "total": 1015,
+    "used": 1015
+   },
+   {
+    "url": "BLiIsASK.js",
+    "total": 23312,
+    "used": 23312
+   },
+   {
+    "url": "DcretrGW.js",
+    "total": 839,
+    "used": 839
+   },
+   {
+    "url": "C4wcNCku.js",
+    "total": 894,
+    "used": 894
+   },
+   {
+    "url": "zQDIoL-k.js",
+    "total": 871,
+    "used": 871
+   },
+   {
+    "url": "ynvMkNdm.js",
+    "total": 3406,
+    "used": 3406
+   },
+   {
+    "url": "BNyhO2Hn.js",
+    "total": 742,
+    "used": 742
+   },
+   {
+    "url": "DuzQ9U3X.js",
+    "total": 255,
+    "used": 255
+   },
+   {
+    "url": "Czyo78Ra.js",
+    "total": 3269,
+    "used": 3269
+   },
+   {
+    "url": "DBZt6gZd.js",
+    "total": 2563,
+    "used": 2563
+   },
+   {
+    "url": "DEuEQymF.js",
+    "total": 3566,
+    "used": 3566
+   },
+   {
+    "url": "DSeL4Exu.js",
+    "total": 20005,
+    "used": 20005
+   },
+   {
+    "url": "D1OHNg6k.js",
+    "total": 4076,
+    "used": 4076
+   },
+   {
+    "url": "DTCQcN45.js",
+    "total": 10206,
+    "used": 10206
+   },
+   {
+    "url": "D29D0BPE.js",
+    "total": 1994,
+    "used": 1994
+   },
+   {
+    "url": "CfMwnN7J.js",
+    "total": 4257,
+    "used": 4257
+   },
+   {
+    "url": "BeEgUaFm.js",
+    "total": 1683,
+    "used": 1683
+   },
+   {
+    "url": "BFf-IGhH.js",
+    "total": 13444,
+    "used": 13444
+   },
+   {
+    "url": "DSA2XrAD.js",
+    "total": 4540,
+    "used": 4540
+   },
+   {
+    "url": "BEY08Pr6.js",
+    "total": 1560,
+    "used": 1560
+   },
+   {
+    "url": "XUZG6FzS.js",
+    "total": 3519,
+    "used": 3519
+   },
+   {
+    "url": "DkteDPp6.js",
+    "total": 1057,
+    "used": 1057
+   },
+   {
+    "url": "C3e4t58V.js",
+    "total": 90,
+    "used": 90
+   },
+   {
+    "url": "DpGxo2Of.js",
+    "total": 101,
+    "used": 101
+   },
+   {
+    "url": "DoHEYfwd.js",
+    "total": 21563,
+    "used": 21563
+   },
+   {
+    "url": "DKeuBCMA.js",
+    "total": 34,
+    "used": 34
+   },
+   {
+    "url": "BEh3SjId.js",
+    "total": 3021,
+    "used": 3021
+   },
+   {
+    "url": "DzWXQSzc.js",
+    "total": 2771,
+    "used": 2771
+   },
+   {
+    "url": "BPzZT6qn.js",
+    "total": 995,
+    "used": 995
+   },
+   {
+    "url": "CVOfVXL2.js",
+    "total": 3253,
+    "used": 3253
+   },
+   {
+    "url": "DRNKrJGC.js",
+    "total": 302,
+    "used": 302
+   },
+   {
+    "url": "CmNKWlnT.js",
+    "total": 867,
+    "used": 867
+   },
+   {
+    "url": "BD_ddYlA.js",
+    "total": 14017,
+    "used": 14017
+   },
+   {
+    "url": "5TLU508A.js",
+    "total": 809,
+    "used": 809
+   },
+   {
+    "url": "DkBnx__q.js",
+    "total": 9648,
+    "used": 9648
+   },
+   {
+    "url": "B4K7AhKD.js",
+    "total": 3875,
+    "used": 3875
+   },
+   {
+    "url": "wkFwOf5F.js",
+    "total": 4842,
+    "used": 4842
+   },
+   {
+    "url": "9kAtt2v7.js",
+    "total": 570,
+    "used": 570
+   },
+   {
+    "url": "DbBgN5o9.js",
+    "total": 320,
+    "used": 320
+   },
+   {
+    "url": "BIZOe9pQ.js",
+    "total": 5840,
+    "used": 5840
+   },
+   {
+    "url": "CHRWkYoh.js",
+    "total": 60396,
+    "used": 60396
+   },
+   {
+    "url": "DhGGL1Bk.js",
+    "total": 994,
+    "used": 994
+   },
+   {
+    "url": "2bBXsRpA.js",
+    "total": 22842,
+    "used": 22842
+   },
+   {
+    "url": "CMy-VyRW.js",
+    "total": 1533,
+    "used": 1533
+   },
+   {
+    "url": "J06YIp63.js",
+    "total": 9168,
+    "used": 9168
+   },
+   {
+    "url": "DvXnA7Ix.js",
+    "total": 4439,
+    "used": 4439
+   },
+   {
+    "url": "BIYHBs_V.js",
+    "total": 2224,
+    "used": 2224
+   },
+   {
+    "url": "CeFrBjE6.js",
+    "total": 191239,
+    "used": 191239
+   },
+   {
+    "url": "C7Dn4bqc.js",
+    "total": 1527,
+    "used": 1527
+   },
+   {
+    "url": "D4V1b4QS.js",
+    "total": 3544,
+    "used": 3544
+   },
+   {
+    "url": "ClHycS9H.js",
+    "total": 111821,
+    "used": 111821
+   },
+   {
+    "url": "B8j5dDg0.js",
+    "total": 10248,
+    "used": 10248
+   },
+   {
+    "url": "DR3JJppE.js",
+    "total": 55,
+    "used": 55
+   },
+   {
+    "url": "BAWJoFzA.js",
+    "total": 189,
+    "used": 189
+   },
+   {
+    "url": "R8VRn3pe.js",
+    "total": 471,
+    "used": 471
+   },
+   {
+    "url": "BB6p1ow4.js",
+    "total": 401,
+    "used": 401
+   },
+   {
+    "url": "Bpzih9kW.js",
+    "total": 1098070,
+    "used": 1098070
+   },
+   {
+    "url": "dDUVa82d.js",
+    "total": 976,
+    "used": 976
+   },
+   {
+    "url": "BXf8JuT0.js",
+    "total": 8062,
+    "used": 8062
+   },
+   {
+    "url": "C17z7VQ0.js",
+    "total": 58,
+    "used": 58
+   }
+  ],
+  "css": [
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "blog",
+    "total": 991,
+    "used": 991
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 10642
+   },
+   {
+    "url": "blog",
+    "total": 2495,
+    "used": 2197
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 16615
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 10777
+   },
+   {
+    "url": "blog",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 2335,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 8636,
+    "used": 82
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 6064,
+    "used": 66
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 31578,
+    "used": 155
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 356,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 415,
+    "used": 415
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 1820,
+    "used": 0
+   },
+   {
+    "url": "css2?family=Inter:wght@400..600&display=swap",
+    "total": 2499,
+    "used": 0
+   },
+   {
+    "url": "ServiceCard.D5DSVrtm.css",
+    "total": 6320,
+    "used": 0
+   },
+   {
+    "url": "CalendarPaymentPage.D7KINoYb.css",
+    "total": 1758,
+    "used": 0
+   },
+   {
+    "url": "CalendarLoader.DCl8rx9c.css",
+    "total": 357,
+    "used": 0
+   },
+   {
+    "url": "PhoneElement.CqrgXvy-.css",
+    "total": 848,
+    "used": 0
+   },
+   {
+    "url": "OptionElement.BqgLznve.css",
+    "total": 7162,
+    "used": 0
+   },
+   {
+    "url": "TextAreaElement.CLLI-KzT.css",
+    "total": 241,
+    "used": 0
+   },
+   {
+    "url": "CalendarCoupon.tn0RQdqM.css",
+    "total": 0,
+    "used": 0
+   },
+   {
+    "url": "ghl-payment-element.C8kKxUgx.css",
+    "total": 101968,
+    "used": 63
+   },
+   {
+    "url": "FormComponent.CJjZPMDB.css",
+    "total": 16321,
+    "used": 0
+   },
+   {
+    "url": "CalendarRecurringAppointments.Vukvl6Jq.css",
+    "total": 1822,
+    "used": 0
+   },
+   {
+    "url": "ghl-calendar-element.BoF0rRWL.css",
+    "total": 42726,
+    "used": 218
+   },
+   {
+    "url": "_main.BGhWvMME.css",
+    "total": 285204,
+    "used": 324
+   },
+   {
+    "url": "useUploadSubmitDisable.DpGolzH4.css",
+    "total": 2489,
+    "used": 0
+   },
+   {
+    "url": "app.DVqQD2Si.css",
+    "total": 37776,
+    "used": 38
+   },
+   {
+    "url": "DatePick.CgU1guwP.css",
+    "total": 15216,
+    "used": 0
+   },
+   {
+    "url": "authorizeNet.goKbu3C6.css",
+    "total": 1084,
+    "used": 0
+   },
+   {
+    "url": "RazorPayErrorPopup.BmAiZy8Q.css",
+    "total": 2537,
+    "used": 0
+   },
+   {
+    "url": "UICouponElement.QQk4NWrz.css",
+    "total": 3071,
+    "used": 0
+   },
+   {
+    "url": "TextBoxListElement.BbmoZcvv.css",
+    "total": 96,
+    "used": 0
+   },
+   {
+    "url": "CalendarComponent.Bcm5WNRh.css",
+    "total": 14206,
+    "used": 0
+   },
+   {
+    "url": "CalendarComponentv3.B4DAClqI.css",
+    "total": 15878,
+    "used": 0
+   },
+   {
+    "url": "css2?family=Inter:wght@400..600&display=swap",
+    "total": 2499,
+    "used": 0
+   }
+  ],
+  "all": 861,
+  "hidden": [],
+  "imgs": 15,
+  "big": [
+   {
+    "src": "6afc39930f98a918d8c81436_kd-thumb-ai-call-coaching",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39930f98a918d8c81439_kd-thumb-bookkeeping-kpis",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39930f98a918d8c81441_kd-thumb-revive-cancelled",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39930f98a918d8c8144e_kd-thumb-skip-tracing-dnc",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39930f98a918d8c81448_kd-thumb-leading-vs-laggi",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39930f98a918d8c8144b_kd-thumb-track-contractor",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   }
+  ],
+  "nodims": 6,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:649",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:2975",
+   "inline-style:2495",
+   "inline-style:991",
+   "inline-style:67"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Blog | KPI DRIVER — CRM, KPIs, Automation & AI for Real Estate Investors"
+ },
+ {
+  "u": "/blog-category/kpis-performance",
+  "status": 200,
+  "n": 32,
+  "kb": 1968,
+  "byType": {
+   "document": 29,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 862,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 18,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "kpis-performance",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "kpis-performance",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "kpis-performance",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 10642
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 9692
+   },
+   {
+    "url": "kpis-performance",
+    "total": 119,
+    "used": 110
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 16586
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "kpis-performance",
+    "total": 3644,
+    "used": 3136
+   },
+   {
+    "url": "kpis-performance",
+    "total": 892,
+    "used": 705
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 852,
+  "hidden": [],
+  "imgs": 15,
+  "big": [
+   {
+    "src": "6afc39930f98a918d8c81448_kd-thumb-leading-vs-laggi",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39930f98a918d8c814b8_kd-thumb-weekly-kpi-meeti",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39940f98a918d8c814e8_kd-thumb-cost-per-contrac",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39940f98a918d8c81513_kd-thumb-speed-to-lead-re",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39940f98a918d8c81510_kd-thumb-how-real-estate-",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "69d012ea78af7b1980229b58_Remy%20KPI%20White-p-1600",
+    "nw": 1440,
+    "w": 28,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "6afc39940f98a918d8c8153c_kd-thumb-disposition-kpis",
+    "nw": 900,
+    "w": 220,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   },
+   {
+    "src": "69d012ea78af7b1980229b58_Remy%20KPI%20White-p-1600",
+    "nw": 1440,
+    "w": 28,
+    "lazy": "lazy",
+    "dims": false,
+    "vis": true
+   }
+  ],
+  "nodims": 8,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:852",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "inline-style:119",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:3644",
+   "inline-style:892"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "KPIs & Performance | KPI Driver Blog"
+ },
+ {
+  "u": "/post/lead-manager-vs-acquisition-manager",
+  "status": 200,
+  "n": 27,
+  "kb": 1261,
+  "byType": {
+   "document": 20,
+   "script": 574,
+   "stylesheet": 292,
+   "image": 143,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 13,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "lead-manager-vs-acquisition-manager",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "lead-manager-vs-acquisition-manager",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "lead-manager-vs-acquisition-manager",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   },
+   {
+    "url": "6afb6a2dfb12da21134b8439_kd-posts.js",
+    "total": 21596,
+    "used": 21596
+   }
+  ],
+  "css": [
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 19034
+   },
+   {
+    "url": "lead-manager-vs-acquisition-manager",
+    "total": 834,
+    "used": 772
+   },
+   {
+    "url": "lead-manager-vs-acquisition-manager",
+    "total": 318,
+    "used": 95
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 12014
+   },
+   {
+    "url": "lead-manager-vs-acquisition-manager",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 5167
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 831,
+  "hidden": [],
+  "imgs": 5,
+  "big": [],
+  "nodims": 2,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:1227",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a2dfb12da21134b8439_kd-posts.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:318",
+   "inline-style:834",
+   "inline-style:67"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Lead Manager vs Acquisition Manager: Who Does What | KPI Driver Blog"
+ },
+ {
+  "u": "/policies/privacy-policy",
+  "status": 200,
+  "n": 24,
+  "kb": 1176,
+  "byType": {
+   "document": 15,
+   "script": 553,
+   "stylesheet": 292,
+   "image": 85,
+   "font": 231
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 11,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "privacy-policy",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "privacy-policy",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "privacy-policy",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 14109
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4333
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 0
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 243,
+  "hidden": [],
+  "imgs": 3,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:471",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Privacy Policy | KPI DRIVER"
+ },
+ {
+  "u": "/es",
+  "status": 200,
+  "n": 40,
+  "kb": 2471,
+  "byType": {
+   "document": 52,
+   "script": 976,
+   "stylesheet": 292,
+   "image": 892,
+   "font": 231,
+   "xhr": 27,
+   "ping": 0,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 12,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8,
+   "widgets.boast.io": 1,
+   "api.boast.io": 3,
+   "boast-assets.s3.amazonaws.com": 10
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.elfsight.com/platform/platform.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "es",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "es",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "es",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "components.js",
+    "total": 948247,
+    "used": 948247
+   },
+   {
+    "url": "6afb6a2ccdedf3e0cadbe563_kd-es.js",
+    "total": 165435,
+    "used": 165435
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "es",
+    "total": 74,
+    "used": 74
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 40370
+   },
+   {
+    "url": "es",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 5699
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13489
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 1746,
+  "hidden": [],
+  "imgs": 3,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:4809",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a2ccdedf3e0cadbe563_kd-es.js",
+   "widgets.boast.io/current/components.js",
+   "static.elfsight.com/platform/platform.js",
+   "inline:3018",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "inline-style:36",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:76571",
+   "inline-style:67",
+   "inline-style:74"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "KPI DRIVER — CRM, seguimiento de KPIs y AI Suite para inversionistas inmobiliarios"
+ },
+ {
+  "u": "/es/services/crm",
+  "status": 200,
+  "n": 27,
+  "kb": 1424,
+  "byType": {
+   "document": 37,
+   "script": 716,
+   "stylesheet": 292,
+   "image": 147,
+   "font": 231,
+   "fetch": 1
+  },
+  "hosts": {
+   "www.kpidriver.com": 2,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 13,
+   "fonts.googleapis.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "crm",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "crm",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "crm",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afb6a2ccdedf3e0cadbe563_kd-es.js",
+    "total": 165435,
+    "used": 165435
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4915
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 13442
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 30863
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   }
+  ],
+  "all": 1434,
+  "hidden": [],
+  "imgs": 4,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "inline:3456",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a2ccdedf3e0cadbe563_kd-es.js",
+   "inline:2248",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "inline-style:36",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "CRM | KPI DRIVER — El motor de tu operación inmobiliaria"
+ },
+ {
+  "u": "/knowledge-base",
+  "status": 200,
+  "n": 130,
+  "kb": 3333,
+  "byType": {
+   "document": 127,
+   "script": 1652,
+   "stylesheet": 383,
+   "image": 941,
+   "font": 231
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 18,
+   "fonts.googleapis.com": 3,
+   "ajax.googleapis.com": 1,
+   "link.kpidriver.com": 5,
+   "fonts.gstatic.com": 8,
+   "stcdn.leadconnectorhq.com": 92,
+   "storage.googleapis.com": 1
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+   "Failed to load resource: the server responded with a status of 404 ()",
+   "Refused to display 'https://link.kpidriver.com/' in a frame because it set 'X-Frame-Options' to 'deny'."
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FqGyEJvgf-FM%3",
+   "https://challenges.cloudflare.com/turnstile/v0/api.js",
+   "https://link.kpidriver.com/widget/booking/l4rvIxCnb9DtsSTM6SoQ",
+   "https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "knowledge-base",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "knowledge-base",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "knowledge-base",
+    "total": 566,
+    "used": 566
+   },
+   {
+    "url": "knowledge-base",
+    "total": 636,
+    "used": 636
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "knowledge-base",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "knowledge-base",
+    "total": 2636,
+    "used": 2636
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 4668,
+    "used": 4668
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 16,
+    "used": 16
+   },
+   {
+    "url": "libphonenumber-js.min.js",
+    "total": 181182,
+    "used": 181182
+   },
+   {
+    "url": "iframeResizer.contentWindow.min.js",
+    "total": 22332,
+    "used": 22332
+   },
+   {
+    "url": "xYS3DG92.js",
+    "total": 819274,
+    "used": 819274
+   },
+   {
+    "url": "utils.min.js",
+    "total": 245403,
+    "used": 245403
+   },
+   {
+    "url": "intlTelInput.min.js",
+    "total": 28932,
+    "used": 28932
+   }
+  ],
+  "css": [
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 0
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "knowledge-base",
+    "total": 306,
+    "used": 64
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 14890
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 15838
+   },
+   {
+    "url": "knowledge-base",
+    "total": 119,
+    "used": 110
+   },
+   {
+    "url": "6afd0698091366265f5857f8_kd-members-4.css",
+    "total": 13014,
+    "used": 5172
+   },
+   {
+    "url": "knowledge-base",
+    "total": 3634,
+    "used": 0
+   },
+   {
+    "url": "knowledge-base",
+    "total": 3634,
+    "used": 186
+   },
+   {
+    "url": "knowledge-base",
+    "total": 744,
+    "used": 216
+   },
+   {
+    "url": "knowledge-base",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 356,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 8636,
+    "used": 82
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 415,
+    "used": 415
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 6064,
+    "used": 66
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 2335,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 1820,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 31578,
+    "used": 155
+   },
+   {
+    "url": "css2?family=Inter:wght@400..600&display=swap",
+    "total": 2499,
+    "used": 0
+   },
+   {
+    "url": "TextAreaElement.CLLI-KzT.css",
+    "total": 241,
+    "used": 0
+   },
+   {
+    "url": "useUploadSubmitDisable.DpGolzH4.css",
+    "total": 2489,
+    "used": 0
+   },
+   {
+    "url": "PhoneElement.CqrgXvy-.css",
+    "total": 848,
+    "used": 0
+   },
+   {
+    "url": "TextBoxListElement.BbmoZcvv.css",
+    "total": 96,
+    "used": 0
+   },
+   {
+    "url": "authorizeNet.goKbu3C6.css",
+    "total": 1084,
+    "used": 0
+   },
+   {
+    "url": "CalendarComponent.Bcm5WNRh.css",
+    "total": 14206,
+    "used": 0
+   },
+   {
+    "url": "ServiceCard.D5DSVrtm.css",
+    "total": 6320,
+    "used": 0
+   },
+   {
+    "url": "DatePick.CgU1guwP.css",
+    "total": 15216,
+    "used": 0
+   },
+   {
+    "url": "ghl-payment-element.C8kKxUgx.css",
+    "total": 101968,
+    "used": 63
+   },
+   {
+    "url": "CalendarLoader.DCl8rx9c.css",
+    "total": 357,
+    "used": 0
+   },
+   {
+    "url": "FormComponent.CJjZPMDB.css",
+    "total": 16321,
+    "used": 0
+   },
+   {
+    "url": "RazorPayErrorPopup.BmAiZy8Q.css",
+    "total": 2537,
+    "used": 0
+   },
+   {
+    "url": "_main.BGhWvMME.css",
+    "total": 285204,
+    "used": 324
+   },
+   {
+    "url": "UICouponElement.QQk4NWrz.css",
+    "total": 3071,
+    "used": 0
+   },
+   {
+    "url": "OptionElement.BqgLznve.css",
+    "total": 7162,
+    "used": 0
+   },
+   {
+    "url": "app.DVqQD2Si.css",
+    "total": 37776,
+    "used": 38
+   },
+   {
+    "url": "CalendarCoupon.tn0RQdqM.css",
+    "total": 0,
+    "used": 0
+   },
+   {
+    "url": "ghl-calendar-element.BoF0rRWL.css",
+    "total": 42726,
+    "used": 218
+   },
+   {
+    "url": "CalendarPaymentPage.D7KINoYb.css",
+    "total": 1758,
+    "used": 0
+   },
+   {
+    "url": "CalendarComponentv3.B4DAClqI.css",
+    "total": 15878,
+    "used": 0
+   },
+   {
+    "url": "CalendarRecurringAppointments.Vukvl6Jq.css",
+    "total": 1822,
+    "used": 0
+   }
+  ],
+  "all": 449,
+  "hidden": [
+   "DIV.sign_up-pop_up#sign-up-pop_up (73 nodes)"
+  ],
+  "imgs": 10,
+  "big": [],
+  "nodims": 6,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js",
+   "inline:566",
+   "challenges.cloudflare.com/turnstile/v0/api.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "inline:636",
+   "link.kpidriver.com/js/form_embed.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "inline:2636"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "inline-style:119",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "inline-style:306",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd0698091366265f5857f8_kd-members-4.",
+   "inline-style:2975",
+   "inline-style:3634",
+   "inline-style:3634",
+   "inline-style:744",
+   "inline-style:67"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 2,
+  "title": "KPI DRIVER - Knowledge Base"
+ },
+ {
+  "u": "/log-in",
+  "status": 200,
+  "n": 122,
+  "kb": 2467,
+  "byType": {
+   "document": 116,
+   "script": 1652,
+   "stylesheet": 383,
+   "image": 86,
+   "font": 231
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 13,
+   "fonts.googleapis.com": 3,
+   "link.kpidriver.com": 2,
+   "ajax.googleapis.com": 1,
+   "fonts.gstatic.com": 8,
+   "storage.googleapis.com": 1,
+   "stcdn.leadconnectorhq.com": 92
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://challenges.cloudflare.com/turnstile/v0/api.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "log-in",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "log-in",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "log-in",
+    "total": 99,
+    "used": 99
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "log-in",
+    "total": 566,
+    "used": 566
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "log-in",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "log-in",
+    "total": 1794,
+    "used": 1794
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 4668,
+    "used": 4668
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 16,
+    "used": 16
+   },
+   {
+    "url": "iframeResizer.contentWindow.min.js",
+    "total": 22332,
+    "used": 22332
+   },
+   {
+    "url": "xYS3DG92.js",
+    "total": 819274,
+    "used": 819274
+   },
+   {
+    "url": "utils.min.js",
+    "total": 245403,
+    "used": 245403
+   },
+   {
+    "url": "libphonenumber-js.min.js",
+    "total": 181182,
+    "used": 181182
+   },
+   {
+    "url": "intlTelInput.min.js",
+    "total": 28932,
+    "used": 28932
+   }
+  ],
+  "css": [
+   {
+    "url": "log-in",
+    "total": 126,
+    "used": 58
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 14738
+   },
+   {
+    "url": "log-in",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "6afd0698091366265f5857f8_kd-members-4.css",
+    "total": 13014,
+    "used": 4908
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 0
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 17835
+   },
+   {
+    "url": "log-in",
+    "total": 3634,
+    "used": 186
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 1820,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 2335,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 31578,
+    "used": 155
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 356,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 8636,
+    "used": 82
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 415,
+    "used": 415
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 6064,
+    "used": 66
+   },
+   {
+    "url": "css2?family=Inter:wght@400..600&display=swap",
+    "total": 2499,
+    "used": 0
+   },
+   {
+    "url": "PhoneElement.CqrgXvy-.css",
+    "total": 848,
+    "used": 0
+   },
+   {
+    "url": "OptionElement.BqgLznve.css",
+    "total": 7162,
+    "used": 0
+   },
+   {
+    "url": "CalendarLoader.DCl8rx9c.css",
+    "total": 357,
+    "used": 0
+   },
+   {
+    "url": "TextAreaElement.CLLI-KzT.css",
+    "total": 241,
+    "used": 0
+   },
+   {
+    "url": "RazorPayErrorPopup.BmAiZy8Q.css",
+    "total": 2537,
+    "used": 0
+   },
+   {
+    "url": "UICouponElement.QQk4NWrz.css",
+    "total": 3071,
+    "used": 0
+   },
+   {
+    "url": "TextBoxListElement.BbmoZcvv.css",
+    "total": 96,
+    "used": 0
+   },
+   {
+    "url": "_main.BGhWvMME.css",
+    "total": 285204,
+    "used": 324
+   },
+   {
+    "url": "CalendarRecurringAppointments.Vukvl6Jq.css",
+    "total": 1822,
+    "used": 0
+   },
+   {
+    "url": "ghl-payment-element.C8kKxUgx.css",
+    "total": 101968,
+    "used": 63
+   },
+   {
+    "url": "DatePick.CgU1guwP.css",
+    "total": 15216,
+    "used": 0
+   },
+   {
+    "url": "CalendarCoupon.tn0RQdqM.css",
+    "total": 0,
+    "used": 0
+   },
+   {
+    "url": "ghl-calendar-element.BoF0rRWL.css",
+    "total": 42726,
+    "used": 218
+   },
+   {
+    "url": "CalendarComponent.Bcm5WNRh.css",
+    "total": 14206,
+    "used": 0
+   },
+   {
+    "url": "CalendarComponentv3.B4DAClqI.css",
+    "total": 15878,
+    "used": 0
+   },
+   {
+    "url": "useUploadSubmitDisable.DpGolzH4.css",
+    "total": 2489,
+    "used": 0
+   },
+   {
+    "url": "ServiceCard.D5DSVrtm.css",
+    "total": 6320,
+    "used": 0
+   },
+   {
+    "url": "FormComponent.CJjZPMDB.css",
+    "total": 16321,
+    "used": 0
+   },
+   {
+    "url": "app.DVqQD2Si.css",
+    "total": 37776,
+    "used": 38
+   },
+   {
+    "url": "authorizeNet.goKbu3C6.css",
+    "total": 1084,
+    "used": 0
+   },
+   {
+    "url": "CalendarPaymentPage.D7KINoYb.css",
+    "total": 1758,
+    "used": 0
+   }
+  ],
+  "all": 460,
+  "hidden": [
+   "SECTION.section-faq#why (147 nodes)"
+  ],
+  "imgs": 4,
+  "big": [],
+  "nodims": 1,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "inline:99",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js",
+   "inline:566",
+   "challenges.cloudflare.com/turnstile/v0/api.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "inline:1794"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "inline-style:126",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd0698091366265f5857f8_kd-members-4.",
+   "inline-style:2975",
+   "inline-style:3634",
+   "inline-style:67"
+  ],
+  "dupIds": [
+   "Homex2"
+  ],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 2,
+  "title": "Log in"
+ },
+ {
+  "u": "/article/crm-dashboard-walkthrough",
+  "status": 200,
+  "n": 137,
+  "kb": 2938,
+  "byType": {
+   "document": 121,
+   "script": 1667,
+   "stylesheet": 385,
+   "image": 535,
+   "font": 231
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "cdn.prod.website-files.com": 23,
+   "fonts.googleapis.com": 3,
+   "ajax.googleapis.com": 1,
+   "link.kpidriver.com": 4,
+   "fonts.gstatic.com": 8,
+   "storage.googleapis.com": 1,
+   "stcdn.leadconnectorhq.com": 95
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+   "Failed to load resource: the server responded with a status of 404 ()",
+   "Refused to display 'https://link.kpidriver.com/' in a frame because it set 'X-Frame-Options' to 'deny'."
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js",
+   "https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.loom.com%2Fembed%2Fe0d08a5042eb4aa6",
+   "https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L",
+   "https://link.kpidriver.com/widget/booking/l4rvIxCnb9DtsSTM6SoQ"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "crm-dashboard-walkthrough",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "crm-dashboard-walkthrough",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "crm-dashboard-walkthrough",
+    "total": 566,
+    "used": 566
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "form_embed.js",
+    "total": 55137,
+    "used": 55137
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "crm-dashboard-walkthrough",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 4668,
+    "used": 4668
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 16,
+    "used": 16
+   },
+   {
+    "url": "iframeResizer.contentWindow.min.js",
+    "total": 22332,
+    "used": 22332
+   },
+   {
+    "url": "xYS3DG92.js",
+    "total": 819274,
+    "used": 819274
+   },
+   {
+    "url": "libphonenumber-js.min.js",
+    "total": 181182,
+    "used": 181182
+   },
+   {
+    "url": "utils.min.js",
+    "total": 245403,
+    "used": 245403
+   },
+   {
+    "url": "intlTelInput.min.js",
+    "total": 28932,
+    "used": 28932
+   },
+   {
+    "url": "csj4nmaI.js",
+    "total": 1734,
+    "used": 1734
+   },
+   {
+    "url": "aHGdU-VF.js",
+    "total": 67572,
+    "used": 67572
+   },
+   {
+    "url": "B6uQOFEn.js",
+    "total": 9747,
+    "used": 9747
+   },
+   {
+    "url": "C3XJDohm.js",
+    "total": 11391,
+    "used": 11391
+   },
+   {
+    "url": "D7Xd77wU.js",
+    "total": 103959,
+    "used": 103959
+   },
+   {
+    "url": "edcvo9Df.js",
+    "total": 255,
+    "used": 255
+   },
+   {
+    "url": "BLiIsASK.js",
+    "total": 23312,
+    "used": 23312
+   },
+   {
+    "url": "DuFGbNdR.js",
+    "total": 11916,
+    "used": 11916
+   },
+   {
+    "url": "BAoQ-xbn.js",
+    "total": 1093,
+    "used": 1093
+   },
+   {
+    "url": "DuzQ9U3X.js",
+    "total": 255,
+    "used": 255
+   },
+   {
+    "url": "pIy_QS3G.js",
+    "total": 1015,
+    "used": 1015
+   },
+   {
+    "url": "BNyhO2Hn.js",
+    "total": 742,
+    "used": 742
+   },
+   {
+    "url": "DcretrGW.js",
+    "total": 839,
+    "used": 839
+   },
+   {
+    "url": "C4wcNCku.js",
+    "total": 894,
+    "used": 894
+   },
+   {
+    "url": "zQDIoL-k.js",
+    "total": 871,
+    "used": 871
+   },
+   {
+    "url": "Czyo78Ra.js",
+    "total": 3269,
+    "used": 3269
+   },
+   {
+    "url": "ynvMkNdm.js",
+    "total": 3406,
+    "used": 3406
+   },
+   {
+    "url": "DBZt6gZd.js",
+    "total": 2563,
+    "used": 2563
+   },
+   {
+    "url": "DEuEQymF.js",
+    "total": 3566,
+    "used": 3566
+   },
+   {
+    "url": "DSeL4Exu.js",
+    "total": 20005,
+    "used": 20005
+   },
+   {
+    "url": "DTCQcN45.js",
+    "total": 10206,
+    "used": 10206
+   },
+   {
+    "url": "D29D0BPE.js",
+    "total": 1994,
+    "used": 1994
+   },
+   {
+    "url": "D1OHNg6k.js",
+    "total": 4076,
+    "used": 4076
+   },
+   {
+    "url": "BeEgUaFm.js",
+    "total": 1683,
+    "used": 1683
+   },
+   {
+    "url": "BEY08Pr6.js",
+    "total": 1560,
+    "used": 1560
+   },
+   {
+    "url": "CfMwnN7J.js",
+    "total": 4257,
+    "used": 4257
+   },
+   {
+    "url": "BFf-IGhH.js",
+    "total": 13444,
+    "used": 13444
+   },
+   {
+    "url": "DSA2XrAD.js",
+    "total": 4540,
+    "used": 4540
+   },
+   {
+    "url": "DkteDPp6.js",
+    "total": 1057,
+    "used": 1057
+   },
+   {
+    "url": "XUZG6FzS.js",
+    "total": 3519,
+    "used": 3519
+   },
+   {
+    "url": "DoHEYfwd.js",
+    "total": 21563,
+    "used": 21563
+   },
+   {
+    "url": "C3e4t58V.js",
+    "total": 90,
+    "used": 90
+   },
+   {
+    "url": "DpGxo2Of.js",
+    "total": 101,
+    "used": 101
+   },
+   {
+    "url": "BEh3SjId.js",
+    "total": 3021,
+    "used": 3021
+   },
+   {
+    "url": "DzWXQSzc.js",
+    "total": 2771,
+    "used": 2771
+   },
+   {
+    "url": "DKeuBCMA.js",
+    "total": 34,
+    "used": 34
+   },
+   {
+    "url": "BPzZT6qn.js",
+    "total": 995,
+    "used": 995
+   },
+   {
+    "url": "DRNKrJGC.js",
+    "total": 302,
+    "used": 302
+   },
+   {
+    "url": "CVOfVXL2.js",
+    "total": 3253,
+    "used": 3253
+   },
+   {
+    "url": "CmNKWlnT.js",
+    "total": 867,
+    "used": 867
+   },
+   {
+    "url": "5TLU508A.js",
+    "total": 809,
+    "used": 809
+   },
+   {
+    "url": "BD_ddYlA.js",
+    "total": 14017,
+    "used": 14017
+   },
+   {
+    "url": "DkBnx__q.js",
+    "total": 9648,
+    "used": 9648
+   },
+   {
+    "url": "B4K7AhKD.js",
+    "total": 3875,
+    "used": 3875
+   },
+   {
+    "url": "wkFwOf5F.js",
+    "total": 4842,
+    "used": 4842
+   },
+   {
+    "url": "9kAtt2v7.js",
+    "total": 570,
+    "used": 570
+   },
+   {
+    "url": "DbBgN5o9.js",
+    "total": 320,
+    "used": 320
+   },
+   {
+    "url": "CHRWkYoh.js",
+    "total": 60396,
+    "used": 60396
+   },
+   {
+    "url": "BIZOe9pQ.js",
+    "total": 5840,
+    "used": 5840
+   },
+   {
+    "url": "DhGGL1Bk.js",
+    "total": 994,
+    "used": 994
+   },
+   {
+    "url": "2bBXsRpA.js",
+    "total": 22842,
+    "used": 22842
+   },
+   {
+    "url": "J06YIp63.js",
+    "total": 9168,
+    "used": 9168
+   },
+   {
+    "url": "CMy-VyRW.js",
+    "total": 1533,
+    "used": 1533
+   },
+   {
+    "url": "DvXnA7Ix.js",
+    "total": 4439,
+    "used": 4439
+   },
+   {
+    "url": "BIYHBs_V.js",
+    "total": 2224,
+    "used": 2224
+   },
+   {
+    "url": "C7Dn4bqc.js",
+    "total": 1527,
+    "used": 1527
+   },
+   {
+    "url": "CeFrBjE6.js",
+    "total": 191239,
+    "used": 191239
+   },
+   {
+    "url": "ClHycS9H.js",
+    "total": 111821,
+    "used": 111821
+   },
+   {
+    "url": "D4V1b4QS.js",
+    "total": 3544,
+    "used": 3544
+   },
+   {
+    "url": "B8j5dDg0.js",
+    "total": 10248,
+    "used": 10248
+   },
+   {
+    "url": "BAWJoFzA.js",
+    "total": 189,
+    "used": 189
+   },
+   {
+    "url": "DR3JJppE.js",
+    "total": 55,
+    "used": 55
+   },
+   {
+    "url": "R8VRn3pe.js",
+    "total": 471,
+    "used": 471
+   },
+   {
+    "url": "Bpzih9kW.js",
+    "total": 1098070,
+    "used": 1098070
+   },
+   {
+    "url": "BB6p1ow4.js",
+    "total": 401,
+    "used": 401
+   },
+   {
+    "url": "BXf8JuT0.js",
+    "total": 8062,
+    "used": 8062
+   },
+   {
+    "url": "dDUVa82d.js",
+    "total": 976,
+    "used": 976
+   },
+   {
+    "url": "C17z7VQ0.js",
+    "total": 58,
+    "used": 58
+   },
+   {
+    "url": "BrjExGBJ.js",
+    "total": 72784,
+    "used": 72784
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 16,
+    "used": 16
+   }
+  ],
+  "css": [
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 0
+   },
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 15626
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 13027
+   },
+   {
+    "url": "6afd0698091366265f5857f8_kd-members-4.css",
+    "total": 13014,
+    "used": 5458
+   },
+   {
+    "url": "crm-dashboard-walkthrough",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 1820,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 31578,
+    "used": 155
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 415,
+    "used": 415
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 6064,
+    "used": 66
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 356,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 2335,
+    "used": 0
+   },
+   {
+    "url": "9g3ccVyd2a9NsV51QuKN",
+    "total": 8636,
+    "used": 82
+   },
+   {
+    "url": "css2?family=Inter:wght@400..600&display=swap",
+    "total": 2499,
+    "used": 0
+   },
+   {
+    "url": "useUploadSubmitDisable.DpGolzH4.css",
+    "total": 2489,
+    "used": 0
+   },
+   {
+    "url": "TextAreaElement.CLLI-KzT.css",
+    "total": 241,
+    "used": 0
+   },
+   {
+    "url": "UICouponElement.QQk4NWrz.css",
+    "total": 3071,
+    "used": 0
+   },
+   {
+    "url": "FormComponent.CJjZPMDB.css",
+    "total": 16321,
+    "used": 0
+   },
+   {
+    "url": "CalendarPaymentPage.D7KINoYb.css",
+    "total": 1758,
+    "used": 0
+   },
+   {
+    "url": "authorizeNet.goKbu3C6.css",
+    "total": 1084,
+    "used": 0
+   },
+   {
+    "url": "ghl-payment-element.C8kKxUgx.css",
+    "total": 101968,
+    "used": 63
+   },
+   {
+    "url": "RazorPayErrorPopup.BmAiZy8Q.css",
+    "total": 2537,
+    "used": 0
+   },
+   {
+    "url": "OptionElement.BqgLznve.css",
+    "total": 7162,
+    "used": 0
+   },
+   {
+    "url": "ServiceCard.D5DSVrtm.css",
+    "total": 6320,
+    "used": 0
+   },
+   {
+    "url": "_main.BGhWvMME.css",
+    "total": 285204,
+    "used": 324
+   },
+   {
+    "url": "CalendarComponentv3.B4DAClqI.css",
+    "total": 15878,
+    "used": 0
+   },
+   {
+    "url": "CalendarLoader.DCl8rx9c.css",
+    "total": 357,
+    "used": 0
+   },
+   {
+    "url": "DatePick.CgU1guwP.css",
+    "total": 15216,
+    "used": 0
+   },
+   {
+    "url": "ghl-calendar-element.BoF0rRWL.css",
+    "total": 42726,
+    "used": 218
+   },
+   {
+    "url": "app.DVqQD2Si.css",
+    "total": 37776,
+    "used": 38
+   },
+   {
+    "url": "CalendarRecurringAppointments.Vukvl6Jq.css",
+    "total": 1822,
+    "used": 0
+   },
+   {
+    "url": "CalendarCoupon.tn0RQdqM.css",
+    "total": 0,
+    "used": 0
+   },
+   {
+    "url": "CalendarComponent.Bcm5WNRh.css",
+    "total": 14206,
+    "used": 0
+   },
+   {
+    "url": "PhoneElement.CqrgXvy-.css",
+    "total": 848,
+    "used": 0
+   },
+   {
+    "url": "TextBoxListElement.BbmoZcvv.css",
+    "total": 96,
+    "used": 0
+   },
+   {
+    "url": "css2?family=Inter:wght@400..600&display=swap",
+    "total": 2499,
+    "used": 0
+   },
+   {
+    "url": "intlTelInput.min.css",
+    "total": 19157,
+    "used": 0
+   }
+  ],
+  "all": 559,
+  "hidden": [
+   "SECTION.section-faq#why (147 nodes)"
+  ],
+  "imgs": 10,
+  "big": [],
+  "nodims": 7,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js",
+   "inline:566",
+   "link.kpidriver.com/js/form_embed.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "link.kpidriver.com/js/form_embed.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5."
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd0698091366265f5857f8_kd-members-4.",
+   "inline-style:2975",
+   "inline-style:67"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "KPI DRIVER – CRM Dashboard Walkthrough 📈 🧭"
+ },
+ {
+  "u": "/no-such-page",
+  "status": 404,
+  "n": 25,
+  "kb": 1392,
+  "byType": {
+   "document": 12,
+   "script": 553,
+   "stylesheet": 292,
+   "font": 231,
+   "image": 303
+  },
+  "hosts": {
+   "www.kpidriver.com": 1,
+   "d3e54v103j8qbb.cloudfront.net": 1,
+   "ajax.googleapis.com": 1,
+   "cdn.prod.website-files.com": 12,
+   "fonts.googleapis.com": 2,
+   "fonts.gstatic.com": 8
+  },
+  "fonts": 8,
+  "dupReq": [],
+  "errs": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)",
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "blocked": [
+   "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "https://static.memberstack.com/scripts/v1/memberstack.js"
+  ],
+  "js": [
+   {
+    "url": "webfont.js",
+    "total": 13188,
+    "used": 13188
+   },
+   {
+    "url": "no-such-page",
+    "total": 108,
+    "used": 108
+   },
+   {
+    "url": "no-such-page",
+    "total": 181,
+    "used": 181
+   },
+   {
+    "url": "6afb6a420fb8f221316e3e1e_kd-head-2.js",
+    "total": 1673,
+    "used": 1673
+   },
+   {
+    "url": "jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf883f",
+    "total": 89476,
+    "used": 89476
+   },
+   {
+    "url": "webflow.schunk.36b8fb49256177c8.js",
+    "total": 41429,
+    "used": 41429
+   },
+   {
+    "url": "webflow.ce9e8dea.dc8bf8ab8f94ea94.js",
+    "total": 321617,
+    "used": 321617
+   },
+   {
+    "url": "no-such-page",
+    "total": 215,
+    "used": 215
+   },
+   {
+    "url": "6afce87a8c6000918d7d88d1_kd-booking-5.js",
+    "total": 46001,
+    "used": 46001
+   },
+   {
+    "url": "6afd79603a8d5b692f50c786_kd-site-12.js",
+    "total": 60802,
+    "used": 60802
+   }
+  ],
+  "css": [
+   {
+    "url": "kpidriver.webflow.shared.4e1030431.css",
+    "total": 173665,
+    "used": 4501
+   },
+   {
+    "url": "css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,5",
+    "total": 23205,
+    "used": 0
+   },
+   {
+    "url": "css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:",
+    "total": 11319,
+    "used": 0
+   },
+   {
+    "url": "no-such-page",
+    "total": 67,
+    "used": 64
+   },
+   {
+    "url": "6afcd30a34c9736907449f20_kd-booking-2.css",
+    "total": 20882,
+    "used": 0
+   },
+   {
+    "url": "no-such-page",
+    "total": 74,
+    "used": 74
+   },
+   {
+    "url": "6afd79601cf45b67e80ca01e_kd-site-11.css",
+    "total": 70138,
+    "used": 14381
+   }
+  ],
+  "all": 206,
+  "hidden": [],
+  "imgs": 4,
+  "big": [],
+  "nodims": 0,
+  "scripts": [
+   "ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "inline:108",
+   "inline:181",
+   "cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+   "static.memberstack.com/scripts/v1/memberstack.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afb6a420fb8f221316e3e1e_kd-head-2.js",
+   "d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68974c57cac027f80fdf8",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.schunk.36b8fb49256177c8.js",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/js/webflow.ce9e8dea.dc8bf8ab8f94ea94.j",
+   "inline:215",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afce87a8c6000918d7d88d1_kd-booking-5.",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79603a8d5b692f50c786_kd-site-12.js"
+  ],
+  "styles": [
+   "inline-style:58",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/css/kpidriver.webflow.shared.4e1030431",
+   "fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CInter+Tight:300,400,500,600,70",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afcd30a34c9736907449f20_kd-booking-2.",
+   "fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;",
+   "cdn.prod.website-files.com/68974c57cac027f80fdf883f/6afd79601cf45b67e80ca01e_kd-site-11.cs",
+   "inline-style:67",
+   "inline-style:74"
+  ],
+  "dupIds": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "h1": 1,
+  "title": "Not Found"
+ }
+]

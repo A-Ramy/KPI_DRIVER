@@ -166,3 +166,10 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Selecting a stage: gear readout rolls (fixed width = longest stage name, measured after fonts load), pulse from the stage, light runs along outgoing lines (only while the diagram is on screen; off with reduced motion). 4/5/6 are clickable but have no tab.
 - Tabs on one row with gear badges (ES uses tighter type to fit); panels stacked in one grid cell so the box keeps the tallest stage's height. Verified on staging and live, light + dark, no errors.
 - The page embeds still hold the old journey HTML as the no-JS fallback; rebuilding the three embeds would put the new text in the page source.
+
+## 2026-11-18 — full site audit (report: webflow/site-audit.html, data + scripts: webflow/audit/)
+- Critical: robots.txt disallows /blog, /post/, /blog-category/ (owner must edit in Site settings); 5 of 6 GHL booking IDs in CTA hrefs return 404 (17jl…, l4rv…, 3blt…, o811…, usaN…; 9g3cc… is fine).
+- High: /es pages ship English HTML + 167 KB kd-es.js (Nov 16, patched at runtime); contact webhook URL public in site-level booking config (booking chat).
+- Weight: 1.2 MB baseline per page; unused Inter fonts (~105 KB), Webflow shared CSS 170 KB at 2-9% use, Finsweet v2 unused site-wide, Memberstack site-wide; Boast 926 KB on home; GHL calendar embeds on blog/KB/articles.
+- Assets: 206 of 242 unused (~100 MB): 32 superseded kd CSS/JS, 14 replaced covers, 160 old template uploads. 12 draft pages. Deletions need owner OK.
+- Our code: 49 duplicate selector definitions, ~120 never-matched selectors, dead JS (tabs, circuit, form, booking embed). Plan: consolidate to ~45 KB CSS / ~50 KB JS with pixel-diff verification.

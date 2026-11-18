@@ -1,0 +1,217 @@
+<title>KPI DRIVER Site Audit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column (report), with wide tables scrolling inside their own boxes. */
+:root {
+  --bg: #f4f5f7; --surface: #ffffff; --fg: #0e1b2a; --muted: #56657a; --rule: #dbe0e7; --row: #f7f8fa;
+  --accent: #2b6cb0; --crit: #c2382f; --high: #b4690e; --med: #2b6cb0; --ok: #1f7a4f;
+  --crit-bg: #fbeceb; --high-bg: #fdf3e4; --med-bg: #eaf1fa; --ok-bg: #e7f4ec;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif; --body: "Barlow", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #08131e; --surface: #0f1e2d; --fg: #e6ecf2; --muted: #9aa8ba; --rule: #22344a; --row: #12243a; --accent: #6aaef0; --crit: #ff8077; --high: #f2b562; --med: #7db7f2; --ok: #6fd6a2; --crit-bg: #3a1b1b; --high-bg: #3a2a14; --med-bg: #14263b; --ok-bg: #143022; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #08131e; --surface: #0f1e2d; --fg: #e6ecf2; --muted: #9aa8ba; --rule: #22344a; --row: #12243a; --accent: #6aaef0; --crit: #ff8077; --high: #f2b562; --med: #7db7f2; --ok: #6fd6a2; --crit-bg: #3a1b1b; --high-bg: #3a2a14; --med-bg: #14263b; --ok-bg: #143022; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px }
+.wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 34px }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; gap: 10px; align-items: center; margin: 0 }
+.eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--accent) }
+h1 { font: 700 clamp(36px, 5.5vw, 56px)/1 var(--display); text-transform: uppercase; margin: 10px 0 12px; text-wrap: balance }
+h2 { font: 700 clamp(26px, 3.4vw, 32px)/1.1 var(--display); text-transform: uppercase; margin: 0 0 6px; text-wrap: balance }
+h3 { font: 700 20px/1.2 var(--display); text-transform: uppercase; letter-spacing: .02em; margin: 0 }
+p { margin: 0 }
+.lede { color: var(--muted); max-width: 68ch }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px }
+.stat { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; display: grid; gap: 4px }
+.stat b { font: 700 34px/1 var(--display); font-variant-numeric: tabular-nums }
+.stat span { color: var(--muted); font-size: 15px; line-height: 1.4 }
+section { display: grid; gap: 14px; min-width: 0 }
+.sub { color: var(--muted); max-width: 70ch }
+.items { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none }
+.item { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; display: grid; gap: 8px; min-width: 0 }
+.item header { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline }
+.chip { font: 500 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 5px 8px; border-radius: 999px; white-space: nowrap }
+.crit { color: var(--crit); background: var(--crit-bg) } .high { color: var(--high); background: var(--high-bg) } .med { color: var(--med); background: var(--med-bg) } .ok { color: var(--ok); background: var(--ok-bg) }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 500 12.5px/1.4 var(--mono); color: var(--muted) }
+.meta b { color: var(--fg); font-weight: 500 }
+.fix { border-left: 2px solid var(--accent); padding-left: 12px }
+.tbl { overflow-x: auto; border: 1px solid var(--rule); border-radius: 12px; background: var(--surface) }
+table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 640px }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--row) }
+tr:last-child td { border-bottom: 0 }
+td.n { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap }
+th.n { text-align: right }
+.bar { display: inline-block; height: 8px; border-radius: 4px; background: var(--accent); vertical-align: middle; margin-right: 8px; opacity: .75 }
+code { font: 500 .86em var(--mono); background: var(--row); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere }
+.phases { display: grid; gap: 12px; counter-reset: ph }
+.phase { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; display: grid; gap: 8px }
+.phase ul, .item ul { margin: 0; padding-left: 20px; display: grid; gap: 4px }
+.two { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) }
+.note { font-size: 14.5px; color: var(--muted) }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">www.kpidriver.com · audited 18 Nov 2026</p>
+    <h1>Site audit</h1>
+    <p class="lede">I tested 19 page types in English and Spanish in both themes, crawled all 144 live URLs, measured how much of every CSS and script file each page actually uses, and checked the asset library, pages, site code and the repo. The site works: no errors from our code, every page loads, the header, footer and booking work. The issues are weight, search visibility, dead links behind the booking buttons, and leftovers from the old template and from our own fix rounds.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>45</b><span>blog posts and 10 category pages that robots.txt hides from Google</span></div>
+    <div class="stat"><b>1.2–3.3 MB</b><span>downloaded per page; even the privacy policy is 1.2 MB</span></div>
+    <div class="stat"><b>206 of 242</b><span>assets in the library unused on the live site (about 100 MB)</span></div>
+    <div class="stat"><b>5 of 6</b><span>booking links behind the "Book a call" buttons now return 404</span></div>
+  </div>
+
+  <section aria-labelledby="s1">
+    <h2 id="s1">Fix first</h2>
+    <p class="sub">These affect visitors or search results today.</p>
+    <ul class="items">
+      <li class="item"><header><span class="chip crit">Critical</span><h3>robots.txt blocks the whole blog</h3></header>
+        <p>The live robots.txt disallows <code>/blog</code>, <code>/post/</code> and <code>/blog-category/</code>, so Google is told not to read any of the 45 English posts or the category pages, even though they are in the sitemap. The Spanish copies are not blocked. It also lists dead paths from the old site (<code>/sase-studies</code>, <code>/about-us</code>, <code>/for-clients/…</code>) and blocks <code>/thank-you</code>, which is still in the sitemap.</p>
+        <p class="fix">Webflow: Site settings → SEO → robots.txt. Replace with <code>User-agent: *</code>, <code>Disallow: /log-in</code>, <code>Disallow: /thank-you</code>, the sitemap line, and nothing else. Then turn off "include in sitemap" on Thank You.</p>
+        <div class="meta"><span>Who: <b>you, in Site settings</b> (not reachable through the API)</span><span>Effort: <b>5 minutes</b></span></div></li>
+
+      <li class="item"><header><span class="chip crit">Critical</span><h3>"Book a call" links point to deleted calendars</h3></header>
+        <p>Every booking button has a fallback link to a GoHighLevel calendar. Five of the six calendar IDs used across the site return 404 (header CTA <code>17jl7…</code>, footer <code>l4rv…</code>, Services/CRM <code>3blt…</code>, Our Team <code>o811…</code>, Contact <code>usaN…</code>). A normal click still opens the booking pop-up, so most visitors never notice. But anyone who opens the link in a new tab, long-presses it on a phone, or clicks before the scripts load lands on a dead page, and search engines see broken links.</p>
+        <p class="fix">Point every booking link at <code>/book-discovery-call</code> (our own page, which runs the same pop-up) and keep the pop-up behaviour. I can do this in one pass across the page embeds and the Spanish bundle.</p>
+        <div class="meta"><span>Who: <b>me</b></span><span>Effort: <b>small</b></span><span>Looks: <b>unchanged</b></span></div></li>
+
+      <li class="item"><header><span class="chip high">High</span><h3>Spanish pages ship English HTML</h3></header>
+        <p>On <code>/es/*</code> the page source is the English page. A 167 KB script (<code>kd-es.js</code>) then swaps in the Spanish header, body and footer, while the page is hidden for up to 3 seconds. Search engines that do not run scripts index English text under Spanish URLs. The bundle dates from 16 Nov, so later content fixes reach Spanish visitors only through small runtime patches.</p>
+        <p class="fix">Rebuild the Spanish bundle from today's sources, so the patches are no longer needed, and split it per page (about 10–25 KB each instead of 167 KB on every Spanish page). Longer term, put the Spanish text into the Webflow localization itself so it is in the page source.</p>
+        <div class="meta"><span>Who: <b>me</b></span><span>Effort: <b>medium</b></span><span>Looks: <b>unchanged</b></span></div></li>
+
+      <li class="item"><header><span class="chip high">High</span><h3>Contact webhook is public in browser code</h3></header>
+        <p>The site-wide booking config (built in the other chat) puts the GoHighLevel inbound webhook URL for the contact form in the page source. Anyone can copy it and post fake leads straight into the CRM, skipping the form's checks.</p>
+        <p class="fix">Send the contact form through the same Webflow Cloud app the booking already uses (<code>/api/booking/…</code>), which keeps the webhook server-side and lets it rate-limit.</p>
+        <div class="meta"><span>Who: <b>the booking chat</b> (it owns the site-level code)</span></div></li>
+
+      <li class="item"><header><span class="chip med">Medium</span><h3>Knowledge base: broken embeds and empty SEO</h3></header>
+        <p>The knowledge base page carries four hidden booking iframes from the old template. Three of them point to deleted calendars, and the calendar script loads four times, adding about 2 MB and 90+ requests. Article and category pages have empty meta descriptions, because their template fields render blank, and the page has a second hidden <code>&lt;h1&gt;</code>.</p>
+        <p class="fix">Remove the hidden booking blocks from the members template, fix the two SEO description templates, and drop the hidden heading.</p>
+        <div class="meta"><span>Who: <b>me</b> (Designer elements) </span><span>Effort: <b>small</b></span></div></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="s2">
+    <h2 id="s2">Where the weight comes from</h2>
+    <p class="sub">Bytes downloaded per page on a fresh visit (desktop). The fixed cost on every page is about 1.1 MB of scripts, styles and fonts before any content.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Page</th><th class="n">Requests</th><th class="n">Total</th><th class="n">Scripts</th><th class="n">Images</th><th>Main extra cost</th></tr></thead>
+      <tbody>
+        <tr><td>Privacy policy (baseline)</td><td class="n">24</td><td class="n"><span class="bar" style="width:35px"></span>1,176 KB</td><td class="n">553 KB</td><td class="n">85 KB</td><td>Nothing; this is the fixed cost</td></tr>
+        <tr><td>Services, CRM, AI Suite, AI Agent</td><td class="n">25</td><td class="n"><span class="bar" style="width:37px"></span>~1,220 KB</td><td class="n">553 KB</td><td class="n">85–150 KB</td><td>Close to baseline</td></tr>
+        <tr><td>Home</td><td class="n">39</td><td class="n"><span class="bar" style="width:69px"></span>2,308 KB</td><td class="n">813 KB</td><td class="n">892 KB</td><td>Reviews widget (926 KB script), review photos at 1280px shown at 350px</td></tr>
+        <tr><td>Contact</td><td class="n">33</td><td class="n"><span class="bar" style="width:48px"></span>1,611 KB</td><td class="n">593 KB</td><td class="n">147 KB</td><td>Map</td></tr>
+        <tr><td>Blog</td><td class="n">129</td><td class="n"><span class="bar" style="width:82px"></span>2,729 KB</td><td class="n">1,667 KB</td><td class="n">353 KB</td><td>Old GoHighLevel calendar embed loading on page load (94 requests); thumbnails 900px shown at 220px</td></tr>
+        <tr><td>Blog category</td><td class="n">32</td><td class="n"><span class="bar" style="width:59px"></span>1,968 KB</td><td class="n">553 KB</td><td class="n">862 KB</td><td>Oversized thumbnails</td></tr>
+        <tr><td>Spanish home</td><td class="n">40</td><td class="n"><span class="bar" style="width:74px"></span>2,471 KB</td><td class="n">976 KB</td><td class="n">892 KB</td><td>Home extras + 167 KB Spanish bundle</td></tr>
+        <tr><td>Knowledge base</td><td class="n">130</td><td class="n"><span class="bar" style="width:100px"></span>3,333 KB</td><td class="n">1,652 KB</td><td class="n">941 KB</td><td>Hidden booking iframes (calendar script ×4), old template images</td></tr>
+        <tr><td>Article</td><td class="n">137</td><td class="n"><span class="bar" style="width:88px"></span>2,938 KB</td><td class="n">1,667 KB</td><td class="n">535 KB</td><td>Same hidden booking embeds</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="tbl"><table>
+      <thead><tr><th>Loaded on every page</th><th class="n">Size</th><th>Used?</th><th>Fix</th><th>Who</th></tr></thead>
+      <tbody>
+        <tr><td>Inter + Inter Tight fonts and the Google font loader</td><td class="n">~105 KB</td><td>No. Every element uses Barlow, Barlow Condensed or JetBrains Mono.</td><td>Remove both families in Site settings → Fonts; the loader script disappears with them</td><td>You</td></tr>
+        <tr><td>Webflow template stylesheet</td><td class="n">170 KB</td><td>2–9% of it, depending on the page (819 old classes)</td><td>Delete the 12 old draft pages, then Style manager → Clean up unused styles</td><td>You or me in the Designer</td></tr>
+        <tr><td>Webflow runtime + jQuery</td><td class="n">450 KB</td><td>Needed by Webflow; size grows with old template features</td><td>Shrinks as legacy hidden sections and interactions are removed</td><td>Partly controllable</td></tr>
+        <tr><td>Finsweet Attributes v2 (site head)</td><td class="n">module</td><td>No page uses it; the knowledge base categories load their own v1 scripts</td><td>Remove from the site head</td><td>Booking chat (shared site head)</td></tr>
+        <tr><td>Memberstack (site head)</td><td class="n">script</td><td>Only Knowledge base, Log in and the members templates</td><td>Move to those pages' head, after checking the header's client login still behaves</td><td>Booking chat / me</td></tr>
+        <tr><td>Our stylesheet <code>kd-site-11.css</code></td><td class="n">68 KB</td><td>20–59% per page; ~120 selectors never match anywhere</td><td>Consolidate (see below)</td><td>Me</td></tr>
+        <tr><td>Our script <code>kd-site-12.js</code></td><td class="n">61 KB</td><td>Runs everywhere; about 15% is dead code</td><td>Consolidate (see below)</td><td>Me</td></tr>
+        <tr><td>Booking files <code>kd-booking-5.js</code> + <code>-2.css</code></td><td class="n">64 KB</td><td>Needed wherever a booking button is, which is every page</td><td>Keep</td><td>Booking chat</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section aria-labelledby="s3">
+    <h2 id="s3">Our code: cleanup without changing the look</h2>
+    <p class="sub">Our CSS and JS were built by appending each fix round to the previous file. That works, but it leaves rules that are overridden later and features that no longer exist.</p>
+    <div class="two">
+      <div class="item"><h3>Stylesheet (81 KB source, 68 KB hosted)</h3>
+        <ul>
+          <li>49 selectors defined two or three times in the same scope; the later one wins (for example <code>.hud::before</code> ×3, <code>.nav__trigger</code> ×3, the headings ×2).</li>
+          <li>Dead blocks: the old lifecycle diagram (~20 rules), the old contact form (~35), the old booking embed, dialog and paused calendar CTA (~20), and old blog layout pieces (<code>.cats</code>, <code>.post-feature</code>, <code>.guides</code>).</li>
+          <li>17 <code>!important</code> overrides that mostly exist to beat our own earlier rules.</li>
+          <li>Result after consolidation: one ordered file, about 45 KB instead of 68 KB.</li>
+        </ul></div>
+      <div class="item"><h3>Script (61 KB)</h3>
+        <ul>
+          <li>Dead: the generic tabs handler, the old circuit diagram, the old form handler and the booking-embed helpers, all replaced since.</li>
+          <li>Runtime patches that edit content after load: the hero eyebrow, Ahmed's title, removing the footer AI Suite link, inserting the map. They work, but the text should live in the page itself.</li>
+          <li>The Title Case pass walks every text node on load and again after <code>load</code>. Keep it; once the copy is in Title Case in the source it becomes a safety net only.</li>
+          <li>Result: about 50 KB, with fewer moving parts.</li>
+        </ul></div>
+    </div>
+    <div class="item"><h3>Page structure</h3>
+      <ul>
+        <li>The header and footer are copied into every page's embeds (16 site pages, 4 member pages, the Spanish bundle). A menu change means about 20 edits. A single shared component, or one hosted partial, makes it one edit.</li>
+        <li>Blog, post, category and home pages still hold the old template's page wrapper, set to hidden. It is still downloaded and still pulls in the old styles. Removing it also lets the template stylesheet clean-up go further.</li>
+        <li>Blog thumbnails are 900px wide but shown at 220px. A 480px set would save about 400 KB on the blog and category pages. These are our assets, so I can regenerate them.</li>
+        <li>About 20 images on the home page (the reviews widget) have no width or height, so the layout shifts as they load.</li>
+      </ul>
+      <p class="note">How I would verify "no visual change": full-page screenshots of every page type in both languages, both themes, desktop and phone, before and after, compared pixel by pixel before publishing.</p></div>
+  </section>
+
+  <section aria-labelledby="s4">
+    <h2 id="s4">Webflow project and repo housekeeping</h2>
+    <div class="two">
+      <div class="item"><h3>Asset library</h3>
+        <ul>
+          <li><b>32</b> superseded versions of our CSS/JS files (kd-site-2 to -11, older head, members and Spanish builds). Safe to delete.</li>
+          <li><b>14</b> blog cover JPGs replaced by newer images. Safe to delete.</li>
+          <li><b>160</b> old template uploads, about 100 MB in total: three videos (24 MB, 3.4 MB, 3.3 MB), 2–5 MB page screenshots, German "Slider_Icons", stock logos. None of them appear on any live page. Some may still be used by the old draft pages.</li>
+          <li>Asset deletion cannot be undone, so I will only do it with your OK: ours first, the old template's after the drafts are gone.</li>
+        </ul></div>
+      <div class="item"><h3>Pages and CMS</h3>
+        <ul>
+          <li><b>12 draft pages</b>: old Home and 404 copies, old Services, Contact, Our Team, Privacy, Terms and Thank You, plus B2B, B2C and Case Studies. Delete in the Designer; the API cannot delete pages. Keep "KD Template", which new pages are copied from.</li>
+          <li>Two old CMS collections still have published template pages (FAQs, Project audiences). If you don't use them, delete the collections.</li>
+          <li>The Log in and Knowledge base SEO titles are in the old style ("KPI DRIVER - …"), and Log in has no description.</li>
+        </ul></div>
+      <div class="item"><h3>Repo</h3>
+        <ul>
+          <li>1.1 MB of superseded hosted builds kept next to the current ones (<code>webflow/kd-site-2…11</code>), and pilot leftovers (<code>_pilot-body.html</code>, <code>css-part-2.html</code>, <code>compat.css</code>, the old 47 KB <code>site-head.html</code>).</li>
+          <li><code>site/</code> (2.9 MB) is generated output from the first static build, no longer deployed. Keep the generator; stop committing the output.</li>
+          <li>Hosted files are built by hand (previous file + new blocks), which is how duplicates pile up. A single build script that produces <code>kd-site.css</code> and <code>kd-site.js</code> from <code>src/</code> fixes that.</li>
+        </ul></div>
+      <div class="item"><h3>In good shape</h3>
+        <ul>
+          <li>No script errors from our code on any page, in either language or theme.</li>
+          <li>One <code>&lt;h1&gt;</code> per page (except the knowledge base, above), no duplicate IDs, sticky header everywhere, 404 page works.</li>
+          <li>Structured data on posts, Our Team and Home; Spanish URLs in the sitemap.</li>
+          <li>The lifecycle block, booking pop-up and forms behave the same on every page.</li>
+        </ul></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="s5">
+    <h2 id="s5">Recommended order</h2>
+    <div class="phases">
+      <div class="phase"><header><span class="chip crit">1 · You, 10 minutes</span></header>
+        <ul><li>Replace robots.txt (above) and remove Thank You from the sitemap.</li><li>Remove Inter and Inter Tight in Site settings → Fonts.</li></ul></div>
+      <div class="phase"><header><span class="chip high">2 · Me, no visual change</span></header>
+        <ul><li>Booking links → <code>/book-discovery-call</code>.</li><li>Consolidate the stylesheet and script, drop dead code, add the one-step build script.</li><li>Rebuild the Spanish bundle from current sources, split per page, remove the runtime patches.</li><li>Smaller blog thumbnails; remove the knowledge base's hidden booking embeds; fix the members SEO templates.</li><li>Pixel-compare every page type before publishing; staging first, then live.</li></ul></div>
+      <div class="phase"><header><span class="chip med">3 · With your OK (cannot be undone)</span></header>
+        <ul><li>Delete our 46 superseded assets.</li><li>Delete the 12 drafts, then the old template assets and unused CMS collections.</li><li>Webflow style clean-up and removal of the hidden old page wrappers.</li></ul></div>
+      <div class="phase"><header><span class="chip med">4 · With the booking chat</span></header>
+        <ul><li>Contact webhook behind <code>/api</code>.</li><li>Finsweet out of the site head; Memberstack only on member pages.</li><li>Lazy-load the reviews widget and any remaining calendar embeds.</li></ul></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="s6">
+    <h2 id="s6">Working rules from here</h2>
+    <ul class="items">
+      <li class="item">Build hosted files from source in one step, never by appending to the last file. Delete the previous version when a new one goes live.</li>
+      <li class="item">Put copy changes in the page content, not in scripts that rewrite text after load. Runtime patches are for emergencies and get folded back in the next round.</li>
+      <li class="item">Size images for how they're shown: thumbnails at 2× their display width, with width and height set.</li>
+      <li class="item">Load third-party widgets (reviews, calendars, maps) when they come into view, not on page load.</li>
+      <li class="item">Keep the regression check we already use (every page type, both languages, both themes, no errors, fixed panel heights) and run it before every live publish.</li>
+    </ul>
+  </section>
+</div>
