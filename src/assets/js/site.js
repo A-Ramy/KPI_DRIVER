@@ -440,6 +440,9 @@
 (function () {
   var d = document, r = d.documentElement, es = r.lang === "es";
 
+  /* members log-in form: the show-password toggle is an icon-only link; give it a name */
+  d.querySelectorAll("a.show-password").forEach(function (a) { a.setAttribute("role", "button"); a.setAttribute("aria-label", es ? "Mostrar contrase\u00f1a" : "Show password"); });
+
   /* footer: drop the "AI Suite terms at kpidriver.ai" link (and its separator) */
   d.querySelectorAll(".footer__bottom a[href^='https://kpidriver.ai']").forEach(function (a) {
     var p = a.previousSibling;

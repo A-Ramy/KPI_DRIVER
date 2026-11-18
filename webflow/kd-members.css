@@ -118,3 +118,9 @@ body { cursor: auto !important; }
 .section-blog .w-richtext img, .section-blog iframe { max-width: 100%; height: auto; }
 .section-blog .video-home_about iframe { height: 100% !important; }
 .section-blog .w-richtext { overflow-wrap: anywhere; }
+/* KB article "other articles" row: the old black button kept dark text (unreadable); old yellow pill restyled */
+.main-wrapper .btn_main { background: var(--brand) !important; border: 0 !important; border-radius: var(--radius-sm) !important; min-height: 44px; display: inline-flex !important; align-items: center; padding: 0 18px !important; }
+.main-wrapper .btn_main, .main-wrapper .btn_main * { color: #ffffff !important; }
+.main-wrapper .wrapp_point .text-point, .main-wrapper .grid-h2_point_right .text-point { display: inline-block; background: transparent !important; color: var(--muted) !important; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0 !important; border-radius: 0 !important; }
+/* login divider ("or continue with") readable in both themes */
+.login_divider-wrap, .login_divider-wrap * { color: var(--muted) !important; }

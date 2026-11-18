@@ -825,3 +825,18 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0; height: 0; display:
    without a visible scrollbar too. Kept here as an override so the widget's own stylesheet stays untouched. */
 .kdb-dialog, .kdb-dialog *, .kd-inline-form, .kd-inline-form * { scrollbar-width: none !important; }
 .kdb-dialog::-webkit-scrollbar, .kdb-dialog ::-webkit-scrollbar, .kd-inline-form::-webkit-scrollbar, .kd-inline-form ::-webkit-scrollbar { display: none !important; width: 0 !important; height: 0 !important; }
+
+/* Sticky header everywhere. On most pages the header sits in its own Webflow embed wrapper (as tall as the
+   header), and a sticky element can only stick inside its parent box. Dropping the wrapper's box lets the
+   header stick against the whole page. Anchor jumps leave room for the header. */
+.w-embed:has(> header.site-header) { display: contents; }
+header.site-header { position: sticky; z-index: 60; }
+html { scroll-padding-top: 84px; }
+
+/* Phones: comfortable tap targets for footer links, breadcrumbs and the logo (were 14-20px tall). */
+@media (max-width: 700px) {
+  .footer__col ul { gap: 0; }
+  .footer__col a { display: inline-block; padding-block: 6px; }
+  .crumbs a { display: inline-block; padding-block: 8px; }
+  .site-header .brand { padding-block: 10px; }
+}
