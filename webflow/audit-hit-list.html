@@ -1,0 +1,218 @@
+<title>Audit Hit List</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column of grouped decision cards; a sticky tally bar on top. */
+:root {
+  --bg: #f4f5f7; --surface: #ffffff; --fg: #0e1b2a; --muted: #56657a; --rule: #dbe0e7; --row: #f7f8fa;
+  --accent: #2b6cb0; --ok: #1f7a4f; --ok-bg: #e7f4ec; --skip: #6b7686; --skip-bg: #eef0f3; --alt: #b4690e; --alt-bg: #fdf3e4; --warn: #c2382f; --warn-bg: #fbeceb;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif; --body: "Barlow", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #08131e; --surface: #0f1e2d; --fg: #e6ecf2; --muted: #9aa8ba; --rule: #22344a; --row: #12243a; --accent: #6aaef0; --ok: #6fd6a2; --ok-bg: #143022; --skip: #a3adbb; --skip-bg: #1a2a3c; --alt: #f2b562; --alt-bg: #3a2a14; --warn: #ff8077; --warn-bg: #3a1b1b; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #08131e; --surface: #0f1e2d; --fg: #e6ecf2; --muted: #9aa8ba; --rule: #22344a; --row: #12243a; --accent: #6aaef0; --ok: #6fd6a2; --ok-bg: #143022; --skip: #a3adbb; --skip-bg: #1a2a3c; --alt: #f2b562; --alt-bg: #3a2a14; --warn: #ff8077; --warn-bg: #3a1b1b; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 16.5px/1.55 var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 72px }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg) }
+.wrap { max-width: 900px; margin: 0 auto; display: grid; gap: 28px }
+.top { padding-top: 36px; display: grid; gap: 10px }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; gap: 10px; align-items: center; margin: 0 }
+.eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--accent) }
+h1 { font: 700 clamp(34px, 5vw, 50px)/1 var(--display); text-transform: uppercase; margin: 0 }
+.lede { color: var(--muted); margin: 0; max-width: 66ch }
+.tally { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font: 500 13px/1.3 var(--mono) }
+.tally span { display: inline-flex; gap: 6px; align-items: center }
+.dot { width: 9px; height: 9px; border-radius: 50% }
+.tally .status { margin-left: auto; color: var(--muted) }
+.group { display: grid; gap: 12px }
+.group > header { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; justify-content: space-between }
+.group h2 { font: 700 26px/1.1 var(--display); text-transform: uppercase; margin: 0 }
+.group .gsub { color: var(--muted); margin: 0; flex-basis: 100% }
+.bulk { font: 500 12.5px var(--mono); color: var(--accent); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 6px 12px; cursor: pointer }
+.bulk:hover { border-color: var(--accent) }
+.card { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--rule); border-radius: 12px; padding: 16px 18px; display: grid; gap: 10px; min-width: 0 }
+.card[data-choice="approve"] { border-left-color: var(--ok) }
+.card[data-choice="skip"] { border-left-color: var(--skip) }
+.card[data-choice="other"] { border-left-color: var(--alt) }
+.card h3 { font: 700 19px/1.25 var(--display); text-transform: uppercase; letter-spacing: .02em; margin: 0; display: flex; gap: 10px; align-items: baseline }
+.num { font: 500 12px var(--mono); color: var(--muted); letter-spacing: 0; text-transform: none }
+.card p { margin: 0 }
+.tags { display: flex; flex-wrap: wrap; gap: 6px }
+.tag { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; padding: 5px 8px; border-radius: 999px; background: var(--row); color: var(--muted) }
+.tag.warn { background: var(--warn-bg); color: var(--warn) }
+.tag.ok { background: var(--ok-bg); color: var(--ok) }
+.opts { display: flex; flex-wrap: wrap; gap: 8px }
+.opt { position: relative }
+.opt input { position: absolute; opacity: 0; pointer-events: none }
+.opt label { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--rule); border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 15px; user-select: none }
+.opt label::before { content: ""; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--rule) }
+.opt input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px }
+.opt.approve input:checked + label { background: var(--ok-bg); border-color: var(--ok); color: var(--ok) }
+.opt.skip input:checked + label { background: var(--skip-bg); border-color: var(--skip); color: var(--skip) }
+.opt.other input:checked + label { background: var(--alt-bg); border-color: var(--alt); color: var(--alt) }
+.opt input:checked + label::before { border-color: currentColor; background: radial-gradient(currentColor 0 4px, transparent 5px) }
+textarea { width: 100%; min-height: 64px; resize: vertical; font: inherit; color: var(--fg); background: var(--row); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px }
+textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; background: var(--surface) }
+.foot { display: flex; justify-content: space-between; gap: 10px; align-items: center; font: 500 12px var(--mono); color: var(--muted); min-height: 18px }
+pre { margin: 0; background: var(--row); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; font: 500 13px/1.5 var(--mono); overflow-x: auto; white-space: pre }
+.copy { font: 500 12px var(--mono); background: none; border: 1px solid var(--rule); border-radius: 6px; padding: 4px 10px; cursor: pointer; color: var(--accent); justify-self: start }
+.banner { background: var(--alt-bg); color: var(--alt); border-radius: 10px; padding: 10px 14px; font-size: 15px }
+.general { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; display: grid; gap: 10px }
+.general h2 { font: 700 24px/1.1 var(--display); text-transform: uppercase; margin: 0 }
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <p class="eyebrow">KPI DRIVER · site audit, 18 Nov 2026</p>
+    <h1>Audit hit list</h1>
+    <p class="lede">Each action from the audit, on its own. Pick Approve, Skip, or Something else and write what you'd prefer. Answers save as you go; tell me in chat when you're done and I'll work through the approved ones. Nothing irreversible happens without an Approve here.</p>
+    <p class="banner" id="nosave" hidden>Answers can't be saved in this view. Open the page in claude.ai while signed in, or reply in chat with the item numbers.</p>
+  </div>
+
+  <div class="tally" aria-live="polite">
+    <span><i class="dot" style="background:var(--ok)"></i><b id="t-approve">0</b> approved</span>
+    <span><i class="dot" style="background:var(--skip)"></i><b id="t-skip">0</b> skipped</span>
+    <span><i class="dot" style="background:var(--alt)"></i><b id="t-other">0</b> something else</span>
+    <span><i class="dot" style="background:var(--rule)"></i><b id="t-open">0</b> open</span>
+    <span class="status" id="status">Loading saved answers…</span>
+  </div>
+
+  <div id="groups"></div>
+
+  <section class="general">
+    <h2>Anything else</h2>
+    <p class="lede">Other changes, priorities or questions about the audit.</p>
+    <textarea id="general" aria-label="Anything else"></textarea>
+    <div class="foot"><span></span><span id="general-saved"></span></div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var GROUPS = [
+    { id: "you", title: "You, in Webflow settings", sub: "Only you can change these; they are not reachable through the API. About 10 minutes in total.", items: [
+      { id: "A1", title: "Replace robots.txt so Google can read the blog", body: "Today robots.txt blocks /blog, /post/ and /blog-category/, hiding all 45 posts and 10 category pages from search. It also lists dead paths from the old site. Site settings → SEO → robots.txt, replace everything with:", code: "User-agent: *\nDisallow: /log-in\nDisallow: /thank-you\n\nSitemap: https://www.kpidriver.com/sitemap.xml", tags: ["Critical", "Reversible", "You"] },
+      { id: "A2", title: "Take Thank You out of the sitemap", body: "The Thank You page is listed in the sitemap but should not show up in search. Page settings → Thank You → turn off \"Include in sitemap\" (or I can add a noindex tag to the page head if you prefer).", tags: ["Low effort", "Reversible", "You"] },
+      { id: "A3", title: "Remove the unused Inter fonts", body: "Inter and Inter Tight download on every page (about 105 KB plus a loader script) but nothing on the site uses them. Site settings → Fonts → remove both Google font families.", tags: ["Speed", "Reversible", "You"] }
+    ]},
+    { id: "me", title: "Me, no visual change", sub: "I verify each with before/after screenshots of every page type, both languages and themes, then staging, then live.", items: [
+      { id: "B1", title: "Fix the dead \"Book a call\" links", body: "Five of the six GoHighLevel calendar links behind the booking buttons return 404. Point every button at /book-discovery-call (our page) and keep the booking pop-up exactly as it is.", tags: ["Critical", "Reversible", "Me"] },
+      { id: "B2", title: "Consolidate the stylesheet", body: "Rebuild our CSS as one ordered file: remove 49 rules that are written twice, about 120 rules that match nothing (old diagram, old form, old booking embed, old blog layout) and most !important overrides. 68 KB → about 45 KB.", tags: ["Speed", "Reversible", "Me"] },
+      { id: "B3", title: "Consolidate the site script", body: "Remove dead code for features replaced since (old tabs, old diagram, old form, booking-embed helpers). 61 KB → about 50 KB. The Title Case pass stays.", tags: ["Speed", "Reversible", "Me"] },
+      { id: "B4", title: "Add a one-step build for the hosted files", body: "Build kd-site.css and kd-site.js from the source in one go instead of appending each fix round to the last file, which is how the duplicates piled up. Repo-only change.", tags: ["Maintenance", "Reversible", "Me"] },
+      { id: "B5", title: "Rebuild the Spanish pages from today's content", body: "Regenerate the Spanish bundle from current sources (it dates from 16 Nov and relies on runtime patches) and split it per page: about 10–25 KB per Spanish page instead of 167 KB on every one, and a shorter blank moment while it loads.", tags: ["High", "Reversible", "Me"] },
+      { id: "B6", title: "Write the patched text into the pages", body: "The hero eyebrow, Ahmed's title, the removed footer link and the map are applied by script after load. Put them in the page embeds and the Spanish bundle, then retire those patches.", tags: ["Maintenance", "Reversible", "Me"] },
+      { id: "B7", title: "Smaller blog thumbnails", body: "Thumbnails are 900px wide but shown at 220px. Upload a 480px set and switch the posts over: about 400 KB less on the blog and category pages.", tags: ["Speed", "Reversible", "Me"] },
+      { id: "B8", title: "Remove the knowledge base's hidden booking embeds", body: "The knowledge base and article templates carry four hidden calendar iframes from the old template (three point to deleted calendars) and load the calendar script four times: about 2 MB and 90+ requests nobody sees.", tags: ["Speed", "Me"] },
+      { id: "B9", title: "Fix members-area SEO", body: "Article and category pages have empty meta descriptions (template fields render blank). Update the Knowledge Base and Log in titles to the current style, add a Log in description, and remove the knowledge base's hidden second H1.", tags: ["SEO", "Reversible", "Me"] },
+      { id: "B10", title: "Load the reviews widget when it scrolls into view", body: "The home page reviews widget loads a 926 KB script up front. Load it when the visitor nears the reviews section; it looks the same once it appears.", tags: ["Speed", "Reversible", "Me"] },
+      { id: "B11", title: "Remove the old calendar embed from the Blog page", body: "The Blog page loads an old GoHighLevel calendar on page load (about 1.5 MB, 94 requests). Remove it; the booking pop-up already covers booking from the blog.", tags: ["Speed", "Me"] },
+      { id: "B12", title: "One shared header and footer", body: "Today the header and footer are copied into about 20 places, so a menu change means about 20 edits. Move them into one shared piece so a change is made once. Larger job; looks identical.", tags: ["Maintenance", "Larger job", "Me"] }
+    ]},
+    { id: "del", title: "Deletions (cannot be undone)", sub: "Only with your Approve on each line.", items: [
+      { id: "C1", title: "Delete our 27 superseded CSS/JS files", body: "Old versions of our hosted files (kd-site-2 to -11, older head, members and Spanish builds). None are loaded anywhere. The 5 old booking files are left for the booking chat.", tags: ["Cleanup", "Irreversible", "Me"] },
+      { id: "C2", title: "Delete 14 replaced blog cover images", body: "Cover JPGs from the first round that newer images replaced. Not used on any page.", tags: ["Cleanup", "Irreversible", "Me"] },
+      { id: "C3", title: "Delete the 11 old draft pages", body: "Old Home and 404 copies, old Services, Contact, Our Team, Privacy, Terms and Thank You, plus B2B, B2C and Case Studies. KD Template stays (new pages are copied from it). Done in the Designer; the API can't delete pages.", tags: ["Cleanup", "Irreversible", "You or me in the Designer"] },
+      { id: "C4", title: "Delete 160 old template uploads (about 100 MB)", body: "Three videos (24 MB, 3.4 MB, 3.3 MB), 2–5 MB page screenshots, German slider icons, stock logos. None appear on a live page. Done after C3 so no draft breaks.", tags: ["Cleanup", "Irreversible", "Me"] },
+      { id: "C5", title: "Delete the old FAQs and Project audiences collections", body: "Two CMS collections from the template still publish template pages. Delete them if you don't use them.", tags: ["Cleanup", "Irreversible", "Me"] },
+      { id: "C6", title: "Remove the hidden old page wrappers", body: "Home, Blog, post and category pages still contain the old template's layout, set to hidden. It is still downloaded and keeps old styles alive.", tags: ["Speed", "Irreversible", "Me"] },
+      { id: "C7", title: "Run Webflow's unused-styles clean-up", body: "The template stylesheet is 170 KB and each page uses 2–9% of it. After C3 and C6, Style manager → Clean up removes classes nothing uses.", tags: ["Speed", "Irreversible", "You or me in the Designer"] },
+      { id: "C8", title: "Clear leftovers from the repo", body: "Remove superseded builds (1.1 MB), pilot files, and stop committing the generated site/ folder (2.9 MB). History keeps them if ever needed.", tags: ["Cleanup", "Me"] }
+    ]},
+    { id: "book", title: "With the booking chat", sub: "These touch the site-wide code the booking chat owns. Approve and I'll hand them over with the details.", items: [
+      { id: "D1", title: "Hide the contact webhook behind the server", body: "The contact form's GoHighLevel webhook URL is in the page source; anyone can post fake leads with it. Route the form through the existing /api booking app instead.", tags: ["High", "Booking chat"] },
+      { id: "D2", title: "Remove the unused Finsweet script from the site head", body: "Finsweet Attributes v2 loads on every page; no page uses it (the knowledge base categories load their own older Finsweet scripts).", tags: ["Speed", "Booking chat"] },
+      { id: "D3", title: "Load Memberstack only on member pages", body: "Memberstack loads on every page but only Knowledge Base, Log in and the members templates use it. Move it there after checking the header's client login still works.", tags: ["Speed", "Booking chat"] }
+    ]}
+  ];
+
+  var esc = function (t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); };
+  var ALL = [];
+  var html = GROUPS.map(function (g) {
+    return '<section class="group" aria-labelledby="g-' + g.id + '"><header><h2 id="g-' + g.id + '">' + esc(g.title) + '</h2><button class="bulk" type="button" data-bulk="' + g.id + '">Approve all open in this group</button><p class="gsub">' + esc(g.sub) + "</p></header>" +
+      g.items.map(function (it) {
+        ALL.push(it.id);
+        var tags = it.tags.map(function (t) { var c = /Critical|Irreversible/.test(t) ? " warn" : /Reversible/.test(t) ? " ok" : ""; return '<span class="tag' + c + '">' + esc(t) + "</span>"; }).join("");
+        var opt = function (v, label) { return '<span class="opt ' + v + '"><input type="radio" name="c-' + it.id + '" id="c-' + it.id + "-" + v + '" value="' + v + '"><label for="c-' + it.id + "-" + v + '">' + label + "</label></span>"; };
+        return '<article class="card" id="card-' + it.id + '" data-id="' + it.id + '"><h3><span class="num">' + it.id + "</span>" + esc(it.title) + '</h3><div class="tags">' + tags + "</div><p>" + esc(it.body) + "</p>" +
+          (it.code ? "<pre>" + esc(it.code) + '</pre><button class="copy" type="button" data-copy="' + it.id + '">Copy text</button>' : "") +
+          '<div class="opts" role="radiogroup" aria-label="Decision for ' + it.id + '">' + opt("approve", "Approve") + opt("skip", "Skip") + opt("other", "Something else") + "</div>" +
+          '<textarea id="n-' + it.id + '" aria-label="Note for ' + it.id + '" placeholder="Optional note, or what you\'d prefer instead"></textarea>' +
+          '<div class="foot"><span></span><span id="s-' + it.id + '"></span></div></article>';
+      }).join("") + "</section>";
+  }).join("");
+  document.getElementById("groups").innerHTML = html;
+
+  var CODE = {}; GROUPS.forEach(function (g) { g.items.forEach(function (it) { if (it.code) CODE[it.id] = it.code; }); });
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = CODE[b.getAttribute("data-copy")];
+      try { navigator.clipboard.writeText(t).then(function () { b.textContent = "Copied"; }, sel); } catch (e) { sel(); }
+      function sel() { var pre = b.previousElementSibling, r = document.createRange(); r.selectNodeContents(pre); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected, press Ctrl/Cmd+C"; }
+    });
+  });
+
+  var state = {}; /* id -> {choice, note} */
+  function tally() {
+    var c = { approve: 0, skip: 0, other: 0, open: 0 };
+    ALL.forEach(function (id) { var s = state[id]; c[s && s.choice ? s.choice : "open"]++; });
+    Object.keys(c).forEach(function (k) { document.getElementById("t-" + k).textContent = c[k]; });
+  }
+  function paint(id) {
+    var s = state[id] || {}, card = document.getElementById("card-" + id);
+    card.setAttribute("data-choice", s.choice || "");
+    card.querySelectorAll('input[type="radio"]').forEach(function (r) { r.checked = r.value === s.choice; });
+    var ta = document.getElementById("n-" + id); if (document.activeElement !== ta) ta.value = s.note || "";
+  }
+  tally();
+
+  var db = null, statusEl = document.getElementById("status");
+  var writing = {}, queued = {};
+  function save(id, body, label) {
+    if (!db) { label.textContent = "Not saved"; return; }
+    if (writing[id]) { queued[id] = body; return; }
+    writing[id] = true; label.textContent = "Saving…";
+    db.doc("decisions/" + id).set(body).then(function () { label.textContent = "Saved"; }, function (e) {
+      label.textContent = e && e.code === "invalid_argument" ? "Only the owner can save" : "Couldn't save, try again";
+    }).then(function () { writing[id] = false; if (queued[id]) { var b = queued[id]; delete queued[id]; save(id, b, label); } });
+  }
+  function commit(id) {
+    var s = state[id] || {};
+    save(id, { choice: s.choice || "", note: s.note || "", at: new Date().toISOString() }, document.getElementById("s-" + id));
+  }
+
+  ALL.forEach(function (id) {
+    document.querySelectorAll('input[name="c-' + id + '"]').forEach(function (r) {
+      r.addEventListener("change", function () { state[id] = Object.assign({}, state[id], { choice: r.value }); paint(id); tally(); commit(id); if (r.value === "other") document.getElementById("n-" + id).focus(); });
+    });
+    var ta = document.getElementById("n-" + id), t = 0;
+    ta.addEventListener("input", function () { state[id] = Object.assign({}, state[id], { note: ta.value }); clearTimeout(t); document.getElementById("s-" + id).textContent = "Typing…"; t = setTimeout(function () { commit(id); }, 900); });
+  });
+  document.querySelectorAll("[data-bulk]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var g = GROUPS.filter(function (x) { return x.id === b.getAttribute("data-bulk"); })[0];
+      g.items.forEach(function (it) { if (!(state[it.id] && state[it.id].choice)) { state[it.id] = Object.assign({}, state[it.id], { choice: "approve" }); paint(it.id); commit(it.id); } });
+      tally();
+    });
+  });
+  var gen = document.getElementById("general"), gt = 0, genState = "";
+  gen.addEventListener("input", function () { genState = gen.value; clearTimeout(gt); document.getElementById("general-saved").textContent = "Typing…"; gt = setTimeout(function () { save("_general", { note: genState, at: new Date().toISOString() }, document.getElementById("general-saved")); }, 900); });
+
+  (window.claude ? window.claude.use("db") : Promise.resolve(null)).then(function (d) {
+    db = d;
+    if (!db) { statusEl.textContent = "Not saving in this view"; document.getElementById("nosave").hidden = false; return; }
+    var timer = setTimeout(function () { statusEl.textContent = "Saved answers can't be reached yet"; }, 10000);
+    db.collection("decisions").onSnapshot(function (snap) {
+      if (!snap.metadata.fromCache) { clearTimeout(timer); statusEl.textContent = "Answers save as you go"; }
+      snap.docs.forEach(function (doc) {
+        var v = doc.data() || {};
+        if (doc.id === "_general") { if (document.activeElement !== gen) gen.value = v.note || ""; return; }
+        if (ALL.indexOf(doc.id) < 0) return;
+        if (writing[doc.id] || queued[doc.id]) return;
+        state[doc.id] = { choice: v.choice || "", note: v.note || "" };
+        paint(doc.id);
+      });
+      tally();
+    }, function () { clearTimeout(timer); statusEl.textContent = "Saved answers unavailable"; });
+  }, function () { statusEl.textContent = "Not saving in this view"; document.getElementById("nosave").hidden = false; });
+})();
+</script>
