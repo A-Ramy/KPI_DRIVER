@@ -18,7 +18,7 @@ window.KD_BOOKING_CONFIG = {
   mock: true,
   slotsUrl: "https://YOUR-N8N-HOST/webhook/kd-booking-slots",
   bookUrl: "https://YOUR-N8N-HOST/webhook/kd-booking-create",
-  contactUrl: "https://services.leadconnectorhq.com/hooks/nLOdLoui5CvpzktszMJx/webhook-trigger/f280f1cb-657e-4819-a2fe-a022a7db9bfb"
+  contactUrl: "/api/booking/contact"
 };
 </script>
 <script>${js}</script>

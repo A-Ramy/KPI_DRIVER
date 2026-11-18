@@ -27,7 +27,7 @@ CAL = {k: _ONE_CAL for k in ("header", "footer", "home", "services", "team", "co
 PAGE_CAL = "header"
 # Native booking + contact forms (booking-form/). BRIDGE_URL = the deployed booking bridge (booking-form/bridge/worker.js).
 BOOKING_BRIDGE_URL = "/api/booking"   # Webflow Cloud app (booking-form/bridge/webflow-cloud), same site
-CONTACT_WEBHOOK = "https://services.leadconnectorhq.com/hooks/nLOdLoui5CvpzktszMJx/webhook-trigger/f280f1cb-657e-4819-a2fe-a022a7db9bfb"
+CONTACT_WEBHOOK = "/api/booking/contact"
 FORMS_DIR = Path(__file__).parent / "booking-form"
 
 
