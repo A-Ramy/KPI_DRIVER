@@ -29,3 +29,4 @@ A thin Astro app around `../worker.js`, the only copy of the bridge logic. Webfl
 ## Status
 
 - 2026-11-18: `CONTACT_WEBHOOK_URL` added as a secret by the owner; the site's contact form now posts to `/api/booking/contact`.
+- 2026-11-18: owner replaced `CONTACT_WEBHOOK_URL` with a fresh HighLevel Inbound Webhook (the old one had been public); redeployed.
