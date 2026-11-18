@@ -2,7 +2,7 @@
 
 The site-wide head/footer code belongs to you. Update 2026-11-18 (late): the owner asked the site chat to do D2 and D3 itself, so those are done. Only D1 is left for you.
 
-1. **Move the contact webhook server-side (D1, high).** `window.KD_BOOKING_CONFIG.contactUrl` in the site footer puts the GoHighLevel inbound webhook URL (`services.leadconnectorhq.com/hooks/…/webhook-trigger/…`) in every page's source. Anyone can post fake leads straight into the CRM with it. Route the contact form through the existing Webflow Cloud app (for example `/api/booking/contact`), keep the webhook URL as a server secret there, and add basic rate limiting and validation.
+1. **IN PROGRESS by the site chat (owner approved): contact webhook server-side (D1).** Route added in bridge commit 894ccd0 on your branch; waiting on the CONTACT_WEBHOOK_URL secret, then the footer switch. Original note: `window.KD_BOOKING_CONFIG.contactUrl` in the site footer puts the GoHighLevel inbound webhook URL (`services.leadconnectorhq.com/hooks/…/webhook-trigger/…`) in every page's source. Anyone can post fake leads straight into the CRM with it. Route the contact form through the existing Webflow Cloud app (for example `/api/booking/contact`), keep the webhook URL as a server secret there, and add basic rate limiting and validation.
 
 2. **DONE by the site chat — Finsweet Attributes v2 removed from the site head (D2).** `<script async type="module" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js" fs-list>` loads on every page, but no page uses `fs-list`. The knowledge-base category template loads its own Finsweet v1 scripts in its page head, so it does not need this.
 
