@@ -6,7 +6,7 @@ The site-wide head/footer code belongs to you, so these are yours to apply.
 
 2. **Remove Finsweet Attributes v2 from the site head (D2).** `<script async type="module" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js" fs-list>` loads on every page, but no page uses `fs-list`. The knowledge-base category template loads its own Finsweet v1 scripts in its page head, so it does not need this.
 
-3. **Memberstack only where it is used (D3).** The Memberstack script loads site-wide but only Knowledge Base, Log in and the members templates use it. The owner plans to retire the knowledge base and Memberstack entirely, so either move it to those pages' head now or remove it when those pages go.
+3. **Remove Memberstack (D3).** Update 2026-11-18: the owner retired the Knowledge Base. The Knowledge Base and Log in pages are drafts, and the articles, KB categories and audiences are unpublished, so nothing on the live site uses Memberstack any more. Please remove the Memberstack script (and its config) from the site-wide head code; it currently loads on every page for nothing. Also drop the Finsweet v2 script if it is still there (D2).
 
 Also worth knowing:
 - The booking buttons' fallback `href`s still point at GoHighLevel calendar links, and five of the six IDs return 404 (`17jl7cP7dvOAU48s6C3L` header, `l4rvIxCnb9DtsSTM6SoQ` footer, `3bltGmUYGxpIUtG09p3V` Services/CRM, `o811nwxOSIS90zvrwX33` Our Team, `usaNbU09ACXDqb1C52Rd` Contact; `9g3ccVyd2a9NsV51QuKN` works). Your pop-up intercepts normal clicks, but new-tab opens, long-presses and crawlers land on the 404s. Pointing the fallback at `/book-discovery-call` would fix it.
