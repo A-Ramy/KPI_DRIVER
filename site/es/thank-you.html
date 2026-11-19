@@ -20,6 +20,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070b11">
 <script>(function(){var d=document.documentElement;try{if(!d.hasAttribute('data-theme')){var s=null;try{s=localStorage.getItem('kd-theme')}catch(e){}d.setAttribute('data-theme',s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'))}if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)d.classList.add('anim')}catch(e){}var g=+d.getAttribute('data-gear')||0,S=function(){try{sessionStorage.setItem('kd-from',g)}catch(e){}};addEventListener('pagehide',S);addEventListener('pageswap',S);addEventListener('pagereveal',function(e){if(!e.viewTransition)return;var f=null;try{f=sessionStorage.getItem('kd-from')}catch(x){}if(f===null)return;var c=+f>g?'vt-down':'vt-up',z=function(){d.classList.remove('vt',c)};d.classList.add('vt',c);e.viewTransition.finished.then(z,z)})})()</script>
+<!-- KPI DRIVER intro: cover the page in navy before first paint, on the first page of a visit only.
+     kd-intro.js takes over from this cover; if it hasn't within 8 s, the cover lifts on its own. -->
+<style>html.kd-intro-on::after{content:"";position:fixed;inset:0;z-index:2147483646;background:#060a10}</style>
+<script>(function(){try{if(sessionStorage.getItem("kd-intro-seen")||/[?&]nointro\b/.test(location.search))return;var d=document.documentElement;d.classList.add("kd-intro-on");setTimeout(function(){d.classList.remove("kd-intro-on")},8000)}catch(e){}})();</script>
 <link rel="icon" href="../assets/img/favicon.png" type="image/png" sizes="64x64">
 <link rel="icon" href="../assets/img/brand/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
@@ -152,6 +156,7 @@
 </dialog>
 <script>window.KD_BOOKING_CONFIG = {"slotsUrl": "/api/booking/slots", "bookUrl": "/api/booking/book", "contactUrl": "https://services.leadconnectorhq.com/hooks/nLOdLoui5CvpzktszMJx/webhook-trigger/f280f1cb-657e-4819-a2fe-a022a7db9bfb"};</script>
 <script src="../assets/js/kd-booking.js" defer></script>
+<script src="../assets/js/kd-intro.js" defer></script>
 <script src="../assets/js/site.js" defer></script>
 </body>
 </html>

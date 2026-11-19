@@ -1,0 +1,4 @@
+<!-- KPI DRIVER intro: cover the page in navy before first paint, on the first page of a visit only.
+     kd-intro.js takes over from this cover; if it hasn't within 8 s, the cover lifts on its own. -->
+<style>html.kd-intro-on::after{content:"";position:fixed;inset:0;z-index:2147483646;background:#060a10}</style>
+<script>(function(){try{if(sessionStorage.getItem("kd-intro-seen")||/[?&]nointro\b/.test(location.search))return;var d=document.documentElement;d.classList.add("kd-intro-on");setTimeout(function(){d.classList.remove("kd-intro-on")},8000)}catch(e){}})();</script>

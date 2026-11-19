@@ -29,6 +29,8 @@ PAGE_CAL = "header"
 BOOKING_BRIDGE_URL = "/api/booking"   # Webflow Cloud app (booking-form/bridge/webflow-cloud), same site
 CONTACT_WEBHOOK = "https://services.leadconnectorhq.com/hooks/nLOdLoui5CvpzktszMJx/webhook-trigger/f280f1cb-657e-4819-a2fe-a022a7db9bfb"
 FORMS_DIR = Path(__file__).parent / "booking-form"
+INTRO_DIR = Path(__file__).parent / "intro"   # first-load intro (Rev & Shift), see intro/kd-intro.src.js
+INTRO_HEAD = (INTRO_DIR / "head-snippet.html").read_text().strip()
 
 
 def cal_for(path):
@@ -341,6 +343,7 @@ def head(meta, path, root):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070b11">
 {THEME_JS}
+{INTRO_HEAD}
 <link rel="icon" href="{root}assets/img/favicon.png" type="image/png" sizes="64x64">
 <link rel="icon" href="{root}assets/img/brand/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="{root}assets/img/apple-touch-icon.png">
@@ -356,7 +359,7 @@ def head(meta, path, root):
 def forms_script(root):
     cfg = {"slotsUrl": BOOKING_BRIDGE_URL + "/slots" if BOOKING_BRIDGE_URL else "",
            "bookUrl": BOOKING_BRIDGE_URL + "/book" if BOOKING_BRIDGE_URL else "", "contactUrl": CONTACT_WEBHOOK}
-    return f'<script>window.KD_BOOKING_CONFIG = {json.dumps(cfg)};</script>\n<script src="{root}assets/js/kd-booking.js" defer></script>'
+    return f'<script>window.KD_BOOKING_CONFIG = {json.dumps(cfg)};</script>\n<script src="{root}assets/js/kd-booking.js" defer></script>\n<script src="{root}assets/js/kd-intro.js" defer></script>'
 
 
 # Section CTAs are placed at runtime by booking-form/kd-booking.js (CTA_PLAN), the same code the Webflow site runs.
@@ -587,6 +590,7 @@ def main():
     shutil.copytree(SRC / "assets", OUT / "assets")
     shutil.copy(FORMS_DIR / "kd-booking.js", OUT / "assets/js/kd-booking.js")
     shutil.copy(FORMS_DIR / "kd-booking.css", OUT / "assets/css/kd-booking.css")
+    shutil.copy(INTRO_DIR / "kd-intro.js", OUT / "assets/js/kd-intro.js")
     built = []
     for f in sorted((SRC / "pages").rglob("*.html")):
         meta, body = parse(f.read_text(encoding="utf8"))
