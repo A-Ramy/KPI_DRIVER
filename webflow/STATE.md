@@ -267,3 +267,10 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - kd-booking-5.js only adds its prompt lines / CTA phrases when `#main` exists and keys them by path, so they appear on `/` but not on the pilot URL. Expected.
 - Checks (scripts in webflow/native/): computed styles of all 14 sections vs live Home at 1440/820/390 = 2,787 element styles, 0 differ; header/main/footer positions and page height identical at 1440 and 390; behaviour identical (lifecycle diagram + tab clicks, walkthrough steps/play with no scroll jump, FAQ, booking pop-up).
 - Next: owner checks the pilot in the Designer, then it replaces Home (copy main across in the Designer, or rebuild on Home), then header/footer native with language switch, then the other pages, then Spanish text through Localization.
+
+## 2026-11-19: native rebuild in place, staging only (live untouched)
+- Owner: proceed, build an exact replica, compare everything before any switch.
+- Method per page: extract live `<main>` sections (webflow/native/extract.py), convert with webflow/native/wgen.py (empty class rules keep class names; inline styles on native tags become named utility combos), build with the WHTML builder into a new `<main id="main">` on the real page, fix converter problems (buttons -> DOM button, span-only rows, image asset links), remove the old embed, add the Designer stylesheet embed, publish to staging.
+- Check (gate before any live switch): webflow/native/fullcmp.js serves the staging page's HTML AT the live URL so every runtime script runs as it will after the switch (booking forms, FAQ contact form, prompts, Spanish), then compares every element's computed style at 1440/820/390 plus the visible text; webflow/native/pixcmp.js + pxdiff.py compare full-page screenshots.
+- Done on staging, all 0 differences and 0 differing pixels, EN and ES: Home, 404, Thank You, Book a Discovery Call, Privacy, Terms.
+- Gotchas: Privacy/Terms `<main>` carries class `legal-page` (now set). Images: WHTML can't match CDN URLs to library assets, so set the asset afterwards (gauge icon 6afa14d6fb4d11e63de9d2b5). The pilot page is set to draft.
