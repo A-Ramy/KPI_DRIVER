@@ -4,6 +4,9 @@ const { chromium } = require('playwright');
 const path = require('path');
 const { wire } = require('../booking-form/tools/site-harness');
 const OUT = process.argv[2];
+// BASE=https://kpidriver.webflow.io runs the same checks against a published site instead of the local build
+const BASE = process.env.BASE || 'https://www.kpidriver.com', LOCAL = !process.env.BASE;
+const serve = ctx => LOCAL ? wire(ctx, { bridge: false }) : Promise.resolve();
 let failed = 0;
 const check = (ok, msg) => { console.log((ok ? 'PASS ' : 'FAIL ') + msg); if (!ok) failed++; };
 const state = p => p.evaluate(() => ({
@@ -16,9 +19,9 @@ const state = p => p.evaluate(() => ({
 
   // 1. first visit plays at half speed (~5.2 s), then removes itself; 2. the next page in the visit has no intro
   {
-    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 } }); await wire(ctx, { bridge: false });
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 } }); await serve(ctx);
     const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push(e.message));
-    await p.goto('https://www.kpidriver.com/', { waitUntil: 'domcontentloaded' });
+    await p.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     const t0 = Date.now();
     await p.waitForSelector('.kdi', { timeout: 5000 });
     const s1 = await state(p);
@@ -29,7 +32,7 @@ const state = p => p.evaluate(() => ({
     check(ms > 4300 && ms < 6800, `first visit: plays for about 5 s at half speed (${(ms / 1000).toFixed(1)} s)`);
     check(!s2.overlay && !s2.lock && !s2.on, 'first visit: removes itself and gives scrolling back');
     check(errs.length === 0, 'first visit: no page errors ' + errs.join(' | '));
-    await p.goto('https://www.kpidriver.com/services', { waitUntil: 'domcontentloaded' }); await p.waitForTimeout(700);
+    await p.goto(BASE + '/services', { waitUntil: 'domcontentloaded' }); await p.waitForTimeout(700);
     const s3 = await state(p);
     check(!s3.overlay && !s3.on, 'second page in the same visit: no intro, no cover');
     await ctx.close();
@@ -37,9 +40,9 @@ const state = p => p.evaluate(() => ({
 
   // 3. a tap skips straight to the reveal, without clicking what is underneath
   {
-    const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true }); await wire(ctx, { bridge: false });
+    const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true }); await serve(ctx);
     const p = await ctx.newPage();
-    await p.goto('https://www.kpidriver.com/', { waitUntil: 'domcontentloaded' }); await p.waitForSelector('.kdi');
+    await p.goto(BASE + '/', { waitUntil: 'domcontentloaded' }); await p.waitForSelector('.kdi');
     await p.waitForTimeout(800);
     const before = p.url();
     await p.mouse.click(200, 420);
@@ -52,9 +55,9 @@ const state = p => p.evaluate(() => ({
 
   // 4. keyboard skip
   {
-    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 } }); await wire(ctx, { bridge: false });
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 } }); await serve(ctx);
     const p = await ctx.newPage();
-    await p.goto('https://www.kpidriver.com/es', { waitUntil: 'domcontentloaded' }); await p.waitForSelector('.kdi');
+    await p.goto(BASE + '/es', { waitUntil: 'domcontentloaded' }); await p.waitForSelector('.kdi');
     check((await p.textContent('.kdi__skip')) === 'Toca para saltar', 'Spanish pages: skip hint in Spanish');
     await p.keyboard.press('Escape');
     await p.waitForSelector('.kdi', { state: 'detached', timeout: 1500 }).catch(() => {});
@@ -64,9 +67,9 @@ const state = p => p.evaluate(() => ({
 
   // 5. reduced motion: short calm fade
   {
-    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 }, reducedMotion: 'reduce' }); await wire(ctx, { bridge: false });
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 }, reducedMotion: 'reduce' }); await serve(ctx);
     const p = await ctx.newPage(); const t0 = Date.now();
-    await p.goto('https://www.kpidriver.com/', { waitUntil: 'domcontentloaded' }); await p.waitForSelector('.kdi');
+    await p.goto(BASE + '/', { waitUntil: 'domcontentloaded' }); await p.waitForSelector('.kdi');
     await p.waitForSelector('.kdi', { state: 'detached', timeout: 4000 });
     check(Date.now() - t0 < 2600, `reduced motion: short fade (${((Date.now() - t0) / 1000).toFixed(1)} s)`);
     await ctx.close();
@@ -74,13 +77,13 @@ const state = p => p.evaluate(() => ({
 
   // 6. ?nointro and no-JS: no cover
   {
-    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 } }); await wire(ctx, { bridge: false });
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 800 } }); await serve(ctx);
     const p = await ctx.newPage();
-    await p.goto('https://www.kpidriver.com/?nointro', { waitUntil: 'domcontentloaded' }); await p.waitForTimeout(600);
+    await p.goto(BASE + '/?nointro', { waitUntil: 'domcontentloaded' }); await p.waitForTimeout(600);
     check(!(await state(p)).overlay, '?nointro: no intro');
     await ctx.close();
-    const ctx2 = await b.newContext({ javaScriptEnabled: false }); await wire(ctx2, { bridge: false });
-    const p2 = await ctx2.newPage(); await p2.goto('https://www.kpidriver.com/');
+    const ctx2 = await b.newContext({ javaScriptEnabled: false }); await serve(ctx2);
+    const p2 = await ctx2.newPage(); await p2.goto(BASE + '/');
     const covered = await p2.evaluate(() => document.documentElement.className).catch(() => '');
     check(!/kd-intro-on/.test(covered || ''), 'without JavaScript: no cover, the page shows normally');
     await ctx2.close();

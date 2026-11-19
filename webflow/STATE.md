@@ -159,3 +159,17 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
   - To be deleted by the owner: this session's key no longer works after the rotation.
 - Published to all domains. Live check: the closing band and the popup load real open days.
 - Note: the Webflow Cloud app deploys from the branch above; pushes to it redeploy the bridge.
+
+## 2026-11-19: first-load intro "Rev & Shift" (live, owner approved at half speed)
+- Source: intro/kd-intro.src.js. intro/build_intro.py writes intro/kd-intro.js with the real logo paths; the minified copy is in webflow/intro/kd-intro.js.
+  - Hosted as kd-intro-1.js `…/6aff405df25e4c8a78025616_kd-intro-1.js` (site footer code, defer).
+- Site head code starts with intro/head-snippet.html. It sets html.kd-intro-on and paints a navy cover before first paint (first page of a visit only, via sessionStorage `kd-intro-seen`); `?nointro` turns it off. A failsafe lifts the cover after 8 s.
+- Behaviour:
+  - Needle revs from below the red up to green; the full tick ring lights bottom-up; shift; KPI slams in; DRIVER rises; wipe reveals the page.
+  - Plays at 0.5x speed, about 5.2 s.
+  - Tap, click or any key skips. Reduced motion gets a 1.5 s logo fade. Spanish pages show "Toca para saltar".
+- Tests: `node intro/test-intro.js` (local build), or `BASE=https://kpidriver.webflow.io node intro/test-intro.js` against a published site.
+  - The "c is not a function" page error comes from Webflow's own script when this sandbox blocks its jQuery CDN; it happens without the intro too.
+- Found on 2026-11-19, not changed by this work:
+  - The site head code no longer has the Finsweet Attributes or Memberstack scripts, and /knowledge-base and /log-in return 404 on the live site.
+  - Another session also moved the contact form behind the bridge (/api/booking/contact).
