@@ -43,13 +43,21 @@ def convert(html):
             utils = util_for(sm.group(1))
             names = [u[0] for u in utils]
             for n, pairs in utils:
-                sel = ('.' + base[0] if base else '') + '.' + n
-                for p, v in pairs: rules.setdefault(sel, {})[p] = v
+                sel = ''.join('.' + b for b in base) + '.' + n   # Webflow combos belong to the full class chain
+                for p, v in pairs:
+                    if p == 'border' and v.strip() in ('0', 'none', '0px'):   # Webflow drops the shorthand
+                        for side in ('top', 'right', 'bottom', 'left'):
+                            rules.setdefault(sel, {})[f'border-{side}-width'] = '0px'
+                            rules.setdefault(sel, {})[f'border-{side}-style'] = 'none'
+                            rules.setdefault(sel, {})[f'border-{side}-color'] = 'currentcolor'
+                    else: rules.setdefault(sel, {})[p] = v
             attrs = attrs.replace(sm.group(0), '')
             if cm: attrs = attrs.replace(cm.group(0), ' class="' + ' '.join(base + names) + '"')
             else: attrs = ' class="' + ' '.join(names) + '"' + attrs
         return '<' + m.group(1) + attrs + '>'
     html = re.sub(r'<(\w+)(\s[^<>]*?)?>', lambda m: rep(m) if m.group(2) else m.group(0), html)
+    # Webflow drops boolean attributes with an empty value on publish, so give them their own name as value
+    html = re.sub(r'(<\w+[^<>]*?\s)(hidden|allowfullscreen|disabled|open|required|checked|novalidate|defer|async)(?=[\s>/])(?!=)', lambda m: m.group(1) + m.group(2) + '="' + m.group(2) + '"', html)
     for c in re.findall(r'\sclass="([^"]*)"', html): classes |= set(c.split())
     css = ''.join(f'.{c}{{}}' for c in sorted(classes) if not c.startswith('u-')) + ''.join(s + '{' + ''.join(f'{p}:{v};' for p, v in r.items()) + '}' for s, r in rules.items())
     return html, css
