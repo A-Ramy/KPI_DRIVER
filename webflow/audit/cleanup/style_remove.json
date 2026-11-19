@@ -1,0 +1,3285 @@
+[
+{
+"name": "light-grey",
+"parents": [
+"text_descr_add_service",
+"text-weight-semibold",
+"text-align-center"
+],
+"combo": true
+},
+{
+"name": "light-grey",
+"parents": [
+"text_descr_add_service",
+"text-weight-semibold",
+"text-align-center"
+],
+"combo": true
+},
+{
+"name": "light-grey",
+"parents": [
+"text-size-small",
+"text-weight-semibold",
+"text-align-center"
+],
+"combo": true
+},
+{
+"name": "light-grey",
+"parents": [
+"text-size-small",
+"text-weight-semibold",
+"text-align-center"
+],
+"combo": true
+},
+{
+"name": "3",
+"parents": [
+"service-card",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"post_summ_hero",
+"is_70%"
+],
+"combo": true
+},
+{
+"name": "2",
+"parents": [
+"card_service_add",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "is_no_top",
+"parents": [
+"padding-global",
+"isbot_x2"
+],
+"combo": true
+},
+{
+"name": "is_sticky",
+"parents": [
+"wrapp_service_card_content",
+"text-color_white"
+],
+"combo": true
+},
+{
+"name": "bundle",
+"parents": [
+"card",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "text-style_bold",
+"parents": [
+"post_summ_hero",
+"is_70%"
+],
+"combo": true
+},
+{
+"name": "2",
+"parents": [
+"card",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "reverse",
+"parents": [
+"marquee-content",
+"scroll"
+],
+"combo": true
+},
+{
+"name": "text-color_green",
+"parents": [
+"H5",
+"text-style_CAP"
+],
+"combo": true
+},
+{
+"name": "3",
+"parents": [
+"card",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "2",
+"parents": [
+"service-card",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "is_sticky",
+"parents": [
+"wrapp_points_content",
+"text-color_white"
+],
+"combo": true
+},
+{
+"name": "is-bg_black",
+"parents": [
+"text-link_line",
+"is_100%"
+],
+"combo": true
+},
+{
+"name": "text-align-center",
+"parents": [
+"text-size-small",
+"text-weight-semibold"
+],
+"combo": true
+},
+{
+"name": "is-bot_0",
+"parents": [
+"padding-global",
+"is_home_hero"
+],
+"combo": true
+},
+{
+"name": "is_sort_audience",
+"parents": [
+"btn_main",
+"is_white"
+],
+"combo": true
+},
+{
+"name": "text-style_bold",
+"parents": [
+"post_summ_blog_hero",
+"is_70%"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"wrapp-H2",
+"is_center"
+],
+"combo": true
+},
+{
+"name": "text-align-center",
+"parents": [
+"text_descr_add_service",
+"text-weight-semibold"
+],
+"combo": true
+},
+{
+"name": "is-bot_0",
+"parents": [
+"padding-global",
+"is_hero_main"
+],
+"combo": true
+},
+{
+"name": "3",
+"parents": [
+"card_service_add",
+"is_black"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"post_summ_blog_hero",
+"is_70%"
+],
+"combo": true
+},
+{
+"name": "mob_1x15",
+"parents": [
+"grid_H2",
+"is_mar_0"
+],
+"combo": true
+},
+{
+"name": "is_wrapp_img",
+"parents": [
+"card"
+],
+"combo": true
+},
+{
+"name": "is_black",
+"parents": [
+"card_service_add"
+],
+"combo": true
+},
+{
+"name": "text-style_center",
+"parents": [
+"H2"
+],
+"combo": true
+},
+{
+"name": "no_filter",
+"parents": [
+"svg-option"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"wrapp_bread_crumbs"
+],
+"combo": true
+},
+{
+"name": "log_in",
+"parents": [
+"close-pop"
+],
+"combo": true
+},
+{
+"name": "is-banner",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "is_no_100%",
+"parents": [
+"card"
+],
+"combo": true
+},
+{
+"name": "is_80%",
+"parents": [
+"description-H2_40%"
+],
+"combo": true
+},
+{
+"name": "is_center",
+"parents": [
+"wrapp-H2"
+],
+"combo": true
+},
+{
+"name": "is_mob_center",
+"parents": [
+"wrapp_btn_book-team"
+],
+"combo": true
+},
+{
+"name": "is_blog_post",
+"parents": [
+"container-main"
+],
+"combo": true
+},
+{
+"name": "text-style_indent",
+"parents": [
+"H2"
+],
+"combo": true
+},
+{
+"name": "text-style_center",
+"parents": [
+"test-size_M"
+],
+"combo": true
+},
+{
+"name": "is_mar_0",
+"parents": [
+"wrapp-H2"
+],
+"combo": true
+},
+{
+"name": "is_hero_100%",
+"parents": [
+"container-main"
+],
+"combo": true
+},
+{
+"name": "is_mar_40",
+"parents": [
+"grid_home_audience"
+],
+"combo": true
+},
+{
+"name": "is_contact_page",
+"parents": [
+"section-hero"
+],
+"combo": true
+},
+{
+"name": "is_home_page",
+"parents": [
+"H1"
+],
+"combo": true
+},
+{
+"name": "is_auto_high",
+"parents": [
+"service-card"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"wrapp_hero_H1"
+],
+"combo": true
+},
+{
+"name": "text-style_bold",
+"parents": [
+"H5"
+],
+"combo": true
+},
+{
+"name": "policy",
+"parents": [
+"grid_hero\u00a0"
+],
+"combo": true
+},
+{
+"name": "is_the_second",
+"parents": [
+"card_about_block"
+],
+"combo": true
+},
+{
+"name": "text-color_grey",
+"parents": [
+"crumbs_link"
+],
+"combo": true
+},
+{
+"name": "artcicle_page",
+"parents": [
+"grid_hero_blog"
+],
+"combo": true
+},
+{
+"name": "is_policy",
+"parents": [
+"section-hero"
+],
+"combo": true
+},
+{
+"name": "is_sticky",
+"parents": [
+"wrapp_service_card_content"
+],
+"combo": true
+},
+{
+"name": "is_home_hero",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "text-style_CAP",
+"parents": [
+"H5"
+],
+"combo": true
+},
+{
+"name": "is-navbar",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "is_mob_center",
+"parents": [
+"wrapp_btn_book-know_base"
+],
+"combo": true
+},
+{
+"name": "is_contanct_page",
+"parents": [
+"H1"
+],
+"combo": true
+},
+{
+"name": "is-bg_black",
+"parents": [
+"section-video_testimonials"
+],
+"combo": true
+},
+{
+"name": "is_message",
+"parents": [
+"text-field"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"wrapp_service_card_content"
+],
+"combo": true
+},
+{
+"name": "marg+",
+"parents": [
+"wrapp_bread_crumbs"
+],
+"combo": true
+},
+{
+"name": "text-style_CAP",
+"parents": [
+"H6"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"crumbs_link"
+],
+"combo": true
+},
+{
+"name": "is_left",
+"parents": [
+"arrow_blog_also"
+],
+"combo": true
+},
+{
+"name": "text-weight-semibold",
+"parents": [
+"text-size-small"
+],
+"combo": true
+},
+{
+"name": "is_pop-up-sign)up",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "is_home_hero",
+"parents": [
+"container-main"
+],
+"combo": true
+},
+{
+"name": "text-size-small",
+"parents": [
+"H6"
+],
+"combo": true
+},
+{
+"name": "text-color_black",
+"parents": [
+"link-block-social"
+],
+"combo": true
+},
+{
+"name": "text-weight_400",
+"parents": [
+"text-size_content"
+],
+"combo": true
+},
+{
+"name": "is_mob_center",
+"parents": [
+"wrapp_btn_book-home"
+],
+"combo": true
+},
+{
+"name": "is_horiz",
+"parents": [
+"wrapp_card_head"
+],
+"combo": true
+},
+{
+"name": "text-size_content",
+"parents": [
+"H6"
+],
+"combo": true
+},
+{
+"name": "hide-mobile",
+"parents": [
+"marquee-image"
+],
+"combo": true
+},
+{
+"name": "is_white",
+"parents": [
+"pagin_btn"
+],
+"combo": true
+},
+{
+"name": "text-style_center",
+"parents": [
+"H4"
+],
+"combo": true
+},
+{
+"name": "text-weight-semibold",
+"parents": [
+"text_descr_add_service"
+],
+"combo": true
+},
+{
+"name": "is_70%",
+"parents": [
+"post_summ_blog_hero"
+],
+"combo": true
+},
+{
+"name": "is_small",
+"parents": [
+"section-home_hero"
+],
+"combo": true
+},
+{
+"name": "is_hero_main",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "mob_hidden",
+"parents": [
+"wrapp_point"
+],
+"combo": true
+},
+{
+"name": "is_mob",
+"parents": [
+"wrapp_map_and_info_block"
+],
+"combo": true
+},
+{
+"name": "calendly",
+"parents": [
+"wrapp-pop_up-BG"
+],
+"combo": true
+},
+{
+"name": "is_dropdown",
+"parents": [
+"Nav Link"
+],
+"combo": true
+},
+{
+"name": "marg-bot_40",
+"parents": [
+"tab-main"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"wrapp_points_content"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"post_summ_hero"
+],
+"combo": true
+},
+{
+"name": "is_auto_high",
+"parents": [
+"card"
+],
+"combo": true
+},
+{
+"name": "artcicle_page",
+"parents": [
+"grid_hero\u00a0"
+],
+"combo": true
+},
+{
+"name": "is_wrapp_img",
+"parents": [
+"service-card"
+],
+"combo": true
+},
+{
+"name": "is_mar_0",
+"parents": [
+"grid_H2"
+],
+"combo": true
+},
+{
+"name": "is-bot_0",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "is_blog",
+"parents": [
+"section-hero"
+],
+"combo": true
+},
+{
+"name": "is_contanct_page_2",
+"parents": [
+"H1"
+],
+"combo": true
+},
+{
+"name": "text-style_center_mobile",
+"parents": [
+"H2"
+],
+"combo": true
+},
+{
+"name": "is_z_4",
+"parents": [
+"dropdown_sor"
+],
+"combo": true
+},
+{
+"name": "know-base",
+"parents": [
+"phone-pop_up"
+],
+"combo": true
+},
+{
+"name": "is_small",
+"parents": [
+"tab-main_menu"
+],
+"combo": true
+},
+{
+"name": "is_contact_page",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"post_summ_blog_hero"
+],
+"combo": true
+},
+{
+"name": "is_no_memebr",
+"parents": [
+"sign_up-pop_up"
+],
+"combo": true
+},
+{
+"name": "is_contact_wrapp",
+"parents": [
+"grid_hero\u00a0"
+],
+"combo": true
+},
+{
+"name": "text-color_white",
+"parents": [
+"wrapp-H2"
+],
+"combo": true
+},
+{
+"name": "team_slider",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "text-color_black",
+"parents": [
+"text-link_Heading"
+],
+"combo": true
+},
+{
+"name": "is_70%",
+"parents": [
+"post_summ_hero"
+],
+"combo": true
+},
+{
+"name": "is_project",
+"parents": [
+"section-hero"
+],
+"combo": true
+},
+{
+"name": "is-x2",
+"parents": [
+"padding-global"
+],
+"combo": true
+},
+{
+"name": "is_no_100%",
+"parents": [
+"service-card"
+],
+"combo": true
+},
+{
+"name": "is_left",
+"parents": [
+"arrow_team"
+],
+"combo": true
+},
+{
+"name": "is_right",
+"parents": [
+"container_services_cards"
+],
+"combo": true
+},
+{
+"name": "is_100%",
+"parents": [
+"text-link_line"
+],
+"combo": true
+},
+{
+"name": "is_wrapp_img",
+"parents": [
+"card_service_add"
+],
+"combo": true
+},
+{
+"name": "is_black",
+"parents": [
+"service-card"
+],
+"combo": true
+},
+{
+"name": "is_contact_from_head",
+"parents": [
+"H6"
+],
+"combo": true
+},
+{
+"name": "is_black",
+"parents": [
+"social_link 2"
+],
+"combo": true
+},
+{
+"name": "is_sticky",
+"parents": [
+"wrapp_points_content"
+],
+"combo": true
+},
+{
+"name": "is_right",
+"parents": [
+"card_service_add"
+],
+"combo": true
+},
+{
+"name": "is_second",
+"parents": [
+"login_content"
+],
+"combo": true
+},
+{
+"name": "is_auto_high",
+"parents": [
+"card_service_add"
+],
+"combo": true
+},
+{
+"name": "is_mob_center",
+"parents": [
+"wrapp_btn_book-footer"
+],
+"combo": true
+},
+{
+"name": "is_contact_wrapp",
+"parents": [
+"grid_hero_blog"
+],
+"combo": true
+},
+{
+"name": "is_blog_page",
+"parents": [
+"section-faq"
+],
+"combo": true
+},
+{
+"name": "is_black",
+"parents": [
+"card"
+],
+"combo": true
+},
+{
+"name": "BIO",
+"parents": [
+"social_link_team"
+],
+"combo": true
+},
+{
+"name": "disabled-prev",
+"parents": [
+"form_prev"
+],
+"combo": true
+},
+{
+"name": "is-submit",
+"parents": [
+"btn_main"
+],
+"combo": true
+},
+{
+"name": "is_small",
+"parents": [
+"tab-link"
+],
+"combo": true
+},
+{
+"name": "is_mob_center",
+"parents": [
+"wrapp_btn_book-services"
+],
+"combo": true
+},
+{
+"name": "text-style_bold",
+"parents": [
+"H4"
+],
+"combo": true
+},
+{
+"name": "is_dropdown",
+"parents": [
+"checkbox_input_sort"
+],
+"combo": true
+},
+{
+"name": "is_overflow",
+"parents": [
+"container-main"
+],
+"combo": true
+},
+{
+"name": "is_left",
+"parents": [
+"text-point_wrapp"
+],
+"combo": true
+},
+{
+"name": "is_no_100%",
+"parents": [
+"card_service_add"
+],
+"combo": true
+},
+{
+"name": "text-point_wrapp",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik s1qi4",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_book-know_base",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Line",
+"parents": [],
+"combo": false
+},
+{
+"name": "block-shadow-banner",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-categories",
+"parents": [],
+"combo": false
+},
+{
+"name": "Eye SVG",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect fxt2i",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-white_Case_studies",
+"parents": [],
+"combo": false
+},
+{
+"name": "page-wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-home_map",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_audience",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_nav_links",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-banner_img",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapper-img-banner",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid-H2_left_min",
+"parents": [],
+"combo": false
+},
+{
+"name": "nav_block_footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "radio_label",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-option",
+"parents": [],
+"combo": false
+},
+{
+"name": "cms_list_home_projec",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Bottom Line 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_signup-link",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_img_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "radio_button",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect ep13rl",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_progress-box",
+"parents": [],
+"combo": false
+},
+{
+"name": "footer_divider",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik n4k2p",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path s55lx",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-home_Benefits",
+"parents": [],
+"combo": false
+},
+{
+"name": "post_summ_hero",
+"parents": [],
+"combo": false
+},
+{
+"name": "nav_footer 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-field",
+"parents": [],
+"combo": false
+},
+{
+"name": "is-bg_black",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 2p8ph",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-color_green",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-arrow_poligone",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-video_testimonials",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_home_hero_blog_page",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_social_footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_about_us_heading",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_about_us_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_progress-text",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid-know_video",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 5dab9",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "container-footer_links",
+"parents": [],
+"combo": false
+},
+{
+"name": "service-add-ons",
+"parents": [],
+"combo": false
+},
+{
+"name": "link_block_store",
+"parents": [],
+"combo": false
+},
+{
+"name": "container-large",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path bvude",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid-footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect xz23f",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik dia6x",
+"parents": [],
+"combo": false
+},
+{
+"name": "navbar_wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-size_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_embed_calendly",
+"parents": [],
+"combo": false
+},
+{
+"name": "tab-main",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_field-label",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_percent",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 2mo6k",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-arrow-2_poligone",
+"parents": [],
+"combo": false
+},
+{
+"name": "tab-content",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_content_testim",
+"parents": [],
+"combo": false
+},
+{
+"name": "link_brand_footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_book-services",
+"parents": [],
+"combo": false
+},
+{
+"name": "cms_item_home_project",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik e0lbm",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-home_Case_studies",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik msschi",
+"parents": [],
+"combo": false
+},
+{
+"name": "from-block_contact",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_google_icon",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_progress-circle",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-Pain_points",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_line",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_service_cards",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_docs_cert",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path euc3h",
+"parents": [],
+"combo": false
+},
+{
+"name": "social_link 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_empty",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik myelt",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_sort_data",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_copyright_yavacado",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_forgot-link",
+"parents": [],
+"combo": false
+},
+{
+"name": "description_service_card",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 3xthb",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 5iml6",
+"parents": [],
+"combo": false
+},
+{
+"name": "cross-svg",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_services_cards",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect j93ov",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_social_links",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-about_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "service-card",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect u6bfji",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_line_2",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_contact",
+"parents": [],
+"combo": false
+},
+{
+"name": "yavacado",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 8psbqf",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_divider-wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_password-wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path fhsxj",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik eb6zc",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-blog",
+"parents": [],
+"combo": false
+},
+{
+"name": "empty-block",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 0t9hn",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_footer_links",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_point",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_numbers",
+"parents": [],
+"combo": false
+},
+{
+"name": "content_collection-list",
+"parents": [],
+"combo": false
+},
+{
+"name": "checkbox_label",
+"parents": [],
+"combo": false
+},
+{
+"name": "card-slide_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "cross-svg 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "from-block_footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_form-block",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_bottom-link",
+"parents": [],
+"combo": false
+},
+{
+"name": "map-embed",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_banner_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid-team",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-size-small",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_tag",
+"parents": [],
+"combo": false
+},
+{
+"name": "navmenu_wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "mask_slider_blog_also",
+"parents": [],
+"combo": false
+},
+{
+"name": "fs-cmsfilter_highlight",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_input-wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_submit-button",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_home_hero_H1 new",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_about_mission",
+"parents": [],
+"combo": false
+},
+{
+"name": "fomr-contact",
+"parents": [],
+"combo": false
+},
+{
+"name": "Slider Wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "img-logo 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapper_map",
+"parents": [],
+"combo": false
+},
+{
+"name": "arrow_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_contain",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapper_btnS_navbar",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_error",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_empty-icon",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik it73a",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_form-wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Menu Inner",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_team_author",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_form",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_book-team",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik jpzsll",
+"parents": [],
+"combo": false
+},
+{
+"name": "card_testim",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path s4r92",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_Frau_Herr",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_service_head",
+"parents": [],
+"combo": false
+},
+{
+"name": "description-H2_40%",
+"parents": [],
+"combo": false
+},
+{
+"name": "link-block-social",
+"parents": [],
+"combo": false
+},
+{
+"name": "contenier_out_of_view",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 90tbx",
+"parents": [],
+"combo": false
+},
+{
+"name": "slider_pop_mask",
+"parents": [],
+"combo": false
+},
+{
+"name": "text_descr_add_service",
+"parents": [],
+"combo": false
+},
+{
+"name": "blog-container",
+"parents": [],
+"combo": false
+},
+{
+"name": "Text Block 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_form_projects",
+"parents": [],
+"combo": false
+},
+{
+"name": "calculator-pop_up",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_reset-all",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 9zwhz",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "marquee",
+"parents": [],
+"combo": false
+},
+{
+"name": "cms_project_card",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path lnpdy",
+"parents": [],
+"combo": false
+},
+{
+"name": "Slider Left Arrow",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path wgr2dg",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp-btnS",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik cd7e5",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-style_CAP",
+"parents": [],
+"combo": false
+},
+{
+"name": "slider_nav_hide",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_tag-text",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_search-field",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path pm9zgk",
+"parents": [],
+"combo": false
+},
+{
+"name": "is_mar_0",
+"parents": [],
+"combo": false
+},
+{
+"name": "input-lable",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect lbw4i",
+"parents": [],
+"combo": false
+},
+{
+"name": "cms_wrapp_other_proj",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_map_counter",
+"parents": [],
+"combo": false
+},
+{
+"name": "marquee-content",
+"parents": [],
+"combo": false
+},
+{
+"name": "slider_nav",
+"parents": [],
+"combo": false
+},
+{
+"name": "crumbs_link",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-contact",
+"parents": [],
+"combo": false
+},
+{
+"name": "Mask",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_about_values",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-icon_wrapp",
+"parents": [],
+"combo": false
+},
+{
+"name": "Icon",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_tags-wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-style_indent",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_tags-text",
+"parents": [],
+"combo": false
+},
+{
+"name": "Text Block 4",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect av1lj",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path bizky",
+"parents": [],
+"combo": false
+},
+{
+"name": "counter",
+"parents": [],
+"combo": false
+},
+{
+"name": "H5",
+"parents": [],
+"combo": false
+},
+{
+"name": "marquee-image",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-policy",
+"parents": [],
+"combo": false
+},
+{
+"name": "slider_slide-fill",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_home_hero_left",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg_contact_footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-color_grey 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_home_benfits",
+"parents": [],
+"combo": false
+},
+{
+"name": "question_number",
+"parents": [],
+"combo": false
+},
+{
+"name": "option-results",
+"parents": [],
+"combo": false
+},
+{
+"name": "checkbox_input_sort",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_Frau_Herr",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-services_bundles",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid-H2",
+"parents": [],
+"combo": false
+},
+{
+"name": "card_service_add",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp-pop_up-BG",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_H2_is_centered_grid",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-404",
+"parents": [],
+"combo": false
+},
+{
+"name": "Slider Right Arrow",
+"parents": [],
+"combo": false
+},
+{
+"name": "test-size_M",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik p18ws",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_docs_cert_right",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_contact_links",
+"parents": [],
+"combo": false
+},
+{
+"name": "dropdown_icon",
+"parents": [],
+"combo": false
+},
+{
+"name": "close-pop",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-arrow_poligone_Head",
+"parents": [],
+"combo": false
+},
+{
+"name": "sort_field",
+"parents": [],
+"combo": false
+},
+{
+"name": "img-absolut",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_404",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_img_base",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_service_container",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_about_counter",
+"parents": [],
+"combo": false
+},
+{
+"name": "video-home_about",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_B2B_docs",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_search_sort",
+"parents": [],
+"combo": false
+},
+{
+"name": "marg-bot_40",
+"parents": [],
+"combo": false
+},
+{
+"name": "radio_option",
+"parents": [],
+"combo": false
+},
+{
+"name": "Answer Block",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_form",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_number_counter",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_calculator_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-404",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_home_points_right",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_filter_header",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_contact_links",
+"parents": [],
+"combo": false
+},
+{
+"name": "dropdown_list_sort",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_content_case_card",
+"parents": [],
+"combo": false
+},
+{
+"name": "tab-main_menu",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik yn8qf",
+"parents": [],
+"combo": false
+},
+{
+"name": "icon_svg_service",
+"parents": [],
+"combo": false
+},
+{
+"name": "Faq Answer",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-after_bundle",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik a1fas",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-icon",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-color_white",
+"parents": [],
+"combo": false
+},
+{
+"name": "card_map",
+"parents": [],
+"combo": false
+},
+{
+"name": "navb-brand",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_cases",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-color_grey",
+"parents": [],
+"combo": false
+},
+{
+"name": "sign_up-pop_up",
+"parents": [],
+"combo": false
+},
+{
+"name": "img_about_us",
+"parents": [],
+"combo": false
+},
+{
+"name": "emebe-testim",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 2fdy9j",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_poligon_HEAD",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_content_vert",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-white_Benefits",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_home_case_right",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_booking_from_pop",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_calculator_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-project_numbers",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Block",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik mjl77",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_divider",
+"parents": [],
+"combo": false
+},
+{
+"name": "fotter-line",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_map_and_info_block",
+"parents": [],
+"combo": false
+},
+{
+"name": "img-abs",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_home_about",
+"parents": [],
+"combo": false
+},
+{
+"name": "nav-menu",
+"parents": [],
+"combo": false
+},
+{
+"name": "Menu Button\u00a0",
+"parents": [],
+"combo": false
+},
+{
+"name": "navbbar_wrapp_BTN",
+"parents": [],
+"combo": false
+},
+{
+"name": "slide_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "phone-pop_up",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_content_base",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-B2b_docs",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-color_black",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect ak4sd",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_google-wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_prev",
+"parents": [],
+"combo": false
+},
+{
+"name": "Show Password Wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_svg_faq",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_grid_roadmap",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_book-footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik wihxmg",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapper-img",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_hero_H1",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg_icon_social",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-banner",
+"parents": [],
+"combo": false
+},
+{
+"name": "input-form",
+"parents": [],
+"combo": false
+},
+{
+"name": "img_doc_cert",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect 1ly65",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path znw1p",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_points_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_title",
+"parents": [],
+"combo": false
+},
+{
+"name": "list-item",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik k0b9b",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik byjj7",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-hero",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-blogs_also",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_after_bundle",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_center",
+"parents": [],
+"combo": false
+},
+{
+"name": "img-banner-section",
+"parents": [],
+"combo": false
+},
+{
+"name": "img_map",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path z33k6",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect 34xp4",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Middle Line\u00a0 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "Dropdown_navbar",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-projects_sort_filt",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_about_us",
+"parents": [],
+"combo": false
+},
+{
+"name": "card_about_block",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_hero\u00a0",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-faq",
+"parents": [],
+"combo": false
+},
+{
+"name": "Text Block",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp-H2",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_map_data",
+"parents": [],
+"combo": false
+},
+{
+"name": "card_doc_cert",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_contact_left",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path hescj",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_services_adds",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Top Line 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 37ph2",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_title-wrap",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_team_description",
+"parents": [],
+"combo": false
+},
+{
+"name": "Text Block 3",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_drop_nav_list",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_banner_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "slide_blog_also",
+"parents": [],
+"combo": false
+},
+{
+"name": "slider-testim_text",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-style_link",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_prev-text",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp-heading_thank you",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_filter_header",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path texq2",
+"parents": [],
+"combo": false
+},
+{
+"name": "pagination_page-design",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_map_right",
+"parents": [],
+"combo": false
+},
+{
+"name": "form-footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_about_us_left",
+"parents": [],
+"combo": false
+},
+{
+"name": "login_input",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik d4hw9",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapper_audience",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_home_audience",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_numbers",
+"parents": [],
+"combo": false
+},
+{
+"name": "case_link_block",
+"parents": [],
+"combo": false
+},
+{
+"name": "global-styles",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_footer_brand",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik r62ts",
+"parents": [],
+"combo": false
+},
+{
+"name": "question_text",
+"parents": [],
+"combo": false
+},
+{
+"name": "Rect ujxkfl",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_poligon",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 2qi8a",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-cases",
+"parents": [],
+"combo": false
+},
+{
+"name": "pagination_page-button",
+"parents": [],
+"combo": false
+},
+{
+"name": "img_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_progress",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_hero\u00a0",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-home_hero",
+"parents": [],
+"combo": false
+},
+{
+"name": "tab-link",
+"parents": [],
+"combo": false
+},
+{
+"name": "mask_slider_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-style_bold",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid-H2_point_right",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_next",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_H2",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_card_head",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_Heading",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-About_Us_second",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_H1_contact",
+"parents": [],
+"combo": false
+},
+{
+"name": "Slide Content Wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 61ydfk",
+"parents": [],
+"combo": false
+},
+{
+"name": "fs-cmsload_page-dots",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik cae2l",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_progress-fill",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path md3k1",
+"parents": [],
+"combo": false
+},
+{
+"name": "arrow_blog_also",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_heading_after_bundle",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_home_points",
+"parents": [],
+"combo": false
+},
+{
+"name": "booking-embed_section",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik yg5jk",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_tag-remove",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-marquee",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path ol6l5",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_progress-dot",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-link_main",
+"parents": [],
+"combo": false
+},
+{
+"name": "H5",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-arrow-2_poligone_Head",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_map",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_grid_service_logo",
+"parents": [],
+"combo": false
+},
+{
+"name": "social_link_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "total-number",
+"parents": [],
+"combo": false
+},
+{
+"name": "post_summ_blog_hero",
+"parents": [],
+"combo": false
+},
+{
+"name": "slider_slide",
+"parents": [],
+"combo": false
+},
+{
+"name": "Checkbox Field",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_poligone",
+"parents": [],
+"combo": false
+},
+{
+"name": "footer_title",
+"parents": [],
+"combo": false
+},
+{
+"name": "sldier_blog_also",
+"parents": [],
+"combo": false
+},
+{
+"name": "H6",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_other_project_mob",
+"parents": [],
+"combo": false
+},
+{
+"name": "Pagination",
+"parents": [],
+"combo": false
+},
+{
+"name": "form 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_map_left",
+"parents": [],
+"combo": false
+},
+{
+"name": "dropdown_sor",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_about_us_right",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_btn_book-home",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_link_line_footer",
+"parents": [],
+"combo": false
+},
+{
+"name": "img_base_card",
+"parents": [],
+"combo": false
+},
+{
+"name": "container-H2_text_color",
+"parents": [],
+"combo": false
+},
+{
+"name": "kd-post",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapper_filter_tag",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path cfjot",
+"parents": [],
+"combo": false
+},
+{
+"name": "dropdown_icon_navbar",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-style_center",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_bread_crumbs",
+"parents": [],
+"combo": false
+},
+{
+"name": "main-wrapper",
+"parents": [],
+"combo": false
+},
+{
+"name": "form_success",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-point",
+"parents": [],
+"combo": false
+},
+{
+"name": "filter_sort-by",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-style_center_mobile",
+"parents": [],
+"combo": false
+},
+{
+"name": "container_counter_about",
+"parents": [],
+"combo": false
+},
+{
+"name": "H6",
+"parents": [],
+"combo": false
+},
+{
+"name": "svg-FAQ",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-home_audience",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik 1gpjo",
+"parents": [],
+"combo": false
+},
+{
+"name": "Navbar",
+"parents": [],
+"combo": false
+},
+{
+"name": "img-banner",
+"parents": [],
+"combo": false
+},
+{
+"name": "cms_item_category_project",
+"parents": [],
+"combo": false
+},
+{
+"name": "dropdown_list_nav",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_book_calll",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_faq",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik ttz47",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_home_case",
+"parents": [],
+"combo": false
+},
+{
+"name": "pagin_btn",
+"parents": [],
+"combo": false
+},
+{
+"name": "text-weight_400",
+"parents": [],
+"combo": false
+},
+{
+"name": "Ikonik bfstm",
+"parents": [],
+"combo": false
+},
+{
+"name": "sldier_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "Div Block 2",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-about_values",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav Link",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_service_card_content",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_testim",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_footer_title",
+"parents": [],
+"combo": false
+},
+{
+"name": "embed-calendly",
+"parents": [],
+"combo": false
+},
+{
+"name": "grid_hero_blog",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path jn8rj",
+"parents": [],
+"combo": false
+},
+{
+"name": "card_testimonial",
+"parents": [],
+"combo": false
+},
+{
+"name": "question",
+"parents": [],
+"combo": false
+},
+{
+"name": "c-slider",
+"parents": [],
+"combo": false
+},
+{
+"name": "cursor-none",
+"parents": [],
+"combo": false
+},
+{
+"name": "section-home_call",
+"parents": [],
+"combo": false
+},
+{
+"name": "Nav BlockFooter ",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path 9gjj1",
+"parents": [],
+"combo": false
+},
+{
+"name": "Div Block 6",
+"parents": [],
+"combo": false
+},
+{
+"name": "Path en5ax",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_img_about_us",
+"parents": [],
+"combo": false
+},
+{
+"name": "wrapp_img_team",
+"parents": [],
+"combo": false
+},
+{
+"name": "Question Block",
+"parents": [],
+"combo": false
+}
+]
