@@ -900,3 +900,6 @@ html[lang="es"] [data-lc] .tabs__tab { padding: 9px 7px; gap: 6px; font-size: cl
 /* Green text CTAs: at rest the tint band sits in a strip just under the words instead of over the bottom of the letters;
    on hover it still fills the whole link (that rule lives in the booking stylesheet). */
 .kd-cta { padding-bottom: .22em; background-size: 100% .22em; }
+/* Booking form step numbers on light backgrounds: the gear colours (red, amber...) were below 4.5:1 at 11px.
+   Same hue, darkened. Inactive steps keep the booking stylesheet's inherited colour (more specific rule). */
+.section--paper .kdb__gear-n, [data-theme="light"] .kdb__gear-n { color: color-mix(in srgb, var(--c) 60%, #000); }

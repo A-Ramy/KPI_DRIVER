@@ -234,3 +234,11 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Sources: build.py booking fallbacks → /book-discovery-call; es.json "Open the booking page"; webflow/header.html + footer.html. ES bundles NOT rebuilt (runtime fix covers them; rebuild needs new asset ids + kd-head-5).
 - kd-site-16.js on the 15 live page footers; the 4 retired member pages still load kd-site-15.css/.js (keep those assets).
 - Deleted (owner approved, unreferenced): kd-booking-1.js 6afcb9ee866378494a4755af, -2.js 6afcbbfd533c5363c73cb7e8, -3.js 6afcbd152059a72bdc06ee9f, -4.js 6afcd30a5e0325cb559145fc, old kd-booking-2.css 6afcb9ee866378494a4755c5. In use and kept: kd-booking-2.css 6afcd30a34c9736907449f20, kd-booking-5.js 6afce87a8c6000918d7d88d1.
+
+## 2026-11-19: quick fixes, speed check
+- SEO titles: post template "{{name}} | KPI DRIVER", category template "{{name}} | KPI DRIVER Blog", Blog "Real Estate Investor Blog: CRM, KPIs & AI | KPI DRIVER"; Spanish (locale 6afb6419e78a2109902d68ac): home, blog, services, ai-agent, ai-suite, our-team shortened; ES blog description in Spanish. 48 post titles still > 65 chars because the post names are long.
+- Descriptions: Privacy, Terms (EN); blog categories Industry Insights, KPIs & Performance, Tips & Tricks (were empty), Rentals & Portfolio, Dispositions & Transactions (were short), in both CMS locales (ES copies still English pending the Spanish work). 0 pages < 70 chars.
+- Dead booking links removed from the 7 page embeds (Book, Our Team, Contact, AI Agent, Services, CRM, AI Suite); Book page scheduler block reduced to `<div class="booking" data-booking></div>` (kd-booking-5 swaps it for the booking form). Verified: staging <main> equals old live <main> with only the link substitutions; live raw HTML 132/132 pages free of dead hrefs.
+- Lighthouse (mobile, sandbox; some hosts blocked): SEO 100 everywhere, a11y 95-100, CLS 0; perf home 79→83, services 93, crm 88, blog 94, post 96, contact 92-95.
+- Header logos: 712x96 PNG (26 KB each) → 356x48 WebP (8 KB): dark 6afef2b42675932ed3668ce3, light 6afef2b45260bae65626754f (sources webflow/logos/). ES bundles still swap in a header with the old PNG logos (fix in the Spanish work).
+- kd-site-17.css 6afef72e3bf511e913abd6f5 (booking step-number contrast on light backgrounds) on the 15 live page heads.
