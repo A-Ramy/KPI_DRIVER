@@ -490,6 +490,15 @@
     if (h === here) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
 
+  /* booking buttons: the pop-up handles normal clicks; their fallback links pointed at GoHighLevel
+     calendars that no longer exist (404), so new-tab opens / long-presses go to our booking page instead */
+  var deadCal = /link\.kpidriver\.com\/widget\/booking\/(17jl7cP7dvOAU48s6C3L|l4rvIxCnb9DtsSTM6SoQ|3bltGmUYGxpIUtG09p3V|o811nwxOSIS90zvrwX33|usaNbU09ACXDqb1C52Rd)/;
+  var bookPath = (/^\/es(\/|$)/.test(location.pathname) ? "/es" : "") + "/book-discovery-call";
+  d.querySelectorAll('a[href*="/widget/booking/"]').forEach(function (a) {
+    if (deadCal.test(a.getAttribute("href") || "")) { a.setAttribute("href", bookPath); a.removeAttribute("target"); a.removeAttribute("rel"); }
+  });
+  if (/^\/es(\/|$)/.test(location.pathname)) d.querySelectorAll('.site-header a[href="/book-discovery-call"], .site-footer a[href="/book-discovery-call"], .bookdlg a[href="/book-discovery-call"]').forEach(function (a) { a.setAttribute("href", bookPath); });
+
   /* members log-in form: the show-password toggle is an icon-only link; give it a name */
   d.querySelectorAll("a.show-password").forEach(function (a) { a.setAttribute("role", "button"); a.setAttribute("aria-label", es ? "Mostrar contrase\u00f1a" : "Show password"); });
 

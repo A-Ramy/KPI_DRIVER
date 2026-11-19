@@ -16,7 +16,7 @@ ROOT = Path(__file__).parent
 SRC, OUT = ROOT / "src", ROOT / "site"
 ORIGIN = "https://www.kpidriver.com"
 PRODUCTION = "--production" in sys.argv
-BOOKING_URL = "https://link.kpidriver.com/widget/booking/17jl7cP7dvOAU48s6C3L"
+BOOKING_URL = "/book-discovery-call"  # old GoHighLevel calendar links are dead (404); the pop-up handles clicks
 STATUS_URL = "https://status.gohighlevel.com/"
 BOOK_BASE = "https://link.kpidriver.com/widget/booking/"
 # Booking calendars, as embedded on the current live site (one per placement).
@@ -35,7 +35,7 @@ def cal_for(path):
 
 def book_attrs(key):
     """Used inside href="…": the link opens the scheduler directly; JS upgrades it to the embedded popup."""
-    return f'{BOOK_BASE}{CAL[key]}" target="_blank" rel="noopener" data-book="{CAL[key]}'
+    return f'/book-discovery-call" data-book="{CAL[key]}'
 FONTS = "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
 
 THEME_JS = ("<script>(function(){var d=document.documentElement;try{if(!d.hasAttribute('data-theme')){var s=null;"
@@ -364,7 +364,7 @@ def render(path, meta, body):
 <dialog class="bookdlg" id="book-dialog" aria-labelledby="book-dialog-title">
   <div class="bookdlg__bar"><h2 id="book-dialog-title">Book a Discovery Call</h2><button class="bookdlg__close" type="button" aria-label="Close scheduler">Close ✕</button></div>
   <div class="bookdlg__frame"></div>
-  <p class="bookdlg__foot">Scheduler not loading? <a class="link" href="{BOOK_BASE}{CAL['header']}" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+  <p class="bookdlg__foot">Scheduler not loading? <a class="link" href="/book-discovery-call">Open the booking page</a>.</p>
 </dialog>
 <script src="{root}assets/js/site.js" defer></script>"""
         hd = head(meta, path, root)
