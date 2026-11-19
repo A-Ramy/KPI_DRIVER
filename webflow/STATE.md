@@ -254,3 +254,16 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Project now: 15 live pages + FAQs template; components: KD Header, KD Footer only (34 old components unregistered).
 - Styles: 595 candidates (no element use + name absent from live HTML/our code); ~585 removed (a few nbsp-named ones not addressable: "Menu Button ", "grid_hero ", "Nav Middle Line  2", "Nav BlockFooter "). Webflow shared CSS 154 KB → 54 KB. Staging vs live computed styles: 17,090 compared, only differences = staging Webflow badge index shift, a hero animation mid-frame, booking calendar state.
 - Assets: 146 unused deleted (old template/first-build images + kd-site-15.css/js, kd-site-16.css, kd-members-4.css); 34 left. All 132 pages' referenced site files load (0 failures). Scripts: webflow/audit/cleanup/.
+
+## 2026-11-19: native rebuild, Home pilot (staging only)
+- Pilot page `kd-native-pilot` (6aff41b6c3b70b0204afd7df), noindex/nofollow in its head code, non-draft. Live Home untouched.
+- All 14 Home sections are native elements inside `<main id="main" class="kd-main">` (3fcb4e02-…). Visual design still comes from hosted kd-site-17.css; Webflow classes carry the same names with no properties.
+- Converter (WHTML builder) issues found and fixed by hand:
+  - `<button>` became `<a class="w-button" href="#">` (walkthrough steps would have jumped to the top). Rebuilt as DOM elements with tag `button` (data_element_builder type DOM, dom_tag button). `type` is a reserved attribute and can't be set; outside a form that's harmless.
+  - `<div><span>A</span><span>B</span></div>` rows came out as `##INLINE0####INLINE1##` text. Rebuilt with DOM span children.
+  - Inline `style=""` became shared classes `inline-p-0` etc. that collided across sections. `style` can't be set on native Paragraph/Block, so replaced with combo utility classes `.note.u-mt-16`, `.note.u-mb-14`, `.muted.u-text-sm`, `.gearline.u-mb-28` and `.u-mt-28`. The 11 inline-* classes are deleted. (`style` IS kept on DOM elements, e.g. the bar widths.)
+  - IDs on elements: use settings `domId`, not an attribute.
+- Body starts with an HtmlEmbed holding `<link>` to kd-site-17.css so the Designer canvas shows the real design. Update it whenever the CSS file version changes.
+- kd-booking-5.js only adds its prompt lines / CTA phrases when `#main` exists and keys them by path, so they appear on `/` but not on the pilot URL. Expected.
+- Checks (scripts in webflow/native/): computed styles of all 14 sections vs live Home at 1440/820/390 = 2,787 element styles, 0 differ; header/main/footer positions and page height identical at 1440 and 390; behaviour identical (lifecycle diagram + tab clicks, walkthrough steps/play with no scroll jump, FAQ, booking pop-up).
+- Next: owner checks the pilot in the Designer, then it replaces Home (copy main across in the Designer, or rebuild on Home), then header/footer native with language switch, then the other pages, then Spanish text through Localization.
