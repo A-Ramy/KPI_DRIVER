@@ -10,6 +10,7 @@ import re, sys, subprocess, random, difflib
 from html.parser import HTMLParser
 NATIVE = {'a', 'p', 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'ul', 'ol', 'section', 'blockquote', 'figure', 'header', 'footer', 'nav', 'article', 'aside', 'main'}
 VOID = {'img', 'br', 'hr', 'input', 'meta', 'link', 'source', 'wbr'}
+RESERVED_IDS = {'implementation'}   # Webflow refuses ids that shadow document properties; native uses data-kd-id (read by kd-booking-6)
 BOOL = {'hidden', 'allowfullscreen', 'disabled', 'open', 'required', 'checked', 'novalidate', 'defer', 'async'}
 class Tok(HTMLParser):
     def __init__(s): super().__init__(convert_charrefs=True); s.t = []
@@ -18,6 +19,7 @@ class Tok(HTMLParser):
         for k, v in a:
             v = v or ''
             if k.startswith('data-w-') or k in ('data-wf-id',): continue
+            if k == 'id' and v in RESERVED_IDS: k = 'data-kd-id'
             if k == 'role' and v == 'list' and tag in ('ul', 'ol'): continue
             if k == 'type' and v == 'button' and tag == 'button': continue
             if k in BOOL and v in ('', k): v = ''
