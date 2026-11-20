@@ -281,3 +281,5 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Also done: AI Suite, Contact Us. All 12 embed pages are now native on staging (the old page embeds are removed there; live is unchanged).
 - Contact Us: the Google Maps <iframe>, the old survey <iframe> and the form_embed.js <script> are native DOM elements (DOM type with dom_tag iframe/script; attributes incl. style kept). On the live site kd-booking replaces the .ghl-form block with the native contact form at runtime, exactly as before.
 - Generated inline-* classes also appear on DOM tags (i, dd) that keep their style attribute: clear them with set_style [] and delete the style.
+- Final check before owner review (webflow/native/final-check-2026-11-20.txt): markup 0 differences on all 12 pages; runtime styles + text 0 differences on all 12 pages + 3 blog pages, EN and ES (one run showed a single header login-dropdown width caught mid-animation on /book-discovery-call at 820px; re-runs 0); screenshots 0 differing pixels on all 15 pages at 1440 and 390.
+- Waiting for: owner to compare staging (kpidriver.webflow.io) with live page by page, then approve the single live publish.

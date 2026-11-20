@@ -1,0 +1,76 @@
+## MARKUP
+/: 1813 live tokens / 1813 staging tokens, 0 differences
+/services: 1192 live tokens / 1192 staging tokens, 0 differences
+/services/crm: 1079 live tokens / 1079 staging tokens, 0 differences
+/services/ai-suite: 1494 live tokens / 1494 staging tokens, 0 differences
+/services/ai-agent: 484 live tokens / 484 staging tokens, 0 differences
+/our-team: 204 live tokens / 204 staging tokens, 0 differences
+/contact-us: 220 live tokens / 220 staging tokens, 0 differences
+/book-discovery-call: 78 live tokens / 78 staging tokens, 0 differences
+/thank-you: 34 live tokens / 34 staging tokens, 0 differences
+/policies/privacy-policy: 125 live tokens / 125 staging tokens, 0 differences
+/policies/terms-conditions: 114 live tokens / 114 staging tokens, 0 differences
+/no-such-page-kd: 30 live tokens / 30 staging tokens, 0 differences
+markup exit=0
+## RUNTIME
+/ | TOTAL 3525 compared, 0 differ | text-differs=0
+/es | TOTAL 3528 compared, 0 differ | text-differs=0
+/services | TOTAL 2679 compared, 0 differ | text-differs=0
+/es/services | TOTAL 2682 compared, 0 differ | text-differs=0
+/services/crm | TOTAL 2616 compared, 0 differ | text-differs=0
+/es/services/crm | TOTAL 2619 compared, 0 differ | text-differs=0
+/services/ai-suite | TOTAL 2463 compared, 0 differ | text-differs=0
+/es/services/ai-suite | TOTAL 2463 compared, 0 differ | text-differs=0
+/services/ai-agent | TOTAL 1206 compared, 0 differ | text-differs=0
+/es/services/ai-agent | TOTAL 1206 compared, 0 differ | text-differs=0
+/our-team | TOTAL 783 compared, 0 differ | text-differs=0
+/es/our-team | TOTAL 783 compared, 0 differ | text-differs=0
+/contact-us | TOTAL 861 compared, 0 differ | text-differs=0
+/es/contact-us | TOTAL 861 compared, 0 differ | text-differs=0
+/book-discovery-call | TOTAL 2076 compared, 1 differ | text-differs=0
+/es/book-discovery-call | TOTAL 2076 compared, 0 differ | text-differs=0
+/thank-you | TOTAL 495 compared, 0 differ | text-differs=0
+/es/thank-you | TOTAL 495 compared, 0 differ | text-differs=0
+/policies/privacy-policy | TOTAL 588 compared, 0 differ | text-differs=0
+/es/policies/privacy-policy | TOTAL 588 compared, 0 differ | text-differs=0
+/policies/terms-conditions | TOTAL 576 compared, 0 differ | text-differs=0
+/es/policies/terms-conditions | TOTAL 576 compared, 0 differ | text-differs=0
+/no-such-page-kd | TOTAL 486 compared, 0 differ | text-differs=0
+/es/no-such-page-kd | TOTAL 486 compared, 0 differ | text-differs=0
+/blog | TOTAL 834 compared, 0 differ | text-differs=0
+/es/blog | TOTAL 834 compared, 0 differ | text-differs=0
+/blog-category/kpis-performance | TOTAL 870 compared, 0 differ | text-differs=0
+/es/blog-category/kpis-performance | TOTAL 870 compared, 0 differ | text-differs=0
+/post/lead-manager-vs-acquisition-manager | TOTAL 792 compared, 0 differ | text-differs=0
+/es/post/lead-manager-vs-acquisition-manager | TOTAL 792 compared, 0 differ | text-differs=0
+## PIXELS
+fin_ 1440 (1440, 14852) differing pixels: 0 bbox None
+fin_ 390 (390, 22750) differing pixels: 0 bbox None
+fin_services 1440 (1440, 10244) differing pixels: 0 bbox None
+fin_services 390 (390, 15170) differing pixels: 0 bbox None
+fin_services_crm 1440 (1440, 9018) differing pixels: 0 bbox None
+fin_services_crm 390 (390, 12337) differing pixels: 0 bbox None
+fin_services_ai-suite 1440 (1440, 13805) differing pixels: 0 bbox None
+fin_services_ai-suite 390 (390, 21387) differing pixels: 0 bbox None
+fin_services_ai-agent 1440 (1440, 6335) differing pixels: 0 bbox None
+fin_services_ai-agent 390 (390, 9380) differing pixels: 0 bbox None
+fin_our-team 1440 (1440, 4606) differing pixels: 0 bbox None
+fin_our-team 390 (390, 6932) differing pixels: 0 bbox None
+fin_contact-us 1440 (1440, 3302) differing pixels: 0 bbox None
+fin_contact-us 390 (390, 5167) differing pixels: 0 bbox None
+fin_book-discovery-call 1440 (1440, 2085) differing pixels: 0 bbox None
+fin_book-discovery-call 390 (390, 3276) differing pixels: 0 bbox None
+fin_thank-you 1440 (1440, 1113) differing pixels: 0 bbox None
+fin_thank-you 390 (390, 1983) differing pixels: 0 bbox None
+fin_policies_privacy-policy 1440 (1440, 2342) differing pixels: 0 bbox None
+fin_policies_privacy-policy 390 (390, 3432) differing pixels: 0 bbox None
+fin_policies_terms-conditions 1440 (1440, 2333) differing pixels: 0 bbox None
+fin_policies_terms-conditions 390 (390, 3452) differing pixels: 0 bbox None
+fin_no-such-page-kd 1440 (1440, 1266) differing pixels: 0 bbox None
+fin_no-such-page-kd 390 (390, 2034) differing pixels: 0 bbox None
+fin_blog 1440 (1440, 4642) differing pixels: 0 bbox None
+fin_blog 390 (390, 7021) differing pixels: 0 bbox None
+fin_blog-category_kpis-performance 1440 (1440, 4649) differing pixels: 0 bbox None
+fin_blog-category_kpis-performance 390 (390, 7035) differing pixels: 0 bbox None
+fin_post_lead-manager-vs-acquisition-manager 1440 (1440, 6226) differing pixels: 0 bbox None
+fin_post_lead-manager-vs-acquisition-manager 390 (390, 7595) differing pixels: 0 bbox None
