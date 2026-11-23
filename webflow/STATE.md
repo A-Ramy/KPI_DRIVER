@@ -283,3 +283,9 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Generated inline-* classes also appear on DOM tags (i, dd) that keep their style attribute: clear them with set_style [] and delete the style.
 - Final check before owner review (webflow/native/final-check-2026-11-20.txt): markup 0 differences on all 12 pages; runtime styles + text 0 differences on all 12 pages + 3 blog pages, EN and ES (one run showed a single header login-dropdown width caught mid-animation on /book-discovery-call at 820px; re-runs 0); screenshots 0 differing pixels on all 15 pages at 1440 and 390.
 - Waiting for: owner to compare staging (kpidriver.webflow.io) with live page by page, then approve the single live publish.
+
+## 2026-11-23: LIVE switch to the native pages (owner: "go ahead if they are an exact match")
+- Pre-check: staging re-published from the current Designer state, markcmp 0 differences on all 12 pages. Then one live publish (www + apex).
+- Post-check on live: every page has `<main id="main" class="kd-main">`, footer loads kd-booking-6. Full-page screenshots vs the pre-switch live screenshots (20 Nov): identical on all 15 pages except one band per page, the booking calendar ("Pick a time"), whose dates and open slots moved with the calendar (20 -> 23 Nov, 3 -> 2 slots = the 54px on phones). Home height unchanged (14,852px). Behaviour: lifecycle tabs, walkthrough (no scroll jump), FAQ contact form, booking prompts, booking pop-up, CRM implementation prompt (via data-kd-id), contact form all work. The "c is not a function" page error was already there before.
+- Rollback if ever needed: the old page embeds are in the backup zip / git history (webflow/dist), old footer in webflow/rollback/site-footer-before-booking-6.html.
+- Next: native KD Header / KD Footer components and the blog CTA bands; Spanish text into Localization; booking-branch source gets the data-kd-id line; owner deletes the draft pilot page.
