@@ -26,7 +26,7 @@ const snap = (page) => page.evaluate((PROPS) => {
       const p = await b.newPage({ viewport: { width: w, height: 900 }, reducedMotion: 'reduce' });
       await p.route(/kd-intro-1\.js/, x => x.abort());
       // NOBUNDLE=1: staging side runs without the old Spanish JS bundles (native Localization only).
-      if (k === 'native' && process.env.NOBUNDLE) await p.route(/kd-es-[a-z0-9-]+\.js/, x => x.fulfill({ status: 200, contentType: 'text/javascript', body: 'document.documentElement.classList.remove("es-wait")' }));
+      if (k === 'native' && process.env.NOBUNDLE) await p.route(/kd-es-[a-z0-9-]+\.js/, x => x.fulfill({ status: 200, contentType: 'text/javascript', body: process.env.HELPER ? require('fs').readFileSync(process.env.HELPER, 'utf8') : 'document.documentElement.classList.remove("es-wait")' }));
       if (k === 'native') await p.route(u => new URL(u).pathname === livePath && new URL(u).host === 'www.kpidriver.com', x => x.fulfill({ status: 200, contentType: 'text/html', body: natHtml }));
       await p.goto('https://www.kpidriver.com' + livePath, { waitUntil: 'load' }); await p.waitForTimeout(2500);
       r[k] = await snap(p); await p.close();

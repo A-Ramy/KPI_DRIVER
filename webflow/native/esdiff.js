@@ -12,7 +12,9 @@ const path = process.argv[2] || '/es', W = +(process.argv[3] || 1440);
     const p = await b.newPage({ viewport: { width: W, height: 900 }, reducedMotion: 'reduce' });
     await p.route(/kd-intro-1\.js/, x => x.abort());
     if (native) {
-      await p.route(/kd-es-[a-z0-9-]+\.js/, x => x.fulfill({ status: 200, contentType: 'text/javascript', body: 'document.documentElement.classList.remove("es-wait")' }));
+      // HELPER=file: serve the native-Spanish helper in place of the old bundles (pre-upload test).
+      const helper = process.env.HELPER ? require('fs').readFileSync(process.env.HELPER, 'utf8') : 'document.documentElement.classList.remove("es-wait")';
+      await p.route(/kd-es-[a-z0-9-]+\.js/, x => x.fulfill({ status: 200, contentType: 'text/javascript', body: helper }));
       await p.route(u => new URL(u).pathname === path && new URL(u).host === 'www.kpidriver.com', x => x.fulfill({ status: 200, contentType: 'text/html', body: nat }));
     }
     await p.goto('https://www.kpidriver.com' + path, { waitUntil: 'load' }); await p.waitForTimeout(2500);
@@ -32,6 +34,7 @@ const path = process.argv[2] || '/es', W = +(process.argv[3] || 1440);
   await b.close();
   const fs = require('fs'); const tmp = require('os').tmpdir() + '/esdiff-' + process.pid;
   fs.writeFileSync(tmp + '.json', JSON.stringify({ L, N }));
+  if (process.env.DUMP) fs.writeFileSync(process.env.DUMP, JSON.stringify({ path, L, N }));
   console.log(execFileSync('python3', ['-c', `
 import json,difflib,sys
 d=json.load(open(sys.argv[1])); L,N=d['L'],d['N']
