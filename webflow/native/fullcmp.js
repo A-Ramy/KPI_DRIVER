@@ -9,7 +9,7 @@ const snap = (page) => page.evaluate((PROPS) => {
   const skip = k => /^(SCRIPT|STYLE|LINK|META|NOSCRIPT|IFRAME|TEMPLATE)$/i.test(k.tagName) || (k.classList && k.classList.contains('w-embed') && ![...k.children].some(c => !/^(SCRIPT|STYLE|LINK)$/i.test(c.tagName)) && !k.textContent.trim());
   const walk = (el, path) => {
     const cs = getComputedStyle(el); out[path] = PROPS.map(p => cs.getPropertyValue(p)).join('|');
-    const flat = e => [...e.children].flatMap(k => skip(k) ? [] : (k.classList && k.classList.contains('w-embed') ? flat(k) : [k]));
+    const flat = e => [...e.children].flatMap(k => skip(k) ? [] : (k.classList && (k.classList.contains('w-embed') || k.classList.contains('kd-chrome')) ? flat(k) : [k]));
     const kids = flat(el);
     kids.forEach((k, n) => walk(k, path + '>' + k.tagName.toLowerCase() + ((typeof k.className === 'string' ? k.className.trim().split(/\s+/).filter((c, i, a) => c && a.indexOf(c) === i && !/^(w-|rv|is-|in|u-|kd-main$)/.test(c)).sort() : []).map(c => '.' + c).join('')) + ':' + n));
   };
@@ -25,6 +25,8 @@ const snap = (page) => page.evaluate((PROPS) => {
     for (const k of ['live', 'native']) {
       const p = await b.newPage({ viewport: { width: w, height: 900 }, reducedMotion: 'reduce' });
       await p.route(/kd-intro-1\.js/, x => x.abort());
+      // NOBUNDLE=1: staging side runs without the old Spanish JS bundles (native Localization only).
+      if (k === 'native' && process.env.NOBUNDLE) await p.route(/kd-es-[a-z0-9-]+\.js/, x => x.fulfill({ status: 200, contentType: 'text/javascript', body: 'document.documentElement.classList.remove("es-wait")' }));
       if (k === 'native') await p.route(u => new URL(u).pathname === livePath && new URL(u).host === 'www.kpidriver.com', x => x.fulfill({ status: 200, contentType: 'text/html', body: natHtml }));
       await p.goto('https://www.kpidriver.com' + livePath, { waitUntil: 'load' }); await p.waitForTimeout(2500);
       r[k] = await snap(p); await p.close();
