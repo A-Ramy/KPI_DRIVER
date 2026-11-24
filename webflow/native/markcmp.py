@@ -21,12 +21,13 @@ class Tok(HTMLParser):
             if k.startswith('data-w-') or k in ('data-wf-id',): continue
             if k == 'id' and v in RESERVED_IDS: k = 'data-kd-id'
             if k == 'role' and v == 'list' and tag in ('ul', 'ol'): continue
+            if k == 'aria-current' and v == 'page': continue   # Webflow marks native links to the current page
             if k == 'type' and v == 'button' and tag == 'button': continue
             if k in BOOL and v in ('', k): v = ''
             if k == 'style' and tag in NATIVE: continue
             if tag == 'img' and (k in ('width', 'height') or (k == 'loading' and v == 'eager')): continue
             if k == 'class':
-                v = ' '.join(sorted({c for c in v.split() if not c.startswith('u-') and c != 'kd-main'}))
+                v = ' '.join(sorted({c for c in v.split() if not c.startswith('u-') and c not in ('kd-main', 'w--current', 'w-inline-block')}))
                 if not v: continue
             d[k] = v
         s.t.append(('<', tag, tuple(sorted(d.items()))))
@@ -36,11 +37,35 @@ class Tok(HTMLParser):
     def handle_endtag(s, tag): s.t.append(('>', tag))
     def handle_data(s, d):
         d = ' '.join(d.split())
-        if d: s.t.append(('t', d))
+        if not d: return
+        # Webflow CMS pages split text with empty <!-- --> markers; merge adjacent text runs.
+        if s.t and s.t[-1][0] == 't': s.t[-1] = ('t', s.t[-1][1] + ' ' + d)
+        else: s.t.append(('t', d))
+CHROME_CLASSES = ('skip', 'site-header', 'site-footer', 'revline', 'shiftfx', 'gearhud', 'bookdlg')
+class Grab(HTMLParser):
+    """Collects the raw text of top-level chrome elements (header, footer, overlays, dialog) wherever they sit."""
+    def __init__(s, src): super().__init__(convert_charrefs=False); s.src = src; s.depth = 0; s.out = []; s.start = None; s.tag = None; s.lines = None
+    def pos(s):
+        if s.lines is None:
+            s.lines = [0]
+            for ln in s.src.split('\n'): s.lines.append(s.lines[-1] + len(ln) + 1)
+        l, c = s.getpos(); return s.lines[l - 1] + c
+    def handle_starttag(s, tag, a):
+        cls = dict(a).get('class') or ''
+        if s.depth == 0 and (tag == 'dialog' or any(c in cls.split() for c in CHROME_CLASSES)):
+            s.depth = 1; s.tag = tag; s.start = s.pos(); return
+        if s.depth and tag == s.tag: s.depth += 1
+    def handle_endtag(s, tag):
+        if s.depth and tag == s.tag:
+            s.depth -= 1
+            if s.depth == 0:
+                p = s.pos(); e = s.src.find('>', p) + 1; s.out.append(s.src[s.start:e])
 def main_of(url):
     h = subprocess.run(['curl', '-s', url + ('&' if '?' in url else '?') + f'z={random.random()}'], capture_output=True, text=True).stdout
     m = re.search(r'(<main\b.*?</main>)', h, re.S)
-    p = Tok(); p.feed(m.group(1) if m else ''); return p.t
+    rest = h.replace(m.group(1), '') if m else h
+    g = Grab(rest); g.feed(rest)
+    p = Tok(); p.feed((m.group(1) if m else '') + ''.join(g.out)); return p.t
 bad = 0
 for path in sys.argv[1:]:
     a, b = main_of('https://www.kpidriver.com' + path), main_of('https://kpidriver.webflow.io' + path)
