@@ -1,0 +1,933 @@
+{
+ "exposed": [
+  {
+   "text": "The engine of your operation",
+   "es": "El motor de tu operación",
+   "string": "784c246d-4d66-5d6e-703c-63f0b9fb9166",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card",
+    "Paragraph.note"
+   ],
+   "parent": "784c246d-4d66-5d6e-703c-63f0b9fb9167",
+   "gp": "784c246d-4d66-5d6e-703c-63f0b9fb916c",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:article.spot.triad__card",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--core",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ],
+   "node": "784c246d-4d66-5d6e-703c-63f0b9fb9167"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "3a4b237e-bbf5-a713-86ec-2435b326b880",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "3a4b237e-bbf5-a713-86ec-2435b326b881",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b88d",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "3a4b237e-bbf5-a713-86ec-2435b326b881"
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "3a4b237e-bbf5-a713-86ec-2435b326b8a1",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "3a4b237e-bbf5-a713-86ec-2435b326b8a2",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b8ae",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "3a4b237e-bbf5-a713-86ec-2435b326b8a2"
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "3a4b237e-bbf5-a713-86ec-2435b326b8e9",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "3a4b237e-bbf5-a713-86ec-2435b326b8ea",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b8f6",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "3a4b237e-bbf5-a713-86ec-2435b326b8ea"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc0a",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc0b",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc0e",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading"
+   ],
+   "node": "e98fafc6-e28c-6c40-259e-e498ed72cc0b"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "Foundation",
+   "es": "Base",
+   "string": "784c246d-4d66-5d6e-703c-63f0b9fb9162",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card",
+    "Span.badge.badge--core"
+   ],
+   "parent": "784c246d-4d66-5d6e-703c-63f0b9fb9163",
+   "gp": "784c246d-4d66-5d6e-703c-63f0b9fb916c",
+   "parent_type": "Span.badge.badge--core",
+   "gp_type": "Block:article.spot.triad__card",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--core",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string": "784c246d-4d66-5d6e-703c-63f0b9fb916f",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card.triad__card--suite",
+    "Span.badge.badge--included"
+   ],
+   "parent": "784c246d-4d66-5d6e-703c-63f0b9fb9170",
+   "gp": "784c246d-4d66-5d6e-703c-63f0b9fb9179",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Block:article.spot.triad__card.triad__card--suite",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "Optional addition",
+   "es": "Complemento opcional",
+   "string": "784c246d-4d66-5d6e-703c-63f0b9fb917c",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card.triad__card--agent",
+    "Span.badge.badge--optional"
+   ],
+   "parent": "784c246d-4d66-5d6e-703c-63f0b9fb917d",
+   "gp": "784c246d-4d66-5d6e-703c-63f0b9fb9189",
+   "parent_type": "Span.badge.badge--optional",
+   "gp_type": "Block:article.spot.triad__card.triad__card--agent",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--optional",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "CRM + AI Suite access, together. No additional AI Suite subscription.",
+   "es": "CRM + acceso a la AI Suite, juntos. Sin suscripción adicional por la AI Suite.",
+   "string": "784c246d-4d66-5d6e-703c-63f0b9fb918e",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.bracket",
+    "Block:div",
+    "Span.muted"
+   ],
+   "parent": "784c246d-4d66-5d6e-703c-63f0b9fb918f",
+   "gp": "784c246d-4d66-5d6e-703c-63f0b9fb9190",
+   "parent_type": "Span.muted",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span.muted"
+   ]
+  },
+  {
+   "text": "Add it if it fits your operation.",
+   "es": "Agrégalo si encaja con tu operación.",
+   "string": "784c246d-4d66-5d6e-703c-63f0b9fb9194",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.bracket",
+    "Block:div",
+    "Span.muted"
+   ],
+   "parent": "784c246d-4d66-5d6e-703c-63f0b9fb9195",
+   "gp": "784c246d-4d66-5d6e-703c-63f0b9fb9196",
+   "parent_type": "Span.muted",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span.muted"
+   ]
+  },
+  {
+   "text": "Foundation",
+   "es": "Base",
+   "string": "b9081e3c-5cb3-d13b-3b06-c307b2e925ac",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.compare-cols",
+    "Block:div.tone-crm",
+    "Span.badge.badge--core"
+   ],
+   "parent": "b9081e3c-5cb3-d13b-3b06-c307b2e925ad",
+   "gp": "b9081e3c-5cb3-d13b-3b06-c307b2e925c8",
+   "parent_type": "Span.badge.badge--core",
+   "gp_type": "Block:div.tone-crm",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--core",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string": "b9081e3c-5cb3-d13b-3b06-c307b2e925c9",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.compare-cols",
+    "Block:div.tone-suite",
+    "Span.badge.badge--included"
+   ],
+   "parent": "b9081e3c-5cb3-d13b-3b06-c307b2e925ca",
+   "gp": "b9081e3c-5cb3-d13b-3b06-c307b2e925ec",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Block:div.tone-suite",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "b9081e3c-5cb3-d13b-3b06-c307b2e925cf",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "ListItem",
+    "Span",
+    "DOM:b"
+   ],
+   "parent": "b9081e3c-5cb3-d13b-3b06-c307b2e925d3",
+   "gp": "b9081e3c-5cb3-d13b-3b06-c307b2e925d5",
+   "parent_type": "DOM:b",
+   "gp_type": "Span",
+   "n_sib": 3,
+   "gp_children": [
+    "DOM:b",
+    "String"
+   ]
+  },
+  {
+   "text": "Optional · separate offering",
+   "es": "Opcional · oferta aparte",
+   "string": "b9081e3c-5cb3-d13b-3b06-c307b2e925ed",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.compare-cols",
+    "Block:div.tone-agent",
+    "Span.badge.badge--optional"
+   ],
+   "parent": "b9081e3c-5cb3-d13b-3b06-c307b2e925ee",
+   "gp": "b9081e3c-5cb3-d13b-3b06-c307b2e92600",
+   "parent_type": "Span.badge.badge--optional",
+   "gp_type": "Block:div.tone-agent",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--optional",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "What each offering includes",
+   "es": "Qué incluye cada oferta",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae90ff",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.table-scroll.u-mt-28",
+    "DOM:table.compare",
+    "DOM:caption.sr-only"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9101",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9146",
+   "parent_type": "DOM:caption.sr-only",
+   "gp_type": "DOM:table.compare",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:caption.sr-only",
+    "DOM:thead",
+    "DOM:tbody"
+   ]
+  },
+  {
+   "text": "What you get",
+   "es": "Qué recibes",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9102",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:thead",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9104",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae910c",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:th",
+    "DOM:th"
+   ]
+  },
+  {
+   "text": "CRM with built-in pipelines and KPI tracking",
+   "es": "CRM con pipelines integrados y seguimiento de KPIs",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae910f",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9111",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9119",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td.yes",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Included",
+   "es": "Incluido",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9112",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td.yes"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9114",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9119",
+   "parent_type": "DOM:td.yes",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td.yes",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Included",
+   "es": "Incluido",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9115",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td.yes"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9117",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9119",
+   "parent_type": "DOM:td.yes",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td.yes",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Access to the AI Suite",
+   "es": "Acceso a la AI Suite",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911a",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911c",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9124",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td.yes",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Included, no additional subscription",
+   "es": "Incluido, sin suscripción adicional",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911d",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td.yes"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911f",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9124",
+   "parent_type": "DOM:td.yes",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td.yes",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Included, no additional subscription",
+   "es": "Incluido, sin suscripción adicional",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9120",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td.yes"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9122",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9124",
+   "parent_type": "DOM:td.yes",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td.yes",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "AI Suite usage",
+   "es": "Uso de la AI Suite",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9125",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9127",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912f",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Optional, pay-as-you-go",
+   "es": "Opcional, de pago por uso",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9128",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912a",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912f",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Optional, pay-as-you-go",
+   "es": "Opcional, de pago por uso",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912b",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912d",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912f",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Not included",
+   "es": "No incluido",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9133",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9135",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913a",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Included in this offering",
+   "es": "Incluido en esta oferta",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9136",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td.yes"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9138",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913a",
+   "parent_type": "DOM:td.yes",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td.yes"
+   ]
+  },
+  {
+   "text": "Pricing",
+   "es": "Precios",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913b",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913d",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9142",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Discussed on your discovery call",
+   "es": "Se ven en tu llamada de descubrimiento",
+   "string": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913e",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9140",
+   "gp": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9142",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "3a4b237e-bbf5-a713-86ec-2435b326b812",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "3a4b237e-bbf5-a713-86ec-2435b326b814",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b816",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "3a4b237e-bbf5-a713-86ec-2435b326b81b",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "3a4b237e-bbf5-a713-86ec-2435b326b81d",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b81f",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "3a4b237e-bbf5-a713-86ec-2435b326b82d",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "3a4b237e-bbf5-a713-86ec-2435b326b82f",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b831",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "55349384-1a35-05d0-9277-8c7a5a26f1ed",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "2921dd52-d826-e5c8-7b48-e6c3664f2acf",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b87f",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "95f08f59-8fcf-dd85-3861-dabe710c69bb",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "f279e123-a699-3354-ebd4-d78c31aa2f1a",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b87f",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "189d5f39-2678-2839-16b4-44275fb91a44",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "3b5796c5-fa98-eec1-5738-3382df2f8734",
+   "gp": "3a4b237e-bbf5-a713-86ec-2435b326b87f",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Illustrative conversation",
+   "es": "Conversación ilustrativa",
+   "string": "1e7567c7-cb64-541d-f97a-765e35fbab5a",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.split.split--even",
+    "Block:div.support__chat.hud",
+    "Span.note"
+   ],
+   "parent": "1e7567c7-cb64-541d-f97a-765e35fbab5b",
+   "gp": "1e7567c7-cb64-541d-f97a-765e35fbab5c",
+   "parent_type": "Span.note",
+   "gp_type": "Block:div.support__chat.hud",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.cc__bar",
+    "Paragraph.bubble",
+    "Paragraph.bubble.bubble--me",
+    "Paragraph.bubble",
+    "Paragraph.bubble.bubble--me",
+    "Span.note"
+   ]
+  },
+  {
+   "text": "Are CRM, AI Suite and AI Agent three separate plans?",
+   "es": "¿CRM, AI Suite y AI Agent son tres planes distintos?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc0f",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc11",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc16",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What does pay-as-you-go mean for the AI Suite?",
+   "es": "¿Qué significa pago por uso en la AI Suite?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc17",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc19",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc1e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Can I use the CRM without using any AI tools?",
+   "es": "¿Puedo usar el CRM sin usar ninguna herramienta de IA?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc1f",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc21",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc26",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What is scoped separately?",
+   "es": "¿Qué se cotiza por separado?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc27",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc29",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc2e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What does support look like after launch?",
+   "es": "¿Cómo es el soporte después del lanzamiento?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc2f",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc31",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc36",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Does KPI DRIVER integrate with my existing tools?",
+   "es": "¿KPI DRIVER se integra con mis herramientas actuales?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc37",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc39",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc3e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Where do I see pricing?",
+   "es": "¿Dónde veo los precios?",
+   "string": "e98fafc6-e28c-6c40-259e-e498ed72cc3f",
+   "comp": "6afa6ce5a6769cca503f0934",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "e98fafc6-e28c-6c40-259e-e498ed72cc41",
+   "gp": "e98fafc6-e28c-6c40-259e-e498ed72cc46",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  }
+ ]
+}

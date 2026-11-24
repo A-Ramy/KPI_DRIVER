@@ -1,0 +1,166 @@
+[
+ {
+  "nodeId": "4c50a48f-4549-c47f-1cd5-e4dc9ec48c8b",
+  "text": "<div class=\"kd-t\">CRM para todo el ciclo</div>"
+ },
+ {
+  "nodeId": "ccf494de-558c-cc0d-d9a1-779d74d7b196",
+  "text": "<div class=\"kd-t\">Acceso a la AI Suite incluido</div>"
+ },
+ {
+  "nodeId": "1452a2ae-02ea-ad6d-b9cc-fa93cdc971e9",
+  "text": "<div class=\"kd-t\">AI Agent opcional</div>"
+ },
+ {
+  "nodeId": "87bbc507-fd1d-82ae-3cec-5b1e87d0fd1f",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"87bbc507-fd1d-82ae-3cec-5b1e87d0fd1e\">Lead → cita</span></div>"
+ },
+ {
+  "nodeId": "d8c920fd-8573-754e-2517-5addf38ea083",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"d8c920fd-8573-754e-2517-5addf38ea082\">Captación</span></div>"
+ },
+ {
+  "nodeId": "13fbf8d0-b9bc-a5be-b4c4-c0329605f909",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"13fbf8d0-b9bc-a5be-b4c4-c0329605f908\">Adquisiciones</span></div>"
+ },
+ {
+  "nodeId": "3a977c0b-11cd-97d2-b1fe-ea7a4b395266",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"3a977c0b-11cd-97d2-b1fe-ea7a4b395265\">Disposiciones</span></div>"
+ },
+ {
+  "nodeId": "7590a709-6415-1387-0af0-79bf86bf2c94",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"7590a709-6415-1387-0af0-79bf86bf2c93\">Cierre</span></div>"
+ },
+ {
+  "nodeId": "5f314efd-05af-49c3-3c1e-be991a7568af",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--optional\" data-w-id=\"5f314efd-05af-49c3-3c1e-be991a7568ae\">Opcional</span></div>"
+ },
+ {
+  "nodeId": "e889d5bd-e86e-1a3a-05b0-2374b6a8d645",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"e889d5bd-e86e-1a3a-05b0-2374b6a8d644\">Citas agendadas</span></div>"
+ },
+ {
+  "nodeId": "8af8e309-b3ca-8b14-9178-caa12f654b18",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"8af8e309-b3ca-8b14-9178-caa12f654b17\">Bajo contrato</span></div>"
+ },
+ {
+  "nodeId": "1d3af54e-b8c6-f38e-1165-0e0aae3992f3",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"1d3af54e-b8c6-f38e-1165-0e0aae3992f2\">Días prom. al cierre</span></div>"
+ },
+ {
+  "nodeId": "207d725f-9e7b-7cfd-a03f-6a31eabe59a9",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"207d725f-9e7b-7cfd-a03f-6a31eabe59a8\">Correo directo</span></div>"
+ },
+ {
+  "nodeId": "83be6c47-aa77-3b76-a456-7885ddebf96d",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"83be6c47-aa77-3b76-a456-7885ddebf96c\">Llamadas en frío</span></div>"
+ },
+ {
+  "nodeId": "210a7ae2-a045-7824-fcbc-5f15039ad894",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"210a7ae2-a045-7824-fcbc-5f15039ad893\">Referidos</span></div>"
+ },
+ {
+  "nodeId": "143571ae-e403-fbec-1ad9-ad4e48ea9307",
+  "text": "<div class=\"kd-t\"><span class=\"note\" data-w-id=\"143571ae-e403-fbec-1ad9-ad4e48ea9306\">Métricas de ejemplo con fines ilustrativos · no son resultados de clientes</span></div>"
+ },
+ {
+  "nodeId": "4662bb59-ff80-d1a1-a8af-731976fe2b35",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--core\" data-w-id=\"4662bb59-ff80-d1a1-a8af-731976fe2b34\">Base</span></div>"
+ },
+ {
+  "nodeId": "bd693a5d-a830-71e0-986a-b3956e32b52d",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--included\" data-w-id=\"bd693a5d-a830-71e0-986a-b3956e32b52c\">Acceso incluido</span></div>"
+ },
+ {
+  "nodeId": "9f92169e-d9ad-dada-46ea-e0db01a2835d",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--optional\" data-w-id=\"9f92169e-d9ad-dada-46ea-e0db01a2835c\">Complemento opcional</span></div>"
+ },
+ {
+  "nodeId": "2d7c60cd-10ff-45d3-9664-355dc77dfc37",
+  "text": "<div class=\"kd-t\"><span class=\"muted\" data-w-id=\"2d7c60cd-10ff-45d3-9664-355dc77dfc36\">CRM + acceso a la AI Suite, juntos. Sin suscripción adicional por la AI Suite.</span></div>"
+ },
+ {
+  "nodeId": "388efc34-822f-ffbc-c10c-b6478ed27500",
+  "text": "<div class=\"kd-t\"><span class=\"muted\" data-w-id=\"388efc34-822f-ffbc-c10c-b6478ed274ff\">Agrégalo si encaja con tu operación.</span></div>"
+ },
+ {
+  "nodeId": "57090eb3-2f55-4c94-5797-6e564b6997c2",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--included\" data-w-id=\"57090eb3-2f55-4c94-5797-6e564b6997bd\">Incluido</span><strong data-w-id=\"57090eb3-2f55-4c94-5797-6e564b6997bf\">El acceso viene con la Suite</strong><span data-w-id=\"57090eb3-2f55-4c94-5797-6e564b6997c1\">Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite.</span></div>"
+ },
+ {
+  "nodeId": "5b649e9f-62f6-fca7-488a-fa40a3078ae6",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"5b649e9f-62f6-fca7-488a-fa40a3078ae1\">Opcional</span><strong data-w-id=\"5b649e9f-62f6-fca7-488a-fa40a3078ae3\">Usa una herramienta cuando la necesites</strong><span data-w-id=\"5b649e9f-62f6-fca7-488a-fa40a3078ae5\">Nada te obliga a usar las herramientas de IA. Recurre a ellas en las tareas donde ayudan.</span></div>"
+ },
+ {
+  "nodeId": "490019ea-ea6e-14ef-6358-99943de19826",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"490019ea-ea6e-14ef-6358-99943de19821\">Pago por uso</span><strong data-w-id=\"490019ea-ea6e-14ef-6358-99943de19823\">Paga por lo que usas</strong><span data-w-id=\"490019ea-ea6e-14ef-6358-99943de19825\">Sin suscripción adicional por la AI Suite. El uso se registra en un panel de facturación. Las tarifas se ven en tu llamada de descubrimiento.</span></div>"
+ },
+ {
+  "nodeId": "9a55c20e-6196-106c-b8f2-84592fa92e7a",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"9a55c20e-6196-106c-b8f2-84592fa92e77\">Situación</span><span data-w-id=\"9a55c20e-6196-106c-b8f2-84592fa92e79\">Propiedad heredada</span></div>"
+ },
+ {
+  "nodeId": "39a40e96-7e13-8c63-8ce5-50a25effa810",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"39a40e96-7e13-8c63-8ce5-50a25effa80d\">Condición</span><span data-w-id=\"39a40e96-7e13-8c63-8ce5-50a25effa80f\">El techo necesita reparación</span></div>"
+ },
+ {
+  "nodeId": "5dd9fb09-2ea2-94f5-adec-7bb4a0ee7cd4",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"5dd9fb09-2ea2-94f5-adec-7bb4a0ee7cd1\">Plazo</span><span data-w-id=\"5dd9fb09-2ea2-94f5-adec-7bb4a0ee7cd3\">Fin del verano</span></div>"
+ },
+ {
+  "nodeId": "ccbee36e-17d9-6902-97b5-9f47797f62d7",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"ccbee36e-17d9-6902-97b5-9f47797f62d4\">Precio pedido</span><span data-w-id=\"ccbee36e-17d9-6902-97b5-9f47797f62d6\">$210,000</span></div>"
+ },
+ {
+  "nodeId": "18b71fd1-a909-1da1-ae60-994aad377bf5",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"18b71fd1-a909-1da1-ae60-994aad377bf2\">Siguiente paso</span><span data-w-id=\"18b71fd1-a909-1da1-ae60-994aad377bf4\">Enviar rango de oferta</span></div>"
+ },
+ {
+  "nodeId": "df2e8dac-57fb-cd9d-71df-3f20f9e19c6a",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"df2e8dac-57fb-cd9d-71df-3f20f9e19c69\">Empatía</span></div>"
+ },
+ {
+  "nodeId": "a94543b3-668b-ffd3-f9a6-fd50e512837c",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"a94543b3-668b-ffd3-f9a6-fd50e512837b\">Descubrimiento de motivación</span></div>"
+ },
+ {
+  "nodeId": "22228708-193e-c6c2-4080-68ddcbc8fca3",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"22228708-193e-c6c2-4080-68ddcbc8fca2\">Manejo de objeciones</span></div>"
+ },
+ {
+  "nodeId": "11d1eb7d-5860-5d4e-f773-fca1aa783cb1",
+  "text": "<div class=\"kd-t\"><span class=\"note\" data-w-id=\"11d1eb7d-5860-5d4e-f773-fca1aa783cb0\">Conversación ilustrativa</span></div>"
+ },
+ {
+  "nodeId": "69237fa9-7270-3b37-c099-1c6dfe703db3",
+  "text": "<h3 class=\"kd-q\">¿Qué es KPI DRIVER?</h3>"
+ },
+ {
+  "nodeId": "d2af5a68-5116-669a-f186-2a0d70c06e76",
+  "text": "<h3 class=\"kd-q\">¿Qué incluye la Enterprise Optimization Suite?</h3>"
+ },
+ {
+  "nodeId": "c36d4d85-0f20-ff54-d574-8e2e00e8e93d",
+  "text": "<h3 class=\"kd-q\">¿El AI Agent está incluido?</h3>"
+ },
+ {
+  "nodeId": "1109002e-c7a1-60bc-172b-5be19c34abc9",
+  "text": "<h3 class=\"kd-q\">¿Cuánto cuesta KPI DRIVER?</h3>"
+ },
+ {
+  "nodeId": "713146a1-649f-db23-80d5-a93fdab8b350",
+  "text": "<h3 class=\"kd-q\">¿Necesito sistemas separados para firmas de documentos, disposiciones o rentas?</h3>"
+ },
+ {
+  "nodeId": "92150862-5eb1-82c2-fb96-ab13341d70c9",
+  "text": "<h3 class=\"kd-q\">¿KPI DRIVER me sirve si soy nuevo en bienes raíces o todavía no tengo un CRM?</h3>"
+ },
+ {
+  "nodeId": "1c7f7487-c10a-b25c-0d65-32f5678ade76",
+  "text": "<h3 class=\"kd-q\">¿Ofrecen soporte y capacitación?</h3>"
+ },
+ {
+  "nodeId": "cf808f08-16c8-912a-43a8-f2a0abd80b8a",
+  "text": "<h3 class=\"kd-q\">¿Cuánto tarda la implementación?</h3>"
+ }
+]

@@ -1,0 +1,624 @@
+{
+ "exposed": [
+  {
+   "text": "Optional · separate offering",
+   "es": "Opcional · oferta aparte",
+   "string": "789ee3e0-ba02-25a1-17ef-cf0d7e600693",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.phead__copy",
+    "Paragraph.eyebrow",
+    "Span.badge.badge--optional"
+   ],
+   "parent": "789ee3e0-ba02-25a1-17ef-cf0d7e600694",
+   "gp": "789ee3e0-ba02-25a1-17ef-cf0d7e600695",
+   "parent_type": "Span.badge.badge--optional",
+   "gp_type": "Paragraph.eyebrow",
+   "n_sib": 1,
+   "gp_children": [
+    "String",
+    "Span.badge.badge--optional"
+   ],
+   "node": "789ee3e0-ba02-25a1-17ef-cf0d7e600695"
+  },
+  {
+   "text": "Email",
+   "es": "Correo",
+   "string": "789ee3e0-ba02-25a1-17ef-cf0d7e6006ad",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.cc__bar",
+    "Block:div.cc__agent-ch",
+    "Span"
+   ],
+   "parent": "789ee3e0-ba02-25a1-17ef-cf0d7e6006ae",
+   "gp": "789ee3e0-ba02-25a1-17ef-cf0d7e6006b2",
+   "parent_type": "Span",
+   "gp_type": "Block:div.cc__agent-ch",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span",
+    "Span",
+    "Span"
+   ],
+   "node": "789ee3e0-ba02-25a1-17ef-cf0d7e6006b2"
+  },
+  {
+   "text": "What it does",
+   "es": "Qué hace",
+   "string": "a3521b25-e93a-52da-e61e-eafd9514cb45",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.head",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "a3521b25-e93a-52da-e61e-eafd9514cb46",
+   "gp": "a3521b25-e93a-52da-e61e-eafd9514cb49",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.head",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading"
+   ],
+   "node": "a3521b25-e93a-52da-e61e-eafd9514cb46"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b468df",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b468e0",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b468ed",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading",
+    "Paragraph.muted"
+   ],
+   "node": "957ecdfb-0b9f-753d-67a6-e1f854b468e0"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "Illustrative conversation · sample data",
+   "es": "Conversación ilustrativa · datos de ejemplo",
+   "string": "789ee3e0-ba02-25a1-17ef-cf0d7e6006cb",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.wrap.phead__grid",
+    "Block:figure.illus.tone-agent",
+    "DOM:figcaption.note"
+   ],
+   "parent": "789ee3e0-ba02-25a1-17ef-cf0d7e6006cd",
+   "gp": "789ee3e0-ba02-25a1-17ef-cf0d7e6006ce",
+   "parent_type": "DOM:figcaption.note",
+   "gp_type": "Block:figure.illus.tone-agent",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.illus__frame.hud.support__chat.u-b-0-p-20",
+    "DOM:figcaption.note"
+   ]
+  },
+  {
+   "text": "Differences between the AI Agent, the AI Suite and AI Nurture",
+   "es": "Diferencias entre el AI Agent, la AI Suite y AI Nurture",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e51",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.table-scroll",
+    "DOM:table.compare",
+    "DOM:caption.sr-only"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e53",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381ea0",
+   "parent_type": "DOM:caption.sr-only",
+   "gp_type": "DOM:table.compare",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:caption.sr-only",
+    "DOM:thead",
+    "DOM:tbody"
+   ]
+  },
+  {
+   "text": "What it is",
+   "es": "Qué es",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e63",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e65",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e70",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "An agent that follows up with leads",
+   "es": "Un agente que da seguimiento a los leads",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e66",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e68",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e70",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Nine AI tools supplied alongside the CRM",
+   "es": "Nueve herramientas de IA entregadas junto con el CRM",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e69",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e6b",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e70",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "A pipeline stage that builds a seller campaign",
+   "es": "Una etapa del pipeline que crea una campaña para el vendedor",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e6c",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e6e",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e70",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "What it does",
+   "es": "Qué hace",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e71",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e73",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e7e",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Decides when and how to follow up, within your rules",
+   "es": "Decide cuándo y cómo dar seguimiento, dentro de tus reglas",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e74",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e76",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e7e",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Call notes, coaching, underwriting, skiptracing, enrichment, dashboards, insights, projections",
+   "es": "Notas de llamadas, coaching, underwriting, skiptracing, enriquecimiento, tableros, insights, proyecciones",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e77",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e79",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e7e",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Reads conversations and notes, then schedules a tailored 60-day campaign",
+   "es": "Lee conversaciones y notas, y luego programa una campaña personalizada de 60 días",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e7a",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e7c",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e7e",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Channels",
+   "es": "Canales",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e7f",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e81",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e8e",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "AI voice, SMS, email,",
+   "es": "Voz con IA, SMS, correo,",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e82",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e86",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e8e",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Not a communication channel",
+   "es": "No es un canal de comunicación",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e87",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e89",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e8e",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "SMS and email",
+   "es": "SMS y correo",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e8a",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e8c",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e8e",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "How you get it",
+   "es": "Cómo lo obtienes",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e8f",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:th"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e91",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e9c",
+   "parent_type": "DOM:th",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Access included with every Enterprise Optimization Suite; usage pay-as-you-go",
+   "es": "Acceso incluido con cada Enterprise Optimization Suite; uso de pago por uso",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e95",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e97",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e9c",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Does not require the AI Agent",
+   "es": "No requiere el AI Agent",
+   "string": "b62ae8af-f247-dd56-26f8-3b0ded381e98",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "DOM:tbody",
+    "DOM:tr",
+    "DOM:td"
+   ],
+   "parent": "b62ae8af-f247-dd56-26f8-3b0ded381e9a",
+   "gp": "b62ae8af-f247-dd56-26f8-3b0ded381e9c",
+   "parent_type": "DOM:td",
+   "gp_type": "DOM:tr",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:th",
+    "DOM:td",
+    "DOM:td",
+    "DOM:td"
+   ]
+  },
+  {
+   "text": "Is the AI Agent part of the AI Suite?",
+   "es": "¿El AI Agent es parte de la AI Suite?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b468ee",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b468f0",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b468f5",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Can I try the AI Agent before a call with your team?",
+   "es": "¿Puedo probar el AI Agent antes de una llamada con su equipo?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b468f6",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b468f8",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b468fd",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What does the AI Agent do?",
+   "es": "¿Qué hace el AI Agent?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b468fe",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b46900",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b46905",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Which channels does it use?",
+   "es": "¿Qué canales usa?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b46906",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b46908",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b46910",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What are number remediation and BYOC?",
+   "es": "¿Qué son la remediación de números y BYOC?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b46911",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b46913",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b46918",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "How is the AI Agent different from AI Nurture?",
+   "es": "¿En qué se diferencia el AI Agent de AI Nurture?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b46919",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b4691b",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b46920",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "I already use the earlier AI Agent. What changes?",
+   "es": "Ya uso el AI Agent anterior. ¿Qué cambia?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b46921",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b46923",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b46928",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What does the AI Agent cost?",
+   "es": "¿Cuánto cuesta el AI Agent?",
+   "string": "957ecdfb-0b9f-753d-67a6-e1f854b46929",
+   "comp": "6afa191e7b59d3ca770d4e6a",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "957ecdfb-0b9f-753d-67a6-e1f854b4692b",
+   "gp": "957ecdfb-0b9f-753d-67a6-e1f854b46930",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  }
+ ]
+}

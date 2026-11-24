@@ -1,0 +1,126 @@
+[
+ {
+  "nodeId": "00ed0feb-99d8-80b1-3a07-58e015ecfe42",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--core\" data-w-id=\"00ed0feb-99d8-80b1-3a07-58e015ecfe41\">Base</span></div>"
+ },
+ {
+  "nodeId": "b0850125-7f7e-612a-7165-46d66dabad60",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--included\" data-w-id=\"b0850125-7f7e-612a-7165-46d66dabad5f\">Acceso incluido</span></div>"
+ },
+ {
+  "nodeId": "ee678eea-5f6f-179b-613a-062333f00971",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--optional\" data-w-id=\"ee678eea-5f6f-179b-613a-062333f00970\">Complemento opcional</span></div>"
+ },
+ {
+  "nodeId": "9899f8eb-d09f-44bf-e894-d87dfd111e8b",
+  "text": "<div class=\"kd-t\"><span class=\"muted\" data-w-id=\"9899f8eb-d09f-44bf-e894-d87dfd111e8a\">CRM + acceso a la AI Suite, juntos. Sin suscripción adicional por la AI Suite.</span></div>"
+ },
+ {
+  "nodeId": "9c222625-76c4-17e4-4316-25e200a84e6d",
+  "text": "<div class=\"kd-t\"><span class=\"muted\" data-w-id=\"9c222625-76c4-17e4-4316-25e200a84e6c\">Agrégalo si encaja con tu operación.</span></div>"
+ },
+ {
+  "nodeId": "601687f9-b047-9486-1e91-918b8a1552f3",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--core\" data-w-id=\"601687f9-b047-9486-1e91-918b8a1552f2\">Base</span></div>"
+ },
+ {
+  "nodeId": "eab0c9bc-09c4-0f13-a2df-bafa118eef65",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--included\" data-w-id=\"eab0c9bc-09c4-0f13-a2df-bafa118eef64\">Acceso incluido</span></div>"
+ },
+ {
+  "nodeId": "8b46fe56-ed24-799d-cb80-9aacd6ca5168",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--optional\" data-w-id=\"8b46fe56-ed24-799d-cb80-9aacd6ca5167\">Opcional · oferta aparte</span></div>"
+ },
+ {
+  "nodeId": "534052f0-dc95-156f-ff06-fd9099394bb2",
+  "text": "<div class=\"kd-t\">Qué incluye cada oferta</div>"
+ },
+ {
+  "nodeId": "06169768-9815-d5ee-2389-9e417e102ba5",
+  "text": "<div class=\"kd-t\">Qué recibes</div>"
+ },
+ {
+  "nodeId": "34d0272c-7537-6fd4-a220-b59f6c6492b3",
+  "text": "<div class=\"kd-t\">CRM con pipelines integrados y seguimiento de KPIs</div>"
+ },
+ {
+  "nodeId": "303701f5-8f35-f65f-3d3a-364082d87a25",
+  "text": "<div class=\"kd-t\">Incluido</div>"
+ },
+ {
+  "nodeId": "47b50121-ea2d-0042-74c5-b05153c71ec6",
+  "text": "<div class=\"kd-t\">Incluido</div>"
+ },
+ {
+  "nodeId": "a0dfe5b7-02e5-028b-9dbf-f334a7cc7f30",
+  "text": "<div class=\"kd-t\">Acceso a la AI Suite</div>"
+ },
+ {
+  "nodeId": "cc6a7cf4-73aa-bcb2-570c-bcbb06a810be",
+  "text": "<div class=\"kd-t\">Incluido, sin suscripción adicional</div>"
+ },
+ {
+  "nodeId": "c3afed81-acc0-fb60-957b-51df6724924e",
+  "text": "<div class=\"kd-t\">Incluido, sin suscripción adicional</div>"
+ },
+ {
+  "nodeId": "708d5672-1a09-2a17-f1a9-a12b00f085ba",
+  "text": "<div class=\"kd-t\">Uso de la AI Suite</div>"
+ },
+ {
+  "nodeId": "59c1e30e-8e67-ba2f-f4bb-7dba180b6ef9",
+  "text": "<div class=\"kd-t\">Opcional, de pago por uso</div>"
+ },
+ {
+  "nodeId": "42c79157-a116-2174-c2fc-8246fb5db9c8",
+  "text": "<div class=\"kd-t\">Opcional, de pago por uso</div>"
+ },
+ {
+  "nodeId": "ef6df71f-8f70-7224-c8cc-9c5d24f38160",
+  "text": "<div class=\"kd-t\">No incluido</div>"
+ },
+ {
+  "nodeId": "3ccbb894-0367-8ec7-981a-b8694a8be0a7",
+  "text": "<div class=\"kd-t\">Incluido en esta oferta</div>"
+ },
+ {
+  "nodeId": "7cd9f595-868a-e629-8354-d6a899fad9f9",
+  "text": "<div class=\"kd-t\">Precios</div>"
+ },
+ {
+  "nodeId": "a25b8efb-7b88-71e1-f85d-c9ec02c16dc4",
+  "text": "<div class=\"kd-t\">Se ven en tu llamada de descubrimiento</div>"
+ },
+ {
+  "nodeId": "27fbff3a-d16d-d4c1-c119-3500a476026e",
+  "text": "<div class=\"kd-t\"><span class=\"note\" data-w-id=\"27fbff3a-d16d-d4c1-c119-3500a476026d\">Conversación ilustrativa</span></div>"
+ },
+ {
+  "nodeId": "b57e6c79-2596-9928-815a-38d3eb827f8b",
+  "text": "<h3 class=\"kd-q\">¿CRM, AI Suite y AI Agent son tres planes distintos?</h3>"
+ },
+ {
+  "nodeId": "bff82a4b-4b2e-0194-cc91-a86b5f45d7e3",
+  "text": "<h3 class=\"kd-q\">¿Qué significa pago por uso en la AI Suite?</h3>"
+ },
+ {
+  "nodeId": "dcc2feb9-3305-340d-3f90-d474be390048",
+  "text": "<h3 class=\"kd-q\">¿Puedo usar el CRM sin usar ninguna herramienta de IA?</h3>"
+ },
+ {
+  "nodeId": "58a4b37e-10a2-26d7-d857-d88c9c1c6f36",
+  "text": "<h3 class=\"kd-q\">¿Qué se cotiza por separado?</h3>"
+ },
+ {
+  "nodeId": "63ae00db-04da-e629-10ca-55b2b9e4dc35",
+  "text": "<h3 class=\"kd-q\">¿Cómo es el soporte después del lanzamiento?</h3>"
+ },
+ {
+  "nodeId": "ba7c5317-2ce7-3d34-547f-3e94ab7c13e3",
+  "text": "<h3 class=\"kd-q\">¿KPI DRIVER se integra con mis herramientas actuales?</h3>"
+ },
+ {
+  "nodeId": "73ca2620-91dc-907b-d957-828b6e213656",
+  "text": "<h3 class=\"kd-q\">¿Dónde veo los precios?</h3>"
+ }
+]

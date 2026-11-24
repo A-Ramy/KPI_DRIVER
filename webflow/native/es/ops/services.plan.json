@@ -1,0 +1,721 @@
+{
+ "builder": [
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae90ff",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae90ff"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "What each offering includes"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae90ff"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9102",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9102"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "What you get"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9102"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae910f",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae910f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "CRM with built-in pipelines and KPI tracking"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae910f"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9112",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9112"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Included"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9112"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9115",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9115"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Included"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9115"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae911a",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Access to the AI Suite"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911a"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae911d",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Included, no additional subscription"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae911d"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9120",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9120"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Included, no additional subscription"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9120"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9125",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9125"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "AI Suite usage"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9125"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9128",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9128"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Optional, pay-as-you-go"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9128"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae912b",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Optional, pay-as-you-go"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae912b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9133",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9133"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Not included"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9133"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae9136",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9136"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Included in this offering"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae9136"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae913b",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Pricing"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b6d3df3a-9c10-e6f7-e4b9-1749a9ae913e",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913e"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Discussed on your discovery call"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b6d3df3a-9c10-e6f7-e4b9-1749a9ae913e"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc0f",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc0f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Are CRM, AI Suite and AI Agent three separate plans?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc0f"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc17",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc17"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What does pay-as-you-go mean for the AI Suite?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc17"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc1f",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc1f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Can I use the CRM without using any AI tools?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc1f"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc27",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc27"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What is scoped separately?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc27"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc2f",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc2f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What does support look like after launch?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc2f"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc37",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc37"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Does KPI DRIVER integrate with my existing tools?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc37"
+    }
+   ]
+  },
+  {
+   "build_label": "B:e98fafc6-e28c-6c40-259e-e498ed72cc3f",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "e98fafc6-e28c-6c40-259e-e498ed72cc3f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Where do I see pricing?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "e98fafc6-e28c-6c40-259e-e498ed72cc3f"
+    }
+   ]
+  }
+ ],
+ "whtml": [
+  {
+   "build_label": "C:784c246d-4d66-5d6e-703c-63f0b9fb9163",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "784c246d-4d66-5d6e-703c-63f0b9fb9163"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--core\">Foundation</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "784c246d-4d66-5d6e-703c-63f0b9fb9163"
+    }
+   ]
+  },
+  {
+   "build_label": "C:784c246d-4d66-5d6e-703c-63f0b9fb9170",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "784c246d-4d66-5d6e-703c-63f0b9fb9170"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--included\">Access included</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "784c246d-4d66-5d6e-703c-63f0b9fb9170"
+    }
+   ]
+  },
+  {
+   "build_label": "C:784c246d-4d66-5d6e-703c-63f0b9fb917d",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "784c246d-4d66-5d6e-703c-63f0b9fb917d"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--optional\">Optional addition</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "784c246d-4d66-5d6e-703c-63f0b9fb917d"
+    }
+   ]
+  },
+  {
+   "build_label": "C:784c246d-4d66-5d6e-703c-63f0b9fb918f",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "784c246d-4d66-5d6e-703c-63f0b9fb918f"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"muted\">CRM + AI Suite access, together. No additional AI Suite subscription.</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "784c246d-4d66-5d6e-703c-63f0b9fb918f"
+    }
+   ]
+  },
+  {
+   "build_label": "C:784c246d-4d66-5d6e-703c-63f0b9fb9195",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "784c246d-4d66-5d6e-703c-63f0b9fb9195"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"muted\">Add it if it fits your operation.</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "784c246d-4d66-5d6e-703c-63f0b9fb9195"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b9081e3c-5cb3-d13b-3b06-c307b2e925ad",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b9081e3c-5cb3-d13b-3b06-c307b2e925ad"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--core\">Foundation</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b9081e3c-5cb3-d13b-3b06-c307b2e925ad"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b9081e3c-5cb3-d13b-3b06-c307b2e925ca",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b9081e3c-5cb3-d13b-3b06-c307b2e925ca"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--included\">Access included</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b9081e3c-5cb3-d13b-3b06-c307b2e925ca"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b9081e3c-5cb3-d13b-3b06-c307b2e925ee",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "b9081e3c-5cb3-d13b-3b06-c307b2e925ee"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--optional\">Optional · separate offering</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "b9081e3c-5cb3-d13b-3b06-c307b2e925ee"
+    }
+   ]
+  },
+  {
+   "build_label": "C:1e7567c7-cb64-541d-f97a-765e35fbab5b",
+   "parent_element_id": {
+    "component": "6afa6ce5a6769cca503f0934",
+    "element": "1e7567c7-cb64-541d-f97a-765e35fbab5b"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"note\">Illustrative conversation</span></div>",
+   "remove": [
+    {
+     "component": "6afa6ce5a6769cca503f0934",
+     "element": "1e7567c7-cb64-541d-f97a-765e35fbab5b"
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Capture",
+  "Acquisitions",
+  "Dispositions",
+  "Capture",
+  "Acquisitions",
+  "Dispositions"
+ ],
+ "other": []
+}

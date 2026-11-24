@@ -1,0 +1,1573 @@
+{
+ "exposed": [
+  {
+   "text": "Situation",
+   "es": "Situación",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a17",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a18",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a1b",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a1b"
+  },
+  {
+   "text": "Condition",
+   "es": "Condición",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a1c",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a1d",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a20",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a20"
+  },
+  {
+   "text": "Asking",
+   "es": "Precio pedido",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a21",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a22",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a25",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a25"
+  },
+  {
+   "text": "Email",
+   "es": "Correo",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a33",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.cc__panel.cc__panel--agent.tone-agent",
+    "Block:div.cc__agent-ch",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a34",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a38",
+   "parent_type": "Span",
+   "gp_type": "Block:div.cc__agent-ch",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span",
+    "Span",
+    "Span"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a38"
+  },
+  {
+   "text": "Illustrative preview · sample data",
+   "es": "Vista ilustrativa · datos de ejemplo",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a3a",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.cc",
+    "Paragraph.cc__caption",
+    "Span.note"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a3b",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a3e",
+   "parent_type": "Span.note",
+   "gp_type": "Paragraph.cc__caption",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.note",
+    "Span.note"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a3e"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "7c6374db-f996-4d24-c463-7505b11d1dbc",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "7c6374db-f996-4d24-c463-7505b11d1dbd",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1dc9",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "7c6374db-f996-4d24-c463-7505b11d1dbd"
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "7c6374db-f996-4d24-c463-7505b11d1ddd",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "7c6374db-f996-4d24-c463-7505b11d1dde",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1dea",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "7c6374db-f996-4d24-c463-7505b11d1dde"
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "7c6374db-f996-4d24-c463-7505b11d1e25",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "7c6374db-f996-4d24-c463-7505b11d1e26",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1e32",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "7c6374db-f996-4d24-c463-7505b11d1e26"
+  },
+  {
+   "text": "The engine of your operation",
+   "es": "El motor de tu operación",
+   "string": "caaf69b0-c582-8407-655c-f347d65f0983",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card",
+    "Paragraph.note"
+   ],
+   "parent": "caaf69b0-c582-8407-655c-f347d65f0984",
+   "gp": "caaf69b0-c582-8407-655c-f347d65f0989",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:article.spot.triad__card",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--core",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ],
+   "node": "caaf69b0-c582-8407-655c-f347d65f0984"
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac716e9",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.head",
+    "Paragraph.eyebrow",
+    "Span.badge.badge--included"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac716ea",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac716eb",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Paragraph.eyebrow",
+   "n_sib": 1,
+   "gp_children": [
+    "String",
+    "Span.badge.badge--included"
+   ],
+   "node": "70d6c734-75c6-59f6-2e36-8ea5aac716eb"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac7170d",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div",
+    "Block:div.group-head",
+    "Heading"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac71710",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac71713",
+   "parent_type": "Heading",
+   "gp_type": "Block:div.group-head",
+   "n_sib": 3,
+   "gp_children": [
+    "Heading",
+    "Paragraph.muted"
+   ],
+   "node": "70d6c734-75c6-59f6-2e36-8ea5aac71710"
+  },
+  {
+   "text": "Channels",
+   "es": "Canales",
+   "string": "bb303775-ce93-7a31-a82d-b6d421df37ed",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.kq",
+    "ListItem",
+    "Heading"
+   ],
+   "parent": "bb303775-ce93-7a31-a82d-b6d421df37ee",
+   "gp": "bb303775-ce93-7a31-a82d-b6d421df37f4",
+   "parent_type": "Heading",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading",
+    "Paragraph.muted"
+   ],
+   "node": "bb303775-ce93-7a31-a82d-b6d421df37ee"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d67fd",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d67fe",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d6806",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading",
+    "Paragraph.muted"
+   ],
+   "node": "70f81986-1a4f-f28d-7006-bfbd197d67fe"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "CRM for the whole lifecycle",
+   "es": "CRM para todo el ciclo",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889bb",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.hero__copy",
+    "List.hero__facts",
+    "ListItem.tone-crm"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889bc",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be889c5",
+   "parent_type": "ListItem.tone-crm",
+   "gp_type": "List.hero__facts",
+   "n_sib": 2,
+   "gp_children": [
+    "ListItem.tone-crm",
+    "ListItem.tone-suite",
+    "ListItem.tone-agent"
+   ]
+  },
+  {
+   "text": "AI Suite access included",
+   "es": "Acceso a la AI Suite incluido",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889bf",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.hero__copy",
+    "List.hero__facts",
+    "ListItem.tone-suite"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889c0",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be889c5",
+   "parent_type": "ListItem.tone-suite",
+   "gp_type": "List.hero__facts",
+   "n_sib": 2,
+   "gp_children": [
+    "ListItem.tone-crm",
+    "ListItem.tone-suite",
+    "ListItem.tone-agent"
+   ]
+  },
+  {
+   "text": "AI Agent optional",
+   "es": "AI Agent opcional",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889c3",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.hero__copy",
+    "List.hero__facts",
+    "ListItem.tone-agent"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889c4",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be889c5",
+   "parent_type": "ListItem.tone-agent",
+   "gp_type": "List.hero__facts",
+   "n_sib": 2,
+   "gp_children": [
+    "ListItem.tone-crm",
+    "ListItem.tone-suite",
+    "ListItem.tone-agent"
+   ]
+  },
+  {
+   "text": "Lead → appointment",
+   "es": "Lead → cita",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889e0",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.gauge",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889e1",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be889e2",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889e5",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889e6",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be889ed",
+   "parent_type": "Span",
+   "gp_type": "Block:div.board__col",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "DOM:i.chip",
+    "DOM:i.chip",
+    "DOM:i.chip.chip--a"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889ee",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889ef",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be889f6",
+   "parent_type": "Span",
+   "gp_type": "Block:div.board__col",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "DOM:i.chip.chip--move",
+    "DOM:i.chip",
+    "DOM:i.chip.chip--o"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be889fe",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be889ff",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a04",
+   "parent_type": "Span",
+   "gp_type": "Block:div.board__col",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "DOM:i.chip.chip--g",
+    "DOM:i.chip"
+   ]
+  },
+  {
+   "text": "Closing",
+   "es": "Cierre",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a05",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a06",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a09",
+   "parent_type": "Span",
+   "gp_type": "Block:div.board__col",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "DOM:i.chip.chip--g"
+   ]
+  },
+  {
+   "text": "Optional",
+   "es": "Opcional",
+   "string": "36385b32-148d-b091-ee2b-e1ca6be88a2d",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.cc",
+    "Block:div.cc__panel.cc__panel--agent.tone-agent",
+    "Span.badge.badge--optional"
+   ],
+   "parent": "36385b32-148d-b091-ee2b-e1ca6be88a2e",
+   "gp": "36385b32-148d-b091-ee2b-e1ca6be88a39",
+   "parent_type": "Span.badge.badge--optional",
+   "gp_type": "Block:div.cc__panel.cc__panel--agent.tone-agent",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.cc__title",
+    "Span.badge.badge--optional",
+    "Block:div.cc__agent-ch"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "7c6374db-f996-4d24-c463-7505b11d1d4e",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "7c6374db-f996-4d24-c463-7505b11d1d50",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1d52",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "7c6374db-f996-4d24-c463-7505b11d1d57",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "7c6374db-f996-4d24-c463-7505b11d1d59",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1d5b",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "7c6374db-f996-4d24-c463-7505b11d1d69",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "7c6374db-f996-4d24-c463-7505b11d1d6b",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1d6d",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "207bfc87-a29b-a217-bd3a-799070ef0af5",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "accf45f0-566c-2e0e-c3d8-a6abb3b5a7c8",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1dbb",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "93edf060-ccb6-149f-9b57-659479bdd082",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "e45e75f3-1bb6-ba49-f46a-ec1d27cb9c9e",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1dbb",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "32674b3b-964a-2c06-325b-5f3262e34d33",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "1cede50e-0085-7ac3-41d0-e7ed7767fde7",
+   "gp": "7c6374db-f996-4d24-c463-7505b11d1dbb",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Appointments set",
+   "es": "Citas agendadas",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7ede71",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.dash__tiles",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7ede72",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7ede73",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Under contract",
+   "es": "Bajo contrato",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7ede77",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.dash__tiles",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7ede78",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7ede79",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Avg. days to close",
+   "es": "Días prom. al cierre",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7ede7d",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.dash__tiles",
+    "Block:div",
+    "Span"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7ede7e",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7ede7f",
+   "parent_type": "Span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Direct mail",
+   "es": "Correo directo",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7ede8a",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__row",
+    "Span"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7ede8b",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7ede92",
+   "parent_type": "Span",
+   "gp_type": "Block:div.dash__row",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Block:div.dash__bar",
+    "DOM:b"
+   ]
+  },
+  {
+   "text": "Cold calling",
+   "es": "Llamadas en frío",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7ede93",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__row",
+    "Span"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7ede94",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7ede9b",
+   "parent_type": "Span",
+   "gp_type": "Block:div.dash__row",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Block:div.dash__bar",
+    "DOM:b"
+   ]
+  },
+  {
+   "text": "Referrals",
+   "es": "Referidos",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7ede9c",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__row",
+    "Span"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7ede9d",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7edea4",
+   "parent_type": "Span",
+   "gp_type": "Block:div.dash__row",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Block:div.dash__bar",
+    "DOM:b"
+   ]
+  },
+  {
+   "text": "Sample metrics for illustration · not client results",
+   "es": "Métricas de ejemplo con fines ilustrativos · no son resultados de clientes",
+   "string": "75f0f90c-0685-2785-0881-d8e83e7edea5",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.stack",
+    "Block:div.dash.tone-crm",
+    "Span.note"
+   ],
+   "parent": "75f0f90c-0685-2785-0881-d8e83e7edea6",
+   "gp": "75f0f90c-0685-2785-0881-d8e83e7edea7",
+   "parent_type": "Span.note",
+   "gp_type": "Block:div.dash.tone-crm",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.dash__tiles",
+    "Block:div.dash__row",
+    "Block:div.dash__row",
+    "Block:div.dash__row",
+    "Block:div.dash__row",
+    "Span.note"
+   ]
+  },
+  {
+   "text": "Foundation",
+   "es": "Base",
+   "string": "caaf69b0-c582-8407-655c-f347d65f097f",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card",
+    "Span.badge.badge--core"
+   ],
+   "parent": "caaf69b0-c582-8407-655c-f347d65f0980",
+   "gp": "caaf69b0-c582-8407-655c-f347d65f0989",
+   "parent_type": "Span.badge.badge--core",
+   "gp_type": "Block:article.spot.triad__card",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--core",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string": "caaf69b0-c582-8407-655c-f347d65f098c",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card.triad__card--suite",
+    "Span.badge.badge--included"
+   ],
+   "parent": "caaf69b0-c582-8407-655c-f347d65f098d",
+   "gp": "caaf69b0-c582-8407-655c-f347d65f0996",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Block:article.spot.triad__card.triad__card--suite",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "Optional addition",
+   "es": "Complemento opcional",
+   "string": "caaf69b0-c582-8407-655c-f347d65f0999",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.triad",
+    "Block:article.spot.triad__card.triad__card--agent",
+    "Span.badge.badge--optional"
+   ],
+   "parent": "caaf69b0-c582-8407-655c-f347d65f099a",
+   "gp": "caaf69b0-c582-8407-655c-f347d65f09a6",
+   "parent_type": "Span.badge.badge--optional",
+   "gp_type": "Block:article.spot.triad__card.triad__card--agent",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--optional",
+    "Heading",
+    "Paragraph.note",
+    "Paragraph.muted",
+    "Link.link.arrow"
+   ]
+  },
+  {
+   "text": "CRM + AI Suite access, together. No additional AI Suite subscription.",
+   "es": "CRM + acceso a la AI Suite, juntos. Sin suscripción adicional por la AI Suite.",
+   "string": "caaf69b0-c582-8407-655c-f347d65f09ab",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.bracket",
+    "Block:div",
+    "Span.muted"
+   ],
+   "parent": "caaf69b0-c582-8407-655c-f347d65f09ac",
+   "gp": "caaf69b0-c582-8407-655c-f347d65f09ad",
+   "parent_type": "Span.muted",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span.muted"
+   ]
+  },
+  {
+   "text": "Add it if it fits your operation.",
+   "es": "Agrégalo si encaja con tu operación.",
+   "string": "caaf69b0-c582-8407-655c-f347d65f09b1",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.bracket",
+    "Block:div",
+    "Span.muted"
+   ],
+   "parent": "caaf69b0-c582-8407-655c-f347d65f09b2",
+   "gp": "caaf69b0-c582-8407-655c-f347d65f09b3",
+   "parent_type": "Span.muted",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:b",
+    "Span.muted"
+   ]
+  },
+  {
+   "text": "Included",
+   "es": "Incluido",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac716f4",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "Span.badge.badge--included"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac716f5",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac716fb",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Access comes with the Suite",
+   "es": "El acceso viene con la Suite",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac716f6",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "DOM:b"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac716f8",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac716fb",
+   "parent_type": "DOM:b",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Every Enterprise Optimization Suite includes the CRM and access to the AI Suite.",
+   "es": "Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite.",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac716f9",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "Span"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac716fa",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac716fb",
+   "parent_type": "Span",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Optional",
+   "es": "Opcional",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac716fc",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "Span.badge"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac716fd",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac71703",
+   "parent_type": "Span.badge",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Use a tool when you need it",
+   "es": "Usa una herramienta cuando la necesites",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac716fe",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "DOM:b"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac71700",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac71703",
+   "parent_type": "DOM:b",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Nothing obliges you to use the AI tools. Turn to them for the tasks where they help.",
+   "es": "Nada te obliga a usar las herramientas de IA. Recurre a ellas en las tareas donde ayudan.",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac71701",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "Span"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac71702",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac71703",
+   "parent_type": "Span",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac71704",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "Span.badge"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac71705",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac7170b",
+   "parent_type": "Span.badge",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "Pay for what you use",
+   "es": "Paga por lo que usas",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac71706",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "DOM:b"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac71708",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac7170b",
+   "parent_type": "DOM:b",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "No additional AI Suite subscription. Usage is tracked in a billing dashboard. Rates are covered on your discovery call.",
+   "es": "Sin suscripción adicional por la AI Suite. El uso se registra en un panel de facturación. Las tarifas se ven en tu llamada de descubrimiento.",
+   "string": "70d6c734-75c6-59f6-2e36-8ea5aac71709",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "List.model",
+    "ListItem",
+    "Span"
+   ],
+   "parent": "70d6c734-75c6-59f6-2e36-8ea5aac7170a",
+   "gp": "70d6c734-75c6-59f6-2e36-8ea5aac7170b",
+   "parent_type": "Span",
+   "gp_type": "ListItem",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "DOM:b",
+    "Span"
+   ]
+  },
+  {
+   "text": "1 · The call",
+   "es": "1 · La llamada",
+   "string": "269a3a6b-52b4-10a1-d9f9-1beacadcc7db",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "parent": "d3169421-3c2f-3c23-07aa-b05b6ef02bfb",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee8feb",
+   "parent_type": "DOM:button.flow__step",
+   "gp_type": "Block:div.flow__steps",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:button.flow__step",
+    "DOM:button.flow__step",
+    "DOM:button.flow__step"
+   ]
+  },
+  {
+   "text": "2 · Structured notes",
+   "es": "2 · Notas estructuradas",
+   "string": "3c526e43-ab73-2165-e9bc-b290d2c8fe94",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "parent": "d4a7b75d-177e-2f01-43a8-a517ac8923b1",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee8feb",
+   "parent_type": "DOM:button.flow__step",
+   "gp_type": "Block:div.flow__steps",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:button.flow__step",
+    "DOM:button.flow__step",
+    "DOM:button.flow__step"
+   ]
+  },
+  {
+   "text": "3 · Coaching feedback",
+   "es": "3 · Retroalimentación de coaching",
+   "string": "2e159aa9-be99-197a-5e1b-eab35c41d142",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "parent": "f668c9d8-c03a-a506-3cf0-85d40dee5b2b",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee8feb",
+   "parent_type": "DOM:button.flow__step",
+   "gp_type": "Block:div.flow__steps",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:button.flow__step",
+    "DOM:button.flow__step",
+    "DOM:button.flow__step"
+   ]
+  },
+  {
+   "text": "Play walkthrough",
+   "es": "Reproducir recorrido",
+   "string": "554ea30a-9c74-cd5f-a3fd-d789820691d8",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.flow.tone-suite",
+    "Block:div.flow__bar",
+    "DOM:button.btn.btn--ghost.btn--sm"
+   ],
+   "parent": "b9137c28-543e-c54e-de29-81adf5290362",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee8fee",
+   "parent_type": "DOM:button.btn.btn--ghost.btn--sm",
+   "gp_type": "Block:div.flow__bar",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.flow__steps",
+    "DOM:button.btn.btn--ghost.btn--sm"
+   ]
+  },
+  {
+   "text": "Situation",
+   "es": "Situación",
+   "string": "cf41487e-b7a6-33b6-7d4b-7e0689b0530c",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "5423a4c6-7db7-5968-76a9-336a6f3970aa",
+   "gp": "dbdd5001-4ba9-44b5-a4fd-ad6f6e4fa7e5",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Inherited property",
+   "es": "Propiedad heredada",
+   "string": "560df07d-866f-d850-a183-65c582ce0e82",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "0591c233-e698-4387-42c2-ef3d9032dca4",
+   "gp": "dbdd5001-4ba9-44b5-a4fd-ad6f6e4fa7e5",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Condition",
+   "es": "Condición",
+   "string": "3a7e8f78-3934-0ec2-423c-ad9be6b2065f",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "cac5beba-6927-c7a6-bca9-58c42b543a96",
+   "gp": "c137560c-a032-22e6-1eae-a145d6952df8",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Roof needs repair",
+   "es": "El techo necesita reparación",
+   "string": "49a7b2c3-ede3-e1ca-1e7a-a7e3cdcc617b",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "b8bd6480-eb49-7dc0-f7d5-43c6c21f64df",
+   "gp": "c137560c-a032-22e6-1eae-a145d6952df8",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Timeline",
+   "es": "Plazo",
+   "string": "09a752c4-3adf-f11a-52b2-9173a3f0ee33",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "d11f9232-6b5e-54ee-5c1c-93a81dbb31a8",
+   "gp": "32ebb2bd-7190-f3f6-717f-17f95d208a87",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "End of summer",
+   "es": "Fin del verano",
+   "string": "9f849ad4-1a1b-acd1-aa32-9e90e9f31aff",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "e6f605bd-f11b-5098-bcb1-e94f9b2596fd",
+   "gp": "32ebb2bd-7190-f3f6-717f-17f95d208a87",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Asking",
+   "es": "Precio pedido",
+   "string": "d2284caa-7386-ae05-f467-ab18297e1779",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "381497e6-e8b0-c6a5-97b5-929590707ecb",
+   "gp": "88164eb5-f56e-b4ab-387b-fb7d859620fb",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Next step",
+   "es": "Siguiente paso",
+   "string": "59b10909-199e-abaa-e834-379ad5368105",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "ce8ca73e-cd5a-5f1a-42ef-db4f0ba9aed1",
+   "gp": "d10612e1-79d0-45be-0291-205230acb73a",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Send offer range",
+   "es": "Enviar rango de oferta",
+   "string": "2dedaf75-dd37-6702-3976-963325a63ccb",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "parent": "25590b9c-9f92-8655-2614-7ac5792f26db",
+   "gp": "d10612e1-79d0-45be-0291-205230acb73a",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "DOM:span"
+   ]
+  },
+  {
+   "text": "Rapport",
+   "es": "Empatía",
+   "string": "63e574ef-0bf2-1e9d-94a3-8f04e49a0bb0",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.score",
+    "Block:div.score__row",
+    "DOM:span"
+   ],
+   "parent": "36cf935f-4969-c309-f294-48cb4bc6d5cb",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee9022",
+   "parent_type": "DOM:span",
+   "gp_type": "Block:div.score__row",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:span",
+    "Block:div.dash__bar",
+    "DOM:b"
+   ]
+  },
+  {
+   "text": "Motivation discovery",
+   "es": "Descubrimiento de motivación",
+   "string": "64f2c5df-eb20-54b8-b182-7f32b2ee9023",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.score",
+    "Block:div.score__row",
+    "Span"
+   ],
+   "parent": "64f2c5df-eb20-54b8-b182-7f32b2ee9024",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee902b",
+   "parent_type": "Span",
+   "gp_type": "Block:div.score__row",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Block:div.dash__bar",
+    "DOM:b"
+   ]
+  },
+  {
+   "text": "Objection handling",
+   "es": "Manejo de objeciones",
+   "string": "64f2c5df-eb20-54b8-b182-7f32b2ee902c",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.score",
+    "Block:div.score__row",
+    "Span"
+   ],
+   "parent": "64f2c5df-eb20-54b8-b182-7f32b2ee902d",
+   "gp": "64f2c5df-eb20-54b8-b182-7f32b2ee9034",
+   "parent_type": "Span",
+   "gp_type": "Block:div.score__row",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Block:div.dash__bar",
+    "DOM:b"
+   ]
+  },
+  {
+   "text": "Illustrative conversation",
+   "es": "Conversación ilustrativa",
+   "string": "3e2b4fc4-b2cd-8bb8-2420-c6a718f5bc64",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.split.split--even",
+    "Block:div.support__chat.hud",
+    "Span.note"
+   ],
+   "parent": "3e2b4fc4-b2cd-8bb8-2420-c6a718f5bc65",
+   "gp": "3e2b4fc4-b2cd-8bb8-2420-c6a718f5bc66",
+   "parent_type": "Span.note",
+   "gp_type": "Block:div.support__chat.hud",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.cc__bar",
+    "Paragraph.bubble",
+    "Paragraph.bubble.bubble--me",
+    "Paragraph.bubble",
+    "Paragraph.bubble.bubble--me",
+    "Span.note"
+   ]
+  },
+  {
+   "text": "What is KPI DRIVER?",
+   "es": "¿Qué es KPI DRIVER?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d6807",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6809",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d680e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What do I get with the Enterprise Optimization Suite?",
+   "es": "¿Qué incluye la Enterprise Optimization Suite?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d680f",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6811",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d6816",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Is the AI Agent included?",
+   "es": "¿El AI Agent está incluido?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d6817",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6819",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d681e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "How much does KPI DRIVER cost?",
+   "es": "¿Cuánto cuesta KPI DRIVER?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d681f",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6821",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d6826",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Do I need separate systems for document signatures, dispositions, or rentals?",
+   "es": "¿Necesito sistemas separados para firmas de documentos, disposiciones o rentas?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d6827",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6829",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d682e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?",
+   "es": "¿KPI DRIVER me sirve si soy nuevo en bienes raíces o todavía no tengo un CRM?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d682f",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6831",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d6836",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Do you offer support and training?",
+   "es": "¿Ofrecen soporte y capacitación?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d6837",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6839",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d683e",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "How long does implementation take?",
+   "es": "¿Cuánto tarda la implementación?",
+   "string": "70f81986-1a4f-f28d-7006-bfbd197d683f",
+   "comp": "68974c57cac027f80fdf8828",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "70f81986-1a4f-f28d-7006-bfbd197d6841",
+   "gp": "70f81986-1a4f-f28d-7006-bfbd197d6846",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  }
+ ]
+}

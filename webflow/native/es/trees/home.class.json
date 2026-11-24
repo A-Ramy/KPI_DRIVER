@@ -1,0 +1,1581 @@
+{
+ "exposed": [
+  {
+   "text": "Situation",
+   "es": "Situación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a17"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a18"
+   },
+   "chain": [
+    "Block:div.transcript",
+    "Block:div.fields",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a1b"
+  },
+  {
+   "text": "Condition",
+   "es": "Condición",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a1c"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a1d"
+   },
+   "chain": [
+    "Block:div.transcript",
+    "Block:div.fields",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a20"
+  },
+  {
+   "text": "Asking",
+   "es": "Precio pedido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a21"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a22"
+   },
+   "chain": [
+    "Block:div.transcript",
+    "Block:div.fields",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a25"
+  },
+  {
+   "text": "Email",
+   "es": "Correo",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a33"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a34"
+   },
+   "chain": [
+    "Block:div.cc",
+    "Block:div.cc__panel.cc__panel--agent.tone-agent",
+    "Block:div.cc__agent-ch",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a38"
+  },
+  {
+   "text": "Illustrative preview · sample data",
+   "es": "Vista ilustrativa · datos de ejemplo",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a3a"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a3b"
+   },
+   "chain": [
+    "Block:div.hero__stage",
+    "Block:div.cc",
+    "Paragraph.cc__caption",
+    "Span.note"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "36385b32-148d-b091-ee2b-e1ca6be88a3e"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1dbc"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1dbd"
+   },
+   "chain": [
+    "Block:div.tabs__panel.hud",
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "7c6374db-f996-4d24-c463-7505b11d1dbd"
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1ddd"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1dde"
+   },
+   "chain": [
+    "Block:div.tabs__panel.hud",
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "7c6374db-f996-4d24-c463-7505b11d1dde"
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1e25"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1e26"
+   },
+   "chain": [
+    "Block:div.tabs__panel.hud",
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "7c6374db-f996-4d24-c463-7505b11d1e26"
+  },
+  {
+   "text": "The engine of your operation",
+   "es": "El motor de tu operación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f0983"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f0984"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.triad",
+    "Block:article.spot.triad__card",
+    "Paragraph.note"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "caaf69b0-c582-8407-655c-f347d65f0984"
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716e9"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716ea"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.head",
+    "Paragraph.eyebrow",
+    "Span.badge.badge--included"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "70d6c734-75c6-59f6-2e36-8ea5aac716eb"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac7170d"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71710"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "Block:div",
+    "Block:div.group-head",
+    "Heading:h3"
+   ],
+   "siblings": [
+    "String",
+    "String",
+    "String"
+   ],
+   "node": "70d6c734-75c6-59f6-2e36-8ea5aac71710"
+  },
+  {
+   "text": "Channels",
+   "es": "Canales",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "bb303775-ce93-7a31-a82d-b6d421df37ed"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "bb303775-ce93-7a31-a82d-b6d421df37ee"
+   },
+   "chain": [
+    "Block:div.stack",
+    "List:ul.kq",
+    "ListItem",
+    "Heading:h3"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "bb303775-ce93-7a31-a82d-b6d421df37ee"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d67fd"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d67fe"
+   },
+   "chain": [
+    "Block:section.section.section--paper",
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "siblings": [
+    "String"
+   ],
+   "node": "70f81986-1a4f-f28d-7006-bfbd197d67fe"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "CRM for the whole lifecycle",
+   "es": "CRM para todo el ciclo",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889bb"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889bc"
+   },
+   "chain": [
+    "Block:div.wrap.hero__grid",
+    "Block:div.hero__copy",
+    "List:ul.hero__facts",
+    "ListItem.tone-crm"
+   ],
+   "siblings": [
+    "DOM",
+    "String"
+   ]
+  },
+  {
+   "text": "AI Suite access included",
+   "es": "Acceso a la AI Suite incluido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889bf"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889c0"
+   },
+   "chain": [
+    "Block:div.wrap.hero__grid",
+    "Block:div.hero__copy",
+    "List:ul.hero__facts",
+    "ListItem.tone-suite"
+   ],
+   "siblings": [
+    "DOM",
+    "String"
+   ]
+  },
+  {
+   "text": "AI Agent optional",
+   "es": "AI Agent opcional",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889c3"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889c4"
+   },
+   "chain": [
+    "Block:div.wrap.hero__grid",
+    "Block:div.hero__copy",
+    "List:ul.hero__facts",
+    "ListItem.tone-agent"
+   ],
+   "siblings": [
+    "DOM",
+    "String"
+   ]
+  },
+  {
+   "text": "Lead → appointment",
+   "es": "Lead → cita",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889e0"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889e1"
+   },
+   "chain": [
+    "Block:div.cc__bar",
+    "Block:div.gauge",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889e5"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889e6"
+   },
+   "chain": [
+    "Block:div.cc__panel.cc__panel--crm.tone-crm",
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889ee"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889ef"
+   },
+   "chain": [
+    "Block:div.cc__panel.cc__panel--crm.tone-crm",
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889fe"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be889ff"
+   },
+   "chain": [
+    "Block:div.cc__panel.cc__panel--crm.tone-crm",
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Closing",
+   "es": "Cierre",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a05"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a06"
+   },
+   "chain": [
+    "Block:div.cc__panel.cc__panel--crm.tone-crm",
+    "Block:div.board",
+    "Block:div.board__col",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Optional",
+   "es": "Opcional",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a2d"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36385b32-148d-b091-ee2b-e1ca6be88a2e"
+   },
+   "chain": [
+    "Block:div.hero__stage",
+    "Block:div.cc",
+    "Block:div.cc__panel.cc__panel--agent.tone-agent",
+    "Span.badge.badge--optional"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1d4e"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1d50"
+   },
+   "chain": [
+    "Block:div.circuit",
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1d57"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1d59"
+   },
+   "chain": [
+    "Block:div.circuit",
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1d69"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "7c6374db-f996-4d24-c463-7505b11d1d6b"
+   },
+   "chain": [
+    "Block:div.circuit",
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "207bfc87-a29b-a217-bd3a-799070ef0af5"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "accf45f0-566c-2e0e-c3d8-a6abb3b5a7c8"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "siblings": [
+    "DOM",
+    "String"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "93edf060-ccb6-149f-9b57-659479bdd082"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "e45e75f3-1bb6-ba49-f46a-ec1d27cb9c9e"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "siblings": [
+    "DOM",
+    "String"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "32674b3b-964a-2c06-325b-5f3262e34d33"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "1cede50e-0085-7ac3-41d0-e7ed7767fde7"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "siblings": [
+    "DOM",
+    "String"
+   ]
+  },
+  {
+   "text": "Appointments set",
+   "es": "Citas agendadas",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede71"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede72"
+   },
+   "chain": [
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__tiles",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Under contract",
+   "es": "Bajo contrato",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede77"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede78"
+   },
+   "chain": [
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__tiles",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Avg. days to close",
+   "es": "Días prom. al cierre",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede7d"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede7e"
+   },
+   "chain": [
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__tiles",
+    "Block:div",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Direct mail",
+   "es": "Correo directo",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede8a"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede8b"
+   },
+   "chain": [
+    "Block:div.stack",
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__row",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Cold calling",
+   "es": "Llamadas en frío",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede93"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede94"
+   },
+   "chain": [
+    "Block:div.stack",
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__row",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Referrals",
+   "es": "Referidos",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede9c"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7ede9d"
+   },
+   "chain": [
+    "Block:div.stack",
+    "Block:div.dash.tone-crm",
+    "Block:div.dash__row",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Sample metrics for illustration · not client results",
+   "es": "Métricas de ejemplo con fines ilustrativos · no son resultados de clientes",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7edea5"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "75f0f90c-0685-2785-0881-d8e83e7edea6"
+   },
+   "chain": [
+    "Block:div.split",
+    "Block:div.stack",
+    "Block:div.dash.tone-crm",
+    "Span.note"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Foundation",
+   "es": "Base",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f097f"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f0980"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.triad",
+    "Block:article.spot.triad__card",
+    "Span.badge.badge--core"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f098c"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f098d"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.triad",
+    "Block:article.spot.triad__card.triad__card--suite",
+    "Span.badge.badge--included"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Optional addition",
+   "es": "Complemento opcional",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f0999"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f099a"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.triad",
+    "Block:article.spot.triad__card.triad__card--agent",
+    "Span.badge.badge--optional"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "CRM + AI Suite access, together. No additional AI Suite subscription.",
+   "es": "CRM + acceso a la AI Suite, juntos. Sin suscripción adicional por la AI Suite.",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f09ab"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f09ac"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.bracket",
+    "Block:div",
+    "Span.muted"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Add it if it fits your operation.",
+   "es": "Agrégalo si encaja con tu operación.",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f09b1"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "caaf69b0-c582-8407-655c-f347d65f09b2"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.bracket",
+    "Block:div",
+    "Span.muted"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Included",
+   "es": "Incluido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716f4"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716f5"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "Span.badge.badge--included"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Access comes with the Suite",
+   "es": "El acceso viene con la Suite",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716f6"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716f8"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "DOM:b"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Every Enterprise Optimization Suite includes the CRM and access to the AI Suite.",
+   "es": "Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite.",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716f9"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716fa"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Optional",
+   "es": "Opcional",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716fc"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716fd"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "Span.badge"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Use a tool when you need it",
+   "es": "Usa una herramienta cuando la necesites",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac716fe"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71700"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "DOM:b"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Nothing obliges you to use the AI tools. Turn to them for the tasks where they help.",
+   "es": "Nada te obliga a usar las herramientas de IA. Recurre a ellas en las tareas donde ayudan.",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71701"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71702"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71704"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71705"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "Span.badge"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Pay for what you use",
+   "es": "Paga por lo que usas",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71706"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71708"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "DOM:b"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "No additional AI Suite subscription. Usage is tracked in a billing dashboard. Rates are covered on your discovery call.",
+   "es": "Sin suscripción adicional por la AI Suite. El uso se registra en un panel de facturación. Las tarifas se ven en tu llamada de descubrimiento.",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac71709"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70d6c734-75c6-59f6-2e36-8ea5aac7170a"
+   },
+   "chain": [
+    "Block:div.stack.stack--lg",
+    "List:ul.model",
+    "ListItem",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "1 · The call",
+   "es": "1 · La llamada",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "269a3a6b-52b4-10a1-d9f9-1beacadcc7db"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "d3169421-3c2f-3c23-07aa-b05b6ef02bfb"
+   },
+   "chain": [
+    "Block:div.flow.tone-suite",
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "2 · Structured notes",
+   "es": "2 · Notas estructuradas",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "3c526e43-ab73-2165-e9bc-b290d2c8fe94"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "d4a7b75d-177e-2f01-43a8-a517ac8923b1"
+   },
+   "chain": [
+    "Block:div.flow.tone-suite",
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "3 · Coaching feedback",
+   "es": "3 · Retroalimentación de coaching",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "2e159aa9-be99-197a-5e1b-eab35c41d142"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "f668c9d8-c03a-a506-3cf0-85d40dee5b2b"
+   },
+   "chain": [
+    "Block:div.flow.tone-suite",
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Play walkthrough",
+   "es": "Reproducir recorrido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "554ea30a-9c74-cd5f-a3fd-d789820691d8"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "b9137c28-543e-c54e-de29-81adf5290362"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.flow.tone-suite",
+    "Block:div.flow__bar",
+    "DOM:button.btn.btn--ghost.btn--sm"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Situation",
+   "es": "Situación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "cf41487e-b7a6-33b6-7d4b-7e0689b0530c"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "5423a4c6-7db7-5968-76a9-336a6f3970aa"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Inherited property",
+   "es": "Propiedad heredada",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "560df07d-866f-d850-a183-65c582ce0e82"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "0591c233-e698-4387-42c2-ef3d9032dca4"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Condition",
+   "es": "Condición",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "3a7e8f78-3934-0ec2-423c-ad9be6b2065f"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "cac5beba-6927-c7a6-bca9-58c42b543a96"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Roof needs repair",
+   "es": "El techo necesita reparación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "49a7b2c3-ede3-e1ca-1e7a-a7e3cdcc617b"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "b8bd6480-eb49-7dc0-f7d5-43c6c21f64df"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Timeline",
+   "es": "Plazo",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "09a752c4-3adf-f11a-52b2-9173a3f0ee33"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "d11f9232-6b5e-54ee-5c1c-93a81dbb31a8"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "End of summer",
+   "es": "Fin del verano",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "9f849ad4-1a1b-acd1-aa32-9e90e9f31aff"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "e6f605bd-f11b-5098-bcb1-e94f9b2596fd"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Asking",
+   "es": "Precio pedido",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "d2284caa-7386-ae05-f467-ab18297e1779"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "381497e6-e8b0-c6a5-97b5-929590707ecb"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Next step",
+   "es": "Siguiente paso",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "59b10909-199e-abaa-e834-379ad5368105"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "ce8ca73e-cd5a-5f1a-42ef-db4f0ba9aed1"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Send offer range",
+   "es": "Enviar rango de oferta",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "2dedaf75-dd37-6702-3976-963325a63ccb"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "25590b9c-9f92-8655-2614-7ac5792f26db"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.fields",
+    "Block:div",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Rapport",
+   "es": "Empatía",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "63e574ef-0bf2-1e9d-94a3-8f04e49a0bb0"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "36cf935f-4969-c309-f294-48cb4bc6d5cb"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.score",
+    "Block:div.score__row",
+    "DOM:span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Motivation discovery",
+   "es": "Descubrimiento de motivación",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "64f2c5df-eb20-54b8-b182-7f32b2ee9023"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "64f2c5df-eb20-54b8-b182-7f32b2ee9024"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.score",
+    "Block:div.score__row",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Objection handling",
+   "es": "Manejo de objeciones",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "64f2c5df-eb20-54b8-b182-7f32b2ee902c"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "64f2c5df-eb20-54b8-b182-7f32b2ee902d"
+   },
+   "chain": [
+    "Block:div.flow__pane",
+    "Block:div.score",
+    "Block:div.score__row",
+    "Span"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Illustrative conversation",
+   "es": "Conversación ilustrativa",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "3e2b4fc4-b2cd-8bb8-2420-c6a718f5bc64"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "3e2b4fc4-b2cd-8bb8-2420-c6a718f5bc65"
+   },
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.split.split--even",
+    "Block:div.support__chat.hud",
+    "Span.note"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "What is KPI DRIVER?",
+   "es": "¿Qué es KPI DRIVER?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6807"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6809"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "What do I get with the Enterprise Optimization Suite?",
+   "es": "¿Qué incluye la Enterprise Optimization Suite?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d680f"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6811"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Is the AI Agent included?",
+   "es": "¿El AI Agent está incluido?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6817"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6819"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "How much does KPI DRIVER cost?",
+   "es": "¿Cuánto cuesta KPI DRIVER?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d681f"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6821"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Do I need separate systems for document signatures, dispositions, or rentals?",
+   "es": "¿Necesito sistemas separados para firmas de documentos, disposiciones o rentas?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6827"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6829"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?",
+   "es": "¿KPI DRIVER me sirve si soy nuevo en bienes raíces o todavía no tengo un CRM?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d682f"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6831"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "Do you offer support and training?",
+   "es": "¿Ofrecen soporte y capacitación?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6837"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6839"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  },
+  {
+   "text": "How long does implementation take?",
+   "es": "¿Cuánto tarda la implementación?",
+   "string_id": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d683f"
+   },
+   "parent": {
+    "component": "68974c57cac027f80fdf8828",
+    "element": "70f81986-1a4f-f28d-7006-bfbd197d6841"
+   },
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "siblings": [
+    "String"
+   ]
+  }
+ ]
+}

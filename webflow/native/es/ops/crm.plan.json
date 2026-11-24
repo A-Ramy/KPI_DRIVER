@@ -1,0 +1,476 @@
+{
+ "builder": [
+  {
+   "build_label": "A:e3b0ff12-6f9d-c321-3f2b-dcbe2f894984",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894984"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Illustrative preview · sample data"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894984"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b202ea",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202ea"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is the CRM sold on its own?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202ea"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b202f2",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202f2"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Which pipelines are built in?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202f2"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b202fa",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202fa"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is the KPI dashboard customizable?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202fa"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b20302",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b20302"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Can my team work from a phone?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b20302"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b2030d",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b2030d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Can you migrate my current CRM?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b2030d"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b20315",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b20315"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "How does the AI Suite relate to the CRM?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b20315"
+    }
+   ]
+  },
+  {
+   "build_label": "B:2fc9a56f-ea8c-a4fb-4b07-7c9c91b2031d",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b2031d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What if I need a change to my setup?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b2031d"
+    }
+   ]
+  }
+ ],
+ "whtml": [
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f89494e",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89494e"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>New leads</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89494e"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f894954",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894954"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Appointments</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894954"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f89495a",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89495a"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Contracts</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89495a"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f89495e",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89495e"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>New</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89495e"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f894967",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894967"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Contacted</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894967"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f89496e",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89496e"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Appointment</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89496e"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f894977",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894977"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Offer</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894977"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e3b0ff12-6f9d-c321-3f2b-dcbe2f89497e",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89497e"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Contract</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "e3b0ff12-6f9d-c321-3f2b-dcbe2f89497e"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bb2",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bb2"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>New leads</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bb2"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bb8",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bb8"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Appointments</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bb8"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bbe",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bbe"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Contracts</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bbe"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bc2",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bc2"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Lead → Appt.</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bc2"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bcb",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bcb"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Appt. → Offer</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bcb"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bd4",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bd4"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Offer → Contract</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bd4"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4bdd",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bdd"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Contract → Close</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4bdd"
+    }
+   ]
+  },
+  {
+   "build_label": "C:2a64c12c-dfb5-f3f4-efbf-fd2be21d4be6",
+   "parent_element_id": {
+    "component": "6afa1f119ba75560d9c1652d",
+    "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4be6"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"note\">Illustrative preview · sample metrics, not client results</span></div>",
+   "remove": [
+    {
+     "component": "6afa1f119ba75560d9c1652d",
+     "element": "2a64c12c-dfb5-f3f4-efbf-fd2be21d4be6"
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Capture",
+  "Acquisitions",
+  "Dispositions",
+  "Capture",
+  "Acquisitions",
+  "Dispositions"
+ ],
+ "other": []
+}

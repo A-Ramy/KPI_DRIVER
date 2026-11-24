@@ -1,0 +1,736 @@
+{
+ "exposed": [
+  {
+   "text": "New leads",
+   "es": "Leads nuevos",
+   "string": "e84ccdaf-9f86-acd3-8ecc-9d68a5fa2638",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "e84ccdaf-9f86-acd3-8ecc-9d68a5fa2639",
+   "gp": "e84ccdaf-9f86-acd3-8ecc-9d68a5fa263a",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "e84ccdaf-9f86-acd3-8ecc-9d68a5fa263a"
+  },
+  {
+   "text": "Appointments",
+   "es": "Citas",
+   "string": "49703b1b-b0dc-dc1e-7a65-68a051d99cb0",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "49703b1b-b0dc-dc1e-7a65-68a051d99cb1",
+   "gp": "49703b1b-b0dc-dc1e-7a65-68a051d99cb2",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "49703b1b-b0dc-dc1e-7a65-68a051d99cb2"
+  },
+  {
+   "text": "Contracts",
+   "es": "Contratos",
+   "string": "6b6a1cff-77e1-cebb-acf8-5cac10bb09e8",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "6b6a1cff-77e1-cebb-acf8-5cac10bb09e9",
+   "gp": "6b6a1cff-77e1-cebb-acf8-5cac10bb09ea",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "6b6a1cff-77e1-cebb-acf8-5cac10bb09ea"
+  },
+  {
+   "text": "New",
+   "es": "Nuevo",
+   "string": "5f510ca3-d5b5-53fd-f3ae-cf700725564d",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.board__col",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "5f510ca3-d5b5-53fd-f3ae-cf700725564e",
+   "gp": "5f510ca3-d5b5-53fd-f3ae-cf700725564f",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "5f510ca3-d5b5-53fd-f3ae-cf700725564f"
+  },
+  {
+   "text": "Contacted",
+   "es": "Contactado",
+   "string": "f5b5ee7a-7dc4-70fc-435b-2d81c52d3dce",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.board__col",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "f5b5ee7a-7dc4-70fc-435b-2d81c52d3dcf",
+   "gp": "f5b5ee7a-7dc4-70fc-435b-2d81c52d3dd0",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "f5b5ee7a-7dc4-70fc-435b-2d81c52d3dd0"
+  },
+  {
+   "text": "Appointment",
+   "es": "Cita",
+   "string": "f2c73321-90a7-7150-39ea-3389c9e706fb",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.board__col",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "f2c73321-90a7-7150-39ea-3389c9e706fc",
+   "gp": "f2c73321-90a7-7150-39ea-3389c9e706fd",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "f2c73321-90a7-7150-39ea-3389c9e706fd"
+  },
+  {
+   "text": "Offer",
+   "es": "Oferta",
+   "string": "e849e047-4ae9-62a2-9f1a-774c4c57d326",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.board__col",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "e849e047-4ae9-62a2-9f1a-774c4c57d327",
+   "gp": "e849e047-4ae9-62a2-9f1a-774c4c57d328",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "e849e047-4ae9-62a2-9f1a-774c4c57d328"
+  },
+  {
+   "text": "Contract",
+   "es": "Contrato",
+   "string": "afcb922b-0518-56bb-8ad0-d5ece3b2ce54",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.board__col",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "afcb922b-0518-56bb-8ad0-d5ece3b2ce55",
+   "gp": "afcb922b-0518-56bb-8ad0-d5ece3b2ce56",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "afcb922b-0518-56bb-8ad0-d5ece3b2ce56"
+  },
+  {
+   "text": "Illustrative preview · sample data",
+   "es": "Vista ilustrativa · datos de ejemplo",
+   "string": "c4982fe2-f066-a484-88d7-a466f3ab8bc5",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:figure.illus.tone-crm",
+    "DOM:figcaption.note",
+    "Block:div.kd-t"
+   ],
+   "parent": "c4982fe2-f066-a484-88d7-a466f3ab8bc4",
+   "gp": "e3b0ff12-6f9d-c321-3f2b-dcbe2f894986",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:figcaption.note",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "c4982fe2-f066-a484-88d7-a466f3ab8bc4"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "1266d858-ed02-b2f9-23ce-8273a9aeff6d",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "1266d858-ed02-b2f9-23ce-8273a9aeff6e",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff7a",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "1266d858-ed02-b2f9-23ce-8273a9aeff6e"
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "1266d858-ed02-b2f9-23ce-8273a9aeff8e",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "1266d858-ed02-b2f9-23ce-8273a9aeff8f",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff9b",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "1266d858-ed02-b2f9-23ce-8273a9aeff8f"
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "1266d858-ed02-b2f9-23ce-8273a9aeffd6",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.journey__body",
+    "Block:div.stack",
+    "Paragraph.note"
+   ],
+   "parent": "1266d858-ed02-b2f9-23ce-8273a9aeffd7",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeffe3",
+   "parent_type": "Paragraph.note",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.note",
+    "Heading",
+    "Paragraph.muted",
+    "List.ticks"
+   ],
+   "node": "1266d858-ed02-b2f9-23ce-8273a9aeffd7"
+  },
+  {
+   "text": "New leads",
+   "es": "Leads nuevos",
+   "string": "06bae9fd-b0fa-6130-7100-b0590710ea09",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "06bae9fd-b0fa-6130-7100-b0590710ea0a",
+   "gp": "06bae9fd-b0fa-6130-7100-b0590710ea0b",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "06bae9fd-b0fa-6130-7100-b0590710ea0b"
+  },
+  {
+   "text": "Appointments",
+   "es": "Citas",
+   "string": "80f8d26a-3f32-e009-2f3c-c47607d857a1",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "80f8d26a-3f32-e009-2f3c-c47607d857a2",
+   "gp": "80f8d26a-3f32-e009-2f3c-c47607d857a3",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "80f8d26a-3f32-e009-2f3c-c47607d857a3"
+  },
+  {
+   "text": "Contracts",
+   "es": "Contratos",
+   "string": "f8e594a3-696c-67ab-6c75-5944d801b2af",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "f8e594a3-696c-67ab-6c75-5944d801b2b0",
+   "gp": "f8e594a3-696c-67ab-6c75-5944d801b2b1",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "f8e594a3-696c-67ab-6c75-5944d801b2b1"
+  },
+  {
+   "text": "Lead → Appt.",
+   "es": "Lead → Cita",
+   "string": "dffef49e-80c2-f2c6-53cb-a5af3e7243f9",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.dash__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "dffef49e-80c2-f2c6-53cb-a5af3e7243fa",
+   "gp": "dffef49e-80c2-f2c6-53cb-a5af3e7243fb",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "dffef49e-80c2-f2c6-53cb-a5af3e7243fb"
+  },
+  {
+   "text": "Appt. → Offer",
+   "es": "Cita → Oferta",
+   "string": "28282dfe-eaeb-80dc-e9c2-735b29cae551",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.dash__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "28282dfe-eaeb-80dc-e9c2-735b29cae552",
+   "gp": "28282dfe-eaeb-80dc-e9c2-735b29cae553",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "28282dfe-eaeb-80dc-e9c2-735b29cae553"
+  },
+  {
+   "text": "Offer → Contract",
+   "es": "Oferta → Contrato",
+   "string": "2ca30736-31cf-367f-0e4b-9e169e8cc166",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.dash__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "2ca30736-31cf-367f-0e4b-9e169e8cc167",
+   "gp": "2ca30736-31cf-367f-0e4b-9e169e8cc168",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "2ca30736-31cf-367f-0e4b-9e169e8cc168"
+  },
+  {
+   "text": "Contract → Close",
+   "es": "Contrato → Cierre",
+   "string": "e6ffbe76-e26d-30b4-3909-c680ec3a4a04",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.dash__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "e6ffbe76-e26d-30b4-3909-c680ec3a4a05",
+   "gp": "e6ffbe76-e26d-30b4-3909-c680ec3a4a06",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "e6ffbe76-e26d-30b4-3909-c680ec3a4a06"
+  },
+  {
+   "text": "Illustrative preview · sample metrics, not client results",
+   "es": "Vista ilustrativa · métricas de ejemplo, no resultados de clientes",
+   "string": "02c42402-fffa-cea1-17c4-d6bbd8c185c3",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.dash",
+    "Block:div.kd-t",
+    "Span.note"
+   ],
+   "parent": "02c42402-fffa-cea1-17c4-d6bbd8c185c4",
+   "gp": "02c42402-fffa-cea1-17c4-d6bbd8c185c5",
+   "parent_type": "Span.note",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.note"
+   ],
+   "node": "02c42402-fffa-cea1-17c4-d6bbd8c185c5"
+  },
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string": "46067889-db71-4c35-1946-9beda3065703",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.head",
+    "Paragraph.eyebrow",
+    "Span.badge.badge--included"
+   ],
+   "parent": "46067889-db71-4c35-1946-9beda3065704",
+   "gp": "46067889-db71-4c35-1946-9beda3065705",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Paragraph.eyebrow",
+   "n_sib": 1,
+   "gp_children": [
+    "String",
+    "Span.badge.badge--included"
+   ],
+   "node": "46067889-db71-4c35-1946-9beda3065705"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202db",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202dc",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202e9",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading",
+    "Paragraph.muted"
+   ],
+   "node": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202dc"
+  },
+  {
+   "text": "Is the CRM sold on its own?",
+   "es": "¿El CRM se vende por separado?",
+   "string": "1ad4e2eb-2662-132c-c8e6-992632d46aed",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "1bbf06c1-146e-5857-7b7a-c23cd4866e89",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202ec",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "1bbf06c1-146e-5857-7b7a-c23cd4866e89"
+  },
+  {
+   "text": "Which pipelines are built in?",
+   "es": "¿Qué pipelines vienen integrados?",
+   "string": "4babbf83-7897-ac30-cdfc-18550868b913",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "ca01be30-ab8d-e6c2-200c-95fa8ee8515b",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202f4",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "ca01be30-ab8d-e6c2-200c-95fa8ee8515b"
+  },
+  {
+   "text": "Is the KPI dashboard customizable?",
+   "es": "¿El tablero de KPIs se puede personalizar?",
+   "string": "4a621850-0456-2866-df96-ab40c3b0f75a",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "ae94dfd2-6ca1-926d-da75-aac24f9e7098",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b202fc",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "ae94dfd2-6ca1-926d-da75-aac24f9e7098"
+  },
+  {
+   "text": "Can my team work from a phone?",
+   "es": "¿Mi equipo puede trabajar desde el teléfono?",
+   "string": "b11d33c3-fbe5-a5ad-8c71-616cc03977bf",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "ebefc332-f11d-87d2-92a8-a835dde0b9ff",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b20304",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "ebefc332-f11d-87d2-92a8-a835dde0b9ff"
+  },
+  {
+   "text": "Can you migrate my current CRM?",
+   "es": "¿Pueden migrar mi CRM actual?",
+   "string": "bda846b5-ccea-0469-8055-bceb154f349f",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "828b95e0-e668-98a1-f74c-7387e0fbecc1",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b2030f",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "828b95e0-e668-98a1-f74c-7387e0fbecc1"
+  },
+  {
+   "text": "How does the AI Suite relate to the CRM?",
+   "es": "¿Cómo se relaciona la AI Suite con el CRM?",
+   "string": "d4ee8269-4f01-5b51-8db6-d8203ac057dd",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "ff995574-9e31-fc4b-d1c4-5996d191e0d9",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b20317",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "ff995574-9e31-fc4b-d1c4-5996d191e0d9"
+  },
+  {
+   "text": "What if I need a change to my setup?",
+   "es": "¿Y si necesito un cambio en mi configuración?",
+   "string": "b91c5902-8788-f4b9-c471-2e96d850b99c",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "350088e0-75ee-2d8e-1953-01ef3511c9e7",
+   "gp": "2fc9a56f-ea8c-a4fb-4b07-7c9c91b2031f",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "350088e0-75ee-2d8e-1953-01ef3511c9e7"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "1266d858-ed02-b2f9-23ce-8273a9aefeff",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "1266d858-ed02-b2f9-23ce-8273a9aeff01",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff03",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "1266d858-ed02-b2f9-23ce-8273a9aeff08",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "1266d858-ed02-b2f9-23ce-8273a9aeff0a",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff0c",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "1266d858-ed02-b2f9-23ce-8273a9aeff1a",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "DOM:svg",
+    "DOM:g.circuit__node",
+    "DOM:text"
+   ],
+   "parent": "1266d858-ed02-b2f9-23ce-8273a9aeff1c",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff1e",
+   "parent_type": "DOM:text",
+   "gp_type": "DOM:g.circuit__node",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:circle",
+    "DOM:circle.core",
+    "DOM:text"
+   ]
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "f661de76-204c-190a-16aa-177a4d643fd5",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "7d24cff1-9f4e-63a1-90ac-5c1eebcf6bfa",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff6c",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Acquisitions",
+   "es": "Adquisiciones",
+   "string": "53b45c0a-bc69-42ea-dafa-ed44e05bc796",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "165ee79f-9e52-19d0-3339-76445748c934",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff6c",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  },
+  {
+   "text": "Dispositions",
+   "es": "Disposiciones",
+   "string": "94d73140-e43d-66a3-338d-84438a78f671",
+   "comp": "6afa1f119ba75560d9c1652d",
+   "chain": [
+    "Block:div.tone-crm",
+    "Block:div.tabs__list",
+    "DOM:button.tabs__tab"
+   ],
+   "parent": "6e720664-6cf7-7c86-6cdc-9245ce01d12e",
+   "gp": "1266d858-ed02-b2f9-23ce-8273a9aeff6c",
+   "parent_type": "DOM:button.tabs__tab",
+   "gp_type": "Block:div.tabs__list",
+   "n_sib": 2,
+   "gp_children": [
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab",
+    "DOM:button.tabs__tab"
+   ]
+  }
+ ]
+}

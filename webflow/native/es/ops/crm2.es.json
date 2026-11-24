@@ -1,0 +1,98 @@
+[
+ {
+  "nodeId": "e84ccdaf-9f86-acd3-8ecc-9d68a5fa263a",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"e84ccdaf-9f86-acd3-8ecc-9d68a5fa2639\">Leads nuevos</span></div>"
+ },
+ {
+  "nodeId": "49703b1b-b0dc-dc1e-7a65-68a051d99cb2",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"49703b1b-b0dc-dc1e-7a65-68a051d99cb1\">Citas</span></div>"
+ },
+ {
+  "nodeId": "6b6a1cff-77e1-cebb-acf8-5cac10bb09ea",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"6b6a1cff-77e1-cebb-acf8-5cac10bb09e9\">Contratos</span></div>"
+ },
+ {
+  "nodeId": "5f510ca3-d5b5-53fd-f3ae-cf700725564f",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"5f510ca3-d5b5-53fd-f3ae-cf700725564e\">Nuevo</span></div>"
+ },
+ {
+  "nodeId": "f5b5ee7a-7dc4-70fc-435b-2d81c52d3dd0",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"f5b5ee7a-7dc4-70fc-435b-2d81c52d3dcf\">Contactado</span></div>"
+ },
+ {
+  "nodeId": "f2c73321-90a7-7150-39ea-3389c9e706fd",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"f2c73321-90a7-7150-39ea-3389c9e706fc\">Cita</span></div>"
+ },
+ {
+  "nodeId": "e849e047-4ae9-62a2-9f1a-774c4c57d328",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"e849e047-4ae9-62a2-9f1a-774c4c57d327\">Oferta</span></div>"
+ },
+ {
+  "nodeId": "afcb922b-0518-56bb-8ad0-d5ece3b2ce56",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"afcb922b-0518-56bb-8ad0-d5ece3b2ce55\">Contrato</span></div>"
+ },
+ {
+  "nodeId": "c4982fe2-f066-a484-88d7-a466f3ab8bc4",
+  "text": "<div class=\"kd-t\">Vista ilustrativa · datos de ejemplo</div>"
+ },
+ {
+  "nodeId": "06bae9fd-b0fa-6130-7100-b0590710ea0b",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"06bae9fd-b0fa-6130-7100-b0590710ea0a\">Leads nuevos</span></div>"
+ },
+ {
+  "nodeId": "80f8d26a-3f32-e009-2f3c-c47607d857a3",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"80f8d26a-3f32-e009-2f3c-c47607d857a2\">Citas</span></div>"
+ },
+ {
+  "nodeId": "f8e594a3-696c-67ab-6c75-5944d801b2b1",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"f8e594a3-696c-67ab-6c75-5944d801b2b0\">Contratos</span></div>"
+ },
+ {
+  "nodeId": "dffef49e-80c2-f2c6-53cb-a5af3e7243fb",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"dffef49e-80c2-f2c6-53cb-a5af3e7243fa\">Lead → Cita</span></div>"
+ },
+ {
+  "nodeId": "28282dfe-eaeb-80dc-e9c2-735b29cae553",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"28282dfe-eaeb-80dc-e9c2-735b29cae552\">Cita → Oferta</span></div>"
+ },
+ {
+  "nodeId": "2ca30736-31cf-367f-0e4b-9e169e8cc168",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"2ca30736-31cf-367f-0e4b-9e169e8cc167\">Oferta → Contrato</span></div>"
+ },
+ {
+  "nodeId": "e6ffbe76-e26d-30b4-3909-c680ec3a4a06",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"e6ffbe76-e26d-30b4-3909-c680ec3a4a05\">Contrato → Cierre</span></div>"
+ },
+ {
+  "nodeId": "02c42402-fffa-cea1-17c4-d6bbd8c185c5",
+  "text": "<div class=\"kd-t\"><span class=\"note\" data-w-id=\"02c42402-fffa-cea1-17c4-d6bbd8c185c4\">Vista ilustrativa · métricas de ejemplo, no resultados de clientes</span></div>"
+ },
+ {
+  "nodeId": "1bbf06c1-146e-5857-7b7a-c23cd4866e89",
+  "text": "<h3 class=\"kd-q\">¿El CRM se vende por separado?</h3>"
+ },
+ {
+  "nodeId": "ca01be30-ab8d-e6c2-200c-95fa8ee8515b",
+  "text": "<h3 class=\"kd-q\">¿Qué pipelines vienen integrados?</h3>"
+ },
+ {
+  "nodeId": "ae94dfd2-6ca1-926d-da75-aac24f9e7098",
+  "text": "<h3 class=\"kd-q\">¿El tablero de KPIs se puede personalizar?</h3>"
+ },
+ {
+  "nodeId": "ebefc332-f11d-87d2-92a8-a835dde0b9ff",
+  "text": "<h3 class=\"kd-q\">¿Mi equipo puede trabajar desde el teléfono?</h3>"
+ },
+ {
+  "nodeId": "828b95e0-e668-98a1-f74c-7387e0fbecc1",
+  "text": "<h3 class=\"kd-q\">¿Pueden migrar mi CRM actual?</h3>"
+ },
+ {
+  "nodeId": "ff995574-9e31-fc4b-d1c4-5996d191e0d9",
+  "text": "<h3 class=\"kd-q\">¿Cómo se relaciona la AI Suite con el CRM?</h3>"
+ },
+ {
+  "nodeId": "350088e0-75ee-2d8e-1953-01ef3511c9e7",
+  "text": "<h3 class=\"kd-q\">¿Y si necesito un cambio en mi configuración?</h3>"
+ }
+]

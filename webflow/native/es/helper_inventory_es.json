@@ -1,0 +1,1257 @@
+[
+[
+"The engine of your operation",
+"li.nav__item > div.nav__menu > a.tone-crm > span",
+"/es"
+],
+[
+"Nitro for the CRM engine. Access included.",
+"li.nav__item > div.nav__menu > a.tone-suite > span",
+"/es"
+],
+[
+"Optional follow-up and communication",
+"li.nav__item > div.nav__menu > a.tone-agent > span",
+"/es"
+],
+[
+"Client login",
+"header.site-header > div.wrap > details.login > summary",
+"/es"
+],
+[
+"CRM for the whole lifecycle",
+"div.wrap > div.hero__copy > ul.hero__facts > li.tone-crm",
+"/es"
+],
+[
+"AI Suite access included",
+"div.wrap > div.hero__copy > ul.hero__facts > li.tone-suite",
+"/es"
+],
+[
+"AI Agent optional",
+"div.wrap > div.hero__copy > ul.hero__facts > li.tone-agent",
+"/es"
+],
+[
+"Lead → appointment",
+"div.cc__bar > div.gauge > div > span",
+"/es"
+],
+[
+"Capture",
+"div.cc__panel > div.board > div.board__col > span",
+"/es"
+],
+[
+"Acquisitions",
+"div.cc__panel > div.board > div.board__col > span",
+"/es"
+],
+[
+"Dispositions",
+"div.cc__panel > div.board > div.board__col > span",
+"/es"
+],
+[
+"Closing",
+"div.cc__panel > div.board > div.board__col > span",
+"/es"
+],
+[
+"Optional",
+"div.hero__stage > div.cc > div.cc__panel > span.badge",
+"/es"
+],
+[
+"Capture",
+"div.circuit > svg > g.circuit__node > text",
+"/es"
+],
+[
+"Acquisitions",
+"div.circuit > svg > g.circuit__node > text",
+"/es"
+],
+[
+"Dispositions",
+"div.circuit > svg > g.circuit__node > text",
+"/es"
+],
+[
+"Capture",
+"div.wrap > div.tone-crm > div.tabs__list > button.tabs__tab",
+"/es"
+],
+[
+"Acquisitions",
+"div.wrap > div.tone-crm > div.tabs__list > button.tabs__tab",
+"/es"
+],
+[
+"Dispositions",
+"div.wrap > div.tone-crm > div.tabs__list > button.tabs__tab",
+"/es"
+],
+[
+"Appointments set",
+"div.dash > div.dash__tiles > div > span",
+"/es"
+],
+[
+"Under contract",
+"div.dash > div.dash__tiles > div > span",
+"/es"
+],
+[
+"Avg. days to close",
+"div.dash > div.dash__tiles > div > span",
+"/es"
+],
+[
+"Direct mail",
+"div.stack > div.dash > div.dash__row > span",
+"/es"
+],
+[
+"Cold calling",
+"div.stack > div.dash > div.dash__row > span",
+"/es"
+],
+[
+"Referrals",
+"div.stack > div.dash > div.dash__row > span",
+"/es"
+],
+[
+"Sample metrics for illustration · not client results",
+"div.split > div.stack > div.dash > span.note",
+"/es"
+],
+[
+"Foundation",
+"div.wrap > div.triad > article.spot > span.badge",
+"/es"
+],
+[
+"Access included",
+"div.wrap > div.triad > article.spot > span.badge",
+"/es"
+],
+[
+"Optional addition",
+"div.wrap > div.triad > article.spot > span.badge",
+"/es"
+],
+[
+"CRM + AI Suite access, together. No additional AI Suite subscription.",
+"div.wrap > div.bracket > div > span.muted",
+"/es"
+],
+[
+"Add it if it fits your operation.",
+"div.wrap > div.bracket > div > span.muted",
+"/es"
+],
+[
+"Included",
+"div.stack > ul.model > li > span.badge",
+"/es"
+],
+[
+"Access comes with the Suite",
+"div.stack > ul.model > li > b",
+"/es"
+],
+[
+"Every Enterprise Optimization Suite includes the CRM and access to the AI Suite.",
+"div.stack > ul.model > li > span",
+"/es"
+],
+[
+"Optional",
+"div.stack > ul.model > li > span.badge",
+"/es"
+],
+[
+"Use a tool when you need it",
+"div.stack > ul.model > li > b",
+"/es"
+],
+[
+"Nothing obliges you to use the AI tools. Turn to them for the tasks where they help.",
+"div.stack > ul.model > li > span",
+"/es"
+],
+[
+"Pay-as-you-go",
+"div.stack > ul.model > li > span.badge",
+"/es"
+],
+[
+"Pay for what you use",
+"div.stack > ul.model > li > b",
+"/es"
+],
+[
+"No additional AI Suite subscription. Usage is tracked in a billing dashboard. Rates are covered on your discovery call.",
+"div.stack > ul.model > li > span",
+"/es"
+],
+[
+"1 · The call",
+"div.flow > div.flow__bar > div.flow__steps > button.flow__step",
+"/es"
+],
+[
+"2 · Structured notes",
+"div.flow > div.flow__bar > div.flow__steps > button.flow__step",
+"/es"
+],
+[
+"3 · Coaching feedback",
+"div.flow > div.flow__bar > div.flow__steps > button.flow__step",
+"/es"
+],
+[
+"Play walkthrough",
+"div.wrap > div.flow > div.flow__bar > button.btn",
+"/es"
+],
+[
+"Situation",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Inherited property",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Condition",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Roof needs repair",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Timeline",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"End of summer",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Asking",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Next step",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Send offer range",
+"div.flow__pane > div.fields > div > span",
+"/es"
+],
+[
+"Rapport",
+"div.flow__pane > div.score > div.score__row > span",
+"/es"
+],
+[
+"Motivation discovery",
+"div.flow__pane > div.score > div.score__row > span",
+"/es"
+],
+[
+"Objection handling",
+"div.flow__pane > div.score > div.score__row > span",
+"/es"
+],
+[
+"Illustrative conversation",
+"div.wrap > div.split > div.support__chat > span.note",
+"/es"
+],
+[
+"What is KPI DRIVER?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"What do I get with the Enterprise Optimization Suite?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"Is the AI Agent included?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"How much does KPI DRIVER cost?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"Do I need separate systems for document signatures, dispositions, or rentals?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"Do you offer support and training?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"How long does implementation take?",
+"div.wrap > div.kd-faq > details > summary",
+"/es"
+],
+[
+"Close ✕",
+"div.kd-chrome > dialog.bookdlg > div.bookdlg__bar > button.bookdlg__close",
+"/es"
+],
+[
+"Foundation",
+"div.wrap > div.compare-cols > div.tone-crm > span.badge",
+"/es/services"
+],
+[
+"Access included",
+"div.wrap > div.compare-cols > div.tone-suite > span.badge",
+"/es/services"
+],
+[
+"Optional · separate offering",
+"div.wrap > div.compare-cols > div.tone-agent > span.badge",
+"/es/services"
+],
+[
+"What each offering includes",
+"div.wrap > div.table-scroll > table.compare > caption.sr-only",
+"/es/services"
+],
+[
+"What you get",
+"table.compare > thead > tr > th",
+"/es/services"
+],
+[
+"CRM with built-in pipelines and KPI tracking",
+"table.compare > tbody > tr > th",
+"/es/services"
+],
+[
+"Included",
+"table.compare > tbody > tr > td.yes",
+"/es/services"
+],
+[
+"Access to the AI Suite",
+"table.compare > tbody > tr > th",
+"/es/services"
+],
+[
+"Included, no additional subscription",
+"table.compare > tbody > tr > td.yes",
+"/es/services"
+],
+[
+"AI Suite usage",
+"table.compare > tbody > tr > th",
+"/es/services"
+],
+[
+"Optional, pay-as-you-go",
+"table.compare > tbody > tr > td",
+"/es/services"
+],
+[
+"Not included",
+"table.compare > tbody > tr > td",
+"/es/services"
+],
+[
+"Included in this offering",
+"table.compare > tbody > tr > td.yes",
+"/es/services"
+],
+[
+"Pricing",
+"table.compare > tbody > tr > th",
+"/es/services"
+],
+[
+"Discussed on your discovery call",
+"table.compare > tbody > tr > td",
+"/es/services"
+],
+[
+"Are CRM, AI Suite and AI Agent three separate plans?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"What does pay-as-you-go mean for the AI Suite?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"Can I use the CRM without using any AI tools?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"What is scoped separately?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"What does support look like after launch?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"Does KPI DRIVER integrate with my existing tools?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"Where do I see pricing?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services"
+],
+[
+"New leads",
+"div.illus__frame > div.dash__tiles > div > span",
+"/es/services/crm"
+],
+[
+"Appointments",
+"div.illus__frame > div.dash__tiles > div > span",
+"/es/services/crm"
+],
+[
+"Contracts",
+"div.illus__frame > div.dash__tiles > div > span",
+"/es/services/crm"
+],
+[
+"New",
+"div.illus__frame > div.board > div.board__col > span",
+"/es/services/crm"
+],
+[
+"Contacted",
+"div.illus__frame > div.board > div.board__col > span",
+"/es/services/crm"
+],
+[
+"Appointment",
+"div.illus__frame > div.board > div.board__col > span",
+"/es/services/crm"
+],
+[
+"Offer",
+"div.illus__frame > div.board > div.board__col > span",
+"/es/services/crm"
+],
+[
+"Contract",
+"div.illus__frame > div.board > div.board__col > span",
+"/es/services/crm"
+],
+[
+"Illustrative preview · sample data",
+"section.section > div.wrap > figure.illus > figcaption.note",
+"/es/services/crm"
+],
+[
+"New leads",
+"div.dash > div.dash__tiles > div > span",
+"/es/services/crm"
+],
+[
+"Appointments",
+"div.dash > div.dash__tiles > div > span",
+"/es/services/crm"
+],
+[
+"Contracts",
+"div.dash > div.dash__tiles > div > span",
+"/es/services/crm"
+],
+[
+"Lead → Appt.",
+"div.wrap > div.dash > div.dash__row > span",
+"/es/services/crm"
+],
+[
+"Appt. → Offer",
+"div.wrap > div.dash > div.dash__row > span",
+"/es/services/crm"
+],
+[
+"Offer → Contract",
+"div.wrap > div.dash > div.dash__row > span",
+"/es/services/crm"
+],
+[
+"Contract → Close",
+"div.wrap > div.dash > div.dash__row > span",
+"/es/services/crm"
+],
+[
+"Illustrative preview · sample metrics, not client results",
+"section.section > div.wrap > div.dash > span.note",
+"/es/services/crm"
+],
+[
+"Is the CRM sold on its own?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"Which pipelines are built in?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"Is the KPI dashboard customizable?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"Can my team work from a phone?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"Can you migrate my current CRM?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"How does the AI Suite relate to the CRM?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"What if I need a change to my setup?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/crm"
+],
+[
+"Included",
+"div.wrap > ul.model > li > span.badge",
+"/es/services/ai-suite"
+],
+[
+"Access comes with the Suite",
+"div.wrap > ul.model > li > b",
+"/es/services/ai-suite"
+],
+[
+"Every Enterprise Optimization Suite includes the CRM and access to the AI Suite.",
+"div.wrap > ul.model > li > span",
+"/es/services/ai-suite"
+],
+[
+"Optional",
+"div.wrap > ul.model > li > span.badge",
+"/es/services/ai-suite"
+],
+[
+"Use a tool when you need it",
+"div.wrap > ul.model > li > b",
+"/es/services/ai-suite"
+],
+[
+"Nothing obliges you to use the AI tools. Turn to them for the tasks where they help.",
+"div.wrap > ul.model > li > span",
+"/es/services/ai-suite"
+],
+[
+"Pay-as-you-go",
+"div.wrap > ul.model > li > span.badge",
+"/es/services/ai-suite"
+],
+[
+"Pay for what you use",
+"div.wrap > ul.model > li > b",
+"/es/services/ai-suite"
+],
+[
+"No additional AI Suite subscription. Usage is tracked in a billing dashboard. Rates are covered on your discovery call.",
+"div.wrap > ul.model > li > span",
+"/es/services/ai-suite"
+],
+[
+"FAQ",
+"main.kd-main > nav.subnav > div.wrap > a",
+"/es/services/ai-suite"
+],
+[
+"TOOL 01 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Notas de llamadas y actualizaciones del CRM, escritas para ti.",
+"div.wrap > article.spec > div.spec__id > p.lede",
+"/es/services/ai-suite"
+],
+[
+"Pay-as-you-go",
+"div.wrap > article.spec > div.spec__id > span.badge",
+"/es/services/ai-suite"
+],
+[
+"Who it is for",
+"article.spec > dl > div > dt",
+"/es/services/ai-suite"
+],
+[
+"Lead Managers, Acquisition Managers and anyone who takes seller calls.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"The task",
+"article.spec > dl > div > dt",
+"/es/services/ai-suite"
+],
+[
+"Capture what was said on a call and keep the CRM record current without manual entry.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Inputs",
+"article.spec > dl > div > dt",
+"/es/services/ai-suite"
+],
+[
+"Your recorded calls.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Outputs",
+"article.spec > dl > div > dt",
+"/es/services/ai-suite"
+],
+[
+"Logged call details, structured notes, the right fields filled, and an updated CRM record.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Why it matters",
+"article.spec > dl > div > dt",
+"/es/services/ai-suite"
+],
+[
+"Follow-ups start from a clean record, and nobody spends the evening typing notes.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"How it connects",
+"article.spec > dl > div > dt",
+"/es/services/ai-suite"
+],
+[
+"Writes into the CRM record that your pipelines and KPIs already use.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"TOOL 02 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Sales managers and owners who coach Lead and Acquisition Managers.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Review calls consistently without listening to each one end to end.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Calls made by your Lead and Acquisition Managers.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"A score for each call using 30+ dynamic scoring structures with tiered deductions, plus daily, weekly and monthly reports on strengths and weak spots.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Coaching time goes to the specific skill each person needs to work on.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Works on the same conversations AI Notes Taker captures.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"TOOL 03 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"New hires and experienced reps sharpening their skills.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Rehearse seller conversations and get feedback straight away.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Practice sessions across 10+ different scenarios each day.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Feedback on communication, objection handling and overall conversion skills.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Reps make their mistakes in practice, not on a live seller.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Complements the AI Sales Coach: one trains, the other reviews real calls.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Illustrative preview · sample data",
+"div.wrap > div.group-illus > figure.illus > figcaption.note",
+"/es/services/ai-suite"
+],
+[
+"TOOL 04 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Acquisition Managers and underwriters evaluating a property.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Build an underwriting analysis for a property from the information you have.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Multiple data sources, with a mode for however much data is available, plus property photos.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"An analysis that reads condition from photos and lets you add or remove comps and notes, then rerun it at any time.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"A consistent starting point for every deal, which you adjust with your own judgment.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Supports the offer decisions your Acquisitions pipeline tracks.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"TOOL 05 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Lead Managers and marketers building or cleaning contact lists.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Find contact details for a property owner and screen existing contacts.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"An address, an APN, or an address plus owner name.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Phone numbers and emails, and a DNC check of your existing contacts, from one dropdown in your CRM.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Contact discovery happens where the lead lives, not in a separate tool.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Runs from inside the CRM. DNC checking supports your process and is not a guarantee of compliant outreach.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"TOOL 06 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Anyone working a lead that arrived with thin property data.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Fill in property information on a CRM record.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"The property address.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Available property data added to your CRM fields, with a view of exactly which fields changed.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Better-informed conversations and underwriting, with no guessing about what was updated.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Feeds the same CRM fields your team and the other tools read.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Revenue, month",
+"div.illus__frame > div.dash__tiles > div > span",
+"/es/services/ai-suite"
+],
+[
+"Net margin",
+"div.illus__frame > div.dash__tiles > div > span",
+"/es/services/ai-suite"
+],
+[
+"Deals closed",
+"div.illus__frame > div.dash__tiles > div > span",
+"/es/services/ai-suite"
+],
+[
+"TOOL 07 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Owners and managers who run the business on its numbers.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"See KPIs and accounting in one place.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Your CRM activity and accounting information.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Additional KPI visibility, plus a full accounting section.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Opportunities and inefficiencies show up earlier.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Builds on the KPI tracking in the CRM.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"TOOL 08 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Owners, managers and operators who want answers without building a report.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Interact with your CRM and the whole Suite in conversation.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Your questions and requests.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Answers drawn from your CRM and Suite, with supported actions taken and routines run for you.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Less clicking through screens to find or do something routine.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Talks with the CRM and the rest of the AI Suite.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"TOOL 09 / 09",
+"div.wrap > article.spec > div.spec__id > span.spec__num",
+"/es/services/ai-suite"
+],
+[
+"Owners planning hiring, marketing spend and acquisitions.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Forecast where the business may be heading.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Your real KPIs, accounting and insights.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Forecasts for the months ahead.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Planning starts from your own numbers. Projections are estimates, not guaranteed outcomes.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"Uses what the AI Dashboard and AI Insights already know.",
+"article.spec > dl > div > dd",
+"/es/services/ai-suite"
+],
+[
+"No AI Agent needed",
+"div.wrap > div.offers > article.offer > span.badge",
+"/es/services/ai-suite"
+],
+[
+"Built into the pipeline",
+"div.wrap > div.offers > article.offer > span.badge",
+"/es/services/ai-suite"
+],
+[
+"Pipelines and KPIs",
+"ul.kb > li > div > b",
+"/es/services/ai-suite"
+],
+[
+"Acquisitions, nurture, dispositions, transaction coordination, rentals",
+"ul.kb > li > div > span",
+"/es/services/ai-suite"
+],
+[
+"Contacts and opportunities",
+"ul.kb > li > div > b",
+"/es/services/ai-suite"
+],
+[
+"Importing, smart lists, tags, custom fields",
+"ul.kb > li > div > span",
+"/es/services/ai-suite"
+],
+[
+"Phones, SMS and email",
+"ul.kb > li > div > b",
+"/es/services/ai-suite"
+],
+[
+"Numbers, dialer, campaigns, snippets",
+"ul.kb > li > div > span",
+"/es/services/ai-suite"
+],
+[
+"Calendars and forms",
+"ul.kb > li > div > b",
+"/es/services/ai-suite"
+],
+[
+"Booking, forms, surveys, funnels",
+"ul.kb > li > div > span",
+"/es/services/ai-suite"
+],
+[
+"Dashboards and reporting",
+"ul.kb > li > div > b",
+"/es/services/ai-suite"
+],
+[
+"KPI dashboard, call and appointment reports",
+"ul.kb > li > div > span",
+"/es/services/ai-suite"
+],
+[
+"Documents and setup",
+"ul.kb > li > div > b",
+"/es/services/ai-suite"
+],
+[
+"Signatures, users, access levels",
+"ul.kb > li > div > span",
+"/es/services/ai-suite"
+],
+[
+"Is the AI Suite available now?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Do I pay a subscription for the AI Suite?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Is AI Suite usage unlimited?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Do I need the AI Agent to use the AI Suite or AI Nurture?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Which nurtures are included?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Are nurtures available in Spanish?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Is training included?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Does DNC checking make my outreach compliant?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Are AI Projections a guarantee?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"How accurate is AI Underwriting?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-suite"
+],
+[
+"Illustrative conversation · sample data",
+"section.section > div.wrap > figure.illus > figcaption.note",
+"/es/services/ai-agent"
+],
+[
+"Differences between the AI Agent, the AI Suite and AI Nurture",
+"div.wrap > div.table-scroll > table.compare > caption.sr-only",
+"/es/services/ai-agent"
+],
+[
+"What it is",
+"table.compare > tbody > tr > th",
+"/es/services/ai-agent"
+],
+[
+"An agent that follows up with leads",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Nine AI tools supplied alongside the CRM",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"A pipeline stage that builds a seller campaign",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"What it does",
+"table.compare > tbody > tr > th",
+"/es/services/ai-agent"
+],
+[
+"Decides when and how to follow up, within your rules",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Call notes, coaching, underwriting, skiptracing, enrichment, dashboards, insights, projections",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Reads conversations and notes, then schedules a tailored 60-day campaign",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Channels",
+"table.compare > tbody > tr > th",
+"/es/services/ai-agent"
+],
+[
+"AI voice, SMS, email,",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Not a communication channel",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"SMS and email",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"How you get it",
+"table.compare > tbody > tr > th",
+"/es/services/ai-agent"
+],
+[
+"Access included with every Enterprise Optimization Suite; usage pay-as-you-go",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Does not require the AI Agent",
+"table.compare > tbody > tr > td",
+"/es/services/ai-agent"
+],
+[
+"Is the AI Agent part of the AI Suite?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"Can I try the AI Agent before a call with your team?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"What does the AI Agent do?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"Which channels does it use?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"What are number remediation and BYOC?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"How is the AI Agent different from AI Nurture?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"I already use the earlier AI Agent. What changes?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"What does the AI Agent cost?",
+"div.wrap > div.kd-faq > details > summary",
+"/es/services/ai-agent"
+],
+[
+"Company",
+"div.stack > dl.contact-list > div > dt",
+"/es/contact-us"
+],
+[
+"Phone",
+"div.stack > dl.contact-list > div > dt",
+"/es/contact-us"
+],
+[
+"Email",
+"div.stack > dl.contact-list > div > dt",
+"/es/contact-us"
+],
+[
+"Office",
+"div.stack > dl.contact-list > div > dt",
+"/es/contact-us"
+],
+[
+"Existing clients",
+"div.stack > dl.contact-list > div > dt",
+"/es/contact-us"
+]
+]

@@ -1,0 +1,503 @@
+{
+ "builder": [
+  {
+   "build_label": "A:789ee3e0-ba02-25a1-17ef-cf0d7e6006cb",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "789ee3e0-ba02-25a1-17ef-cf0d7e6006cb"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Illustrative conversation · sample data"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e51",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e51"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Differences between the AI Agent, the AI Suite and AI Nurture"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e63",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e63"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "What it is"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e66",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e66"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "An agent that follows up with leads"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e69",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e69"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Nine AI tools supplied alongside the CRM"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e6c",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e6c"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "A pipeline stage that builds a seller campaign"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e71",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e71"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "What it does"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e74",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e74"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Decides when and how to follow up, within your rules"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e77",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e77"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Call notes, coaching, underwriting, skiptracing, enrichment, dashboards, insights, projections"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e7a",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e7a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Reads conversations and notes, then schedules a tailored 60-day campaign"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e7f",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e7f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Channels"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "M:b62ae8af-f247-dd56-26f8-3b0ded381e82",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e82"
+   },
+   "creation_position": "before",
+   "element_schema": {
+    "type": "DivBlock",
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e87",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e87"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Not a communication channel"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e8a",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e8a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "SMS and email"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e8f",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e8f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How you get it"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e95",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e95"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Access included with every Enterprise Optimization Suite; usage pay-as-you-go"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "A:b62ae8af-f247-dd56-26f8-3b0ded381e98",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "b62ae8af-f247-dd56-26f8-3b0ded381e98"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Does not require the AI Agent"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b468ee",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b468ee"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is the AI Agent part of the AI Suite?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b468f6",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b468f6"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Can I try the AI Agent before a call with your team?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b468fe",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b468fe"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What does the AI Agent do?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b46906",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b46906"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Which channels does it use?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b46911",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b46911"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What are number remediation and BYOC?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b46919",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b46919"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "How is the AI Agent different from AI Nurture?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b46921",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b46921"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "I already use the earlier AI Agent. What changes?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  },
+  {
+   "build_label": "B:957ecdfb-0b9f-753d-67a6-e1f854b46929",
+   "parent_element_id": {
+    "component": "6afa191e7b59d3ca770d4e6a",
+    "element": "957ecdfb-0b9f-753d-67a6-e1f854b46929"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What does the AI Agent cost?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   }
+  }
+ ],
+ "whtml": [],
+ "skipped": [],
+ "other": []
+}

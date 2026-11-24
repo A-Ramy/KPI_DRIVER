@@ -1,0 +1,3785 @@
+{
+ "exposed": [
+  {
+   "text": "Access included",
+   "es": "Acceso incluido",
+   "string": "dde1564c-2148-27bb-f060-9f4f585436d8",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.wrap",
+    "Paragraph.eyebrow",
+    "Span.badge.badge--included"
+   ],
+   "parent": "dde1564c-2148-27bb-f060-9f4f585436d9",
+   "gp": "dde1564c-2148-27bb-f060-9f4f585436da",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Paragraph.eyebrow",
+   "n_sib": 1,
+   "gp_children": [
+    "String",
+    "Span.badge.badge--included"
+   ],
+   "node": "dde1564c-2148-27bb-f060-9f4f585436da"
+  },
+  {
+   "text": "Included",
+   "es": "Incluido",
+   "string": "02b6cd0e-8658-9a48-d732-0ebd4b4980cb",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Span.badge.badge--included"
+   ],
+   "parent": "02b6cd0e-8658-9a48-d732-0ebd4b4980cc",
+   "gp": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "Strong",
+    "Span"
+   ],
+   "node": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1"
+  },
+  {
+   "text": "Access comes with the Suite",
+   "es": "El acceso viene con la Suite",
+   "string": "02b6cd0e-8658-9a48-d732-0ebd4b4980cd",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "02b6cd0e-8658-9a48-d732-0ebd4b4980ce",
+   "gp": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "Strong",
+    "Span"
+   ],
+   "node": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1"
+  },
+  {
+   "text": "Every Enterprise Optimization Suite includes the CRM and access to the AI Suite.",
+   "es": "Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite.",
+   "string": "02b6cd0e-8658-9a48-d732-0ebd4b4980cf",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "02b6cd0e-8658-9a48-d732-0ebd4b4980d0",
+   "gp": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included",
+    "Strong",
+    "Span"
+   ],
+   "node": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1"
+  },
+  {
+   "text": "Optional",
+   "es": "Opcional",
+   "string": "a1cd814e-23be-92bb-103a-ea66608d66ce",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "a1cd814e-23be-92bb-103a-ea66608d66cf",
+   "gp": "a1cd814e-23be-92bb-103a-ea66608d66d4",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "Strong",
+    "Span"
+   ],
+   "node": "a1cd814e-23be-92bb-103a-ea66608d66d4"
+  },
+  {
+   "text": "Use a tool when you need it",
+   "es": "Usa una herramienta cuando la necesites",
+   "string": "a1cd814e-23be-92bb-103a-ea66608d66d0",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "a1cd814e-23be-92bb-103a-ea66608d66d1",
+   "gp": "a1cd814e-23be-92bb-103a-ea66608d66d4",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "Strong",
+    "Span"
+   ],
+   "node": "a1cd814e-23be-92bb-103a-ea66608d66d4"
+  },
+  {
+   "text": "Nothing obliges you to use the AI tools. Turn to them for the tasks where they help.",
+   "es": "Nada te obliga a usar las herramientas de IA. Recurre a ellas en las tareas donde ayudan.",
+   "string": "a1cd814e-23be-92bb-103a-ea66608d66d2",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "a1cd814e-23be-92bb-103a-ea66608d66d3",
+   "gp": "a1cd814e-23be-92bb-103a-ea66608d66d4",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "Strong",
+    "Span"
+   ],
+   "node": "a1cd814e-23be-92bb-103a-ea66608d66d4"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "b641b717-60ba-ad94-21d5-b2c476bd65dd",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "b641b717-60ba-ad94-21d5-b2c476bd65de",
+   "gp": "b641b717-60ba-ad94-21d5-b2c476bd65e3",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "Strong",
+    "Span"
+   ],
+   "node": "b641b717-60ba-ad94-21d5-b2c476bd65e3"
+  },
+  {
+   "text": "Pay for what you use",
+   "es": "Paga por lo que usas",
+   "string": "b641b717-60ba-ad94-21d5-b2c476bd65df",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "b641b717-60ba-ad94-21d5-b2c476bd65e0",
+   "gp": "b641b717-60ba-ad94-21d5-b2c476bd65e3",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "Strong",
+    "Span"
+   ],
+   "node": "b641b717-60ba-ad94-21d5-b2c476bd65e3"
+  },
+  {
+   "text": "No additional AI Suite subscription. Usage is tracked in a billing dashboard. Rates are covered on your discovery call.",
+   "es": "Sin suscripción adicional por la AI Suite. El uso se registra en un panel de facturación. Las tarifas se ven en tu llamada de descubrimiento.",
+   "string": "b641b717-60ba-ad94-21d5-b2c476bd65e1",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "ListItem",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "b641b717-60ba-ad94-21d5-b2c476bd65e2",
+   "gp": "b641b717-60ba-ad94-21d5-b2c476bd65e3",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge",
+    "Strong",
+    "Span"
+   ],
+   "node": "b641b717-60ba-ad94-21d5-b2c476bd65e3"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "82ec008f-bf3f-29e7-cd9c-abba30f241f7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:nav.subnav",
+    "Block:div.wrap",
+    "Link"
+   ],
+   "parent": "82ec008f-bf3f-29e7-cd9c-abba30f241fa",
+   "gp": "82ec008f-bf3f-29e7-cd9c-abba30f2420b",
+   "parent_type": "Link",
+   "gp_type": "Block:div.wrap",
+   "n_sib": 3,
+   "gp_children": [
+    "Link",
+    "Link",
+    "Link",
+    "Link",
+    "Link",
+    "Link",
+    "Link"
+   ],
+   "node": "82ec008f-bf3f-29e7-cd9c-abba30f2420b"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "82ec008f-bf3f-29e7-cd9c-abba30f24209",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:nav.subnav",
+    "Block:div.wrap",
+    "Link"
+   ],
+   "parent": "82ec008f-bf3f-29e7-cd9c-abba30f2420a",
+   "gp": "82ec008f-bf3f-29e7-cd9c-abba30f2420b",
+   "parent_type": "Link",
+   "gp_type": "Block:div.wrap",
+   "n_sib": 1,
+   "gp_children": [
+    "Link",
+    "Link",
+    "Link",
+    "Link",
+    "Link",
+    "Link",
+    "Link"
+   ],
+   "node": "82ec008f-bf3f-29e7-cd9c-abba30f2420b"
+  },
+  {
+   "text": "Capture",
+   "es": "Captación",
+   "string": "e1318e6a-b858-0b45-28ba-e535c6e9030c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.wrap",
+    "Block:div.head",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "e1318e6a-b858-0b45-28ba-e535c6e9030f",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90312",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.head",
+   "n_sib": 3,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading"
+   ],
+   "node": "e1318e6a-b858-0b45-28ba-e535c6e9030f"
+  },
+  {
+   "text": "TOOL 01 / 09",
+   "es": "HERRAMIENTA 01 / 09",
+   "string": "d3403745-9872-b508-83b1-34b151007df4",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "d3403745-9872-b508-83b1-34b151007df5",
+   "gp": "d3403745-9872-b508-83b1-34b151007df6",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "d3403745-9872-b508-83b1-34b151007df6"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "eceaa123-aceb-a98b-26f4-dba21d80028f",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "eceaa123-aceb-a98b-26f4-dba21d800290",
+   "gp": "eceaa123-aceb-a98b-26f4-dba21d800291",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "eceaa123-aceb-a98b-26f4-dba21d800291"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "844a410b-60af-b2a3-54cb-7d7af4c136af",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "844a410b-60af-b2a3-54cb-7d7af4c136ae",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9031e",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "844a410b-60af-b2a3-54cb-7d7af4c136ae"
+  },
+  {
+   "text": "Lead Managers, Acquisition Managers and anyone who takes seller calls.",
+   "es": "Gerentes de leads, gerentes de adquisiciones y cualquier persona que atienda llamadas de vendedores.",
+   "string": "ab99120b-ae05-4957-6756-ce0eee52aab7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "ab99120b-ae05-4957-6756-ce0eee52aab6",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90321",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ab99120b-ae05-4957-6756-ce0eee52aab6"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "a8339e45-1165-3a68-5e47-9a8884bc01e4",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "a8339e45-1165-3a68-5e47-9a8884bc01e3",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90325",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "a8339e45-1165-3a68-5e47-9a8884bc01e3"
+  },
+  {
+   "text": "Capture what was said on a call and keep the CRM record current without manual entry.",
+   "es": "Capturar lo que se dijo en una llamada y mantener al día el registro del CRM sin captura manual.",
+   "string": "f6a3feb7-b2f7-938d-7b8b-abc50dc557d8",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "f6a3feb7-b2f7-938d-7b8b-abc50dc557d7",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90328",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "f6a3feb7-b2f7-938d-7b8b-abc50dc557d7"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "25199278-6b6f-a621-5ad9-67df05e1a2c8",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "25199278-6b6f-a621-5ad9-67df05e1a2c7",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9032c",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "25199278-6b6f-a621-5ad9-67df05e1a2c7"
+  },
+  {
+   "text": "Your recorded calls.",
+   "es": "Tus llamadas grabadas.",
+   "string": "da992275-1a44-87f5-0550-0bb13402a660",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "da992275-1a44-87f5-0550-0bb13402a65f",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9032f",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "da992275-1a44-87f5-0550-0bb13402a65f"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "ef31b8a1-b17d-ad0b-629f-41b8c62adb12",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "ef31b8a1-b17d-ad0b-629f-41b8c62adb11",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90333",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ef31b8a1-b17d-ad0b-629f-41b8c62adb11"
+  },
+  {
+   "text": "Logged call details, structured notes, the right fields filled, and an updated CRM record.",
+   "es": "Detalles de la llamada registrados, notas estructuradas, los campos correctos llenos y un registro del CRM actualizado.",
+   "string": "25661979-9f06-4368-aa14-2386115cd1a6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "25661979-9f06-4368-aa14-2386115cd1a5",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90336",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "25661979-9f06-4368-aa14-2386115cd1a5"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "075959f6-ba27-f85a-5be0-a251f5611ddf",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "075959f6-ba27-f85a-5be0-a251f5611dde",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9033a",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "075959f6-ba27-f85a-5be0-a251f5611dde"
+  },
+  {
+   "text": "Follow-ups start from a clean record, and nobody spends the evening typing notes.",
+   "es": "Los seguimientos parten de un registro limpio y nadie pasa la tarde escribiendo notas.",
+   "string": "f54ba3ed-c19d-40a2-5053-645c39372977",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "f54ba3ed-c19d-40a2-5053-645c39372976",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9033d",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "f54ba3ed-c19d-40a2-5053-645c39372976"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "3243690c-5023-a186-2601-a84d24c14fa7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "3243690c-5023-a186-2601-a84d24c14fa6",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90341",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "3243690c-5023-a186-2601-a84d24c14fa6"
+  },
+  {
+   "text": "Writes into the CRM record that your pipelines and KPIs already use.",
+   "es": "Escribe en el registro del CRM que tus pipelines y KPIs ya usan.",
+   "string": "cba0631f-b375-aac5-91f6-ca96f3633b6b",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "cba0631f-b375-aac5-91f6-ca96f3633b6a",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90344",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "cba0631f-b375-aac5-91f6-ca96f3633b6a"
+  },
+  {
+   "text": "TOOL 02 / 09",
+   "es": "HERRAMIENTA 02 / 09",
+   "string": "b40f7707-1f45-f94e-b6fc-dbabc12d9ac1",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "b40f7707-1f45-f94e-b6fc-dbabc12d9ac2",
+   "gp": "b40f7707-1f45-f94e-b6fc-dbabc12d9ac3",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "b40f7707-1f45-f94e-b6fc-dbabc12d9ac3"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "757074bc-4ea9-8245-7f13-361a6c95ab85",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "757074bc-4ea9-8245-7f13-361a6c95ab86",
+   "gp": "757074bc-4ea9-8245-7f13-361a6c95ab87",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "757074bc-4ea9-8245-7f13-361a6c95ab87"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "8b9f4b3b-821b-132f-a33c-b6e1bf4674f3",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "8b9f4b3b-821b-132f-a33c-b6e1bf4674f2",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90354",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "8b9f4b3b-821b-132f-a33c-b6e1bf4674f2"
+  },
+  {
+   "text": "Sales managers and owners who coach Lead and Acquisition Managers.",
+   "es": "Gerentes de ventas y dueños que entrenan a gerentes de leads y de adquisiciones.",
+   "string": "0cbe9354-448b-dd89-26fc-4347c740e9c7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "0cbe9354-448b-dd89-26fc-4347c740e9c6",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90357",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "0cbe9354-448b-dd89-26fc-4347c740e9c6"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "ae9130d9-fbf2-99fb-ca03-a83a69838fa0",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "ae9130d9-fbf2-99fb-ca03-a83a69838f9f",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9035b",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ae9130d9-fbf2-99fb-ca03-a83a69838f9f"
+  },
+  {
+   "text": "Review calls consistently without listening to each one end to end.",
+   "es": "Revisar llamadas de forma consistente sin escuchar cada una de principio a fin.",
+   "string": "186a12d1-1a48-1e3e-7723-9f3832afa689",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "186a12d1-1a48-1e3e-7723-9f3832afa688",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9035e",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "186a12d1-1a48-1e3e-7723-9f3832afa688"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "66f4aa21-adc5-2430-6d93-00b43a6df07a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "66f4aa21-adc5-2430-6d93-00b43a6df079",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90362",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "66f4aa21-adc5-2430-6d93-00b43a6df079"
+  },
+  {
+   "text": "Calls made by your Lead and Acquisition Managers.",
+   "es": "Las llamadas de tus gerentes de leads y de adquisiciones.",
+   "string": "790e1756-b39c-d645-75e5-5f37fd445fe8",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "790e1756-b39c-d645-75e5-5f37fd445fe7",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90365",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "790e1756-b39c-d645-75e5-5f37fd445fe7"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "2265dd90-9d2f-5ea8-dca8-b8ef0e5e793d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "2265dd90-9d2f-5ea8-dca8-b8ef0e5e793c",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90369",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "2265dd90-9d2f-5ea8-dca8-b8ef0e5e793c"
+  },
+  {
+   "text": "A score for each call using 30+ dynamic scoring structures with tiered deductions, plus daily, weekly and monthly reports on strengths and weak spots.",
+   "es": "Una calificación por llamada con más de 30 estructuras dinámicas de puntuación y deducciones escalonadas, además de reportes diarios, semanales y mensuales sobre fortalezas y puntos débiles.",
+   "string": "1890ee7d-d0c7-3d2a-366c-fdfe00c4f9df",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "1890ee7d-d0c7-3d2a-366c-fdfe00c4f9de",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9036c",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "1890ee7d-d0c7-3d2a-366c-fdfe00c4f9de"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "e625acba-e1b3-15f0-a9c9-5caed85d0e0c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "e625acba-e1b3-15f0-a9c9-5caed85d0e0b",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90370",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "e625acba-e1b3-15f0-a9c9-5caed85d0e0b"
+  },
+  {
+   "text": "Coaching time goes to the specific skill each person needs to work on.",
+   "es": "El tiempo de coaching se dedica a la habilidad específica que cada persona necesita trabajar.",
+   "string": "6d4fc677-67a6-67a3-4b13-6af880934c1a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "6d4fc677-67a6-67a3-4b13-6af880934c19",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90373",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "6d4fc677-67a6-67a3-4b13-6af880934c19"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "389f1728-f709-6748-de5c-c5598ecc4bbd",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "389f1728-f709-6748-de5c-c5598ecc4bbc",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90377",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "389f1728-f709-6748-de5c-c5598ecc4bbc"
+  },
+  {
+   "text": "Works on the same conversations AI Notes Taker captures.",
+   "es": "Trabaja sobre las mismas conversaciones que captura AI Notes Taker.",
+   "string": "94d2ce2a-a3e3-53eb-de32-5a9ed3ba65ac",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "94d2ce2a-a3e3-53eb-de32-5a9ed3ba65ab",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9037a",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "94d2ce2a-a3e3-53eb-de32-5a9ed3ba65ab"
+  },
+  {
+   "text": "TOOL 03 / 09",
+   "es": "HERRAMIENTA 03 / 09",
+   "string": "db0e6a5d-cf80-2c73-5deb-7a6c74d0cab3",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "db0e6a5d-cf80-2c73-5deb-7a6c74d0cab4",
+   "gp": "db0e6a5d-cf80-2c73-5deb-7a6c74d0cab5",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "db0e6a5d-cf80-2c73-5deb-7a6c74d0cab5"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "370f1625-a52d-edbb-77b2-e85671e0dff0",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "370f1625-a52d-edbb-77b2-e85671e0dff1",
+   "gp": "370f1625-a52d-edbb-77b2-e85671e0dff2",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "370f1625-a52d-edbb-77b2-e85671e0dff2"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "f536779d-faf0-9e83-883b-edf580f28d15",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "f536779d-faf0-9e83-883b-edf580f28d14",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9038a",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "f536779d-faf0-9e83-883b-edf580f28d14"
+  },
+  {
+   "text": "New hires and experienced reps sharpening their skills.",
+   "es": "Nuevos integrantes y representantes con experiencia que afinan sus habilidades.",
+   "string": "f9e7dfd7-4a99-b30a-0bd4-0f9c3c539a97",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "f9e7dfd7-4a99-b30a-0bd4-0f9c3c539a96",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9038d",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "f9e7dfd7-4a99-b30a-0bd4-0f9c3c539a96"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "031e3a9a-2e76-dacb-0c7a-2ff0104509a8",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "031e3a9a-2e76-dacb-0c7a-2ff0104509a7",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90391",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "031e3a9a-2e76-dacb-0c7a-2ff0104509a7"
+  },
+  {
+   "text": "Rehearse seller conversations and get feedback straight away.",
+   "es": "Ensayar conversaciones con vendedores y recibir retroalimentación al momento.",
+   "string": "6708d947-3b89-637a-41e1-fd2a86af272f",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "6708d947-3b89-637a-41e1-fd2a86af272e",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90394",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "6708d947-3b89-637a-41e1-fd2a86af272e"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "a37d3607-4c29-2a67-566a-fdee27f66938",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "a37d3607-4c29-2a67-566a-fdee27f66937",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e90398",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "a37d3607-4c29-2a67-566a-fdee27f66937"
+  },
+  {
+   "text": "Practice sessions across 10+ different scenarios each day.",
+   "es": "Sesiones de práctica con más de 10 escenarios distintos cada día.",
+   "string": "8990c5d8-b680-6c2f-4bd0-35054aeff2e6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "8990c5d8-b680-6c2f-4bd0-35054aeff2e5",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9039b",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "8990c5d8-b680-6c2f-4bd0-35054aeff2e5"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "06004a2e-d650-b123-b0cf-f8bb44b12582",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "06004a2e-d650-b123-b0cf-f8bb44b12581",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e9039f",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "06004a2e-d650-b123-b0cf-f8bb44b12581"
+  },
+  {
+   "text": "Feedback on communication, objection handling and overall conversion skills.",
+   "es": "Retroalimentación sobre comunicación, manejo de objeciones y habilidades generales de conversión.",
+   "string": "d5771d57-831d-0de1-944e-bee5f18d1479",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "d5771d57-831d-0de1-944e-bee5f18d1478",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e903a2",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "d5771d57-831d-0de1-944e-bee5f18d1478"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "2f225324-ac80-afe0-8606-9453d16d02f1",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "2f225324-ac80-afe0-8606-9453d16d02f0",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e903a6",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "2f225324-ac80-afe0-8606-9453d16d02f0"
+  },
+  {
+   "text": "Reps make their mistakes in practice, not on a live seller.",
+   "es": "Los representantes cometen sus errores en la práctica, no con un vendedor real.",
+   "string": "a5f47301-ce7d-ef68-8dc6-d0b239b57256",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "a5f47301-ce7d-ef68-8dc6-d0b239b57255",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e903a9",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "a5f47301-ce7d-ef68-8dc6-d0b239b57255"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "354930ad-e1bc-dbb9-3964-608211374cc2",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "354930ad-e1bc-dbb9-3964-608211374cc1",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e903ad",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "354930ad-e1bc-dbb9-3964-608211374cc1"
+  },
+  {
+   "text": "Complements the AI Sales Coach: one trains, the other reviews real calls.",
+   "es": "Complementa al AI Sales Coach: uno entrena, el otro revisa llamadas reales.",
+   "string": "61561e76-1371-fab5-1d27-04e9185aceaa",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "61561e76-1371-fab5-1d27-04e9185acea9",
+   "gp": "e1318e6a-b858-0b45-28ba-e535c6e903b0",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "61561e76-1371-fab5-1d27-04e9185acea9"
+  },
+  {
+   "text": "Illustrative preview · sample data",
+   "es": "Vista ilustrativa · datos de ejemplo",
+   "string": "938fd359-11eb-4488-964f-947b01fccc44",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:figure.illus.tone-suite",
+    "DOM:figcaption.note",
+    "Block:div.kd-t"
+   ],
+   "parent": "938fd359-11eb-4488-964f-947b01fccc43",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d963",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:figcaption.note",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "938fd359-11eb-4488-964f-947b01fccc43"
+  },
+  {
+   "text": "TOOL 04 / 09",
+   "es": "HERRAMIENTA 04 / 09",
+   "string": "be8fdbf3-1f10-4568-a16d-7dd49c9c3198",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "be8fdbf3-1f10-4568-a16d-7dd49c9c3199",
+   "gp": "be8fdbf3-1f10-4568-a16d-7dd49c9c319a",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "be8fdbf3-1f10-4568-a16d-7dd49c9c319a"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "fda6e983-3822-de3b-181d-d18c5495eb6f",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "fda6e983-3822-de3b-181d-d18c5495eb70",
+   "gp": "fda6e983-3822-de3b-181d-d18c5495eb71",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "fda6e983-3822-de3b-181d-d18c5495eb71"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "4f3bca36-e831-aa1f-9d29-9d5af273cb41",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "4f3bca36-e831-aa1f-9d29-9d5af273cb40",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d971",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "4f3bca36-e831-aa1f-9d29-9d5af273cb40"
+  },
+  {
+   "text": "Acquisition Managers and underwriters evaluating a property.",
+   "es": "Gerentes de adquisiciones y analistas que evalúan una propiedad.",
+   "string": "9ebf148b-72dc-107e-ec40-3af37c87959c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "9ebf148b-72dc-107e-ec40-3af37c87959b",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d974",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "9ebf148b-72dc-107e-ec40-3af37c87959b"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "17d91ddb-848a-074b-d754-c595a199e364",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "17d91ddb-848a-074b-d754-c595a199e363",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d978",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "17d91ddb-848a-074b-d754-c595a199e363"
+  },
+  {
+   "text": "Build an underwriting analysis for a property from the information you have.",
+   "es": "Armar un análisis de underwriting de una propiedad con la información que tengas.",
+   "string": "3a3e58d6-fec4-f2d2-b216-4788e8107818",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "3a3e58d6-fec4-f2d2-b216-4788e8107817",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d97b",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "3a3e58d6-fec4-f2d2-b216-4788e8107817"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "996db117-350f-9552-0f27-1ddf75630c98",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "996db117-350f-9552-0f27-1ddf75630c97",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d97f",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "996db117-350f-9552-0f27-1ddf75630c97"
+  },
+  {
+   "text": "Multiple data sources, with a mode for however much data is available, plus property photos.",
+   "es": "Varias fuentes de datos, con un modo según la cantidad de datos disponibles, además de fotos de la propiedad.",
+   "string": "b2b54f24-c831-a5e9-38db-5310dac6f67a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "b2b54f24-c831-a5e9-38db-5310dac6f679",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d982",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "b2b54f24-c831-a5e9-38db-5310dac6f679"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "884f7303-f0cc-27ff-51af-5001fca31274",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "884f7303-f0cc-27ff-51af-5001fca31273",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d986",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "884f7303-f0cc-27ff-51af-5001fca31273"
+  },
+  {
+   "text": "An analysis that reads condition from photos and lets you add or remove comps and notes, then rerun it at any time.",
+   "es": "Un análisis que estima la condición a partir de fotos y te permite agregar o quitar comparables y notas, y volver a correrlo cuando quieras.",
+   "string": "06ec5f58-a57c-d57a-9d5e-b73a8182260e",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "06ec5f58-a57c-d57a-9d5e-b73a8182260d",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d989",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "06ec5f58-a57c-d57a-9d5e-b73a8182260d"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "85150db7-aa74-2e80-a498-d499ad5b119f",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "85150db7-aa74-2e80-a498-d499ad5b119e",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d98d",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "85150db7-aa74-2e80-a498-d499ad5b119e"
+  },
+  {
+   "text": "A consistent starting point for every deal, which you adjust with your own judgment.",
+   "es": "Un punto de partida consistente para cada trato, que ajustas con tu propio criterio.",
+   "string": "d059dd6c-cb52-d1ee-e7e2-476987f16837",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "d059dd6c-cb52-d1ee-e7e2-476987f16836",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d990",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "d059dd6c-cb52-d1ee-e7e2-476987f16836"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "ce943bdd-7cec-bce6-d645-30d13d9c765a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "ce943bdd-7cec-bce6-d645-30d13d9c7659",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d994",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ce943bdd-7cec-bce6-d645-30d13d9c7659"
+  },
+  {
+   "text": "Supports the offer decisions your Acquisitions pipeline tracks.",
+   "es": "Respalda las decisiones de oferta que sigue tu pipeline de Adquisiciones.",
+   "string": "5f4fb97a-803a-721b-152e-339396c551ca",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "5f4fb97a-803a-721b-152e-339396c551c9",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d997",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "5f4fb97a-803a-721b-152e-339396c551c9"
+  },
+  {
+   "text": "TOOL 05 / 09",
+   "es": "HERRAMIENTA 05 / 09",
+   "string": "ac9ea3fc-01c9-d71b-b194-4c347161e45b",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "ac9ea3fc-01c9-d71b-b194-4c347161e45c",
+   "gp": "ac9ea3fc-01c9-d71b-b194-4c347161e45d",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "ac9ea3fc-01c9-d71b-b194-4c347161e45d"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "5fb3969e-c70c-857e-3a77-fb385b698a22",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "5fb3969e-c70c-857e-3a77-fb385b698a23",
+   "gp": "5fb3969e-c70c-857e-3a77-fb385b698a24",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "5fb3969e-c70c-857e-3a77-fb385b698a24"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "d833a509-c879-a127-d3a4-dcab37d5f1a3",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "d833a509-c879-a127-d3a4-dcab37d5f1a2",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a7",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "d833a509-c879-a127-d3a4-dcab37d5f1a2"
+  },
+  {
+   "text": "Lead Managers and marketers building or cleaning contact lists.",
+   "es": "Gerentes de leads y equipos de marketing que arman o depuran listas de contactos.",
+   "string": "c6f9f50b-b3ae-346f-3760-ca71f0da77c5",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "c6f9f50b-b3ae-346f-3760-ca71f0da77c4",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9aa",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "c6f9f50b-b3ae-346f-3760-ca71f0da77c4"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "b5a5505f-833e-bd10-9791-1cbacc3b13b4",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "b5a5505f-833e-bd10-9791-1cbacc3b13b3",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ae",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "b5a5505f-833e-bd10-9791-1cbacc3b13b3"
+  },
+  {
+   "text": "Find contact details for a property owner and screen existing contacts.",
+   "es": "Encontrar los datos de contacto del dueño de una propiedad y filtrar contactos existentes.",
+   "string": "072b3b0f-bf3e-174c-fe96-1b9cfb5cb878",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "072b3b0f-bf3e-174c-fe96-1b9cfb5cb877",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b1",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "072b3b0f-bf3e-174c-fe96-1b9cfb5cb877"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "bfed921c-686d-f9ac-86c0-2e5a0ce16d21",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "bfed921c-686d-f9ac-86c0-2e5a0ce16d20",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b5",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "bfed921c-686d-f9ac-86c0-2e5a0ce16d20"
+  },
+  {
+   "text": "An address, an APN, or an address plus owner name.",
+   "es": "Una dirección, un APN o una dirección más el nombre del dueño.",
+   "string": "3bca36bb-433b-28a3-146a-6f8c65bf8103",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "3bca36bb-433b-28a3-146a-6f8c65bf8102",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b8",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "3bca36bb-433b-28a3-146a-6f8c65bf8102"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "59cd6ec0-e1bd-a7c8-f268-30e5478c7e28",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "59cd6ec0-e1bd-a7c8-f268-30e5478c7e27",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9bc",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "59cd6ec0-e1bd-a7c8-f268-30e5478c7e27"
+  },
+  {
+   "text": "Phone numbers and emails, and a DNC check of your existing contacts, from one dropdown in your CRM.",
+   "es": "Teléfonos y correos, y una revisión DNC de tus contactos existentes, desde un solo menú en tu CRM.",
+   "string": "2d952552-34c9-a1a9-fc1c-34dc5dcd077c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "2d952552-34c9-a1a9-fc1c-34dc5dcd077b",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9bf",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "2d952552-34c9-a1a9-fc1c-34dc5dcd077b"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "fe9544be-4008-9689-0c76-1b7b6c43afb6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "fe9544be-4008-9689-0c76-1b7b6c43afb5",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c3",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "fe9544be-4008-9689-0c76-1b7b6c43afb5"
+  },
+  {
+   "text": "Contact discovery happens where the lead lives, not in a separate tool.",
+   "es": "La búsqueda de contactos ocurre donde vive el lead, no en una herramienta aparte.",
+   "string": "82609d6e-a673-6131-961a-9ad17e750351",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "82609d6e-a673-6131-961a-9ad17e750350",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c6",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "82609d6e-a673-6131-961a-9ad17e750350"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "1a525f94-9ea9-4b92-dbb3-be3a683a618a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "1a525f94-9ea9-4b92-dbb3-be3a683a6189",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ca",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "1a525f94-9ea9-4b92-dbb3-be3a683a6189"
+  },
+  {
+   "text": "Runs from inside the CRM. DNC checking supports your process and is not a guarantee of compliant outreach.",
+   "es": "Funciona dentro del CRM. La revisión DNC apoya tu proceso y no garantiza el cumplimiento normativo.",
+   "string": "8464d7d8-1041-e596-345c-fc381e46ad89",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "8464d7d8-1041-e596-345c-fc381e46ad88",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9cd",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "8464d7d8-1041-e596-345c-fc381e46ad88"
+  },
+  {
+   "text": "TOOL 06 / 09",
+   "es": "HERRAMIENTA 06 / 09",
+   "string": "accef16f-00b7-a6e3-e594-234361cc5c9c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "accef16f-00b7-a6e3-e594-234361cc5c9d",
+   "gp": "accef16f-00b7-a6e3-e594-234361cc5c9e",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "accef16f-00b7-a6e3-e594-234361cc5c9e"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "5e451038-4438-1720-1ce3-6d2604ff1fa9",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "5e451038-4438-1720-1ce3-6d2604ff1faa",
+   "gp": "5e451038-4438-1720-1ce3-6d2604ff1fab",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "5e451038-4438-1720-1ce3-6d2604ff1fab"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "1830400e-a013-10fd-3ccf-8a12102373d0",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "1830400e-a013-10fd-3ccf-8a12102373cf",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9dd",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "1830400e-a013-10fd-3ccf-8a12102373cf"
+  },
+  {
+   "text": "Anyone working a lead that arrived with thin property data.",
+   "es": "Cualquiera que trabaje un lead que llegó con pocos datos de la propiedad.",
+   "string": "96931621-3dc6-fbe1-939f-87acd4161924",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "96931621-3dc6-fbe1-939f-87acd4161923",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e0",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "96931621-3dc6-fbe1-939f-87acd4161923"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "eed29a0d-27d3-2fe2-1478-06acf4aadbbd",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "eed29a0d-27d3-2fe2-1478-06acf4aadbbc",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e4",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "eed29a0d-27d3-2fe2-1478-06acf4aadbbc"
+  },
+  {
+   "text": "Fill in property information on a CRM record.",
+   "es": "Completar la información de la propiedad en un registro del CRM.",
+   "string": "ba557308-cdde-877c-8d70-2a42e757b024",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "ba557308-cdde-877c-8d70-2a42e757b023",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e7",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ba557308-cdde-877c-8d70-2a42e757b023"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "9e22ed8a-51ea-9827-7024-f489c58444fe",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "9e22ed8a-51ea-9827-7024-f489c58444fd",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9eb",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "9e22ed8a-51ea-9827-7024-f489c58444fd"
+  },
+  {
+   "text": "The property address.",
+   "es": "La dirección de la propiedad.",
+   "string": "e24f2de8-d104-a324-67e1-9066bea540d6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "e24f2de8-d104-a324-67e1-9066bea540d5",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ee",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "e24f2de8-d104-a324-67e1-9066bea540d5"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "32cf1b13-d9af-7b99-7af4-2b27c0fc68ab",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "32cf1b13-d9af-7b99-7af4-2b27c0fc68aa",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f2",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "32cf1b13-d9af-7b99-7af4-2b27c0fc68aa"
+  },
+  {
+   "text": "Available property data added to your CRM fields, with a view of exactly which fields changed.",
+   "es": "Datos disponibles de la propiedad agregados a los campos de tu CRM, con una vista de exactamente qué campos cambiaron.",
+   "string": "099c8b0a-aec2-1c35-d8c4-4bc45bcd7eb6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "099c8b0a-aec2-1c35-d8c4-4bc45bcd7eb5",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f5",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "099c8b0a-aec2-1c35-d8c4-4bc45bcd7eb5"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "2ccce00a-50e2-0a5c-4926-ac6a416a6573",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "2ccce00a-50e2-0a5c-4926-ac6a416a6572",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f9",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "2ccce00a-50e2-0a5c-4926-ac6a416a6572"
+  },
+  {
+   "text": "Better-informed conversations and underwriting, with no guessing about what was updated.",
+   "es": "Conversaciones y underwriting mejor informados, sin adivinar qué se actualizó.",
+   "string": "be32c068-d94b-85ec-6f06-aaed84088e19",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "be32c068-d94b-85ec-6f06-aaed84088e18",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fc",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "be32c068-d94b-85ec-6f06-aaed84088e18"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "ea2b9d8e-46b6-55ad-ce78-2ab67a44a81e",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "ea2b9d8e-46b6-55ad-ce78-2ab67a44a81d",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206da00",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ea2b9d8e-46b6-55ad-ce78-2ab67a44a81d"
+  },
+  {
+   "text": "Feeds the same CRM fields your team and the other tools read.",
+   "es": "Alimenta los mismos campos del CRM que leen tu equipo y las demás herramientas.",
+   "string": "c85b7842-9446-3a77-ff37-5e9f843fdf20",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "c85b7842-9446-3a77-ff37-5e9f843fdf1f",
+   "gp": "c2dec4d2-f5c7-5ebe-0117-9ddf0206da03",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "c85b7842-9446-3a77-ff37-5e9f843fdf1f"
+  },
+  {
+   "text": "Revenue, month",
+   "es": "Ingresos del mes",
+   "string": "e45cea92-5480-4e5f-d162-8ed1d7db5418",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "e45cea92-5480-4e5f-d162-8ed1d7db5419",
+   "gp": "e45cea92-5480-4e5f-d162-8ed1d7db541a",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "e45cea92-5480-4e5f-d162-8ed1d7db541a"
+  },
+  {
+   "text": "Net margin",
+   "es": "Margen neto",
+   "string": "4118e6c1-5cc1-2ec1-d38c-11553d1eb17b",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "4118e6c1-5cc1-2ec1-d38c-11553d1eb17c",
+   "gp": "4118e6c1-5cc1-2ec1-d38c-11553d1eb17d",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "4118e6c1-5cc1-2ec1-d38c-11553d1eb17d"
+  },
+  {
+   "text": "Deals closed",
+   "es": "Tratos cerrados",
+   "string": "4bee367f-2d05-822f-3821-59beb9edfefb",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "4bee367f-2d05-822f-3821-59beb9edfefc",
+   "gp": "4bee367f-2d05-822f-3821-59beb9edfefd",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "4bee367f-2d05-822f-3821-59beb9edfefd"
+  },
+  {
+   "text": "Illustrative preview · sample data",
+   "es": "Vista ilustrativa · datos de ejemplo",
+   "string": "663f4250-aabb-69b0-5ab4-83ee20b6dbf2",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:figure.illus.tone-suite",
+    "DOM:figcaption.note",
+    "Block:div.kd-t"
+   ],
+   "parent": "663f4250-aabb-69b0-5ab4-83ee20b6dbf1",
+   "gp": "b50f0939-5043-bc32-c498-591008464cf1",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:figcaption.note",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "663f4250-aabb-69b0-5ab4-83ee20b6dbf1"
+  },
+  {
+   "text": "TOOL 07 / 09",
+   "es": "HERRAMIENTA 07 / 09",
+   "string": "45ea55e4-4b6d-6b2d-b91b-43e02fff1130",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "45ea55e4-4b6d-6b2d-b91b-43e02fff1131",
+   "gp": "45ea55e4-4b6d-6b2d-b91b-43e02fff1132",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "45ea55e4-4b6d-6b2d-b91b-43e02fff1132"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "9cc8c033-1b88-1d01-49d0-dbc7c38fa829",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "9cc8c033-1b88-1d01-49d0-dbc7c38fa82a",
+   "gp": "9cc8c033-1b88-1d01-49d0-dbc7c38fa82b",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "9cc8c033-1b88-1d01-49d0-dbc7c38fa82b"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "b22f6a90-53b6-d54c-3643-74dd7fb924de",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "b22f6a90-53b6-d54c-3643-74dd7fb924dd",
+   "gp": "b50f0939-5043-bc32-c498-591008464cff",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "b22f6a90-53b6-d54c-3643-74dd7fb924dd"
+  },
+  {
+   "text": "Owners and managers who run the business on its numbers.",
+   "es": "Dueños y gerentes que manejan el negocio con sus números.",
+   "string": "62f0123f-0e87-bf3f-dd68-98fcfcbdf97b",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "62f0123f-0e87-bf3f-dd68-98fcfcbdf97a",
+   "gp": "b50f0939-5043-bc32-c498-591008464d02",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "62f0123f-0e87-bf3f-dd68-98fcfcbdf97a"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "023bbd44-9a96-c03c-d8c4-361bde8477b0",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "023bbd44-9a96-c03c-d8c4-361bde8477af",
+   "gp": "b50f0939-5043-bc32-c498-591008464d06",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "023bbd44-9a96-c03c-d8c4-361bde8477af"
+  },
+  {
+   "text": "See KPIs and accounting in one place.",
+   "es": "Ver KPIs y contabilidad en un solo lugar.",
+   "string": "e5023788-354e-d769-0736-542802ada437",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "e5023788-354e-d769-0736-542802ada436",
+   "gp": "b50f0939-5043-bc32-c498-591008464d09",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "e5023788-354e-d769-0736-542802ada436"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "90d148d1-d144-14f6-e669-36a43ddfda0d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "90d148d1-d144-14f6-e669-36a43ddfda0c",
+   "gp": "b50f0939-5043-bc32-c498-591008464d0d",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "90d148d1-d144-14f6-e669-36a43ddfda0c"
+  },
+  {
+   "text": "Your CRM activity and accounting information.",
+   "es": "La actividad de tu CRM y tu información contable.",
+   "string": "377a69f6-f504-6dd3-c367-2611566d5e96",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "377a69f6-f504-6dd3-c367-2611566d5e95",
+   "gp": "b50f0939-5043-bc32-c498-591008464d10",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "377a69f6-f504-6dd3-c367-2611566d5e95"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "dfb66506-05fb-306a-4fe8-0d677da4bd48",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "dfb66506-05fb-306a-4fe8-0d677da4bd47",
+   "gp": "b50f0939-5043-bc32-c498-591008464d14",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "dfb66506-05fb-306a-4fe8-0d677da4bd47"
+  },
+  {
+   "text": "Additional KPI visibility, plus a full accounting section.",
+   "es": "Más visibilidad de KPIs y una sección completa de contabilidad.",
+   "string": "728c680f-787b-5bec-d556-4e4d36285fc3",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "728c680f-787b-5bec-d556-4e4d36285fc2",
+   "gp": "b50f0939-5043-bc32-c498-591008464d17",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "728c680f-787b-5bec-d556-4e4d36285fc2"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "da0786e8-d79d-2397-21d8-029395cf1f5e",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "da0786e8-d79d-2397-21d8-029395cf1f5d",
+   "gp": "b50f0939-5043-bc32-c498-591008464d1b",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "da0786e8-d79d-2397-21d8-029395cf1f5d"
+  },
+  {
+   "text": "Opportunities and inefficiencies show up earlier.",
+   "es": "Las oportunidades y las ineficiencias aparecen antes.",
+   "string": "deaff0fa-56d7-e1aa-8dbe-3a58a736c3ef",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "deaff0fa-56d7-e1aa-8dbe-3a58a736c3ee",
+   "gp": "b50f0939-5043-bc32-c498-591008464d1e",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "deaff0fa-56d7-e1aa-8dbe-3a58a736c3ee"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "ec1cd78b-194b-5a31-c699-de0f67ded376",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "ec1cd78b-194b-5a31-c699-de0f67ded375",
+   "gp": "b50f0939-5043-bc32-c498-591008464d22",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ec1cd78b-194b-5a31-c699-de0f67ded375"
+  },
+  {
+   "text": "Builds on the KPI tracking in the CRM.",
+   "es": "Se apoya en el seguimiento de KPIs del CRM.",
+   "string": "9475703e-5954-2a50-9aff-6361e64fa77e",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "9475703e-5954-2a50-9aff-6361e64fa77d",
+   "gp": "b50f0939-5043-bc32-c498-591008464d25",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "9475703e-5954-2a50-9aff-6361e64fa77d"
+  },
+  {
+   "text": "TOOL 08 / 09",
+   "es": "HERRAMIENTA 08 / 09",
+   "string": "aaf27fcc-be83-d411-e1d4-87349671254b",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "aaf27fcc-be83-d411-e1d4-87349671254c",
+   "gp": "aaf27fcc-be83-d411-e1d4-87349671254d",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "aaf27fcc-be83-d411-e1d4-87349671254d"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "7f676085-3e46-abe6-a1f9-a11918596577",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "7f676085-3e46-abe6-a1f9-a11918596578",
+   "gp": "7f676085-3e46-abe6-a1f9-a11918596579",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "7f676085-3e46-abe6-a1f9-a11918596579"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "f01a8993-b440-f3fd-5ddd-5b97661bfb51",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "f01a8993-b440-f3fd-5ddd-5b97661bfb50",
+   "gp": "b50f0939-5043-bc32-c498-591008464d35",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "f01a8993-b440-f3fd-5ddd-5b97661bfb50"
+  },
+  {
+   "text": "Owners, managers and operators who want answers without building a report.",
+   "es": "Dueños, gerentes y operadores que quieren respuestas sin armar un reporte.",
+   "string": "6eb34fd3-ff80-cd28-6224-46db4e5ea28d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "6eb34fd3-ff80-cd28-6224-46db4e5ea28c",
+   "gp": "b50f0939-5043-bc32-c498-591008464d38",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "6eb34fd3-ff80-cd28-6224-46db4e5ea28c"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "8ee9f29c-22e8-da7f-757d-fb5d6ac18e6d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "8ee9f29c-22e8-da7f-757d-fb5d6ac18e6c",
+   "gp": "b50f0939-5043-bc32-c498-591008464d3c",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "8ee9f29c-22e8-da7f-757d-fb5d6ac18e6c"
+  },
+  {
+   "text": "Interact with your CRM and the whole Suite in conversation.",
+   "es": "Interactuar con tu CRM y con toda la Suite en una conversación.",
+   "string": "d0a7e3f8-a091-1517-a0e3-53ca222ba680",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "d0a7e3f8-a091-1517-a0e3-53ca222ba67f",
+   "gp": "b50f0939-5043-bc32-c498-591008464d3f",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "d0a7e3f8-a091-1517-a0e3-53ca222ba67f"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "ac2c23ec-dd81-228d-9a53-6e46b33b209d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "ac2c23ec-dd81-228d-9a53-6e46b33b209c",
+   "gp": "b50f0939-5043-bc32-c498-591008464d43",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "ac2c23ec-dd81-228d-9a53-6e46b33b209c"
+  },
+  {
+   "text": "Your questions and requests.",
+   "es": "Tus preguntas y solicitudes.",
+   "string": "58d606e0-5d5d-d29f-97e4-6631a2ce5e61",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "58d606e0-5d5d-d29f-97e4-6631a2ce5e60",
+   "gp": "b50f0939-5043-bc32-c498-591008464d46",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "58d606e0-5d5d-d29f-97e4-6631a2ce5e60"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "f98168ca-054d-03fd-ec58-b0293b805bf3",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "f98168ca-054d-03fd-ec58-b0293b805bf2",
+   "gp": "b50f0939-5043-bc32-c498-591008464d4a",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "f98168ca-054d-03fd-ec58-b0293b805bf2"
+  },
+  {
+   "text": "Answers drawn from your CRM and Suite, with supported actions taken and routines run for you.",
+   "es": "Respuestas tomadas de tu CRM y de la Suite, con acciones compatibles ejecutadas y rutinas corridas por ti.",
+   "string": "124185b8-0ce9-a8af-182b-7587f1a41df2",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "124185b8-0ce9-a8af-182b-7587f1a41df1",
+   "gp": "b50f0939-5043-bc32-c498-591008464d4d",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "124185b8-0ce9-a8af-182b-7587f1a41df1"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "b764554b-5757-9c88-9f12-c02be85a53e6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "b764554b-5757-9c88-9f12-c02be85a53e5",
+   "gp": "b50f0939-5043-bc32-c498-591008464d51",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "b764554b-5757-9c88-9f12-c02be85a53e5"
+  },
+  {
+   "text": "Less clicking through screens to find or do something routine.",
+   "es": "Menos clics entre pantallas para encontrar o hacer algo rutinario.",
+   "string": "086d4326-9bb9-06c3-7413-3f0f93ed9dcd",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "086d4326-9bb9-06c3-7413-3f0f93ed9dcc",
+   "gp": "b50f0939-5043-bc32-c498-591008464d54",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "086d4326-9bb9-06c3-7413-3f0f93ed9dcc"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "38907674-83a3-9c1d-379a-2e0beb715cc9",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "38907674-83a3-9c1d-379a-2e0beb715cc8",
+   "gp": "b50f0939-5043-bc32-c498-591008464d58",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "38907674-83a3-9c1d-379a-2e0beb715cc8"
+  },
+  {
+   "text": "Talks with the CRM and the rest of the AI Suite.",
+   "es": "Habla con el CRM y con el resto de la AI Suite.",
+   "string": "9e2cbcbe-85d4-53d3-727d-3c0ec25ceb8d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "9e2cbcbe-85d4-53d3-727d-3c0ec25ceb8c",
+   "gp": "b50f0939-5043-bc32-c498-591008464d5b",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "9e2cbcbe-85d4-53d3-727d-3c0ec25ceb8c"
+  },
+  {
+   "text": "TOOL 09 / 09",
+   "es": "HERRAMIENTA 09 / 09",
+   "string": "94e5f25e-7f02-03ed-dc5c-a3ff6e12d236",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.spec__num"
+   ],
+   "parent": "94e5f25e-7f02-03ed-dc5c-a3ff6e12d237",
+   "gp": "94e5f25e-7f02-03ed-dc5c-a3ff6e12d238",
+   "parent_type": "Span.spec__num",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.spec__num"
+   ],
+   "node": "94e5f25e-7f02-03ed-dc5c-a3ff6e12d238"
+  },
+  {
+   "text": "Pay-as-you-go",
+   "es": "Pago por uso",
+   "string": "d473ff3e-3e13-ecec-4334-9b1f298ab5b9",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.spec__id",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "d473ff3e-3e13-ecec-4334-9b1f298ab5ba",
+   "gp": "d473ff3e-3e13-ecec-4334-9b1f298ab5bb",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "d473ff3e-3e13-ecec-4334-9b1f298ab5bb"
+  },
+  {
+   "text": "Who it is for",
+   "es": "Para quién es",
+   "string": "34080e59-fa2d-42d6-ad4a-93bab5b99afc",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "34080e59-fa2d-42d6-ad4a-93bab5b99afb",
+   "gp": "b50f0939-5043-bc32-c498-591008464d6b",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "34080e59-fa2d-42d6-ad4a-93bab5b99afb"
+  },
+  {
+   "text": "Owners planning hiring, marketing spend and acquisitions.",
+   "es": "Dueños que planean contrataciones, inversión en marketing y adquisiciones.",
+   "string": "67f1a341-3e14-2f2b-436d-502aa6a149a0",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "67f1a341-3e14-2f2b-436d-502aa6a1499f",
+   "gp": "b50f0939-5043-bc32-c498-591008464d6e",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "67f1a341-3e14-2f2b-436d-502aa6a1499f"
+  },
+  {
+   "text": "The task",
+   "es": "La tarea",
+   "string": "89ae20bd-ec69-1df2-c15a-d4d1ed801893",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "89ae20bd-ec69-1df2-c15a-d4d1ed801892",
+   "gp": "b50f0939-5043-bc32-c498-591008464d72",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "89ae20bd-ec69-1df2-c15a-d4d1ed801892"
+  },
+  {
+   "text": "Forecast where the business may be heading.",
+   "es": "Proyectar hacia dónde puede ir el negocio.",
+   "string": "8469522a-2575-fab6-cd66-4d2ba0ffa3ea",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "8469522a-2575-fab6-cd66-4d2ba0ffa3e9",
+   "gp": "b50f0939-5043-bc32-c498-591008464d75",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "8469522a-2575-fab6-cd66-4d2ba0ffa3e9"
+  },
+  {
+   "text": "Inputs",
+   "es": "Entradas",
+   "string": "1bc476e1-ebda-0a63-1047-b2d38d70c605",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "1bc476e1-ebda-0a63-1047-b2d38d70c604",
+   "gp": "b50f0939-5043-bc32-c498-591008464d79",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "1bc476e1-ebda-0a63-1047-b2d38d70c604"
+  },
+  {
+   "text": "Your real KPIs, accounting and insights.",
+   "es": "Tus KPIs reales, tu contabilidad y tus insights.",
+   "string": "58f4c765-dae8-cc9f-3fda-ea1b57358d20",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "58f4c765-dae8-cc9f-3fda-ea1b57358d1f",
+   "gp": "b50f0939-5043-bc32-c498-591008464d7c",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "58f4c765-dae8-cc9f-3fda-ea1b57358d1f"
+  },
+  {
+   "text": "Outputs",
+   "es": "Salidas",
+   "string": "c94dd671-fe91-e627-81e9-4014e2849b72",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "c94dd671-fe91-e627-81e9-4014e2849b71",
+   "gp": "b50f0939-5043-bc32-c498-591008464d80",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "c94dd671-fe91-e627-81e9-4014e2849b71"
+  },
+  {
+   "text": "Forecasts for the months ahead.",
+   "es": "Proyecciones para los próximos meses.",
+   "string": "d5f5ccd8-30fe-f9c7-b6aa-a128c0e7ec9d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "d5f5ccd8-30fe-f9c7-b6aa-a128c0e7ec9c",
+   "gp": "b50f0939-5043-bc32-c498-591008464d83",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "d5f5ccd8-30fe-f9c7-b6aa-a128c0e7ec9c"
+  },
+  {
+   "text": "Why it matters",
+   "es": "Por qué importa",
+   "string": "4cfa17dd-87e7-3df6-2d49-fcccbdbd4b59",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "4cfa17dd-87e7-3df6-2d49-fcccbdbd4b58",
+   "gp": "b50f0939-5043-bc32-c498-591008464d87",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "4cfa17dd-87e7-3df6-2d49-fcccbdbd4b58"
+  },
+  {
+   "text": "Planning starts from your own numbers. Projections are estimates, not guaranteed outcomes.",
+   "es": "La planeación parte de tus propios números. Las proyecciones son estimaciones, no resultados garantizados.",
+   "string": "0d14ac99-c7ec-b2bc-8ee6-e48d68eb4c11",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "0d14ac99-c7ec-b2bc-8ee6-e48d68eb4c10",
+   "gp": "b50f0939-5043-bc32-c498-591008464d8a",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "0d14ac99-c7ec-b2bc-8ee6-e48d68eb4c10"
+  },
+  {
+   "text": "How it connects",
+   "es": "Cómo se conecta",
+   "string": "d6975291-cae7-e6c5-4354-88a1c0f444a9",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dt",
+    "Block:div.kd-t"
+   ],
+   "parent": "d6975291-cae7-e6c5-4354-88a1c0f444a8",
+   "gp": "b50f0939-5043-bc32-c498-591008464d8e",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dt",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "d6975291-cae7-e6c5-4354-88a1c0f444a8"
+  },
+  {
+   "text": "Uses what the AI Dashboard and AI Insights already know.",
+   "es": "Usa lo que AI Dashboard y AI Insights ya saben.",
+   "string": "b1410bb3-c3d9-7459-4469-958f795ab2a1",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "DOM:dd",
+    "Block:div.kd-t"
+   ],
+   "parent": "b1410bb3-c3d9-7459-4469-958f795ab2a0",
+   "gp": "b50f0939-5043-bc32-c498-591008464d91",
+   "parent_type": "Block:div.kd-t",
+   "gp_type": "DOM:dd",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.kd-t"
+   ],
+   "node": "b1410bb3-c3d9-7459-4469-958f795ab2a0"
+  },
+  {
+   "text": "Situation",
+   "es": "Situación",
+   "string": "869b2598-db84-5840-ebc2-2238350db965",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "869b2598-db84-5840-ebc2-2238350db966",
+   "gp": "869b2598-db84-5840-ebc2-2238350db969",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "869b2598-db84-5840-ebc2-2238350db969"
+  },
+  {
+   "text": "Inherited property",
+   "es": "Propiedad heredada",
+   "string": "869b2598-db84-5840-ebc2-2238350db967",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "869b2598-db84-5840-ebc2-2238350db968",
+   "gp": "869b2598-db84-5840-ebc2-2238350db969",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "869b2598-db84-5840-ebc2-2238350db969"
+  },
+  {
+   "text": "Condition",
+   "es": "Condición",
+   "string": "3f5ee897-31cd-4136-7fc8-63b54e002e4a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "3f5ee897-31cd-4136-7fc8-63b54e002e4b",
+   "gp": "3f5ee897-31cd-4136-7fc8-63b54e002e4e",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "3f5ee897-31cd-4136-7fc8-63b54e002e4e"
+  },
+  {
+   "text": "Roof needs repair",
+   "es": "El techo necesita reparación",
+   "string": "3f5ee897-31cd-4136-7fc8-63b54e002e4c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "3f5ee897-31cd-4136-7fc8-63b54e002e4d",
+   "gp": "3f5ee897-31cd-4136-7fc8-63b54e002e4e",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "3f5ee897-31cd-4136-7fc8-63b54e002e4e"
+  },
+  {
+   "text": "Timeline",
+   "es": "Plazo",
+   "string": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d62",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d63",
+   "gp": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d66",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d66"
+  },
+  {
+   "text": "End of summer",
+   "es": "Fin del verano",
+   "string": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d64",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d65",
+   "gp": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d66",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d66"
+  },
+  {
+   "text": "Asking",
+   "es": "Precio pedido",
+   "string": "3ab94005-0551-29f7-66af-d00bc2999ad6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "3ab94005-0551-29f7-66af-d00bc2999ad7",
+   "gp": "3ab94005-0551-29f7-66af-d00bc2999ada",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "3ab94005-0551-29f7-66af-d00bc2999ada"
+  },
+  {
+   "text": "Next step",
+   "es": "Siguiente paso",
+   "string": "f302118a-853e-632a-1c3a-3f7613860c22",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "f302118a-853e-632a-1c3a-3f7613860c23",
+   "gp": "f302118a-853e-632a-1c3a-3f7613860c26",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "f302118a-853e-632a-1c3a-3f7613860c26"
+  },
+  {
+   "text": "Send offer range",
+   "es": "Enviar rango de oferta",
+   "string": "f302118a-853e-632a-1c3a-3f7613860c24",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "f302118a-853e-632a-1c3a-3f7613860c25",
+   "gp": "f302118a-853e-632a-1c3a-3f7613860c26",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span",
+    "Span"
+   ],
+   "node": "f302118a-853e-632a-1c3a-3f7613860c26"
+  },
+  {
+   "text": "Rapport",
+   "es": "Empatía",
+   "string": "49b83c0c-92fa-4f3e-3e57-8e0512776521",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.score__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "49b83c0c-92fa-4f3e-3e57-8e0512776522",
+   "gp": "49b83c0c-92fa-4f3e-3e57-8e0512776523",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "49b83c0c-92fa-4f3e-3e57-8e0512776523"
+  },
+  {
+   "text": "Motivation discovery",
+   "es": "Descubrimiento de motivación",
+   "string": "7b559e36-ac8a-b693-1276-da6e397ee1b7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.score__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "7b559e36-ac8a-b693-1276-da6e397ee1b8",
+   "gp": "7b559e36-ac8a-b693-1276-da6e397ee1b9",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "7b559e36-ac8a-b693-1276-da6e397ee1b9"
+  },
+  {
+   "text": "Objection handling",
+   "es": "Manejo de objeciones",
+   "string": "9b7dfb79-cc3d-ce39-2c29-93896e433e6c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.score__row",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "9b7dfb79-cc3d-ce39-2c29-93896e433e6d",
+   "gp": "9b7dfb79-cc3d-ce39-2c29-93896e433e6e",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span"
+   ],
+   "node": "9b7dfb79-cc3d-ce39-2c29-93896e433e6e"
+  },
+  {
+   "text": "No AI Agent needed",
+   "es": "No requiere AI Agent",
+   "string": "b474420f-f6f3-307d-9988-44f006ba375a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:article.offer.spot",
+    "Block:div.kd-t",
+    "Span.badge.badge--included"
+   ],
+   "parent": "b474420f-f6f3-307d-9988-44f006ba375b",
+   "gp": "b474420f-f6f3-307d-9988-44f006ba375c",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge.badge--included"
+   ],
+   "node": "b474420f-f6f3-307d-9988-44f006ba375c"
+  },
+  {
+   "text": "Built into the pipeline",
+   "es": "Integrado en el pipeline",
+   "string": "0e55773f-f0e8-9162-f13b-11e550cbc04c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:article.offer.spot",
+    "Block:div.kd-t",
+    "Span.badge"
+   ],
+   "parent": "0e55773f-f0e8-9162-f13b-11e550cbc04d",
+   "gp": "0e55773f-f0e8-9162-f13b-11e550cbc04e",
+   "parent_type": "Span.badge",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Span.badge"
+   ],
+   "node": "0e55773f-f0e8-9162-f13b-11e550cbc04e"
+  },
+  {
+   "text": "Included",
+   "es": "Incluido",
+   "string": "2a52f79c-e16b-d921-2c8c-a5c316f0c549",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.stack",
+    "Paragraph.eyebrow",
+    "Span.badge.badge--included"
+   ],
+   "parent": "2a52f79c-e16b-d921-2c8c-a5c316f0c54a",
+   "gp": "2a52f79c-e16b-d921-2c8c-a5c316f0c54b",
+   "parent_type": "Span.badge.badge--included",
+   "gp_type": "Paragraph.eyebrow",
+   "n_sib": 1,
+   "gp_children": [
+    "String",
+    "Span.badge.badge--included"
+   ],
+   "node": "2a52f79c-e16b-d921-2c8c-a5c316f0c54b"
+  },
+  {
+   "text": "Pipelines and KPIs",
+   "es": "Pipelines y KPIs",
+   "string": "507159ee-f7c5-d296-3a86-3e40a3a63fc7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "507159ee-f7c5-d296-3a86-3e40a3a63fc8",
+   "gp": "507159ee-f7c5-d296-3a86-3e40a3a63fcb",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "507159ee-f7c5-d296-3a86-3e40a3a63fcb"
+  },
+  {
+   "text": "Acquisitions, nurture, dispositions, transaction coordination, rentals",
+   "es": "Adquisiciones, nurture, disposiciones, coordinación de transacciones, rentas",
+   "string": "507159ee-f7c5-d296-3a86-3e40a3a63fc9",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "507159ee-f7c5-d296-3a86-3e40a3a63fca",
+   "gp": "507159ee-f7c5-d296-3a86-3e40a3a63fcb",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "507159ee-f7c5-d296-3a86-3e40a3a63fcb"
+  },
+  {
+   "text": "Contacts and opportunities",
+   "es": "Contactos y oportunidades",
+   "string": "cd5ad31e-004f-9835-a331-998199d388f4",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "cd5ad31e-004f-9835-a331-998199d388f5",
+   "gp": "cd5ad31e-004f-9835-a331-998199d388f8",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "cd5ad31e-004f-9835-a331-998199d388f8"
+  },
+  {
+   "text": "Importing, smart lists, tags, custom fields",
+   "es": "Importación, listas inteligentes, etiquetas, campos personalizados",
+   "string": "cd5ad31e-004f-9835-a331-998199d388f6",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "cd5ad31e-004f-9835-a331-998199d388f7",
+   "gp": "cd5ad31e-004f-9835-a331-998199d388f8",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "cd5ad31e-004f-9835-a331-998199d388f8"
+  },
+  {
+   "text": "Phones, SMS and email",
+   "es": "Teléfonos, SMS y correo",
+   "string": "387e17db-4906-eed2-040c-58f793fa0ca8",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "387e17db-4906-eed2-040c-58f793fa0ca9",
+   "gp": "387e17db-4906-eed2-040c-58f793fa0cac",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "387e17db-4906-eed2-040c-58f793fa0cac"
+  },
+  {
+   "text": "Numbers, dialer, campaigns, snippets",
+   "es": "Números, marcador, campañas, plantillas",
+   "string": "387e17db-4906-eed2-040c-58f793fa0caa",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "387e17db-4906-eed2-040c-58f793fa0cab",
+   "gp": "387e17db-4906-eed2-040c-58f793fa0cac",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "387e17db-4906-eed2-040c-58f793fa0cac"
+  },
+  {
+   "text": "Calendars and forms",
+   "es": "Calendarios y formularios",
+   "string": "cd3adb15-8948-9398-a673-773a05031d47",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "cd3adb15-8948-9398-a673-773a05031d48",
+   "gp": "cd3adb15-8948-9398-a673-773a05031d4b",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "cd3adb15-8948-9398-a673-773a05031d4b"
+  },
+  {
+   "text": "Booking, forms, surveys, funnels",
+   "es": "Reservas, formularios, encuestas, embudos",
+   "string": "cd3adb15-8948-9398-a673-773a05031d49",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "cd3adb15-8948-9398-a673-773a05031d4a",
+   "gp": "cd3adb15-8948-9398-a673-773a05031d4b",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "cd3adb15-8948-9398-a673-773a05031d4b"
+  },
+  {
+   "text": "Dashboards and reporting",
+   "es": "Tableros y reportes",
+   "string": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4b",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4c",
+   "gp": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4f",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4f"
+  },
+  {
+   "text": "KPI dashboard, call and appointment reports",
+   "es": "Tablero de KPIs, reportes de llamadas y citas",
+   "string": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4e",
+   "gp": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4f",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4f"
+  },
+  {
+   "text": "Documents and setup",
+   "es": "Documentos y configuración",
+   "string": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934a",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Strong"
+   ],
+   "parent": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934b",
+   "gp": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934e",
+   "parent_type": "Strong",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934e"
+  },
+  {
+   "text": "Signatures, users, access levels",
+   "es": "Firmas, usuarios, niveles de acceso",
+   "string": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934c",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div",
+    "Block:div.kd-t",
+    "Span"
+   ],
+   "parent": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934d",
+   "gp": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934e",
+   "parent_type": "Span",
+   "gp_type": "Block:div.kd-t",
+   "n_sib": 1,
+   "gp_children": [
+    "Strong",
+    "Span"
+   ],
+   "node": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934e"
+  },
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "96d23890-5720-04a1-55d1-c621b6d84df3",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "96d23890-5720-04a1-55d1-c621b6d84df4",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e01",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading",
+    "Paragraph.muted"
+   ],
+   "node": "96d23890-5720-04a1-55d1-c621b6d84df4"
+  },
+  {
+   "text": "Is the AI Suite available now?",
+   "es": "¿La AI Suite ya está disponible?",
+   "string": "3f06a346-abd1-fe7b-55c4-c3fc716e4aab",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "47901089-c48a-7efb-69be-cf5c8b137408",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e04",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "47901089-c48a-7efb-69be-cf5c8b137408"
+  },
+  {
+   "text": "Do I pay a subscription for the AI Suite?",
+   "es": "¿Pago una suscripción por la AI Suite?",
+   "string": "d4d77f79-0cdd-ee0e-94d8-cebbfbd12259",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "0716f329-7d3e-e8d9-bfb4-c8db135b270b",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e0c",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "0716f329-7d3e-e8d9-bfb4-c8db135b270b"
+  },
+  {
+   "text": "Is AI Suite usage unlimited?",
+   "es": "¿El uso de la AI Suite es ilimitado?",
+   "string": "2df9805c-238f-0e42-0a4b-1538539f8539",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "489d5dcd-ba10-00e6-e86d-b8879d30e394",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e14",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "489d5dcd-ba10-00e6-e86d-b8879d30e394"
+  },
+  {
+   "text": "Do I need the AI Agent to use the AI Suite or AI Nurture?",
+   "es": "¿Necesito el AI Agent para usar la AI Suite o AI Nurture?",
+   "string": "fb902e6d-dea2-7baf-0ca7-c6dda90471f1",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "8be36848-da2a-a07b-de3b-a4dad74f2d04",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e1c",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "8be36848-da2a-a07b-de3b-a4dad74f2d04"
+  },
+  {
+   "text": "Which nurtures are included?",
+   "es": "¿Qué nurtures están incluidos?",
+   "string": "e7f044e3-2703-89ec-883e-8cb30d50c43d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "2d019a4b-f3b6-9d58-8bbf-76efcebe5d87",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e24",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "2d019a4b-f3b6-9d58-8bbf-76efcebe5d87"
+  },
+  {
+   "text": "Are nurtures available in Spanish?",
+   "es": "¿Los nurtures están disponibles en español?",
+   "string": "a236e6c3-cd93-7f1d-8258-609c39fda64e",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "69cbcfa7-9c0e-a32e-d337-1c02c9c9b4b1",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e2c",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "69cbcfa7-9c0e-a32e-d337-1c02c9c9b4b1"
+  },
+  {
+   "text": "Is training included?",
+   "es": "¿La capacitación está incluida?",
+   "string": "1bff6a3f-9cdd-3a7a-2852-cf977900b302",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "23cdce53-038e-7b75-5f2c-a86272321fa4",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e34",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "23cdce53-038e-7b75-5f2c-a86272321fa4"
+  },
+  {
+   "text": "Does DNC checking make my outreach compliant?",
+   "es": "¿La revisión DNC hace que mi contacto con leads cumpla la normativa?",
+   "string": "db5ded20-3490-b70c-8b64-e3a3ea08d43d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "c52ca198-3837-4088-e3c3-bb79e3118c18",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e3c",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "c52ca198-3837-4088-e3c3-bb79e3118c18"
+  },
+  {
+   "text": "Are AI Projections a guarantee?",
+   "es": "¿Las AI Projections son una garantía?",
+   "string": "74481f16-4dc4-03e8-decb-6b70e4004ae7",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "2ee987a2-0933-0cfd-7860-3fd076665d77",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e44",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "2ee987a2-0933-0cfd-7860-3fd076665d77"
+  },
+  {
+   "text": "How accurate is AI Underwriting?",
+   "es": "¿Qué tan preciso es AI Underwriting?",
+   "string": "e9f8d6d4-dd9f-512a-ea99-cdd01656e2b4",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "DOM:details",
+    "DOM:summary",
+    "Heading.kd-q"
+   ],
+   "parent": "8bcd385c-100f-54be-2158-e6f17c3df262",
+   "gp": "96d23890-5720-04a1-55d1-c621b6d84e4c",
+   "parent_type": "Heading.kd-q",
+   "gp_type": "DOM:summary",
+   "n_sib": 1,
+   "gp_children": [
+    "Heading.kd-q"
+   ],
+   "node": "8bcd385c-100f-54be-2158-e6f17c3df262"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "1 · The call",
+   "es": "1 · La llamada",
+   "string": "e06f8c68-2d46-99b1-16f1-6bb01b860a02",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "parent": "37e7ce2a-37e8-d241-bec1-89412d8e3c93",
+   "gp": "212e58ac-f675-562c-9a00-3dda989b97e9",
+   "parent_type": "DOM:button.flow__step",
+   "gp_type": "Block:div.flow__steps",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:button.flow__step",
+    "DOM:button.flow__step",
+    "DOM:button.flow__step"
+   ]
+  },
+  {
+   "text": "2 · Structured notes",
+   "es": "2 · Notas estructuradas",
+   "string": "4df60aff-229f-dcb2-4260-13c4ad572a6d",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "parent": "a2fc70b1-1048-6527-c70d-1627538735aa",
+   "gp": "212e58ac-f675-562c-9a00-3dda989b97e9",
+   "parent_type": "DOM:button.flow__step",
+   "gp_type": "Block:div.flow__steps",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:button.flow__step",
+    "DOM:button.flow__step",
+    "DOM:button.flow__step"
+   ]
+  },
+  {
+   "text": "3 · Coaching feedback",
+   "es": "3 · Retroalimentación de coaching",
+   "string": "8191dee6-278d-9843-0959-821b176d6baa",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.flow__bar",
+    "Block:div.flow__steps",
+    "DOM:button.flow__step"
+   ],
+   "parent": "f860e645-927a-f3fc-1fb1-77d00156d90f",
+   "gp": "212e58ac-f675-562c-9a00-3dda989b97e9",
+   "parent_type": "DOM:button.flow__step",
+   "gp_type": "Block:div.flow__steps",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:button.flow__step",
+    "DOM:button.flow__step",
+    "DOM:button.flow__step"
+   ]
+  },
+  {
+   "text": "Play walkthrough",
+   "es": "Reproducir recorrido",
+   "string": "dac28998-89dc-46bc-f653-28c50790de30",
+   "comp": "6afa6c72b8bbfbdd8948a38f",
+   "chain": [
+    "Block:div.flow.tone-suite",
+    "Block:div.flow__bar",
+    "DOM:button.btn.btn--ghost.btn--sm"
+   ],
+   "parent": "3201d736-3150-95e0-7e56-1d2792d8b62c",
+   "gp": "212e58ac-f675-562c-9a00-3dda989b97ec",
+   "parent_type": "DOM:button.btn.btn--ghost.btn--sm",
+   "gp_type": "Block:div.flow__bar",
+   "n_sib": 1,
+   "gp_children": [
+    "Block:div.flow__steps",
+    "DOM:button.btn.btn--ghost.btn--sm"
+   ]
+  }
+ ]
+}

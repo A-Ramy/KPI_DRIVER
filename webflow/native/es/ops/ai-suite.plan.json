@@ -1,0 +1,3711 @@
+{
+ "builder": [
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9031c",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9031c"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9031c"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9031f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9031f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Lead Managers, Acquisition Managers and anyone who takes seller calls."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9031f"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90323",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90323"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90323"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90326",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90326"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Capture what was said on a call and keep the CRM record current without manual entry."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90326"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9032a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9032a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9032a"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9032d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9032d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Your recorded calls."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9032d"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90331",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90331"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90331"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90334",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90334"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Logged call details, structured notes, the right fields filled, and an updated CRM record."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90334"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90338",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90338"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90338"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9033b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9033b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Follow-ups start from a clean record, and nobody spends the evening typing notes."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9033b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9033f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9033f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9033f"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90342",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90342"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Writes into the CRM record that your pipelines and KPIs already use."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90342"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90352",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90352"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90352"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90355",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90355"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Sales managers and owners who coach Lead and Acquisition Managers."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90355"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90359",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90359"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90359"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9035c",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9035c"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Review calls consistently without listening to each one end to end."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9035c"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90360",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90360"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90360"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90363",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90363"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Calls made by your Lead and Acquisition Managers."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90363"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90367",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90367"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90367"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9036a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9036a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "A score for each call using 30+ dynamic scoring structures with tiered deductions, plus daily, weekly and monthly reports on strengths and weak spots."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9036a"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9036e",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9036e"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9036e"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90371",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90371"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Coaching time goes to the specific skill each person needs to work on."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90371"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90375",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90375"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90375"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90378",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90378"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Works on the same conversations AI Notes Taker captures."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90378"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90388",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90388"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90388"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9038b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9038b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "New hires and experienced reps sharpening their skills."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9038b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9038f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9038f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9038f"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90392",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90392"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Rehearse seller conversations and get feedback straight away."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90392"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90396",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90396"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90396"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e90399",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90399"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Practice sessions across 10+ different scenarios each day."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90399"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e9039d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9039d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9039d"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e903a0",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e903a0"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Feedback on communication, objection handling and overall conversion skills."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e903a0"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e903a4",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e903a4"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e903a4"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e903a7",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e903a7"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Reps make their mistakes in practice, not on a live seller."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e903a7"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e903ab",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e903ab"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e903ab"
+    }
+   ]
+  },
+  {
+   "build_label": "A:e1318e6a-b858-0b45-28ba-e535c6e903ae",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e903ae"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Complements the AI Sales Coach: one trains, the other reviews real calls."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e903ae"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d961",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d961"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Illustrative preview · sample data"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d961"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d96f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d96f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d96f"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d972",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d972"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Acquisition Managers and underwriters evaluating a property."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d972"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d976",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d976"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d976"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d979",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d979"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Build an underwriting analysis for a property from the information you have."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d979"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d97d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d97d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d97d"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d980",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d980"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Multiple data sources, with a mode for however much data is available, plus property photos."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d980"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d984",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d984"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d984"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d987",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d987"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "An analysis that reads condition from photos and lets you add or remove comps and notes, then rerun it at any time."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d987"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d98b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d98b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d98b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d98e",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d98e"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "A consistent starting point for every deal, which you adjust with your own judgment."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d98e"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d992",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d992"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d992"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d995",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d995"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Supports the offer decisions your Acquisitions pipeline tracks."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d995"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a5",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a5"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a5"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a8",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a8"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Lead Managers and marketers building or cleaning contact lists."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a8"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ac",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ac"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ac"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9af",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9af"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Find contact details for a property owner and screen existing contacts."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9af"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b3",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b3"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b3"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b6",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b6"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "An address, an APN, or an address plus owner name."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9b6"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ba",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ba"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ba"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9bd",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9bd"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Phone numbers and emails, and a DNC check of your existing contacts, from one dropdown in your CRM."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9bd"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c1",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c1"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c1"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c4",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c4"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Contact discovery happens where the lead lives, not in a separate tool."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c4"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c8",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c8"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9c8"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9cb",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9cb"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Runs from inside the CRM. DNC checking supports your process and is not a guarantee of compliant outreach."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9cb"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9db",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9db"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9db"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9de",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9de"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Anyone working a lead that arrived with thin property data."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9de"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e2",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e2"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e2"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e5",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e5"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Fill in property information on a CRM record."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e5"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e9",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e9"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9e9"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ec",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ec"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The property address."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9ec"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f0",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f0"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f0"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f3",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f3"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Available property data added to your CRM fields, with a view of exactly which fields changed."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f3"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f7",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f7"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9f7"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fa",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fa"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Better-informed conversations and underwriting, with no guessing about what was updated."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fa"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fe",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fe"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9fe"
+    }
+   ]
+  },
+  {
+   "build_label": "A:c2dec4d2-f5c7-5ebe-0117-9ddf0206da01",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206da01"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Feeds the same CRM fields your team and the other tools read."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206da01"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464cef",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cef"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Illustrative preview · sample data"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cef"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464cfd",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cfd"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cfd"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d00",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d00"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Owners and managers who run the business on its numbers."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d00"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d04",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d04"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d04"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d07",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d07"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "See KPIs and accounting in one place."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d07"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d0b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d0b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d0b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d0e",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d0e"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Your CRM activity and accounting information."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d0e"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d12",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d12"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d12"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d15",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d15"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Additional KPI visibility, plus a full accounting section."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d15"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d19",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d19"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d19"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d1c",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d1c"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Opportunities and inefficiencies show up earlier."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d1c"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d20",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d20"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d20"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d23",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d23"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Builds on the KPI tracking in the CRM."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d23"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d33",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d33"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d33"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d36",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d36"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Owners, managers and operators who want answers without building a report."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d36"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d3a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d3a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d3a"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d3d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d3d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Interact with your CRM and the whole Suite in conversation."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d3d"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d41",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d41"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d41"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d44",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d44"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Your questions and requests."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d44"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d48",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d48"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d48"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d4b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d4b"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Answers drawn from your CRM and Suite, with supported actions taken and routines run for you."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d4b"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d4f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d4f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d4f"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d52",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d52"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Less clicking through screens to find or do something routine."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d52"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d56",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d56"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d56"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d59",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d59"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Talks with the CRM and the rest of the AI Suite."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d59"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d69",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d69"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Who it is for"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d69"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d6c",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d6c"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Owners planning hiring, marketing spend and acquisitions."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d6c"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d70",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d70"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "The task"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d70"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d73",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d73"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Forecast where the business may be heading."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d73"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d77",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d77"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Inputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d77"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d7a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d7a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Your real KPIs, accounting and insights."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d7a"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d7e",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d7e"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Outputs"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d7e"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d81",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d81"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Forecasts for the months ahead."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d81"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d85",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d85"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Why it matters"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d85"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d88",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d88"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Planning starts from your own numbers. Projections are estimates, not guaranteed outcomes."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d88"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d8c",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d8c"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "How it connects"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d8c"
+    }
+   ]
+  },
+  {
+   "build_label": "A:b50f0939-5043-bc32-c498-591008464d8f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d8f"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Uses what the AI Dashboard and AI Insights already know."
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d8f"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e02",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e02"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is the AI Suite available now?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e02"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e0a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e0a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Do I pay a subscription for the AI Suite?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e0a"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e12",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e12"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is AI Suite usage unlimited?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e12"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e1a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e1a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Do I need the AI Agent to use the AI Suite or AI Nurture?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e1a"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e22",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e22"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Which nurtures are included?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e22"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e2a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e2a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Are nurtures available in Spanish?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e2a"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e32",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e32"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is training included?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e32"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e3a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e3a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Does DNC checking make my outreach compliant?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e3a"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e42",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e42"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Are AI Projections a guarantee?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e42"
+    }
+   ]
+  },
+  {
+   "build_label": "B:96d23890-5720-04a1-55d1-c621b6d84e4a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "96d23890-5720-04a1-55d1-c621b6d84e4a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "How accurate is AI Underwriting?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "96d23890-5720-04a1-55d1-c621b6d84e4a"
+    }
+   ]
+  }
+ ],
+ "whtml": [
+  {
+   "build_label": "D:68f18da9-8102-f4a4-da7d-9fe4cdbccb74,68f18da9-8102-f4a4-da7d-9fe4cdbccb77,68f18da9-8102-f4a4-da7d-9fe4cdbccb79",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb74"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--included\">Included</span><strong>Access comes with the Suite</strong><span>Every Enterprise Optimization Suite includes the CRM and access to the AI Suite.</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb74"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb77"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb79"
+    }
+   ]
+  },
+  {
+   "build_label": "D:68f18da9-8102-f4a4-da7d-9fe4cdbccb7c,68f18da9-8102-f4a4-da7d-9fe4cdbccb7f,68f18da9-8102-f4a4-da7d-9fe4cdbccb81",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb7c"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Optional</span><strong>Use a tool when you need it</strong><span>Nothing obliges you to use the AI tools. Turn to them for the tasks where they help.</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb7c"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb7f"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb81"
+    }
+   ]
+  },
+  {
+   "build_label": "D:68f18da9-8102-f4a4-da7d-9fe4cdbccb84,68f18da9-8102-f4a4-da7d-9fe4cdbccb87,68f18da9-8102-f4a4-da7d-9fe4cdbccb89",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb84"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span><strong>Pay for what you use</strong><span>No additional AI Suite subscription. Usage is tracked in a billing dashboard. Rates are covered on your discovery call.</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb84"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb87"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "68f18da9-8102-f4a4-da7d-9fe4cdbccb89"
+    }
+   ]
+  },
+  {
+   "build_label": "D:34e885d6-c381-ce9d-ae8d-d649eb85f54e,11b8b698-58cc-0d92-6821-8e84f921b025",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "34e885d6-c381-ce9d-ae8d-d649eb85f54e"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Situation</span><span>Inherited property</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "34e885d6-c381-ce9d-ae8d-d649eb85f54e"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "11b8b698-58cc-0d92-6821-8e84f921b025"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2517fdae-d0a3-1d68-536b-859449c0c067,84c568c4-36b9-842e-db7e-830055fa321d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2517fdae-d0a3-1d68-536b-859449c0c067"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Condition</span><span>Roof needs repair</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2517fdae-d0a3-1d68-536b-859449c0c067"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "84c568c4-36b9-842e-db7e-830055fa321d"
+    }
+   ]
+  },
+  {
+   "build_label": "D:862ec13e-a60e-accc-2c89-fbfc2a20fcb0,add6c282-1be9-9d85-56f0-e4185984ec05",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "862ec13e-a60e-accc-2c89-fbfc2a20fcb0"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Timeline</span><span>End of summer</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "862ec13e-a60e-accc-2c89-fbfc2a20fcb0"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "add6c282-1be9-9d85-56f0-e4185984ec05"
+    }
+   ]
+  },
+  {
+   "build_label": "D:856b1012-2066-077a-81f4-cee9958342ce,3c89fc7a-b2bb-5c21-4f4c-429b7518c2c3",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "856b1012-2066-077a-81f4-cee9958342ce"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Asking</span><span>$210,000</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "856b1012-2066-077a-81f4-cee9958342ce"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "3c89fc7a-b2bb-5c21-4f4c-429b7518c2c3"
+    }
+   ]
+  },
+  {
+   "build_label": "D:67896172-cd33-9430-d108-2cdf004e0e60,cd849a2a-5775-ecca-4a38-aa341d1b4592",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "67896172-cd33-9430-d108-2cdf004e0e60"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Next step</span><span>Send offer range</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "67896172-cd33-9430-d108-2cdf004e0e60"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "cd849a2a-5775-ecca-4a38-aa341d1b4592"
+    }
+   ]
+  },
+  {
+   "build_label": "D:97e89001-2e13-c568-638f-0203c726fd93",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "97e89001-2e13-c568-638f-0203c726fd93"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Rapport</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "97e89001-2e13-c568-638f-0203c726fd93"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2a52f79c-e16b-d921-2c8c-a5c316f0c557,2a52f79c-e16b-d921-2c8c-a5c316f0c559",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c557"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><strong>Pipelines and KPIs</strong><span>Acquisitions, nurture, dispositions, transaction coordination, rentals</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c557"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c559"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2a52f79c-e16b-d921-2c8c-a5c316f0c560,2a52f79c-e16b-d921-2c8c-a5c316f0c562",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c560"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><strong>Contacts and opportunities</strong><span>Importing, smart lists, tags, custom fields</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c560"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c562"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2a52f79c-e16b-d921-2c8c-a5c316f0c569,2a52f79c-e16b-d921-2c8c-a5c316f0c56b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c569"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><strong>Phones, SMS and email</strong><span>Numbers, dialer, campaigns, snippets</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c569"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c56b"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2a52f79c-e16b-d921-2c8c-a5c316f0c572,2a52f79c-e16b-d921-2c8c-a5c316f0c574",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c572"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><strong>Calendars and forms</strong><span>Booking, forms, surveys, funnels</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c572"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c574"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2a52f79c-e16b-d921-2c8c-a5c316f0c57b,2a52f79c-e16b-d921-2c8c-a5c316f0c57d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c57b"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><strong>Dashboards and reporting</strong><span>KPI dashboard, call and appointment reports</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c57b"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c57d"
+    }
+   ]
+  },
+  {
+   "build_label": "D:2a52f79c-e16b-d921-2c8c-a5c316f0c584,2a52f79c-e16b-d921-2c8c-a5c316f0c586",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c584"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><strong>Documents and setup</strong><span>Signatures, users, access levels</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c584"
+    },
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "2a52f79c-e16b-d921-2c8c-a5c316f0c586"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e1318e6a-b858-0b45-28ba-e535c6e90314",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90314"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 01 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90314"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e1318e6a-b858-0b45-28ba-e535c6e9031a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9031a"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9031a"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e1318e6a-b858-0b45-28ba-e535c6e9034a",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e9034a"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 02 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e9034a"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e1318e6a-b858-0b45-28ba-e535c6e90350",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90350"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90350"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e1318e6a-b858-0b45-28ba-e535c6e90380",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90380"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 03 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90380"
+    }
+   ]
+  },
+  {
+   "build_label": "C:e1318e6a-b858-0b45-28ba-e535c6e90386",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "e1318e6a-b858-0b45-28ba-e535c6e90386"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "e1318e6a-b858-0b45-28ba-e535c6e90386"
+    }
+   ]
+  },
+  {
+   "build_label": "C:c2dec4d2-f5c7-5ebe-0117-9ddf0206d967",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d967"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 04 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d967"
+    }
+   ]
+  },
+  {
+   "build_label": "C:c2dec4d2-f5c7-5ebe-0117-9ddf0206d96d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d96d"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d96d"
+    }
+   ]
+  },
+  {
+   "build_label": "C:c2dec4d2-f5c7-5ebe-0117-9ddf0206d99d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d99d"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 05 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d99d"
+    }
+   ]
+  },
+  {
+   "build_label": "C:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a3",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a3"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9a3"
+    }
+   ]
+  },
+  {
+   "build_label": "C:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9d3",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9d3"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 06 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9d3"
+    }
+   ]
+  },
+  {
+   "build_label": "C:c2dec4d2-f5c7-5ebe-0117-9ddf0206d9d9",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9d9"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "c2dec4d2-f5c7-5ebe-0117-9ddf0206d9d9"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464cd0",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cd0"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Revenue, month</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cd0"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464cd6",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cd6"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Net margin</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cd6"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464cdc",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cdc"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Deals closed</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cdc"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464cf5",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cf5"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 07 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cf5"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464cfb",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464cfb"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464cfb"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464d2b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d2b"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 08 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d2b"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464d31",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d31"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d31"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464d61",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d61"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"spec__num\">TOOL 09 / 09</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d61"
+    }
+   ]
+  },
+  {
+   "build_label": "C:b50f0939-5043-bc32-c498-591008464d67",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "b50f0939-5043-bc32-c498-591008464d67"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Pay-as-you-go</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "b50f0939-5043-bc32-c498-591008464d67"
+    }
+   ]
+  },
+  {
+   "build_label": "C:212e58ac-f675-562c-9a00-3dda989b9822",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "212e58ac-f675-562c-9a00-3dda989b9822"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Motivation discovery</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "212e58ac-f675-562c-9a00-3dda989b9822"
+    }
+   ]
+  },
+  {
+   "build_label": "C:212e58ac-f675-562c-9a00-3dda989b982b",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "212e58ac-f675-562c-9a00-3dda989b982b"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span>Objection handling</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "212e58ac-f675-562c-9a00-3dda989b982b"
+    }
+   ]
+  },
+  {
+   "build_label": "C:44b08991-080a-0d8f-5f76-1ca3f951626d",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "44b08991-080a-0d8f-5f76-1ca3f951626d"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge badge--included\">No AI Agent needed</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "44b08991-080a-0d8f-5f76-1ca3f951626d"
+    }
+   ]
+  },
+  {
+   "build_label": "C:44b08991-080a-0d8f-5f76-1ca3f951627f",
+   "parent_element_id": {
+    "component": "6afa6c72b8bbfbdd8948a38f",
+    "element": "44b08991-080a-0d8f-5f76-1ca3f951627f"
+   },
+   "creation_position": "before",
+   "html": "<div class=\"kd-t\"><span class=\"badge\">Built into the pipeline</span></div>",
+   "remove": [
+    {
+     "component": "6afa6c72b8bbfbdd8948a38f",
+     "element": "44b08991-080a-0d8f-5f76-1ca3f951627f"
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "1 · The call",
+  "2 · Structured notes",
+  "3 · Coaching feedback",
+  "Play walkthrough"
+ ],
+ "other": []
+}

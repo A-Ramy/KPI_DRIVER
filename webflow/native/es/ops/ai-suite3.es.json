@@ -1,0 +1,642 @@
+[
+ {
+  "nodeId": "02b6cd0e-8658-9a48-d732-0ebd4b4980d1",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--included\" data-w-id=\"02b6cd0e-8658-9a48-d732-0ebd4b4980cc\">Incluido</span><strong data-w-id=\"02b6cd0e-8658-9a48-d732-0ebd4b4980ce\">El acceso viene con la Suite</strong><span data-w-id=\"02b6cd0e-8658-9a48-d732-0ebd4b4980d0\">Cada Enterprise Optimization Suite incluye el CRM y el acceso a la AI Suite.</span></div>"
+ },
+ {
+  "nodeId": "a1cd814e-23be-92bb-103a-ea66608d66d4",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"a1cd814e-23be-92bb-103a-ea66608d66cf\">Opcional</span><strong data-w-id=\"a1cd814e-23be-92bb-103a-ea66608d66d1\">Usa una herramienta cuando la necesites</strong><span data-w-id=\"a1cd814e-23be-92bb-103a-ea66608d66d3\">Nada te obliga a usar las herramientas de IA. Recurre a ellas en las tareas donde ayudan.</span></div>"
+ },
+ {
+  "nodeId": "b641b717-60ba-ad94-21d5-b2c476bd65e3",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"b641b717-60ba-ad94-21d5-b2c476bd65de\">Pago por uso</span><strong data-w-id=\"b641b717-60ba-ad94-21d5-b2c476bd65e0\">Paga por lo que usas</strong><span data-w-id=\"b641b717-60ba-ad94-21d5-b2c476bd65e2\">Sin suscripción adicional por la AI Suite. El uso se registra en un panel de facturación. Las tarifas se ven en tu llamada de descubrimiento.</span></div>"
+ },
+ {
+  "nodeId": "d3403745-9872-b508-83b1-34b151007df6",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"d3403745-9872-b508-83b1-34b151007df5\">HERRAMIENTA 01 / 09</span></div>"
+ },
+ {
+  "nodeId": "eceaa123-aceb-a98b-26f4-dba21d800291",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"eceaa123-aceb-a98b-26f4-dba21d800290\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "844a410b-60af-b2a3-54cb-7d7af4c136ae",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "ab99120b-ae05-4957-6756-ce0eee52aab6",
+  "text": "<div class=\"kd-t\">Gerentes de leads, gerentes de adquisiciones y cualquier persona que atienda llamadas de vendedores.</div>"
+ },
+ {
+  "nodeId": "a8339e45-1165-3a68-5e47-9a8884bc01e3",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "f6a3feb7-b2f7-938d-7b8b-abc50dc557d7",
+  "text": "<div class=\"kd-t\">Capturar lo que se dijo en una llamada y mantener al día el registro del CRM sin captura manual.</div>"
+ },
+ {
+  "nodeId": "25199278-6b6f-a621-5ad9-67df05e1a2c7",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "da992275-1a44-87f5-0550-0bb13402a65f",
+  "text": "<div class=\"kd-t\">Tus llamadas grabadas.</div>"
+ },
+ {
+  "nodeId": "ef31b8a1-b17d-ad0b-629f-41b8c62adb11",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "25661979-9f06-4368-aa14-2386115cd1a5",
+  "text": "<div class=\"kd-t\">Detalles de la llamada registrados, notas estructuradas, los campos correctos llenos y un registro del CRM actualizado.</div>"
+ },
+ {
+  "nodeId": "075959f6-ba27-f85a-5be0-a251f5611dde",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "f54ba3ed-c19d-40a2-5053-645c39372976",
+  "text": "<div class=\"kd-t\">Los seguimientos parten de un registro limpio y nadie pasa la tarde escribiendo notas.</div>"
+ },
+ {
+  "nodeId": "3243690c-5023-a186-2601-a84d24c14fa6",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "cba0631f-b375-aac5-91f6-ca96f3633b6a",
+  "text": "<div class=\"kd-t\">Escribe en el registro del CRM que tus pipelines y KPIs ya usan.</div>"
+ },
+ {
+  "nodeId": "b40f7707-1f45-f94e-b6fc-dbabc12d9ac3",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"b40f7707-1f45-f94e-b6fc-dbabc12d9ac2\">HERRAMIENTA 02 / 09</span></div>"
+ },
+ {
+  "nodeId": "757074bc-4ea9-8245-7f13-361a6c95ab87",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"757074bc-4ea9-8245-7f13-361a6c95ab86\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "8b9f4b3b-821b-132f-a33c-b6e1bf4674f2",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "0cbe9354-448b-dd89-26fc-4347c740e9c6",
+  "text": "<div class=\"kd-t\">Gerentes de ventas y dueños que entrenan a gerentes de leads y de adquisiciones.</div>"
+ },
+ {
+  "nodeId": "ae9130d9-fbf2-99fb-ca03-a83a69838f9f",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "186a12d1-1a48-1e3e-7723-9f3832afa688",
+  "text": "<div class=\"kd-t\">Revisar llamadas de forma consistente sin escuchar cada una de principio a fin.</div>"
+ },
+ {
+  "nodeId": "66f4aa21-adc5-2430-6d93-00b43a6df079",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "790e1756-b39c-d645-75e5-5f37fd445fe7",
+  "text": "<div class=\"kd-t\">Las llamadas de tus gerentes de leads y de adquisiciones.</div>"
+ },
+ {
+  "nodeId": "2265dd90-9d2f-5ea8-dca8-b8ef0e5e793c",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "1890ee7d-d0c7-3d2a-366c-fdfe00c4f9de",
+  "text": "<div class=\"kd-t\">Una calificación por llamada con más de 30 estructuras dinámicas de puntuación y deducciones escalonadas, además de reportes diarios, semanales y mensuales sobre fortalezas y puntos débiles.</div>"
+ },
+ {
+  "nodeId": "e625acba-e1b3-15f0-a9c9-5caed85d0e0b",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "6d4fc677-67a6-67a3-4b13-6af880934c19",
+  "text": "<div class=\"kd-t\">El tiempo de coaching se dedica a la habilidad específica que cada persona necesita trabajar.</div>"
+ },
+ {
+  "nodeId": "389f1728-f709-6748-de5c-c5598ecc4bbc",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "94d2ce2a-a3e3-53eb-de32-5a9ed3ba65ab",
+  "text": "<div class=\"kd-t\">Trabaja sobre las mismas conversaciones que captura AI Notes Taker.</div>"
+ },
+ {
+  "nodeId": "db0e6a5d-cf80-2c73-5deb-7a6c74d0cab5",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"db0e6a5d-cf80-2c73-5deb-7a6c74d0cab4\">HERRAMIENTA 03 / 09</span></div>"
+ },
+ {
+  "nodeId": "370f1625-a52d-edbb-77b2-e85671e0dff2",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"370f1625-a52d-edbb-77b2-e85671e0dff1\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "f536779d-faf0-9e83-883b-edf580f28d14",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "f9e7dfd7-4a99-b30a-0bd4-0f9c3c539a96",
+  "text": "<div class=\"kd-t\">Nuevos integrantes y representantes con experiencia que afinan sus habilidades.</div>"
+ },
+ {
+  "nodeId": "031e3a9a-2e76-dacb-0c7a-2ff0104509a7",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "6708d947-3b89-637a-41e1-fd2a86af272e",
+  "text": "<div class=\"kd-t\">Ensayar conversaciones con vendedores y recibir retroalimentación al momento.</div>"
+ },
+ {
+  "nodeId": "a37d3607-4c29-2a67-566a-fdee27f66937",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "8990c5d8-b680-6c2f-4bd0-35054aeff2e5",
+  "text": "<div class=\"kd-t\">Sesiones de práctica con más de 10 escenarios distintos cada día.</div>"
+ },
+ {
+  "nodeId": "06004a2e-d650-b123-b0cf-f8bb44b12581",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "d5771d57-831d-0de1-944e-bee5f18d1478",
+  "text": "<div class=\"kd-t\">Retroalimentación sobre comunicación, manejo de objeciones y habilidades generales de conversión.</div>"
+ },
+ {
+  "nodeId": "2f225324-ac80-afe0-8606-9453d16d02f0",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "a5f47301-ce7d-ef68-8dc6-d0b239b57255",
+  "text": "<div class=\"kd-t\">Los representantes cometen sus errores en la práctica, no con un vendedor real.</div>"
+ },
+ {
+  "nodeId": "354930ad-e1bc-dbb9-3964-608211374cc1",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "61561e76-1371-fab5-1d27-04e9185acea9",
+  "text": "<div class=\"kd-t\">Complementa al AI Sales Coach: uno entrena, el otro revisa llamadas reales.</div>"
+ },
+ {
+  "nodeId": "938fd359-11eb-4488-964f-947b01fccc43",
+  "text": "<div class=\"kd-t\">Vista ilustrativa · datos de ejemplo</div>"
+ },
+ {
+  "nodeId": "be8fdbf3-1f10-4568-a16d-7dd49c9c319a",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"be8fdbf3-1f10-4568-a16d-7dd49c9c3199\">HERRAMIENTA 04 / 09</span></div>"
+ },
+ {
+  "nodeId": "fda6e983-3822-de3b-181d-d18c5495eb71",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"fda6e983-3822-de3b-181d-d18c5495eb70\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "4f3bca36-e831-aa1f-9d29-9d5af273cb40",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "9ebf148b-72dc-107e-ec40-3af37c87959b",
+  "text": "<div class=\"kd-t\">Gerentes de adquisiciones y analistas que evalúan una propiedad.</div>"
+ },
+ {
+  "nodeId": "17d91ddb-848a-074b-d754-c595a199e363",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "3a3e58d6-fec4-f2d2-b216-4788e8107817",
+  "text": "<div class=\"kd-t\">Armar un análisis de underwriting de una propiedad con la información que tengas.</div>"
+ },
+ {
+  "nodeId": "996db117-350f-9552-0f27-1ddf75630c97",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "b2b54f24-c831-a5e9-38db-5310dac6f679",
+  "text": "<div class=\"kd-t\">Varias fuentes de datos, con un modo según la cantidad de datos disponibles, además de fotos de la propiedad.</div>"
+ },
+ {
+  "nodeId": "884f7303-f0cc-27ff-51af-5001fca31273",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "06ec5f58-a57c-d57a-9d5e-b73a8182260d",
+  "text": "<div class=\"kd-t\">Un análisis que estima la condición a partir de fotos y te permite agregar o quitar comparables y notas, y volver a correrlo cuando quieras.</div>"
+ },
+ {
+  "nodeId": "85150db7-aa74-2e80-a498-d499ad5b119e",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "d059dd6c-cb52-d1ee-e7e2-476987f16836",
+  "text": "<div class=\"kd-t\">Un punto de partida consistente para cada trato, que ajustas con tu propio criterio.</div>"
+ },
+ {
+  "nodeId": "ce943bdd-7cec-bce6-d645-30d13d9c7659",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "5f4fb97a-803a-721b-152e-339396c551c9",
+  "text": "<div class=\"kd-t\">Respalda las decisiones de oferta que sigue tu pipeline de Adquisiciones.</div>"
+ },
+ {
+  "nodeId": "ac9ea3fc-01c9-d71b-b194-4c347161e45d",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"ac9ea3fc-01c9-d71b-b194-4c347161e45c\">HERRAMIENTA 05 / 09</span></div>"
+ },
+ {
+  "nodeId": "5fb3969e-c70c-857e-3a77-fb385b698a24",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"5fb3969e-c70c-857e-3a77-fb385b698a23\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "d833a509-c879-a127-d3a4-dcab37d5f1a2",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "c6f9f50b-b3ae-346f-3760-ca71f0da77c4",
+  "text": "<div class=\"kd-t\">Gerentes de leads y equipos de marketing que arman o depuran listas de contactos.</div>"
+ },
+ {
+  "nodeId": "b5a5505f-833e-bd10-9791-1cbacc3b13b3",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "072b3b0f-bf3e-174c-fe96-1b9cfb5cb877",
+  "text": "<div class=\"kd-t\">Encontrar los datos de contacto del dueño de una propiedad y filtrar contactos existentes.</div>"
+ },
+ {
+  "nodeId": "bfed921c-686d-f9ac-86c0-2e5a0ce16d20",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "3bca36bb-433b-28a3-146a-6f8c65bf8102",
+  "text": "<div class=\"kd-t\">Una dirección, un APN o una dirección más el nombre del dueño.</div>"
+ },
+ {
+  "nodeId": "59cd6ec0-e1bd-a7c8-f268-30e5478c7e27",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "2d952552-34c9-a1a9-fc1c-34dc5dcd077b",
+  "text": "<div class=\"kd-t\">Teléfonos y correos, y una revisión DNC de tus contactos existentes, desde un solo menú en tu CRM.</div>"
+ },
+ {
+  "nodeId": "fe9544be-4008-9689-0c76-1b7b6c43afb5",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "82609d6e-a673-6131-961a-9ad17e750350",
+  "text": "<div class=\"kd-t\">La búsqueda de contactos ocurre donde vive el lead, no en una herramienta aparte.</div>"
+ },
+ {
+  "nodeId": "1a525f94-9ea9-4b92-dbb3-be3a683a6189",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "8464d7d8-1041-e596-345c-fc381e46ad88",
+  "text": "<div class=\"kd-t\">Funciona dentro del CRM. La revisión DNC apoya tu proceso y no garantiza el cumplimiento normativo.</div>"
+ },
+ {
+  "nodeId": "accef16f-00b7-a6e3-e594-234361cc5c9e",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"accef16f-00b7-a6e3-e594-234361cc5c9d\">HERRAMIENTA 06 / 09</span></div>"
+ },
+ {
+  "nodeId": "5e451038-4438-1720-1ce3-6d2604ff1fab",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"5e451038-4438-1720-1ce3-6d2604ff1faa\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "1830400e-a013-10fd-3ccf-8a12102373cf",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "96931621-3dc6-fbe1-939f-87acd4161923",
+  "text": "<div class=\"kd-t\">Cualquiera que trabaje un lead que llegó con pocos datos de la propiedad.</div>"
+ },
+ {
+  "nodeId": "eed29a0d-27d3-2fe2-1478-06acf4aadbbc",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "ba557308-cdde-877c-8d70-2a42e757b023",
+  "text": "<div class=\"kd-t\">Completar la información de la propiedad en un registro del CRM.</div>"
+ },
+ {
+  "nodeId": "9e22ed8a-51ea-9827-7024-f489c58444fd",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "e24f2de8-d104-a324-67e1-9066bea540d5",
+  "text": "<div class=\"kd-t\">La dirección de la propiedad.</div>"
+ },
+ {
+  "nodeId": "32cf1b13-d9af-7b99-7af4-2b27c0fc68aa",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "099c8b0a-aec2-1c35-d8c4-4bc45bcd7eb5",
+  "text": "<div class=\"kd-t\">Datos disponibles de la propiedad agregados a los campos de tu CRM, con una vista de exactamente qué campos cambiaron.</div>"
+ },
+ {
+  "nodeId": "2ccce00a-50e2-0a5c-4926-ac6a416a6572",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "be32c068-d94b-85ec-6f06-aaed84088e18",
+  "text": "<div class=\"kd-t\">Conversaciones y underwriting mejor informados, sin adivinar qué se actualizó.</div>"
+ },
+ {
+  "nodeId": "ea2b9d8e-46b6-55ad-ce78-2ab67a44a81d",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "c85b7842-9446-3a77-ff37-5e9f843fdf1f",
+  "text": "<div class=\"kd-t\">Alimenta los mismos campos del CRM que leen tu equipo y las demás herramientas.</div>"
+ },
+ {
+  "nodeId": "e45cea92-5480-4e5f-d162-8ed1d7db541a",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"e45cea92-5480-4e5f-d162-8ed1d7db5419\">Ingresos del mes</span></div>"
+ },
+ {
+  "nodeId": "4118e6c1-5cc1-2ec1-d38c-11553d1eb17d",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"4118e6c1-5cc1-2ec1-d38c-11553d1eb17c\">Margen neto</span></div>"
+ },
+ {
+  "nodeId": "4bee367f-2d05-822f-3821-59beb9edfefd",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"4bee367f-2d05-822f-3821-59beb9edfefc\">Tratos cerrados</span></div>"
+ },
+ {
+  "nodeId": "663f4250-aabb-69b0-5ab4-83ee20b6dbf1",
+  "text": "<div class=\"kd-t\">Vista ilustrativa · datos de ejemplo</div>"
+ },
+ {
+  "nodeId": "45ea55e4-4b6d-6b2d-b91b-43e02fff1132",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"45ea55e4-4b6d-6b2d-b91b-43e02fff1131\">HERRAMIENTA 07 / 09</span></div>"
+ },
+ {
+  "nodeId": "9cc8c033-1b88-1d01-49d0-dbc7c38fa82b",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"9cc8c033-1b88-1d01-49d0-dbc7c38fa82a\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "b22f6a90-53b6-d54c-3643-74dd7fb924dd",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "62f0123f-0e87-bf3f-dd68-98fcfcbdf97a",
+  "text": "<div class=\"kd-t\">Dueños y gerentes que manejan el negocio con sus números.</div>"
+ },
+ {
+  "nodeId": "023bbd44-9a96-c03c-d8c4-361bde8477af",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "e5023788-354e-d769-0736-542802ada436",
+  "text": "<div class=\"kd-t\">Ver KPIs y contabilidad en un solo lugar.</div>"
+ },
+ {
+  "nodeId": "90d148d1-d144-14f6-e669-36a43ddfda0c",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "377a69f6-f504-6dd3-c367-2611566d5e95",
+  "text": "<div class=\"kd-t\">La actividad de tu CRM y tu información contable.</div>"
+ },
+ {
+  "nodeId": "dfb66506-05fb-306a-4fe8-0d677da4bd47",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "728c680f-787b-5bec-d556-4e4d36285fc2",
+  "text": "<div class=\"kd-t\">Más visibilidad de KPIs y una sección completa de contabilidad.</div>"
+ },
+ {
+  "nodeId": "da0786e8-d79d-2397-21d8-029395cf1f5d",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "deaff0fa-56d7-e1aa-8dbe-3a58a736c3ee",
+  "text": "<div class=\"kd-t\">Las oportunidades y las ineficiencias aparecen antes.</div>"
+ },
+ {
+  "nodeId": "ec1cd78b-194b-5a31-c699-de0f67ded375",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "9475703e-5954-2a50-9aff-6361e64fa77d",
+  "text": "<div class=\"kd-t\">Se apoya en el seguimiento de KPIs del CRM.</div>"
+ },
+ {
+  "nodeId": "aaf27fcc-be83-d411-e1d4-87349671254d",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"aaf27fcc-be83-d411-e1d4-87349671254c\">HERRAMIENTA 08 / 09</span></div>"
+ },
+ {
+  "nodeId": "7f676085-3e46-abe6-a1f9-a11918596579",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"7f676085-3e46-abe6-a1f9-a11918596578\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "f01a8993-b440-f3fd-5ddd-5b97661bfb50",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "6eb34fd3-ff80-cd28-6224-46db4e5ea28c",
+  "text": "<div class=\"kd-t\">Dueños, gerentes y operadores que quieren respuestas sin armar un reporte.</div>"
+ },
+ {
+  "nodeId": "8ee9f29c-22e8-da7f-757d-fb5d6ac18e6c",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "d0a7e3f8-a091-1517-a0e3-53ca222ba67f",
+  "text": "<div class=\"kd-t\">Interactuar con tu CRM y con toda la Suite en una conversación.</div>"
+ },
+ {
+  "nodeId": "ac2c23ec-dd81-228d-9a53-6e46b33b209c",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "58d606e0-5d5d-d29f-97e4-6631a2ce5e60",
+  "text": "<div class=\"kd-t\">Tus preguntas y solicitudes.</div>"
+ },
+ {
+  "nodeId": "f98168ca-054d-03fd-ec58-b0293b805bf2",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "124185b8-0ce9-a8af-182b-7587f1a41df1",
+  "text": "<div class=\"kd-t\">Respuestas tomadas de tu CRM y de la Suite, con acciones compatibles ejecutadas y rutinas corridas por ti.</div>"
+ },
+ {
+  "nodeId": "b764554b-5757-9c88-9f12-c02be85a53e5",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "086d4326-9bb9-06c3-7413-3f0f93ed9dcc",
+  "text": "<div class=\"kd-t\">Menos clics entre pantallas para encontrar o hacer algo rutinario.</div>"
+ },
+ {
+  "nodeId": "38907674-83a3-9c1d-379a-2e0beb715cc8",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "9e2cbcbe-85d4-53d3-727d-3c0ec25ceb8c",
+  "text": "<div class=\"kd-t\">Habla con el CRM y con el resto de la AI Suite.</div>"
+ },
+ {
+  "nodeId": "94e5f25e-7f02-03ed-dc5c-a3ff6e12d238",
+  "text": "<div class=\"kd-t\"><span class=\"spec__num\" data-w-id=\"94e5f25e-7f02-03ed-dc5c-a3ff6e12d237\">HERRAMIENTA 09 / 09</span></div>"
+ },
+ {
+  "nodeId": "d473ff3e-3e13-ecec-4334-9b1f298ab5bb",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"d473ff3e-3e13-ecec-4334-9b1f298ab5ba\">Pago por uso</span></div>"
+ },
+ {
+  "nodeId": "34080e59-fa2d-42d6-ad4a-93bab5b99afb",
+  "text": "<div class=\"kd-t\">Para quién es</div>"
+ },
+ {
+  "nodeId": "67f1a341-3e14-2f2b-436d-502aa6a1499f",
+  "text": "<div class=\"kd-t\">Dueños que planean contrataciones, inversión en marketing y adquisiciones.</div>"
+ },
+ {
+  "nodeId": "89ae20bd-ec69-1df2-c15a-d4d1ed801892",
+  "text": "<div class=\"kd-t\">La tarea</div>"
+ },
+ {
+  "nodeId": "8469522a-2575-fab6-cd66-4d2ba0ffa3e9",
+  "text": "<div class=\"kd-t\">Proyectar hacia dónde puede ir el negocio.</div>"
+ },
+ {
+  "nodeId": "1bc476e1-ebda-0a63-1047-b2d38d70c604",
+  "text": "<div class=\"kd-t\">Entradas</div>"
+ },
+ {
+  "nodeId": "58f4c765-dae8-cc9f-3fda-ea1b57358d1f",
+  "text": "<div class=\"kd-t\">Tus KPIs reales, tu contabilidad y tus insights.</div>"
+ },
+ {
+  "nodeId": "c94dd671-fe91-e627-81e9-4014e2849b71",
+  "text": "<div class=\"kd-t\">Salidas</div>"
+ },
+ {
+  "nodeId": "d5f5ccd8-30fe-f9c7-b6aa-a128c0e7ec9c",
+  "text": "<div class=\"kd-t\">Proyecciones para los próximos meses.</div>"
+ },
+ {
+  "nodeId": "4cfa17dd-87e7-3df6-2d49-fcccbdbd4b58",
+  "text": "<div class=\"kd-t\">Por qué importa</div>"
+ },
+ {
+  "nodeId": "0d14ac99-c7ec-b2bc-8ee6-e48d68eb4c10",
+  "text": "<div class=\"kd-t\">La planeación parte de tus propios números. Las proyecciones son estimaciones, no resultados garantizados.</div>"
+ },
+ {
+  "nodeId": "d6975291-cae7-e6c5-4354-88a1c0f444a8",
+  "text": "<div class=\"kd-t\">Cómo se conecta</div>"
+ },
+ {
+  "nodeId": "b1410bb3-c3d9-7459-4469-958f795ab2a0",
+  "text": "<div class=\"kd-t\">Usa lo que AI Dashboard y AI Insights ya saben.</div>"
+ },
+ {
+  "nodeId": "869b2598-db84-5840-ebc2-2238350db969",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"869b2598-db84-5840-ebc2-2238350db966\">Situación</span><span data-w-id=\"869b2598-db84-5840-ebc2-2238350db968\">Propiedad heredada</span></div>"
+ },
+ {
+  "nodeId": "3f5ee897-31cd-4136-7fc8-63b54e002e4e",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"3f5ee897-31cd-4136-7fc8-63b54e002e4b\">Condición</span><span data-w-id=\"3f5ee897-31cd-4136-7fc8-63b54e002e4d\">El techo necesita reparación</span></div>"
+ },
+ {
+  "nodeId": "26238b23-ea4a-cf3f-5f8b-0d1be25b0d66",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"26238b23-ea4a-cf3f-5f8b-0d1be25b0d63\">Plazo</span><span data-w-id=\"26238b23-ea4a-cf3f-5f8b-0d1be25b0d65\">Fin del verano</span></div>"
+ },
+ {
+  "nodeId": "3ab94005-0551-29f7-66af-d00bc2999ada",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"3ab94005-0551-29f7-66af-d00bc2999ad7\">Precio pedido</span><span data-w-id=\"3ab94005-0551-29f7-66af-d00bc2999ad9\">$210,000</span></div>"
+ },
+ {
+  "nodeId": "f302118a-853e-632a-1c3a-3f7613860c26",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"f302118a-853e-632a-1c3a-3f7613860c23\">Siguiente paso</span><span data-w-id=\"f302118a-853e-632a-1c3a-3f7613860c25\">Enviar rango de oferta</span></div>"
+ },
+ {
+  "nodeId": "49b83c0c-92fa-4f3e-3e57-8e0512776523",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"49b83c0c-92fa-4f3e-3e57-8e0512776522\">Empatía</span></div>"
+ },
+ {
+  "nodeId": "7b559e36-ac8a-b693-1276-da6e397ee1b9",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"7b559e36-ac8a-b693-1276-da6e397ee1b8\">Descubrimiento de motivación</span></div>"
+ },
+ {
+  "nodeId": "9b7dfb79-cc3d-ce39-2c29-93896e433e6e",
+  "text": "<div class=\"kd-t\"><span data-w-id=\"9b7dfb79-cc3d-ce39-2c29-93896e433e6d\">Manejo de objeciones</span></div>"
+ },
+ {
+  "nodeId": "b474420f-f6f3-307d-9988-44f006ba375c",
+  "text": "<div class=\"kd-t\"><span class=\"badge badge--included\" data-w-id=\"b474420f-f6f3-307d-9988-44f006ba375b\">No requiere AI Agent</span></div>"
+ },
+ {
+  "nodeId": "0e55773f-f0e8-9162-f13b-11e550cbc04e",
+  "text": "<div class=\"kd-t\"><span class=\"badge\" data-w-id=\"0e55773f-f0e8-9162-f13b-11e550cbc04d\">Integrado en el pipeline</span></div>"
+ },
+ {
+  "nodeId": "507159ee-f7c5-d296-3a86-3e40a3a63fcb",
+  "text": "<div class=\"kd-t\"><strong data-w-id=\"507159ee-f7c5-d296-3a86-3e40a3a63fc8\">Pipelines y KPIs</strong><span data-w-id=\"507159ee-f7c5-d296-3a86-3e40a3a63fca\">Adquisiciones, nurture, disposiciones, coordinación de transacciones, rentas</span></div>"
+ },
+ {
+  "nodeId": "cd5ad31e-004f-9835-a331-998199d388f8",
+  "text": "<div class=\"kd-t\"><strong data-w-id=\"cd5ad31e-004f-9835-a331-998199d388f5\">Contactos y oportunidades</strong><span data-w-id=\"cd5ad31e-004f-9835-a331-998199d388f7\">Importación, listas inteligentes, etiquetas, campos personalizados</span></div>"
+ },
+ {
+  "nodeId": "387e17db-4906-eed2-040c-58f793fa0cac",
+  "text": "<div class=\"kd-t\"><strong data-w-id=\"387e17db-4906-eed2-040c-58f793fa0ca9\">Teléfonos, SMS y correo</strong><span data-w-id=\"387e17db-4906-eed2-040c-58f793fa0cab\">Números, marcador, campañas, plantillas</span></div>"
+ },
+ {
+  "nodeId": "cd3adb15-8948-9398-a673-773a05031d4b",
+  "text": "<div class=\"kd-t\"><strong data-w-id=\"cd3adb15-8948-9398-a673-773a05031d48\">Calendarios y formularios</strong><span data-w-id=\"cd3adb15-8948-9398-a673-773a05031d4a\">Reservas, formularios, encuestas, embudos</span></div>"
+ },
+ {
+  "nodeId": "4cff6d2d-92d7-c828-1f1f-6778d1f44a4f",
+  "text": "<div class=\"kd-t\"><strong data-w-id=\"4cff6d2d-92d7-c828-1f1f-6778d1f44a4c\">Tableros y reportes</strong><span data-w-id=\"4cff6d2d-92d7-c828-1f1f-6778d1f44a4e\">Tablero de KPIs, reportes de llamadas y citas</span></div>"
+ },
+ {
+  "nodeId": "5cb7e1a6-ed53-681c-dab6-26c4dfcc934e",
+  "text": "<div class=\"kd-t\"><strong data-w-id=\"5cb7e1a6-ed53-681c-dab6-26c4dfcc934b\">Documentos y configuración</strong><span data-w-id=\"5cb7e1a6-ed53-681c-dab6-26c4dfcc934d\">Firmas, usuarios, niveles de acceso</span></div>"
+ },
+ {
+  "nodeId": "47901089-c48a-7efb-69be-cf5c8b137408",
+  "text": "<h3 class=\"kd-q\">¿La AI Suite ya está disponible?</h3>"
+ },
+ {
+  "nodeId": "0716f329-7d3e-e8d9-bfb4-c8db135b270b",
+  "text": "<h3 class=\"kd-q\">¿Pago una suscripción por la AI Suite?</h3>"
+ },
+ {
+  "nodeId": "489d5dcd-ba10-00e6-e86d-b8879d30e394",
+  "text": "<h3 class=\"kd-q\">¿El uso de la AI Suite es ilimitado?</h3>"
+ },
+ {
+  "nodeId": "8be36848-da2a-a07b-de3b-a4dad74f2d04",
+  "text": "<h3 class=\"kd-q\">¿Necesito el AI Agent para usar la AI Suite o AI Nurture?</h3>"
+ },
+ {
+  "nodeId": "2d019a4b-f3b6-9d58-8bbf-76efcebe5d87",
+  "text": "<h3 class=\"kd-q\">¿Qué nurtures están incluidos?</h3>"
+ },
+ {
+  "nodeId": "69cbcfa7-9c0e-a32e-d337-1c02c9c9b4b1",
+  "text": "<h3 class=\"kd-q\">¿Los nurtures están disponibles en español?</h3>"
+ },
+ {
+  "nodeId": "23cdce53-038e-7b75-5f2c-a86272321fa4",
+  "text": "<h3 class=\"kd-q\">¿La capacitación está incluida?</h3>"
+ },
+ {
+  "nodeId": "c52ca198-3837-4088-e3c3-bb79e3118c18",
+  "text": "<h3 class=\"kd-q\">¿La revisión DNC hace que mi contacto con leads cumpla la normativa?</h3>"
+ },
+ {
+  "nodeId": "2ee987a2-0933-0cfd-7860-3fd076665d77",
+  "text": "<h3 class=\"kd-q\">¿Las AI Projections son una garantía?</h3>"
+ },
+ {
+  "nodeId": "8bcd385c-100f-54be-2158-e6f17c3df262",
+  "text": "<h3 class=\"kd-q\">¿Qué tan preciso es AI Underwriting?</h3>"
+ }
+]
