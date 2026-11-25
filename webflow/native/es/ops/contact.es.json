@@ -1,0 +1,54 @@
+[
+ {
+  "nodeId": "50549f0f-72f4-942e-24d7-35db58f26d5a",
+  "text": "<div class=\"kd-t\">Empresa</div>"
+ },
+ {
+  "nodeId": "3b8da570-afa9-03d0-f35e-6264af33ff68",
+  "text": "<div class=\"kd-t\">Teléfono</div>"
+ },
+ {
+  "nodeId": "245e622a-ae17-53c8-cabc-cd7ab8f57b93",
+  "text": "<div class=\"kd-t\">Correo</div>"
+ },
+ {
+  "nodeId": "f021a0a7-c4cc-91e1-4fa5-ad0dd8cd8e00",
+  "text": "<div class=\"kd-t\">Oficina</div>"
+ },
+ {
+  "nodeId": "c403bae2-e7ba-b3e2-9dd0-4b4acfbcb7b4",
+  "text": "<div class=\"kd-t\">Clientes actuales</div>"
+ },
+ {
+  "nodeId": "96a76bc8-5285-4ef1-0cc3-5d6badfb3cd8",
+  "text": "<h3 class=\"kd-q\">¿Qué es KPI DRIVER?</h3>"
+ },
+ {
+  "nodeId": "f5f64c98-4126-96ea-b2d3-72a7e74f722e",
+  "text": "<h3 class=\"kd-q\">¿Qué incluye la Enterprise Optimization Suite?</h3>"
+ },
+ {
+  "nodeId": "fe0dcf79-5a53-559a-0ddc-985418b8ad26",
+  "text": "<h3 class=\"kd-q\">¿El AI Agent está incluido?</h3>"
+ },
+ {
+  "nodeId": "e50213a4-fccd-6ae2-91c5-9c775fc8b3a0",
+  "text": "<h3 class=\"kd-q\">¿Cuánto cuesta KPI DRIVER?</h3>"
+ },
+ {
+  "nodeId": "11342473-b6ec-27be-a831-1e9e96888674",
+  "text": "<h3 class=\"kd-q\">¿Necesito sistemas separados para firmas de documentos, disposiciones o rentas?</h3>"
+ },
+ {
+  "nodeId": "aaae2a02-a6ee-271c-10bf-6c6dc28a8086",
+  "text": "<h3 class=\"kd-q\">¿KPI DRIVER me sirve si soy nuevo en bienes raíces o todavía no tengo un CRM?</h3>"
+ },
+ {
+  "nodeId": "ca5ce793-8f4a-8d8b-7c24-ac05e120fa0c",
+  "text": "<h3 class=\"kd-q\">¿Ofrecen soporte y capacitación?</h3>"
+ },
+ {
+  "nodeId": "848ef2bc-c913-c8fd-4397-12a2e3655068",
+  "text": "<h3 class=\"kd-q\">¿Cuánto tarda la implementación?</h3>"
+ }
+]

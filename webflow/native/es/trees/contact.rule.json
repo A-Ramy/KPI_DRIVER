@@ -1,0 +1,287 @@
+{
+ "exposed": [
+  {
+   "text": "FAQ",
+   "es": "Preguntas frecuentes",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba4350610d5",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.wrap.split",
+    "Block:div.stack",
+    "Paragraph.eyebrow"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba4350610d6",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba4350610d9",
+   "parent_type": "Paragraph.eyebrow",
+   "gp_type": "Block:div.stack",
+   "n_sib": 1,
+   "gp_children": [
+    "Paragraph.eyebrow",
+    "Heading"
+   ],
+   "node": "f7cc7171-d539-c1cb-ac2f-6ba4350610d6"
+  }
+ ],
+ "rebuild": [
+  {
+   "text": "Company",
+   "es": "Empresa",
+   "string": "63a3c8f4-d6ae-b499-73a0-163c8d22566e",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "DOM:dl.contact-list",
+    "Block:div",
+    "DOM:dt"
+   ],
+   "parent": "63a3c8f4-d6ae-b499-73a0-163c8d225670",
+   "gp": "63a3c8f4-d6ae-b499-73a0-163c8d225674",
+   "parent_type": "DOM:dt",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:dt",
+    "DOM:dd"
+   ]
+  },
+  {
+   "text": "Phone",
+   "es": "Teléfono",
+   "string": "63a3c8f4-d6ae-b499-73a0-163c8d225675",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "DOM:dl.contact-list",
+    "Block:div",
+    "DOM:dt"
+   ],
+   "parent": "63a3c8f4-d6ae-b499-73a0-163c8d225677",
+   "gp": "63a3c8f4-d6ae-b499-73a0-163c8d22567c",
+   "parent_type": "DOM:dt",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:dt",
+    "DOM:dd"
+   ]
+  },
+  {
+   "text": "Email",
+   "es": "Correo",
+   "string": "63a3c8f4-d6ae-b499-73a0-163c8d22567d",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "DOM:dl.contact-list",
+    "Block:div",
+    "DOM:dt"
+   ],
+   "parent": "63a3c8f4-d6ae-b499-73a0-163c8d22567f",
+   "gp": "63a3c8f4-d6ae-b499-73a0-163c8d225685",
+   "parent_type": "DOM:dt",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:dt",
+    "DOM:dd"
+   ]
+  },
+  {
+   "text": "Office",
+   "es": "Oficina",
+   "string": "63a3c8f4-d6ae-b499-73a0-163c8d225686",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "DOM:dl.contact-list",
+    "Block:div",
+    "DOM:dt"
+   ],
+   "parent": "63a3c8f4-d6ae-b499-73a0-163c8d225688",
+   "gp": "63a3c8f4-d6ae-b499-73a0-163c8d22568f",
+   "parent_type": "DOM:dt",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:dt",
+    "DOM:dd"
+   ]
+  },
+  {
+   "text": "Existing clients",
+   "es": "Clientes actuales",
+   "string": "63a3c8f4-d6ae-b499-73a0-163c8d225690",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "DOM:dl.contact-list",
+    "Block:div",
+    "DOM:dt"
+   ],
+   "parent": "63a3c8f4-d6ae-b499-73a0-163c8d225692",
+   "gp": "63a3c8f4-d6ae-b499-73a0-163c8d225697",
+   "parent_type": "DOM:dt",
+   "gp_type": "Block:div",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:dt",
+    "DOM:dd"
+   ]
+  },
+  {
+   "text": "What is KPI DRIVER?",
+   "es": "¿Qué es KPI DRIVER?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba4350610da",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba4350610dc",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba4350610e1",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "What do I get with the Enterprise Optimization Suite?",
+   "es": "¿Qué incluye la Enterprise Optimization Suite?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba4350610e2",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba4350610e4",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba4350610e9",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Is the AI Agent included?",
+   "es": "¿El AI Agent está incluido?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba4350610ea",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba4350610ec",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba4350610f1",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "How much does KPI DRIVER cost?",
+   "es": "¿Cuánto cuesta KPI DRIVER?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba4350610f2",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba4350610f4",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba4350610f9",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Do I need separate systems for document signatures, dispositions, or rentals?",
+   "es": "¿Necesito sistemas separados para firmas de documentos, disposiciones o rentas?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba4350610fa",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba4350610fc",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba435061101",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?",
+   "es": "¿KPI DRIVER me sirve si soy nuevo en bienes raíces o todavía no tengo un CRM?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba435061102",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba435061104",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba435061109",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "Do you offer support and training?",
+   "es": "¿Ofrecen soporte y capacitación?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba43506110a",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba43506110c",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba435061111",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  },
+  {
+   "text": "How long does implementation take?",
+   "es": "¿Cuánto tarda la implementación?",
+   "string": "f7cc7171-d539-c1cb-ac2f-6ba435061112",
+   "comp": "6afa1e999eb44edc324f9215",
+   "chain": [
+    "Block:div.kd-faq",
+    "DOM:details",
+    "DOM:summary"
+   ],
+   "parent": "f7cc7171-d539-c1cb-ac2f-6ba435061114",
+   "gp": "f7cc7171-d539-c1cb-ac2f-6ba435061119",
+   "parent_type": "DOM:summary",
+   "gp_type": "DOM:details",
+   "n_sib": 1,
+   "gp_children": [
+    "DOM:summary",
+    "Block:div"
+   ]
+  }
+ ]
+}

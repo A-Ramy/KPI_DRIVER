@@ -1,0 +1,356 @@
+{
+ "builder": [
+  {
+   "build_label": "A:63a3c8f4-d6ae-b499-73a0-163c8d22566e",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "63a3c8f4-d6ae-b499-73a0-163c8d22566e"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Company"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "63a3c8f4-d6ae-b499-73a0-163c8d22566e"
+    }
+   ]
+  },
+  {
+   "build_label": "A:63a3c8f4-d6ae-b499-73a0-163c8d225675",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "63a3c8f4-d6ae-b499-73a0-163c8d225675"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Phone"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "63a3c8f4-d6ae-b499-73a0-163c8d225675"
+    }
+   ]
+  },
+  {
+   "build_label": "A:63a3c8f4-d6ae-b499-73a0-163c8d22567d",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "63a3c8f4-d6ae-b499-73a0-163c8d22567d"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Email"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "63a3c8f4-d6ae-b499-73a0-163c8d22567d"
+    }
+   ]
+  },
+  {
+   "build_label": "A:63a3c8f4-d6ae-b499-73a0-163c8d225686",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "63a3c8f4-d6ae-b499-73a0-163c8d225686"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Office"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "63a3c8f4-d6ae-b499-73a0-163c8d225686"
+    }
+   ]
+  },
+  {
+   "build_label": "A:63a3c8f4-d6ae-b499-73a0-163c8d225690",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "63a3c8f4-d6ae-b499-73a0-163c8d225690"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "TextBlock",
+    "set_text": {
+     "text": "Existing clients"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-t"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "63a3c8f4-d6ae-b499-73a0-163c8d225690"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba4350610da",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610da"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What is KPI DRIVER?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610da"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba4350610e2",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610e2"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "What do I get with the Enterprise Optimization Suite?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610e2"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba4350610ea",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610ea"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Is the AI Agent included?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610ea"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba4350610f2",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610f2"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "How much does KPI DRIVER cost?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610f2"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba4350610fa",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610fa"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Do I need separate systems for document signatures, dispositions, or rentals?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba4350610fa"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba435061102",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba435061102"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Will KPI DRIVER work if I am new to real estate or do not have a CRM yet?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba435061102"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba43506110a",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba43506110a"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "Do you offer support and training?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba43506110a"
+    }
+   ]
+  },
+  {
+   "build_label": "B:f7cc7171-d539-c1cb-ac2f-6ba435061112",
+   "parent_element_id": {
+    "component": "6afa1e999eb44edc324f9215",
+    "element": "f7cc7171-d539-c1cb-ac2f-6ba435061112"
+   },
+   "creation_position": "after",
+   "element_schema": {
+    "type": "Heading",
+    "set_heading_level": {
+     "heading_level": 3
+    },
+    "set_text": {
+     "text": "How long does implementation take?"
+    },
+    "set_style": {
+     "style_names": [
+      "kd-q"
+     ]
+    }
+   },
+   "remove": [
+    {
+     "component": "6afa1e999eb44edc324f9215",
+     "element": "f7cc7171-d539-c1cb-ac2f-6ba435061112"
+    }
+   ]
+  }
+ ],
+ "whtml": [],
+ "skipped": [],
+ "other": []
+}
