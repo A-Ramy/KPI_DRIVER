@@ -356,3 +356,7 @@ Owner: "do everything that needs to be done in order for this to be seamless" (a
   FAQs collection kept (empty) pending the decision on a native FAQ CMS.
 - Kept on purpose: Title Case recasing and the lifecycle diagram text in kd-site-19.js (SVG labels cannot live in
   Localization; native Title Case would mean rewriting ~886 English text nodes).
+- After the live publish: full crawl (180 loads, 134 internal links) clean, only the deliberate 404 test URL.
+  Then deleted the six files this release replaced (kd-site-16.js, kd-site-18.css, kd-head-7.js,
+  kd-es-native-3.js, kd-posts.js, kd-posts-es.js) after confirming no live page or script loads them; copies in
+  webflow/native and webflow/backup/deleted-assets-2026-11-25/.
