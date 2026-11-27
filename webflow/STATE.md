@@ -360,3 +360,44 @@ Owner: "do everything that needs to be done in order for this to be seamless" (a
   Then deleted the six files this release replaced (kd-site-16.js, kd-site-18.css, kd-head-7.js,
   kd-es-native-3.js, kd-posts.js, kd-posts-es.js) after confirming no live page or script loads them; copies in
   webflow/native and webflow/backup/deleted-assets-2026-11-25/.
+
+## 2026-11-27 (evening): native templates, FAQ CMS, Spanish links at the source, Spanish booking forms (LIVE)
+Owner: "Do 1 and 2 and 6 and 7 … Do 8 … for 9 create the collection properly but each page should have the FAQs that
+related to it … do the fallback on 12 as well do 15".
+- Templates native: blog list, category template and post template are built from native classes (blog-card, pill,
+  pager, post-row, hub); no style embeds left on them. Post template has a category hub (aside.hub: "Part of
+  <category>" + "All articles in <category>", from the "Primary category" reference). Frame 106 and the unused
+  template styles deleted.
+- Card and hub links: Webflow's "current item" link cannot be set through the API, so related cards carry data-slug
+  and the hub link data-cat; two lines in kd-site-20.js write /post/<slug> and /blog-category/<slug> (with /es on
+  Spanish pages). Setting "Current Blog Post" on the card link and the Primary category on the hub link in the
+  Designer makes both lines do nothing.
+- FAQ CMS (collection FAQs): 40 questions with EN + ES text, "order" and one switch per page (show-on-home, -services,
+  -crm, -ai-suite, -ai-agent, -contact). Each of the six pages has a native Collection List filtered on its switch,
+  sorted by order, rendering details/summary with FAQPage microdata (itemscope/itemprop). FAQ template page
+  (/faq/...) is noindex and out of the sitemap. Answers are plain text in the CMS.
+- Spanish links fixed at the source: Localization keeps a copy of each link (and its custom attributes) from the
+  moment Spanish text is first written, and the API cannot change it later. So every page link with a stale Spanish
+  copy was rebuilt: new link, native page link set and checked, then Spanish text, then the old link removed.
+  Inline links inside paragraphs accept a corrected Spanish paragraph instead (data-wf-link-page-id). Done for the
+  header and footer components and Home, Services, CRM, AI Suite, AI Agent, Team, Contact, Book, Thank You,
+  Privacy, Terms; custom href attributes removed everywhere. 404, category and post templates and the blog page now
+  have native Spanish text (breadcrumbs, pills, pager, byline, empty states). Raw HTML of all 76 Spanish URLs: no
+  English internal links, no scheduler widget links, no Pulsetic.
+  Rule for future edits: set a link's target BEFORE writing its Spanish text; to change a link later, rebuild it.
+- Byline (post template): rebuilt so the translatable text ("By … , title") and the bound date are separate blocks;
+  writing Spanish into a block that contains a bound field freezes that field (the date went blank once on staging).
+- Spanish helper kd-es-native-5.js (asset 6b0a03a2cc3c74b49ca2be68): v4 without the link rewrites (no longer needed).
+  Loaded by kd-head-9.js (asset 6b0a03bd6eb8e40c3a0feb60).
+- Booking forms: kd-booking-7.js (asset 6b0a014ebb97f91fadf67b3a), built from branch ccr-9f523f3d-oiee4l (commit
+  b5c0b06): Spanish labels on /es pages (submitted values stay English for the CRM), owner-approved Spanish SMS consent
+  (HELP/STOP kept), sections can name themselves with data-kd-id, CTA/widget fallbacks go to the booking page.
+  The "Open the scheduler" button shown when the booking service is down still opens HighLevel on purpose.
+  Thank You page "Book a Discovery Call" is now a native link to the booking page (was the HighLevel widget URL).
+- Site files: kd-site-20.js (asset 6b0a014d79bb3c704ccba98b), kd-site-21.css (asset 6b0a072035882b1967bd1952; = 20 +
+  byline author link style for both languages). Site head/footer and the 12 in-body stylesheet embeds point at them.
+- Verified: staging then LIVE: stg-check on 30 pages x 2 widths (EN + ES) 0 issues; FAQs on 6 pages x 2 languages
+  (count, schema, no empty answers); posts: byline + date + author link, hub and related links in both languages;
+  booking form Spanish on /es. Then deleted the superseded, unreferenced files (kd-site-19.css/.js, kd-site-20.css,
+  kd-booking-6.js, kd-head-8.js, kd-es-native-4.js) and the two replaced icon files (Frame 216 1.svg,
+  Frame 2085665581.jpg) after checking none of 141 live pages references them.

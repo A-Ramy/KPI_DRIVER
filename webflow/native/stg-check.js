@@ -1,6 +1,6 @@
 // Staging/live check after the 27 Nov cleanup. Usage: node stg.js https://kpidriver.webflow.io
 const { chromium } = require('playwright'); const fs = require('fs');
-const JQ = '/tmp/claude-0/-home-user-KPI-DRIVER/e3dc9ffd-4c54-5ea5-bfef-d94aaa22dc31/scratchpad/jq/node_modules/jquery/dist/jquery.min.js';
+const JQ = './jq/node_modules/jquery/dist/jquery.min.js';
 const H = process.argv[2] || 'https://kpidriver.webflow.io';
 const paths = ['/', '/services', '/services/crm', '/services/ai-suite', '/services/ai-agent', '/our-team', '/contact-us', '/book-discovery-call', '/thank-you', '/policies/privacy-policy', '/policies/terms-conditions', '/blog', '/blog-category/kpis-performance', '/post/lead-manager-vs-acquisition-manager', '/no-such-page-kd'];
 const all = paths.concat(paths.map(p => '/es' + (p === '/' ? '' : p)));
@@ -19,8 +19,8 @@ const all = paths.concat(paths.map(p => '/es' + (p === '/' ? '' : p)));
       const css = q('link[rel=stylesheet]').map(l => l.href).filter(h => /kd-site-/.test(h));
       const links = q('a[href]').map(a => a.getAttribute('href'));
       const out = {
-        status: 0, css19: css.filter(h => /kd-site-19/.test(h)).length, css18: css.filter(h => /kd-site-18/.test(h)).length,
-        js19: !!q('script[src*="kd-site-19"]').length, js16: !!q('script[src*="kd-site-16"]').length,
+        status: 0, cssN: css.filter(h => /kd-site-21/.test(h)).length, cssO: css.filter(h => /kd-site-19/.test(h)).length,
+        jsN: !!q('script[src*="kd-site-20"]').length, jsO: !!q('script[src*="kd-site-19"]').length,
         h1: q('h1').length, main: q('main#main').length, overflow: document.documentElement.scrollWidth > innerWidth + 1,
         pulsetic: links.filter(h => /pulsetic/.test(h)).length, widget: links.filter(h => /widget\/booking/.test(h)).length,
         enLinks: es ? q('a[href]:not(.lang-toggle)').map(a => a.getAttribute('href')).filter(h => /^\/(?!es(\/|$))[a-z]/.test(h)).length : 0,
@@ -38,8 +38,8 @@ const all = paths.concat(paths.map(p => '/es' + (p === '/' ? '' : p)));
     r.status = res ? res.status() : 0;
     const issues = [];
     if (!(r.status === 200 || (path.includes('no-such') && r.status === 404))) issues.push('status ' + r.status);
-    if (r.css19 < 1 || r.css18) issues.push('css 19:' + r.css19 + ' 18:' + r.css18);
-    if (!r.js19 || r.js16) issues.push('js');
+    if (r.cssN < 1 || r.cssO) issues.push('css 19:' + r.cssN + ' 18:' + r.cssO);
+    if (!r.jsN || r.jsO) issues.push('js');
     if (r.h1 !== 1) issues.push('h1 ' + r.h1);
     if (r.main !== 1) issues.push('main ' + r.main);
     if (r.overflow) issues.push('overflow');
