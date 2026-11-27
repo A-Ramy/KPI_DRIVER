@@ -317,3 +317,42 @@ Site id `68974c57cac027f80fdf883f`. Owner chose to build inside the live site (n
 - Staging gate (fullcmp2.js, computed styles + visible text vs live at 1440/820/390): all 12 page types + blog + a post, EN and ES, 0 differences, except the intended ones: /es AI Suite "escritas para ti" (live showed "por ti"), and the Spanish Privacy/Terms pages, which were still English on live. One Booking 820px login-dropdown difference was the known animation flake (re-run 0).
 - LIVE published 25 Nov (www + apex). Live checks: 0 pages on kd-site-17, kd-head-7 on all pages; /es pages after scripts run: none of the old 227 helper strings left except "Email"/"Phone" in the kd-booking contact form (known gap above); lang=es, EN toggle present, 0 internal links missing /es, no new JS errors ("c is not a function" predates this work). seo2.py: 66 Spanish sitemap URLs, 0 issues.
 - Unused now (delete later with owner OK): kd-site-17.css 6afef72e3bf511e913abd6f5, kd-es-native-2.js 6b05bcab26b6cb24976bc62a, kd-head-6.js 6b05bcfacd98169e8a43fadc, kd-head-4/-5, old kd-es-* bundles.
+
+## 2026-11-27: review follow-up — cleanup, native conversions, site-wide code (LIVE)
+Owner: "do everything that needs to be done in order for this to be seamless" (after the 25 Nov review list).
+- Deleted 19 unreferenced assets (list in REVIEW-2026-11-25.md); copies in webflow/backup/deleted-assets-2026-11-25/.
+- Home hero + CTA booking buttons: fallback link is now the native Book page link (was a HighLevel calendar URL).
+- Links: many Link elements carried a hard-coded custom `href` attribute next to their native link, which overrode it
+  (so Spanish pages got English URLs and a script fixed them). Removed from header, footer and Home. CRM Status links
+  (footer, Contact) now point natively at status.gohighlevel.com; login + status links open in a new tab natively.
+  Spanish copies of already-localized link nodes keep the attributes saved when they were translated (the Localization
+  API cannot change them), so kd-es-native-4.js (asset 6b09b64b7c0c3103457acbd6) fixes those on /es pages: /es prefix,
+  status page, new tab, booking fallback. Other pages' primary-locale href attributes were left (harmless in English;
+  Spanish handled by the helper).
+- Footer: hidden #book-dialog removed (never opened; kd-booking builds its own dialog) + its CSS.
+- Blog page: hero rebuilt natively (main#main.is-blog > section.phead), Spanish via Localization; the post list
+  moved inside <main>; both style embeds removed. Category template: list moved inside <main>, both embeds removed.
+  Their CSS (deduplicated, cursor/template junk dropped) is now at the end of kd-site-19.css.
+- Related articles are native: CMS field "Related articles" filled on all 45 posts (EN + ES variants, same lists as
+  the old kd-posts index), new fields "Article type" (EN/ES labels) and "Primary category" (reference). Post template
+  has a Collection List (source: Related articles, limit 3) with .posts/.post-row cards; category label uses the new
+  native style .post-row__cat. Webflow's "current item" link cannot be set through the API (renders "#"), so each
+  card carries data-slug and one line in kd-site-19.js writes /post/<slug> (/es/post/<slug>). If the owner sets the
+  card link to "Current Blog Post" in the Designer, that line does nothing.
+- Site script kd-site-19.js (asset 6b09d66b740e67bab5f0c223): kd-site-16 minus Pulsetic swap/login new-tab,
+  dead-calendar repair, members show-password, scrollbar probe for the old dialog, the related-posts builder and the
+  Spanish blog-hero string table. Stylesheet kd-site-19.css (asset 6b09d96d111c6a49eae33739). kd-head-8.js (asset
+  6b09b676c9d45495e8e6a703) = kd-head-7 without KD_POSTS_URL, loading helper v4.
+- Head/footer code is now site-wide (Site settings custom code) instead of pasted on 15 pages; page head/footer
+  code blocks are empty. The in-body stylesheet embed (first body element on 12 pages, keeps the Designer canvas
+  styled) points at kd-site-19.css.
+- Verified: staging then LIVE (published 27 Nov), stg.js on 30 pages x 2 widths (EN + ES): 0 issues (status, CSS/JS
+  versions, h1, main, overflow, no Pulsetic links, no English links on Spanish pages, new-tab logins, related cards
+  with real post URLs). Visual vs old live: identical except category pills now wrap properly on phones (old live
+  stacked them in a centred column) and the current category pill is filled blue instead of outlined.
+- Icons for Site settings: webflow/icons/favicon-32.png, webflow/icons/webclip-180.png (from kd-icon-gauge.png).
+- Still for the owner: upload the two icons (Site settings > General), delete draft pilot page, robots.txt line
+  "Disallow: /log-in" (Site settings > SEO), Spanish wording of the booking forms incl. SMS consent (booking branch),
+  FAQs collection kept (empty) pending the decision on a native FAQ CMS.
+- Kept on purpose: Title Case recasing and the lifecycle diagram text in kd-site-19.js (SVG labels cannot live in
+  Localization; native Title Case would mean rewriting ~886 English text nodes).
