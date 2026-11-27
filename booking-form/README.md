@@ -73,7 +73,7 @@ Contact forms post straight to the HighLevel inbound webhook (`contactUrl`); no 
 
 Installed through the **site-wide custom code**, not page embeds:
 - **Head** (after the existing Finsweet + Memberstack code): `kd-booking-1.css`
-- **Footer:** `window.KD_BOOKING_CONFIG` plus `kd-booking-3.js` (hosted Webflow assets, minified copies in `webflow/forms/`)
+- **Footer:** `window.KD_BOOKING_CONFIG` plus `kd-booking-7.js` (hosted Webflow asset since 2026-11-28; minified copy in `webflow/forms/kd-booking.js`)
 
 At load the script (`enhancePage()` in `kd-booking.js`) does the following, both on the Webflow pages and in the repo build (build.py no longer adds anything itself):
 - **Calendar links:** every booking link and scheduler link points at the one calendar.
@@ -96,6 +96,19 @@ At load the script (`enhancePage()` in `kd-booking.js`) does the following, both
 - **Booking page:** the scheduler embed becomes the inline booking form.
 
 Analytics events: `discovery_call_open`, `discovery_call_booked` and `contact_form_sent` are pushed to `dataLayer` with `booking_source`.
+
+## Spanish pages (2026-11-28)
+- On pages with `<html lang="es">` the forms show Spanish: step titles, labels, placeholders, option labels, buttons,
+  errors, success messages, dates (Intl, `es`) and country names. One dictionary, `ES_TEXT` / `ES_PATTERNS`, applied by
+  `tr()` inside `h()` and to status messages. Only visible text is translated: submitted values (CRM picklist options,
+  country codes) stay exactly as before, so HighLevel receives the same answers.
+- SMS consent: Spanish wording approved by the owner; HELP and STOP stay as the carrier keywords. `consent_text` records
+  the text the visitor saw.
+- Sections may name themselves with `data-kd-id` (used for the booking source label before the element id).
+- Section CTAs and rewritten `/widget/booking/` links now point at the site's booking page (`/book-discovery-call`,
+  `/es/book-discovery-call` on Spanish pages), not the HighLevel calendar. The "Open the scheduler" button that appears
+  only when the booking service itself is unreachable still opens the HighLevel scheduler (the booking page would be
+  down too).
 
 ## Decisions (confirmed by the owner, 2026-11-18)
 

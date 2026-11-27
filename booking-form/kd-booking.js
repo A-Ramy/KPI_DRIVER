@@ -34,6 +34,91 @@
     lang: (document.documentElement.lang || "en").slice(0, 2)
   }, window.KD_BOOKING_CONFIG || {});
 
+  /* ---------- language: Spanish pages (html lang="es") get Spanish labels; submitted values stay in English for the CRM ---------- */
+  var LANG_ES = /^es\b/i.test(document.documentElement.getAttribute("lang") || "");
+  var LOC = LANG_ES ? "es" : "en-US";
+  var BOOK_PAGE = (LANG_ES ? "/es" : "") + "/book-discovery-call";
+  var ES_TEXT = {
+    // steps and headings
+    "Pick a time": "Elige un horario", "About you": "Sobre ti", "Contact & business": "Contacto y negocio",
+    "Your lead flow": "Tu flujo de leads", "Marketing & lead sources": "Marketing y fuentes de leads",
+    "Your CRM": "Tu CRM", "Systems & numbers": "Sistemas y números", "Your goals": "Tus objetivos", "Last step": "Último paso",
+    "Send a general inquiry": "Envía una consulta general", "Your details": "Tus datos", "Contact us": "Contáctanos",
+    "Your inquiry": "Tu consulta", "Confirmed": "Confirmado", "Message sent": "Mensaje enviado",
+    "Booking progress": "Progreso de la reserva", "Form progress": "Progreso del formulario",
+    // fields
+    "First Name": "Nombre", "Last Name": "Apellido", "Business Email": "Correo del negocio", "Email": "Correo electrónico",
+    "Phone": "Teléfono", "Business Name": "Nombre del negocio", "Street Address": "Dirección", "Address": "Dirección",
+    "City": "Ciudad", "State": "Estado", "Postal code": "Código postal", "Postal Code": "Código postal", "Country": "País",
+    "Business Niche": "Nicho del negocio", "Time Zone": "Zona horaria", "Time zone": "Zona horaria",
+    "Filled in from the time zone you booked in.": "Se completa con la zona horaria de tu reserva.",
+    "Which Plan Are You Interested In": "¿Qué plan te interesa?", "Which Bundle Are You Interested In": "¿Qué paquete te interesa?",
+    "Do You Outsource Your Marketing?": "¿Tercerizas tu marketing?", "How Many Lead Sources Do You Have?": "¿Cuántas fuentes de leads tienes?",
+    "What Are Your Lead Sources?": "¿Cuáles son tus fuentes de leads?", "How Are These Lead Sources Entering Your Business?": "¿Cómo entran esos leads a tu negocio?",
+    "How Many Agents Do You Have On Cold Calling?": "¿Cuántos agentes tienes en llamadas en frío?", "How Many Agents Do You Have On SMS?": "¿Cuántos agentes tienes en SMS?",
+    "How Many PPL Providers Do You Use?": "¿Cuántos proveedores de PPL usas?", "Put 0 if None": "Pon 0 si no tienes",
+    "Do You Need a CRM?": "¿Necesitas un CRM?", "Do You Use A CRM?": "¿Usas un CRM?", "Which CRM Do You Use?": "¿Qué CRM usas?",
+    "Does Your CRM Have Follow Up Automations?": "¿Tu CRM tiene automatizaciones de seguimiento?", "What Are You Using Your CRM For?": "¿Para qué usas tu CRM?",
+    "How Many Sales Representatives Do You Have?": "¿Cuántos representantes de ventas tienes?", "How Do You Measure Your KPIs?": "¿Cómo mides tus KPIs?",
+    "How Do You Keep Track of Your Profits & Losses?": "¿Cómo llevas el control de tus ganancias y pérdidas?", "On All Channels": "En todos los canales",
+    "How Did You Hear About Us": "¿Cómo supiste de nosotros?", "What Difficulties Are You Facing In Your Business Generally?": "¿Qué dificultades enfrenta tu negocio en general?",
+    "What Are Your Expectations With KPI DRIVER?": "¿Qué esperas de KPI DRIVER?", "How Soon Are You Looking To Start?": "¿Qué tan pronto quieres empezar?",
+    "Your Message": "Tu mensaje",
+    // option labels (the submitted values stay in English)
+    "Real Estate": "Bienes raíces", "Online Courses": "Cursos en línea", "Other": "Otro",
+    "Eastern Standard Time": "Hora del Este", "Central Standard Time": "Hora del Centro", "Mountain Standard Time": "Hora de la Montaña",
+    "Pacific Standard Time": "Hora del Pacífico", "Alaska Standard Time": "Hora de Alaska", "Hawaii-Aleutian Standard Time": "Hora de Hawái-Aleutianas",
+    "Don't Know Yet": "Aún no lo sé", "Yes (Outsourced Only)": "Sí (solo tercerizado)", "No (In-House Only)": "No (solo interno)",
+    "Both (In-House & Outsourced)": "Ambos (interno y tercerizado)", "Cold Calling": "Llamadas en frío", "Direct Mailer": "Correo directo",
+    "On-Market": "En el mercado (On-Market)", "TV Advertising": "Publicidad en TV", "Radio Advertising": "Publicidad en radio",
+    "Submitting Forms Directly Into the System (CRM)": "Formularios directo al sistema (CRM)", "Direct Integration With The Platform": "Integración directa con la plataforma",
+    "Submitting Forms Indirectly Via 3rd Party (eg. Zapier)": "Formularios por un tercero (p. ej., Zapier)", "Google Sheets": "Google Sheets", "Manual Entry": "Entrada manual",
+    "Yes": "Sí", "No": "No", "None": "Ninguno", "Word of Mouth": "Recomendación de boca en boca", "Event": "Evento", "Referral": "Referido",
+    "Google Search": "Búsqueda en Google", "ASAP": "Lo antes posible", "Next Month": "El próximo mes", "Start of Next Quarter": "Inicio del próximo trimestre",
+    "No Specific Timeline": "Sin fecha definida",
+    // time step
+    "Available times": "Horarios disponibles", "Loading available times…": "Cargando horarios disponibles…", "No open times this month.": "No hay horarios libres este mes.",
+    "See next month →": "Ver el próximo mes →", "Previous month": "Mes anterior", "Next month": "Mes siguiente",
+    "Pick your time in our scheduler. It opens in a new tab and takes about a minute.": "Elige tu horario en nuestro agendador. Se abre en una pestaña nueva y toma cerca de un minuto.",
+    "We couldn't load the calendar right now. You can still book in the scheduler.": "No pudimos cargar el calendario en este momento. Aún puedes agendar en el agendador.",
+    "Open the scheduler": "Abrir el agendador", "Try again": "Intentar de nuevo", "All time zones": "Todas las zonas horarias", "United States": "Estados Unidos",
+    "Eastern Time": "Hora del Este", "Central Time": "Hora del Centro", "Mountain Time": "Hora de la Montaña", "Pacific Time": "Hora del Pacífico",
+    "Arizona": "Arizona", "Alaska": "Alaska", "Hawaii": "Hawái", "Change time": "Cambiar horario", "Change": "Cambiar",
+    "Mon": "Lun", "Tue": "Mar", "Wed": "Mié", "Thu": "Jue", "Fri": "Vie", "Sat": "Sáb", "Sun": "Dom",
+    // buttons and messages
+    " (optional)": " (opcional)", "Continue": "Continuar", "Back": "Atrás", "Book my call": "Agendar mi llamada", "Send message": "Enviar mensaje",
+    "Booking…": "Agendando…", "Sending…": "Enviando…", "Select…": "Selecciona…", "Add to calendar": "Agregar al calendario",
+    "Pick a day and a time to continue.": "Elige un día y un horario para continuar.", "A few answers need attention.": "Algunas respuestas necesitan atención.",
+    "This field is required.": "Este campo es obligatorio.", "Please choose an option.": "Elige una opción.", "Please choose at least one.": "Elige al menos una.",
+    "Please tick the box to continue.": "Marca la casilla para continuar.", "Enter a valid email address.": "Escribe un correo electrónico válido.",
+    "Enter a valid phone number.": "Escribe un número de teléfono válido.", "Enter a whole number (0 if none).": "Escribe un número entero (0 si no tienes).",
+    "That time was just taken. Please pick another one.": "Ese horario se acaba de ocupar. Elige otro, por favor.",
+    "We couldn't reach the booking service. Check your connection and try again.": "No pudimos conectar con el servicio de reservas. Revisa tu conexión e intenta de nuevo.",
+    // consent (owner-approved Spanish; HELP and STOP stay as the carrier keywords)
+    "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.":
+      "Acepto recibir notificaciones por SMS, alertas y comunicaciones de marketing ocasionales de KPI DRIVER, LLC. La frecuencia de los mensajes varía. Pueden aplicarse tarifas de mensajes y datos. Envía HELP al (786) 822-8188 para recibir ayuda. Puedes responder STOP para darte de baja en cualquier momento."
+  };
+  var ES_PATTERNS = [
+    [/^Discovery call · (\d+) min$/, "Llamada de descubrimiento · $1 min"],
+    [/^Step (\d+) \/ (\d+)$/, "Paso $1 / $2"],
+    [/^You're booked, (.*)\.$/, "¡Listo, $1! Tu llamada está agendada."],
+    [/^Thanks, (.*)\.$/, "¡Gracias, $1!"],
+    [/^A confirmation with the meeting link is on its way to your inbox\.$/, "Te enviamos una confirmación con el enlace de la reunión."],
+    [/^A confirmation with the meeting link is on its way to (.*)\.$/, "Te enviamos una confirmación con el enlace de la reunión a $1."],
+    [/^Your message is with the team\. We'll reply to your email within one business day\.$/, "Tu mensaje ya está con el equipo. Te responderemos en un día hábil."],
+    [/^Your message is with the team\. We'll reply to (.*) within one business day\.$/, "Tu mensaje ya está con el equipo. Te responderemos a $1 en un día hábil."],
+    [/^Something went wrong and your call wasn't booked\. Please try again, or email (.*)$/, "Algo salió mal y tu llamada no se agendó. Intenta de nuevo o escribe a $1"],
+    [/^Something went wrong and your message wasn't sent\. Please try again, or email (.*)$/, "Algo salió mal y tu mensaje no se envió. Intenta de nuevo o escribe a $1"],
+    [/^(Eastern|Central|Mountain|Pacific) Time (\(.*\))$/, function (m, z, o) { return ES_TEXT[z + " Time"] + " " + o; }],
+    [/^(Arizona|Alaska|Hawaii) (\(.*\))$/, function (m, z, o) { return ES_TEXT[z] + " " + o; }]
+  ];
+  function tr(s) {
+    if (!LANG_ES || typeof s !== "string" || !s) return s;
+    if (Object.prototype.hasOwnProperty.call(ES_TEXT, s)) return ES_TEXT[s];
+    for (var i = 0; i < ES_PATTERNS.length; i++) if (ES_PATTERNS[i][0].test(s)) return s.replace(ES_PATTERNS[i][0], ES_PATTERNS[i][1]);
+    return s;
+  }
+
   /* ---------- questions (same as the HighLevel form; ids = HighLevel custom field ids) ---------- */
   var CONSENT_TEXT = "I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from KPI DRIVER, LLC. Message frequency varies. Message & data rates may apply. Text HELP to (786) 822-8188 for assistance. You can reply STOP to unsubscribe at any time.";
   var TZ_FIELD_OPTIONS = ["Eastern Standard Time", "Central Standard Time", "Mountain Standard Time", "Pacific Standard Time", "Alaska Standard Time", "Hawaii-Aleutian Standard Time"];
@@ -187,13 +272,13 @@
   var fmtCache = {};
   function fmt(date, tz, opts) {
     var key = tz + JSON.stringify(opts);
-    return (fmtCache[key] || (fmtCache[key] = new Intl.DateTimeFormat("en-US", Object.assign({ timeZone: tz }, opts)))).format(date);
+    return (fmtCache[key] || (fmtCache[key] = new Intl.DateTimeFormat(LOC, Object.assign({ timeZone: tz }, opts)))).format(date);
   }
 
   /* ---------- countries (names from the browser, so the list stays short) ---------- */
   var REGIONS = "AF AX AL DZ AS AD AO AI AQ AG AR AM AW AU AT AZ BS BH BD BB BY BE BZ BJ BM BT BO BA BW BV BR IO BN BG BF BI KH CM CA CV KY CF TD CL CN CX CC CO KM CG CD CK CR CI HR CU CW CY CZ DK DJ DM DO EC EG SV GQ ER EE SZ ET FK FO FJ FI FR GF PF TF GA GM GE DE GH GI GR GL GD GP GU GT GG GN GW GY HT HM VA HN HK HU IS IN ID IR IQ IE IM IL IT JM JP JE JO KZ KE KI KP KR KW KG LA LV LB LS LR LY LI LT LU MO MG MW MY MV ML MT MH MQ MR MU YT MX FM MD MC MN ME MS MA MZ MM NA NR NP NL NC NZ NI NE NG NU NF MK MP NO OM PK PW PS PA PG PY PE PH PN PL PT PR QA RE RO RU RW BL SH KN LC MF PM VC WS SM ST SA SN RS SC SL SG SX SK SI SB SO ZA GS SS ES LK SD SR SJ SE CH SY TW TJ TZ TH TL TG TK TO TT TN TR TM TC TV UG UA AE GB US UM UY UZ VU VE VN VG VI WF EH YE ZM ZW".split(" ");
   function countries() {
-    var dn = null; try { dn = new Intl.DisplayNames(["en"], { type: "region" }); } catch (e) {}
+    var dn = null; try { dn = new Intl.DisplayNames([LANG_ES ? "es" : "en"], { type: "region" }); } catch (e) {}
     return REGIONS.map(function (c) { return [c, dn ? dn.of(c) : c]; }).sort(function (a, b) { return a[1].localeCompare(b[1]); });
   }
 
@@ -240,10 +325,11 @@
     var el = document.createElement(tag);
     if (attrs) Object.keys(attrs).forEach(function (k) {
       var v = attrs[k]; if (v == null || v === false) return;
-      if (k === "class") el.className = v; else if (k === "text") el.textContent = v; else if (k === "html") el.innerHTML = v;
+      if (k === "class") el.className = v; else if (k === "text") el.textContent = tr(v); else if (k === "html") el.innerHTML = v;
+      else if (k === "placeholder" || k === "title" || k === "aria-label" || k === "label") el.setAttribute(k, tr(v));
       else if (k.slice(0, 2) === "on") el.addEventListener(k.slice(2), v); else el.setAttribute(k, v === true ? "" : v);
     });
-    (kids || []).forEach(function (c) { if (c != null) el.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    (kids || []).forEach(function (c) { if (c != null) el.appendChild(typeof c === "string" ? document.createTextNode(tr(c)) : c); });
     return el;
   }
   var uid = 0;
@@ -315,7 +401,7 @@
   Booking.prototype.drawCalendar = function (cal, slotsEl) {
     var self = this, s = this.state, v = s.view;
     var now = parts(new Date(), s.tz), isFirst = v.y === now.y && v.m0 === now.m - 1;
-    var label = new Date(Date.UTC(v.y, v.m0, 1)).toLocaleString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+    var label = new Date(Date.UTC(v.y, v.m0, 1)).toLocaleString(LOC, { month: "long", year: "numeric", timeZone: "UTC" });
     cal.innerHTML = "";
     cal.appendChild(h("div", { class: "kdb__cal-head" }, [
       h("button", { type: "button", class: "kdb__nav", "aria-label": "Previous month", disabled: isFirst, onclick: function () { self.shift(-1, cal, slotsEl); }, text: "‹" }),
@@ -329,7 +415,7 @@
     var cells = [];
     for (var d = 1; d <= days; d++) {
       var key = v.y + "-" + String(v.m0 + 1).padStart(2, "0") + "-" + String(d).padStart(2, "0");
-      var b = h("button", { type: "button", class: "kdb__day", disabled: true, "data-day": key, "aria-label": new Date(Date.UTC(v.y, v.m0, d)).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }), text: String(d) });
+      var b = h("button", { type: "button", class: "kdb__day", disabled: true, "data-day": key, "aria-label": new Date(Date.UTC(v.y, v.m0, d)).toLocaleDateString(LOC, { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }), text: String(d) });
       if (isFirst && d === now.d) b.classList.add("is-today");
       grid.appendChild(b); cells.push(b);
     }
@@ -423,7 +509,7 @@
     else d[f.name] = box.querySelector(".kdb__input").value.trim();
     if (box.classList.contains("is-invalid")) {
       this.validateField(f);
-      if (!this.root.querySelector(".is-invalid") && /attention/.test(this.msg.textContent)) this.msg.textContent = "";
+      if (!this.root.querySelector(".is-invalid") && /attention|atención/.test(this.msg.textContent)) this.msg.textContent = "";
     }
   };
   Booking.prototype.validateField = function (f) {
@@ -435,7 +521,7 @@
     else if (!empty && f.type === "number" && !/^\d{1,5}$/.test(String(v))) msg = "Enter a whole number (0 if none).";
     var box = this.root.querySelector('[data-field="' + f.name + '"]');
     if (box) {
-      box.classList.toggle("is-invalid", !!msg); box.querySelector(".kdb__err").textContent = msg;
+      box.classList.toggle("is-invalid", !!msg); box.querySelector(".kdb__err").textContent = tr(msg);
       var ctl = box.querySelector(".kdb__input, input"); if (ctl) ctl.setAttribute("aria-invalid", msg ? "true" : "false");
     }
     return !msg;
@@ -443,11 +529,11 @@
   Booking.prototype.validateStep = function () {
     var STEPS = this.steps;
     var self = this, st = STEPS[this.state.step];
-    if (st.key === "time") { if (!this.state.slot) { this.msg.textContent = "Pick a day and a time to continue."; return false; } return true; }
+    if (st.key === "time") { if (!this.state.slot) { this.msg.textContent = tr("Pick a day and a time to continue."); return false; } return true; }
     var ok = true, firstBad = null;
     st.fields.forEach(function (f) { self.capture(f); if (!self.validateField(f)) { ok = false; firstBad = firstBad || f; } });
     if (!ok) {
-      this.msg.textContent = "A few answers need attention.";
+      this.msg.textContent = tr("A few answers need attention.");
       var box = this.root.querySelector('[data-field="' + firstBad.name + '"]'), ctl = box && box.querySelector("input, select, textarea");
       if (ctl) ctl.focus(); if (box && box.scrollIntoView) box.scrollIntoView({ block: "center", behavior: "smooth" });
     }
@@ -500,7 +586,7 @@
      pick in HighLevel's mapper ({{inboundWebhookRequest.first_name}} etc.). */
   Booking.prototype.flatPayload = function (contact, answers, campaign, hp) {
     var s = this.state, d = s.data, a = attribution(), now = new Date().toISOString();
-    var consentText = CFG.contactConsentText || CONSENT_TEXT;
+    var consentText = tr(CFG.contactConsentText || CONSENT_TEXT);
     var tags = ["website contact form", ("src: " + s.source).toLowerCase()];
     var out = {
       form: "contact",
@@ -533,7 +619,7 @@
   Booking.prototype.submit = function () {
     var self = this, s = this.state, body = this.payload(), btn = this.root.querySelector(".kdb__btn--primary");
     var url = this.kind === "contact" ? CFG.contactUrl : CFG.bookUrl, label = this.kind === "contact" ? "Send message" : "Book my call";
-    this.busy = true; btn.disabled = true; btn.textContent = this.kind === "contact" ? "Sending…" : "Booking…"; this.msg.textContent = "";
+    this.busy = true; btn.disabled = true; btn.textContent = tr(this.kind === "contact" ? "Sending…" : "Booking…"); this.msg.textContent = "";
     var req = !CFG.mock && !url ? Promise.reject(new Error("not configured"))
       : CFG.mock
       ? new Promise(function (r) { setTimeout(function () { window.KD_BOOKING_LAST_PAYLOAD = body; r(body.slot ? { ok: true, appointment: { id: "mock", startTime: body.slot.start } } : { ok: true, contactId: "mock" }); }, 700); })
@@ -550,13 +636,13 @@
       }
       if (res && res.code === "slot_taken" && self.kind === "booking") {
         slotCache = {}; s.slot = null; self.go(0);
-        self.msg.textContent = "That time was just taken. Please pick another one."; return;
+        self.msg.textContent = tr("That time was just taken. Please pick another one."); return;
       }
-      btn.disabled = false; btn.textContent = label;
-      self.msg.textContent = (res && res.message) || (self.kind === "contact" ? "Something went wrong and your message wasn't sent." : "Something went wrong and your call wasn't booked.") + " Please try again, or email info@kpidriver.com.";
+      btn.disabled = false; btn.textContent = tr(label);
+      self.msg.textContent = tr((res && res.message) || (self.kind === "contact" ? "Something went wrong and your message wasn't sent." : "Something went wrong and your call wasn't booked.") + " Please try again, or email info@kpidriver.com.");
     }).catch(function () {
-      self.busy = false; btn.disabled = false; btn.textContent = label;
-      self.msg.textContent = "We couldn't reach the booking service. Check your connection and try again.";
+      self.busy = false; btn.disabled = false; btn.textContent = tr(label);
+      self.msg.textContent = tr("We couldn't reach the booking service. Check your connection and try again.");
     });
   };
   Booking.prototype.done = function (p) {
@@ -696,7 +782,7 @@
 
   function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
   function ctaLink(text, label, extra) {
-    return '<a class="kd-cta' + (extra || "") + '" href="' + CFG.fallbackUrl + '" target="_blank" rel="noopener" data-book="' + CFG.calendarId +
+    return '<a class="kd-cta' + (extra || "") + '" href="' + BOOK_PAGE + '" data-book="' + CFG.calendarId +
       '" data-cta-type="text link" data-event="discovery_call_click" data-label="' + esc(label) + '">' + esc(text) + "</a>";
   }
   function promptHtml(q, a, label) {
@@ -743,7 +829,7 @@
     var main = document.getElementById("main"); if (!main) return;
     // every booking link points at the one live calendar (matters for ctrl/cmd-click and no-JS)
     [].forEach.call(document.querySelectorAll("a[data-book]"), function (a) { a.setAttribute("data-book", CFG.calendarId); });
-    [].forEach.call(document.querySelectorAll('a[href*="/widget/booking/"]'), function (a) { a.setAttribute("href", CFG.fallbackUrl); });
+    [].forEach.call(document.querySelectorAll('a[href*="/widget/booking/"]'), function (a) { a.setAttribute("href", BOOK_PAGE); a.removeAttribute("target"); a.removeAttribute("rel"); });
     // old HighLevel embeds → native forms
     [].forEach.call(main.querySelectorAll(".ghl-form"), function (el) {
       el.outerHTML = '<div class="kd-inline-form" data-kd-contact data-placement="Inquiry Form"></div>';
@@ -785,7 +871,7 @@
     [].forEach.call(main.querySelectorAll("section"), function (sec, i) {
       if (sec.parentElement.closest("section") || sec.classList.contains("cta")) return;
       if (sec.querySelector("[data-book], [data-kd-book], [data-kd-booking], [data-kd-contact], .kd-cta")) return;
-      var id = sec.id;
+      var id = sec.getAttribute("data-kd-id") || sec.id;
       // same naming rule as before (build.py used it too), so English and Spanish pages match
       if (!id) id = sec.classList.contains("hero") || sec.classList.contains("phead") ? "hero" : !intro ? (intro = true, "intro") : "section-" + (i + 1);
       placeCta(sec, id.replace(/-/g, " "), plan[id] || (introLede(sec) ? CTA_DEFAULT.lede : CTA_DEFAULT.prompt), es);
